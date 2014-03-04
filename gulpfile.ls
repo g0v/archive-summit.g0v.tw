@@ -33,6 +33,8 @@ gulp.task 'styl' ->
 gulp.task 'files' ->
   gulp.src <[src/**/*.json src/**/*.csv]>
     .pipe gulp.dest "#build-path"
+  gulp.src <[src/img/*]>
+    .pipe gulp.dest "#build-path/img"
 
 gulp.task \express, ->
   require! express
