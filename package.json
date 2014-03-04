@@ -1,0 +1,33 @@
+{
+  "name": "summit.g0v.tw",
+  "version": "0.0.1",
+  "description": "g0v summit 2014 website",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp --require LiveScript",
+    "dev": "gulp --require LiveScript dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yhsiang/summit.g0v.tw.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yhsiang/summit.g0v.tw/issues"
+  },
+  "homepage": "http://summit.g0v.tw",
+  "devDependencies": {
+    "Livescript": "~1.2.0",
+    "gulp-livescript": "~0.1.1",
+    "tiny-lr": "0.0.5",
+    "gulp-util": "~2.2.14",
+    "gulp-stylus": "~0.0.12",
+    "gulp-jade": "~0.4.1",
+    "express": "~3.4.8",
+    "gulp": "~3.5.2",
+    "connect-livereload": "~0.3.2",
+    "gulp-livereload": "~1.1.1"
+  }
+}

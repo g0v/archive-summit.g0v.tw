@@ -1,0 +1,39 @@
+{
+  "author": "tkirby",
+  "status": "alpha",
+  "name": "summit.g0v.tw",
+  "description": "g0v summit 2014 website",
+  "description_zh": "g0v summit 2014 網站",
+  "homepage": "http://summit.g0v.tw/",
+  "document": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/g0v/summit.g0v.tw"
+  },
+  "licenses": [
+    {
+      "type": "CC0"
+    }
+  ],
+  "keywords": [
+    "g0v",
+    "summit"
+  ],
+  "audience": [
+    "developer"
+  ],
+  "products": [
+    "data",
+    "demosite"
+  ],
+  "projects": [
+    "visualization"
+  ],
+  "contributors": [
+    "zbryikt"
+  ],
+  "needs": [
+    "programmer",
+    "designer"
+  ]
+}
