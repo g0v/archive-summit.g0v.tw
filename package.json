@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yhsiang/summit.g0v.tw.git"
+    "url": "https://github.com/g0v/summit.g0v.tw.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yhsiang/summit.g0v.tw/issues"
+    "url": "https://github.com/g0v/summit.g0v.tw/issues"
   },
   "homepage": "http://summit.g0v.tw",
   "devDependencies": {
