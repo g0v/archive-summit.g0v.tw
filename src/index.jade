@@ -1,0 +1,35 @@
+doctype html
+//- basic libraries: jquery(1.10.2), d3js(3.3.11), angularjs(1.2.3), bootstrap(3.0)/semantic-ui(0.9.3/0.9.5)
+- var usecdn = true
+- var useog = false
+- var lib = { jquery: true, d3js: true, angular: true, bootstrap: false, semantic: true }
+- var assets = "assets"
+- var thumbnail = "http://dummy.thumbnail"
+html(lang="en")
+  head(prefix="og: http://ogp.me/ns#")
+    meta(charset="utf-8")
+    title template
+    // libraries
+    include ../library.jade
+    // custom files
+    link(rel="stylesheet",type="text/css",href="index.css")
+    script(type="text/javascript",src="index.js")
+  body
+    ui.menu
+      a.item
+        | LOGO
+      a.active.item
+        i.home.icon
+        | NEWS
+      a.active.item
+        i.users.icon
+        | SPEAKERS
+      a.active.item
+        i.calendar.icon
+        | SCHEDULE
+      a.active.item
+        i.flag.icon
+        | SPONSORS
+    p(style="font-size:90px")
+      G0V SUMMIT 2014
+
