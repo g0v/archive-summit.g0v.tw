@@ -56,3 +56,5 @@ gulp.task \watch, ->
 gulp.task \build <[ html ls css files]>
 gulp.task \default <[ build express ]>
 gulp.task \dev <[ build express watch ]>
+
+# vi:et:ft=ls:nowrap:sw=2:ts=2
