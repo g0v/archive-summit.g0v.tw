@@ -3,7 +3,7 @@ set -e -x
 git --version
 upstream=$1
 : ${upstream:=origin}
-: ${REPO:=git@github.com:zbryikt/summit.g0v.tw}
+: ${REPO:=git@github.com:g0v/summit.g0v.tw}
 git fetch $upstream
 if [ `git rev-list HEAD...$upstream/master --count` -ne 0 ]; then
   echo "not deploying"
