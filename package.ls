@@ -36,6 +36,7 @@ devDependencies:
   'gulp-livescript': '^0.3.0'
   'tiny-lr': '^0.0.7'
   'gulp-less': '~1.2.3'
+  'gulp-stylus': '~1.3.3'
   'gulp-util': '~2.2.14'
   'gulp-jade': '^0.5.0'
   'gulp': '^3.7.0'

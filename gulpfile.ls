@@ -1,5 +1,5 @@
 require! <[gulp gulp-util express connect-livereload gulp-jade gulp-livereload path]>
-require! <[gulp-if gulp-livescript gulp-less gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber]>
+require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber]>
 
 gutil = gulp-util
 
@@ -67,9 +67,9 @@ gulp.task 'js:app', ->
 
 gulp.task 'css', ->
   compress = production
-  gulp.src 'app/styles/app.less'
+  gulp.src 'app/styles/app.styl'
     .pipe gulp-plumber!
-    .pipe gulp-less compress: compress
+    .pipe gulp-stylus!
     .pipe gulp.dest "#{build_path}/css"
 
 gulp.task 'assets', ->
