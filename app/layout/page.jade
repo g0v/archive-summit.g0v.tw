@@ -1,0 +1,14 @@
+extends base
+block body
+  header.title-header
+    .container
+      .row
+        .col-md-4
+          h2 #{tabName}
+        .col-md-8.text-right
+          block title
+  // Page Content
+  .container
+    block content
+    block footer
+      include footer

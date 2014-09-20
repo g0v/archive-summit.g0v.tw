@@ -1,0 +1,46 @@
+extends ../layout/page
+block title
+  h5(style='line-height:250%;')
+    img(src='/images/icons/png/s-date.png', align='middle')
+    |  2014/11/9 
+    img(src='/images/icons/png/s-map.png', align='middle')
+    | 台北: 中研院資訊所
+
+block content
+  .row
+    .col-sm-12
+      // switch menu
+      .col-xs-9
+        .btn-toolbar
+          .btn-group
+            a.btn.btn-primary(href='schedule.html')
+              span.fui-bubble
+              |  11/8 summit 2014 Conference
+            a.btn.btn-primary.active(href='#')
+              span.fui-star-2
+              |  11/9 summit 2014 Unconference
+        // /toolbar
+      p  
+      h3 summit 2014 Unconference
+      table.table.table-bordered.table-striped
+        col(width='101')
+        col(width='234', span='4')
+        tr
+          td.text-center(width='138') 時間
+          td(width='497') 2014-11-9(日) 09:30 - 18:00
+        tr
+          td.text-center 地點
+          td 台北: 中研院資訊所（共200名）
+        tr
+          td.text-center 簡介
+          td coming soon...
+        tr
+          td.text-center 進行方式
+          td(valign='top')
+            #magicdomid20(data-author-initials='ic', data-author-name='ipa c', data-author-link='/ep/profile/od9zls3wnWG')
+              ol(start='1')
+                li 共五軌（五間會議室），上午下午各 3 session，共30 session。
+            #magicdomid21(data-author-initials='ic', data-author-name='ipa c', data-author-link='/ep/profile/od9zls3wnWG')
+              ol(start='2')
+                li 沒有既定議程，由參與者以便利貼
+            u 歡迎自行準備環保餐具（杯子、餐具、餐盒），減少免洗餐具用量。感謝！

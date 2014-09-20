@@ -1,0 +1,28 @@
+{
+  "status": "beta",
+  "name": "summit.g0v.tw",
+  "name_zh": "啥咪零時政府官網",
+  "description": "summit g0v.tw website",
+  "description_zh": "啥咪零時政府官網",
+  "document": "http://github.com/g0v/summit.g0v.tw",
+  "homepage": "http://summit.g0v.tw/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/g0v/summit.g0v.tw"
+  },
+  "licenses": [
+    {
+      "type": "CC-BY"
+    }
+  ],
+  "keywords": [
+    "community",
+    "g0v.tw",
+    "summit",
+    "conference",
+    "unconferen"
+  ],
+  "audience": [
+    "public"
+  ]
+}
