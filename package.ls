@@ -13,7 +13,6 @@ scripts:
   prepublish: """
     node ./node_modules/LiveScript/bin/lsc -cj package.ls
     node ./node_modules/LiveScript/bin/lsc -cj bower.ls
-    node ./node_modules/LiveScript/bin/lsc -c test/*.js.ls
   """
   build: 'gulp'
   test: 'npm run build && bower i && ./node_modules/karma/bin/karma start --browsers PhantomJS --single-run true test/karma.conf.js'
