@@ -1,39 +1,28 @@
 {
-  "author": "tkirby",
-  "status": "alpha",
+  "status": "beta",
   "name": "summit.g0v.tw",
-  "description": "g0v summit 2014 website",
-  "description_zh": "g0v summit 2014 網站",
+  "name_zh": "啥咪零時政府官網",
+  "description": "summit g0v.tw website",
+  "description_zh": "啥咪零時政府官網",
+  "document": "http://github.com/g0v/summit.g0v.tw",
   "homepage": "http://summit.g0v.tw/",
-  "document": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/g0v/summit.g0v.tw"
   },
   "licenses": [
     {
-      "type": "CC0"
+      "type": "CC-BY"
     }
   ],
   "keywords": [
-    "g0v",
-    "summit"
+    "community",
+    "g0v.tw",
+    "summit",
+    "conference",
+    "unconferen"
   ],
   "audience": [
-    "developer"
-  ],
-  "products": [
-    "data",
-    "demosite"
-  ],
-  "projects": [
-    "visualization"
-  ],
-  "contributors": [
-    "zbryikt"
-  ],
-  "needs": [
-    "programmer",
-    "designer"
+    "public"
   ]
 }

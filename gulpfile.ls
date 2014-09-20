@@ -1,62 +1,113 @@
-require! <[ gulp gulp-util gulp-livescript gulp-stylus tiny-lr path gulp-livereload gulp-jade ]>
+require! <[gulp gulp-util express connect-livereload gulp-jade gulp-livereload path]>
+require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber]>
 
-server = tiny-lr!
-build-path = '_public'
+gutil = gulp-util
 
-gulp.task \html <[jade]> ->
-  gulp.src 'src/**/*.html'
-    .pipe gulp.dest "#build-path"
-    .pipe gulp-livereload server
+app = express!
 
-gulp.task \jade ->
-  gulp.src 'src/**/*.jade'
+build_path = '_public'
+production = true if gutil.env.env is \production
+
+
+gulp.task 'translations' ->
+  require! <[fs]>
+
+  # we don't have md files for now. 
+  # so unlike g0v.tw, we list langs explicitly instead of readDir('md').
+  langs = <[zh-tw en-us]>
+  for lang in langs
+    real-lang = lang.replace /(\w+-)(\w+)/, (,$1,$2) -> $1+$2.toUpperCase!
+
+    gulp.src 'app/partials/*.jade'
+      .pipe gulp-jade do
+        locals:
+          lang: real-lang
+      .pipe gulp.dest "#{build_path}/#{real-lang}"
+
+gulp.task 'html', <[translations]>, ->
+  gulp.src 'app/*.jade'
+    .pipe gulp-plumber!
     .pipe gulp-jade!
-    .pipe gulp.dest '_public'
+    .pipe gulp.dest "#{build_path}"
 
-gulp.task \ls ->
-  gulp.src 'src/**/*.ls'
-    .pipe gulp-livescript!
-    .pipe gulp.dest "#build-path"
-    .pipe gulp-livereload server
+require! <[gulp-bower main-bower-files gulp-filter]>
 
-gulp.task \css <[styl]> ->
-  gulp.src \src/*.css
-    .pipe gulp.dest "#build-path"
-    .pipe gulp-livereload server
+gulp.task 'bower' ->
+  gulp-bower!
 
-gulp.task 'styl' ->
-  gulp.src './src/**/*.styl'
-  .pipe gulp-stylus use: <[nib]>
-  .pipe gulp.dest "#build-path/css"
-  .pipe gulp-livereload server
+gulp.task 'js:vendor' <[bower]> ->
+  bower = gulp.src main-bower-files!
+    .pipe gulp-filter -> it.path is /\.js$/
 
-gulp.task 'files' ->
-  gulp.src <[src/**/*.json src/**/*.csv]>
-    .pipe gulp.dest "#build-path"
-  gulp.src <[src/img/*]>
-    .pipe gulp.dest "#build-path/img"
+  vendor = gulp.src 'vendor/scripts/*.js'
 
-gulp.task \express, ->
-  require! express
-  app = express!
-  EXPRESSPORT = 3000
-  app.use require('connect-livereload')!
-  app.use express.static path.resolve "#build-path"
-  app.listen EXPRESSPORT
-  gulp-util.log "Server available at http://localhost:#EXPRESSPORT"
+  s = streamqueue { +objectMode }
+    .done bower, vendor
+    .pipe gulp-concat 'vendor.js'
+    .pipe gulp-if production, gulp-uglify!
+    .pipe gulp.dest "#{build_path}/js"
 
-gulp.task \watch, ->
-  LIVERELOADPORT = 35729
-  server.listen LIVERELOADPORT, ->
-    return gulp-util.log it if it
-  gulp.watch \src/**/*.html, <[html]>
-  gulp.watch \src/**/*.jade, <[jade]>
-  gulp.watch \src/**/*.ls, <[ls]>
-  gulp.watch \src/**/*.css, <[css]>
-  gulp.watch \src/**/*.styl, <[styl]>
+gulp.task 'js:app', ->
+  env = gulp.src 'app/**/*.jsenv'
+    .pipe gulp-json-editor (json) ->
+      for key of json when process.env[key]?
+        json[key] = that
+      json
+    .pipe gulp-insert.prepend 'module.exports = '
+    .pipe gulp-commonjs!
 
-gulp.task \build <[ html ls css files]>
-gulp.task \default <[ build express ]>
-gulp.task \dev <[ build express watch ]>
+  app = gulp.src 'app/**/*.ls'
+    .pipe gulp-plumber!
+    .pipe gulp-livescript({+bare}).on 'error', gutil.log
 
-# vi:et:ft=ls:nowrap:sw=2:ts=2
+  streamqueue { +objectMode }
+    .done env, app
+    .pipe gulp-concat 'app.js'
+    .pipe gulp-if production, gulp-uglify!
+    .pipe gulp.dest "#{build_path}/js"
+
+gulp.task 'css', ->
+  compress = production
+  gulp.src 'app/styles/app.styl'
+    .pipe gulp-plumber!
+    .pipe gulp-stylus!
+    .pipe gulp.dest "#{build_path}/css"
+
+gulp.task 'assets', ->
+  gulp.src 'app/assets/**/*'
+    .pipe gulp-filter -> it.path isnt /\.ls$/
+    .pipe gulp.dest "#{build_path}"
+
+gulp.task 'server', <[ build ]> ->
+  app.use connect-livereload!
+  app.use express.static path.resolve "#build_path"
+  app.all '/**', (req, res, next) ->
+    res.sendFile __dirname + "/#{build_path}/404.html"
+  app.listen 3333
+  gulp-util.log gulp-util.colors.bold.inverse 'Listening on port 3333'
+
+gulp.task 'open' <[build server]> ->
+  require! 'os'
+  app = switch os.platform!
+  | 'linux' => 'google-chrome'
+  | 'win32' => 'Chrome'
+  | 'darwin' => 'Google Chrome'
+  | otherwise => 'Google Chrome' # TODO: findout other os
+
+  gulp.src "#{build_path}/index.html"
+    .pipe gulp-open '', do
+      url: 'http://localhost:3333'
+      app: app
+
+gulp.task 'watch', <[ build server ]> ->
+  gulp-livereload.listen silent: true
+  gulp.watch [
+    'app/**/*.jade',
+    'md/**/*.md'
+  ], <[ html ]> .on \change, gulp-livereload.changed
+  gulp.watch 'app/**/*.less', <[ css ]> .on \change, gulp-livereload.changed
+  gulp.watch 'app/**/*.ls', <[ js:app ]> .on \change, gulp-livereload.changed
+
+gulp.task 'build', <[html js:vendor js:app assets css]>
+gulp.task 'dev', <[ open watch ]>
+gulp.task 'default', <[build]>
