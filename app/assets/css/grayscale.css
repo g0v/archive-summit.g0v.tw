@@ -128,7 +128,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../images/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -249,7 +249,7 @@ a:focus {
 	
 }
 .sch {
-	background-image: url(../img/bg2.png);
+	background-image: url(../images/bg2.png);
 	}
 #map {
     width: 100%;
@@ -345,12 +345,12 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 .bg {
-	background-image: url(../img/main.png);
+	background-image: url(../images/main.png);
 	background-repeat: no-repeat;	
 	}
 #about {
 	width: 100%;
-	background-image: url(../img/about.png);	
+	background-image: url(../images/about.png);	
 	}
 #sponsor {
 	color: 000;
