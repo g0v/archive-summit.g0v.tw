@@ -12,16 +12,17 @@ production = true if gutil.env.env is \production
 gulp.task 'translations' ->
   require! <[fs]>
 
-  # TODO ensure md/:lang is created, at least for zh-tw
-  fs.readdir './md', (,langs)->
-    for lang in langs
-      real-lang = lang.replace /(\w+-)(\w+)/, (,$1,$2) -> $1+$2.toUpperCase!
+  # we don't have md files for now. 
+  # so unlike g0v.tw, we list langs explicitly instead of readDir('md').
+  langs = <[zh-tw en-us]>
+  for lang in langs
+    real-lang = lang.replace /(\w+-)(\w+)/, (,$1,$2) -> $1+$2.toUpperCase!
 
-      gulp.src 'app/partials/*.jade'
-        .pipe gulp-jade do
-          locals:
-            lang: real-lang
-        .pipe gulp.dest "#{build_path}/#{real-lang}"
+    gulp.src 'app/partials/*.jade'
+      .pipe gulp-jade do
+        locals:
+          lang: real-lang
+      .pipe gulp.dest "#{build_path}/#{real-lang}"
 
 gulp.task 'html', <[translations]>, ->
   gulp.src 'app/*.jade'
