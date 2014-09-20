@@ -5,13 +5,13 @@ block body
     .container.mainvi
       .row
         .col-md-6
-          img(src='images/logo.png', width='519', height='205')
+          img(src='/images/logo.png', width='519', height='205')
           p  
           h5
-            img(src='images/icons/png/s-map.png', align='middle')
+            img(src='/images/icons/png/s-map.png', align='middle')
             |  台北市南港區中央研究院人文館
           h5
-            img(src='images/icons/png/s-date.png', align='middle')
+            img(src='/images/icons/png/s-date.png', align='middle')
             |  2014/11/8
   // Page Content
   .container(style='margin-top:20px;')
@@ -51,23 +51,5 @@ block body
                   |                   台灣的未來需要您的參與
                 |                   如果您的企業或組織，正期待以正面能量改變社會，歡迎一起來參與這場重要的高峰會，您的一份付出，將有可能讓台灣政府及社會邁向更開放、更前進的未來。
                 a(href='sponsor.html') 贊助方案>
-    // Footer
-    footer
-      .row
-        .col-lg-12
-          h6 感謝贊助：
-          .row
-            .col-xs-3
-              img.img-thumbnail(src='images/sponser/footer-w.png')
-              |  天氣風險管理開發公司
-            .col-xs-3
-              img.img-thumbnail(src='images/sponser/logo-hct.png')
-              | 新竹物流
-            .col-xs-3
-              img.img-thumbnail(src='images/sponser/SunlightFoundation-logo.png')
-              | Sunlight
-            .col-xs-3
-              img.img-thumbnail(src='images/sponser/netivism.png')
-          p.text-center Copyright © g0v summit 2014
-      // /.row
+    include ../layout/footer.jade
   // /.container
