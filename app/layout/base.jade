@@ -9,10 +9,10 @@ html(lang='zh-tw')
     meta(name='author', content='')
     title #{tabName} - g0v Summit 2014 啥米零時政府
     // Bootstrap Core CSS
-    link(href='css/bootstrap.min.css', rel='stylesheet')
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
     // Custom CSS
-    link(href='css/business-frontpage.css', rel='stylesheet')
-    link(href='css/flat-ui.css', rel='stylesheet')
+    link(href='/css/business-frontpage.css', rel='stylesheet')
+    link(href='/css/flat-ui.css', rel='stylesheet')
     //- TODO this style is only used in index.jade. check if we should do sth with it.
     style(type='text/css').
       .todo li {
@@ -28,6 +28,7 @@ html(lang='zh-tw')
     //if lt IE 9
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    block script
   body
     // Navigation
     nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
@@ -45,23 +46,23 @@ html(lang='zh-tw')
           ul.nav.navbar-nav
             li
               a(href='schedule.html')
-                img(src='images/icons/svg/roundicons free set-16.svg', width='60')
+                img(src='/images/icons/svg/roundicons free set-16.svg', width='60')
                 |  議程
             li
               a(href='speaker.html')
-                img(src='images/icons/svg/roundicons free set-01.svg', width='60')
+                img(src='/images/icons/svg/roundicons free set-01.svg', width='60')
                 |  講者
             li
               a(href='#')
-                img(src='images/icons/svg/roundicons free set-12.svg', width='60')
+                img(src='/images/icons/svg/roundicons free set-12.svg', width='60')
                 |  新聞
             li
               a(href='sponsor.html')
-                img(src='images/icons/svg/roundicons free set-17.svg', width='60')
+                img(src='/images/icons/svg/roundicons free set-17.svg', width='60')
                 |  贊助
             li
               a(href='transport.html')
-                img(src='images/icons/svg/roundicons free set-18.svg', width='60')
+                img(src='/images/icons/svg/roundicons free set-18.svg', width='60')
                 |  交通
             li
               a(href='eng/index.html', style='margin-top:15px;') English
@@ -69,9 +70,10 @@ html(lang='zh-tw')
       // /.container
     // Image Background Page Header
     block body
-    // jQuery Version 1.11.0
-    script(src='js/jquery-1.11.0.js')
-    script(src='js/jquery-ui-1.10.3.custom.min.js')
-    script(src='js/jquery.ui.touch-punch.min.js')
-    // Bootstrap Core JavaScript
-    script(src='js/bootstrap.min.js')
+    //-
+      // jQuery Version 1.11.0
+      script(src='js/jquery-1.11.0.js')
+      script(src='js/jquery-ui-1.10.3.custom.min.js')
+      script(src='js/jquery.ui.touch-punch.min.js')
+      // Bootstrap Core JavaScript
+      script(src='js/bootstrap.min.js')
