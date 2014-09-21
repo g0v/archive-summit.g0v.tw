@@ -105,7 +105,7 @@ gulp.task 'watch', <[ build server ]> ->
     'app/**/*.jade',
     'md/**/*.md'
   ], <[ html ]> .on \change, gulp-livereload.changed
-  gulp.watch 'app/**/*.less', <[ css ]> .on \change, gulp-livereload.changed
+  gulp.watch 'app/**/*.styl', <[ css ]> .on \change, gulp-livereload.changed
   gulp.watch 'app/**/*.ls', <[ js:app ]> .on \change, gulp-livereload.changed
 
 gulp.task 'build', <[html js:vendor js:app assets css]>
