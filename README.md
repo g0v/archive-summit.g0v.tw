@@ -9,7 +9,7 @@ Structure adopted from g0v.tw
 
 # Required
 
-- Install nodejs
+- Install nodejs # you may need to update your nodejs
 - Install npm 
 
 # Developer
