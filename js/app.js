@@ -1,1 +1,1 @@
-require.register("config.jsenv",function(e,i,r){r.exports={BUILD:"git-79d5cb2"}}),angular.module("summit.g0v.tw",[]);
+require.register("config.jsenv",function(e,i,r){r.exports={BUILD:"git-9094132"}}),angular.module("summit.g0v.tw",[]);
