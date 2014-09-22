@@ -12,3 +12,4 @@ _public
 .*.swp
 
 test/karma.*.js
+i18n/gen/
