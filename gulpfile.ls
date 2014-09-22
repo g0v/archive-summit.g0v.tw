@@ -1,5 +1,5 @@
 require! <[gulp gulp-util express connect-livereload gulp-jade gulp-livereload path]>
-require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber]>
+require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber gulp-rename]>
 
 gutil = gulp-util
 
@@ -65,6 +65,13 @@ gulp.task 'js:app', ->
     .pipe gulp-concat 'app.js'
     .pipe gulp-if production, gulp-uglify!
     .pipe gulp.dest "#{build_path}/js"
+
+#gulp.task 'data', ->
+#  gulp.src 'data/src/**/*.ls'
+#    .pipe gulp-plumber!
+#    .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
+#    .pipe gulp-rename extname: '.jade'
+#    .pipe gulp.dest "data/gen/"
 
 gulp.task 'css', ->
   compress = production
