@@ -2,7 +2,7 @@ extends ../layout/page
 block vars
   - var tabName = "議程"
 block title
-  h5(style='line-height:250%;')
+  //h5(style='line-height:250%;')
     img(src='/images/icons/png/s-date.png', align='middle')
     |  2014/11/8 
     img(src='/images/icons/png/s-map.png', align='middle')
@@ -13,7 +13,16 @@ block content
   //-include ../../json/schedule.jade
   .row
     .col-sm-12
-      .alert.alert-success 2014/11/8 中研院人文社會科學館 Conference / 600人 （VIP 請於 9/30 前完成報名，邀請碼逾期將失效）
+      h5 Day 1 / Conference 國際研討會
+        p
+        img(src='/images/icons/png/s-date.png', align='middle')
+        |  2014/11/8 
+        img(src='/images/icons/png/s-map.png', align='middle')
+        |  台北市南港區中央研究院人文社會科學館
+      .alert.alert-success VIP 請於 9/30 前完成報名，邀請碼逾期將失效。一般票 
+        span.text-danger 
+         b 10/1 中午
+        | 開放報名。
       table.table.table-bordered.table-striped
         col(width='101')
         col(width='234', span='4')
@@ -304,7 +313,16 @@ block content
               | Lightning talks 
               span(style='font-size:14px;') (70 mins)
         tr  
-      .alert.alert-success 2014/11/9 中研院資訊所 UnConference / 200 人（VIP 與國際早鳥票可優先選擇是否參與，一般票 10/1 開放報名）
+      h5 Day 2 / Unconference 開放工作坊
+        p
+        img(src='/images/icons/png/s-date.png', align='middle')
+        |  2014/11/9 
+        img(src='/images/icons/png/s-map.png', align='middle')
+        |  台北市南港區中央研究院資訊所
+      .alert.alert-success VIP 與國際早鳥票可優先選擇是否參與，一般票 
+        span.text-danger 
+         b 10/1 晚間
+        | 開放報名。
       // td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}
       table.table.table-bordered.table-striped(cellspacing='0', cellpadding='0')
         colgroup
