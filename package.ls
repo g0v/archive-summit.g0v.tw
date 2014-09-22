@@ -55,3 +55,4 @@ devDependencies:
   'gulp-plumber': '^0.6.2'
   'marked': '^0.3.2'
   'connect': '^2.19.1'
+  "through2": "^0.5.1"
