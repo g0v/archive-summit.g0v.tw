@@ -1,5 +1,5 @@
 require! <[gulp gulp-util express connect-livereload gulp-jade gulp-livereload path]>
-require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber gulp-rename]>
+require! <[gulp-if ./gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber gulp-rename gulp-jsonminify]>
 
 gutil = gulp-util
 
@@ -66,12 +66,14 @@ gulp.task 'js:app', ->
     .pipe gulp-if production, gulp-uglify!
     .pipe gulp.dest "#{build_path}/js"
 
-#gulp.task 'data', ->
-#  gulp.src 'data/src/**/*.ls'
-#    .pipe gulp-plumber!
-#    .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
-#    .pipe gulp-rename extname: '.jade'
-#    .pipe gulp.dest "data/gen/"
+gulp.task 'i18n', ->
+  gulp.src 'i18n/src/**/*.ls'
+    .pipe gulp-plumber!
+    .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
+    .pipe gulp-jsonminify!
+    .pipe gulp-insert.prepend '- var i18n = '
+    .pipe gulp-rename extname: '.jade'
+    .pipe gulp.dest "i18n/gen/"
 
 gulp.task 'css', ->
   compress = production
@@ -115,6 +117,6 @@ gulp.task 'watch', <[ build server ]> ->
   gulp.watch 'app/**/*.styl', <[ css ]> .on \change, gulp-livereload.changed
   gulp.watch 'app/**/*.ls', <[ js:app ]> .on \change, gulp-livereload.changed
 
-gulp.task 'build', <[html js:vendor js:app assets css]>
+gulp.task 'build', <[html js:vendor js:app assets css i18n]>
 gulp.task 'dev', <[ open watch ]>
 gulp.task 'default', <[build]>
