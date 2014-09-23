@@ -8,8 +8,15 @@ app = express!
 build_path = '_public'
 production = true if gutil.env.env is \production
 
+gulp.task 'i18n', ->
+  gulp.src 'i18n/src/**/*.ls'
+    .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
+    .pipe gulp-jsonminify!
+    .pipe gulp-insert.prepend '- var i18n = '
+    .pipe gulp-rename extname: '.jade'
+    .pipe gulp.dest "i18n/gen"
 
-gulp.task 'translations' ->
+gulp.task 'translations', <[i18n]> ->
   require! <[fs]>
 
   # we don't have md files for now. 
@@ -66,15 +73,6 @@ gulp.task 'js:app', ->
     .pipe gulp-if production, gulp-uglify!
     .pipe gulp.dest "#{build_path}/js"
 
-gulp.task 'i18n', ->
-  gulp.src 'i18n/src/**/*.ls'
-    .pipe gulp-plumber!
-    .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
-    .pipe gulp-jsonminify!
-    .pipe gulp-insert.prepend '- var i18n = '
-    .pipe gulp-rename extname: '.jade'
-    .pipe gulp.dest "i18n/gen/"
-
 gulp.task 'css', ->
   compress = production
   gulp.src 'app/styles/app.styl'
@@ -117,6 +115,6 @@ gulp.task 'watch', <[ build server ]> ->
   gulp.watch 'app/**/*.styl', <[ css ]> .on \change, gulp-livereload.changed
   gulp.watch 'app/**/*.ls', <[ js:app ]> .on \change, gulp-livereload.changed
 
-gulp.task 'build', <[html js:vendor js:app assets css i18n]>
+gulp.task 'build', <[i18n html js:vendor js:app assets css]>
 gulp.task 'dev', <[ open watch ]>
 gulp.task 'default', <[build]>
