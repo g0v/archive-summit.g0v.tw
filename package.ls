@@ -33,7 +33,7 @@ devDependencies:
   'chai': '~1.9.1'
   'gulp-livereload': '^2.0.0'
   'connect-livereload': '^0.4.0'
-  'gulp-livescript': '^0.3.0'
+  'gulp-livescript': '^1.1.0'
   'tiny-lr': '^0.0.7'
   'gulp-less': '~1.2.3'
   'gulp-stylus': '~1.3.3'
@@ -55,4 +55,3 @@ devDependencies:
   'gulp-plumber': '^0.6.2'
   'marked': '^0.3.2'
   'connect': '^2.19.1'
-  "through2": "^0.5.1"
