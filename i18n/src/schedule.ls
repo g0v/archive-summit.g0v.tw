@@ -103,8 +103,7 @@ schedule = do
   r2_1120:
     title_zh: "參與式民主議程座談"
     title_en: "參與式民主議程座談"
-    row_zh: 2
-    row_en: 2
+    row: 2
     list_zh:
       0: "主持人：吳銘軒"
       1: "與談貴賓：李根政、呂家華、陳俊宏、蔡玉玲"
@@ -190,8 +189,7 @@ schedule = do
       0: "社運團體 × 科技，會碰撞出什麼火花？新的傳播方式、新的協同工具、新的溝通形式，都帶來不同層面的影響。互相溝通、學習、影響的過程也是公民社會進步的一環。"
       1: "運動新風貌從太陽花運動中的新媒體談起，進一步探討科技工具與社運結合的可能，與台灣公民軟體經驗輸出香港的經驗分享。（主持人：楊孝先）"
   r1_1330:
-    row_zh: 2
-    row_en: 2
+    row: 2
     list_zh:
       0: "<strong>Ｅ論壇的同步新聞寫作</strong><span class='fui-user'/><span class='text-primary'>吳宗泰</span>"
       1: "<strong>去中心化之下的主流媒體角色</strong><span class='fui-user'/><span class='text-primary'>陳守國</span>"
