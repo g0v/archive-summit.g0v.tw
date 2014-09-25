@@ -163,3 +163,4 @@ schedule = do
     title: "Code for Hong Kong: 從台灣輸入公民軟體的香港經驗"
     speaker: "Lau Chun Yin"
     tag: "港"
+module.exports = schedule
