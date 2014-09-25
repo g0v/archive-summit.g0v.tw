@@ -52,7 +52,7 @@ schedule = do
     tag: "loomio/紐"
   r3_1020:
     title: "開放語料運動"
-    speaker: "謝舒凱"
+    speaker: "謝舒凱、馬基石(Pierre Magistry)"
   r4_1020:
     title: "開源與媒體-科技主導的當代新聞學"
     speaker: "Kirby"
@@ -71,8 +71,8 @@ schedule = do
     title: "Redesigning MoeDict"
     speaker: "薛良斌"
   r4_1120:
-    title: "SafeSlinger: Easy-to-use and secure public-key exchange"
-    speaker: "林岳勳"
+    title: "TBD"
+    speaker: ""
   r1_1150:
     title: "開放國會議程座談"
     list: [
@@ -83,7 +83,7 @@ schedule = do
     title: "3du 議程座談"
     list: [
       "主持人：唐鳳"
-      "與談人：謝舒凱、林佳怡、薛良斌"
+      "與談人：林佳怡、薛良斌、謝舒凱"
     ]
   r4_1150:
     title: "台灣公司關係圖資料解構"
@@ -92,6 +92,7 @@ schedule = do
   r1_pm_topic:
     title: "媒體曝光下的學運"
     subtitle: "Sunflower Movement under the Spotlight"
+    badge: "社會所「跨世紀學運系列論壇之五」"
     desc: [
       "太陽花學運中，媒體的作用與以往運動有了一些轉變。主流媒體與新媒體之間的交互作用，從電視、報紙雜誌、到網路空間與社交媒體媒介，去中心化的開源網路社群也開始有了新的嘗試。"
       "本座談將討論媒體本身角色，是抗爭運動的參與者抑或介入者，以及網路社群在運動中的角色，乃至未來的展望。（主持人：蕭新煌）"
@@ -120,10 +121,10 @@ schedule = do
   r1_1330:
     row: 2
     list: [
-      "Ｅ論壇的同步新聞寫作 - 吳宗泰"
-      "去中心化之下的主流媒體角色 - 陳守國"
-      "傳統媒體作為媒介、行動者與獲益者 - 鄒景雯"
-      "社會運動中的開源新媒體嘗試 - 瞿筱葳"
+      "<strong>Ｅ論壇的同步新聞寫作</strong><span class='fui-user'/><span class='text-primary'>吳宗泰</span>"
+      "<strong>去中心化之下的主流媒體角色</strong><span class='fui-user'/><span class='text-primary'>陳守國</span>"
+      "<strong>傳統媒體作為媒介、行動者與獲益者</strong><span class='fui-user'/><span class='text-primary'>鄒景雯</span>"
+      "<strong>社會運動中的開源新媒體嘗試</strong><span class='fui-user'/><span class='text-primary'>瞿筱葳</span>"
     ]
   r2_1330:
     title: "Open Weatherdata"
@@ -161,6 +162,6 @@ schedule = do
     speaker: "陳瑞霖"
   r4_1440:
     title: "Code for Hong Kong: 從台灣輸入公民軟體的香港經驗"
-    speaker: "Lau Chun Yin"
+    speaker: "Tim KT Chan"
     tag: "港"
 module.exports = schedule
