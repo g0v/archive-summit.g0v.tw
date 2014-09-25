@@ -1,18 +1,25 @@
 require! <[fs]>
-require! a: './zh-tw/schedule.ls'
-require! b: './en-us/schedule.ls'
+require! zh: '../zh-tw/schedule.ls'
+require! en: '../en-us/schedule.ls'
 
 recur = (zh,en,des) ->
   for k,v of zh
     if not (k of en) => 
       console.log "bug: k"
       continue
-    if typeof(v) == typeof({}) =>
+    if typeof(v) == typeof({}) and !v.length =>
       des[k] = {}
       recur(zh[k],en[k],des[k])
       continue
-    des[k] = {zh:zh[k], en:en[k]}
-c = {}
-recur a,b,c
 
-fs.write-file-sync "schedul.ls",JSON.stringify(c)
+    des["#{k}_zh"] = zh[k]
+    des["#{k}_en"] = en[k]
+result = {}
+recur zh,en,result
+
+dump = (obj, lv) ->
+  for k,v of obj
+    u = if typeof(v)==typeof({}) => "" else " "+JSON.stringify(v)
+    console.log "#{'  '*lv}#k:#u"
+    if typeof(v)==typeof({}) => dump obj[k], lv+1
+dump result, 1
