@@ -9,7 +9,7 @@ build_path = '_public'
 production = true if gutil.env.env is \production
 
 gulp.task 'i18n', ->
-  gulp.src 'i18n/src/**/*.ls'
+  gulp.src 'i18n/src/*.ls'
     .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
     .pipe gulp-jsonminify!
     .pipe gulp-insert.prepend '- var i18n = '
