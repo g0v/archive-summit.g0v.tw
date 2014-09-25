@@ -4,8 +4,11 @@ mixin topicslots_title(time)
   //- TODO use css to color block and set width
   each room in [["r1",294,"danger"],["r2",247,"success"],["r3",247,"warning"],["r4",250,"info"]]
     td.text-center(class="alert-"+room[2],width=room[1])
-      h5= i18n[room[0]+"_"+time+"_topic"]["title"]
-      span= i18n[room[0]+"_"+time+"_topic"]["subtitle"]
+      - var obj = i18n[room[0]+"_"+time+"_topic"]
+      h5= obj["title"]
+      span= obj["subtitle"]
+      if obj["badge"]
+        span.badge= obj["badge"]
 mixin topicslots_desc(time)
   each section in ["r1","r2","r3","r4"]
     td(valign="top")
@@ -24,8 +27,10 @@ mixin timeslots(time)
           strong= obj["title"]
         br
         if obj["list"]
-          each p in obj["list"]
-            div= p
+          ul
+            each p in obj["list"]
+              li
+                != p
         else
           span.fui-user
           |  

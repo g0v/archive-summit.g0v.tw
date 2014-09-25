@@ -109,11 +109,13 @@ gulp.task 'open' <[build server]> ->
 gulp.task 'watch', <[ build server ]> ->
   gulp-livereload.listen silent: true
   gulp.watch [
-    'app/**/*.jade',
+    'app/**/*.jade'
     'md/**/*.md'
+    'i18n/gen/**/*.jade'
   ], <[ html ]> .on \change, gulp-livereload.changed
-  gulp.watch 'app/**/*.styl', <[ css ]> .on \change, gulp-livereload.changed
-  gulp.watch 'app/**/*.ls', <[ js:app ]> .on \change, gulp-livereload.changed
+  gulp.watch 'app/**/*.styl' <[ css ]> .on \change gulp-livereload.changed
+  gulp.watch 'app/**/*.ls' <[ js:app ]> .on \change gulp-livereload.changed
+  gulp.watch 'i18n/src/**/*.ls' <[ i18n ]>
 
 gulp.task 'build', <[i18n html js:vendor js:app assets css]>
 gulp.task 'dev', <[ open watch ]>
