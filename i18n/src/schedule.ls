@@ -12,7 +12,6 @@ schedule = do
     desc_en:
       0: "Using open information to supervise representative government is an important aspect of the open government movement. Every country has undergone a different journey of development. The g0v community has also developed long-standing applications in this regard."
       1: "This track includes the participation of open parliament activists from many countries as well as senior promoters of early parliamentary supervision in Taiwan. Through multiple perspectives, they will explore new possibilities for digital citizens and representative government."
-    interpreation: true
   r2_am_topic:
     title_zh: "參與式民主"
     title_en: "Participatory Democracy"
@@ -24,7 +23,6 @@ schedule = do
     desc_en:
       0: "How does one participate in democracy and how to make participatory democracy possible have become issues of growing interest in recent years. At its inception, the g0v community had already discussed the related cases and set out to work on the platform development. However, more efforts are still needed in various areas in open data and infrastructures for the deepening of the democratization process."
       1: "In this track, we have invited two international speakers to introduce Europe's Pirate Party and their online platform review experience. The panel will involve a direct dialogue between executive committee members who have promoted openness and participation in the cabinet with academics who have advocated deliberate democracy in the community"
-    interpreation: true
   r3_am_topic:
     title_zh: "3du"
     title_en: "3du"
@@ -54,6 +52,8 @@ schedule = do
     speaker_en: "Felipe Álvarez"
     tag_zh: "FCI/智"
     tag_en: "FCI/CL"
+    language: "en"
+    interpretation: "zh"
   r2_0950:
     title_zh: "TBD"
     title_en: "TBD"
@@ -61,6 +61,8 @@ schedule = do
     speaker_en: "Gregory Engels"
     tag_zh: "海盜黨/德"
     tag_en: "PPI/DE"
+    language: "en"
+    interpretation: "zh"
   r3_0950:
     title_zh: "教育部《臺灣閩南語常用詞辭典》資料庫釋出歷程"
     title_en: "教育部《臺灣閩南語常用詞辭典》資料庫釋出歷程"
@@ -102,6 +104,8 @@ schedule = do
     speaker_en: "Lucy Park"
     tag_zh: "Team POPONG/韓"
     tag_en: "Team POPONG/KR"
+    language: "en"
+    interpretation: "zh"
   r2_1120:
     title_zh: "參與式民主議程座談"
     title_en: "Panel"
@@ -112,6 +116,8 @@ schedule = do
     list_en:
       0: "主持人：吳銘軒"
       1: "與談貴賓：李根政、呂家華、陳俊宏、蔡玉玲"
+    language: "zh"
+    interpretation: "en"
   r3_1120:
     title_zh: "Redesigning MoeDict"
     title_en: "Redesigning MoeDict"
@@ -216,6 +222,8 @@ schedule = do
     speaker_en: "Paul Lenz"
     tag_zh: "mysociety/英"
     tag_en: "mysociety/UK"
+    language: "en"
+    interpretation: "zh"
   r4_1330:
     title_zh: "新媒體與公民參與：從大腸花到攝護線"
     title_en: "新媒體與公民參與：從大腸花到攝護線"
@@ -254,11 +262,15 @@ schedule = do
     list_en:
       0: "主持人：鄧東坡"
       1: "與談貴賓：朱雨其、彭啟明、詹順貴"
+    language: "zh"
+    interpretation: "en"
   r3_1440:
     title_zh: "開放內容的衝擊-開放街圖和維基百科在臺發展，以及如何可能影響政府"
     title_en: "開放內容的衝擊-開放街圖和維基百科在臺發展，以及如何可能影響政府"
     speaker_zh: "陳瑞霖"
     speaker_en: "陳瑞霖"
+    language: "zh"
+    interpretation: "en"
   r4_1440:
     title_zh: "Code for Hong Kong: 從台灣輸入公民軟體的香港經驗"
     title_en: "Code for Hong Kong: 從台灣輸入公民軟體的香港經驗"
@@ -266,3 +278,4 @@ schedule = do
     speaker_en: "Tim KT Chan"
     tag_zh: "Code4HK/港"
     tag_en: "Code4HK/HK"
+    language: "en"
