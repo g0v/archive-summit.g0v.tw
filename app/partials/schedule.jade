@@ -52,7 +52,8 @@ mixin timeslots(head, time)
             |  
             span.text-primary
               +get(obj, "speaker")
-            span.badge= obj["tag"]
+            span.badge
+              +get(obj, "tag")
 
 block vars
   - var tabName = "議程"
