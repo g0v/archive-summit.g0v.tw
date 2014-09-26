@@ -26,3 +26,22 @@
 .page-title
   margin-top: 20px
   margin-bottom: 10px
+
+#schedule
+  display flex
+  .time
+    padding 5px
+  .topic
+    flex 1 1 25%
+    padding 5px
+  .track
+    display none
+
+@media (max-width: 768px)
+  #schedule
+    flex-direction column
+    .topic
+      flex 1 1 auto
+    .track
+      background-color yellow
+      display inline-block
