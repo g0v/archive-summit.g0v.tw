@@ -9,7 +9,7 @@ build_path = '_public'
 production = true if gutil.env.env is \production
 
 gulp.task 'i18n', ->
-  gulp.src 'i18n/src/**/*.ls'
+  gulp.src 'i18n/src/*.ls'
     .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
     .pipe gulp-jsonminify!
     .pipe gulp-insert.prepend '- var i18n = '
@@ -24,11 +24,12 @@ gulp.task 'translations', <[i18n]> ->
   langs = <[zh-tw en-us]>
   for lang in langs
     real-lang = lang.replace /(\w+-)(\w+)/, (,$1,$2) -> $1+$2.toUpperCase!
+    lang-in-jade = lang.replace /-.+$/, ""
 
     gulp.src 'app/partials/*.jade'
       .pipe gulp-jade do
         locals:
-          lang: real-lang
+          lang: lang-in-jade
       .pipe gulp.dest "#{build_path}/#{real-lang}"
 
 gulp.task 'html', <[translations]>, ->

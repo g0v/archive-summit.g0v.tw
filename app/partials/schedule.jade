@@ -1,41 +1,59 @@
 extends ../layout/page
 
+mixin get(obj,name)
+  | #{obj[name+"_"+lang] || obj[name]}
+
 mixin topicslots_title(time)
   //- TODO use css to color block and set width
-  each room in [["r1",294,"danger"],["r2",247,"success"],["r3",247,"warning"],["r4",250,"info"]]
-    td.text-center(class="alert-"+room[2],width=room[1])
-      - var obj = i18n[room[0]+"_"+time+"_topic"]
-      h5= obj["title"]
-      span= obj["subtitle"]
-      if obj["badge"]
-        span.badge= obj["badge"]
-mixin topicslots_desc(time)
-  each section in ["r1","r2","r3","r4"]
-    td(valign="top")
-      each p in i18n[section+"_"+time+"_topic"]["desc"]
-        p= p
+  tr
+    td.text-center 主題
+    each room in [["r1",294,"danger"],["r2",247,"success"],["r3",247,"warning"],["r4",250,"info"]]
+      td.text-center(class="alert-"+room[2],width=room[1])
+        - var obj = i18n[room[0]+"_"+time+"_topic"]
+        h5
+          +get(obj, "title")
+        span
+          +get(obj, "subtitle")
+        if obj["badge"]
+          span.badge= obj["badge"]
 
-mixin timeslots(time)
-  each room in rooms
-    - var obj = i18n[room + "_" + time]
-    if obj
-      - var row = obj["row"] || 1
-      td(rowspan=row)
-        if obj["title"]=="TBD"
-          span.text-muted= obj["title"]
-        else
-          strong= obj["title"]
-        br
-        if obj["list"]
-          ul
-            each p in obj["list"]
-              li
-                != p
-        else
-          span.fui-user
-          |  
-          span.text-primary= obj["speaker"]
-          span.badge= obj["tag"]
+mixin topicslots_desc(time)
+  tr
+    td.text-center 主題介紹
+    each section in ["r1","r2","r3","r4"]
+      td(valign="top")
+        - var name = section + "_" + time + "_topic"
+        - var desc = i18n[name]["desc_"+lang] || i18n[name]["desc"]
+        each p in desc
+          p= p
+
+mixin timeslots(head, time)
+  tr
+    td.text-center #{head}
+    each room in rooms
+      - var obj = i18n[room + "_" + time]
+      if obj
+        - var row = obj["row"] || 1
+        td(rowspan=row)
+          - title = obj["title_" + lang] || obj["title"]
+          if title == "TBD"
+            span.text-muted= title
+          else
+            strong= title
+          br
+          - var list = obj["list_"+lang] || obj["list"]
+          if list
+            ul
+              each p in list
+                li
+                  != p
+          else
+            span.fui-user
+            |  
+            span.text-primary
+              +get(obj, "speaker")
+            span.badge
+              +get(obj, "tag")
 
 block vars
   - var tabName = "議程"
@@ -48,7 +66,7 @@ block title
 
 block content
   - var rooms = ["r1","r2","r3","r4"]
-  include ../../i18n/gen/zh-tw/schedule.jade
+  include ../../i18n/gen/schedule.jade
   .row
     .col-sm-12
       h5 Day 1 / Conference 國際研討會
@@ -69,8 +87,8 @@ block content
         tr
           td.text-center(width='138') 9:00 - 9:10
           td.text-center(colspan='4')
-            h5= i18n.opening 
-            span.fui-user 
+            h5 #{i18n["opening_"+lang] || i18n["opening"]}
+            span.fui-user
             span.text-primary
               b  高嘉良 clkao
         tr
@@ -86,21 +104,11 @@ block content
             h5
               | BREAK    
               span(style='font-size:14px;') (10 mins)
-        tr
-          td.text-center 主題
-          +topicslots_title("am")
 
-        tr
-          td.text-center 主題介紹
-          +topicslots_desc("am")
-
-        tr
-          td.text-center 9:50 - 10:20
-          +timeslots("0950")
-
-        tr
-          td.text-center 10:20 - 10:50
-          +timeslots("1020")
+        +topicslots_title("am")
+        +topicslots_desc("am")
+        +timeslots("9:50 - 10:20", "0950")
+        +timeslots("10:20 - 10:50", "1020")
 
         tr
           td.text-center 10:50 - 11:20
@@ -108,12 +116,9 @@ block content
             h5
               | BREAK    
               span(style='font-size:14px;') (30 mins)
-        tr
-          td.text-center 11:20 - 11:50
-          +timeslots("1120")
-        tr
-          td.text-center 11:50 - 12:20
-          +timeslots("1150")
+
+        +timeslots("11:20 - 11:50", "1120")
+        +timeslots("11:50 - 12:20", "1150")
 
         tr
           td.text-center 12:20 - 13:30
@@ -121,25 +126,12 @@ block content
             h5
               | LUNCH    
               span(style='font-size:14px;') (70 mins)
-        tr
-          td.text-center 主題
-          +topicslots_title("pm")
 
-        tr
-          td.text-center 主題介紹
-          +topicslots_desc("pm")
-
-        tr
-          td.text-center 13:30 - 14:00
-          +timeslots("1330")
-
-        tr
-          td.text-center 14:10 - 14:40
-          +timeslots("1410")
-
-        tr
-          td.text-center 14:40 - 15:10
-          +timeslots("1440")
+        +topicslots_title("pm")
+        +topicslots_desc("pm")
+        +timeslots("13:30 - 14:00", "1330")
+        +timeslots("14:10 - 14:40", "1410")
+        +timeslots("14:40 - 15:10", "1440")
 
         tr
           td.text-center 15:10 - 15:50
