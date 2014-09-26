@@ -28,19 +28,30 @@
   margin-bottom: 10px
 
 #schedule
+  border-left 1px solid
+  border-top 1px solid
   display flex
+  flex-wrap wrap
+  .time, .topic
+    border-bottom 1px solid
+    border-right 1px solid
+    padding 5px
+    text-align center
   .time
-    padding 5px
+    flex 0 1 8%
   .topic
-    flex 1 1 25%
-    padding 5px
+    flex 1 1 23%
+    &.common
+      flex 1 1 92%
+    &.row2
+      border-bottom 0
   .track
     display none
 
 @media (max-width: 768px)
   #schedule
     flex-direction column
-    .topic
+    .time, .topic, .topic.common
       flex 1 1 auto
     .track
       background-color yellow

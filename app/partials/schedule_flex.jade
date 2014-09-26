@@ -3,29 +3,53 @@ extends ../layout/page
 mixin get(obj,name)
   | #{obj[name+"_"+lang] || obj[name]}
 
-mixin topicslots_title(time)
-  //- TODO use css to color block and set width
-  tr
-    td.text-center 主題
-    each room in [["r1",294,"danger"],["r2",247,"success"],["r3",247,"warning"],["r4",250,"info"]]
-      td.text-center(class="alert-"+room[2],width=room[1])
-        - var obj = i18n[room[0]+"_"+time+"_topic"]
-        h5
-          +get(obj, "title")
-        span
-          +get(obj, "subtitle")
-        if obj["badge"]
-          span.badge= obj["badge"]
+mixin track_title(time)
+  .time 主題
+  each v, i in ['danger','success','warning','info']
+    - var obj = i18n["r"+(i+1)+"_"+time+"_topic"]
+    .topic(class="alert-"+v)
+      h5: +get(obj,"title")
+      span: +get(obj,"subtitle")
+      if obj["badge"]
+        span.badge= obj["badge"]
 
-mixin topicslots_desc(time)
-  tr
-    td.text-center 主題介紹
-    each section in ["r1","r2","r3","r4"]
-      td(valign="top")
-        - var name = section + "_" + time + "_topic"
-        - var desc = i18n[name]["desc_"+lang] || i18n[name]["desc"]
-        each p in desc
-          p= p
+mixin track_desc(time)
+  .time 主題介紹
+  each i in [1,2,3,4]
+    - var name = "r"+i+"_"+time+"_topic"
+    - var desc = i18n[name]["desc_"+lang] || i18n[name]["desc"]
+    .topic
+      each p in desc
+        p= p
+
+mixin timeslot(head,time)
+  .time #{head}
+  each i in [1,2,3,4]
+    - var obj = i18n["r"+i+"_"+time]
+    if obj
+      - var row = obj["row"] || 1
+      .topic(class="row"+row)
+        - var title = obj["title_"+lang] || obj["title"]
+        if title == "TBD"
+          span.text-muted= title
+        else
+          strong= title
+        br
+        - var list = obj["list_"+lang] || obj["list"]
+        if list
+          ul
+            each p in list
+              li
+                != p
+        else
+          span.fui-user
+          |  
+          span.text-primary
+            +get(obj,"speaker")
+          span.badge
+            +get(obj,"tag")
+    else
+      .topic
 
 mixin timeslots(head, time)
   tr
@@ -71,150 +95,40 @@ block content
     .col-sm-12
       #schedule
         .time 9:00 - 9:10
-        .topic Interest Inspector
-          .track 開放國會
-        .topic TBD
-          .track 參與式民主
-        .topic 教育部《臺灣閩南語常用詞辭典》資料庫釋出歷程
-          .track 3du
-        .topic 醫療、Youbike、菜價視覺化
-          .track 公民新科技
-      table.table.table-bordered.table-striped
-        tr
-          td.text-center(width='138') 9:00 - 9:10
-          td.text-center(colspan='4')
-            h5 #{i18n["opening_"+lang] || i18n["opening"]}
-            span.fui-user
-            |  
-            span.text-primary
-              b clkao
-        tr
-          td.text-center 9:10 - 9:40
-          td.text-center(colspan='4')
-            h5 Keynote
-        tr
-          td.text-center 9:40 - 9:50
-          td.text-center(colspan='4')
-            h5
-              | BREAK    
-              span(style='font-size:14px;') (10 mins)
+        .topic.common
+          h5 #{i18n["opening_"+lang] || i18n["opening"]}
+          span.fui-user
+          |  
+          span.text-primary
+            b clkao
+        .time 9:10 - 9:40
+        .topic.common: h5 Keynote
+        .time 9:40 - 9:50
+        .topic.common: h5 BREAK
+          span(style="font-size:14px") (10 mins)
+        +track_title("am")
+        +track_desc("am")
+        +timeslot("9:50 - 10:20","0950")
+        +timeslot("10:20 - 10:50","1020")
+        .time 10:50 - 11:20
+        .topic.common: h5 BREAK
+          span(style="font-size:14px") (30 mins)
+        +timeslot("11:20 - 11:50","1120")
+        +timeslot("11:50 - 12:20","1150")
+        .time 12:20 - 13:30
+        .topic.common: h5 LUNCH
+          span(style="font-size:14px") (70 mins)
 
-        +topicslots_title("am")
-        +topicslots_desc("am")
-        +timeslots("9:50 - 10:20", "0950")
-        +timeslots("10:20 - 10:50", "1020")
+        +track_title("pm")
+        +track_desc("pm")
+        +timeslot("13:30 - 14:00","1330")
+        +timeslot("14:10 - 14:40","1410")
+        +timeslot("14:40 - 15:10","1440")
+        .time 15:10 - 15:50
+        .topic.common: h5 TEA BREAK
+          span(style="font-size:14px") (40 mins)
+        .time 15:50 - 17:00
+        .topic.common: h5 Lightning talks
+          span(style="font-size:14px") (70 mins)
 
-        tr
-          td.text-center 10:50 - 11:20
-          td.text-center(colspan='4')
-            h5
-              | BREAK    
-              span(style='font-size:14px;') (30 mins)
-
-        +timeslots("11:20 - 11:50", "1120")
-        +timeslots("11:50 - 12:20", "1150")
-
-        tr
-          td.text-center 12:20 - 13:30
-          td.text-center(colspan='4')
-            h5
-              | LUNCH    
-              span(style='font-size:14px;') (70 mins)
-
-        +topicslots_title("pm")
-        +topicslots_desc("pm")
-        +timeslots("13:30 - 14:00", "1330")
-        +timeslots("14:10 - 14:40", "1410")
-        +timeslots("14:40 - 15:10", "1440")
-
-        tr
-          td.text-center 15:10 - 15:50
-          td.text-center(colspan='4')
-            h5
-              | TEA BREAK 
-              span(style='font-size:14px;') (40 mins)
-        tr
-          td.text-center(rowspan='2') 15:50    - 17:00
-          td.text-center(colspan='4', rowspan='2')
-            h5
-              | Lightning talks 
-              span(style='font-size:14px;') (70 mins)
-              br
-              span(style='font-size:18px;') 閃電秀由現場參與者當天報名，每講 5 分鐘
-        tr  
-      h5 Day 2 / Unconference 開放工作坊
-        p
-        img(src='/images/icons/png/s-date.png', align='middle')
-        |  2014/11/9 
-        img(src='/images/icons/png/s-map.png', align='middle')
-        |  台北市南港區中央研究院資訊所
-      .alert.alert-success VIP 與國際早鳥票可優先選擇是否參與不需再報，一般票 
-        span.text-danger 
-         b 10/1 晚間
-        | 開放報名。
-      // td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}
-      table.table.table-bordered.table-striped(cellspacing='0', cellpadding='0')
-        colgroup
-          col(width='100')
-          col(width='269')
-          col(width='269')
-          col(width='269')
-          col(width='269')
-        tbody
-          tr
-            td.text-center(width='12%') 9:00 - 9:30
-            td.text-center(width='88%', rowspan='1') 報到
-          tr
-            td.text-center 9:30 - 9:40
-            td.text-center(rowspan='1') 開場
-          tr
-            td.text-center 9:40 -10:10
-            td.text-center(rowspan='1') TBD
-          tr
-            td.text-center 10:10-10:30
-            td.text-center(rowspan='1') BREAK (20 mins)
-          tr
-            td.text-center 10:30-10:50
-            td.text-center(rowspan='1') 參與者提案，確定全天議程（全體）
-          tr
-            td.text-center.alert-info
-              | 10:50 - 11:30
-              br
-              |                       11:35 - 12:15
-            td.text-center.alert-info
-              div
-                h5 UnConfernece!
-                |                         五間會議室，由參與者自主提案分組進行
-          tr
-            td.text-center 12:15-13:30
-            td.text-center(rowspan='1') LUNCH (70 mins)
-          tr
-            td.text-center.alert-info
-              | 13:30 - 14:10
-              br
-              |                       14:15 - 14:55
-            td.text-center.alert-info
-              div
-                h5 UnConfernece!
-                |                         五間會議室，由參與者自主提案分組進行
-          tr
-            td.text-center 15:00 - 15:40
-            td.text-center(rowspan='1') TEA BREAK (40 mins)
-          tr
-            td.text-center.alert-info
-              | 15:45 - 16:25
-              br
-              |                       16:30-17:10
-            td.text-center.alert-info
-              div
-                h5 UnConfernece!
-                |                         五間會議室，由參與者自主提案分組進行
-          tr
-            td.text-center(colspan='1')
-              div 17:15 - 18:00
-            td.text-center
-              div
-                | Lightning talks (45 mins)
-                br
-                |                         Closing
 // vi:et
