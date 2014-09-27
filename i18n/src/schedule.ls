@@ -259,8 +259,8 @@ schedule = do
       0: "主持人：鄧東波"
       1: "與談貴賓：朱雨其、彭啟明、詹順貴"
     list_en:
-      0: "主持人：鄧東波"
-      1: "與談貴賓：朱雨其、彭啟明、詹順貴"
+      0: "Moderator: Dongpo Deng"
+      1: "Panelist: Y.C. CHU, C.M. PENG, Thomas Shun-Kuei CHAN"
     language: "zh"
     interpretation: "en"
   r3_1440:
