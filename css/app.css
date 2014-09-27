@@ -32,3 +32,48 @@
   margin-top: 20px;
   margin-bottom: 10px;
 }
+#schedule {
+  border-left: 1px solid;
+  border-top: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+}
+#schedule .time,
+#schedule .topic {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  padding: 5px;
+  text-align: center;
+}
+#schedule .time {
+  flex: 0 1 8%;
+}
+#schedule .topic {
+  flex: 1 1 23%;
+}
+#schedule .topic.common {
+  flex: 1 1 92%;
+}
+#schedule .topic.row2 {
+  border-bottom: 0;
+}
+#schedule .track {
+  display: none;
+}
+@media (max-width: 768px) {
+  #schedule {
+    flex-direction: column;
+  }
+  #schedule .time,
+  #schedule .topic,
+  #schedule .topic.common {
+    flex: 1 1 auto;
+  }
+  #schedule .track {
+    background-color: #ff0;
+    display: inline-block;
+  }
+}
+span.fui-user {
+  padding-right: 5px;
+}
