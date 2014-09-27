@@ -256,10 +256,10 @@ schedule = do
     title_zh: "環境議程座談"
     title_en: "環境議程座談"
     list_zh:
-      0: "主持人：鄧東坡"
+      0: "主持人：鄧東波"
       1: "與談貴賓：朱雨其、彭啟明、詹順貴"
     list_en:
-      0: "主持人：鄧東坡"
+      0: "主持人：鄧東波"
       1: "與談貴賓：朱雨其、彭啟明、詹順貴"
     language: "zh"
     interpretation: "en"
