@@ -1,0 +1,134 @@
+extends ../layout/page
+
+mixin get(obj,name)
+  | #{obj[name+"_"+lang] || obj[name]}
+
+mixin track_title(time)
+  .time 主題
+  each v, i in ['danger','success','warning','info']
+    - var obj = i18n["r"+(i+1)+"_"+time+"_topic"]
+    .topic(class="alert-"+v)
+      h5: +get(obj,"title")
+      span: +get(obj,"subtitle")
+      if obj["badge"]
+        span.badge= obj["badge"]
+
+mixin track_desc(time)
+  .time 主題介紹
+  each i in [1,2,3,4]
+    - var name = "r"+i+"_"+time+"_topic"
+    - var desc = i18n[name]["desc_"+lang] || i18n[name]["desc"]
+    .topic
+      each p in desc
+        p= p
+
+mixin timeslot(head,time)
+  .time #{head}
+  each i in [1,2,3,4]
+    - var obj = i18n["r"+i+"_"+time]
+    if obj
+      - var row = obj["row"] || 1
+      .topic(class="row"+row)
+        - var title = obj["title_"+lang] || obj["title"]
+        if title == "TBD"
+          span.text-muted= title
+        else
+          strong= title
+        br
+        - var list = obj["list_"+lang] || obj["list"]
+        if list
+          ul
+            each p in list
+              li
+                != p
+        else
+          span.fui-user
+          |  
+          span.text-primary
+            +get(obj,"speaker")
+          span.badge
+            +get(obj,"tag")
+    else
+      .topic
+
+mixin timeslots(head, time)
+  tr
+    td.text-center #{head}
+    each room in rooms
+      - var obj = i18n[room + "_" + time]
+      if obj
+        - var row = obj["row"] || 1
+        td(rowspan=row)
+          - title = obj["title_" + lang] || obj["title"]
+          if title == "TBD"
+            span.text-muted= title
+          else
+            strong= title
+          br
+          - var list = obj["list_"+lang] || obj["list"]
+          if list
+            ul
+              each p in list
+                li
+                  != p
+          else
+            span.fui-user
+            |  
+            span.text-primary
+              +get(obj, "speaker")
+            span.badge
+              +get(obj, "tag")
+
+block vars
+  - var tabName = "議程"
+block title
+  //h5(style='line-height:250%;')
+    img(src='/images/icons/png/s-date.png', align='middle')
+    |  2014/11/8 
+    img(src='/images/icons/png/s-map.png', align='middle')
+    |  台北市南港區中央研究院人文館
+
+block content
+  - var rooms = ["r1","r2","r3","r4"]
+  include ../../i18n/gen/schedule.jade
+  .row
+    .col-sm-12
+      #schedule
+        .time 9:00 - 9:10
+        .topic.common
+          h5 #{i18n["opening_"+lang] || i18n["opening"]}
+          span.fui-user
+          |  
+          span.text-primary
+            b clkao
+        .time 9:10 - 9:40
+        .topic.common: h5 Keynote
+        .time 9:40 - 9:50
+        .topic.common: h5 BREAK
+          span(style="font-size:14px") (10 mins)
+        +track_title("am")
+        +track_desc("am")
+        +timeslot("9:50 - 10:20","0950")
+        +timeslot("10:20 - 10:50","1020")
+        .time 10:50 - 11:20
+        .topic.common: h5 BREAK
+          span(style="font-size:14px") (30 mins)
+        +timeslot("11:20 - 11:50","1120")
+        +timeslot("11:50 - 12:20","1150")
+        .time 12:20 - 13:30
+        .topic.common: h5 LUNCH
+          span(style="font-size:14px") (70 mins)
+
+        +track_title("pm")
+        +track_desc("pm")
+        +timeslot("13:30 - 14:00","1330")
+        +timeslot("14:10 - 14:40","1410")
+        +timeslot("14:40 - 15:10","1440")
+        .time 15:10 - 15:50
+        .topic.common: h5 TEA BREAK
+          span(style="font-size:14px") (40 mins)
+        .time 15:50 - 17:00
+        .topic.common: h5 Lightning talks
+          span(style="font-size:14px") (70 mins)
+
+// vi:et

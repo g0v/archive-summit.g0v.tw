@@ -14,8 +14,9 @@ mixin topicslots_title(time)
           +get(obj, "title")
         span
           +get(obj, "subtitle")
-        if obj["badge"]
-          span.badge= obj["badge"]
+        - var badge = obj["badge_"+lang] || obj["badge"]
+        if badge
+          span.badge #{badge}
 
 mixin topicslots_desc(time)
   tr
@@ -58,6 +59,7 @@ mixin timeslots(head, time)
 block vars
   - var tabName = "議程"
 block title
+  h2 Schedule
   //h5(style='line-height:250%;')
     img(src='/images/icons/png/s-date.png', align='middle')
     |  2014/11/8 
@@ -82,22 +84,21 @@ block content
         span.text-danger 
          b 第二天 Unconference 需另報名。        
       table.table.table-bordered.table-striped
-        col(width='101')
-        col(width='234', span='4')
         tr
           td.text-center(width='138') 9:00 - 9:10
           td.text-center(colspan='4')
             h5 #{i18n["opening_"+lang] || i18n["opening"]}
             span.fui-user
+            |  
             span.text-primary
               b  高嘉良 clkao
         tr
           td.text-center 9:10 - 9:40
           td.text-center(colspan='4')
-            h5 Keynote 
-            span.fui-user 
+            h5 Keynote
+            span.fui-user
             span.text-primary
-              b  David Eaves
+              b: a(href="http://eaves.ca/about-david/") David Eaves
         tr
           td.text-center 9:40 - 9:50
           td.text-center(colspan='4')
@@ -223,3 +224,4 @@ block content
                 | Lightning talks (45 mins)
                 br
                 |                         Closing
+// vi:et
