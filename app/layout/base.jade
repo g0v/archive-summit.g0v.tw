@@ -67,8 +67,12 @@ html(lang='zh-tw')
                 img(src='/images/icons/svg/roundicons free set-18.svg')
                 |  交通
             li
-              a(href='/en-US/index.html')
-                .noimg English
+              if lang == 'zh'
+                a(href='/en-US/index.html')
+                  .noimg English
+              if lang == 'en'
+                a(href='/zh-TW/index.html')
+                  .noimg 中文
         // /.navbar-collapse
       // /.container
     // Image Background Page Header
