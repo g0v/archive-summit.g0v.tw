@@ -57,3 +57,4 @@ devDependencies:
   'connect': '^2.19.1'
   'gulp-jsonminify': '^0.0.1'
   'gulp-rename': '^1.2.0'
+  'gettext-parser': '^0.2.0'
