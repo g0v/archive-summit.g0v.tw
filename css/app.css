@@ -17,8 +17,9 @@
   text-align: center;
 }
 .navbar-fixed-top .navbar-nav li img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar-fixed-top .navbar-nav li a {
@@ -76,4 +77,22 @@
 }
 span.fui-user {
   padding-right: 5px;
+}
+span.lang {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  margin: 5px;
+  font-size: 12px;
+  line-height: 1;
+  color: #111;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #008000;
+}
+span.lang.interpreted {
+  background: #ddd;
+  border-color: #008000;
 }
