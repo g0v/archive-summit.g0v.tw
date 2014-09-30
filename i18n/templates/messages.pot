@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2014-09-30 02:55+0000\n"
+
+#: app/layout/base.jade:52
+msgid "Schedule"
+msgstr ""
+
+#: app/layout/base.jade:56
+msgid "Speakers"
+msgstr ""
+
+#: app/layout/base.jade:60
+msgid "News"
+msgstr ""
+
+#: app/layout/base.jade:64
+msgid "Sponsors"
+msgstr ""
+
+#: app/layout/base.jade:68
+msgid "Venue"
+msgstr ""

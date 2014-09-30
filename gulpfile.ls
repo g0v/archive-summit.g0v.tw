@@ -17,25 +17,36 @@ gulp.task 'i18n', ->
     .pipe gulp.dest "i18n/gen"
 
 gulp.task 'translations', <[i18n]> ->
-  require! <[fs]>
+  require! <[fs gettext-parser]>
+  # XXX: gettext process and update
+  # jsxgettext  --join-existing=true  --keyword=_ -L jade --output-dir=i18n/templates --from-code=utf-8 --output=messages.pot `find app -name '*.jade'`
+
+  # msgmerge -U i18n/zh-tw/messages.po i18n/templates/messages.pot
+  # msgmerge -U i18n/en-us/messages.po i18n/templates/messages.pot
 
   # we don't have md files for now. 
   # so unlike g0v.tw, we list langs explicitly instead of readDir('md').
   langs = <[zh-tw en-us]>
-  for lang in langs
+  for let lang in langs
     real-lang = lang.replace /(\w+-)(\w+)/, (,$1,$2) -> $1+$2.toUpperCase!
     lang-in-jade = lang.replace /-.+$/, ""
+    po = gettextParser.po.parse fs.readFileSync(path.resolve("i18n/#lang/messages.po")), "utf-8"
+    translations = {[msgid, msgstr.join ''] for msgid, {msgstr} of po.translations['']}
 
     gulp.src 'app/partials/*.jade'
       .pipe gulp-jade do
         locals:
           lang: lang-in-jade
+          _: -> translations[it] || it
+          translations: translations
       .pipe gulp.dest "#{build_path}/#{real-lang}"
 
 gulp.task 'html', <[translations]>, ->
   gulp.src 'app/*.jade'
     .pipe gulp-plumber!
-    .pipe gulp-jade!
+    .pipe gulp-jade do
+      locals:
+        _: -> it
     .pipe gulp.dest "#{build_path}"
 
 require! <[gulp-bower main-bower-files gulp-filter]>
