@@ -61,14 +61,7 @@ mixin timeslots(head, time)
             +get(obj, "tag")
 
 block vars
-  - var tabName = "議程"
-block title
-  h2 Schedule
-  //h5(style='line-height:250%;')
-    img(src='/images/icons/png/s-date.png', align='middle')
-    |  2014/11/8 
-    img(src='/images/icons/png/s-map.png', align='middle')
-    |  台北市南港區中央研究院人文館
+  - var tabName = _("Schedule")
 
 block content
   - var rooms = ["r1","r2","r3","r4"]
