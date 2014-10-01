@@ -19,7 +19,7 @@ gulp.task 'i18n', ->
 gulp.task 'translations', <[i18n]> ->
   require! <[fs gettext-parser]>
   # XXX: gettext process and update
-  # jsxgettext  --join-existing=true  --keyword=_ -L jade --output-dir=i18n/templates --from-code=utf-8 --output=messages.pot `find app -name '*.jade'`
+  # jsxgettext  --join-existing --keyword _ -L jade --output=i18n/templates/messages.pot `find app -name '*.jade'`
 
   # msgmerge -U i18n/zh-tw/messages.po i18n/templates/messages.pot
   # msgmerge -U i18n/en-us/messages.po i18n/templates/messages.pot

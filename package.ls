@@ -58,3 +58,4 @@ devDependencies:
   'gulp-jsonminify': '^0.0.1'
   'gulp-rename': '^1.2.0'
   'gettext-parser': '^0.2.0'
+  'jsxgettext': 'git://github.com/clkao/jsxgettext#jade-second-attribute'

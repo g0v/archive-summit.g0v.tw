@@ -54,9 +54,9 @@ mixin timeslots(head, time)
             span.text-primary
               +get(obj, "speaker")
           if obj.language
-            span.lang= obj.language
+            span.lang= _(obj.language)
           if obj.interpretation
-            span.lang.interpreted(title="interpreted")= obj.interpretation
+            span.lang.interpreted(title=_('Interpreted'))= _(obj.interpretation)
           span.badge
             +get(obj, "tag")
 
@@ -103,8 +103,8 @@ block content
             |  
             span.text-primary
               b  高嘉良 clkao
-              span.lang ZH/EN
-              span.lang.interpreted(title="interpreted") EN/ZH
+              span.lang= _('ZH/EN')
+              span.lang.interpreted(title=_("Interpreted"))= _('EN/ZH')
         tr
           td.text-center 9:10 - 9:40
           td.text-center(colspan='4')
@@ -112,8 +112,8 @@ block content
             span.fui-user
             span.text-primary
               b: a(href="http://eaves.ca/about-david/") David Eaves
-              span.lang EN
-              span.lang.interpreted(title="interpreted") ZH
+              span.lang= _('EN')
+              span.lang.interpreted(title=_("Interpreted"))= _('ZH')
         tr
           td.text-center 9:40 - 9:50
           td.text-center(colspan='4')

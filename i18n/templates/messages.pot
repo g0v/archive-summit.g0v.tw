@@ -2,29 +2,55 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2014-09-30 02:55+0000\n"
+"POT-Creation-Date: 2014-10-01 00:28+0000\n"
 
-#: app/layout/base.jade:52
+#: app/layout/base.jade:53
+#: app/layout/base.jade:54
 msgid "Schedule"
 msgstr ""
 
-#: app/layout/base.jade:56
+#: app/layout/base.jade:57
+#: app/layout/base.jade:58
 msgid "Speakers"
 msgstr ""
 
-#: app/layout/base.jade:60
+#: app/layout/base.jade:61
+#: app/layout/base.jade:62
 msgid "News"
 msgstr ""
 
-#: app/layout/base.jade:64
+#: app/layout/base.jade:65
+#: app/layout/base.jade:66
 msgid "Sponsors"
 msgstr ""
 
-#: app/layout/base.jade:68
+#: app/layout/base.jade:69
+#: app/layout/base.jade:70
 msgid "Venue"
+msgstr ""
+
+#: app/partials/schedule.jade:59
+msgid "Interpreted"
+msgstr ""
+
+#: app/partials/schedule.jade:106
+msgid "ZH/EN"
+msgstr ""
+
+#: app/partials/schedule.jade:107
+msgid "EN/ZH"
+msgstr ""
+
+#: app/partials/schedule.jade:115
+msgid "EN"
+msgstr ""
+
+#: app/partials/schedule.jade:116
+msgid "ZH"
 msgstr ""
