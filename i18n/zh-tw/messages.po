@@ -44,8 +44,8 @@ msgstr "英/華"
 
 #: app/partials/schedule.jade:115
 msgid "EN"
-msgstr "華"
+msgstr "英"
 
 #: app/partials/schedule.jade:116
 msgid "ZH"
-msgstr "英"
+msgstr ""
