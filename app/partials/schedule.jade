@@ -53,18 +53,15 @@ mixin timeslots(head, time)
             |  
             span.text-primary
               +get(obj, "speaker")
-            span.badge
-              +get(obj, "tag")
+          if obj.language
+            span.lang= _(obj.language)
+          if obj.interpretation
+            span.lang.interpreted(title=_('Interpreted'))= _(obj.interpretation)
+          span.badge
+            +get(obj, "tag")
 
 block vars
-  - var tabName = "議程"
-block title
-  h2 Schedule
-  //h5(style='line-height:250%;')
-    img(src='/images/icons/png/s-date.png', align='middle')
-    |  2014/11/8 
-    img(src='/images/icons/png/s-map.png', align='middle')
-    |  台北市南港區中央研究院人文館
+  - var tabName = _("Schedule")
 
 block content
   - var rooms = ["r1","r2","r3","r4"]
@@ -77,12 +74,13 @@ block content
         |  2014/11/8 
         img(src='/images/icons/png/s-map.png', align='middle')
         |  台北市南港區中央研究院人文社會科學館
-      .alert.alert-success VIP 請於 9/30 前完成報名，邀請碼逾期將失效。一般票 
-        span.text-danger 
-         b 10/1 中午
-        | 開放報名，
-        span.text-danger 
-         b 第二天 Unconference 需另報名。        
+      .alert.alert-warning
+        p 即時口譯可自備電腦及耳機由網路收聽，或由現場限量之無線耳機接收。
+        p Live interpretation service avaialble via internet (bring your laptop and headsets!) as well as limited wireless headsets.
+        p
+          | 議程語言說明 / Session Language Legend
+          span.lang 議程主要語言 / Primary Session Language
+          span.lang.interpreted 即時口譯語言 / Live Interpretation Available
       table.table.table-bordered.table-striped
         tr
           td.text-center(width='138') 9:00 - 9:10
@@ -92,6 +90,8 @@ block content
             |  
             span.text-primary
               b  高嘉良 clkao
+              span.lang= _('ZH/EN')
+              span.lang.interpreted(title=_("Interpreted"))= _('EN/ZH')
         tr
           td.text-center 9:10 - 9:40
           td.text-center(colspan='4')
@@ -99,6 +99,8 @@ block content
             span.fui-user
             span.text-primary
               b: a(href="http://eaves.ca/about-david/") David Eaves
+              span.lang= _('EN')
+              span.lang.interpreted(title=_("Interpreted"))= _('ZH')
         tr
           td.text-center 9:40 - 9:50
           td.text-center(colspan='4')
@@ -148,6 +150,7 @@ block content
               span(style='font-size:14px;') (70 mins)
               br
               span(style='font-size:18px;') 閃電秀由現場參與者當天報名，每講 5 分鐘
+              span.lang ZH/EN
         tr  
       h5 Day 2 / Unconference 開放工作坊
         p
