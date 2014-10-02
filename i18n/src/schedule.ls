@@ -217,8 +217,9 @@ schedule = do
       0: "<strong>Ｅ論壇的同步新聞寫作</strong> <span class='fui-user'/><span class='text-primary'>吳宗泰</span>"
       1: "<strong>去中心化之下的主流媒體角色</strong> <span class='fui-user'/><span class='text-primary'>陳守國</span>"
       2: "<strong>傳統媒體作為媒介、行動者與獲益者</strong> <span class='fui-user'/><span class='text-primary'>鄒景雯</span>"
-      3: "<strong>社會運動中的開源新媒體嘗試</strong><span class='fui-user'/><span class='text-primary'>瞿筱葳</span>"
-      4: "<strong>TBD</strong> <span class='fui-user'/><span class='text-primary'>嚴婉玲</span>" 
+      3: "<strong>太陽花的國際媒體宣傳</strong> <span class='fui-user'/><span class='text-primary'>鄭凱榕</span>" 
+      4: "<strong>社會運動中的開源新媒體嘗試</strong><span class='fui-user'/><span class='text-primary'>瞿筱葳</span>"
+      5: "<strong>TBD</strong> <span class='fui-user'/><span class='text-primary'>嚴婉玲</span>" 
     list_en:
       0: "Ｅ論壇的同步新聞寫作 - 吳宗泰"
       1: "去中心化之下的主流媒體角色 - 陳守國"
@@ -273,10 +274,10 @@ schedule = do
     title_en: "媒體與學運議程座談"
     list_zh:
       0: "主持人：蕭新煌"
-      1: "與談貴賓：吳宗泰、陳守國、鄒景雯、瞿筱葳、嚴婉玲"
+      1: "與談貴賓：吳宗泰、陳守國、鄒景雯、鄭凱榕、瞿筱葳、嚴婉玲"
     list_en:
       0: "主持人：蕭新煌"
-      1: "與談貴賓：吳宗泰、陳守國、鄒景雯、瞿筱葳"
+      1: "與談貴賓：吳宗泰、陳守國、鄒景雯、鄭凱榕、瞿筱葳、嚴婉玲"
     language: "ZH"
   r2_1440:
     title_zh: "環境議程座談"
