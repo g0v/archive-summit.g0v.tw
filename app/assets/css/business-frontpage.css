@@ -12,7 +12,7 @@ body {
 
 .business-header {
 	width: 100%;
-	height: 450px;
+	height: 460px;
 	background: url(../images/intro-bg.jpg) no-repeat top center scroll;
 		-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -41,8 +41,11 @@ footer {
 }
 .mainvi {
 	background-image: url(../images/main.png);
-	background-position: right top;
+	background-position: right bottom;
 	background-repeat: no-repeat;
+	-moz-background-size: contain;
+	background-size: contain;
+	-o-background-size: contain;
 	height: 560px;
 	}
 @media (max-width: 767px) {
