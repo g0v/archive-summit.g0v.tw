@@ -3,6 +3,9 @@ extends ../layout/page
 mixin get(obj,name)
   | #{obj[name+"_"+lang] || obj[name]}
 
+mixin getByLang(obj,name,bylang)
+  | #{obj[name+"_"+bylang] || obj[name]}
+  
 mixin topicslots_title(time)
   //- TODO use css to color block and set width
   tr
