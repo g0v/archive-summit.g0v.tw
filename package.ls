@@ -54,3 +54,4 @@ devDependencies:
   'jsxgettext': 'git://github.com/clkao/jsxgettext#jade-second-attribute'
   'gulp-concat-po': '^0.1.0'
   'gulp-xgettext': '^0.2.1'
+  'gulp-exec': "^2.1.1"

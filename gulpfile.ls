@@ -1,5 +1,5 @@
 require! <[gulp gulp-util express connect-livereload gulp-jade gulp-livereload path]>
-require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber gulp-rename gulp-jsonminify gulp-xgettext gulp-concat-po]>
+require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber gulp-rename gulp-jsonminify gulp-xgettext gulp-concat-po gulp-exec]>
 
 gutil = gulp-util
 
@@ -25,14 +25,15 @@ gulp.task 'pot' ->
     .pipe gulp-concat-po 'messages.pot'
     .pipe gulp.dest "i18n/templates"
 
+gulp.task 'update-po' ->
+  console.log \meh
+  gulp.src 'i18n/*/messages.po'
+    .pipe gulp-exec 'msgmerge -U <%= file.path %> i18n/templates/messages.pot'
+    .pipe gulp-exec.reporter {+err, +stderr, +stdout}
+
+
 gulp.task 'translations', <[i18n]> ->
   require! <[fs gettext-parser]>
-  # XXX: gettext process and update
-  # jsxgettext  --join-existing --keyword _ -L jade --output=i18n/templates/messages.pot `find app -name '*.jade'`
-
-  # msgmerge -U i18n/zh-tw/messages.po i18n/templates/messages.pot
-  # msgmerge -U i18n/en-us/messages.po i18n/templates/messages.pot
-
   # we don't have md files for now. 
   # so unlike g0v.tw, we list langs explicitly instead of readDir('md').
   langs = <[zh-tw en-us]>

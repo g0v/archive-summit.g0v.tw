@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-01 00:28+0000\n"
+"POT-Creation-Date: 2014-10-04 09:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -10,42 +10,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: app/layout/base.jade:53 app/layout/base.jade:54
+#: layout/base.jade:53 layout/base.jade:54 partials/schedule.jade:67
 msgid "Schedule"
 msgstr "議程"
 
-#: app/layout/base.jade:57 app/layout/base.jade:58
+#: layout/base.jade:57 layout/base.jade:58 partials/speaker.jade:3
 msgid "Speakers"
 msgstr "講者"
 
-#: app/layout/base.jade:61 app/layout/base.jade:62
+#: layout/base.jade:61 layout/base.jade:62
 msgid "News"
 msgstr "新聞"
 
-#: app/layout/base.jade:65 app/layout/base.jade:66
+#: layout/base.jade:65 layout/base.jade:66 partials/sponsor.jade:3
 msgid "Sponsors"
 msgstr "贊助"
 
-#: app/layout/base.jade:69 app/layout/base.jade:70
+#: layout/base.jade:69 layout/base.jade:70 partials/transport.jade:3
 msgid "Venue"
 msgstr "交通"
 
-#: app/partials/schedule.jade:59
+#: partials/schedule.jade:62
 msgid "Interpreted"
 msgstr "即時口譯"
 
-#: app/partials/schedule.jade:106
+#: partials/schedule.jade:96
 msgid "ZH/EN"
 msgstr "華/英"
 
-#: app/partials/schedule.jade:107
+#: partials/schedule.jade:97
 msgid "EN/ZH"
 msgstr "英/華"
 
-#: app/partials/schedule.jade:115
+#: partials/schedule.jade:105
 msgid "EN"
 msgstr "英"
 
-#: app/partials/schedule.jade:116
+#: partials/schedule.jade:106
 msgid "ZH"
 msgstr "華"
