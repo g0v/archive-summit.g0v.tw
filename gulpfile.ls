@@ -1,5 +1,5 @@
 require! <[gulp gulp-util express connect-livereload gulp-jade gulp-livereload path]>
-require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber gulp-rename gulp-jsonminify]>
+require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber gulp-rename gulp-jsonminify gulp-xgettext gulp-concat-po]>
 
 gutil = gulp-util
 
@@ -15,6 +15,15 @@ gulp.task 'i18n', ->
     .pipe gulp-insert.prepend '- var i18n = '
     .pipe gulp-rename extname: '.jade'
     .pipe gulp.dest "i18n/gen"
+
+gulp.task 'pot' ->
+  gulp.src 'app/**/*.jade'
+    .pipe gulp-xgettext do
+      language: 'jade'
+      keywords: [name: '_']
+      bin: 'node_modules/.bin/jsxgettext'
+    .pipe gulp-concat-po 'messages.pot'
+    .pipe gulp.dest "i18n/templates"
 
 gulp.task 'translations', <[i18n]> ->
   require! <[fs gettext-parser]>

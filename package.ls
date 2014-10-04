@@ -52,3 +52,5 @@ devDependencies:
   'gulp-rename': '^1.2.0'
   'gettext-parser': '^0.2.0'
   'jsxgettext': 'git://github.com/clkao/jsxgettext#jade-second-attribute'
+  'gulp-concat-po': '^0.1.0'
+  'gulp-xgettext': '^0.2.1'
