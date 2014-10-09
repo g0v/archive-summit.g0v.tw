@@ -2,7 +2,7 @@ extends ../layout/page
 block vars
   - var tabName = _("Sponsors")
 block content
-  .row
+  //.row
     .col-md-12
       | 如果您的企業或組織，正期待以正面能量改變社會，歡迎一起來參與這場重要的高峰會，您的一份付出，將有可能讓台灣政府及社會邁向更開放、更前進的未來。
       | 贊助方案：
@@ -15,35 +15,37 @@ block content
       |  (hcchien@gmail.com)
   hr
   .row
-    // company1
-    .well
-      .media.col-md-3
-        figure.pull-left
-          img.media-object.img-rounded.img-responsive(src='/images/sponsor/footer-w.png')
-      .col-md-9
-        h4.list-group-item-heading 天氣風險管理開發公司
-        p.list-group-item-text
-          | WeatherRisk，天氣風險管理開發，是台灣唯一利用氣象資料創業的公司，配合專業知識與經驗，長時間經營取得多張個人與團體氣象及海象預報證照。雖處資源有限的新創環境，仍將服務深入各行業，客戶包括超過300家國內外企業與公家單位。透過氣象數據的處理、開源程式的應用及視覺設計的加值，提供各類氣象相關問題的解決方案。面對氣候變遷下的極端天氣日益增多，以社會企業的理念，希望由資料服務保障大眾降低風險。
-      .clearfix
     // company2
     .well
       .media.col-md-3
         figure.pull-left
-          img.media-object.img-rounded.img-responsive(src='/images/sponsor/logo-hct.png')
+          a(href='https://www.hct.com.tw', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/logo-hct.png')
       .col-md-9
         h4.list-group-item-heading 新竹物流
         p.list-group-item-text  資訊開放！面對猶豫，轉身相信，就算掙扎前進，新竹物流願與台灣循永續之路。                
       .clearfix
-    // company3
+    // company7
     .well
       .media.col-md-3
         figure.pull-left
-          img.media-object.img-rounded.img-responsive(src='/images/sponsor/SunlightFoundation-logo.png')
+          a(href='http://opendata.tca.org.tw/', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/tca.png')
       .col-md-9
-        h4.list-group-item-heading Sunlight
+        h4.list-group-item-heading TCA
         p.list-group-item-text
-          | Sunlight is nonpartisan nonprofit organization based in
-          | the United States, which uses technology to make government more transparent and accountable.
+          | 經濟部工業局-開放資料(Open Data)應用推動計畫，期望透過Open Data之需求彙整與推廣，鼓勵業界發展開放資料應用，進而帶動各項創新服務，活化整體社會經濟，並藉由多元推廣促進知識學習，有效提升產業對於開放資料(Open Data)的觀念與認知，同時規畫技術、法規等環境面之建立與協助，奠定後續發展之基礎。預計透過本計畫之推動，將有效擴散Open Data各項產業應用，使政府與產業互利相榮，達成增進政府施政透明、民眾生活品質、創造工作機會與驅動經濟活力，創造台灣產業新價值之最終目標。
+      .clearfix
+    // company1
+    .well
+      .media.col-md-3
+        figure.pull-left
+          a(href='http://www.tenki.tw/company/', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/footer-w.png')
+      .col-md-9
+        h4.list-group-item-heading 天氣風險管理開發公司
+        p.list-group-item-text
+          | WeatherRisk，天氣風險管理開發，是台灣唯一利用氣象資料創業的公司，配合專業知識與經驗，長時間經營取得多張個人與團體氣象及海象預報證照。雖處資源有限的新創環境，仍將服務深入各行業，客戶包括超過300家國內外企業與公家單位。透過氣象數據的處理、開源程式的應用及視覺設計的加值，提供各類氣象相關問題的解決方案。面對氣候變遷下的極端天氣日益增多，以社會企業的理念，希望由資料服務保障大眾降低風險。
       .clearfix
     // company4
     .well
@@ -56,20 +58,6 @@ block content
         p.list-group-item-text
           | 網絡行動科技（NETivism）自許為從數位公益出發的社會企業，5 年多來專注為非營利組織提供以自由軟體為基礎的資訊科技應用解決方案。
           | 我們認為網路資訊科技能夠促成社會變革，影響文化、政治、環境等公共議題，帶來娛樂與商業行為之外的改變。非營利組織工作者可以在我們以及其他有志於此的公司和社群的努力下，善用網際網路深化社會各種的力量，激勵人們採取行動，創造出更好的社會。
-      .clearfix
-    // company5
-    .well
-      .media.col-md-3
-        figure.pull-left
-          a(href='http://www.etusolution.com/', target='_blank')
-            img.media-object.img-rounded.img-responsive(src='/images/sponsor/logo-etu.png')
-      .col-md-9
-        h4.list-group-item-heading Etu (知意圖)
-        p.list-group-item-text
-          | Etu 以亞洲為舞臺，是專為企業提供 Big Data End-to-End 解決方案的領導品牌。Etu 致力為產業客戶發展完整的軟、硬體，以及整合後的資料處理、分析，與未來擴充時所需的整體解決方案。協助客戶探勘企業內部的巨量多結構資料價值，使其能簡易地擷取潛藏在其中的商業價值。
-          br
-          | Etu 團隊成軍於 2011 年，由一群累計擁有 30 年以上 Big Data 技術經驗的專業人士所組成，以共同的巨量資料分析夢想而相聚，並深知分散式運算架構、軟體為王，與自動化管理，才是雲端運算的真諦。早在 Apache Hadoop 誕生以前，Etu 核心成員就已經深入 Big Data 處理技術的發展，參與過世界級的大規模線上服務，與系統管理營運，在商業環境中運行過數百到上萬個節點的服務叢集，實現了先進技術的產業實踐驗證。Etu 數位成員擁有業界目前稀有的 Hadoop 專業認證：Cloudera Certified Developer / Administrator for Apache Hadoop。更多關於 Etu 訊息，請上 Etu 官網：
-          a(href='http://www.etusolution.com/', target='_blank') www.etusolution.com
       .clearfix
     // company6
     .well
@@ -85,28 +73,45 @@ block content
           | KKBOX 致力為音樂愛好者創造最豐富精彩的音樂體驗，並為音樂人及其音樂打造最創新有力的宣傳平台。憑藉著領先的技術與策略合作夥伴，未來KKBOX 將前進更多海外市場，將亞洲線上音樂品牌帶到世界各地。更多資訊請見：：
           a(href='http://www.kkbox.com/about/', target='_blank') www.kkbox.com/about
       .clearfix
-    // company7
+    // company5
     .well
       .media.col-md-3
         figure.pull-left
-          a(href='http://www.kkbox.com/about/', target='_blank')
-            img.media-object.img-rounded.img-responsive(src='/images/sponsor/tca.png')
+          a(href='http://www.etusolution.com/', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/logo-etu.png')
       .col-md-9
-        h4.list-group-item-heading TCA
+        h4.list-group-item-heading Etu (知意圖)
         p.list-group-item-text
-          | 經濟部工業局-開放資料(Open Data)應用推動計畫，期望透過Open Data之需求彙整與推廣，鼓勵業界發展開放資料應用，進而帶動各項創新服務，活化整體社會經濟，並藉由多元推廣促進知識學習，有效提升產業對於開放資料(Open Data)的觀念與認知，同時規畫技術、法規等環境面之建立與協助，奠定後續發展之基礎。預計透過本計畫之推動，將有效擴散Open Data各項產業應用，使政府與產業互利相榮，達成增進政府施政透明、民眾生活品質、創造工作機會與驅動經濟活力，創造台灣產業新價值之最終目標。
+          | Etu 以亞洲為舞臺，是專為企業提供 Big Data End-to-End 解決方案的領導品牌。Etu 致力為產業客戶發展完整的軟、硬體，以及整合後的資料處理、分析，與未來擴充時所需的整體解決方案。協助客戶探勘企業內部的巨量多結構資料價值，使其能簡易地擷取潛藏在其中的商業價值。
+          br
+          | Etu 團隊成軍於 2011 年，由一群累計擁有 30 年以上 Big Data 技術經驗的專業人士所組成，以共同的巨量資料分析夢想而相聚，並深知分散式運算架構、軟體為王，與自動化管理，才是雲端運算的真諦。早在 Apache Hadoop 誕生以前，Etu 核心成員就已經深入 Big Data 處理技術的發展，參與過世界級的大規模線上服務，與系統管理營運，在商業環境中運行過數百到上萬個節點的服務叢集，實現了先進技術的產業實踐驗證。Etu 數位成員擁有業界目前稀有的 Hadoop 專業認證：Cloudera Certified Developer / Administrator for Apache Hadoop。更多關於 Etu 訊息，請上 Etu 官網：
+          a(href='http://www.etusolution.com/', target='_blank') www.etusolution.com
+      .clearfix
+    // company3
+    .well
+      .media.col-md-3
+        figure.pull-left
+          a(href='http://sunlightfoundation.com/', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/SunlightFoundation-logo.png')
+      .col-md-9
+        h4.list-group-item-heading Sunlight Foundation
+        p.list-group-item-text
+          | Sunlight is nonpartisan nonprofit organization based in
+          | the United States, which uses technology to make government more transparent and accountable.
       .clearfix
     h4 合作夥伴
     // company1
     .well
       .media.col-md-3
         figure.pull-left
-          a(href='#')
+          a(href='http://wolftea.com/', target="_blank")
             img.media-object.img-rounded.img-responsive(src='/images/sponsor/wolftea.png')
-      .col-md-9
-        h4.list-group-item-heading 琅茶
-        p.list-group-item-text
-          | 「琅茶」想把台灣茶細膩之美，傳遞給全世界！堅持「此刻此地・獨一無二」，每季尋找上質茶園在最適天氣時辰，由優秀茶師採製的「單品茶」，不混茶，唯有如此才能認識每片山林獨特純粹的美好。 三位創辦人，因為愛茶，擁抱「活在當下」的哲學，邀你一起感受與茶的「一期一會」，找到屬於你琅琅上口的好茶。
+        p: h4.list-group-item-heading 琅茶
+      .media.col-md-3
+        figure.pull-left
+          a(href='http://technews.tw/', target="_blank")
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/technews.png')
+        p: h4.list-group-item-heading TechNews
       .clearfix
 block footer
   // Footer
