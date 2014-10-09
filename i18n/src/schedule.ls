@@ -133,10 +133,10 @@ schedule = do
     speaker_en: "薛良斌"
     language: "ZH"
   r4_1120:
-    title_zh: "TBD"
-    title_en: "TBD"
-    speaker_zh: ""
-    speaker_en: ""
+    title_zh: "你媽知道你在看假新聞嗎"
+    title_en: "Does your mom know you are watching fake news"
+    speaker_zh: "ggm"
+    speaker_en: "ggm"
   r1_1150:
     title_zh: "開放國會議程座談"
     title_en: "Open Parliament Panel"
