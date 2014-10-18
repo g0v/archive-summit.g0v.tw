@@ -55,8 +55,8 @@ schedule = do
     language: "EN"
     interpretation: "ZH"
   r2_0950:
-    title_zh: "TBD"
-    title_en: "TBD"
+    title_zh: "Democracy Upgrade"
+    title_en: "Democracy Upgrade"
     speaker_zh: "Gregory Engels"
     speaker_en: "Gregory Engels"
     tag_zh: "海盜黨/德"
