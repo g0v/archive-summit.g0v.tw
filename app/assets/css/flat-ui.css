@@ -2361,7 +2361,7 @@ select[multiple].navbar-form .btn {
 .navbar-inverse .navbar-collapse {
   border-color: #2f4154;
   border-width: 2px;
-  font-family: 微軟正黑體;
+  font-family: "Source Han Sans TC", "Noto Sans", "微軟正黑體", Helvetica, Arial, sans-serif;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #ffffff;
