@@ -273,7 +273,7 @@ a:focus {
 }
 
 .btn {
-font-family: 微軟正黑體,"microsoft jhenghei",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "微軟正黑體","microsoft jhenghei",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
