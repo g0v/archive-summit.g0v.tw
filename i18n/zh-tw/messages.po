@@ -24,7 +24,7 @@ msgstr "新聞"
 
 #: layout/base.jade:65 layout/base.jade:66 partials/sponsor.jade:3
 msgid "Sponsors"
-msgstr "合作"
+msgstr "合作單位"
 
 #: layout/base.jade:69 layout/base.jade:70 partials/transport.jade:3
 msgid "Venue"
