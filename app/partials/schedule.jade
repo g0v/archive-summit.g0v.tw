@@ -56,7 +56,9 @@ mixin timeslots(head, time)
       - var obj = schedule_i18n[room + "_" + time]
       if obj
         - var row = obj["row"] || 1
-        td(rowspan=row)
+        - var target = '#Info' + obj["speakerId"]
+        - var infoClass = (obj["speakerId"])?'speaker-info':''
+        td(rowspan=row, data-toggle='modal', data-target=target, class=infoClass)
           - title = obj["title_" + lang] || obj["title"]
           if title == "TBD"
             span.text-muted= title
@@ -72,12 +74,8 @@ mixin timeslots(head, time)
           else
             span.fui-user
             |  
-            if obj["speakerId"]
-              span.text-primary(data-toggle='modal', data-target='#Info#{obj["speakerId"]}')
-               +get(obj, "speaker")
-            else
-              span.text-primary
-                +get(obj, "speaker")
+            span.text-primary
+              +get(obj, "speaker")
           if obj.language
             span.lang= _(obj.language)
           if obj.interpretation
