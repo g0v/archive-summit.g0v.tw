@@ -6,7 +6,7 @@ mixin get(obj,name)
 mixin track_title(time)
   .time 主題
   each v, i in ['danger','success','warning','info']
-    - var obj = i18n["r"+(i+1)+"_"+time+"_topic"]
+    - var obj = schedule_i18n["r"+(i+1)+"_"+time+"_topic"]
     .topic(class="alert-"+v)
       h5: +get(obj,"title")
       span: +get(obj,"subtitle")
@@ -17,7 +17,7 @@ mixin track_desc(time)
   .time 主題介紹
   each i in [1,2,3,4]
     - var name = "r"+i+"_"+time+"_topic"
-    - var desc = i18n[name]["desc_"+lang] || i18n[name]["desc"]
+    - var desc = schedule_i18n[name]["desc_"+lang] || schedule_i18n[name]["desc"]
     .topic
       each p in desc
         p= p
@@ -25,7 +25,7 @@ mixin track_desc(time)
 mixin timeslot(head,time)
   .time #{head}
   each i in [1,2,3,4]
-    - var obj = i18n["r"+i+"_"+time]
+    - var obj = schedule_i18n["r"+i+"_"+time]
     if obj
       - var row = obj["row"] || 1
       .topic(class="row"+row)
@@ -55,7 +55,7 @@ mixin timeslots(head, time)
   tr
     td.text-center #{head}
     each room in rooms
-      - var obj = i18n[room + "_" + time]
+      - var obj = schedule_i18n[room + "_" + time]
       if obj
         - var row = obj["row"] || 1
         td(rowspan=row)
@@ -96,7 +96,7 @@ block content
       #schedule
         .time 9:00 - 9:10
         .topic.common
-          h5 #{i18n["opening_"+lang] || i18n["opening"]}
+          h5 #{schedule_i18n["opening_"+lang] || schedule_i18n["opening"]}
           span.fui-user
           |  
           span.text-primary

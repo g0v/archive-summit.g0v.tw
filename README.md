@@ -26,6 +26,16 @@ Structure adopted from g0v.tw
 
 gulp 會自動幫你 compile jade to html, less to css, 合併 javascript, css 等。在更改任何一個檔案 gulp 也會幫你重新 compile。
 
+# i18n
+
+Extract strings:
+
+    $ gulp pot
+
+Update po files:
+
+    $ gulp update-po
+
 # Deploy
 
 請打

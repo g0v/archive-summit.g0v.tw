@@ -1,5 +1,5 @@
 doctype html
-html(lang='zh-tw')
+html(lang=lang)
   head
     block vars
     meta(charset='utf-8')
@@ -7,6 +7,8 @@ html(lang='zh-tw')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
+    meta(property="og:title",content="g0v Summit 2014")
+    meta(property="og:image",content="http://summit.g0v.tw/images/main-en-bak.png")
     link(rel='SHORTCUT ICON', href='/g0v.ico')
     title #{tabName} g0v Summit 2014 啥米零時政府
     // Bootstrap Core CSS
@@ -15,6 +17,8 @@ html(lang='zh-tw')
     link(rel='stylesheet', type='text/css', href='/css/business-frontpage.css')
     link(rel='stylesheet', type='text/css', href='/css/flat-ui.css')
     link(rel='stylesheet', type='text/css', href='/css/app.css')
+    // Live CSS
+    link(rel='stylesheet', type='text/css', href='/css/live.css')
     //- TODO this style is only used in index.jade. check if we should do sth with it.
     style(type='text/css').
       .todo li {
@@ -48,27 +52,31 @@ html(lang='zh-tw')
           ul.nav.navbar-nav
             li
               a(href='schedule.html')
-                img(src='/images/icons/svg/roundicons free set-16.svg')
-                |  議程
+                img(src='/images/icons/svg/roundicons free set-16.svg',alt=_('Schedule'),title=_('Schedule'))
+                span= _('Schedule')
             li
               a(href='speaker.html')
-                img(src='/images/icons/svg/roundicons free set-01.svg')
-                |  講者
+                img(src='/images/icons/svg/roundicons free set-01.svg',alt=_('Speakers'),title=_('Speakers'))
+                span= _('Speakers')
             li
-              a(href='#')
-                img(src='/images/icons/svg/roundicons free set-12.svg')
-                |  新聞
+              a(href='live.html')
+                img(src='/images/icons/svg/live-icon.svg',alt=_('Live'),title=_('Live'))
+                span= _('Live')
             li
               a(href='sponsor.html')
-                img(src='/images/icons/svg/roundicons free set-17.svg')
-                |  贊助
+                img(src='/images/icons/svg/roundicons free set-17.svg',alt=_('Sponsors'),title=_('Sponsors'))
+                span= _('Sponsors')
             li
               a(href='transport.html')
-                img(src='/images/icons/svg/roundicons free set-18.svg')
-                |  交通
+                img(src='/images/icons/svg/roundicons free set-18.svg',alt=_('Venue'),title=_('Venue'))
+                span= _('Venue')
             li
-              a(href='/en-US/index.html')
-                .noimg English
+              if lang == 'zh'
+                a(href='/en-US/index.html')
+                  .noimg English
+              if lang == 'en'
+                a(href='/zh-TW/index.html')
+                  .noimg 中文
         // /.navbar-collapse
       // /.container
     // Image Background Page Header

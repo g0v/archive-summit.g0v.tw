@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+.channel-list{
+	overflow:auto;
+	width: 100%;
+	}
+.channel-block{
+	float:left;
+	margin: 0 0 20px 4%;
+	width: 22%;
+	}
+.channel-block:first-child{
+	margin-left:0;
+	}
+.channel-block img{
+	margin-bottom:10px;
+	width:100%;
+	height:auto;
+}
+.channel-block p{
+	font-size: 16px;
+	line-height:25px;
+}
+.livehouse-note{
+	text-align:center;
+	border-top: #ccc 1px solid;
+	padding: 15px 30px;
+	}

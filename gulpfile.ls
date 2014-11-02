@@ -1,5 +1,5 @@
 require! <[gulp gulp-util express connect-livereload gulp-jade gulp-livereload path]>
-require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber gulp-rename gulp-jsonminify]>
+require! <[gulp-if gulp-livescript gulp-less gulp-stylus gulp-concat gulp-json-editor gulp-commonjs gulp-insert streamqueue gulp-uglify gulp-open gulp-plumber gulp-rename gulp-jsonminify gulp-xgettext gulp-concat-po gulp-exec]>
 
 gutil = gulp-util
 
@@ -12,30 +12,51 @@ gulp.task 'i18n', ->
   gulp.src 'i18n/src/*.ls'
     .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
     .pipe gulp-jsonminify!
-    .pipe gulp-insert.prepend '- var i18n = '
+    .pipe gulp-insert.prepend (file) -> '- var ' + file.path - "#{file.base}" - '.json' + '_i18n = '#return '//' + path.baseName # '- var i18n = '
     .pipe gulp-rename extname: '.jade'
     .pipe gulp.dest "i18n/gen"
 
-gulp.task 'translations', <[i18n]> ->
-  require! <[fs]>
+gulp.task 'pot' ->
+  gulp.src 'app/**/*.jade'
+    .pipe gulp-xgettext do
+      language: 'jade'
+      keywords: [name: '_']
+      bin: 'node_modules/.bin/jsxgettext'
+    .pipe gulp-concat-po 'messages.pot'
+    .pipe gulp.dest "i18n/templates"
 
-  # we don't have md files for now. 
+gulp.task 'update-po' ->
+  console.log \meh
+  gulp.src 'i18n/*/messages.po'
+    .pipe gulp-exec 'msgmerge -U <%= file.path %> i18n/templates/messages.pot'
+    .pipe gulp-exec.reporter {+err, +stderr, +stdout}
+
+
+gulp.task 'translations', <[i18n]> ->
+  require! <[fs gettext-parser]>
+  # we don't have md files for now.
   # so unlike g0v.tw, we list langs explicitly instead of readDir('md').
   langs = <[zh-tw en-us]>
-  for lang in langs
+  for let lang in langs
     real-lang = lang.replace /(\w+-)(\w+)/, (,$1,$2) -> $1+$2.toUpperCase!
     lang-in-jade = lang.replace /-.+$/, ""
+    po = gettextParser.po.parse fs.readFileSync(path.resolve("i18n/#lang/messages.po")), "utf-8"
+    translations = {[msgid, msgstr.join ''] for msgid, {msgstr} of po.translations['']}
 
     gulp.src 'app/partials/*.jade'
       .pipe gulp-jade do
         locals:
           lang: lang-in-jade
+          _: -> translations[it] || it
+          translations: translations
       .pipe gulp.dest "#{build_path}/#{real-lang}"
 
 gulp.task 'html', <[translations]>, ->
   gulp.src 'app/*.jade'
     .pipe gulp-plumber!
-    .pipe gulp-jade!
+    .pipe gulp-jade do
+      locals:
+        _: -> it
     .pipe gulp.dest "#{build_path}"
 
 require! <[gulp-bower main-bower-files gulp-filter]>

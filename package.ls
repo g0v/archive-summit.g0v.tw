@@ -15,19 +15,12 @@ scripts:
     node ./node_modules/LiveScript/bin/lsc -cj bower.ls
   """
   build: 'gulp'
-  test: 'npm run build && bower i && ./node_modules/karma/bin/karma start --browsers PhantomJS --single-run true test/karma.conf.js'
   start: 'gulp dev'
 dependencies:
   marked: '^0.2.10'
   connect: '^2.8.8'
 devDependencies:
   'LiveScript': '^1.2.0'
-  'karma': '^0.12.16'
-  'karma-live-preprocessor': '~0.2.0'
-  'karma-phantomjs-launcher': "^0.1.4"
-  'karma-mocha': '~0.1.0'
-  'karma-chai': '~0.1.0'
-  'karma-ng-scenario': '0.1.0'
   'bower': '^1.3.4'
   'mocha': '^1.19.0'
   'chai': '~1.9.1'
@@ -41,7 +34,7 @@ devDependencies:
   'gulp-jade': '^0.5.0'
   'gulp': '^3.7.0'
   'express': '^4.3.1'
-  'gulp-insert': '^0.3.0'
+  'gulp-insert': '^0.4.0'
   'gulp-concat': '~2.2.0'
   'gulp-commonjs': '~0.1.0'
   'gulp-json-editor': '~2.0.2'
@@ -57,3 +50,8 @@ devDependencies:
   'connect': '^2.19.1'
   'gulp-jsonminify': '^0.0.1'
   'gulp-rename': '^1.2.0'
+  'gettext-parser': '^0.2.0'
+  'jsxgettext': '^0.5.1'
+  'gulp-concat-po': '^0.1.0'
+  'gulp-xgettext': '^0.2.1'
+  'gulp-exec': "^2.1.1"

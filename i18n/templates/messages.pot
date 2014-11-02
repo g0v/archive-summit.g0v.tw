@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-04 09:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"MIME-Version: 1.0\n"
+
+#: layout/base.jade:53
+#: layout/base.jade:54
+#: partials/schedule.jade:67
+msgid "Schedule"
+msgstr ""
+
+#: layout/base.jade:57
+#: layout/base.jade:58
+#: partials/speaker.jade:3
+msgid "Speakers"
+msgstr ""
+
+#: layout/base.jade:61
+#: layout/base.jade:62
+msgid "News"
+msgstr ""
+
+#: layout/base.jade:65
+#: layout/base.jade:66
+#: partials/sponsor.jade:3
+msgid "Sponsors"
+msgstr ""
+
+#: layout/base.jade:69
+#: layout/base.jade:70
+#: partials/transport.jade:3
+msgid "Venue"
+msgstr ""
+
+#: partials/schedule.jade:62
+msgid "Interpreted"
+msgstr ""
+
+#: partials/schedule.jade:96
+msgid "ZH/EN"
+msgstr ""
+
+#: partials/schedule.jade:97
+msgid "EN/ZH"
+msgstr ""
+
+#: partials/schedule.jade:105
+msgid "EN"
+msgstr ""
+
+#: partials/schedule.jade:106
+msgid "ZH"
+msgstr ""
