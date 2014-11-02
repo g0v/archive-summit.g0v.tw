@@ -12,7 +12,7 @@ gulp.task 'i18n', ->
   gulp.src 'i18n/src/*.ls'
     .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
     .pipe gulp-jsonminify!
-    .pipe gulp-insert.prepend '- var i18n = '
+    .pipe gulp-insert.prepend (file) -> '- var ' + file.path - "#{file.base}" - '.json' + '_i18n = '#return '//' + path.baseName # '- var i18n = '
     .pipe gulp-rename extname: '.jade'
     .pipe gulp.dest "i18n/gen"
 
@@ -34,7 +34,7 @@ gulp.task 'update-po' ->
 
 gulp.task 'translations', <[i18n]> ->
   require! <[fs gettext-parser]>
-  # we don't have md files for now. 
+  # we don't have md files for now.
   # so unlike g0v.tw, we list langs explicitly instead of readDir('md').
   langs = <[zh-tw en-us]>
   for let lang in langs

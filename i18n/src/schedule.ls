@@ -64,6 +64,7 @@ schedule = do
     language: "EN"
     interpretation: "ZH"
   r3_0950:
+    speakerId: 2
     title_zh: "教育部《臺灣閩南語常用詞辭典》資料庫釋出歷程"
     title_en: "History of MoE's CC release of Taiwanese Holo Dictionary"
     speaker_zh: "林佳怡"
@@ -71,6 +72,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r4_0950:
+    speakerId: 20
     title_zh: "醫療、Youbike、菜價視覺化"
     title_en: "醫療、Youbike、菜價視覺化"
     speaker_zh: "李慕約"
@@ -95,6 +97,7 @@ schedule = do
     language: "EN"
     interpretation: "ZH"
   r3_1020:
+    speakerId: 14
     title_zh: "開放語料運動"
     title_en: "Open-corpus movement"
     speaker_zh: "謝舒凱、馬基石(Pierre Magistry)"
@@ -102,6 +105,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r4_1020:
+    speakerId: 19
     title_zh: "開源與媒體-科技主導的當代新聞學"
     title_en: "開源與媒體-科技主導的當代新聞學"
     speaker_zh: "Kirby"
@@ -129,6 +133,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r3_1120:
+    speakerId: 1
     title_zh: "Redesigning MoeDict"
     title_en: "Redesigning MoeDict"
     speaker_zh: "薛良斌"
@@ -163,6 +168,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r4_1150:
+    speakerId: 18
     title_zh: "台灣公司關係圖資料解構"
     title_en: "台灣公司關係圖資料解構"
     speaker_zh: "劉偉宸"
@@ -217,21 +223,24 @@ schedule = do
       1: "This discussion about the new faces of activism will start with the new media in the Sunflower Student Movement, then move on to explore the possibility of combining technological tools and social activism, including how Hong Kong activists leveraged experiences and software from Taiwan's civic hackers."
   r1_1330:
     row: 2
+    speakerIds: [12,10,11,undefined,13]
     list_zh:
-      0: "<strong>Ｅ論壇的同步新聞寫作</strong> <span class='fui-user'/><span class='text-primary'>吳宗泰</span>"
-      1: "<strong>去中心化之下的主流媒體角色</strong> <span class='fui-user'/><span class='text-primary'>陳守國</span>"
-      2: "<strong>傳統媒體作為媒介、行動者與獲益者</strong> <span class='fui-user'/><span class='text-primary'>鄒景雯</span>"
-      3: "<strong>太陽花的國際媒體宣傳</strong> <span class='fui-user'/><span class='text-primary'>鄭凱榕</span>" 
-      4: "<strong>社會運動中的開源新媒體嘗試</strong><span class='fui-user'/><span class='text-primary'>瞿筱葳</span>"
-      5: "<strong>TBD</strong> <span class='fui-user'/><span class='text-primary'>嚴婉玲</span>" 
+      0: "<strong>Ｅ論壇的同步新聞寫作</strong> <span class='fui-user'/><span class='text-primary' data-toggle='modal' data-target='\#Info12'>吳宗泰</span>"
+      1: "<strong>去中心化之下的主流媒體角色</strong> <span class='fui-user'/><span class='text-primary' data-toggle='modal' data-target='\#Info10'>陳守國</span>"
+      2: "<strong>傳統媒體作為媒介、行動者與獲益者</strong> <span class='fui-user'/><span class='text-primary' data-toggle='modal' data-target='\#Info11'>鄒景雯</span>"
+      3: "<strong>太陽花的國際媒體宣傳</strong> <span class='fui-user'/><span class='text-primary'>鄭凱榕</span>"
+      4: "<strong>社會運動中的開源新媒體嘗試</strong><span class='fui-user'/><span class='text-primary' data-toggle='modal' data-target='\#Info13'>瞿筱葳</span>"
+      5: "<strong>TBD</strong> <span class='fui-user'/><span class='text-primary'>嚴婉玲</span>"
     list_en:
       0: "Ｅ論壇的同步新聞寫作 - 吳宗泰"
       1: "去中心化之下的主流媒體角色 - 陳守國"
       2: "傳統媒體作為媒介、行動者與獲益者 - 鄒景雯"
-      3: "社會運動中的開源新媒體嘗試 - 瞿筱葳"
-      4: "TBD - 嚴婉玲" 
+      3: "太陽花的國際媒體宣傳 - 鄭凱榕"
+      4: "社會運動中的開源新媒體嘗試 - 瞿筱葳"
+      5: "TBD - 嚴婉玲"
     language: "ZH"
   r2_1330:
+    speakerId: 25
     title_zh: "Open Weatherdata"
     title_en: "Open Weatherdata"
     speaker_zh: "彭啟明"
@@ -248,12 +257,14 @@ schedule = do
     language: "EN"
     interpretation: "ZH"
   r4_1330:
+    speakerId: 24
     title_zh: "新媒體與公民參與：從大腸花到攝護線"
     title_en: "新媒體與公民參與：從大腸花到攝護線"
     speaker_zh: "音地大帝"
     speaker_en: "音地大帝"
     language: "ZH"
   r2_1410:
+    speakerId: 6
     title_zh: "環評為何這麼容易被判決撤銷？－兼談經濟與環保的拔河"
     title_en: "環評為何這麼容易被判決撤銷？－兼談經濟與環保的拔河"
     speaker_zh: "詹順貴"
@@ -261,6 +272,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r3_1410:
+    speakerId: 15
     title_zh: "解放政府圖檔資料行動：用影像辨識來處理政府資料吧～"
     title_en: "解放政府圖檔資料行動：用影像辨識來處理政府資料吧～"
     speaker_zh: "王向榮"
@@ -268,6 +280,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r4_1410:
+    speakerId: 22
     title_zh: "ng0v ，不只是寫程式，不只是改造社會"
     title_en: "ng0v ，不只是寫程式，不只是改造社會"
     speaker_zh: "ddio"
@@ -295,6 +308,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r3_1440:
+    speakerId: 16
     title_zh: "開放內容的衝擊-開放街圖和維基百科在臺發展，以及如何可能影響政府"
     title_en: "開放內容的衝擊-開放街圖和維基百科在臺發展，以及如何可能影響政府"
     speaker_zh: "陳瑞霖"
@@ -302,6 +316,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r4_1440:
+    speakerId: 23
     title_zh: "Code for Hong Kong: 從台灣輸入公民軟體的香港經驗"
     title_en: "Code for Hong Kong: 從台灣輸入公民軟體的香港經驗"
     speaker_zh: "Tim KT Chan"

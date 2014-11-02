@@ -5,14 +5,32 @@ mixin get(obj,name)
 
 mixin getByLang(obj,name,bylang)
   | #{obj[name+"_"+bylang] || obj[name]}
-  
+
+mixin getInfo(index)
+  - var speaker = speakers_i18n[index]
+  .modal.fade(tabindex='-1', role='dialog', aria-hidden='true', id='Info#{speaker["uid"]}')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal')
+            span(aria-hidden='true') ×
+            span.sr-only Close
+          h5.modal-title=speaker["name_zh"]
+        .modal-body
+          h6 bio
+          p!=speaker["bio_zh"]
+          h6 abstract
+          p!=speaker["abstract_zh"]
+        .modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') Close
+
 mixin topicslots_title(time)
   //- TODO use css to color block and set width
   tr
     td.text-center 主題
     each room in [["r1",294,"danger"],["r2",247,"success"],["r3",247,"warning"],["r4",250,"info"]]
       td.text-center(class="alert-"+room[2],width=room[1])
-        - var obj = i18n[room[0]+"_"+time+"_topic"]
+        - var obj = schedule_i18n[room[0]+"_"+time+"_topic"]
         h5
           +get(obj, "title")
         span
@@ -27,7 +45,7 @@ mixin topicslots_desc(time)
     each section in ["r1","r2","r3","r4"]
       td(valign="top")
         - var name = section + "_" + time + "_topic"
-        - var desc = i18n[name]["desc_"+lang] || i18n[name]["desc"]
+        - var desc = schedule_i18n[name]["desc_"+lang] || schedule_i18n[name]["desc"]
         each p in desc
           p= p
 
@@ -35,7 +53,7 @@ mixin timeslots(head, time)
   tr
     td.text-center #{head}
     each room in rooms
-      - var obj = i18n[room + "_" + time]
+      - var obj = schedule_i18n[room + "_" + time]
       if obj
         - var row = obj["row"] || 1
         td(rowspan=row)
@@ -54,14 +72,27 @@ mixin timeslots(head, time)
           else
             span.fui-user
             |  
-            span.text-primary
-              +get(obj, "speaker")
+            if obj["speakerId"]
+              span.text-primary(data-toggle='modal', data-target='#Info#{obj["speakerId"]}')
+               +get(obj, "speaker")
+            else
+              span.text-primary
+                +get(obj, "speaker")
           if obj.language
             span.lang= _(obj.language)
           if obj.interpretation
             span.lang.interpreted(title=_('Interpreted'))= _(obj.interpretation)
           span.badge
             +get(obj, "tag")
+          if obj["speakerId"]
+            - var index = obj["speakerId"] - 1
+            //- p.text-center
+            //-   button.btn.btn-primary() More
+            +getInfo(index)
+          else if obj["speakerIds"]
+            each id in obj["speakerIds"]
+              if id
+                +getInfo(id-1)
 
 block vars
   - var tabName = _("Schedule")
@@ -69,6 +100,7 @@ block vars
 block content
   - var rooms = ["r1","r2","r3","r4"]
   include ../../i18n/gen/schedule.jade
+  include ../../i18n/gen/speakers.jade
   .row
     .col-sm-12
       h5 Day 1 / Conference 國際研討會
@@ -88,7 +120,7 @@ block content
         tr
           td.text-center(width='138') 9:00 - 9:10
           td.text-center(colspan='4')
-            h5 #{i18n["opening_"+lang] || i18n["opening"]}
+            h5 #{schedule_i18n["opening_"+lang] || schedule_i18n["opening"]}
             span.fui-user
             |  
             span.text-primary

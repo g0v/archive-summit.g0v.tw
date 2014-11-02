@@ -33,7 +33,7 @@
     "gulp-jade": "^0.5.0",
     "gulp": "^3.7.0",
     "express": "^4.3.1",
-    "gulp-insert": "^0.3.0",
+    "gulp-insert": "^0.4.0",
     "gulp-concat": "~2.2.0",
     "gulp-commonjs": "~0.1.0",
     "gulp-json-editor": "~2.0.2",
