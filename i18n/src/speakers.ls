@@ -1,7 +1,7 @@
 speakers =
   * uid: 1
     name_zh: "薛良斌"
-    name_en: "薛良斌"
+    name_en: "Liang-Bin Hsueh"
     avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
     country_zh: "台灣"
     country_en: "台灣"
@@ -13,7 +13,7 @@ speakers =
     abstract_en: "萌典是民間版《教育部辭典》的開放資料界面與應用範例，收錄十六萬筆國語、兩萬筆台語、一萬四千筆客語條目、常用字的筆順動畫、英法德文翻譯，以及中華文化總會的《兩岸常用詞典》。<br> 本 talk 以萌典為例，闡述零食政府專案的 UI 規劃進行方式。"
   * uid: 2
     name_zh: "林佳怡"
-    name_en: "林佳怡"
+    name_en: "Liz Lin"
     avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
     country_zh: "台灣"
     country_en: "台灣"
@@ -157,7 +157,7 @@ speakers =
     abstract_en: "此講座短講將分享去中心化、開源的 g0v 網路社群（civic hacking community）在太陽花運動中扮演的角色。除了新媒體所需的基礎網路、直播支援與資訊彙整，將說明運動中還有哪些努力，以及新型態社群在未來在公民運動的展望。"
   * uid: 14
     name_zh: "謝舒凱、馬基石"
-    name_en: "謝舒凱、馬基石"
+    name_en: "Shu-Kai Hsieh, Pierre Magistry"
     avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
     country_zh: "台灣"
     country_en: "台灣"
@@ -169,7 +169,7 @@ speakers =
     abstract_en: "語言，反應了思維與情緒。其所實踐出來的語言資料（語料），在計算語言學的研究與應用中向來扮演著關鍵性的角色。數位時代下的多元與巨量趨勢，語料科學對於科學與社會的影響力正在發酵。<br><br>在這個演講中，我們將首先介紹近年來的開放語料 Linguistic Linked Open Data 的概念，與其對於開發各種語言資訊應用，理解與推展社會進步的潛力。第二個部分，我們將介紹我們所開發的開放語料庫與詞彙知識庫，以及一個台語資訊處理的開放平台。最後，我們將討論開放政府在開放語料運動的風潮中可以與應該扮演的角色。"
   * uid: 15
     name_zh: "王向榮"
-    name_en: "王向榮"
+    name_en: "Ronny Wang"
     avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
     country_zh: "台灣"
     country_en: "台灣"
@@ -216,8 +216,8 @@ speakers =
     abstract_zh: "本次演講主題為台灣公司關係圖 (http://blog.g0v.tw/posts/175471/taiwan-company-diagram) 資料解構。身為前金融業從業人員，對於集團間的比較分析有狂熱興趣也是很合理的。敝人預計分享近四個月以來，對該資料持續進行清理、分類、正規化後得到的分析成果。透過整理後的資料，我們有機會觀察到台灣除了存在廣大的中小企業個體戶，還有為數不多但結合相對緊密的超大型企業集團。另外藉由進一步的分類，我們甚至有機會一窺不同集團間的親密程度概貌。<br><br>本次分享主題如下：* 從法人投資觀察台灣企業間交叉投資的現象<br>* 應用資料視覺化技術觀察公司集團關係<br>* 從各公司集團的董監事名單定義核心與非核心成員<br>* 如何處理同名同姓的董監事問題，並藉此找出家族企業集團以個人名義轉投資的企業。<br>* 分類集團後挖掘出來的集團間親密關係調查。<br>* 資料分析背後應用的技術與工具介紹。"
     abstract_en: "本次演講主題為台灣公司關係圖 (http://blog.g0v.tw/posts/175471/taiwan-company-diagram) 資料解構。身為前金融業從業人員，對於集團間的比較分析有狂熱興趣也是很合理的。敝人預計分享近四個月以來，對該資料持續進行清理、分類、正規化後得到的分析成果。透過整理後的資料，我們有機會觀察到台灣除了存在廣大的中小企業個體戶，還有為數不多但結合相對緊密的超大型企業集團。另外藉由進一步的分類，我們甚至有機會一窺不同集團間的親密程度概貌。<br><br>本次分享主題如下：* 從法人投資觀察台灣企業間交叉投資的現象<br>* 應用資料視覺化技術觀察公司集團關係<br>* 從各公司集團的董監事名單定義核心與非核心成員<br>* 如何處理同名同姓的董監事問題，並藉此找出家族企業集團以個人名義轉投資的企業。<br>* 分類集團後挖掘出來的集團間親密關係調查。<br>* 資料分析背後應用的技術與工具介紹。"
   * uid: 19
-    name_zh: "kirby"
-    name_en: "kirby"
+    name_zh: "Kirby"
+    name_en: "Kirby"
     avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
     country_zh: "台灣"
     country_en: "台灣"

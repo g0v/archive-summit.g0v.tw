@@ -15,12 +15,12 @@ mixin getInfo(index)
           button.close(type='button', data-dismiss='modal')
             span(aria-hidden='true') ×
             span.sr-only Close
-          h5.modal-title=speaker["name_zh"]
+          h5.modal-title=speaker["name_"+lang]
         .modal-body
-          h6 bio
-          p!=speaker["bio_zh"]
-          h6 abstract
-          p!=speaker["abstract_zh"]
+          h6 Bio
+          p!=speaker["bio_"+lang]
+          h6 Abstract
+          p!=speaker["abstract_"+lang]
         .modal-footer
           button.btn.btn-default(type='button', data-dismiss='modal') Close
 

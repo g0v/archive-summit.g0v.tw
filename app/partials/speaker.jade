@@ -7,20 +7,20 @@ mixin get_speaker(index)
         .row
           .col-sm-12
             .col-xs-12.col-sm-8
-              h6=obj["name_zh"]
+              h6=obj["name_"+lang]
             .col-xs-12.col-sm-4.text-center
               figure
                 img.img-circle.img-responsive(src='#{obj["avatar"]}', alt='')
                 figcaption.ratings
                   p
-                    span.badge=obj["country_zh"]
-            p!=obj["bio_zh"]
-            if obj["topic_zh"]
+                    span.badge=obj["country_"+lang]
+            p!=obj["bio_"+lang]
+            if obj["topic_"+lang]
               p
                 | 講題：
                 strong
-                  span.text-primary=obj["topic_zh"]
-            if obj["abstract_zh"]
+                  span.text-primary=obj["topic_"+lang]
+            if obj["abstract_"+lang]
               p.text-center
                 button.btn.btn-primary(data-toggle='modal', data-target='#Abstract#{obj["uid"]}') Abstract
               .modal.fade(tabindex='-1', role='dialog', aria-hidden='true', id='Abstract#{obj["uid"]}')
@@ -30,9 +30,9 @@ mixin get_speaker(index)
                       button.close(type='button', data-dismiss='modal')
                         span(aria-hidden='true') ×
                         span.sr-only Close
-                      h5.modal-title=obj["topic_zh"]
+                      h5.modal-title=obj["topic_"+lang]
                     .modal-body
-                      p!=obj["abstract_zh"]
+                      p!=obj["abstract_"+lang]
                     .modal-footer
                       button.btn.btn-default(type='button', data-dismiss='modal') Close
 
