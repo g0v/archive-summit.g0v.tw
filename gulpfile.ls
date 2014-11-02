@@ -12,7 +12,7 @@ gulp.task 'i18n', ->
   gulp.src 'i18n/src/*.ls'
     .pipe gulp-livescript({+json,+bare}).on 'error', gutil.log
     .pipe gulp-jsonminify!
-    .pipe gulp-insert.prepend (file) -> '- var ' + file.path - "#{file.base}" - '.json' + '_i18n = '#return '//' + path.baseName # '- var i18n = '
+    .pipe gulp-insert.prepend -> '- var ' + (it.path.match /\/([a-zA-Z]+)\.json$/ .1) + '_i18n = '
     .pipe gulp-rename extname: '.jade'
     .pipe gulp.dest "i18n/gen"
 
