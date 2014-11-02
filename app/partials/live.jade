@@ -1,0 +1,38 @@
+extends ../layout/page
+block vars
+  - var tabName = _("Live")
+block content
+  .row
+   h4 gov 線上直播頻道
+   iframe(width='100%', height='450', src='https://livehouse.in/embed/channel/g0v', frameborder='0', allowfullscreen='')
+   h4 其他直播頻道
+   .channel-list
+     .channel-block
+       a(href='https://livehouse.in/channel/g0v-1', target='_blank')
+         img(src='https://i.ytimg.com/vi/hqlOj5UIVZU/mqdefault.jpg', alt='直播頻道一', title='直播頻道一')
+         br
+         | 直播頻道一
+       p 這是 goV 在中央研究院人文社會科學館
+     .channel-block
+       a(href='https://livehouse.in/channel/g0v-2', target='_blank')
+         img(src='https://i.ytimg.com/vi/hqlOj5UIVZU/mqdefault.jpg', alt='直播頻道二', title='直播頻道二')
+         br
+         | 直播頻道二
+       p 這是 goV 在中央研究院人文社會科學館
+     .channel-block
+       a(href='https://livehouse.in/channel/g0v-3', target='_blank')
+         img(src='https://i.ytimg.com/vi/hqlOj5UIVZU/mqdefault.jpg', alt='直播頻道三', title='直播頻道三')
+         br
+         | 直播頻道三
+       p 這是 goV 在中央研究院人文社會科學館
+     .channel-block
+       a(href='https://livehouse.in/channel/g0v-4', target='_blank')
+         img(src='https://i.ytimg.com/vi/hqlOj5UIVZU/mqdefault.jpg', alt='直播頻道四', title='直播頻道四')
+         br
+         | 直播頻道四
+       p 這是 goV 在中央研究院人文社會科學館
+   .livehouse-note
+     | 直播平台提供
+     a(href='https://livehouse.in/', target='_blank')
+       img(src='https://livehouse.in/assets/logo.jpg', alt='LIVEhouse.in', title='LIVEhouse.in')
+

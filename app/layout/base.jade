@@ -17,6 +17,8 @@ html(lang=lang)
     link(rel='stylesheet', type='text/css', href='/css/business-frontpage.css')
     link(rel='stylesheet', type='text/css', href='/css/flat-ui.css')
     link(rel='stylesheet', type='text/css', href='/css/app.css')
+    // Live CSS
+    link(rel='stylesheet', type='text/css', href='/css/live.css')
     //- TODO this style is only used in index.jade. check if we should do sth with it.
     style(type='text/css').
       .todo li {
@@ -57,9 +59,9 @@ html(lang=lang)
                 img(src='/images/icons/svg/roundicons free set-01.svg',alt=_('Speakers'),title=_('Speakers'))
                 span= _('Speakers')
             li
-              a(href='#')
-                img(src='/images/icons/svg/roundicons free set-12.svg',alt=_('News'),title=_('News'))
-                span= _('News')
+              a(href='live.html')
+                img(src='/images/icons/svg/live-icon.svg',alt=_('Live'),title=_('Live'))
+                span= _('Live')
             li
               a(href='sponsor.html')
                 img(src='/images/icons/svg/roundicons free set-17.svg',alt=_('Sponsors'),title=_('Sponsors'))
