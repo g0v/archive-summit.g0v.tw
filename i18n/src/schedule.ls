@@ -156,11 +156,12 @@ schedule = do
     title_en: "3du Panel"
     list_zh:
       0: "主持人：唐鳳"
-      1: "與談人：林佳怡、薛良斌、謝舒凱"
+      1: "與談人：林佳怡、薛良斌、謝舒凱、馬基石"
     list_en:
-      0: "主持人：唐鳳"
-      1: "與談人：謝舒凱、林佳怡、薛良斌"
+      0: "Moderator: Audrey Tang"
+      1: "Panelists: Liz Lin, Liang-Bin Hsueh, Shu-Kai Hsieh, Pierre Magistry"
     language: "ZH"
+    interpretation: "EN"
   r4_1150:
     title_zh: "台灣公司關係圖資料解構"
     title_en: "台灣公司關係圖資料解構"
@@ -290,7 +291,7 @@ schedule = do
       1: "與談貴賓：朱雨其、彭啟明、詹順貴"
     list_en:
       0: "Moderator: Dongpo Deng"
-      1: "Panelist: Y.C. CHU, C.M. PENG, Thomas Shun-Kuei CHAN"
+      1: "Panelists: Y.C. CHU, C.M. PENG, Thomas Shun-Kuei CHAN"
     language: "ZH"
     interpretation: "EN"
   r3_1440:
