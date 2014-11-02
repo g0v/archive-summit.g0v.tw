@@ -80,6 +80,9 @@
     display: inline-block;
   }
 }
+.speaker-info {
+  cursor: pointer;
+}
 span.fui-user {
   padding-right: 5px;
 }
