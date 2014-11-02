@@ -65,10 +65,11 @@ schedule = do
     interpretation: "ZH"
   r3_0950:
     title_zh: "教育部《臺灣閩南語常用詞辭典》資料庫釋出歷程"
-    title_en: "教育部《臺灣閩南語常用詞辭典》資料庫釋出歷程"
+    title_en: "History of MoE's CC release of Taiwanese Holo Dictionary"
     speaker_zh: "林佳怡"
     speaker_en: "林佳怡"
     language: "ZH"
+    interpretation: "EN"
   r4_0950:
     title_zh: "醫療、Youbike、菜價視覺化"
     title_en: "醫療、Youbike、菜價視覺化"
@@ -95,10 +96,11 @@ schedule = do
     interpretation: "ZH"
   r3_1020:
     title_zh: "開放語料運動"
-    title_en: "開放語料運動"
+    title_en: "Open-corpus movement"
     speaker_zh: "謝舒凱、馬基石(Pierre Magistry)"
     speaker_en: "謝舒凱"
     language: "ZH"
+    interpretation: "EN"
   r4_1020:
     title_zh: "開源與媒體-科技主導的當代新聞學"
     title_en: "開源與媒體-科技主導的當代新聞學"
@@ -132,6 +134,7 @@ schedule = do
     speaker_zh: "薛良斌"
     speaker_en: "薛良斌"
     language: "ZH"
+    interpretation: "EN"
   r4_1120:
     title_zh: "你媽知道你在看假新聞嗎"
     title_en: "Does your mom know you are watching fake news"
