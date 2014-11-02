@@ -1,8 +1,8 @@
 extends ../layout/page
 block vars
-  - var tabName = "贊助"
+  - var tabName = _("Sponsors")
 block content
-  .row
+  //.row
     .col-md-12
       | 如果您的企業或組織，正期待以正面能量改變社會，歡迎一起來參與這場重要的高峰會，您的一份付出，將有可能讓台灣政府及社會邁向更開放、更前進的未來。
       | 贊助方案：
@@ -14,36 +14,39 @@ block content
       a(href='mailto:hcchien@gmail.com') Hsin-Chan Chien
       |  (hcchien@gmail.com)
   hr
+  h4 特別感謝
   .row
-    // company1
-    .well
-      .media.col-md-3
-        figure.pull-left
-          img.media-object.img-rounded.img-responsive(src='/images/sponsor/footer-w.png')
-      .col-md-9
-        h4.list-group-item-heading 天氣風險管理開發公司
-        p.list-group-item-text
-          | WeatherRisk，天氣風險管理開發，是台灣唯一利用氣象資料創業的公司，配合專業知識與經驗，長時間經營取得多張個人與團體氣象及海象預報證照。雖處資源有限的新創環境，仍將服務深入各行業，客戶包括超過300家國內外企業與公家單位。透過氣象數據的處理、開源程式的應用及視覺設計的加值，提供各類氣象相關問題的解決方案。面對氣候變遷下的極端天氣日益增多，以社會企業的理念，希望由資料服務保障大眾降低風險。
-      .clearfix
     // company2
     .well
       .media.col-md-3
         figure.pull-left
-          img.media-object.img-rounded.img-responsive(src='/images/sponsor/logo-hct.png')
+          a(href='https://www.hct.com.tw', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/logo-hct.png')
       .col-md-9
         h4.list-group-item-heading 新竹物流
         p.list-group-item-text  資訊開放！面對猶豫，轉身相信，就算掙扎前進，新竹物流願與台灣循永續之路。                
       .clearfix
-    // company3
+    // company7
     .well
       .media.col-md-3
         figure.pull-left
-          img.media-object.img-rounded.img-responsive(src='/images/sponsor/SunlightFoundation-logo.png')
+          a(href='http://opendata.tca.org.tw/', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/tca.png')
       .col-md-9
-        h4.list-group-item-heading Sunlight
+        h4.list-group-item-heading 經濟部工業局-開放資料(Open Data)應用推動計畫
         p.list-group-item-text
-          | Sunlight is nonpartisan nonprofit organization based in
-          | the United States, which uses technology to make government more transparent and accountable.
+          | 經濟部工業局-開放資料(Open Data)應用推動計畫，期望透過Open Data之需求彙整與推廣，鼓勵業界發展開放資料應用，進而帶動各項創新服務，活化整體社會經濟，並藉由多元推廣促進知識學習，有效提升產業對於開放資料(Open Data)的觀念與認知，同時規畫技術、法規等環境面之建立與協助，奠定後續發展之基礎。預計透過本計畫之推動，將有效擴散Open Data各項產業應用，使政府與產業互利相榮，達成增進政府施政透明、民眾生活品質、創造工作機會與驅動經濟活力，創造台灣產業新價值之最終目標。
+      .clearfix
+    // company1
+    .well
+      .media.col-md-3
+        figure.pull-left
+          a(href='http://www.tenki.tw/company/', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/footer-w.png')
+      .col-md-9
+        h4.list-group-item-heading 天氣風險管理開發公司
+        p.list-group-item-text
+          | WeatherRisk，天氣風險管理開發，是台灣唯一利用氣象資料創業的公司，配合專業知識與經驗，長時間經營取得多張個人與團體氣象及海象預報證照。雖處資源有限的新創環境，仍將服務深入各行業，客戶包括超過300家國內外企業與公家單位。透過氣象數據的處理、開源程式的應用及視覺設計的加值，提供各類氣象相關問題的解決方案。面對氣候變遷下的極端天氣日益增多，以社會企業的理念，希望由資料服務保障大眾降低風險。
       .clearfix
     // company4
     .well
@@ -56,6 +59,20 @@ block content
         p.list-group-item-text
           | 網絡行動科技（NETivism）自許為從數位公益出發的社會企業，5 年多來專注為非營利組織提供以自由軟體為基礎的資訊科技應用解決方案。
           | 我們認為網路資訊科技能夠促成社會變革，影響文化、政治、環境等公共議題，帶來娛樂與商業行為之外的改變。非營利組織工作者可以在我們以及其他有志於此的公司和社群的努力下，善用網際網路深化社會各種的力量，激勵人們採取行動，創造出更好的社會。
+      .clearfix
+    // company6
+    .well
+      .media.col-md-3
+        figure.pull-left
+          a(href='http://www.kkbox.com/about/', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/kkbox.png')
+      .col-md-9
+        h4.list-group-item-heading KKBOX
+        p.list-group-item-text
+          | KKBOX 是由一群熱愛技術及音樂的工程師於 2004 年創立的品牌，獲得超過 500 家主流及獨立唱片公司的合法授權，擁有超過 1000 萬首曲目，包括最大的亞洲音樂曲庫。KKBOX目前服務地區包括台灣、日本、香港、新加坡、馬來西亞及泰國，有超過一千萬註冊用戶及兩百萬付費會員。
+          br
+          | KKBOX 致力為音樂愛好者創造最豐富精彩的音樂體驗，並為音樂人及其音樂打造最創新有力的宣傳平台。憑藉著領先的技術與策略合作夥伴，未來KKBOX 將前進更多海外市場，將亞洲線上音樂品牌帶到世界各地。更多資訊請見：：
+          a(href='http://www.kkbox.com/about/', target='_blank') www.kkbox.com/about
       .clearfix
     // company5
     .well
@@ -70,6 +87,46 @@ block content
           br
           | Etu 團隊成軍於 2011 年，由一群累計擁有 30 年以上 Big Data 技術經驗的專業人士所組成，以共同的巨量資料分析夢想而相聚，並深知分散式運算架構、軟體為王，與自動化管理，才是雲端運算的真諦。早在 Apache Hadoop 誕生以前，Etu 核心成員就已經深入 Big Data 處理技術的發展，參與過世界級的大規模線上服務，與系統管理營運，在商業環境中運行過數百到上萬個節點的服務叢集，實現了先進技術的產業實踐驗證。Etu 數位成員擁有業界目前稀有的 Hadoop 專業認證：Cloudera Certified Developer / Administrator for Apache Hadoop。更多關於 Etu 訊息，請上 Etu 官網：
           a(href='http://www.etusolution.com/', target='_blank') www.etusolution.com
+      .clearfix
+    // company3
+    .well
+      .media.col-md-3
+        figure.pull-left
+          a(href='http://sunlightfoundation.com/', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/SunlightFoundation-logo.png')
+      .col-md-9
+        h4.list-group-item-heading Sunlight Foundation
+        p.list-group-item-text
+          | Sunlight is nonpartisan nonprofit organization based in
+          | the United States, which uses technology to make government more transparent and accountable.
+      .clearfix
+    // company3
+    .well
+      .media.col-md-3
+        figure.pull-left
+          a(href='http://poplus.org/', target='_blank')
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/poplus.png')
+      .col-md-9
+        h4.list-group-item-heading Poplus
+        p.list-group-item-text
+          | 世界各地的組織正在利用數位科技來要求政府負起責任、挑戰貪腐、以及追求「資訊透明」的權力。 Poplus 是個開放式聯邦，由來自許多國家且擁有以上共同目標的個人及組織構成。我們大家的共同任務，就是推廣「能幫助我們去幫助公民」的知識與科技。
+          br
+          | Poplus 的創始原則為: 公民合作開發程式，可以為大家節省時間與成本；透過分享案例與教訓，可以幫助大家變得更有效率。
+          | 不管是在哪種法律體系或政府形式之下運作，公民網站通常需要相同的基本功能。 Poplus 已著手試著打造可重複利用的技術來節省大家的時間與金錢。
+      .clearfix
+    h4 合作夥伴
+    // company1
+    .well
+      .media.col-md-3
+        figure.pull-left
+          a(href='http://wolftea.com/', target="_blank")
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/wolftea.png')
+        p: h4.list-group-item-heading 琅茶
+      .media.col-md-3
+        figure.pull-left
+          a(href='http://technews.tw/', target="_blank")
+            img.media-object.img-rounded.img-responsive(src='/images/sponsor/technews.png')
+        p: h4.list-group-item-heading TechNews
       .clearfix
 block footer
   // Footer

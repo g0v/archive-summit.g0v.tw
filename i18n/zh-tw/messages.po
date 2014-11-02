@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-04 09:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: layout/base.jade:53 layout/base.jade:54 partials/schedule.jade:67
+msgid "Schedule"
+msgstr "議程"
+
+#: layout/base.jade:57 layout/base.jade:58 partials/speaker.jade:3
+msgid "Speakers"
+msgstr "講者"
+
+#: layout/base.jade:61 layout/base.jade:62
+msgid "News"
+msgstr "新聞"
+
+#: layout/base.jade:65 layout/base.jade:66 partials/sponsor.jade:3
+msgid "Sponsors"
+msgstr "合作單位"
+
+#: layout/base.jade:69 layout/base.jade:70 partials/transport.jade:3
+msgid "Venue"
+msgstr "交通"
+
+#: partials/schedule.jade:62
+msgid "Interpreted"
+msgstr "即時口譯"
+
+#: partials/schedule.jade:96
+msgid "ZH/EN"
+msgstr "華/英"
+
+#: partials/schedule.jade:97
+msgid "EN/ZH"
+msgstr "英/華"
+
+#: partials/schedule.jade:105
+msgid "EN"
+msgstr "英"
+
+#: partials/schedule.jade:106
+msgid "ZH"
+msgstr "華"

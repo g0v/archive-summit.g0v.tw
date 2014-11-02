@@ -1,12 +1,20 @@
 extends ../layout/page
 block vars
-  - var tabName = "交通"
+  - var tabName = _("Venue")
 block content
   .row
     .media.col-md-4
       | 地點：台北市南港區中央研究院人文館
       br
       | 地址：台北市南港區研究院路二段128號
+      p
+      | 接駁車
+      br
+      | 11/8 7:30~9:15 在捷運南港展覽館站二號出口搭乘
+      br
+      | shuttle bus
+      br
+      | 11/8 7:30~9:15 from Exit 2, MRT Taipei Nangang Exhibition Center Station
       p
         | 公車路線：
         br
@@ -34,3 +42,107 @@ block content
     .col-md-8
       iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28918.21852898904!2d121.61407107302806!3d25.041630124767032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53ceacf197917004!2z5Lq65paH56S-5pyD56eR5a246IGv5ZCI5ZyW5pu46aSoL-S4reWkrueglOeptumZog!5e0!3m2!1szh-TW!2stw!4v1410528964629', width='600', height='450', frameborder='0', style='border:0')
     .clearfix
+    .col-lg-12
+      h1 Taiwan Travel Tips
+      p
+        | Welcome to Taiwan, here are some quick travel tips I want to share. I hope this document will help you have a comfortable and convenient experience here.
+      p
+        | If you need further information, you can refer to following links to explore.
+        | 
+        br
+        | Tripadvisor：
+        a(href='http://www.tripadvisor.com/Tourism-g293910-Taiwan-Vacations.html', target='_blank') http://www.tripadvisor.com/Tourism-g293910-Taiwan-Vacations.html
+        br
+        | Travel King：
+        a(href='http://www.travelking.com.tw/eng/tourguide/taipei/', target='_blank') http://www.travelking.com.tw/eng/tourguide/taipei/
+        br
+        | Wikitravel：
+        a(href='http://wikitravel.org/en/Taiwan', target='_blank') http://wikitravel.org/en/Taiwan
+      h3 Airport
+      p 
+                a(href='http://www.taoyuan-airport.com/english/Index/', target='_blank') Taiwan Taoyuan International Airport (TPE) 
+                | is an international airport serving the capital city of Taiwan, Taipei. It has two terminals and free airport WIFI. Mobile & internet service as well as ground transportation are easy to get in any terminals.
+              p
+                span.glyphicon.glyphicon-star
+                |  Mobile & Internet Service
+                br
+                Telecom companies are situated at arrival hall. For foreign visitors, you are required to present two documents with photos for getting a prepaid SIM card. The shop will make a photocopy of your IDs. Those telecom companies offer quite similar packages; I recommend Taiwan Mobile as the first choice and Chunghwa Telecom as the second one. Both of them offer 3-day package for NT$300 ( includes 3-day unlimited 3G data usage and NT$100 worth of airtime ) and 5-day package for NT$300 ( includes 5-day unlimited 3G data usage and NT$50 worth of airtime ). Those data plans are only available in airport, which I highly recommend to get your prepaid SIM card before you leave airport.
+                .alert.alert-danger
+                  * SIM cards are available in both standard sizes and micro-SIMs for iOS devices.
+              p
+                span.glyphicon.glyphicon-star
+                |  Ground Transportation to Taipei City
+                br
+                b Bus
+                br
+                | Frequent buses link the airport to the main cities. It’s the most economical way to get to Taipei.
+                br
+                b Rail
+                br
+                | TPE airport is close to the High Speed Rail Taoyuan station, which is generally the preferred method of transit for travelers because of its speed. You can catch a 5-minute shuttle bus from airport to the high speed rail station which travels to Taipei Main Station in 20 minutes, then transfer to the MRT (Metro Rapid System) from there.
+                br
+                b Taxi
+                br
+                | Taxi queues are outside the arrival halls of both terminals and are available 24 hours a day. A taxi from the airport to the city center will be around NT$1,200. The actual fares may vary depending on traffic.
+                br
+                b Car rental
+                br
+                | Car rentals are available at both terminals.
+              h3 Taipei City Tours
+              p
+                b One day pakeage 1 
+                br
+                Taipei 101→Songshan Cultural and Creative Park →Tonghua Night Market
+              h3 Taipei 101
+              p
+                a(href='http://www2.taipei-101.com.tw/en/Tower/index_tower.asp', target='_blank') http://www2.taipei-101.com.tw/en/Tower/index_tower.asp
+                br
+                |  Address: No.7, Sec.5, Xin Yi Rd. Taipei,
+                br
+                |  Shopping mall opening hours: Mon-Fri 11:00-21:30 / Sat-Sun 11:00-22:00
+                br
+                |  Observation deck opening hours: Mon-Sun 9:00-22:00
+              p
+                | Taipei 101 (traditional Chinese:台北101), is a landmark skyscraper located in Xinyi District, Taipei, Taiwan. The building ranked officially as the world's tallest from 2004 until the opening of the Burj Khalifa in Dubai in 2010.
+              p
+                | Ticket sales are on the 5th floor of the Taipei 101 Shopping Mall. The pressure-controlled lift up is quite a rush; at 1010m per minute it takes a mere 40 seconds to get from ground level to the 89th-floor observation deck. Observation decks are on the 88th and 89th floors, with an outdoor deck on the 91st floor opened on some occasions, weather permitting. Don't miss the massive gold-coloured iron wind damper that keeps the tower stable through typhoons and earthquakes.
+              p
+                | In the basement is a decent food court, and the first five floors are taken up by one of Taipei's swankiest malls. There are lot of department stores, modern restaurants and bars around this area, don't miss these.
+              h3 Songshan Cultural and Creative Park  松山文化創意園區
+              p
+                a(href='http://www.songshanculturalpark.org/en/index.html', target='_blank') http://www.songshanculturalpark.org/en/index.html
+                br
+                |  Address: No. 133, Guangfu South Road, Xinyi District, Taipei.
+                br
+                |  Opening times depend on which area you are going to visit, please visit the website for the further information.
+              p
+                | Songshan Cultural and Creative Park was built on the historic site as a production base for designers and cultural & creative businesses, as well as a venue for performances and exhibitions.
+              h3 Tonghua Night Market (Linjiang St. Night Market)通化街夜市 (臨江街夜市)
+              p
+                | Tonghua Street Night Market (sometimes also Linjiang Street Night Market), is a popular tourist night market in Taipei, located close to Taipei's landmark building Taipei 101 in the Xinyi commercial district .
+              p
+                | The food is more or less same as on most night markets in Taipei. You will see the salty chicken (鹹水雞) and the marinade (滷味), the fried stinky tofu (臭豆腐), all kinds of fried chickens (鹽酥雞), sausages, steaks, bubble tea shops(also pearl tea shops, 珍珠奶茶) and fruit stalls. My personal recommendations are the sausage in rice wrap 大腸包小腸 (literally "big sausage wrapping a small sausage"). I also loved the fried stinky tofu (一口金酥臭豆腐, literally "one bite golden crispy stinky tofu") and bubble tea(珍珠奶茶), which is a Taiwanese tea-based drink.
+              p
+                b One day pakeage 2
+                br
+                National Palace Museum→Beitou Hot Spring Museum
+              h3 National Palace Museum 國立故宮博物院
+              p
+                a(href='http://www.npm.gov.tw/en/', target='_blank') http://www.npm.gov.tw/en/
+                br
+                |  Address: No. 221, Section 2, Zhishan Road, Shihlin District, Taipei City
+                br
+                |  opening hours: 08:30 to 18:30, all year round.
+              p
+                | The National Palace Museum is an antique museum in Shilin, Taipei, Taiwan. It is one of the national museums of the Republic of China, and has a permanent collection of more than 696,000 pieces of ancient Chinese artifacts and artworks, making it one of the largest in the world. The collection encompasses over 8,000 years of Chinese history from the Neolithic age to the late Qing Dynasty. Most of the collection are high quality pieces collected by China's ancient emperors.
+              h3 Beitou Hot Spring Museum 北投溫泉博物館
+              p
+                a(href='http://www.taipeisprings.org.tw/english/index/index.htm', target='_blank') http://www.taipeisprings.org.tw/english/index/index.htm
+                br
+                |  Address: No. 2, Zhongshan Rd. Taipei.
+                br
+                |  opening hours: 09:00~17:00 Tue.-Sun.;Closed Monday and national holidays
+              p
+                | Built in 1913, the Beitou Hot Spring Museum was originally the Beitou Public Bathhouse, the largest bathhouse in the East Asia at the time. Now it serves to recount Beitou’s hot spring history. The whole building resembles an English country house. It marks the beginning of Beitou’s hot spring era. On display are historical relics and documents, which tell stories of the sulfur mining, the hot spring and Taiwanese films, providing the public a window to Beitou.
+              p
+                | You can have hot spring around this area after visit this museum, I recommend villa 32 or Spring City Resort.
