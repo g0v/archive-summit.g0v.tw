@@ -67,7 +67,7 @@ schedule = do
     title_zh: "教育部《臺灣閩南語常用詞辭典》資料庫釋出歷程"
     title_en: "History of MoE's CC release of Taiwanese Holo Dictionary"
     speaker_zh: "林佳怡"
-    speaker_en: "林佳怡"
+    speaker_en: "Liz Lin"
     language: "ZH"
     interpretation: "EN"
   r4_0950:
@@ -98,7 +98,7 @@ schedule = do
     title_zh: "開放語料運動"
     title_en: "Open-corpus movement"
     speaker_zh: "謝舒凱、馬基石(Pierre Magistry)"
-    speaker_en: "謝舒凱"
+    speaker_en: "Shu-Kai Hsieh, Pierre Magistry"
     language: "ZH"
     interpretation: "EN"
   r4_1020:
@@ -132,7 +132,7 @@ schedule = do
     title_zh: "Redesigning MoeDict"
     title_en: "Redesigning MoeDict"
     speaker_zh: "薛良斌"
-    speaker_en: "薛良斌"
+    speaker_en: "Liang-Bin Hsueh"
     language: "ZH"
     interpretation: "EN"
   r4_1120:
