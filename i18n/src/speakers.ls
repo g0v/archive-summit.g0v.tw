@@ -379,3 +379,27 @@ Engaging with the public and parliament"""
     topic_en: "Open source tools for self-organising democracy"
     abstract_zh: "Loomio is an open source tool for democratic self-organising, built by a small team of free software developers, facilitators and Occupy activists in New Zealand. Two years into development, Loomio is being used by thousands of groups in 74 countries, from grassroots activists organising large-scale protests through to high school students, neighbourhoods and government departments using it for democratic collaboration."
     abstract_en: "Loomio is an open source tool for democratic self-organising, built by a small team of free software developers, facilitators and Occupy activists in New Zealand. Two years into development, Loomio is being used by thousands of groups in 74 countries, from grassroots activists organising large-scale protests through to high school students, neighbourhoods and government departments using it for democratic collaboration."
+  * uid: 32
+    name_zh: "Paul Lenz"
+    name_en: "Paul Lenz"
+    avatar: ""
+    country_zh: "英國"
+    country_en: "UK"
+    bio_zh: """If you are part of an organisation from outside the UK and you want mySociety’s help with online democracy or transparency projects, then it is likely that Paul will be your first contact.
+In many cases, Paul will also be the one who comes to see you face-to-face. He has frequently visited Africa, overseeing the re-launch and maintenance of Mzalendo, the Kenyan parliamentary monitoring website (which uses our Pombola platform), and working with groups in Ghana, Nigeria and South Africa.
+His work isn’t limited to a single continent however, and he is also working with groups in South America, Europe and Southeast Asia.
+Before joining mySociety, Paul worked for five years at British Telecom, the UK’s largest telecommunications company, where he gained invaluable project-management experience.
+These days, he is often to be found on a train or plane, looking for somewhere to plug in his laptop and trying to get a decent internet connection.
+If you’d like to know more about how Paul’s team might be able to help your organisation, write to international@mysociety.org.
+"""
+    bio_en: """If you are part of an organisation from outside the UK and you want mySociety’s help with online democracy or transparency projects, then it is likely that Paul will be your first contact.
+In many cases, Paul will also be the one who comes to see you face-to-face. He has frequently visited Africa, overseeing the re-launch and maintenance of Mzalendo, the Kenyan parliamentary monitoring website (which uses our Pombola platform), and working with groups in Ghana, Nigeria and South Africa.
+His work isn’t limited to a single continent however, and he is also working with groups in South America, Europe and Southeast Asia.
+Before joining mySociety, Paul worked for five years at British Telecom, the UK’s largest telecommunications company, where he gained invaluable project-management experience.
+These days, he is often to be found on a train or plane, looking for somewhere to plug in his laptop and trying to get a decent internet connection.
+If you’d like to know more about how Paul’s team might be able to help your organisation, write to international@mysociety.org.
+"""
+    topic_zh: "Components and Civic Coding - Poplus"
+    topic_en: "Components and Civic Coding - Poplus"
+    abstract_zh: "Poplus.org is new a global federation promoting useful, interactive bits of civic technology that you can slot right into your website or app. With members all over the world, your code and skills can make a real difference. Come learn about the innovative “component” approach and how your involvement can impact democracy and civic engagement around the world."
+    abstract_en: "Poplus.org is new a global federation promoting useful, interactive bits of civic technology that you can slot right into your website or app. With members all over the world, your code and skills can make a real difference. Come learn about the innovative “component” approach and how your involvement can impact democracy and civic engagement around the world."

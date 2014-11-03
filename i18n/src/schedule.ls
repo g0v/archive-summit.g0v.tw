@@ -253,8 +253,9 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r3_1330:
-    title_zh: "Poplus"
-    title_en: "Poplus"
+    speakerId: 32
+    title_zh: "Components and Civic Coding - Poplus"
+    title_en: "Components and Civic Coding - Poplus"
     speaker_zh: "Paul Lenz"
     speaker_en: "Paul Lenz"
     tag_zh: "mysociety/英"
