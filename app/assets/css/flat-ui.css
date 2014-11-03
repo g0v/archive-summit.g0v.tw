@@ -4667,3 +4667,6 @@ footer p {
 .mal {
   margin-left: 20px;
 }
+td h5 {
+    line-height: 130%;
+}

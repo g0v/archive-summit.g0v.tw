@@ -1,6 +1,6 @@
 schedule = do
   opening_zh: "開場"
-  opening_en: "opening"
+  opening_en: "Opening"
   r1_am_topic:
     title_zh: "開放國會"
     title_en: "Open Parliament"
