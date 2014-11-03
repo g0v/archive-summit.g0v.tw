@@ -39,9 +39,10 @@ schedule = do
     title_en: "Civic Technologies"
     subtitle_zh: "Civic Technologies"
     subtitle_en: ""
+    speakerId: 17
     desc_zh:
       0: "資訊視覺化、資訊新聞學、加密通訊系統、網絡分析，這些資訊技術導向的領域，打開了新的公民參與思維模式。"
-      1: "透過資料新的分析與應用，能有哪些方式結合議題，對政策規劃、媒體形式、資訊深入解讀分析等做出更進一步的影響。本議程有多位黑客分享精彩實作。（主持人：陳信屹、林雨蒼）"
+      1: "透過資料新的分析與應用，能有哪些方式結合議題，對政策規劃、媒體形式、資訊深入解讀分析等做出更進一步的影響。本議程有多位黑客分享精彩實作。（主持人：陳信屹、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info17'>林雨蒼</span>）"
     desc_en:
       0: "Data visualization, data journalism, encrypted communications systems and network analysis: These information technologies have initiated new modes of participation and colllaboration for citizens."
       1: "In what ways can we integrate the issues through new analysis and application, in order to have a greater impact on policy planning, media forms and in-depth information interpretation and analysis? A number of hackers will share their exciting practical work with us."
@@ -129,9 +130,10 @@ schedule = do
     title_zh: "參與式民主議程座談"
     title_en: "Panel"
     row: 2
+    speakerIds: [3]
     list_zh:
       0: "主持人：吳銘軒"
-      1: "與談貴賓：李根政、呂家華、陳俊宏、蔡玉玲"
+      1: "與談貴賓：李根政、呂家華、陳俊宏、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info3'>蔡玉玲</span>"
     list_en:
       0: "Moderator: M.H. Wu"
       1: "Panelists: 李根政、呂家華、陳俊宏、蔡玉玲"
@@ -153,9 +155,10 @@ schedule = do
   r1_1150:
     title_zh: "開放國會議程座談"
     title_en: "Open Parliament Panel"
+    speakerIds: [8]
     list_zh:
       0: "主持人：瞿海源"
-      1: "與談貴賓：Felipe Álvarez、Matthew Rumsey、Lucy Park、柳林瑋、高嘉良"
+      1: "與談貴賓：Felipe Álvarez、Matthew Rumsey、Lucy Park、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info8'>柳林瑋</span>、高嘉良"
     list_en:
       0: "Moderator: H.Y. Chiu"
       1: "Panelists: Felipe Álvarez, Matthew Rumsey, Lucy Park, W. Liu-Lin, clkao"
@@ -164,9 +167,10 @@ schedule = do
   r3_1150:
     title_zh: "3du 議程座談"
     title_en: "3du Panel"
+    speakerIds: [2,1,14]
     list_zh:
       0: "主持人：唐鳳"
-      1: "與談人：林佳怡、薛良斌、謝舒凱、馬基石"
+      1: "與談人：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info2'>林佳怡</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info1'>薛良斌</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info14'>謝舒凱、馬基石</span>"
     list_en:
       0: "Moderator: Audrey Tang"
       1: "Panelists: Liz Lin, Liang-Bin Hsueh, Shu-Kai Hsieh, Pierre Magistry"
@@ -186,9 +190,10 @@ schedule = do
     subtitle_en: ""
     badge_zh: "社會所「跨世紀學運系列論壇之五」"
     badge_en: ""
+    speakerIds: [9]
     desc_zh:
       0: "太陽花學運中，媒體的作用與以往運動有了一些轉變。主流媒體與新媒體之間的交互作用，從電視、報紙雜誌、到網路空間與社交媒體媒介，去中心化的開源網路社群也開始有了新的嘗試。"
-      1: "本座談將討論媒體本身角色，是抗爭運動的參與者抑或介入者，以及網路社群在運動中的角色，乃至未來的展望。（主持人：蕭新煌）"
+      1: "本座談將討論媒體本身角色，是抗爭運動的參與者抑或介入者，以及網路社群在運動中的角色，乃至未來的展望。（主持人：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info9'>蕭新煌</span>）"
     desc_en:
       0: "The functions of the media have changed some of the past campaign practices of the Sunflower Student Movement. The interactive functions between mainstream media and new media from television, newspapers, magazines to online space, social media and the decentralized open-source online community have all undergone new forms of experimentation."
       1: "This panel will discuss whether the role of the media — as a participant vs. an intervenor of the protest movement. We will also discuss the role of the online community as well as the prospects for the future."
@@ -198,9 +203,10 @@ schedule = do
     title_en: "Open Data and the Environment"
     subtitle_zh: "Open Data and the Environment"
     subtitle_en: ""
+    speakerIds: [26]
     desc_zh:
       0: "現今的氣候變遷，以及環境的過度利用，導致天災頻傳，而由 g0v 過往製做的雨量熱度圖、空氣污染圖，也讓拉近了民眾與環境資料之間的距離。"
-      1: "透過這樣的經驗，我們特別透過 g0v summit 的機會，邀請業界、NGO、政府的三位專家，跟我們一同討論從全球到台灣在地的環境議題、環境監測、環境資料，有哪些新氣象。（主持人：鄧東波）"
+      1: "透過這樣的經驗，我們特別透過 g0v summit 的機會，邀請業界、NGO、政府的三位專家，跟我們一同討論從全球到台灣在地的環境議題、環境監測、環境資料，有哪些新氣象。（主持人：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info26'>鄧東波</span>）"
     desc_en:
       0: "Presently, climate change and the overuse of environmental resources have caused many natural disasters to occur. The rain/temperature gauge and air pollution map created by g0v have helped to bring the general public closer to environmental information."
       1: "With this experience, we have used the opportunity offered by the g0v summit to invite three experts respectively from the industry, NGO and government to discuss the global and local (Taiwan) environmental issues, surveillance and data and any new meteorological events."
@@ -228,7 +234,7 @@ schedule = do
       1: "This discussion about the new faces of activism will start with the new media in the Sunflower Student Movement, then move on to explore the possibility of combining technological tools and social activism, including how Hong Kong activists leveraged experiences and software from Taiwan's civic hackers."
   r1_1330:
     row: 2
-    speakerIds: [12,10,11,undefined,13]
+    speakerIds: [12,10,11,undefined,13,undefined]
     list_zh:
       0: "<strong>Ｅ論壇的同步新聞寫作</strong> <span class='fui-user'/><span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info12'>吳宗泰</span>"
       1: "<strong>去中心化之下的主流媒體角色</strong> <span class='fui-user'/><span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info10'>陳守國</span>"
@@ -295,9 +301,10 @@ schedule = do
   r1_1440:
     title_zh: "媒體與學運議程座談"
     title_en: "媒體與學運議程座談"
+    speakerIds: [9, 12,10,11,undefined,13,undefined]
     list_zh:
-      0: "主持人：蕭新煌"
-      1: "與談貴賓：吳宗泰、陳守國、鄒景雯、鄭凱榕、瞿筱葳、嚴婉玲"
+      0: "主持人：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info9'>蕭新煌</span>"
+      1: "與談貴賓：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info12'>吳宗泰</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info10'>陳守國</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info11'>鄒景雯</span>、鄭凱榕、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info13'>瞿筱葳</span>、嚴婉玲"
     list_en:
       0: "主持人：蕭新煌"
       1: "與談貴賓：吳宗泰、陳守國、鄒景雯、鄭凱榕、瞿筱葳、嚴婉玲"
@@ -305,9 +312,10 @@ schedule = do
   r2_1440:
     title_zh: "環境議程座談"
     title_en: "環境議程座談"
+    speakerIds: [26, 7, 25, 6]
     list_zh:
-      0: "主持人：鄧東波"
-      1: "與談貴賓：朱雨其、彭啟明、詹順貴"
+      0: "主持人：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info26'>鄧東波</span>"
+      1: "與談貴賓：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info7'>朱雨其</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info25'>彭啟明</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info6'>詹順貴</span>"
     list_en:
       0: "Moderator: Dongpo Deng"
       1: "Panelists: Y.C. CHU, C.M. PENG, Thomas Shun-Kuei CHAN"

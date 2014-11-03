@@ -15,7 +15,9 @@ mixin getInfo(index)
           button.close(type='button', data-dismiss='modal')
             span(aria-hidden='true') ×
             span.sr-only Close
+          img.img-circle.img-responsive(src='#{speaker["avatar"]}', alt='#{speaker["name_"+lang]}')
           h5.modal-title=speaker["name_"+lang]
+          span.badge=speaker["country_"+lang]
         .modal-body
           h6 Bio
           p!=speaker["bio_"+lang]
@@ -47,8 +49,10 @@ mixin topicslots_desc(time)
         - var name = section + "_" + time + "_topic"
         - var desc = schedule_i18n[name]["desc_"+lang] || schedule_i18n[name]["desc"]
         each p in desc
-          p= p
-
+          p!= p
+          if schedule_i18n[name]["speakerId"]
+            - var index = schedule_i18n[name]["speakerId"] - 1
+            +getInfo(index)
 mixin timeslots(head, time)
   tr
     td.text-center #{head}
@@ -87,8 +91,6 @@ mixin timeslots(head, time)
             +get(obj, "tag")
           if obj["speakerId"]
             - var index = obj["speakerId"] - 1
-            //- p.text-center
-            //-   button.btn.btn-primary() More
             +getInfo(index)
           else if obj["speakerIds"]
             each id in obj["speakerIds"]
