@@ -104,3 +104,7 @@ span.lang.interpreted {
   background: #ddd;
   border-color: #008000;
 }
+.modal-header img {
+  width: 15%;
+  height: 15%;
+}
