@@ -131,10 +131,10 @@ schedule = do
     title_zh: "參與式民主議程座談"
     title_en: "Panel"
     row: 2
-    speakerIds: [3]
+    speakerIds: [4, 3]
     list_zh:
       0: "主持人：吳銘軒"
-      1: "與談貴賓：李根政、呂家華、陳俊宏、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info3'>蔡玉玲</span>"
+      1: "與談貴賓：李根政、呂家華、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info4'>陳俊宏</div>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info3'>蔡玉玲</span>"
     list_en:
       0: "Moderator: M.H. Wu"
       1: "Panelists: 李根政、呂家華、陳俊宏、蔡玉玲"
