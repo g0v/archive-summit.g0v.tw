@@ -355,3 +355,27 @@ This talk consists of two parts. First, we introduce how this voluntary movement
 Our tech stack (Why Python and all?)<br>
 Task management and decision making within the team<br>
 Engaging with the public and parliament"""
+  * uid: 30
+    name_zh: "Gregory Engels"
+    name_en: "Gregory Engels"
+    avatar: "http://www.gravatar.com/avatar/a6a87cc45cdf08dc4e2a270871ae6d93?s=400"
+    country_zh: "德國"
+    country_en: "Germany"
+    bio_zh: "Gregory Engels is an IT-enterpreneur and politician from Germany. He is involved in the international movement of Pirate Parties since 2009 and is the founding co-chairman Pirate Parties International, that represents Pirate Parties from 44 countries around the globe. He was a election candidate to the European Parliament and is elected to the city council in Offenbach. Gregory is a book author and frequent speaker at international conferences."
+    bio_en: "Gregory Engels is an IT-enterpreneur and politician from Germany. He is involved in the international movement of Pirate Parties since 2009 and is the founding co-chairman Pirate Parties International, that represents Pirate Parties from 44 countries around the globe. He was a election candidate to the European Parliament and is elected to the city council in Offenbach. Gregory is a book author and frequent speaker at international conferences."
+    topic_zh: "Democracy Upgrade"
+    topic_en: "Democracy Upgrade"
+    abstract_zh: "In the classical democratic systems a citizen gets a vote to express his will. This happen on a regular basis, typical once every four years. One bit of information (one cross) in four years is not great in terms of bandwidth. In todays world of ever present availability of broadband citizen demand a higher upload rate into political system. The Pirate Parties advocate for an „Democracy Upgrade“, by utilizing new software enhanced processes for citizen involvement. One of such approaches is Liquid Democracy and its software implementation Liquid Feedback. In this talk you will learn about it and other systems in use by the Pirate Parties."
+    abstract_en: "In the classical democratic systems a citizen gets a vote to express his will. This happen on a regular basis, typical once every four years. One bit of information (one cross) in four years is not great in terms of bandwidth. In todays world of ever present availability of broadband citizen demand a higher upload rate into political system. The Pirate Parties advocate for an „Democracy Upgrade“, by utilizing new software enhanced processes for citizen involvement. One of such approaches is Liquid Democracy and its software implementation Liquid Feedback. In this talk you will learn about it and other systems in use by the Pirate Parties."
+  * uid: 31
+    name_zh: "Richard Bartlett"
+    name_en: "Richard Bartlett"
+    avatar: "http://www.gravatar.com/avatar/d5039eb7649c89379ed0715e41a68310?s=400"
+    country_zh: "紐西蘭"
+    country_en: "New Zealand"
+    bio_zh: "Rich Bartlett is a co-founder of Loomio, an open source tool for democratic self-organising built by a team of free software developers, facilitators and Occupy activists in New Zealand. Rich was wasting his life as an engineer, until he started building DIY electronics and discovered the open source hardware community. Now he works as a software engineer on Loomio, applying the DIY open source engineering approach to 21st century democracy."
+    bio_en: "Rich Bartlett is a co-founder of Loomio, an open source tool for democratic self-organising built by a team of free software developers, facilitators and Occupy activists in New Zealand. Rich was wasting his life as an engineer, until he started building DIY electronics and discovered the open source hardware community. Now he works as a software engineer on Loomio, applying the DIY open source engineering approach to 21st century democracy."
+    topic_zh: "Open source tools for self-organising democracy"
+    topic_en: "Open source tools for self-organising democracy"
+    abstract_zh: "Loomio is an open source tool for democratic self-organising, built by a small team of free software developers, facilitators and Occupy activists in New Zealand. Two years into development, Loomio is being used by thousands of groups in 74 countries, from grassroots activists organising large-scale protests through to high school students, neighbourhoods and government departments using it for democratic collaboration."
+    abstract_en: "Loomio is an open source tool for democratic self-organising, built by a small team of free software developers, facilitators and Occupy activists in New Zealand. Two years into development, Loomio is being used by thousands of groups in 74 countries, from grassroots activists organising large-scale protests through to high school students, neighbourhoods and government departments using it for democratic collaboration."

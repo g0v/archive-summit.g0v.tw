@@ -56,6 +56,7 @@ schedule = do
     language: "EN"
     interpretation: "ZH"
   r2_0950:
+    speakerId: 30
     title_zh: "Democracy Upgrade"
     title_en: "Democracy Upgrade"
     speaker_zh: "Gregory Engels"
@@ -90,6 +91,7 @@ schedule = do
     language: "EN"
     interpretation: "ZH"
   r2_1020:
+    speakerId: 31
     title_zh: "Open source tools for self-organising democracy"
     title_en: "Open source tools for self-organising democracy"
     speaker_zh: "Richard Bartlett"
