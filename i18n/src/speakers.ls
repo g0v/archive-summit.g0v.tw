@@ -376,7 +376,7 @@ Engaging with the public and parliament"""
     topic_en: "Democracy Upgrade"
     abstract_zh: "In the classical democratic systems a citizen gets a vote to express his will. This happen on a regular basis, typical once every four years. One bit of information (one cross) in four years is not great in terms of bandwidth. In todays world of ever present availability of broadband citizen demand a higher upload rate into political system. The Pirate Parties advocate for an „Democracy Upgrade“, by utilizing new software enhanced processes for citizen involvement. One of such approaches is Liquid Democracy and its software implementation Liquid Feedback. In this talk you will learn about it and other systems in use by the Pirate Parties."
     abstract_en: "In the classical democratic systems a citizen gets a vote to express his will. This happen on a regular basis, typical once every four years. One bit of information (one cross) in four years is not great in terms of bandwidth. In todays world of ever present availability of broadband citizen demand a higher upload rate into political system. The Pirate Parties advocate for an „Democracy Upgrade“, by utilizing new software enhanced processes for citizen involvement. One of such approaches is Liquid Democracy and its software implementation Liquid Feedback. In this talk you will learn about it and other systems in use by the Pirate Parties."
-    twitter: "Gregory Engels"
+    twitter: "dichter"
   * uid: 31
     name_zh: "Richard Bartlett"
     name_en: "Richard Bartlett"
