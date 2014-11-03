@@ -311,3 +311,47 @@ speakers =
     topic_en: ""
     abstract_zh: ""
     abstract_en: ""
+  * uid: 27
+    name_zh: "Felipe Álvarez"
+    name_en: "Felipe Álvarez"
+    avatar: "https://secure.gravatar.com/avatar/896a1e6efc2f946a41461fcd2e9647fe?s=400"
+    country_zh: "智利"
+    country_en: "Chile"
+    bio_zh: "Luis Felipe Álvarez Burgos: Civic software developer based in Santiago, Chile working in Ciudadano Inteligente. Fundación Ciudadano Inteligente creates and develops technological tools which empower citizens in transparency, accountability and collective participation, both in Chile and Latin America."
+    bio_en: "Luis Felipe Álvarez Burgos: Civic software developer based in Santiago, Chile working in Ciudadano Inteligente. Fundación Ciudadano Inteligente creates and develops technological tools which empower citizens in transparency, accountability and collective participation, both in Chile and Latin America."
+    topic_zh: "Interest Inspector"
+    topic_en: "Interest Inspector"
+    abstract_zh: "Ciudadano Inteligente (FCI) is an NGO based in Chile that aims to bridge the information gaps between the latin american people, also promotes laws and regulations to promote transparency and accountability in the government. In this sense FCI conducted a research called Interests Inspector (2011), that was intended to transparent the relation between the declarations of assets of Congress and the legislative work. The intention of it was to inhibit congressmen to benefit themselves and not the public good, specially considering that the chilean system doesn't provide an oversight entity for this kind of conflict."
+    abstract_en: "Ciudadano Inteligente (FCI) is an NGO based in Chile that aims to bridge the information gaps between the latin american people, also promotes laws and regulations to promote transparency and accountability in the government. In this sense FCI conducted a research called Interests Inspector (2011), that was intended to transparent the relation between the declarations of assets of Congress and the legislative work. The intention of it was to inhibit congressmen to benefit themselves and not the public good, specially considering that the chilean system doesn't provide an oversight entity for this kind of conflict."
+  * uid: 28
+    name_zh: "Matthew Rumsey"
+    name_en: "Matthew Rumsey"
+    avatar: "https://assets-sfcom.s3.amazonaws.com/staff/profile/mrumsey.jpg"
+    country_zh: "美國"
+    country_en: "US"
+    bio_zh: "Matt Rumsey is a Policy Associate at the Sunlight Foundation, working on Congressional and Federal policy with a focus on open data, spending transparency, information policy, and more. He currently serves as the Sunlight Foundation's representative on the Congressional Data Coalition Steering Committee. He has a BA in History from American University. In addition to open government and transparency issues, Matt is passionate about local government and politics, Major League Baseball, and his slow cooker. He has been quoted or reprinted in Roll Call, The Washington Examiner, Federal Computer Week, Fedscoop, TechCrunch, and more. He has also blogged about local issues for Greater Greater Washington. Originally from Connecticut, Matt has lived in DC on and off since 2005."
+    bio_en: "Matt Rumsey is a Policy Associate at the Sunlight Foundation, working on Congressional and Federal policy with a focus on open data, spending transparency, information policy, and more. He currently serves as the Sunlight Foundation's representative on the Congressional Data Coalition Steering Committee. He has a BA in History from American University. In addition to open government and transparency issues, Matt is passionate about local government and politics, Major League Baseball, and his slow cooker. He has been quoted or reprinted in Roll Call, The Washington Examiner, Federal Computer Week, Fedscoop, TechCrunch, and more. He has also blogged about local issues for Greater Greater Washington. Originally from Connecticut, Matt has lived in DC on and off since 2005."
+    topic_zh: "Using Open Data to Empower Others"
+    topic_en: "Using Open Data to Empower Others"
+    abstract_zh: "Sunlight has built tools and analyses that help our audience engage with our mission and issues. A less visible but no less important part of our work is working with government. Through a combination of carrots and sticks, we have influenced the White House's open data policies, improved the data disclosures of Congress, and contributed to the passage of reform legislation. I'd love to tell some of these stories, and to share the lessons we've learned about being an effective advocate."
+    abstract_en: "Sunlight has built tools and analyses that help our audience engage with our mission and issues. A less visible but no less important part of our work is working with government. Through a combination of carrots and sticks, we have influenced the White House's open data policies, improved the data disclosures of Congress, and contributed to the passage of reform legislation. I'd love to tell some of these stories, and to share the lessons we've learned about being an effective advocate."
+  * uid: 29
+    name_zh: "Lucy Park"
+    name_en: "Lucy Park"
+    avatar: "https://secure.gravatar.com/avatar/6bbb76f70c37e80add11dd317d19ea4e?s=400"
+    country_zh: "南韓"
+    country_en: "South Korea"
+    bio_zh: "Ms. Eunjeong (Lucy) Park is a data miner, founding member and director at Team POPONG, a South Korea based non-partisan voluntary group that merges and analyzes various government resources, to make the legislative process more accessible and easier to understand. She is a PhD candidate specializing in data research at Seoul National University. Ms. Park describes her principal interest as lowering the barriers of knowledge for Korean citizens via technology. She currently devotes her best efforts in improving Politics in Korea (http://en.pokr.kr), an award winning National Assembly monitoring service, with the belief that technology can make a change."
+    bio_en: "Ms. Eunjeong (Lucy) Park is a data miner, founding member and director at Team POPONG, a South Korea based non-partisan voluntary group that merges and analyzes various government resources, to make the legislative process more accessible and easier to understand. She is a PhD candidate specializing in data research at Seoul National University. Ms. Park describes her principal interest as lowering the barriers of knowledge for Korean citizens via technology. She currently devotes her best efforts in improving Politics in Korea (http://en.pokr.kr), an award winning National Assembly monitoring service, with the belief that technology can make a change."
+    topic_zh: "Opening Government in South Korea"
+    topic_en: "Opening Government in South Korea"
+    abstract_zh: """Team POPONG (http://en.popong.com) was founded based on the idea that everyone has the right to know about their society and therefore, engaging in politics should be easy and political data must be accessible. For this, POPONG aims to enhance the accessibility and usability of Korean political data with their services, especially by organizing and transforming the data into open formats, providing open APIs, and creating visualizations that are easily understood.<br>
+This talk consists of two parts. First, we introduce how this voluntary movement all started, and what we've done since. Then, as a tech-centered group mainly formed of voluntary citizens in their 20-30s, we share some issues that we have either overcome or are going through; mainly on the following aspects:<br><br>
+Our tech stack (Why Python and all?)<br>
+Task management and decision making within the team<br>
+Engaging with the public and parliament"""
+    abstract_en: """Team POPONG (http://en.popong.com) was founded based on the idea that everyone has the right to know about their society and therefore, engaging in politics should be easy and political data must be accessible. For this, POPONG aims to enhance the accessibility and usability of Korean political data with their services, especially by organizing and transforming the data into open formats, providing open APIs, and creating visualizations that are easily understood.<br><br>
+This talk consists of two parts. First, we introduce how this voluntary movement all started, and what we've done since. Then, as a tech-centered group mainly formed of voluntary citizens in their 20-30s, we share some issues that we have either overcome or are going through; mainly on the following aspects:<br>
+Our tech stack (Why Python and all?)<br>
+Task management and decision making within the team<br>
+Engaging with the public and parliament"""

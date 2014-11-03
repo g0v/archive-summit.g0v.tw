@@ -46,6 +46,7 @@ schedule = do
       0: "Data visualization, data journalism, encrypted communications systems and network analysis: These information technologies have initiated new modes of participation and colllaboration for citizens."
       1: "In what ways can we integrate the issues through new analysis and application, in order to have a greater impact on policy planning, media forms and in-depth information interpretation and analysis? A number of hackers will share their exciting practical work with us."
   r1_0950:
+    speakerId: 27
     title_zh: "Interest Inspector"
     title_en: "Interest Inspector"
     speaker_zh: "Felipe Álvarez"
@@ -79,6 +80,7 @@ schedule = do
     speaker_en: "李慕約"
     language: "ZH"
   r1_1020:
+    speakerId: 28
     title_zh: "Using Open Data to Empower Others"
     title_en: "Using Open Data to Empower Others"
     speaker_zh: "Matthew Rumsey"
@@ -112,6 +114,7 @@ schedule = do
     speaker_en: "Kirby"
     language: "ZH"
   r1_1120:
+    speakerId: 29
     title_zh: "How We Open the National Assembly in South Korea, with Technology"
     title_en: "How We Open the National Assembly in South Korea, with Technology"
     speaker_zh: "Lucy Park"
