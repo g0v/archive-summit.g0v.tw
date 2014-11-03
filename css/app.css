@@ -83,8 +83,11 @@
 .speaker-info {
   cursor: pointer;
 }
-span.fui-user {
-  padding-right: 5px;
+.social-network {
+  font-size: 32px;
+}
+.social-network .twitter-color {
+  color: #4099ff;
 }
 span.lang {
   display: inline-block;
