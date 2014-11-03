@@ -17,9 +17,10 @@ schedule = do
     title_en: "Participatory Democracy"
     subtitle_zh: "Participatory Democracy"
     subtitle_en: ""
+    speakerId: 5
     desc_zh:
       0: "民主如何參與、參與式民主如何實現，是近年越來越受重視的議題。g0v 社群成立之初便討論相關案例、著手開發平台，但從開放資料、到體制調整、乃至民主深化，都還需要各種努力。"
-      1: "此議程邀請兩位國際講者，介紹歐洲海盜黨及線上平台的審議經驗。座談則由行政院推動開放參與的政務委員，與民間倡議審議民主的專家學者直接對話。（主持人：劉致昕）"
+      1: "此議程邀請兩位國際講者，介紹歐洲海盜黨及線上平台的審議經驗。座談則由行政院推動開放參與的政務委員，與民間倡議審議民主的專家學者直接對話。（主持人：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info5'>劉致昕</span>）"
     desc_en:
       0: "How does one participate in democracy and how to make participatory democracy possible have become issues of growing interest in recent years. At its inception, the g0v community had already discussed the related cases and set out to work on the platform development. However, more efforts are still needed in various areas in open data and infrastructures for the deepening of the democratization process."
       1: "In this track, we have invited two international speakers to introduce Europe's Pirate Party and their online platform review experience. The panel will involve a direct dialogue between executive committee members who have promoted openness and participation in the cabinet with academics who have advocated deliberate democracy in the community"
@@ -155,10 +156,10 @@ schedule = do
   r1_1150:
     title_zh: "開放國會議程座談"
     title_en: "Open Parliament Panel"
-    speakerIds: [8]
+    speakerIds: [27, 28, 29, 8]
     list_zh:
       0: "主持人：瞿海源"
-      1: "與談貴賓：Felipe Álvarez、Matthew Rumsey、Lucy Park、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info8'>柳林瑋</span>、高嘉良"
+      1: "與談貴賓：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info27'>Felipe Álvarez</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info28'>Matthew Rumsey</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info29'>Lucy Park</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info8'>柳林瑋</span>、高嘉良"
     list_en:
       0: "Moderator: H.Y. Chiu"
       1: "Panelists: Felipe Álvarez, Matthew Rumsey, Lucy Park, W. Liu-Lin, clkao"
