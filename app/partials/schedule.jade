@@ -17,7 +17,12 @@ mixin getInfo(index)
             span.sr-only Close
           img.img-circle.img-responsive(src='#{speaker["avatar"]}', alt='#{speaker["name_"+lang]}')
           h5.modal-title=speaker["name_"+lang]
+          if speaker["twitter"]
+            div.social-network.pull-right
+              a.twitter-color(href='http://twitter.com/#{speaker["twitter"]}', target="_blank")
+                span.fui-twitter
           span.badge=speaker["country_"+lang]
+
         .modal-body
           h6 Bio
           p!=speaker["bio_"+lang]
@@ -53,6 +58,10 @@ mixin topicslots_desc(time)
           if schedule_i18n[name]["speakerId"]
             - var index = schedule_i18n[name]["speakerId"] - 1
             +getInfo(index)
+          else if schedule_i18n[name]["speakerIds"]
+            each id in schedule_i18n[name]["speakerIds"]
+              if id
+                +getInfo(id-1) 
 mixin timeslots(head, time)
   tr
     td.text-center #{head}

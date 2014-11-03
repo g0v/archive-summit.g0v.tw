@@ -11,6 +11,7 @@ speakers =
     topic_en: "Redesigning moedict"
     abstract_zh: "萌典是民間版《教育部辭典》的開放資料界面與應用範例，收錄十六萬筆國語、兩萬筆台語、一萬四千筆客語條目、常用字的筆順動畫、英法德文翻譯，以及中華文化總會的《兩岸常用詞典》。<br> 本 talk 以萌典為例，闡述零食政府專案的 UI 規劃進行方式。"
     abstract_en: "萌典是民間版《教育部辭典》的開放資料界面與應用範例，收錄十六萬筆國語、兩萬筆台語、一萬四千筆客語條目、常用字的筆順動畫、英法德文翻譯，以及中華文化總會的《兩岸常用詞典》。<br> 本 talk 以萌典為例，闡述零食政府專案的 UI 規劃進行方式。"
+    twitter: "hlb"
   * uid: 2
     name_zh: "林佳怡"
     name_en: "Liz Lin"
@@ -179,6 +180,7 @@ speakers =
     topic_en: "用影像處理來處理政府資料吧~"
     abstract_zh: "雖然政府已經有越來越多資料以機器可讀格式或是開放格式放出，但是也有許多資料只願意以圖片的型式放出，為了處理這樣的資料，例如政治獻金掃描圖檔或者是地圖上的輪廓，我開始摸索 opencv 以及一些影像處理的方法想要拆解這些圖片，這次就來分享我的經驗吧！"
     abstract_en: "雖然政府已經有越來越多資料以機器可讀格式或是開放格式放出，但是也有許多資料只願意以圖片的型式放出，為了處理這樣的資料，例如政治獻金掃描圖檔或者是地圖上的輪廓，我開始摸索 opencv 以及一些影像處理的方法想要拆解這些圖片，這次就來分享我的經驗吧！"
+    twitter: "ronnywang"
   * uid: 16
     name_zh: "陳瑞霖"
     name_en: "陳瑞霖"
@@ -203,6 +205,7 @@ speakers =
     topic_en: ""
     abstract_zh: ""
     abstract_en: ""
+    twitter: "billy3321"
   * uid: 18
     name_zh: "劉偉宸"
     name_en: "劉偉宸"
@@ -227,6 +230,7 @@ speakers =
     topic_en: "開源與媒體 - 科技主導的當代新聞學"
     abstract_zh: "近年來資訊圖表、資料新聞學、新聞視覺化漸成顯學，而隨著媒體表現方式的演進，新聞報導也開始跳脫電視與報紙的框架；然而大量資訊處理與互動式呈現對新聞記者來說往往是個相當大的挑戰。<br><br>這個題目將以零傳媒為例，分享這一年來在視覺化以及與媒體夥伴合作的經驗，以及相關視覺化工具應用的心得。"
     abstract_en: "近年來資訊圖表、資料新聞學、新聞視覺化漸成顯學，而隨著媒體表現方式的演進，新聞報導也開始跳脫電視與報紙的框架；然而大量資訊處理與互動式呈現對新聞記者來說往往是個相當大的挑戰。<br><br>這個題目將以零傳媒為例，分享這一年來在視覺化以及與媒體夥伴合作的經驗，以及相關視覺化工具應用的心得。"
+    twitter: "zbryikt"
   * uid: 20
     name_zh: "李慕約"
     name_en: "李慕約"
@@ -239,6 +243,7 @@ speakers =
     topic_en: "醫療、Youbike、菜價視覺化"
     abstract_zh: "在中國，為什麼很多人會跑到其他的省份看病？（資料：5 GB，中國 750 家三級甲等醫院、約三千萬筆的醫療資料庫）<br><br>在臺北，有些站別一年當中會有 100 天沒有辦法順利借還車？原來大家都在很奇怪的時間騎車。（資料：3 GB，六個月的 165 個租車站的 Youbike 租借記錄）<br><br>假如你有一塊地，可以選擇種任何的菜，你應該種什麼菜？（資料：1 GB，二十年，120 多種蔬菜的交易記錄）<br><br>講者對醫療、交通、蔬菜等議題進行視覺化，除了分析點，也希望可以向您介紹視覺化領域的最新進展，以及跟跨界專家打交道的合作過程。"
     abstract_en: "在中國，為什麼很多人會跑到其他的省份看病？（資料：5 GB，中國 750 家三級甲等醫院、約三千萬筆的醫療資料庫）<br><br>在臺北，有些站別一年當中會有 100 天沒有辦法順利借還車？原來大家都在很奇怪的時間騎車。（資料：3 GB，六個月的 165 個租車站的 Youbike 租借記錄）<br><br>假如你有一塊地，可以選擇種任何的菜，你應該種什麼菜？（資料：1 GB，二十年，120 多種蔬菜的交易記錄）<br><br>講者對醫療、交通、蔬菜等議題進行視覺化，除了分析點，也希望可以向您介紹視覺化領域的最新進展，以及跟跨界專家打交道的合作過程。"
+    twitter: "Muyueh"
   * uid: 21
     name_zh: "楊孝先"
     name_en: "楊孝先"
@@ -251,6 +256,7 @@ speakers =
     topic_en: ""
     abstract_zh: ""
     abstract_en: ""
+    twitter: "nchild"
   * uid: 22
     name_zh: "ddio"
     name_en: "ddio"
@@ -323,6 +329,7 @@ speakers =
     topic_en: "Interest Inspector"
     abstract_zh: "Ciudadano Inteligente (FCI) is an NGO based in Chile that aims to bridge the information gaps between the latin american people, also promotes laws and regulations to promote transparency and accountability in the government. In this sense FCI conducted a research called Interests Inspector (2011), that was intended to transparent the relation between the declarations of assets of Congress and the legislative work. The intention of it was to inhibit congressmen to benefit themselves and not the public good, specially considering that the chilean system doesn't provide an oversight entity for this kind of conflict."
     abstract_en: "Ciudadano Inteligente (FCI) is an NGO based in Chile that aims to bridge the information gaps between the latin american people, also promotes laws and regulations to promote transparency and accountability in the government. In this sense FCI conducted a research called Interests Inspector (2011), that was intended to transparent the relation between the declarations of assets of Congress and the legislative work. The intention of it was to inhibit congressmen to benefit themselves and not the public good, specially considering that the chilean system doesn't provide an oversight entity for this kind of conflict."
+    twitter: "lfalvarez"
   * uid: 28
     name_zh: "Matthew Rumsey"
     name_en: "Matthew Rumsey"
@@ -335,6 +342,7 @@ speakers =
     topic_en: "Using Open Data to Empower Others"
     abstract_zh: "Sunlight has built tools and analyses that help our audience engage with our mission and issues. A less visible but no less important part of our work is working with government. Through a combination of carrots and sticks, we have influenced the White House's open data policies, improved the data disclosures of Congress, and contributed to the passage of reform legislation. I'd love to tell some of these stories, and to share the lessons we've learned about being an effective advocate."
     abstract_en: "Sunlight has built tools and analyses that help our audience engage with our mission and issues. A less visible but no less important part of our work is working with government. Through a combination of carrots and sticks, we have influenced the White House's open data policies, improved the data disclosures of Congress, and contributed to the passage of reform legislation. I'd love to tell some of these stories, and to share the lessons we've learned about being an effective advocate."
+    twitter: "MattRumsey"
   * uid: 29
     name_zh: "Lucy Park"
     name_en: "Lucy Park"
@@ -355,6 +363,7 @@ This talk consists of two parts. First, we introduce how this voluntary movement
 Our tech stack (Why Python and all?)<br>
 Task management and decision making within the team<br>
 Engaging with the public and parliament"""
+    twitter: "echojuliett"
   * uid: 30
     name_zh: "Gregory Engels"
     name_en: "Gregory Engels"
@@ -367,6 +376,7 @@ Engaging with the public and parliament"""
     topic_en: "Democracy Upgrade"
     abstract_zh: "In the classical democratic systems a citizen gets a vote to express his will. This happen on a regular basis, typical once every four years. One bit of information (one cross) in four years is not great in terms of bandwidth. In todays world of ever present availability of broadband citizen demand a higher upload rate into political system. The Pirate Parties advocate for an „Democracy Upgrade“, by utilizing new software enhanced processes for citizen involvement. One of such approaches is Liquid Democracy and its software implementation Liquid Feedback. In this talk you will learn about it and other systems in use by the Pirate Parties."
     abstract_en: "In the classical democratic systems a citizen gets a vote to express his will. This happen on a regular basis, typical once every four years. One bit of information (one cross) in four years is not great in terms of bandwidth. In todays world of ever present availability of broadband citizen demand a higher upload rate into political system. The Pirate Parties advocate for an „Democracy Upgrade“, by utilizing new software enhanced processes for citizen involvement. One of such approaches is Liquid Democracy and its software implementation Liquid Feedback. In this talk you will learn about it and other systems in use by the Pirate Parties."
+    twitter: "Gregory Engels"
   * uid: 31
     name_zh: "Richard Bartlett"
     name_en: "Richard Bartlett"
@@ -379,6 +389,7 @@ Engaging with the public and parliament"""
     topic_en: "Open source tools for self-organising democracy"
     abstract_zh: "Loomio is an open source tool for democratic self-organising, built by a small team of free software developers, facilitators and Occupy activists in New Zealand. Two years into development, Loomio is being used by thousands of groups in 74 countries, from grassroots activists organising large-scale protests through to high school students, neighbourhoods and government departments using it for democratic collaboration."
     abstract_en: "Loomio is an open source tool for democratic self-organising, built by a small team of free software developers, facilitators and Occupy activists in New Zealand. Two years into development, Loomio is being used by thousands of groups in 74 countries, from grassroots activists organising large-scale protests through to high school students, neighbourhoods and government departments using it for democratic collaboration."
+    twitter: ""
   * uid: 32
     name_zh: "Paul Lenz"
     name_en: "Paul Lenz"
@@ -403,3 +414,4 @@ If you’d like to know more about how Paul’s team might be able to help your 
     topic_en: "Components and Civic Coding - Poplus"
     abstract_zh: "Poplus.org is new a global federation promoting useful, interactive bits of civic technology that you can slot right into your website or app. With members all over the world, your code and skills can make a real difference. Come learn about the innovative “component” approach and how your involvement can impact democracy and civic engagement around the world."
     abstract_en: "Poplus.org is new a global federation promoting useful, interactive bits of civic technology that you can slot right into your website or app. With members all over the world, your code and skills can make a real difference. Come learn about the innovative “component” approach and how your involvement can impact democracy and civic engagement around the world."
+    twitter: "mySocietyPaul"

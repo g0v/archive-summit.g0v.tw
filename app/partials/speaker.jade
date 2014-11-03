@@ -8,6 +8,10 @@ mixin get_speaker(index)
           .col-sm-12
             .col-xs-12.col-sm-8
               h6=obj["name_"+lang]
+              if obj["twitter"]
+                div.social-network
+                  a.twitter-color(href='http://twitter.com/#{obj["twitter"]}', target="_blank")
+                    span.fui-twitter
             .col-xs-12.col-sm-4.text-center
               figure
                 img.img-circle.img-responsive(src='#{obj["avatar"]}', alt='')
