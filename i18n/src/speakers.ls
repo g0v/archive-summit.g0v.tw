@@ -390,7 +390,7 @@ Engaging with the public and parliament"""
     topic_en: "Open source tools for self-organising democracy"
     abstract_zh: "Loomio is an open source tool for democratic self-organising, built by a small team of free software developers, facilitators and Occupy activists in New Zealand. Two years into development, Loomio is being used by thousands of groups in 74 countries, from grassroots activists organising large-scale protests through to high school students, neighbourhoods and government departments using it for democratic collaboration."
     abstract_en: "Loomio is an open source tool for democratic self-organising, built by a small team of free software developers, facilitators and Occupy activists in New Zealand. Two years into development, Loomio is being used by thousands of groups in 74 countries, from grassroots activists organising large-scale protests through to high school students, neighbourhoods and government departments using it for democratic collaboration."
-    twitter: ""
+    twitter: "RichDecibels"
   * uid: 32
     name_zh: "Paul Lenz"
     name_en: "Paul Lenz"
