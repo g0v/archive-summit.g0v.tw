@@ -136,7 +136,7 @@ block content
             h5 Keynote
             span.fui-user
             span.text-primary
-              b: a(href="http://eaves.ca/about-david/") David Eaves
+              b: a(href="http://eaves.ca/about-david/",target="_blank") David Eaves
               span.lang= _('EN')
               span.lang.interpreted(title=_("Interpreted"))= _('ZH')
         tr
@@ -196,7 +196,7 @@ block content
         |  2014/11/9 
         img(src='/images/icons/png/s-map.png', align='middle')
         |  台北市南港區中央研究院資訊所
-      .alert.alert-success VIP 與國際早鳥票可優先選擇是否參與不需再報，一般票 
+      //.alert.alert-success VIP 與國際早鳥票可優先選擇是否參與不需再報，一般票 
         span.text-danger 
          b 10/1 晚間
         | 開放報名。
@@ -211,19 +211,23 @@ block content
         tbody
           tr
             td.text-center(width='12%') 9:00 - 9:30
-            td.text-center(width='88%', rowspan='1') 報到
+            td.text-center(width='88%', rowspan='1') 報到 / Registration
           tr
             td.text-center 9:30 - 9:40
-            td.text-center(rowspan='1') 開場
+            td.text-center(rowspan='1') 開場 / Opening
           tr
             td.text-center 9:40 -10:10
-            td.text-center(rowspan='1') TBD
+            td.text-center(rowspan='1')
+              h5 Keynote
+              span.fui-user
+              span.text-primary
+                b: a(href="https://en.wikipedia.org/wiki/Clay_Shirky",target="_blank") Clay Shirky
           tr
             td.text-center 10:10-10:30
             td.text-center(rowspan='1') BREAK (20 mins)
           tr
             td.text-center 10:30-10:50
-            td.text-center(rowspan='1') 參與者提案，確定全天議程（全體）
+            td.text-center(rowspan='1') 參與者提案，確定全天議程（全體） / Scheduling
           tr
             td.text-center.alert-info
               | 10:50 - 11:30
@@ -232,7 +236,7 @@ block content
             td.text-center.alert-info
               div
                 h5 UnConfernece!
-                |                         五間會議室，由參與者自主提案分組進行
+                |                         五間會議室，由參與者自主提案分組進行 / 5 rooms available for unconference
           tr
             td.text-center 12:15-13:30
             td.text-center(rowspan='1') LUNCH (70 mins)
@@ -244,7 +248,7 @@ block content
             td.text-center.alert-info
               div
                 h5 UnConfernece!
-                |                         五間會議室，由參與者自主提案分組進行
+                |                         五間會議室，由參與者自主提案分組進行 / 5 rooms available for unconference
           tr
             td.text-center 15:00 - 15:40
             td.text-center(rowspan='1') TEA BREAK (40 mins)
@@ -256,7 +260,7 @@ block content
             td.text-center.alert-info
               div
                 h5 UnConfernece!
-                |                         五間會議室，由參與者自主提案分組進行
+                |                         五間會議室，由參與者自主提案分組進行 / 5 rooms available for unconference
           tr
             td.text-center(colspan='1')
               div 17:15 - 18:00
