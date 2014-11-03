@@ -15,7 +15,8 @@ mixin getInfo(index)
           button.close(type='button', data-dismiss='modal')
             span(aria-hidden='true') ×
             span.sr-only Close
-          img.img-circle.img-responsive(src='#{speaker["avatar"]}', alt='#{speaker["name_"+lang]}')
+          - var avatar = speaker["avatar"] || "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+          img.img-circle.img-responsive(src=avatar, alt='#{speaker["name_"+lang]}')
           h5.modal-title=speaker["name_"+lang]
           if speaker["twitter"]
             div.social-network.pull-right

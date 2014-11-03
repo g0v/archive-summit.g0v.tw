@@ -2,7 +2,7 @@ speakers =
   * uid: 1
     name_zh: "薛良斌"
     name_en: "Liang-Bin Hsueh"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "aka @hlb / 布丁。目前擔任 KKBOX 總監，負責 KKTIX 活動售票業務。KKBOX 作為亞洲數位音樂訂閱服務的領導品牌，擁有上千萬首歌曲，並且獲得 500 家以上唱片公司的合法授權，並於 2013 年底開始跨足活動售票領域。"
@@ -15,7 +15,7 @@ speakers =
   * uid: 2
     name_zh: "林佳怡"
     name_en: "Liz Lin"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "教育部《臺灣閩南語常用詞辭典》編輯暨成果維護人員，教育部系派遣人員/師大台文博士生。"
@@ -39,7 +39,7 @@ speakers =
   * uid: 4
     name_zh: "陳俊宏"
     name_en: "陳俊宏"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "東吳大學政治系副教授。曾經在美國芝加哥大學及英國倫敦政經學院就讀，長期投入台灣人權運動並參與許多非政府組織的運作。曾經擔任台灣民間真相與和解促進會理事長、台灣人權促進會副會長，目前擔任台灣民間真相與和解促進會監事、民間公民與法治教育基金會董事、台灣守護民主平台理事。"
@@ -51,7 +51,7 @@ speakers =
   * uid: 5
     name_zh: "劉致昕"
     name_en: "劉致昕"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "Jason Liu 劉致昕以文字求生，多麼希望能跟g0v一樣鍵盤上創造希望。現職：華陽創投董事長特助、你知我知好學網、自由撰稿。經歷：商業周刊記者、Financial Times助理記者。《都市再生的20個故事》共同作者。曾獲金鼎獎、吳舜文新聞奬、學學文創年度媒體大獎。"
@@ -63,7 +63,7 @@ speakers =
   * uid: 6
     name_zh: "詹順貴"
     name_en: "詹順貴"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "元貞聯合法律事務所，環境、人權律師。在欣賞鳥鳴與振羽的過程中看見台灣山海俯拾即是的自然之美，傾心投入環境保護、土地正義、原住民及諸多弱勢人權等議題，期許個人得以渺小力量，使臺灣在地知識的低喃，能讓更多人傾聽，祈求島嶼的歌唱，能夠永續長存。"
@@ -75,7 +75,7 @@ speakers =
   * uid: 7
     name_zh: "朱雨其"
     name_en: "朱雨其"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "行政院環境保署環境監測及資訊處 處長<br>學歷：國立臺灣科技大學 電子工程研究所 計算機組 博士<br>經歷：行政院境保護署科長、專門委員、副處長，臺北縣議會資訊室主任"
@@ -87,7 +87,7 @@ speakers =
   * uid: 8
     name_zh: "柳林瑋"
     name_en: "柳林瑋"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "高雄醫學大學醫學士 <br>台大醫院醫師 <br>公民1985行動聯盟發起人 <br>沃草創辦人"
@@ -111,7 +111,7 @@ speakers =
   * uid: 10
     name_zh: "陳守國"
     name_en: "陳守國"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "壹電視總經理。東海大學政治學系畢業，曾任中國時報中部編輯部總編輯、中時晚報總編輯、中國廣播公司及中天電視總經理、中時集團總管理處副總經理兼大陸事務處處長、衛星電視同業公會執行長，現任壹電視總經理。"
@@ -135,7 +135,7 @@ speakers =
   * uid: 12
     name_zh: "吳宗泰"
     name_en: "吳宗泰"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "台灣國立東華大學族群關係與文化學系研究生，台大新聞E論壇記者。318太陽花學運期間常駐立院進行密集的採訪報導。自述：「從打狗到打貓，轉至貓空又到洄瀾，修了一堆學科，始終沒離開社科院，一直是社會科學的信仰者，從體制外的衝撞，到制度內的分配公平，還在觀察與摸索。知識就是力量，但由誰來定義？數字會說話，但由誰來詮釋？所有的理論都必須與現實接軌，與人群產生關係。期待透過資訊的揭露、對話、翻轉，讓世界有所改變。關注性別、族群、階級和汙名，身體就是田野，行動就是力量。」"
@@ -147,7 +147,7 @@ speakers =
   * uid: 13
     name_zh: "瞿筱葳"
     name_en: "瞿筱葳"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "aka @ipa。影像文字工作者，參與多部國際頻道紀錄片製作曾獲亞洲電視節與休士頓影展等國際獎項，並著有《留味行》一書獲金鼎獎。近年積極投入 g0v 零時政府社群與開源文化推廣，同時是 g0v 社群暨大型黑客松共同發起人。"
@@ -159,7 +159,7 @@ speakers =
   * uid: 14
     name_zh: "謝舒凱、馬基石"
     name_en: "Shu-Kai Hsieh, Pierre Magistry"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "謝舒凱  臺灣大學語言學研究所助理教授。<br>馬基石 (Pierre Magistry) 臺灣大學語言學研究所博士後交換學者。"
@@ -171,7 +171,7 @@ speakers =
   * uid: 15
     name_zh: "王向榮"
     name_en: "Ronny Wang"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "台灣目前任職走吧旅行社。喜歡爬資料，存資料，放資料。參與或發起過求職小幫手、新聞小幫手、開放政治獻金、台灣公司資料查詢等專案。"
@@ -184,7 +184,7 @@ speakers =
   * uid: 16
     name_zh: "陳瑞霖"
     name_en: "陳瑞霖"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "活躍於維基百科和開放街圖社群，正職為科技部落格TechNews科技新報編輯，曾經在自由軟體和數位典藏計畫工作。關心開放資料和開放內容相關議題，曾撰寫不少相關主題文章。舉辦過維基愛古蹟攝影比賽，以及無數場社群聚會，像是臺灣的維基寫作聚和開放街圖台北Meetup。最近熱衷翻譯軟體界面和教學文件，還有GIS軟體，期望翻譯後，能降低大家參與門檻。"
@@ -196,7 +196,7 @@ speakers =
   * uid: 17
     name_zh: "林雨蒼"
     name_en: "林雨蒼"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "雨蒼，自由軟體工作者、Python軟體工程師，曾幫g0v撰寫多個教學文件，也投身於社會運動，希望能透過一己之力改善社會。"
@@ -209,7 +209,7 @@ speakers =
   * uid: 18
     name_zh: "劉偉宸"
     name_en: "劉偉宸"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "台灣劉偉宸 Gilbert，前風控人員、交易員，曾從事金融業約八年左右。目前在家作各種喜愛的資料分析方法探索，並在個人部落格分享研究成果 (http://www.gilbertliou.me)。長期涉略資料庫建置、程式交易、資料分析等相關議題。熱愛 Python ，閒暇時自修學習 R 。目前是 Taiwan R User Group 工作人員，過去曾擔任講者推廣 Python 下資料分析套件。"
@@ -221,7 +221,7 @@ speakers =
   * uid: 19
     name_zh: "Kirby"
     name_en: "Kirby"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "g0v.tw 共同發起人之一，於零時政府中活躍於立院、網路民主、資訊視覺化、零傳媒等專案，同時為房地資訊站 http://foundi.info 共同創辦人。業餘為登山與攝影活動愛好者，個人網站：http://tkirby.org/blog/"
@@ -234,7 +234,7 @@ speakers =
   * uid: 20
     name_zh: "李慕約"
     name_en: "李慕約"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "世界衛生組織所聘請的外部資料專家，針對中國「醫院質量監測」建置視覺分析界面。其他客戶包含：國泰航空、電腦公會、天下雜誌、工研院、台北市文化局。果菜花終端機、及 Youbike 獲經濟部頒為 OpenData 應用競賽特優作品。<br>與羅瑞瑜合作「發電成本計算機」為零時政府 g0v.tw 專案之一；在兩岸三地從事資料相關教學，包含：「台灣大學新聞研究所」、「聯合報」、「社會創新日：曬廣州」、「good_lab 香港」"
@@ -247,7 +247,7 @@ speakers =
   * uid: 21
     name_zh: "楊孝先"
     name_en: "楊孝先"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "跨領域網路工作者，荒廢部落客，公民團體外圍自由人。略懂廣告、電信，與智慧財產。關注領域為消費者與開放網路，曾發起相關社群，同時也是 g0v 零時政府的參與者。近期產出以懶人包為主，如果認同懶人包也是論述議題的一種料理，你也可以叫我懶人包師傅。"
@@ -260,7 +260,7 @@ speakers =
   * uid: 22
     name_zh: "ddio"
     name_en: "ddio"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "g0v / 人民民主陣線打雜小弟。一個先栽進社會運動，才遇見開源文化的阿宅。正在尋找寫程式搞社運的方法，希望生活可以不只是寫程式，也可以不只是改造社會。"
@@ -272,7 +272,7 @@ speakers =
   * uid: 23
     name_zh: "Tim KT Chan, Ken Yiu"
     name_en: "Tim KT Chan, Ken Yiu"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "Hong Kong"
     country_en: "Hong Kong"
     bio_zh: "Tim and Ken are members of the founding team behind Code for Hong Kong. Ken developed hands on open data applications for C4HK and Tim is in the start-up industry and started Coder Dojo in Hong Kong."
@@ -284,7 +284,7 @@ speakers =
   * uid: 24
     name_zh: "音地大帝"
     name_en: "音地大帝"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "公民攝影守護民主陣線發起人。巨獸搖滾音樂祭主辦人，在太陽花學運期間全程直播，並發起大腸花垃圾話論壇引起風潮。後成立「公民攝影守護民主陣線」（攝護線）團，以新媒體參與社運。"
@@ -296,7 +296,7 @@ speakers =
   * uid: 25
     name_zh: "彭啟明"
     name_en: "彭啟明"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "彭啟明博士於台灣第一間民間氣象公司「天氣風險管理開發股份有限公司」擔任總經理，身兼大愛新聞氣象主播、中廣氣象達人節目主持人、中央大學、文化大學兼任教授、環境保護學會秘書長與OPEN DATA聯盟會長等。學術專長包括天氣風險管理、大氣化學、氣象資料視覺化與環境教育。"
@@ -308,7 +308,7 @@ speakers =
   * uid: 26
     name_zh: "鄧東波"
     name_en: "鄧東波"
-    avatar: "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+    avatar: ""
     country_zh: "台灣"
     country_en: "台灣"
     bio_zh: "鄧東波先生為荷蘭屯特大學地球觀測及地理資訊科學學院 (ITC)博士候選人，也是中研院資訊所研究助理，專職於地理資訊處理、語意網及開放資料之研究工作 。2005年加入「開放街圖」(OpenStreetMap, OSM)社群，參與繪圖工作，並於2012及2013年籌辦SotM Taiwan，為OSM Taiwan Local Chapter 的連絡人。"

@@ -14,7 +14,8 @@ mixin get_speaker(index)
                     span.fui-twitter
             .col-xs-12.col-sm-4.text-center
               figure
-                img.img-circle.img-responsive(src='#{obj["avatar"]}', alt='')
+                - var avatar = obj["avatar"]|| "http://www.localcrimenews.com/wp-content/uploads/2013/07/default-user-icon-profile.png"
+                img.img-circle.img-responsive(src=avatar, alt='#{obj["name_"+lang]}')
                 figcaption.ratings
                   p
                     span.badge=obj["country_"+lang]
