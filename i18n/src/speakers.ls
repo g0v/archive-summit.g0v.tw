@@ -86,7 +86,7 @@ speakers =
     abstract_en: ""
   * uid: 8
     name_zh: "柳林瑋"
-    name_en: "柳林瑋"
+    name_en: "Wei Liulin"
     avatar: ""
     country_zh: "台灣"
     country_en: "Taiwan"

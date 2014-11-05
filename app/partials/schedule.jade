@@ -53,16 +53,37 @@ mixin topicslots_desc(time)
     each section in ["r1","r2","r3","r4"]
       td(valign="top")
         - var name = section + "_" + time + "_topic"
+        - var obj = schedule_i18n[section+"_"+time+"_topic"]
         - var desc = schedule_i18n[name]["desc_"+lang] || schedule_i18n[name]["desc"]
-        each p in desc
-          p!= p
-          if schedule_i18n[name]["speakerId"]
-            - var index = schedule_i18n[name]["speakerId"] - 1
-            +getInfo(index)
-          else if schedule_i18n[name]["speakerIds"]
-            each id in schedule_i18n[name]["speakerIds"]
-              if id
-                +getInfo(id-1) 
+        p.topic_desc=obj["short_desc_"+lang]
+        .pull-right
+          button.btn.btn-primary.btn-sm(data-toggle='modal', data-target='##{section}_#{time}_topic') more
+        .moderator 主持人：
+          !=obj["moderator"]
+        .modal.fade(tabindex='-1', role='dialog', aria-hidden='true', id='#{section}_#{time}_topic')
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal')
+                  span(aria-hidden='true') ×
+                  span.sr-only Close
+                h5.modal-title
+                  +get(obj, "title")
+                if lang === 'zh'
+                  +get(obj, "subtitle")
+              .modal-body
+                each p in desc
+                  p!= p
+              .modal-footer
+                button.btn.btn-default(type='button', data-dismiss='modal') Close        
+        if schedule_i18n[name]["speakerId"]
+          - var index = schedule_i18n[name]["speakerId"] - 1
+          +getInfo(index)
+        else if schedule_i18n[name]["speakerIds"]
+          each id in schedule_i18n[name]["speakerIds"]
+            if id
+              +getInfo(id-1) 
+
 mixin timeslots(head, time)
   tr
     td.text-center #{head}
