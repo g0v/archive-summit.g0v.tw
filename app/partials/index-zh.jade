@@ -71,42 +71,9 @@ block body
         .todo
           .todo-search
             | 最新消息
-          ul
-            li
-              .todo-icon.fui-eye
-              .todo-content
-                h4.todo-name
-                  | 10/1 一般票報名起跑！
-                  br
-                | 11/8, 9 兩天活動報名分別在12點與20點報名。
-                a(href='http://g0v-tw.kktix.cc/') 報名頁面>
-
-            li
-              .todo-icon.fui-eye
-              .todo-content
-                h4.todo-name
-                  | 國際早鳥、社群貢獻者方案
-                  br 
-                  | 申請截止
-                  br
-                |                 將寄出邀請碼給符合資格的申請者，請申請者注意信箱。
-            li
-              .todo-icon.fui-eye
-              .todo-content
-                h4.todo-name
-                  | 初步議程公布
-                  br
-                |                 最新議程表已上線。
-                a(href='schedule.html') 議程表>
-            li
-              .todo-icon.fui-eye
-              .todo-content
-                h4.todo-name
-                  | 徵求贊助
-                  br
-                  |                   台灣的未來需要您的參與
-                |                   如果您的企業或組織，正期待以正面能量改變社會，歡迎一起來參與這場重要的高峰會，您的一份付出，將有可能讓台灣政府及社會邁向更開放、更前進的未來。
-                a(href='sponsor.html') 贊助方案>
+          .storify
+            iframe(src="//storify.com/clkao/g0vsummit/embed?border=false",width="100%",height=750,frameborder=no,allowtransparency=true)
+              script(src="//storify.com/clkao/g0vsummit.js?border=false")
     include ../layout/footer.jade
   // /.container
 
