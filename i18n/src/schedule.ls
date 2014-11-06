@@ -6,6 +6,8 @@ schedule = do
     title_en: "Open Parliament"
     subtitle_zh: "Open Parliament"
     subtitle_en: ""
+    room_zh: "第一會議室"
+    room_en: "1st Conference Room"
     desc_zh:
       0: "以開放資料監督代議制度是開放政府運動重要的一環，各國都有不同的發展歷程，零時政府社群也長期開發相關應用。"
       1: "這系列議程邀請到多國致力於開放國會的行動者，以及早期在台灣推動監督國會的前輩，以多個面向探討數位公民與代議制度間的新可能。（主持人：瞿海源）"
@@ -20,6 +22,8 @@ schedule = do
     title_en: "Participatory Democracy"
     subtitle_zh: "Participatory Democracy"
     subtitle_en: ""
+    room_zh: "國際會議廳"
+    room_en: "International Conference Hall"
     speakerId: 5
     desc_zh:
       0: "民主如何參與、參與式民主如何實現，是近年越來越受重視的議題。g0v 社群成立之初便討論相關案例、著手開發平台，但從開放資料、到體制調整、乃至民主深化，都還需要各種努力。"
@@ -35,6 +39,8 @@ schedule = do
     title_en: "3du"
     subtitle_zh: "Reclaiming our Language"
     subtitle_en: "Reclaiming our Language"
+    room_zh: "第二會議室"
+    room_en: "2nd Conference Room"
     desc_zh:
       0: "從教育部重編國語詞典資料庫開始的萌典計畫，在各界人士的襄助下，將臺灣的各種語文漸次整合，以開放資料的精神，落實多元文化的對話。"
       1: "這次很榮幸邀請到教育部與學界推動臺語文數位化的先驅，與我們分享近年的成果，而萌典網站和應用界面的全新設計，也會在這次高峰會上首度亮相。（主持人：唐鳳）"
@@ -49,6 +55,8 @@ schedule = do
     title_en: "Civic Technologies"
     subtitle_zh: "Civic Technologies"
     subtitle_en: ""
+    room_zh: "遠距會議室"
+    room_en: "Media Conference Room"
     speakerId: 17
     desc_zh:
       0: "資訊視覺化、資訊新聞學、加密通訊系統、網絡分析，這些資訊技術導向的領域，打開了新的公民參與思維模式。"

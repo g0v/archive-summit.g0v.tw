@@ -43,6 +43,9 @@ mixin topicslots_title(time)
           +get(obj, "title")
         span
           +get(obj, "subtitle")
+        br
+        span
+          +get(obj, "room")
         - var badge = obj["badge_"+lang] || obj["badge"]
         if badge
           span.badge #{badge}
