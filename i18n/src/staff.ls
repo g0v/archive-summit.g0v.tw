@@ -32,10 +32,10 @@
 ]
 "行銷組": [
         "Muka"
+        "Airos"
         "Marie Chang"
         "Moon Chang"
         "isacl"
-        "Airos"
 ]
 "場務組": [
         "AceChen"
