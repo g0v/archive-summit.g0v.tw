@@ -1,10 +1,20 @@
 {
+"總召": [
+        "hc"
+]
+"籌備委員": [
+        "瞿筱葳 (ipa)"
+        "高嘉良 (clkao)"
+]
 "議程組": [
+        "hc"
         "瞿筱葳 (ipa)"
         "高嘉良 (clkao)"
         "唐鳳 (au)"
         "Jimmy Huang"
         "阿端"
+]
+"議程助理": [
         "shadowcrow"
         "bryanyuan2"
         "阿南 Idril"
@@ -12,7 +22,6 @@
         "Snake"
         "nfsnfs"
         "Orange"
-        "hc"
 ]
 "銷售組": [
         "shiashia 蝦蝦"
@@ -69,21 +78,21 @@
         "Fumi"
 ]
 "紀錄組": [
+        "吳泰輝 (tkirby)"
         "丞相"
         "Hazel"
-        "吳泰輝 (tkirby)"
         "丹丹"
         "CJOKER"
         "西歪街"
         "阿毛"
 ]
 "直播組": [
+        "雨停"
         "Enya Chang"
         "Jonet"
         "阿哲"
         "Steven"
         "Stella"
-        "雨停"
         "馬克泡"
         "沖天"
         "小鳥"
@@ -91,6 +100,10 @@
 "行政組": [
         "isabel"
         "Toby"
+]
+"救火隊": [
+        "ETBlue"
+        "LY"
 ]
 "線路組": [
         "davihuan"
