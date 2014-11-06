@@ -111,3 +111,39 @@ span.lang.interpreted {
   width: 15%;
   height: 15%;
 }
+.staff-group {
+  margin: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.staff-group-name {
+  font-weight: 900;
+  background: #f00;
+  color: #fff;
+}
+.staff-item,
+.staff-group-name {
+  padding: 1px 3px;
+  text-align: center;
+}
+.staff-group-0 .staff-group-name,
+.staff-group-5 .staff-group-name,
+.staff-group-10 .staff-group-name {
+  background: #ff6a71;
+}
+.staff-group-1 .staff-group-name,
+.staff-group-6 .staff-group-name {
+  background: #c2c1c0;
+}
+.staff-group-2 .staff-group-name,
+.staff-group-7 .staff-group-name {
+  background: #d48bc2;
+}
+.staff-group-3 .staff-group-name,
+.staff-group-8 .staff-group-name {
+  background: #77cbb9;
+}
+.staff-group-4 .staff-group-name,
+.staff-group-9 .staff-group-name {
+  background: #ffa800;
+}
