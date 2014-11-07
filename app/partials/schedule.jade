@@ -35,6 +35,13 @@ mixin getInfo(index)
 mixin topicslots_title(time)
   //- TODO use css to color block and set width
   tr
+    td.text-center 地點
+    each room in [["r1",294,"danger"],["r2",247,"success"],["r3",247,"warning"],["r4",250,"info"]]
+      td.text-center(class="alert-"+room[2],width=room[1])
+        - var obj = schedule_i18n[room[0]+"_"+time+"_topic"]
+        h5
+          +get(obj, "room")
+  tr
     td.text-center 主題
     each room in [["r1",294,"danger"],["r2",247,"success"],["r3",247,"warning"],["r4",250,"info"]]
       td.text-center(class="alert-"+room[2],width=room[1])
@@ -43,9 +50,9 @@ mixin topicslots_title(time)
           +get(obj, "title")
         span
           +get(obj, "subtitle")
-        br
-        span
-          +get(obj, "room")
+        //br
+        //span
+        //  +get(obj, "room")
         - var badge = obj["badge_"+lang] || obj["badge"]
         if badge
           span.badge #{badge}
