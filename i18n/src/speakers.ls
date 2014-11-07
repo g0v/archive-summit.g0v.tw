@@ -477,3 +477,11 @@ If you’d like to know more about how Paul’s team might be able to help your 
     country_en: "Taiwan"
     bio_zh: "台灣守護民主平台公共政策部主任<br><br>長期推動審議式民主，曾參與處理蘇花改監督委員會、東發條例、風機設置距離、南鐵地下化東移等聽證會公民參與程序；反媒體壟斷運動等。"
     bio_en: "台灣守護民主平台公共政策部主任<br><br>長期推動審議式民主，曾參與處理蘇花改監督委員會、東發條例、風機設置距離、南鐵地下化東移等聽證會公民參與程序；反媒體壟斷運動等。"
+  * uid: 39
+    name_zh: "陳信屹"
+    name_en: "Hsin Yi Chen"
+    avatar: ""
+    country_zh: "台灣"
+    country_en: "Taiwan"
+    bio_zh: "hychen, 常年投入開源文化推廣，協助舉辦過台灣開源人年會，台灣 Python 研討會。近年則投入 g0v 零時政府社群，幫忙撰寫一些程式與文件。"
+    bio_en: "hychen, 常年投入開源文化推廣，協助舉辦過台灣開源人年會，台灣 Python 研討會。近年則投入 g0v 零時政府社群，幫忙撰寫一些程式與文件。"

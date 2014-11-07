@@ -58,14 +58,14 @@ schedule = do
     subtitle_en: ""
     room_zh: "遠距會議室"
     room_en: "Media Conference Room"
-    speakerId: 17
+    speakerIds: [39, 17]
     desc_zh:
       0: "資訊視覺化、資訊新聞學、加密通訊系統、網絡分析，這些資訊技術導向的領域，打開了新的公民參與思維模式。"
       1: "透過資料新的分析與應用，能有哪些方式結合議題，對政策規劃、媒體形式、資訊深入解讀分析等做出更進一步的影響。本議程有多位黑客分享精彩實作。（主持人：陳信屹、林雨蒼）"
     desc_en:
       0: "Data visualization, data journalism, encrypted communications systems and network analysis: These information technologies have initiated new modes of participation and colllaboration for citizens."
       1: "In what ways can we integrate the issues through new analysis and application, in order to have a greater impact on policy planning, media forms and in-depth information interpretation and analysis? A number of hackers will share their exciting practical work with us."
-    moderator: "陳信屹、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info17'>林雨蒼</span>"
+    moderator: "<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info39'>陳信屹</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info17'>林雨蒼</span>"
     short_desc_zh: "資訊視覺化、資訊新聞學、加密通訊系統、網絡分析，這些資訊技術導向的領域，打開了新的公民參與 ..."
     short_desc_en: "Data visualization, data journalism, encrypted communications systems and ..."
   r1_0950:
@@ -267,13 +267,14 @@ schedule = do
     subtitle_en: ""
     room_zh: "遠距會議室"
     room_en: "Media Conference Room"
+    speakerId: 21
     desc_zh:
       0: "社運團體 × 科技，會碰撞出什麼火花？新的傳播方式、新的協同工具、新的溝通形式，都帶來不同層面的影響。互相溝通、學習、影響的過程也是公民社會進步的一環。"
       1: "運動新風貌從太陽花運動中的新媒體談起，進一步探討科技工具與社運結合的可能，與台灣公民軟體經驗輸出香港的經驗分享。（主持人：楊孝先）"
     desc_en:
       0: "What sparks are set off when social activists cross paths with technologies? New methods of dissemination, new tools of collaboration and new forms of communication are all influential on many levels. The processes of mutual communicating, learning and influencing all plays a part in the progress of a civil society."
       1: "This discussion about the new faces of activism will start with the new media in the Sunflower Student Movement, then move on to explore the possibility of combining technological tools and social activism, including how Hong Kong activists leveraged experiences and software from Taiwan's civic hackers."
-    moderator: "楊孝先"
+    moderator: "<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info21'>楊孝先</span>"
     short_desc_zh: "社運團體 × 科技，會碰撞出什麼火花？新的傳播方式、新的協同工具、新的溝通形式，都帶來不同層面 ..."
     short_desc_en: "What sparks are set off when social activists cross paths with technologies? ..."
   r1_1310:
