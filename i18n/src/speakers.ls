@@ -420,7 +420,7 @@ If you’d like to know more about how Paul’s team might be able to help your 
   * uid: 33
     name_zh: "郭冠宏 (ggm)"
     name_en: "郭冠宏 (ggm)"
-    avatar: ""
+    avatar: "/images/speaker/A33.jpg"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "GGM 本名，郭冠宏。畢業於台大資訊系，行動電話人機介面實驗室（MHCI Lab）。深信科技能夠為社會帶來更好的生活，但是又覺得有時候根本不需要科技，需要的是關懷。讀大學時鑽研過演算法比了一點競賽，之後又上架了一些手機應用程式，現在在 Skymizer 做編譯器，覺得世界真是充滿挑戰。"
