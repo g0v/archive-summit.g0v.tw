@@ -26,9 +26,9 @@ mixin getInfo(index)
         .modal-body
           h6 Bio
           p!=speaker["bio_"+lang]
-        if speaker["abstract_"+lang]
-          h6 Abstract
-          p!=speaker["abstract_"+lang]
+          if speaker["abstract_"+lang]
+            h6 Abstract
+            p!=speaker["abstract_"+lang]
         .modal-footer
           button.btn.btn-default(type='button', data-dismiss='modal') Close
 
