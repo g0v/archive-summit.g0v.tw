@@ -36,8 +36,12 @@
 }
 #icecast {
   position: fixed;
-  top: 10px;
+  top: 25px;
   right: 10px;
+}
+#icecast a {
+  margin: 0 5px;
+  padding: 5px;
 }
 @media (max-width: 768px) {
   #icecast {
