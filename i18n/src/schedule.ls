@@ -268,8 +268,8 @@ schedule = do
     moderator: "楊孝先"
     short_desc_zh: "社運團體 × 科技，會碰撞出什麼火花？新的傳播方式、新的協同工具、新的溝通形式，都帶來不同層面 ..."
     short_desc_en: "What sparks are set off when social activists cross paths with technologies? ..."
-  r1_1330:
-    row: 2
+  r1_1310:
+    row: 4
     speakerIds: [12,10,11,35,13,34]
     list_zh:
       0: "<strong>Ｅ論壇的同步新聞寫作</strong> <span class='fui-user'/><span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info12'>吳宗泰</span>"
@@ -286,6 +286,15 @@ schedule = do
       4: "社會運動中的開源新媒體嘗試 - 瞿筱葳"
       5: "從「衝進去」到「擠出來」的318媒體歷險 - 嚴婉玲"
     language: "ZH"
+  r2_1310:
+    list_zh: []
+    list_en: []
+  r3_1310:
+    list_zh: []
+    list_en: []
+  r4_1310:
+    list_zh: []
+    list_en: []
   r2_1330:
     speakerId: 25
     title_zh: "Open Weatherdata"
@@ -334,7 +343,8 @@ schedule = do
     speaker_zh: "ddio"
     speaker_en: "ddio"
     language: "ZH"
-  r1_1440:
+  r1_1505:
+    row: 2
     title_zh: "媒體與學運議程座談"
     title_en: "媒體與學運議程座談"
     speakerIds: [9, 12,10,11,35,13,34]
@@ -346,6 +356,7 @@ schedule = do
       1: "與談貴賓：吳宗泰、陳守國、鄒景雯、鄭凱榕、瞿筱葳、嚴婉玲"
     language: "ZH"
   r2_1440:
+    row: 2
     title_zh: "環境議程座談"
     title_en: "環境議程座談"
     speakerIds: [26, 7, 25, 6]
@@ -358,6 +369,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r3_1440:
+    row: 2
     speakerId: 16
     title_zh: "開放內容的衝擊-開放街圖和維基百科在臺發展，以及如何可能影響政府"
     title_en: "開放內容的衝擊-開放街圖和維基百科在臺發展，以及如何可能影響政府"
@@ -366,6 +378,7 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r4_1440:
+    row: 2
     speakerId: 23
     title_zh: "Code for Hong Kong: 從台灣輸入公民軟體的香港經驗"
     title_en: "Code for Hong Kong: 從台灣輸入公民軟體的香港經驗"
