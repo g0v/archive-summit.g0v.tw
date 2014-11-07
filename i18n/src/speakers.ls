@@ -2,7 +2,7 @@ speakers =
   * uid: 1
     name_zh: "薛良斌"
     name_en: "Liang-Bin Hsueh"
-    avatar: ""
+    avatar: "/images/speaker/A1.jpg"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "aka @hlb / 布丁。目前擔任 KKBOX 總監，負責 KKTIX 活動售票業務。KKBOX 作為亞洲數位音樂訂閱服務的領導品牌，擁有上千萬首歌曲，並且獲得 500 家以上唱片公司的合法授權，並於 2013 年底開始跨足活動售票領域。"
@@ -87,7 +87,7 @@ speakers =
   * uid: 8
     name_zh: "柳林瑋"
     name_en: "Wei Liulin"
-    avatar: ""
+    avatar: "/images/speaker/A8.png"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "高雄醫學大學醫學士 <br>台大醫院醫師 <br>公民1985行動聯盟發起人 <br>沃草創辦人"
@@ -222,7 +222,7 @@ speakers =
   * uid: 19
     name_zh: "Kirby"
     name_en: "Kirby"
-    avatar: ""
+    avatar: "/images/speaker/A19.png"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "g0v.tw 共同發起人之一，於零時政府中活躍於立院、網路民主、資訊視覺化、零傳媒等專案，同時為房地資訊站 http://foundi.info 共同創辦人。業餘為登山與攝影活動愛好者，個人網站：http://tkirby.org/blog/"
@@ -235,7 +235,7 @@ speakers =
   * uid: 20
     name_zh: "李慕約"
     name_en: "李慕約"
-    avatar: ""
+    avatar: "/images/speaker/A20.jpg"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "世界衛生組織所聘請的外部資料專家，針對中國「醫院質量監測」建置視覺分析界面。其他客戶包含：國泰航空、電腦公會、天下雜誌、工研院、台北市文化局。果菜花終端機、及 Youbike 獲經濟部頒為 OpenData 應用競賽特優作品。<br>與羅瑞瑜合作「發電成本計算機」為零時政府 g0v.tw 專案之一；在兩岸三地從事資料相關教學，包含：「台灣大學新聞研究所」、「聯合報」、「社會創新日：曬廣州」、「good_lab 香港」"
@@ -286,7 +286,7 @@ speakers =
   * uid: 24
     name_zh: "音地大帝"
     name_en: "音地大帝"
-    avatar: "/images/speaker/A24.jpg"
+    avatar: "/images/speaker/A24.png"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "公民攝影守護民主陣線發起人。巨獸搖滾音樂祭主辦人，在太陽花學運期間全程直播，並發起大腸花垃圾話論壇引起風潮。後成立「公民攝影守護民主陣線」（攝護線）團，以新媒體參與社運。"
