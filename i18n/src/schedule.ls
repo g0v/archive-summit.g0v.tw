@@ -179,9 +179,9 @@ schedule = do
   r1_1150:
     title_zh: "開放國會議程座談"
     title_en: "Open Parliament Panel"
-    speakerIds: [27, 28, 29, 8]
+    speakerIds: [36, 27, 28, 29, 8]
     list_zh:
-      0: "主持人：瞿海源"
+      0: "主持人：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info36'>瞿海源</span>"
       1: "與談貴賓：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info27'>Felipe Álvarez</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info28'>Matthew Rumsey</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info29'>Lucy Park</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info8'>柳林瑋</span>、高嘉良"
     list_en:
       0: "Moderator: H.Y. Chiu"
