@@ -52,7 +52,7 @@ gulp.task 'translations', <[i18n]> ->
       .pipe gulp.dest "#{build_path}/#{real-lang}"
 
 gulp.task 'html', <[translations]>, ->
-  gulp.src 'app/*.jade'
+  gulp.src [ 'app/*.jade', 'app/icecast/*.jade' ]
     .pipe gulp-plumber!
     .pipe gulp-jade do
       locals:

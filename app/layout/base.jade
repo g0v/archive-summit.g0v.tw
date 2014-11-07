@@ -81,19 +81,20 @@ html(lang=lang)
               if lang == 'en'
                 a(href='/zh-TW/index.html')
                   .noimg 中文
+      #icecast
+        a.btn.btn-primary.btn-sm.icecast-index(href='icecast.html', target='_blank') Icecast口譯
         // /.navbar-collapse
       // /.container
     // Image Background Page Header
     block body
     script(src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places")
     script(type="text/javascript",src="/js/vendor.js")
-    //-
-      // jQuery Version 1.11.0
-      script(src='js/jquery-1.11.0.js')
-      script(src='js/jquery-ui-1.10.3.custom.min.js')
-      script(src='js/jquery.ui.touch-punch.min.js')
-      // Bootstrap Core JavaScript
-      script(src='js/bootstrap.min.js')
+    script(type='text/javascript').
+      $('.icecast-index').on('click', function (event) {
+        event.preventDefault();
+        window.open(event.target.href, 'iecast口譯', 'width=500, height=500')
+      });
+
     script(type="text/javascript").
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-41326468-1', 'summit.g0v.tw');
