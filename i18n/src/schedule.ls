@@ -269,21 +269,21 @@ schedule = do
     short_desc_en: "What sparks are set off when social activists cross paths with technologies? ..."
   r1_1330:
     row: 2
-    speakerIds: [12,10,11,undefined,13,undefined]
+    speakerIds: [12,10,11,undefined,13,34]
     list_zh:
       0: "<strong>Ｅ論壇的同步新聞寫作</strong> <span class='fui-user'/><span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info12'>吳宗泰</span>"
       1: "<strong>去中心化之下的主流媒體角色</strong> <span class='fui-user'/><span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info10'>陳守國</span>"
       2: "<strong>傳統媒體作為媒介、行動者與獲益者</strong> <span class='fui-user'/><span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info11'>鄒景雯</span>"
       3: "<strong>太陽花的國際媒體宣傳</strong> <span class='fui-user'/><span class='text-primary'>鄭凱榕</span>"
       4: "<strong>社會運動中的開源新媒體嘗試</strong><span class='fui-user'/><span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info13'>瞿筱葳</span>"
-      5: "<strong>TBD</strong> <span class='fui-user'/><span class='text-primary'>嚴婉玲</span>"
+      5: "<strong>從「衝進去」到「擠出來」的318媒體歷險</strong> <span class='fui-user'/><span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info34'>嚴婉玲</span>"
     list_en:
       0: "Ｅ論壇的同步新聞寫作 - 吳宗泰"
       1: "去中心化之下的主流媒體角色 - 陳守國"
       2: "傳統媒體作為媒介、行動者與獲益者 - 鄒景雯"
       3: "太陽花的國際媒體宣傳 - 鄭凱榕"
       4: "社會運動中的開源新媒體嘗試 - 瞿筱葳"
-      5: "TBD - 嚴婉玲"
+      5: "從「衝進去」到「擠出來」的318媒體歷險 - 嚴婉玲"
     language: "ZH"
   r2_1330:
     speakerId: 25
