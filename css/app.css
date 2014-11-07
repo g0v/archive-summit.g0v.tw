@@ -107,6 +107,9 @@ span.lang.interpreted {
   background: #ddd;
   border-color: #008000;
 }
+.modal-dialog {
+  text-align: left;
+}
 .modal-header img {
   width: 15%;
   height: 15%;
