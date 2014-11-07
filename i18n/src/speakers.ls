@@ -27,7 +27,7 @@ speakers =
   * uid: 3
     name_zh: "蔡玉玲"
     name_en: "蔡玉玲"
-    avatar: "http://summit.g0v.tw/images/speaker/A1.png"
+    avatar: "/images/speaker/A3.png"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "曾任地方法院法官(1982~1991),之後由法官轉職進入IBM公司擔任台灣及大中華區法務長(1991~1998)。1998年創辦「理慈國際科技法律事務所」,專長科技法律、併購、技術授權/移轉等案件(1998~2013)。2013年11月受邀入閣擔任行政院政務委員,致力推動電子商務、文創產業及虛擬世界發展及相關法規等政務。"
@@ -39,7 +39,7 @@ speakers =
   * uid: 4
     name_zh: "陳俊宏"
     name_en: "陳俊宏"
-    avatar: ""
+    avatar: "/images/speaker/A4.png"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "東吳大學政治系副教授。曾經在美國芝加哥大學及英國倫敦政經學院就讀，長期投入台灣人權運動並參與許多非政府組織的運作。曾經擔任台灣民間真相與和解促進會理事長、台灣人權促進會副會長，目前擔任台灣民間真相與和解促進會監事、民間公民與法治教育基金會董事、台灣守護民主平台理事。"
@@ -63,7 +63,7 @@ speakers =
   * uid: 6
     name_zh: "詹順貴"
     name_en: "詹順貴"
-    avatar: ""
+    avatar: "/images/speaker/A6.png"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "元貞聯合法律事務所，環境、人權律師。在欣賞鳥鳴與振羽的過程中看見台灣山海俯拾即是的自然之美，傾心投入環境保護、土地正義、原住民及諸多弱勢人權等議題，期許個人得以渺小力量，使臺灣在地知識的低喃，能讓更多人傾聽，祈求島嶼的歌唱，能夠永續長存。"
@@ -75,7 +75,7 @@ speakers =
   * uid: 7
     name_zh: "朱雨其"
     name_en: "朱雨其"
-    avatar: ""
+    avatar: "/images/speaker/A7.jpg"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "行政院環境保署環境監測及資訊處 處長<br>學歷：國立臺灣科技大學 電子工程研究所 計算機組 博士<br>經歷：行政院境保護署科長、專門委員、副處長，臺北縣議會資訊室主任"
@@ -99,7 +99,7 @@ speakers =
   * uid: 9
     name_zh: "蕭新煌"
     name_en: "蕭新煌"
-    avatar: "http://summit.g0v.tw/images/speaker/A12.png"
+    avatar: "/images/speaker/A9.png"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "台灣中央研究院社會學研究所特聘研究員兼任所長國立中央大學客家學院講座教授國立台灣大學、中山大學社會學系合聘教授學歷 ：美國紐約州立大學(水牛城)社會學博士研究領域及興趣：發展社會學、環境社會學、東亞與東南亞中產階級、社會運動、民間公民社會與亞洲新民主、非營利組織與第三部門研究、台灣與東南亞客家研究"
@@ -123,7 +123,7 @@ speakers =
   * uid: 11
     name_zh: "鄒景雯"
     name_en: "鄒景雯"
-    avatar: "http://summit.g0v.tw/images/speaker/A13.png"
+    avatar: "/images/speaker/A11.png"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "自由時報副總編。國立台灣大學國家發展研究所博士生，資深新聞媒體人，曾任自立晚報記者、自由時報政治中心副主任。著有《李登輝執政告白實錄》、《李登輝給年輕人的十堂課》、《傳略蘇志誠》、《風雲劉泰英》、《蕭萬長政治密錄》等。"
@@ -298,7 +298,7 @@ speakers =
   * uid: 25
     name_zh: "彭啟明"
     name_en: "彭啟明"
-    avatar: ""
+    avatar: "/images/speaker/A25.jpg"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "彭啟明博士於台灣第一間民間氣象公司「天氣風險管理開發股份有限公司」擔任總經理，身兼大愛新聞氣象主播、中廣氣象達人節目主持人、中央大學、文化大學兼任教授、環境保護學會秘書長與OPEN DATA聯盟會長等。學術專長包括天氣風險管理、大氣化學、氣象資料視覺化與環境教育。"
@@ -310,7 +310,7 @@ speakers =
   * uid: 26
     name_zh: "鄧東波"
     name_en: "鄧東波"
-    avatar: ""
+    avatar: "/images/speaker/A26.png"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "鄧東波先生為荷蘭屯特大學地球觀測及地理資訊科學學院 (ITC)博士候選人，也是中研院資訊所研究助理，專職於地理資訊處理、語意網及開放資料之研究工作 。2005年加入「開放街圖」(OpenStreetMap, OSM)社群，參與繪圖工作，並於2012及2013年籌辦SotM Taiwan，為OSM Taiwan Local Chapter 的連絡人。"
