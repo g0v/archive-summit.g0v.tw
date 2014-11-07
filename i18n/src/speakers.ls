@@ -147,7 +147,7 @@ speakers =
   * uid: 13
     name_zh: "瞿筱葳"
     name_en: "Hsiao-wei Chiu"
-    avatar: "/images/speaker/A13.png"
+    avatar: "/images/speaker/A13.jpg"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "aka @ipa。影像文字工作者，參與多部國際頻道紀錄片製作曾獲亞洲電視節與休士頓影展等國際獎項，並著有《留味行》一書獲金鼎獎。近年積極投入 g0v 零時政府社群與開源文化推廣，同時是 g0v 社群暨大型黑客松共同發起人。"
