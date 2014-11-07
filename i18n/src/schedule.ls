@@ -8,13 +8,14 @@ schedule = do
     subtitle_en: ""
     room_zh: "第一會議室"
     room_en: "1st Conference Room"
+    speakerId: 36
     desc_zh:
       0: "以開放資料監督代議制度是開放政府運動重要的一環，各國都有不同的發展歷程，零時政府社群也長期開發相關應用。"
       1: "這系列議程邀請到多國致力於開放國會的行動者，以及早期在台灣推動監督國會的前輩，以多個面向探討數位公民與代議制度間的新可能。（主持人：瞿海源）"
     desc_en:
       0: "Using open information to supervise representative government is an important aspect of the open government movement. Every country has undergone a different journey of development. The g0v community has also developed long-standing applications in this regard."
       1: "This track includes the participation of open parliament activists from many countries as well as senior promoters of early parliamentary supervision in Taiwan. Through multiple perspectives, they will explore new possibilities for digital citizens and representative government."
-    moderator: "瞿海源"
+    moderator: "<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info36'>瞿海源</span>"
     short_desc_zh: "以開放資料監督代議制度是開放政府運動重要的一環，各國都有不同的發展歷程，零時政府社群也長期開發相關應用。 ..."
     short_desc_en: "This track includes the participation of open parliament activists from many countries as ..."
   r2_am_topic:
@@ -151,10 +152,10 @@ schedule = do
     title_zh: "參與式民主議程座談"
     title_en: "Panel"
     row: 2
-    speakerIds: [4, 3]
+    speakerIds: [37, 4, 3]
     list_zh:
       0: "主持人：吳銘軒"
-      1: "與談貴賓：李根政、呂家華、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info4'>陳俊宏</div>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info3'>蔡玉玲</span>"
+      1: "與談貴賓：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info37'>李根政</span>、呂家華、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info4'>陳俊宏</div>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info3'>蔡玉玲</span>"
     list_en:
       0: "Moderator: M.H. Wu"
       1: "Panelists: 李根政、呂家華、陳俊宏、蔡玉玲"
@@ -336,10 +337,10 @@ schedule = do
   r1_1440:
     title_zh: "媒體與學運議程座談"
     title_en: "媒體與學運議程座談"
-    speakerIds: [9, 12,10,11,undefined,13,undefined]
+    speakerIds: [9, 12,10,11,35,13,34]
     list_zh:
       0: "主持人：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info9'>蕭新煌</span>"
-      1: "與談貴賓：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info12'>吳宗泰</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info10'>陳守國</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info11'>鄒景雯</span>、鄭凱榕、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info13'>瞿筱葳</span>、嚴婉玲"
+      1: "與談貴賓：<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info12'>吳宗泰</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info10'>陳守國</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info11'>鄒景雯</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info35'>鄭凱榕</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info13'>瞿筱葳</span>、<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info34'>嚴婉玲</span>"
     list_en:
       0: "主持人：蕭新煌"
       1: "與談貴賓：吳宗泰、陳守國、鄒景雯、鄭凱榕、瞿筱葳、嚴婉玲"
