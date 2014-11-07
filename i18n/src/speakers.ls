@@ -146,7 +146,7 @@ speakers =
     abstract_en: "一群跨校的記者如何迅速組織起來，進行線上集體寫作編輯。對不同新聞事件的價值判斷和呈現方式，與傳統主流媒體差異何在？如何與群眾互動並再生產。記者於新聞現場的客觀／主觀，如何成就新聞，並提供閱聽人延伸思考。反思歷年社運現場新聞呈現與培力。"
   * uid: 13
     name_zh: "瞿筱葳"
-    name_en: "瞿筱葳"
+    name_en: "Hsiao-wei Chiu"
     avatar: ""
     country_zh: "台灣"
     country_en: "Taiwan"
@@ -156,6 +156,7 @@ speakers =
     topic_en: "社會運動中的開源新媒體嘗試"
     abstract_zh: "此講座短講將分享去中心化、開源的 g0v 網路社群（civic hacking community）在太陽花運動中扮演的角色。除了新媒體所需的基礎網路、直播支援與資訊彙整，將說明運動中還有哪些努力，以及新型態社群在未來在公民運動的展望。"
     abstract_en: "此講座短講將分享去中心化、開源的 g0v 網路社群（civic hacking community）在太陽花運動中扮演的角色。除了新媒體所需的基礎網路、直播支援與資訊彙整，將說明運動中還有哪些努力，以及新型態社群在未來在公民運動的展望。"
+    twitter: "ipa"
   * uid: 14
     name_zh: "謝舒凱、馬基石"
     name_en: "Shu-Kai Hsieh, Pierre Magistry"
