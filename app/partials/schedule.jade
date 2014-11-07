@@ -181,10 +181,11 @@ block content
           td.text-center(colspan='4')
             h5 Keynote
             span.fui-user
-            span.text-primary
-              b: a(href="http://eaves.ca/about-david/",target="_blank") David Eaves
+            span.text-primary.speaker-info(data-toggle='modal' data-target='#Info42') 
+              b David Eaves
               span.lang= _('EN')
               span.lang.interpreted(title=_("Interpreted"))= _('ZH')
+            +getInfo(41)
         tr
           td.text-center 9:40 - 9:50
           td.text-center(colspan='4')

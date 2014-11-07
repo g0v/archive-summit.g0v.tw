@@ -492,8 +492,17 @@ If you’d like to know more about how Paul’s team might be able to help your 
   * uid: 41
     name_zh: "吳銘軒"
     name_en: "Min Hsuan Wu"
-    avatar: ""
+    avatar: "/images/speaker/A41.jpg"
     country_zh: "台灣"
     country_en: "Taiwan"
     bio_zh: "阿端，現任綠黨中執委，社運份子，參與多年廢核、性別與人權運動。專長為創意企劃、溝通設計與 php 程式設計。在 g0v 社群提供社運觀點與橫向聯繫。"
     bio_en: "阿端，現任綠黨中執委，社運份子，參與多年廢核、性別與人權運動。專長為創意企劃、溝通設計與 php 程式設計。在 g0v 社群提供社運觀點與橫向聯繫。"
+  * uid: 42
+    name_zh: "David Eaves"
+    name_en: "David Eaves"
+    avatar: "http://eavesca.files.wordpress.com/2008/10/deaves.jpg?w=240&h=160"
+    country_zh: "加拿大"
+    country_en: "Canda"
+    bio_zh: "<a href='http://eaves.ca/about-david/' target='_blank'>Website</a><br>A public policy entrepreneur, open government activist and negotiation expert, David is retained by several governments to advise on open government and open data, and advises businesses and nonprofits on open source strategies and community management. He is an affiliate with the Berkman Centre for Internet and Society at Harvard University, where he is looking at issues surrounding the politics of data, as well as how negotiation theory can help improve online community management."
+    bio_en: "A public policy entrepreneur, open government activist and negotiation expert, David is retained by several governments to advise on open government and open data, and advises businesses and nonprofits on open source strategies and community management. He is an affiliate with the Berkman Centre for Internet and Society at Harvard University, where he is looking at issues surrounding the politics of data, as well as how negotiation theory can help improve online community management."
+    twitter: "daeaves"
