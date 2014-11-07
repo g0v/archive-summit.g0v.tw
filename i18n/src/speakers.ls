@@ -485,3 +485,11 @@ If you’d like to know more about how Paul’s team might be able to help your 
     country_en: "Taiwan"
     bio_zh: "hychen, 常年投入開源文化推廣，協助舉辦過台灣開源人年會，台灣 Python 研討會。近年則投入 g0v 零時政府社群，幫忙撰寫一些程式與文件。"
     bio_en: "hychen, 常年投入開源文化推廣，協助舉辦過台灣開源人年會，台灣 Python 研討會。近年則投入 g0v 零時政府社群，幫忙撰寫一些程式與文件。"
+  * uid: 40
+    name_zh: "張維志 (whisky)"
+    name_en: "張維志 (whisky)"
+    avatar: "/images/speaker/A40.jpg"
+    country_zh: "台灣"
+    country_en: "Taiwan"
+    bio_zh: "在 2010 回到台灣前，在法國巴黎居住超過 27 年。巴黎第五大學 CHU Necker Enfants Malades 醫學院肆業。2010 回到台灣後，接任青平台基金會資訊長一職，負責開放資料計畫的推動。三年多來，主要任務為開放資料，資料新聞學等泛稱資料素養 (Data Literacy) 的推動。2013 年底離開青平台後繼續以開放資料，資料新聞學為核心開始新的創業計畫。"
+    bio_en: "在 2010 回到台灣前，在法國巴黎居住超過 27 年。巴黎第五大學 CHU Necker Enfants Malades 醫學院肆業。2010 回到台灣後，接任青平台基金會資訊長一職，負責開放資料計畫的推動。三年多來，主要任務為開放資料，資料新聞學等泛稱資料素養 (Data Literacy) 的推動。2013 年底離開青平台後繼續以開放資料，資料新聞學為核心開始新的創業計畫。"

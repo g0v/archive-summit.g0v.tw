@@ -251,13 +251,14 @@ schedule = do
     subtitle_en: ""
     room_zh: "第二會議室"
     room_en: "2nd Conference Room"
+    speakerId: 40
     desc_zh:
       0: "社群網站的興起讓分散式行動越來越成熟，從單純傳遞訊息到全球協同工作，都因技術與群眾參與度提升而成為可能。"
       1: "運用科技結合群眾外包，是否能夠加速社會改變的進程？此議程有跨國公民科技社群、g0v 大規模動員鄉民的OCR行動、以及兩大開放內容基石「維基百科」與「開放街圖」，皆以實際案例探討協作新動力。（主持人：張維志）"
     desc_en:
       0: "The rise of social networking sites made decentralized activism practical; everything from simple information delivery to global collaborative work has been made possible because of the rise of technology and crowd participation."
       1: """How would communication technologies — combined with crowd-sourcing — accelerate the process of social change? This track features transnational citizen technology communities, the large-scale g0v-mobilized crowd OCR projects, as well as the two cornerstones of open content: "Wikipedia" and "OpenStreetMap", exploring the new driving forces of collaboration through practical case studies."""
-    moderator: "張維志"
+    moderator: "<span class='text-primary speaker-info' data-toggle='modal' data-target='\#Info40'>張維志</span>"
     short_desc_zh: "社群網站的興起讓分散式行動越來越成熟，從單純傳遞訊息到全球協同工作，都因技術與群眾參與度提升 ..."
     short_desc_en: "The rise of social networking sites made decentralized activism ..."
   r4_pm_topic:
