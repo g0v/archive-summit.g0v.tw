@@ -23,10 +23,10 @@ mixin getInfo(index)
               a.twitter-color(href='http://twitter.com/#{speaker["twitter"]}', target="_blank")
                 span.fui-twitter
           span.badge=speaker["country_"+lang]
-
         .modal-body
           h6 Bio
           p!=speaker["bio_"+lang]
+        if speaker["abstract_"+lang]
           h6 Abstract
           p!=speaker["abstract_"+lang]
         .modal-footer
