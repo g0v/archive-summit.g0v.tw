@@ -212,6 +212,8 @@ schedule = do
     title_en: "Sunflower Movement under the Spotlight"
     subtitle_zh: "Sunflower Movement under the Spotlight"
     subtitle_en: ""
+    room_zh: "第一會議室"
+    room_en: "1st Conference Room"
     badge_zh: "社會所「跨世紀學運系列論壇之五」"
     badge_en: ""
     speakerIds: [9]
@@ -230,6 +232,8 @@ schedule = do
     title_en: "Open Data and the Environment"
     subtitle_zh: "Open Data and the Environment"
     subtitle_en: ""
+    room_zh: "國際會議廳"
+    room_en: "International Conference Hall"
     speakerIds: [26]
     desc_zh:
       0: "現今的氣候變遷，以及環境的過度利用，導致天災頻傳，而由 g0v 過往製做的雨量熱度圖、空氣污染圖，也讓拉近了民眾與環境資料之間的距離。"
@@ -245,6 +249,8 @@ schedule = do
     title_en: "Age of Collaboration"
     subtitle_zh: "Age of Collaboration"
     subtitle_en: ""
+    room_zh: "第二會議室"
+    room_en: "2nd Conference Room"
     desc_zh:
       0: "社群網站的興起讓分散式行動越來越成熟，從單純傳遞訊息到全球協同工作，都因技術與群眾參與度提升而成為可能。"
       1: "運用科技結合群眾外包，是否能夠加速社會改變的進程？此議程有跨國公民科技社群、g0v 大規模動員鄉民的OCR行動、以及兩大開放內容基石「維基百科」與「開放街圖」，皆以實際案例探討協作新動力。（主持人：張維志）"
@@ -259,6 +265,8 @@ schedule = do
     title_en: "New Faces of Activism"
     subtitle_zh: "New Faces of Activism"
     subtitle_en: ""
+    room_zh: "遠距會議室"
+    room_en: "Media Conference Room"
     desc_zh:
       0: "社運團體 × 科技，會碰撞出什麼火花？新的傳播方式、新的協同工具、新的溝通形式，都帶來不同層面的影響。互相溝通、學習、影響的過程也是公民社會進步的一環。"
       1: "運動新風貌從太陽花運動中的新媒體談起，進一步探討科技工具與社運結合的可能，與台灣公民軟體經驗輸出香港的經驗分享。（主持人：楊孝先）"
