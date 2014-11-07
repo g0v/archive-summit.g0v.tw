@@ -169,10 +169,12 @@ schedule = do
     language: "ZH"
     interpretation: "EN"
   r4_1120:
-    title_zh: "你媽知道你在看假新聞嗎"
-    title_en: "Does your mom know you are watching fake news"
-    speaker_zh: "ggm"
-    speaker_en: "ggm"
+    title_zh: "開放 NCC API，觀者自覺：你媽知道你在看假新聞嗎？"
+    title_en: "Open NCC API and let readers be aware if they are reading fake news"
+    speaker_zh: "郭冠宏 (ggm)"
+    speaker_en: "郭冠宏 (ggm)"
+    language: "ZH"
+    speakerId: 33
   r1_1150:
     title_zh: "開放國會議程座談"
     title_en: "Open Parliament Panel"
