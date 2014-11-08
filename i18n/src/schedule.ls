@@ -396,4 +396,4 @@ schedule = do
     speaker_en: "Tim KT Chan"
     tag_zh: "Code4HK/港"
     tag_en: "Code4HK/HK"
-    language: "EN"
+    language: "ZH"
