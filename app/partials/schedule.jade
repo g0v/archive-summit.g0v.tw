@@ -85,14 +85,14 @@ mixin topicslots_desc(time)
                 each p in desc
                   p!= p
               .modal-footer
-                button.btn.btn-default(type='button', data-dismiss='modal') Close        
+                button.btn.btn-default(type='button', data-dismiss='modal') Close
         if schedule_i18n[name]["speakerId"]
           - var index = schedule_i18n[name]["speakerId"] - 1
           +getInfo(index)
         else if schedule_i18n[name]["speakerIds"]
           each id in schedule_i18n[name]["speakerIds"]
             if id
-              +getInfo(id-1) 
+              +getInfo(id-1)
 
 mixin timeslots(head, time)
   tr
@@ -117,7 +117,7 @@ mixin timeslots(head, time)
                   != p
           else
             span.fui-user
-            |  
+            |&nbsp;
             if obj["speakerId"]
               span.text-primary.speaker-info(data-toggle='modal', data-target=target)
                 +get(obj, "speaker")
@@ -150,7 +150,7 @@ block content
       h5 Day 1 / Conference 國際研討會
         p
         img(src='/images/icons/png/s-date.png', align='middle')
-        |  2014/11/8 
+        |  2014/11/8
         img(src='/images/icons/png/s-map.png', align='middle')
         |  台北市南港區中央研究院人文社會科學館
       .alert.alert-warning
@@ -165,13 +165,13 @@ block content
           td.text-center(width='138') 8:00 - 9:00
           td.text-center(colspan='4')
             h6 報到 / Registration
-           
+
         tr
           td.text-center(width='138') 9:00 - 9:10
           td.text-center(colspan='4')
             h5 #{schedule_i18n["opening_"+lang] || schedule_i18n["opening"]}
             span.fui-user
-            |  
+            |&nbsp;
             span.text-primary
               b  高嘉良 clkao
               span.lang= _('ZH/EN')
@@ -181,7 +181,7 @@ block content
           td.text-center(colspan='4')
             h5 Keynote
             span.fui-user
-            span.text-primary.speaker-info(data-toggle='modal' data-target='#Info42') 
+            span.text-primary.speaker-info(data-toggle='modal' data-target='#Info42')
               b David Eaves
               span.lang= _('EN')
               span.lang.interpreted(title=_("Interpreted"))= _('ZH')
@@ -190,7 +190,7 @@ block content
           td.text-center 9:40 - 9:50
           td.text-center(colspan='4')
             h5
-              | BREAK    
+              | BREAK
               span(style='font-size:14px;') (10 mins)
 
         +topicslots_title("am")
@@ -202,7 +202,7 @@ block content
           td.text-center 10:50 - 11:20
           td.text-center(colspan='4')
             h5
-              | BREAK    
+              | BREAK
               span(style='font-size:14px;') (30 mins)
 
         +timeslots("11:20 - 11:50", "1120")
@@ -212,7 +212,7 @@ block content
           td.text-center 12:20 - 13:30
           td.text-center(colspan='4')
             h5
-              | LUNCH    
+              | LUNCH
               span(style='font-size:14px;') (70 mins)
 
         +topicslots_title("pm")
@@ -227,30 +227,30 @@ block content
           td.text-center 15:10 - 15:50
           td.text-center(colspan='3')
             h5
-              | TEA BREAK 
+              | TEA BREAK
               span(style='font-size:14px;') (40 mins)
         tr
-          td.text-center(rowspan='2') 15:50    - 17:00       
+          td.text-center(rowspan='2') 15:50    - 17:00
           td.text-center(colspan='4', rowspan='2')
             br
             span(style='font-size:18px;') 合辦單位 中研院社會所蕭新煌所長致詞
             h5
-              | Lightning talks               
+              | Lightning talks
               span(style='font-size:14px;') (70 mins)
               br
               span(style='font-size:18px;') 閃電秀由現場參與者當天報名，每講 5 分鐘
               span.lang ZH/EN
             br
             span(style='font-size:18px;') 閉幕 Closing Remarks
-        tr  
+        tr
       h5 Day 2 / Unconference 開放工作坊
         p
         img(src='/images/icons/png/s-date.png', align='middle')
-        |  2014/11/9 
+        |  2014/11/9
         img(src='/images/icons/png/s-map.png', align='middle')
         |  台北市南港區中央研究院資訊所
-      //.alert.alert-success VIP 與國際早鳥票可優先選擇是否參與不需再報，一般票 
-        span.text-danger 
+      //.alert.alert-success VIP 與國際早鳥票可優先選擇是否參與不需再報，一般票
+        span.text-danger
          b 10/1 晚間
         | 開放報名。
       // td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}
@@ -322,4 +322,4 @@ block content
                 | Lightning talks (45 mins)
                 br
                 |                         Closing
-// vi:et
+  include video.jade

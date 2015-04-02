@@ -145,3 +145,56 @@ span.lang
   .staff-group-name
     background: #FFA800
 
+// video.jade
+.anchor
+  margin-top: -80px
+  position: absolute
+
+.hash-link
+  color: #ABABAB
+  visibility: hidden
+
+  &:hover, &:focus
+    color: #1CAEE3;
+    text-decoration: underline
+
+.schedule-talks
+  width: 720px
+
+  .schedule-header
+    margin: 0 auto
+    margin-top: 50px
+    margin-bottom: -10px
+    width: 720px
+
+    &:hover
+      .hash-link
+        visibility: visible
+  .talk
+    &:hover
+      .hash-link
+        visibility: visible
+    img
+      width: 62px
+      height: 62px
+      float: left
+      margin-right: 10px
+      border-radius: 50%
+    h4
+      font-size: 17px
+      margin-top: 40px;
+    h3
+      font-size: 17px
+      margin-top: -17px
+      margin-bottom: -10px
+      line-height: 40px
+      small
+        font-size: 17px
+        color: #7B7B7B
+
+    .description
+      p
+        margin: 10px 0
+      iframe
+        display: block
+        margin: 20px auto
