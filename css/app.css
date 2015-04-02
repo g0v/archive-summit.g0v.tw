@@ -166,3 +166,59 @@ span.lang.interpreted {
 .staff-group-9 .staff-group-name {
   background: #ffa800;
 }
+.anchor {
+  margin-top: -80px;
+  position: absolute;
+}
+.hash-link {
+  color: #ababab;
+  visibility: hidden;
+}
+.hash-link:hover,
+.hash-link:focus {
+  color: #1caee3;
+  text-decoration: underline;
+}
+.schedule-talks {
+  width: 720px;
+}
+.schedule-talks .schedule-header {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: -10px;
+  width: 720px;
+}
+.schedule-talks .schedule-header:hover .hash-link {
+  visibility: visible;
+}
+.schedule-talks .talk:hover .hash-link {
+  visibility: visible;
+}
+.schedule-talks .talk img {
+  width: 62px;
+  height: 62px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.schedule-talks .talk h4 {
+  font-size: 17px;
+  margin-top: 40px;
+}
+.schedule-talks .talk h3 {
+  font-size: 17px;
+  margin-top: -17px;
+  margin-bottom: -10px;
+  line-height: 40px;
+}
+.schedule-talks .talk h3 small {
+  font-size: 17px;
+  color: #7b7b7b;
+}
+.schedule-talks .talk .description p {
+  margin: 10px 0;
+}
+.schedule-talks .talk .description iframe {
+  display: block;
+  margin: 20px auto;
+}
