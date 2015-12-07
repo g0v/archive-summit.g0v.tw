@@ -8,12 +8,12 @@ html
           , lang = window.navigator.userLanguage || window.navigator.language;
         if(lang === 'zh-TW') {
           if(pathname.match(/^\/([a-z]+\.html)$/)) {
-            location.href = '/zh-TW' + pathname;
+            location.href = '/2014/zh-TW' + pathname;
           } else {
-            location.href = '/zh-TW/index.html';
+            location.href = '/2014/zh-TW/index.html';
           }
         } else {
-          location.href = '/en-US/index.html';
+          location.href = '/2014/en-US/index.html';
         }
       }())
   body
