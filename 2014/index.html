@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset="utf8"><script type="text/javascript">(function(){
+  var pathname = window.location.pathname
+    , lang = window.navigator.userLanguage || window.navigator.language;
+  if(lang === 'zh-TW') {
+    if(pathname.match(/^\/([a-z]+\.html)$/)) {
+      location.href = '/zh-TW' + pathname;
+    } else {
+      location.href = '/zh-TW/index.html';
+    }
+  } else {
+    location.href = '/en-US/index.html';
+  }
+}())</script></head><body></body></html>
