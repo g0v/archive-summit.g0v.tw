@@ -5,7 +5,7 @@ gutil = gulp-util
 
 app = express!
 
-build_path = '_public'
+build_path = '_public/2014'
 production = true if gutil.env.env is \production
 
 gulp.task 'i18n', ->
