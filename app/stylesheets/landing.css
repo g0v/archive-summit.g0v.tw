@@ -1,0 +1,240 @@
+* {
+  color: #fff;
+  font-size: 15px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
+}
+
+body {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #C180AA),
+    color-stop(1, #130E17)
+  );
+  background-image: -o-linear-gradient(bottom, #C180AA 0%, #130E17 100%);
+  background-image: -moz-linear-gradient(bottom, #C180AA 0%, #130E17 100%);
+  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);
+  background-image: -ms-linear-gradient(bottom, #C180AA 0%, #130E17 100%);
+  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);
+}
+
+.main-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  background-image: url("../images/g0v-summit-01bg.jpg");
+  background-size: 100%;
+  background-position: 0 -250px;
+  background-repeat: no-repeat;
+}
+
+.main-content .feature {
+  padding: 180px 0 50px 0;
+}
+
+.main-content .feature h1 {
+  background-image: url("../images/title.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  overflow: hidden;
+  padding: 0px 0px 12%;
+  text-indent: 100%;
+  white-space: nowrap;
+  height: 0px;
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-content .feature h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+@media(max-width: 980px) {
+  .main-content .feature {
+    padding: 150px 0 50px 0;
+  }
+  .main-content .feature h1 {
+    padding: 0 0 15% 0;
+  }
+  .main-content .feature h2 {
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 860px){
+  .main-content  {
+    background-size: 100%;
+    background-position: 0 -120px ;
+  }
+}
+
+@media(max-width: 720px){
+  .main-content  {
+    background-size: 150%;
+    background-position: center -300px;
+  }
+  .main-content .feature {
+    padding: 80px 0 30px 0;
+  }
+  .main-content .feature h1 {
+    width: 100%;
+    height: 40px;
+  }
+}
+
+.main-content .intro {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#906ea9+0,c180aa+100&1+0,0+100 */
+  background: -moz-linear-gradient(top, rgba(144,110,169,0.9) 0%, rgba(193,128,170,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 ); /* IE6-9 */
+  padding: 50px 10%;
+  height: 100%;
+  overflow : auto; /* IE7 IE8 Firefox Chrome Safari */
+  _width : 100%;  /* IE6 */
+}
+
+.main-content .intro h3 {
+  float: left;
+  max-width: 200px;
+  margin: 0 0 1em 0;
+}
+
+.main-content .intro p {
+  width: 70%;
+  padding: 0px 0 15px 200px;
+}
+
+@media(max-width: 720px){
+  .main-content .intro {
+    padding: 50px 5%;
+  }
+  .main-content .intro h3 {
+    float: none;
+  }
+  .main-content .intro p {
+    width: 100%;
+    padding: 0 0 15px 0;
+  }
+}
+
+/*Email subscribe*/
+.main-content .subscribe {
+  clear: both;
+  margin: 0 auto;
+}
+
+.main-content .subscribe p {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main-content .subscribe {
+  text-align: center;
+}
+
+.main-content .subscribe input[type=text] {
+  background-color: rgba(255,255,255,0.48);
+  border: 1px solid #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  width: 40%;
+}
+
+.main-content .subscribe input[type=submit] {
+  background-color: #6C5368;
+  border: none;
+  padding: 0.5em 3em;
+  border-radius: 5px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.main-content .subscribe input[type=submit]:hover {
+  background-color: #5e3f59;
+}
+
+@media(max-width: 720px){
+  .main-content .subscribe input[type=text] {
+    width: 90%;
+  }
+}
+
+.sponsor {
+  background-color: #64455c;
+  padding: 40px 10%;
+  overflow : auto; /* IE7 IE8 Firefox Chrome Safari */
+  _width : 100%;  /* IE6 */
+}
+
+.sponsor h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sponsor ul {
+  width: 100%;
+  max-width: 1120px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.sponsor li {
+  opacity: 0.75;
+  float: left;
+  width: 260px;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px 10px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.2);
+  cursor: pointer;
+}
+
+.sponsor li:hover {
+  opacity: 1;
+}
+
+@media(max-width: 1400px) {
+ .sponsor ul {
+  max-width: 840px;
+   padding: 0;
+   margin: 0 auto;
+ }
+}
+
+@media(max-width: 1280px){
+  .sponsor ul {
+  max-width: 570px;
+   padding: 0;
+   margin: 0 auto;
+ }
+}
+
+@media(max-width: 720px) {
+  .sponsor ul {
+  max-width: 280px;
+   padding: 0;
+   margin: 0 auto;
+ }
+}
+
+footer {
+  background-color: #64455c;
+  padding: 20px 0;
+  text-align: center;
+}

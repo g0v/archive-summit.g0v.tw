@@ -1,0 +1,22 @@
+{
+  "name": "g0v-summit",
+  "description": "g0v summit",
+  "version": "0.0.1",
+  "scripts": {
+    "webpack": "webpack --watch -d --display-reasons --display-chucks --progress"
+  },
+  "devDependencies": {
+    "webpack": "*",
+    "file-loader": "*",
+    "url-loader": "*",
+    "jsx-loader": "*",
+    "style-loader": "*",
+    "css-loader": "*",
+    "sass-loader": "*",
+    "postcss-loader": "*",
+    "html-webpack-plugin": "*",
+    "autoprefixer": "*"
+  },
+  "dependencies": {
+  }
+}

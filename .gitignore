@@ -1,0 +1,17 @@
+_site
+.DS_Store
+/*.html
+*.swp
+*.swo
+
+node_modules/*
+bower_components/*
+npm-debug.log
+_public
+.DS_Store
+.*.swp
+
+test/karma.*.js
+i18n/gen/
+
+dist/
