@@ -12,13 +12,13 @@ html(lang=lang)
     link(rel='SHORTCUT ICON', href='/g0v.ico')
     title #{tabName} g0v Summit 2014 啥米零時政府
     // Bootstrap Core CSS
-    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/2014/css/bootstrap.min.css')
     // Custom CSS
-    link(rel='stylesheet', type='text/css', href='css/business-frontpage.css')
-    link(rel='stylesheet', type='text/css', href='css/flat-ui.css')
-    link(rel='stylesheet', type='text/css', href='css/app.css')
+    link(rel='stylesheet', type='text/css', href='/2014/css/business-frontpage.css')
+    link(rel='stylesheet', type='text/css', href='/2014/css/flat-ui.css')
+    link(rel='stylesheet', type='text/css', href='/2014/css/app.css')
     // Live CSS
-    link(rel='stylesheet', type='text/css', href='css/live.css')
+    link(rel='stylesheet', type='text/css', href='/2014/css/live.css')
     //- TODO this style is only used in index.jade. check if we should do sth with it.
     style(type='text/css').
       .todo li {
@@ -89,7 +89,7 @@ html(lang=lang)
     // Image Background Page Header
     block body
     script(src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places")
-    script(type="text/javascript",src="js/vendor.js")
+    script(type="text/javascript",src="/2014/js/vendor.js")
     script(type='text/javascript').
       $('.icecast-index').on('click', function (event) {
         event.preventDefault();
