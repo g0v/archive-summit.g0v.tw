@@ -109,7 +109,7 @@ gulp.task 'assets', ->
 
 gulp.task 'server', <[ build ]> ->
   app.use connect-livereload!
-  app.use express.static path.resolve "#build_path"
+  app.use express.static path.resolve "_public"
   app.all '/**', (req, res, next) ->
     res.sendFile __dirname + "/#{build_path}/404.html"
   app.listen 3333
