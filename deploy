@@ -16,7 +16,7 @@ echo "$CURRENT is current $upstream/2016"
 if [[ $MERGED != $CURRENT ]]; then
   rm -rf dist
   git clone $REPO --depth 1 -b gh-pages dist
-  webpack
+  ./node_modules/.bin/webpack
   cd dist
   git fetch --depth 1 $upstream 2016:2016
   git add -A .
