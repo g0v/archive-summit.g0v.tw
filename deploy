@@ -1,27 +1,29 @@
 #!/bin/sh
 
 : ${upstream:=origin}
+: ${publication:=gh-pages}
+: ${development:=2016}
 
 REPO=`git config --get remote.$upstream.url`
-MERGED=`git rev-parse $upstream/gh-pages^2`
-CURRENT=`git rev-parse $upstream/2016`
+MERGED=`git rev-parse $upstream/$publication^2`
+CURRENT=`git rev-parse $upstream/$development`
 
 git fetch $upstream
 
 echo "upstream is $upstream"
 echo "works on $REPO"
-echo "$MERGED is last parent of $upstream/gh-pages"
-echo "$CURRENT is current $upstream/2016"
+echo "$MERGED is last parent of $upstream/$publication"
+echo "$CURRENT is current $upstream/$development"
 
 if [[ $MERGED != $CURRENT ]]; then
   rm -rf dist
-  git clone $REPO --depth 1 -b gh-pages dist
+  git clone $REPO --depth 1 -b $publication dist
   ./node_modules/.bin/webpack
   cd dist
-  git fetch --depth 1 $upstream 2016:2016
+  git fetch --depth 1 $upstream $development:$development
   git add -A .
-  git reset --hard $(git commit-tree `git write-tree` -p `git rev-parse gh-pages` -p `git rev-parse 2016` -m "regen for `git rev-parse 2016`")
-  git push $upstream gh-pages
+  git reset --hard $(git commit-tree `git write-tree` -p `git rev-parse $publication` -p `git rev-parse $development` -m "regen for `git rev-parse $development`")
+  git push $upstream $publication
   cd ..
 else
   echo "up to date"
