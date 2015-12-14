@@ -46,7 +46,7 @@ var config = module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      inject: true,
+      inject: "head",
       title: "啥米零時政府 g0v 2016 summit",
       filename: "index.html",
       template: "app/templates/index.html"
