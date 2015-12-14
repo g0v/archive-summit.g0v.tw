@@ -1,0 +1,29 @@
+#!/bin/sh
+
+: ${upstream:=origin}
+
+rm -rf dist
+
+REPO=`git config --get remote.$upstream.url`
+MERGED=`git rev-parse $upstream/gh-pages^2`
+CURRENT=`git rev-parse $upstream/2016`
+
+echo "upstream is $upstream"
+echo "works on $REPO"
+echo "$MERGED is last parent of $upstream/gh-pages"
+echo "$CURRENT is current $upstream/2016"
+
+if [[ $MERGED != $CURRENT ]]; then
+  echo "can deploy"
+  rm -rf dist
+  git clone $REPO --depth 1 gh-pages dist
+  webpack
+  cd dist
+  git fetch --depth 1 $upstream master:master
+  git add -A .
+  git reset --hard $(git commit-tree `git write-tree` -p `git rev-parse $upstream/gh-pages` -p `git rev-parse $upstream/2016`)
+  git push $upstream gh-pages
+  cd ..
+else
+  echo "up to date"
+fi
