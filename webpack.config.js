@@ -11,9 +11,9 @@ var config = module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "dist", "2016"),
     filename: "[name].js",
-    publicPath: "/",
+    publicPath: "/2016/",
   },
 
   resolve: {

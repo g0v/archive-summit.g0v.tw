@@ -20,6 +20,7 @@ if [[ $MERGED != $CURRENT ]]; then
   git clone $REPO --depth 1 -b $publication dist
   ./node_modules/.bin/webpack
   cd dist
+  if [[ -z `git diff --shortstat` ]]; then echo "no diff. abort."; exit; fi
   git fetch --depth 1 $upstream $development:$development
   git add -A .
   git reset --hard $(git commit-tree `git write-tree` -p `git rev-parse $publication` -p `git rev-parse $development` -m "regen for `git rev-parse $development`")
