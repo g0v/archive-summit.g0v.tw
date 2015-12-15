@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+  - "4.2.2"
+
+sudo: false
+
+git:
+  depth: 1
+
+branches:
+  except:
+    - gh-pages
+    
+env:
+  global:
+    - REPO="git@github.com:g0v/summit.g0v.tw"
+    - secure: "LkNqkExChRd8fAfkUu1QLaXDlAqvPCxX0LeNaeXUESyneJbmAEqpEn0dn7A66nvQJWqpFByx2xqdqCjPJehs/t16HIRyfuKqqBBg4qj9Jnx7J3rxHQW/NZh/2SraGVzx9sOtZF8GhZyoDME33Xik57TuoC3onnORJjEvKj56rD0="
+
+after_success: .travis/after_success.sh
