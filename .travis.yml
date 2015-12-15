@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "4.2.2"
+  - "4.1"
 
 sudo: false
 
@@ -11,7 +11,7 @@ git:
 branches:
   except:
     - gh-pages
-    
+
 env:
   global:
     - REPO="git@github.com:g0v/summit.g0v.tw"

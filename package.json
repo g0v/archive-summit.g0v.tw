@@ -3,6 +3,8 @@
   "description": "g0v summit",
   "version": "0.0.1",
   "scripts": {
+    "build": "webpack",
+    "test": "npm run build",
     "webpack": "webpack --watch -d --display-reasons --display-chucks --progress"
   },
   "devDependencies": {
