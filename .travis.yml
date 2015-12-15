@@ -15,6 +15,6 @@ branches:
 env:
   global:
     - REPO="git@github.com:g0v/summit.g0v.tw"
-    - secure: "LkNqkExChRd8fAfkUu1QLaXDlAqvPCxX0LeNaeXUESyneJbmAEqpEn0dn7A66nvQJWqpFByx2xqdqCjPJehs/t16HIRyfuKqqBBg4qj9Jnx7J3rxHQW/NZh/2SraGVzx9sOtZF8GhZyoDME33Xik57TuoC3onnORJjEvKj56rD0="
+    - secure: "JhUJCf2L5ER8VPoeHDD5hSHkKNPAdc1ENVE2x0n9pClqgTTm0o4F6I7tRCoVzaWv7m5DAwANE6Kr7HJRcdrbevjKb+5YM+BUSeg2HJISUfa90omHIH8VeqyJYBgEeAL9TBV38BgRcuYn8pgUTiKwCBPxtoCW6ZGP2nu5449ZNK4="
 
 after_success: .travis/after_success.sh
