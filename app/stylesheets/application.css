@@ -1,2 +1,24 @@
 @import "reset.css";
 @import "landing.css";
+
+.intro {
+  & > h3 {
+    lost-column: 1/4 2;
+    margin: 0 0 1em 0;
+  }
+  & > p {
+    lost-column: 3/4 2;
+    margin: 0 0 1.5em 0;
+  }
+}
+
+@media(max-width: 720px) {
+  .intro {
+    & > h3 {
+      lost-column: 1/1;
+    }
+    & > p {
+      lost-column: 1/1;
+    }
+  }
+}

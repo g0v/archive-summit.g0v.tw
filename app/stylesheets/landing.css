@@ -94,38 +94,18 @@ body {
 }
 
 .main-content .intro {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#906ea9+0,c180aa+100&1+0,0+100 */
-  background: -moz-linear-gradient(top, rgba(144,110,169,0.9) 0%, rgba(193,128,170,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top, rgba(144,110,169,0.9) 0%, rgba(193,128,170,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);
+  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );
   padding: 50px 10%;
   height: 100%;
-  overflow : auto; /* IE7 IE8 Firefox Chrome Safari */
-  _width : 100%;  /* IE6 */
-}
-
-.main-content .intro h3 {
-  float: left;
-  max-width: 200px;
-  margin: 0 0 1em 0;
-}
-
-.main-content .intro p {
-  width: 70%;
-  padding: 0px 0 15px 200px;
+  overflow : auto;
 }
 
 @media(max-width: 720px){
   .main-content .intro {
     padding: 50px 5%;
-  }
-  .main-content .intro h3 {
-    float: none;
-  }
-  .main-content .intro p {
-    width: 100%;
-    padding: 0 0 15px 0;
   }
 }
 
@@ -175,8 +155,7 @@ body {
 .sponsor {
   background-color: #64455c;
   padding: 40px 10%;
-  overflow : auto; /* IE7 IE8 Firefox Chrome Safari */
-  _width : 100%;  /* IE6 */
+  overflow : auto;
 }
 
 .sponsor h3 {
