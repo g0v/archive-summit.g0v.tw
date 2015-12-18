@@ -17,6 +17,8 @@
     "sass-loader": "*",
     "postcss-loader": "*",
     "html-webpack-plugin": "*",
+    "precss": "*",
+    "lost": "*",
     "autoprefixer": "*"
   },
   "dependencies": {

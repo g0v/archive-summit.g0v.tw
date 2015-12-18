@@ -42,7 +42,11 @@ var config = module.exports = {
     ]
   },
 
-  postcss: [autoprefixer({ browsers: ['last 2 versions', '> 1%', 'Firefox > 20'] })],
+  postcss: [
+    require('lost'),
+    require('precss'),
+    autoprefixer({ browsers: ['last 2 versions', '> 1%', 'Firefox > 20'] }),
+  ],
 
   plugins: [
     new HtmlWebpackPlugin({
