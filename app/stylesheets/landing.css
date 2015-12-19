@@ -34,6 +34,7 @@ body {
   background-size: 100%;
   background-position: 0 -250px;
   background-repeat: no-repeat;
+  clear: both;
 }
 
 .main-content .feature {
@@ -156,6 +157,7 @@ body {
   background-color: #64455c;
   padding: 40px 10%;
   overflow : auto;
+  clear: both;
 }
 
 .sponsor h3 {
