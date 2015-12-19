@@ -28,6 +28,10 @@ var config = module.exports = {
         loader: 'url',
       },
       {
+        test: /[/]speakers2014[/]/,
+        loader: 'file?name=images/speakers2014/[name].[ext]',
+      },
+      {
         test: /\.jsx$/,
         loader: 'jsx?insertPragma=React.DOM&harmony',
       },

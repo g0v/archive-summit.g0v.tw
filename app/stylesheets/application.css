@@ -22,3 +22,27 @@
     }
   }
 }
+
+h4.feature-speakers {
+  font-size: 2em;
+  text-align: center;
+  margin: 1.5em 0 1em 0;
+}
+
+div.feature-speakers {
+  text-align: center;
+  & > figure {
+    lost-column: 1/3;
+  }
+  @media(max-width: 720px) {
+    & > figure {
+      lost-column: 1/1;
+    }
+  }
+  figcaption {
+    margin: 0 0 1em 0;
+  }
+  img {
+    width: 100%;
+  }
+}
