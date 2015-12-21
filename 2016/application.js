@@ -75,7 +75,7 @@
 	});
 
 	document.addEventListener("DOMContentLoaded", function (e) {
-	  _reactDom2.default.render(_react2.default.createElement(_intro2.default, null), document.body);
+	  //ReactDOM.render(<Intro />, document.body);
 	});
 
 /***/ },
