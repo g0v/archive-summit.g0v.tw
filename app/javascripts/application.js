@@ -10,5 +10,5 @@ import ReactDOM from "react-dom";
 import Intro from "./components/intro";
 
 document.addEventListener("DOMContentLoaded", function(e) {
-  ReactDOM.render(<Intro />, document.body);
+//ReactDOM.render(<Intro />, document.body);
 });
