@@ -111,22 +111,19 @@ body {
 }
 
 /*Email subscribe*/
-.main-content .subscribe {
+.main-content #mc_embed_signup {
   clear: both;
   margin: 0 auto;
+  text-align: center;
 }
 
-.main-content .subscribe p {
+.main-content #mc_embed_signup p {
   width: 100%;
   padding: 20px 0;
   text-align: center;
 }
 
-.main-content .subscribe {
-  text-align: center;
-}
-
-.main-content .subscribe input[type=text] {
+.main-content #mc_embed_signup input[type=email] {
   background-color: rgba(255,255,255,0.48);
   border: 1px solid #fff;
   padding: 0.5em 1em;
@@ -134,7 +131,7 @@ body {
   width: 40%;
 }
 
-.main-content .subscribe input[type=submit] {
+.main-content #mc_embed_signup input[type=submit] {
   background-color: #6C5368;
   border: none;
   padding: 0.5em 3em;
@@ -143,12 +140,12 @@ body {
   cursor: pointer;
 }
 
-.main-content .subscribe input[type=submit]:hover {
+.main-content #mc_embed_signup input[type=submit]:hover {
   background-color: #5e3f59;
 }
 
 @media(max-width: 720px){
-  .main-content .subscribe input[type=text] {
+  .main-content #mc_embed_signup input[type=email] {
     width: 90%;
   }
 }
