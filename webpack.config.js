@@ -32,16 +32,16 @@ var config = module.exports = {
         loader: 'file?name=images/speakers2014/[name].[ext]',
       },
       {
-        test: /\.jsx$/,
-        loader: 'jsx?insertPragma=React.DOM&harmony',
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015'],
+        },
       },
       {
         test: /\.css$/,
         loader: 'style!css!postcss',
-      },
-      {
-        test: /\.scss$/,
-        loader: 'style!css!postcss!sass?sourceMap',
       },
     ]
   },
