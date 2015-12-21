@@ -8,7 +8,7 @@ h3 {
   font-weight: bold;
 }
 
-p {
+p, ul {
   line-height: 1.5;
 }
 
@@ -176,7 +176,7 @@ body {
   opacity: 0.75;
   float: left;
   width: 260px;
-  height: 30px;
+  height: 80px;
   line-height: 30px;
   margin: 10px 10px;
   padding: 10px 0;

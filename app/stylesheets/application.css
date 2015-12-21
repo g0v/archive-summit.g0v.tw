@@ -6,7 +6,7 @@
     lost-column: 1/4 2;
     margin: 0 0 1em 0;
   }
-  & > p {
+  & > p, & > .highlights {
     lost-column: 3/4 2;
     margin: 0 0 1.5em 0;
   }
@@ -23,10 +23,10 @@
   }
 }
 
-h4.feature-speakers {
+h2.feature-speakers {
   font-size: 2em;
   text-align: center;
-  margin: 1.5em 0 1em 0;
+  margin: 0 0 1em 0;
 }
 
 div.feature-speakers {
