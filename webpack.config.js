@@ -32,6 +32,10 @@ var config = module.exports = {
         loader: 'file?name=images/speakers2014/[name].[ext]',
       },
       {
+        test: /[/]keynote[/]/,
+        loader: 'file?name=images/keynote/[name].[ext]',
+      },
+      {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',

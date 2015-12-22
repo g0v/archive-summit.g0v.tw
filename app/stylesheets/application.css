@@ -10,6 +10,21 @@
     lost-column: 3/4 2;
     margin: 0 0 1.5em 0;
   }
+  ul {
+    list-style: circle;
+    & > li {
+      margin-left: 2.5em;
+    }
+  }
+  .keynote-intro {
+    lost-column: 1/1;
+  }
+  .keynote-speaker {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+  }
 }
 
 @media(max-width: 720px) {
@@ -39,10 +54,14 @@ div.feature-speakers {
       lost-column: 1/1;
     }
   }
+  .name {
+    font-weight: bold;
+    margin: 0.5em 0;
+  }
   figcaption {
     margin: 0 0 1em 0;
   }
   img {
-    width: 100%;
+    width: 120px;
   }
 }

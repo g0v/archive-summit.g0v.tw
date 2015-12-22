@@ -1,6 +1,7 @@
 'use strict';
 
 require("../stylesheets/application.css");
+require("../images/keynote/Heusser, 2014.jpg");
 
 var speakers = [ "audreyt.jpg", "clays.jpg", "david.jpg", "hlb.jpg", "kirby.png", "lucyp.jpg" ];
 speakers.map(function(speaker) { require("../images/speakers2014/" + speaker) });
