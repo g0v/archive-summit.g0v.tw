@@ -47,8 +47,8 @@ body {
   background-size: 100%;
   background-position: 0 -250px;
   background-repeat: no-repeat;
-  opacity: 0.1;
-  z-index: 1;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .main-content .feature {
