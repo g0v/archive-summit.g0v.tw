@@ -28,13 +28,27 @@ body {
 }
 
 .main-content {
+  position: relative;
   max-width: 1140px;
   margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+}
+
+.main-content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("../images/g0v-summit-01bg.jpg");
   background-size: 100%;
   background-position: 0 -250px;
   background-repeat: no-repeat;
-  clear: both;
+  opacity: 0.1;
+  z-index: 1;
 }
 
 .main-content .feature {
