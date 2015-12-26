@@ -64,3 +64,30 @@ figure.feature-speaker {
     border-radius: 50%;
   }
 }
+
+#mc_embed_signup_scroll {
+  label {
+    text-align: center;
+    font-weight: normal;
+    padding: 20px 0;
+  }
+
+  input.email {
+    background-color: rgba(255,255,255,0.48);
+    border: 1px solid #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  input.button {
+    background-color: #6C5368;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 15%;
+  }
+}
