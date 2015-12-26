@@ -80,10 +80,7 @@
 	});
 
 	document.addEventListener("DOMContentLoaded", function (e) {
-	  [].forEach.call(document.querySelectorAll("[data-react-class]"), function (c) {
-	    var reactClass = eval(c.dataset.reactClass);
-	    _reactDom2.default.render(_react2.default.createElement(reactClass, {}), c);
-	  });
+	  _reactDom2.default.render(_react2.default.createElement(_feature_speakers2.default, null), document.querySelector('[data-react-class="FeatureSpeakers"]'));
 	});
 
 /***/ },
