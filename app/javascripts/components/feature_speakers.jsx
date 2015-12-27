@@ -6,7 +6,7 @@ import Speaker from "./speaker";
 class FeatureSpeakers extends Component {
   render() {
     return <div>
-      {this.props.speakers.map((speaker) => { return <Speaker key={speaker.name} speaker={speaker} />; })}
+      {this.props.speakers.map((speaker) => { return <Speaker key={speaker.name} className="feature-speaker" speaker={speaker} />; })}
     </div>;
   }
 };
