@@ -27,7 +27,7 @@ body {
   background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);
 }
 
-.main-content {
+main {
   position: relative;
   max-width: 1140px;
   margin: 0 auto;
