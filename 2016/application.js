@@ -20268,10 +20268,19 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        null,
-	        this.props.speakers.map(function (speaker) {
-	          return _react2.default.createElement(_speaker2.default, { key: speaker.name, className: "feature-speaker", speaker: speaker });
-	        })
+	        { className: "feature-speakers" },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Who Spoke at g0v Summit 2014"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          this.props.speakers.map(function (speaker) {
+	            return _react2.default.createElement(_speaker2.default, { key: speaker.name, className: "feature-speaker", speaker: speaker });
+	          })
+	        )
 	      );
 	    }
 	  }]);
