@@ -19749,8 +19749,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var FeatureSpeakers = (function (_React$Component) {
-	  _inherits(FeatureSpeakers, _React$Component);
+	var FeatureSpeakers = (function (_Component) {
+	  _inherits(FeatureSpeakers, _Component);
 
 	  function FeatureSpeakers() {
 	    _classCallCheck(this, FeatureSpeakers);
@@ -19772,7 +19772,7 @@
 	  }]);
 
 	  return FeatureSpeakers;
-	})(_react2.default.Component);
+	})(_react.Component);
 
 	;
 
@@ -19830,8 +19830,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Speaker = (function (_React$Component) {
-	  _inherits(Speaker, _React$Component);
+	var Speaker = (function (_Component) {
+	  _inherits(Speaker, _Component);
 
 	  function Speaker() {
 	    _classCallCheck(this, Speaker);
@@ -19865,7 +19865,7 @@
 	  }]);
 
 	  return Speaker;
-	})(_react2.default.Component);
+	})(_react.Component);
 
 	;
 
