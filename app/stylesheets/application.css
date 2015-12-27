@@ -123,6 +123,44 @@ figure.feature-speaker {
   }
 }
 
+#mc_embed_signup {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  input[type=email] {
+    background-color: rgba(255,255,255,0.48);
+    border: 1px solid #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    width: 40%;
+
+    @media(max-width: 720px){
+      & {
+        width: 90%;
+      }
+    }
+  }
+
+  input[type=submit] {
+    background-color: #6C5368;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #5e3f59;
+  }
+}
+
 #mc_embed_signup_scroll {
   label {
     text-align: center;
