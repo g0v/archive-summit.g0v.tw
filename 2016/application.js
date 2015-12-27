@@ -69,24 +69,10 @@
 
 	var _intro2 = _interopRequireDefault(_intro);
 
-	var _keynote = __webpack_require__(168);
-
-	var _keynote2 = _interopRequireDefault(_keynote);
-
-	var _feature_speakers = __webpack_require__(171);
-
-	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_feature_speakers2.default.defaultProps.speakers = __webpack_require__(172);
-	_feature_speakers2.default.defaultProps.speakers.map(function (speaker) {
-	  __webpack_require__(173)("./" + speaker.image);
-	});
-
 	document.addEventListener("DOMContentLoaded", function (e) {
-	  _reactDom2.default.render(_react2.default.createElement(_feature_speakers2.default, null), document.querySelector('[data-react-class="FeatureSpeakers"]'));
-	  _reactDom2.default.render(_react2.default.createElement(_keynote2.default, null), document.querySelector('[data-react-class="Keynote"]'));
+	  _reactDom2.default.render(_react2.default.createElement(_intro2.default, null), document.querySelector('[data-react-class="Intro"]'));
 	});
 
 /***/ },
@@ -20060,6 +20046,14 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _keynote = __webpack_require__(168);
+
+	var _keynote2 = _interopRequireDefault(_keynote);
+
+	var _feature_speakers = __webpack_require__(171);
+
+	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20082,8 +20076,119 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        null,
-	        "Intro"
+	        { className: "intro" },
+	        _react2.default.createElement(_keynote2.default, null),
+	        _react2.default.createElement(_feature_speakers2.default, null),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "About g0v.tw"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "g0v is a civic tech community established in late 2012 with deep open-source roots. With 1,000+ contributors through 30+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, citizen engagement, and online democracy.  Since the 2014 Summit, we’ve seen increasing collaboration between the civic tech communities in Taiwan, government agencies, media, and NGOs."
+	        ),
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "After g0v summit 2014"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "highlights" },
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Here are some highlights in the local community:"
+	          ),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Taiwan topped the ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://index.okfn.org/place/", target: "_blank" },
+	                "OKFN Open Data Index"
+	              ),
+	              " in 2015 as the vibrant communities push for open government data, but more importantly the Open-Definition-compliant ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://data.gov.tw/license#eng", target: "_blank" },
+	                "Open Government Data License"
+	              ),
+	              " was enacted, which was also drafted in the community."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "The NGO alliance for constitution reform proposed several projects in the hackathon for people to better understand the issue."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Minister Tsai, who spoke at the last summit, proposed a consultation platform focused on digital regulations in a hackathon which turned into the ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://blog.pol.is/vtaiwan-uberx/", target: "_blank" },
+	                "vTaiwan platform"
+	              ),
+	              "."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "During the ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://en.wikipedia.org/wiki/Formosa_Fun_Coast_explosion", target: "_blank" },
+	                "dust explosion accident"
+	              ),
+	              ", the civic tech community mobilized and work with the official emergency response team to provide timely information, and started regular digital disaster response drills."
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "As the global civic tech communities continue to do exciting things to accelerate political changes, we'd like to invite you to share and celebrate some of the small successes, and your stories on what works (and what doesn't!)"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "We expect to bring together 750 people in this event.  Call for Talks and further details on speakers and sessions will be announced on http://summit.g0v.tw"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { id: "mc_embed_signup" },
+	          _react2.default.createElement(
+	            "form",
+	            { action: "//facebook.us8.list-manage.com/subscribe/post?u=2cbe76b13b03aa196dea19786&id=6acce179ae", method: "post", id: "mc-embedded-subscribe-form", name: "mc-embedded-subscribe-form", className: "validate", target: "_blank", noValidate: true },
+	            _react2.default.createElement(
+	              "div",
+	              { id: "mc_embed_signup_scroll" },
+	              _react2.default.createElement(
+	                "label",
+	                { htmlFor: "mce-EMAIL" },
+	                "Subscribe to our mailing list"
+	              ),
+	              _react2.default.createElement("input", { type: "email", value: "", name: "EMAIL", className: "email", id: "mce-EMAIL", placeholder: "email address", required: true }),
+	              _react2.default.createElement(
+	                "div",
+	                { style: { position: "absolute", left: "-5000px" }, "aria-hidden": "true" },
+	                _react2.default.createElement("input", { type: "text", name: "b_2cbe76b13b03aa196dea19786_6acce179ae", tabIndex: "-1", value: "" })
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "clear" },
+	                _react2.default.createElement("input", { type: "submit", value: "Subscribe", name: "subscribe", id: "mc-embedded-subscribe", className: "button" })
+	              )
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -20290,33 +20395,12 @@
 
 	;
 
-	FeatureSpeakers.defaultProps = {
-	  speakers: [{
-	    image: "images/speakers2014/david.jpg",
-	    name: "David Eaves",
-	    title: ""
-	  }, {
-	    image: "images/speakers2014/clays.jpg",
-	    name: "Clay Shirky",
-	    title: ""
-	  }, {
-	    image: "images/speakers2014/audreyt.jpg",
-	    name: "Audrey Tang",
-	    title: ""
-	  }, {
-	    image: "images/speakers2014/lucyp.jpg",
-	    name: "Lucy Park",
-	    title: "Director, Team POPONG"
-	  }, {
-	    image: "images/speakers2014/kirby.png",
-	    name: "Kirby",
-	    title: "Co-founder, g0v.tw"
-	  }, {
-	    image: "images/speakers2014/hlb.jpg",
-	    name: "Liang-Bin Hsueh",
-	    title: ""
-	  }]
-	};
+	FeatureSpeakers.defaultProps = {};
+
+	FeatureSpeakers.defaultProps.speakers = __webpack_require__(172);
+	FeatureSpeakers.defaultProps.speakers.map(function (speaker) {
+	  __webpack_require__(173)("./" + speaker.image);
+	});
 
 	exports.default = FeatureSpeakers;
 
