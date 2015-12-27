@@ -1,27 +1,12 @@
 'use strict';
 
 import React from "react";
+import Speaker from "./speaker";
 
 class FeatureSpeakers extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
-
-  speaker(speaker) {
-    return <figure key={speaker.name} className="feature-speaker">
-      <img src={speaker.image} />
-      <figcaption>
-        <div className="name">{speaker.name}</div>
-        <div className="title">{speaker.title}</div>
-      </figcaption>
-    </figure>;
-  }
-
   render() {
     return <div>
-      {this.props.speakers.map(this.speaker.bind(this))}
+      {this.props.speakers.map((speaker) => { return <Speaker key={speaker.name} speaker={speaker} />; })}
     </div>;
   }
 };
