@@ -16,14 +16,21 @@
       margin-left: 2.5em;
     }
   }
-  .keynote-intro {
-    lost-column: 1/1;
-  }
-  .keynote-speaker {
-    text-align: center;
-    width: 30%;
-    margin: 0 auto;
-    margin-bottom: 1.5em;
+}
+
+.keynote-intro {
+  line-height: 1.5em;
+  margin: 0 0 1.5em 0;
+}
+
+.keynote-speaker {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  img {
+    width: 120px;
+    border-radius: 50%;
   }
 }
 
