@@ -96,10 +96,12 @@
   }
 }
 
-h2.feature-speakers {
-  font-size: 2em;
-  text-align: center;
-  margin: 0 0 1em 0;
+.feature-speakers {
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 1em 0;
+  }
 }
 
 figure.feature-speaker {
