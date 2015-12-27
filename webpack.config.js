@@ -47,6 +47,10 @@ var config = module.exports = {
         test: /\.css$/,
         loader: 'style!css!postcss',
       },
+      {
+        test: /\.json$/,
+        loader: 'json',
+      },
     ]
   },
 

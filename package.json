@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "webpack": "*",
+    "json-loader": "*",
     "file-loader": "*",
     "url-loader": "*",
     "style-loader": "*",

@@ -3,13 +3,13 @@
 import "../stylesheets/application.css";
 import "../images/keynote/heusser.jpg";
 
-var speakers = [ "audreyt.jpg", "clays.jpg", "david.jpg", "hlb.jpg", "kirby.png", "lucyp.jpg" ];
-speakers.map((speaker) => { require(`../images/speakers2014/${speaker}`); });
-
 import React from "react";
 import ReactDOM from "react-dom";
 import Intro from "./components/intro";
 import FeatureSpeakers from "./components/feature_speakers";
+
+FeatureSpeakers.defaultProps.speakers = require("../jsons/feature_speakers.json");
+FeatureSpeakers.defaultProps.speakers.map((speaker) => { require(`../${speaker.image}`); });
 
 document.addEventListener("DOMContentLoaded", function(e) {
   ReactDOM.render(<FeatureSpeakers />, document.querySelector('[data-react-class="FeatureSpeakers"]'));
