@@ -55,6 +55,12 @@
   @media(max-width: 720px){
     & {
       padding: 50px 5%;
+      & > h3 {
+        lost-column: 1/1;
+      }
+      & > p {
+        lost-column: 1/1;
+      }
     }
   }
 
@@ -87,17 +93,6 @@
   img {
     width: 120px;
     border-radius: 50%;
-  }
-}
-
-@media(max-width: 720px) {
-  .intro {
-    & > h3 {
-      lost-column: 1/1;
-    }
-    & > p {
-      lost-column: 1/1;
-    }
   }
 }
 
