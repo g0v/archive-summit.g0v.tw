@@ -1,6 +1,48 @@
 @import "reset.css";
 @import "landing.css";
 
+.feature {
+  padding: 180px 0 50px 0;
+  h1 {
+    background-image: url("../images/title.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    overflow: hidden;
+    padding: 0px 0px 12%;
+    text-indent: 100%;
+    white-space: nowrap;
+    height: 0px;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  @media(max-width: 980px){
+    & {
+      padding: 150px 0 50px 0;
+      h1 {
+        padding: 0 0 15% 0;
+      }
+      h2 {
+        margin-top: 10px;
+      }
+    }
+  }
+  @media(max-width: 720px){
+    & {
+      padding: 80px 0 30px 0;
+      h1 {
+        width: 100%;
+        height: 40px;
+      }
+    }
+  }
+}
+
 .intro {
   background: -moz-linear-gradient(top, rgba(144,110,169,0.9) 0%, rgba(193,128,170,1) 100%);
   background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);
