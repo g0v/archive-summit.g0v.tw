@@ -1,8 +1,8 @@
 'use strict';
 
-import React from "react";
+import React, { Component } from "react";
 
-class Speaker extends React.Component {
+class Speaker extends Component {
   render() {
     return <figure className="feature-speaker">
       <img src={this.props.speaker.image} />

@@ -1,9 +1,9 @@
 'use strict';
 
-import React from "react";
+import React, { Component } from "react";
 import Speaker from "./speaker";
 
-class FeatureSpeakers extends React.Component {
+class FeatureSpeakers extends Component {
   render() {
     return <div>
       {this.props.speakers.map((speaker) => { return <Speaker key={speaker.name} speaker={speaker} />; })}
