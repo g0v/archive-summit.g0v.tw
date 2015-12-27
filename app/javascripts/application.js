@@ -1,10 +1,10 @@
 'use strict';
 
-require("../stylesheets/application.css");
-require("../images/keynote/heusser.jpg");
+import "../stylesheets/application.css";
+import "../images/keynote/heusser.jpg";
 
 var speakers = [ "audreyt.jpg", "clays.jpg", "david.jpg", "hlb.jpg", "kirby.png", "lucyp.jpg" ];
-speakers.map(function(speaker) { require("../images/speakers2014/" + speaker) });
+speakers.map((speaker) => { require(`../images/speakers2014/${speaker}`); });
 
 import React from "react";
 import ReactDOM from "react-dom";
