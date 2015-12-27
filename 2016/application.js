@@ -69,24 +69,24 @@
 
 	var _intro2 = _interopRequireDefault(_intro);
 
-	var _speaker = __webpack_require__(168);
+	var _keynote = __webpack_require__(168);
 
-	var _speaker2 = _interopRequireDefault(_speaker);
+	var _keynote2 = _interopRequireDefault(_keynote);
 
-	var _feature_speakers = __webpack_require__(169);
+	var _feature_speakers = __webpack_require__(171);
 
 	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_feature_speakers2.default.defaultProps.speakers = __webpack_require__(170);
+	_feature_speakers2.default.defaultProps.speakers = __webpack_require__(172);
 	_feature_speakers2.default.defaultProps.speakers.map(function (speaker) {
-	  __webpack_require__(171)("./" + speaker.image);
+	  __webpack_require__(173)("./" + speaker.image);
 	});
 
 	document.addEventListener("DOMContentLoaded", function (e) {
 	  _reactDom2.default.render(_react2.default.createElement(_feature_speakers2.default, null), document.querySelector('[data-react-class="FeatureSpeakers"]'));
-	  _reactDom2.default.render(_react2.default.createElement(_speaker2.default, { className: "keynote-speaker", speaker: __webpack_require__(178) }), document.querySelector('[data-react-class="KeynoteSpeaker"]'));
+	  _reactDom2.default.render(_react2.default.createElement(_keynote2.default, null), document.querySelector('[data-react-class="Keynote"]'));
 	});
 
 /***/ },
@@ -20111,6 +20111,62 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _speaker = __webpack_require__(169);
+
+	var _speaker2 = _interopRequireDefault(_speaker);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Keynote = (function (_Component) {
+	  _inherits(Keynote, _Component);
+
+	  function Keynote() {
+	    _classCallCheck(this, Keynote);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Keynote).apply(this, arguments));
+	  }
+
+	  _createClass(Keynote, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "keynote" },
+	        "Returning for a second year after 2014, the g0v Summit 2016 will again invite the global civic tech community to share their experiences for collaboration between public servants, technologists, and NGO workers.  We are pleased to have Felipe Heusser, founder and former Director of the Chilean NGO Ciudadano Inteligente and Fellow at the Berkman Center, as our keynote speaker.",
+	        _react2.default.createElement(_speaker2.default, { className: "keynote-speaker", speaker: __webpack_require__(170) })
+	      );
+	    }
+	  }]);
+
+	  return Keynote;
+	})(_react.Component);
+
+	;
+
+	exports.default = Keynote;
+
+/***/ },
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20161,7 +20217,17 @@
 	exports.default = Speaker;
 
 /***/ },
-/* 169 */
+/* 170 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"image": "images/keynote/heusser.jpg",
+		"name": "Felipe Heusser",
+		"title": "founder and former Director, Ciudadano Inteligente"
+	};
+
+/***/ },
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20176,7 +20242,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _speaker = __webpack_require__(168);
+	var _speaker = __webpack_require__(169);
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
@@ -20246,7 +20312,7 @@
 	exports.default = FeatureSpeakers;
 
 /***/ },
-/* 170 */
+/* 172 */
 /***/ function(module, exports) {
 
 	module.exports = [
@@ -20283,32 +20349,34 @@
 	];
 
 /***/ },
-/* 171 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
 		"./images/g0v-summit-01bg.jpg": 5,
 		"./images/keynote/heusser.jpg": 8,
-		"./images/speakers2014/audreyt.jpg": 172,
-		"./images/speakers2014/clays.jpg": 173,
-		"./images/speakers2014/david.jpg": 174,
-		"./images/speakers2014/hlb.jpg": 175,
-		"./images/speakers2014/kirby.png": 176,
-		"./images/speakers2014/lucyp.jpg": 177,
+		"./images/speakers2014/audreyt.jpg": 174,
+		"./images/speakers2014/clays.jpg": 175,
+		"./images/speakers2014/david.jpg": 176,
+		"./images/speakers2014/hlb.jpg": 177,
+		"./images/speakers2014/kirby.png": 178,
+		"./images/speakers2014/lucyp.jpg": 179,
 		"./images/title.png": 6,
 		"./javascripts/application": 1,
 		"./javascripts/application.js": 1,
-		"./javascripts/components/feature_speakers": 169,
-		"./javascripts/components/feature_speakers.jsx": 169,
+		"./javascripts/components/feature_speakers": 171,
+		"./javascripts/components/feature_speakers.jsx": 171,
 		"./javascripts/components/intro": 167,
 		"./javascripts/components/intro.jsx": 167,
-		"./javascripts/components/speaker": 168,
-		"./javascripts/components/speaker.jsx": 168,
-		"./jsons/feature_speakers.json": 170,
-		"./jsons/keynote_speaker.json": 178,
+		"./javascripts/components/keynote": 168,
+		"./javascripts/components/keynote.jsx": 168,
+		"./javascripts/components/speaker": 169,
+		"./javascripts/components/speaker.jsx": 169,
+		"./jsons/feature_speakers.json": 172,
+		"./jsons/keynote_speaker.json": 170,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 179,
-		"./stylesheets/reset.css": 181
+		"./stylesheets/landing.css": 180,
+		"./stylesheets/reset.css": 182
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20321,63 +20389,53 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 171;
+	webpackContext.id = 173;
 
-
-/***/ },
-/* 172 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
-
-/***/ },
-/* 173 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
 
 /***/ },
 /* 174 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
 
 /***/ },
 /* 175 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
 
 /***/ },
 /* 176 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
 
 /***/ },
 /* 177 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2x1Y3lwLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
 
 /***/ },
 /* 178 */
 /***/ function(module, exports) {
 
-	module.exports = {
-		"image": "images/keynote/heusser.jpg",
-		"name": "Felipe Heusser",
-		"title": "founder and former Director, Ciudadano Inteligente"
-	};
+	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
 
 /***/ },
 /* 179 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2x1Y3lwLmpwZyI7"
+
+/***/ },
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(180);
+	var content = __webpack_require__(181);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20397,7 +20455,7 @@
 	}
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -20411,13 +20469,13 @@
 
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(182);
+	var content = __webpack_require__(183);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20437,7 +20495,7 @@
 	}
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
