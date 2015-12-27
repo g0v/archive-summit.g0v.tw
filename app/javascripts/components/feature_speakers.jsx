@@ -5,8 +5,11 @@ import Speaker from "./speaker";
 
 class FeatureSpeakers extends Component {
   render() {
-    return <div>
-      {this.props.speakers.map((speaker) => { return <Speaker key={speaker.name} className="feature-speaker" speaker={speaker} />; })}
+    return <div className="feature-speakers">
+      <h2>Who Spoke at g0v Summit 2014</h2>
+      <div>
+        {this.props.speakers.map((speaker) => { return <Speaker key={speaker.name} className="feature-speaker" speaker={speaker} />; })}
+      </div>
     </div>;
   }
 };
