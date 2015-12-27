@@ -75,9 +75,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var speakers = ["audreyt.jpg", "clays.jpg", "david.jpg", "hlb.jpg", "kirby.png", "lucyp.jpg"];
-	speakers.map(function (speaker) {
-	  __webpack_require__(170)("./" + speaker);
+	_feature_speakers2.default.defaultProps.speakers = __webpack_require__(170);
+	_feature_speakers2.default.defaultProps.speakers.map(function (speaker) {
+	  __webpack_require__(171)("./" + speaker.image);
 	});
 
 	document.addEventListener("DOMContentLoaded", function (e) {
@@ -20242,15 +20242,67 @@
 
 /***/ },
 /* 170 */
+/***/ function(module, exports) {
+
+	module.exports = [
+		{
+			"image": "images/speakers2014/david.jpg",
+			"name": "David Eaves",
+			"title": ""
+		},
+		{
+			"image": "images/speakers2014/clays.jpg",
+			"name": "Clay Shirky",
+			"title": ""
+		},
+		{
+			"image": "images/speakers2014/audreyt.jpg",
+			"name": "Audrey Tang",
+			"title": ""
+		},
+		{
+			"image": "images/speakers2014/lucyp.jpg",
+			"name": "Lucy Park",
+			"title": "Director, Team POPONG"
+		},
+		{
+			"image": "images/speakers2014/kirby.png",
+			"name": "Kirby",
+			"title": "Co-founder, g0v.tw"
+		},
+		{
+			"image": "images/speakers2014/hlb.jpg",
+			"name": "Liang-Bin Hsueh",
+			"title": ""
+		}
+	];
+
+/***/ },
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./audreyt.jpg": 171,
-		"./clays.jpg": 172,
-		"./david.jpg": 173,
-		"./hlb.jpg": 174,
-		"./kirby.png": 175,
-		"./lucyp.jpg": 176
+		"./images/g0v-summit-01bg.jpg": 5,
+		"./images/keynote/heusser.jpg": 8,
+		"./images/speakers2014/audreyt.jpg": 172,
+		"./images/speakers2014/clays.jpg": 173,
+		"./images/speakers2014/david.jpg": 174,
+		"./images/speakers2014/hlb.jpg": 175,
+		"./images/speakers2014/kirby.png": 176,
+		"./images/speakers2014/lucyp.jpg": 177,
+		"./images/title.png": 6,
+		"./javascripts/application": 1,
+		"./javascripts/application.js": 1,
+		"./javascripts/components/feature_speakers": 168,
+		"./javascripts/components/feature_speakers.jsx": 168,
+		"./javascripts/components/intro": 167,
+		"./javascripts/components/intro.jsx": 167,
+		"./javascripts/components/speaker": 169,
+		"./javascripts/components/speaker.jsx": 169,
+		"./jsons/feature_speakers.json": 170,
+		"./stylesheets/application.css": 2,
+		"./stylesheets/landing.css": 178,
+		"./stylesheets/reset.css": 180
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20263,44 +20315,124 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 170;
+	webpackContext.id = 171;
 
-
-/***/ },
-/* 171 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
 
 /***/ },
 /* 172 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
 
 /***/ },
 /* 173 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
 
 /***/ },
 /* 174 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
 
 /***/ },
 /* 175 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
 
 /***/ },
 /* 176 */
 /***/ function(module, exports) {
 
+	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
+
+/***/ },
+/* 177 */
+/***/ function(module, exports) {
+
 	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2x1Y3lwLmpwZyI7"
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(179);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./landing.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./landing.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "* {\n  color: #fff;\n  font-size: 15px;\n}\n\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\n\np, ul {\n  line-height: 1.5;\n}\n\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\n\n.main-content {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\n\n.main-content::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n\n.main-content .feature {\n  padding: 180px 0 50px 0;\n}\n\n.main-content .feature h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\n.main-content .feature h2 {\n  font-size: 1.8em;\n  text-align: center;\n}\n\n@media(max-width: 980px) {\n  .main-content .feature {\n    padding: 150px 0 50px 0;\n  }\n  .main-content .feature h1 {\n    padding: 0 0 15% 0;\n  }\n  .main-content .feature h2 {\n    margin-top: 10px;\n  }\n}\n\n@media(max-width: 860px){\n  .main-content  {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n\n@media(max-width: 720px){\n  .main-content  {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n  .main-content .feature {\n    padding: 80px 0 30px 0;\n  }\n  .main-content .feature h1 {\n    width: 100%;\n    height: 40px;\n  }\n}\n\n.main-content .intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n  height: 100%;\n  overflow : auto;\n}\n\n@media(max-width: 720px){\n  .main-content .intro {\n    padding: 50px 5%;\n  }\n}\n\n/*Email subscribe*/\n.main-content #mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n.main-content #mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.main-content #mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n}\n\n.main-content #mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n.main-content #mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  .main-content #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n}\n\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow : auto;\n  clear: both;\n}\n\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n\n.sponsor li:hover {\n  opacity: 1;\n}\n\n@media(max-width: 1400px) {\n .sponsor ul {\n  max-width: 840px;\n   padding: 0;\n   margin: 0 auto;\n }\n}\n\n@media(max-width: 1280px){\n  .sponsor ul {\n  max-width: 570px;\n   padding: 0;\n   margin: 0 auto;\n }\n}\n\n@media(max-width: 720px) {\n  .sponsor ul {\n  max-width: 280px;\n   padding: 0;\n   margin: 0 auto;\n }\n}\n\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(181);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./reset.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./reset.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\r\n\r\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tborder: 0;\r\n\tfont-size: 100%;\r\n\tfont: inherit;\r\n\tvertical-align: baseline;\r\n}\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\r\n\tdisplay: block;\r\n}\r\nbody {\r\n\tline-height: 1;\r\n}\r\nol, ul {\r\n\tlist-style: none;\r\n}\r\nblockquote, q {\r\n\tquotes: none;\r\n}\r\nblockquote:before, blockquote:after, q:before, q:after {\r\n\tcontent: '';\r\n\tcontent: none;\r\n}\r\ntable {\r\n\tborder-collapse: collapse;\r\n\tborder-spacing: 0;\r\n}\r\n", ""]);
+
+	// exports
+
 
 /***/ }
 /******/ ]);
