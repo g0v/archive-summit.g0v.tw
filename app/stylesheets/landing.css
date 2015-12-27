@@ -108,22 +108,6 @@ body {
   }
 }
 
-.main-content .intro {
-  background: -moz-linear-gradient(top, rgba(144,110,169,0.9) 0%, rgba(193,128,170,1) 100%);
-  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);
-  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );
-  padding: 50px 10%;
-  height: 100%;
-  overflow : auto;
-}
-
-@media(max-width: 720px){
-  .main-content .intro {
-    padding: 50px 5%;
-  }
-}
-
 /*Email subscribe*/
 .main-content #mc_embed_signup {
   clear: both;
