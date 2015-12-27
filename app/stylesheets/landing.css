@@ -70,60 +70,60 @@ body {
   padding: 40px 10%;
   overflow : auto;
   clear: both;
-}
 
-.sponsor h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-.sponsor ul {
-  width: 100%;
-  max-width: 1120px;
-  padding: 0 30px;
-  margin: 0 auto;
-}
+  ul {
+    width: 100%;
+    max-width: 1120px;
+    padding: 0 30px;
+    margin: 0 auto;
 
-.sponsor li {
-  opacity: 0.75;
-  float: left;
-  width: 260px;
-  height: 80px;
-  line-height: 30px;
-  margin: 10px 10px;
-  padding: 10px 0;
-  text-align: center;
-  border-radius: 5px;
-  background-color: rgba(255,255,255,0.2);
-  cursor: pointer;
-}
+    @media(max-width: 1400px){
+      & {
+        max-width: 840px;
+        padding: 0;
+        margin: 0 auto;
+      }
+    }
 
-.sponsor li:hover {
-  opacity: 1;
-}
+    @media(max-width: 1280px){
+      & {
+        max-width: 570px;
+        padding: 0;
+        margin: 0 auto;
+      }
+    }
 
-@media(max-width: 1400px) {
- .sponsor ul {
-  max-width: 840px;
-   padding: 0;
-   margin: 0 auto;
- }
-}
+    @media(max-width: 720px) {
+      & {
+        max-width: 280px;
+        padding: 0;
+        margin: 0 auto;
+      }
+    }
+  }
 
-@media(max-width: 1280px){
-  .sponsor ul {
-  max-width: 570px;
-   padding: 0;
-   margin: 0 auto;
- }
-}
+  li {
+    opacity: 0.75;
+    float: left;
+    width: 260px;
+    height: 80px;
+    line-height: 30px;
+    margin: 10px 10px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
 
-@media(max-width: 720px) {
-  .sponsor ul {
-  max-width: 280px;
-   padding: 0;
-   margin: 0 auto;
- }
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 footer {
