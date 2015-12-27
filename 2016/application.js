@@ -69,7 +69,11 @@
 
 	var _intro2 = _interopRequireDefault(_intro);
 
-	var _feature_speakers = __webpack_require__(168);
+	var _speaker = __webpack_require__(168);
+
+	var _speaker2 = _interopRequireDefault(_speaker);
+
+	var _feature_speakers = __webpack_require__(169);
 
 	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
 
@@ -82,6 +86,7 @@
 
 	document.addEventListener("DOMContentLoaded", function (e) {
 	  _reactDom2.default.render(_react2.default.createElement(_feature_speakers2.default, null), document.querySelector('[data-react-class="FeatureSpeakers"]'));
+	  _reactDom2.default.render(_react2.default.createElement(_speaker2.default, { className: "keynote-speaker", speaker: __webpack_require__(178) }), document.querySelector('[data-react-class="KeynoteSpeaker"]'));
 	});
 
 /***/ },
@@ -20106,7 +20111,72 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _speaker = __webpack_require__(169);
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Speaker = (function (_Component) {
+	  _inherits(Speaker, _Component);
+
+	  function Speaker() {
+	    _classCallCheck(this, Speaker);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Speaker).apply(this, arguments));
+	  }
+
+	  _createClass(Speaker, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "figure",
+	        { className: this.props.className },
+	        _react2.default.createElement("img", { src: this.props.speaker.image }),
+	        _react2.default.createElement(
+	          "figcaption",
+	          null,
+	          _react2.default.createElement(
+	            "div",
+	            { className: "name" },
+	            this.props.speaker.name
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "title" },
+	            this.props.speaker.title
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Speaker;
+	})(_react.Component);
+
+	;
+
+	exports.default = Speaker;
+
+/***/ },
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _speaker = __webpack_require__(168);
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
@@ -20134,7 +20204,7 @@
 	        "div",
 	        null,
 	        this.props.speakers.map(function (speaker) {
-	          return _react2.default.createElement(_speaker2.default, { key: speaker.name, speaker: speaker });
+	          return _react2.default.createElement(_speaker2.default, { key: speaker.name, className: "feature-speaker", speaker: speaker });
 	        })
 	      );
 	    }
@@ -20174,71 +20244,6 @@
 	};
 
 	exports.default = FeatureSpeakers;
-
-/***/ },
-/* 169 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(9);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Speaker = (function (_Component) {
-	  _inherits(Speaker, _Component);
-
-	  function Speaker() {
-	    _classCallCheck(this, Speaker);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Speaker).apply(this, arguments));
-	  }
-
-	  _createClass(Speaker, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "figure",
-	        { className: "feature-speaker" },
-	        _react2.default.createElement("img", { src: this.props.speaker.image }),
-	        _react2.default.createElement(
-	          "figcaption",
-	          null,
-	          _react2.default.createElement(
-	            "div",
-	            { className: "name" },
-	            this.props.speaker.name
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "title" },
-	            this.props.speaker.title
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Speaker;
-	})(_react.Component);
-
-	;
-
-	exports.default = Speaker;
 
 /***/ },
 /* 170 */
@@ -20293,16 +20298,17 @@
 		"./images/title.png": 6,
 		"./javascripts/application": 1,
 		"./javascripts/application.js": 1,
-		"./javascripts/components/feature_speakers": 168,
-		"./javascripts/components/feature_speakers.jsx": 168,
+		"./javascripts/components/feature_speakers": 169,
+		"./javascripts/components/feature_speakers.jsx": 169,
 		"./javascripts/components/intro": 167,
 		"./javascripts/components/intro.jsx": 167,
-		"./javascripts/components/speaker": 169,
-		"./javascripts/components/speaker.jsx": 169,
+		"./javascripts/components/speaker": 168,
+		"./javascripts/components/speaker.jsx": 168,
 		"./jsons/feature_speakers.json": 170,
+		"./jsons/keynote_speaker.json": 178,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 178,
-		"./stylesheets/reset.css": 180
+		"./stylesheets/landing.css": 179,
+		"./stylesheets/reset.css": 181
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20356,12 +20362,22 @@
 
 /***/ },
 /* 178 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"image": "images/keynote/heusser.jpg",
+		"name": "Felipe Heusser",
+		"title": "founder and former Director, Ciudadano Inteligente"
+	};
+
+/***/ },
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(179);
+	var content = __webpack_require__(180);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20381,7 +20397,7 @@
 	}
 
 /***/ },
-/* 179 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -20395,13 +20411,13 @@
 
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(181);
+	var content = __webpack_require__(182);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20421,7 +20437,7 @@
 	}
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
