@@ -1,5 +1,12 @@
 {
-  "image": "images/keynote/heusser.jpg",
-  "name": "Felipe Heusser",
-  "title": "founder and former Director, Ciudadano Inteligente"
+  "en-US": {
+    "image": "images/keynote/heusser.jpg",
+    "name": "Felipe Heusser",
+    "title": "founder and former Director, Ciudadano Inteligente"
+  },
+  "zh-TW": {
+    "image": "images/keynote/heusser.jpg",
+    "name": "Felipe Heusser",
+    "title": "Ciudadano Inteligente 的創辦人與前董事"
+  }
 }
