@@ -69,7 +69,7 @@
 
 	var _intro2 = _interopRequireDefault(_intro);
 
-	var _locale = __webpack_require__(180);
+	var _locale = __webpack_require__(170);
 
 	var _locale2 = _interopRequireDefault(_locale);
 
@@ -20062,7 +20062,7 @@
 
 	var _keynote2 = _interopRequireDefault(_keynote);
 
-	var _feature_speakers = __webpack_require__(171);
+	var _feature_speakers = __webpack_require__(172);
 
 	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
 
@@ -20232,6 +20232,8 @@
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
+	var _locale = __webpack_require__(170);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20239,6 +20241,8 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var speaker = __webpack_require__(171)[(0, _locale.getLocale)()];
 
 	var Keynote = (function (_Component) {
 	  _inherits(Keynote, _Component);
@@ -20256,7 +20260,7 @@
 	        "div",
 	        { className: "keynote" },
 	        "Returning for a second year after 2014, the g0v Summit 2016 will again invite the global civic tech community to share their experiences for collaboration between public servants, technologists, and NGO workers.  We are pleased to have Felipe Heusser, founder and former Director of the Chilean NGO Ciudadano Inteligente and Fellow at the Berkman Center, as our keynote speaker.",
-	        _react2.default.createElement(_speaker2.default, { className: "keynote-speaker", speaker: __webpack_require__(170) })
+	        _react2.default.createElement(_speaker2.default, { className: "keynote-speaker", speaker: speaker })
 	      );
 	    }
 	  }]);
@@ -20337,14 +20341,47 @@
 /* 170 */
 /***/ function(module, exports) {
 
-	module.exports = {
-		"image": "images/keynote/heusser.jpg",
-		"name": "Felipe Heusser",
-		"title": "founder and former Director, Ciudadano Inteligente"
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.locale = locale;
+	exports.setLocale = setLocale;
+	exports.getLocale = getLocale;
+	function locale() {
+	  return window.navigator.userLanguage || window.navigator.language;
 	};
+
+	function setLocale(locale) {
+	  return localStorage.setItem("locale", locale);
+	}
+
+	function getLocale() {
+	  return localStorage.getItem("locale");
+	}
+
+	exports.default = locale;
 
 /***/ },
 /* 171 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"en-US": {
+			"image": "images/keynote/heusser.jpg",
+			"name": "Felipe Heusser",
+			"title": "founder and former Director, Ciudadano Inteligente"
+		},
+		"zh-TW": {
+			"image": "images/keynote/heusser.jpg",
+			"name": "Felipe Heusser",
+			"title": "Ciudadano Inteligente 的創辦人與前董事"
+		}
+	};
+
+/***/ },
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20409,15 +20446,15 @@
 
 	FeatureSpeakers.defaultProps = {};
 
-	FeatureSpeakers.defaultProps.speakers = __webpack_require__(172);
+	FeatureSpeakers.defaultProps.speakers = __webpack_require__(173);
 	FeatureSpeakers.defaultProps.speakers.map(function (speaker) {
-	  __webpack_require__(173)("./" + speaker.image);
+	  __webpack_require__(174)("./" + speaker.image);
 	});
 
 	exports.default = FeatureSpeakers;
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports) {
 
 	module.exports = [
@@ -20454,33 +20491,33 @@
 	];
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
 		"./images/g0v-summit-01bg.jpg": 5,
 		"./images/keynote/heusser.jpg": 8,
-		"./images/speakers2014/audreyt.jpg": 174,
-		"./images/speakers2014/clays.jpg": 175,
-		"./images/speakers2014/david.jpg": 176,
-		"./images/speakers2014/hlb.jpg": 177,
-		"./images/speakers2014/kirby.png": 178,
-		"./images/speakers2014/lucyp.jpg": 179,
+		"./images/speakers2014/audreyt.jpg": 175,
+		"./images/speakers2014/clays.jpg": 176,
+		"./images/speakers2014/david.jpg": 177,
+		"./images/speakers2014/hlb.jpg": 178,
+		"./images/speakers2014/kirby.png": 179,
+		"./images/speakers2014/lucyp.jpg": 180,
 		"./images/title.png": 6,
 		"./javascripts/application": 1,
 		"./javascripts/application.js": 1,
-		"./javascripts/components/feature_speakers": 171,
-		"./javascripts/components/feature_speakers.jsx": 171,
+		"./javascripts/components/feature_speakers": 172,
+		"./javascripts/components/feature_speakers.jsx": 172,
 		"./javascripts/components/intro": 167,
 		"./javascripts/components/intro.jsx": 167,
 		"./javascripts/components/keynote": 168,
 		"./javascripts/components/keynote.jsx": 168,
 		"./javascripts/components/speaker": 169,
 		"./javascripts/components/speaker.jsx": 169,
-		"./javascripts/locale": 180,
-		"./javascripts/locale.js": 180,
-		"./jsons/feature_speakers.json": 172,
-		"./jsons/keynote_speaker.json": 170,
+		"./javascripts/locale": 170,
+		"./javascripts/locale.js": 170,
+		"./jsons/feature_speakers.json": 173,
+		"./jsons/keynote_speaker.json": 171,
 		"./stylesheets/application.css": 2,
 		"./stylesheets/landing.css": 181,
 		"./stylesheets/reset.css": 183
@@ -20496,70 +20533,44 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 173;
+	webpackContext.id = 174;
 
-
-/***/ },
-/* 174 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
 
 /***/ },
 /* 175 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
 
 /***/ },
 /* 176 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
 
 /***/ },
 /* 177 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
 
 /***/ },
 /* 178 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
 
 /***/ },
 /* 179 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2x1Y3lwLmpwZyI7"
+	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
 
 /***/ },
 /* 180 */
 /***/ function(module, exports) {
 
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.locale = locale;
-	exports.setLocale = setLocale;
-	exports.getLocale = getLocale;
-	function locale() {
-	  return window.navigator.userLanguage || window.navigator.language;
-	};
-
-	function setLocale(locale) {
-	  return localStorage.setItem("locale", locale);
-	}
-
-	function getLocale() {
-	  return localStorage.getItem("locale");
-	}
-
-	exports.default = locale;
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2x1Y3lwLmpwZyI7"
 
 /***/ },
 /* 181 */
