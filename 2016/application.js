@@ -69,7 +69,19 @@
 
 	var _intro2 = _interopRequireDefault(_intro);
 
+	var _locale = __webpack_require__(180);
+
+	var _locale2 = _interopRequireDefault(_locale);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	if (!(0, _locale.getLocale)()) {
+	  if ((0, _locale2.default)() === "zh-TW") {
+	    (0, _locale.setLocale)((0, _locale2.default)());
+	  } else {
+	    (0, _locale.setLocale)("en-US");
+	  }
+	}
 
 	document.addEventListener("DOMContentLoaded", function (e) {
 	  _reactDom2.default.render(_react2.default.createElement(_intro2.default, null), document.querySelector('[data-react-class="Intro"]'));
@@ -20465,11 +20477,13 @@
 		"./javascripts/components/keynote.jsx": 168,
 		"./javascripts/components/speaker": 169,
 		"./javascripts/components/speaker.jsx": 169,
+		"./javascripts/locale": 180,
+		"./javascripts/locale.js": 180,
 		"./jsons/feature_speakers.json": 172,
 		"./jsons/keynote_speaker.json": 170,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 180,
-		"./stylesheets/reset.css": 182
+		"./stylesheets/landing.css": 181,
+		"./stylesheets/reset.css": 183
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20523,12 +20537,38 @@
 
 /***/ },
 /* 180 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.locale = locale;
+	exports.setLocale = setLocale;
+	exports.getLocale = getLocale;
+	function locale() {
+	  return window.navigator.userLanguage || window.navigator.language;
+	};
+
+	function setLocale(locale) {
+	  return localStorage.setItem("locale", locale);
+	}
+
+	function getLocale() {
+	  return localStorage.getItem("locale");
+	}
+
+	exports.default = locale;
+
+/***/ },
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(181);
+	var content = __webpack_require__(182);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20548,7 +20588,7 @@
 	}
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -20562,13 +20602,13 @@
 
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(183);
+	var content = __webpack_require__(184);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20588,7 +20628,7 @@
 	}
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
