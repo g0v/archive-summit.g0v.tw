@@ -65,15 +65,11 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _intro = __webpack_require__(167);
+	var _root = __webpack_require__(167);
 
-	var _intro2 = _interopRequireDefault(_intro);
+	var _root2 = _interopRequireDefault(_root);
 
-	var _footer = __webpack_require__(183);
-
-	var _footer2 = _interopRequireDefault(_footer);
-
-	var _locale = __webpack_require__(170);
+	var _locale = __webpack_require__(171);
 
 	var _locale2 = _interopRequireDefault(_locale);
 
@@ -88,8 +84,7 @@
 	}
 
 	document.addEventListener("DOMContentLoaded", function (e) {
-	  _reactDom2.default.render(_react2.default.createElement(_intro2.default, null), document.querySelector('[data-react-class="Intro"]'));
-	  _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.querySelector('[data-react-class="Footer"]'));
+	  _reactDom2.default.render(_react2.default.createElement(_root2.default, null), document.body);
 	});
 
 /***/ },
@@ -20065,19 +20060,98 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _keynote = __webpack_require__(168);
+	var _intro = __webpack_require__(168);
+
+	var _intro2 = _interopRequireDefault(_intro);
+
+	var _footer = __webpack_require__(184);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Root = (function (_Component) {
+	  _inherits(Root, _Component);
+
+	  function Root() {
+	    _classCallCheck(this, Root);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Root).apply(this, arguments));
+	  }
+
+	  _createClass(Root, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "main",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "feature" },
+	          _react2.default.createElement(
+	            "h1",
+	            null,
+	            "啥米零時政府 g0v 2016 summit"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "14-15 May, 2016"
+	          ),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Academia Sinica, Taipei"
+	          )
+	        ),
+	        _react2.default.createElement(_intro2.default, null),
+	        _react2.default.createElement(_footer2.default, null)
+	      );
+	    }
+	  }]);
+
+	  return Root;
+	})(_react.Component);
+
+	;
+
+	exports.default = Root;
+
+/***/ },
+/* 168 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _keynote = __webpack_require__(169);
 
 	var _keynote2 = _interopRequireDefault(_keynote);
 
-	var _feature_speakers = __webpack_require__(172);
+	var _feature_speakers = __webpack_require__(173);
 
 	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
 
-	var _about = __webpack_require__(181);
+	var _about = __webpack_require__(182);
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _highlights = __webpack_require__(184);
+	var _highlights = __webpack_require__(185);
 
 	var _highlights2 = _interopRequireDefault(_highlights);
 
@@ -20148,7 +20222,7 @@
 	exports.default = Intro;
 
 /***/ },
-/* 168 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20163,13 +20237,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _speaker = __webpack_require__(169);
+	var _speaker = __webpack_require__(170);
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
-	var _locale = __webpack_require__(170);
+	var _locale = __webpack_require__(171);
 
-	var _keynote_speaker = __webpack_require__(171);
+	var _keynote_speaker = __webpack_require__(172);
 
 	var _keynote_speaker2 = _interopRequireDefault(_keynote_speaker);
 
@@ -20210,7 +20284,7 @@
 	exports.default = Keynote;
 
 /***/ },
-/* 169 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20275,7 +20349,7 @@
 	exports.default = Speaker;
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -20301,7 +20375,7 @@
 	exports.default = locale;
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -20318,7 +20392,7 @@
 	};
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20333,13 +20407,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _speaker = __webpack_require__(169);
+	var _speaker = __webpack_require__(170);
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
-	var _locale = __webpack_require__(170);
+	var _locale = __webpack_require__(171);
 
-	var _feature_speakers = __webpack_require__(173);
+	var _feature_speakers = __webpack_require__(174);
 
 	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
 
@@ -20352,7 +20426,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	_feature_speakers2.default[(0, _locale.getLocale)()].map(function (speaker) {
-	  __webpack_require__(174)("./" + speaker.image);
+	  __webpack_require__(175)("./" + speaker.image);
 	});
 
 	var FeatureSpeakers = (function (_Component) {
@@ -20394,7 +20468,7 @@
 	exports.default = FeatureSpeakers;
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -20465,44 +20539,46 @@
 	};
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
 		"./images/g0v-summit-01bg.jpg": 5,
 		"./images/keynote/heusser.jpg": 8,
-		"./images/speakers2014/audreyt.jpg": 175,
-		"./images/speakers2014/clays.jpg": 176,
-		"./images/speakers2014/david.jpg": 177,
-		"./images/speakers2014/hlb.jpg": 178,
-		"./images/speakers2014/kirby.png": 179,
-		"./images/speakers2014/lucyp.jpg": 180,
+		"./images/speakers2014/audreyt.jpg": 176,
+		"./images/speakers2014/clays.jpg": 177,
+		"./images/speakers2014/david.jpg": 178,
+		"./images/speakers2014/hlb.jpg": 179,
+		"./images/speakers2014/kirby.png": 180,
+		"./images/speakers2014/lucyp.jpg": 181,
 		"./images/title.png": 6,
 		"./javascripts/application": 1,
 		"./javascripts/application.js": 1,
-		"./javascripts/components/about": 181,
-		"./javascripts/components/about.jsx": 181,
-		"./javascripts/components/feature_speakers": 172,
-		"./javascripts/components/feature_speakers.jsx": 172,
-		"./javascripts/components/footer": 183,
-		"./javascripts/components/footer.jsx": 183,
-		"./javascripts/components/highlights": 184,
-		"./javascripts/components/highlights.jsx": 184,
-		"./javascripts/components/intro": 167,
-		"./javascripts/components/intro.jsx": 167,
-		"./javascripts/components/keynote": 168,
-		"./javascripts/components/keynote.jsx": 168,
-		"./javascripts/components/speaker": 169,
-		"./javascripts/components/speaker.jsx": 169,
-		"./javascripts/locale": 170,
-		"./javascripts/locale.js": 170,
-		"./jsons/about.json": 182,
-		"./jsons/feature_speakers.json": 173,
-		"./jsons/keynote_speaker.json": 171,
+		"./javascripts/components/about": 182,
+		"./javascripts/components/about.jsx": 182,
+		"./javascripts/components/feature_speakers": 173,
+		"./javascripts/components/feature_speakers.jsx": 173,
+		"./javascripts/components/footer": 184,
+		"./javascripts/components/footer.jsx": 184,
+		"./javascripts/components/highlights": 185,
+		"./javascripts/components/highlights.jsx": 185,
+		"./javascripts/components/intro": 168,
+		"./javascripts/components/intro.jsx": 168,
+		"./javascripts/components/keynote": 169,
+		"./javascripts/components/keynote.jsx": 169,
+		"./javascripts/components/root": 167,
+		"./javascripts/components/root.jsx": 167,
+		"./javascripts/components/speaker": 170,
+		"./javascripts/components/speaker.jsx": 170,
+		"./javascripts/locale": 171,
+		"./javascripts/locale.js": 171,
+		"./jsons/about.json": 183,
+		"./jsons/feature_speakers.json": 174,
+		"./jsons/keynote_speaker.json": 172,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 185,
-		"./stylesheets/reset.css": 187,
-		"./templates/index.html": 189
+		"./stylesheets/landing.css": 186,
+		"./stylesheets/reset.css": 188,
+		"./templates/index.html": 190
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20515,47 +20591,47 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 174;
+	webpackContext.id = 175;
 
-
-/***/ },
-/* 175 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
 
 /***/ },
 /* 176 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
 
 /***/ },
 /* 177 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
 
 /***/ },
 /* 178 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
 
 /***/ },
 /* 179 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
 
 /***/ },
 /* 180 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2x1Y3lwLmpwZyI7"
+	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
 
 /***/ },
 /* 181 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2x1Y3lwLmpwZyI7"
+
+/***/ },
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20570,9 +20646,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _locale = __webpack_require__(170);
+	var _locale = __webpack_require__(171);
 
-	var _about = __webpack_require__(182);
+	var _about = __webpack_require__(183);
 
 	var _about2 = _interopRequireDefault(_about);
 
@@ -20621,7 +20697,7 @@
 	exports.default = About;
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -20636,7 +20712,7 @@
 	};
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20715,7 +20791,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20730,7 +20806,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _locale = __webpack_require__(170);
+	var _locale = __webpack_require__(171);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20839,13 +20915,13 @@
 	exports.default = Hightlights;
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(186);
+	var content = __webpack_require__(187);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20865,7 +20941,7 @@
 	}
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -20879,13 +20955,13 @@
 
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(188);
+	var content = __webpack_require__(189);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20905,7 +20981,7 @@
 	}
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -20919,7 +20995,7 @@
 
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "index.html";
