@@ -55,20 +55,20 @@
   @media(max-width: 720px){
     & {
       padding: 50px 5%;
-      & > h3 {
+      h3 {
         lost-column: 1/1;
       }
-      & > p {
+      .highlights {
         lost-column: 1/1;
       }
     }
   }
 
-  & > h3 {
+  h3 {
     lost-column: 1/4 2;
     margin: 0 0 1em 0;
   }
-  & > p, & > .highlights {
+  .highlights {
     lost-column: 3/4 2;
     margin: 0 0 1.5em 0;
   }
