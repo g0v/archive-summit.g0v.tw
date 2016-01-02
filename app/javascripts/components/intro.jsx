@@ -1,12 +1,12 @@
 'use strict';
 
-import React from "react";
+import React, { Component } from "react";
 import Keynote from "./keynote";
 import FeatureSpeakers from "./feature_speakers";
 import About from "./about";
 import Hightlights from "./highlights";
 
-class Intro extends React.Component {
+class Intro extends Component {
   render() {
     return <div className="intro">
       <Keynote />
