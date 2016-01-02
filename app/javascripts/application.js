@@ -6,6 +6,7 @@ import "../images/keynote/heusser.jpg";
 import React from "react";
 import ReactDOM from "react-dom";
 import Intro from "./components/intro";
+import Footer from "./components/footer";
 import locale, { getLocale, setLocale } from "./locale";
 
 if (!getLocale()) {
@@ -18,4 +19,5 @@ if (!getLocale()) {
 
 document.addEventListener("DOMContentLoaded", (e) => {
   ReactDOM.render(<Intro />, document.querySelector('[data-react-class="Intro"]'))
+  ReactDOM.render(<Footer />, document.querySelector('[data-react-class="Footer"]'));
 });
