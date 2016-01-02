@@ -69,6 +69,10 @@
 
 	var _intro2 = _interopRequireDefault(_intro);
 
+	var _footer = __webpack_require__(183);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
 	var _locale = __webpack_require__(170);
 
 	var _locale2 = _interopRequireDefault(_locale);
@@ -85,6 +89,7 @@
 
 	document.addEventListener("DOMContentLoaded", function (e) {
 	  _reactDom2.default.render(_react2.default.createElement(_intro2.default, null), document.querySelector('[data-react-class="Intro"]'));
+	  _reactDom2.default.render(_react2.default.createElement(_footer2.default, null), document.querySelector('[data-react-class="Footer"]'));
 	});
 
 /***/ },
@@ -20072,7 +20077,7 @@
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _highlights = __webpack_require__(183);
+	var _highlights = __webpack_require__(184);
 
 	var _highlights2 = _interopRequireDefault(_highlights);
 
@@ -20479,8 +20484,10 @@
 		"./javascripts/components/about.jsx": 181,
 		"./javascripts/components/feature_speakers": 172,
 		"./javascripts/components/feature_speakers.jsx": 172,
-		"./javascripts/components/highlights": 183,
-		"./javascripts/components/highlights.jsx": 183,
+		"./javascripts/components/footer": 183,
+		"./javascripts/components/footer.jsx": 183,
+		"./javascripts/components/highlights": 184,
+		"./javascripts/components/highlights.jsx": 184,
 		"./javascripts/components/intro": 167,
 		"./javascripts/components/intro.jsx": 167,
 		"./javascripts/components/keynote": 168,
@@ -20493,9 +20500,9 @@
 		"./jsons/feature_speakers.json": 173,
 		"./jsons/keynote_speaker.json": 171,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 184,
-		"./stylesheets/reset.css": 186,
-		"./templates/index.html": 188
+		"./stylesheets/landing.css": 185,
+		"./stylesheets/reset.css": 187,
+		"./templates/index.html": 189
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20644,6 +20651,85 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Footer = (function (_Component) {
+	  _inherits(Footer, _Component);
+
+	  function Footer() {
+	    _classCallCheck(this, Footer);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Footer).apply(this, arguments));
+	  }
+
+	  _createClass(Footer, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "footer",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "sponsor" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "Co-organizer"
+	          ),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Open Culture Foundation"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Institute of Information Science, Academia Sinica"
+	            )
+	          )
+	        ),
+	        "Copyright © g0v Summit 2015",
+	        _react2.default.createElement(
+	          "a",
+	          { href: "https://g0v.hackpad.com/ep/pad/static/2mprMIpYMz9", target: "_blank" },
+	          "Code of Conduct"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Footer;
+	})(_react.Component);
+
+	;
+
+	exports.default = Footer;
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _locale = __webpack_require__(170);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -20753,13 +20839,13 @@
 	exports.default = Hightlights;
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(185);
+	var content = __webpack_require__(186);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20779,7 +20865,7 @@
 	}
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -20793,13 +20879,13 @@
 
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(187);
+	var content = __webpack_require__(188);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20819,7 +20905,7 @@
 	}
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -20833,7 +20919,7 @@
 
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "index.html";
