@@ -122,7 +122,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.feature {\n  padding: 180px 0 50px 0;\n}\n\n.feature h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\n.feature h2 {\n  font-size: 1.8em;\n  text-align: center;\n}\n\n@media(max-width: 980px){\n  .feature {\n    padding: 150px 0 50px 0;\n  }\n  .feature h1 {\n    padding: 0 0 15% 0;\n  }\n  .feature h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  .feature {\n    padding: 80px 0 30px 0;\n  }\n  .feature h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n  height: 100%;\n  overflow : auto;\n}\n\n.intro > h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  margin: 0 0 1em 0;\n}\n\n.intro > h3:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro > h3:last-child {\n  margin-right: 0;\n}\n\n.intro > h3:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro > h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro > p, .intro > .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro > p:nth-child(n), .intro > .highlights:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro > p:last-child, .intro > .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro > p:nth-child(2n), .intro > .highlights:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro > p:nth-child(2n + 1), .intro > .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle;\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n@media(max-width: 720px){\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro > h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro > h3:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro > h3:last-child {\n    margin-right: 0;\n  }\n  .intro > h3:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro > h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro > p {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro > p:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro > p:last-child {\n    margin-right: 0;\n  }\n  .intro > p:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro > p:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.keynote {\n  line-height: 1.5em;\n  margin: 0 0 1.5em 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 0 auto;\n  margin-bottom: 1.5em;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.feature-speakers h2 {\n  font-size: 2em;\n  text-align: center;\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  figure.feature-speaker:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\nfigure.feature-speaker:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(n) .name {}\n\nfigure.feature-speaker:nth-child(n) figcaption {}\n\nfigure.feature-speaker:nth-child(n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  text-align: center;\n  font-weight: normal;\n  padding: 20px 0;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  width: 15%;\n}\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.feature {\n  padding: 180px 0 50px 0;\n}\n\n.feature h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\n.feature h2 {\n  font-size: 1.8em;\n  text-align: center;\n}\n\n@media(max-width: 980px){\n  .feature {\n    padding: 150px 0 50px 0;\n  }\n  .feature h1 {\n    padding: 0 0 15% 0;\n  }\n  .feature h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  .feature {\n    padding: 80px 0 30px 0;\n  }\n  .feature h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n  height: 100%;\n  overflow : auto;\n}\n\n.intro h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  margin: 0 0 1em 0;\n}\n\n.intro h3:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro h3:last-child {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro .highlights:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle;\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n@media(max-width: 720px){\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro h3:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro h3:last-child {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro .highlights {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro .highlights:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro .highlights:last-child {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.keynote {\n  line-height: 1.5em;\n  margin: 0 0 1.5em 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 0 auto;\n  margin-bottom: 1.5em;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.feature-speakers h2 {\n  font-size: 2em;\n  text-align: center;\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  figure.feature-speaker:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\nfigure.feature-speaker:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(n) .name {}\n\nfigure.feature-speaker:nth-child(n) figcaption {}\n\nfigure.feature-speaker:nth-child(n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  text-align: center;\n  font-weight: normal;\n  padding: 20px 0;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  width: 15%;\n}\n", ""]);
 
 	// exports
 
@@ -20066,6 +20066,14 @@
 
 	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
 
+	var _about = __webpack_require__(181);
+
+	var _about2 = _interopRequireDefault(_about);
+
+	var _highlights = __webpack_require__(182);
+
+	var _highlights2 = _interopRequireDefault(_highlights);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20074,8 +20082,8 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Intro = (function (_React$Component) {
-	  _inherits(Intro, _React$Component);
+	var Intro = (function (_Component) {
+	  _inherits(Intro, _Component);
 
 	  function Intro() {
 	    _classCallCheck(this, Intro);
@@ -20091,88 +20099,8 @@
 	        { className: "intro" },
 	        _react2.default.createElement(_keynote2.default, null),
 	        _react2.default.createElement(_feature_speakers2.default, null),
-	        _react2.default.createElement(
-	          "h3",
-	          null,
-	          "About g0v.tw"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "g0v is a civic tech community established in late 2012 with deep open-source roots. With 1,000+ contributors through 30+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, citizen engagement, and online democracy.  Since the 2014 Summit, we’ve seen increasing collaboration between the civic tech communities in Taiwan, government agencies, media, and NGOs."
-	        ),
-	        _react2.default.createElement(
-	          "h3",
-	          null,
-	          "After g0v summit 2014"
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "highlights" },
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "Here are some highlights in the local community:"
-	          ),
-	          _react2.default.createElement(
-	            "ul",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Taiwan topped the ",
-	              _react2.default.createElement(
-	                "a",
-	                { href: "http://index.okfn.org/place/", target: "_blank" },
-	                "OKFN Open Data Index"
-	              ),
-	              " in 2015 as the vibrant communities push for open government data, but more importantly the Open-Definition-compliant ",
-	              _react2.default.createElement(
-	                "a",
-	                { href: "http://data.gov.tw/license#eng", target: "_blank" },
-	                "Open Government Data License"
-	              ),
-	              " was enacted, which was also drafted in the community."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "The NGO alliance for constitution reform proposed several projects in the hackathon for people to better understand the issue."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "Minister Tsai, who spoke at the last summit, proposed a consultation platform focused on digital regulations in a hackathon which turned into the ",
-	              _react2.default.createElement(
-	                "a",
-	                { href: "http://blog.pol.is/vtaiwan-uberx/", target: "_blank" },
-	                "vTaiwan platform"
-	              ),
-	              "."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              "During the ",
-	              _react2.default.createElement(
-	                "a",
-	                { href: "https://en.wikipedia.org/wiki/Formosa_Fun_Coast_explosion", target: "_blank" },
-	                "dust explosion accident"
-	              ),
-	              ", the civic tech community mobilized and work with the official emergency response team to provide timely information, and started regular digital disaster response drills."
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "As the global civic tech communities continue to do exciting things to accelerate political changes, we'd like to invite you to share and celebrate some of the small successes, and your stories on what works (and what doesn't!)"
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "We expect to bring together 750 people in this event.  Call for Talks and further details on speakers and sessions will be announced on http://summit.g0v.tw"
-	          )
-	        ),
+	        _react2.default.createElement(_about2.default, null),
+	        _react2.default.createElement(_highlights2.default, null),
 	        _react2.default.createElement(
 	          "div",
 	          { id: "mc_embed_signup" },
@@ -20206,7 +20134,7 @@
 	  }]);
 
 	  return Intro;
-	})(_react2.default.Component);
+	})(_react.Component);
 
 	;
 
@@ -20234,6 +20162,10 @@
 
 	var _locale = __webpack_require__(170);
 
+	var _keynote_speaker = __webpack_require__(171);
+
+	var _keynote_speaker2 = _interopRequireDefault(_keynote_speaker);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20241,8 +20173,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var speaker = __webpack_require__(171)[(0, _locale.getLocale)()];
 
 	var Keynote = (function (_Component) {
 	  _inherits(Keynote, _Component);
@@ -20260,7 +20190,7 @@
 	        "div",
 	        { className: "keynote" },
 	        "Returning for a second year after 2014, the g0v Summit 2016 will again invite the global civic tech community to share their experiences for collaboration between public servants, technologists, and NGO workers.  We are pleased to have Felipe Heusser, founder and former Director of the Chilean NGO Ciudadano Inteligente and Fellow at the Berkman Center, as our keynote speaker.",
-	        _react2.default.createElement(_speaker2.default, { className: "keynote-speaker", speaker: speaker })
+	        _react2.default.createElement(_speaker2.default, { className: "keynote-speaker", speaker: _keynote_speaker2.default[(0, _locale.getLocale)()] })
 	      );
 	    }
 	  }]);
@@ -20506,8 +20436,12 @@
 		"./images/title.png": 6,
 		"./javascripts/application": 1,
 		"./javascripts/application.js": 1,
+		"./javascripts/components/about": 181,
+		"./javascripts/components/about.jsx": 181,
 		"./javascripts/components/feature_speakers": 172,
 		"./javascripts/components/feature_speakers.jsx": 172,
+		"./javascripts/components/highlights": 182,
+		"./javascripts/components/highlights.jsx": 182,
 		"./javascripts/components/intro": 167,
 		"./javascripts/components/intro.jsx": 167,
 		"./javascripts/components/keynote": 168,
@@ -20519,8 +20453,8 @@
 		"./jsons/feature_speakers.json": 173,
 		"./jsons/keynote_speaker.json": 171,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 181,
-		"./stylesheets/reset.css": 183
+		"./stylesheets/landing.css": 183,
+		"./stylesheets/reset.css": 185
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20576,10 +20510,196 @@
 /* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _locale = __webpack_require__(170);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var About = (function (_Component) {
+	  _inherits(About, _Component);
+
+	  function About() {
+	    _classCallCheck(this, About);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(About).apply(this, arguments));
+	  }
+
+	  _createClass(About, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "About g0v.tw"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "highlights" },
+	          "g0v is a civic tech community established in late 2012 with deep open-source roots. With 1,000+ contributors through 30+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, citizen engagement, and online democracy.  Since the 2014 Summit, we’ve seen increasing collaboration between the civic tech communities in Taiwan, government agencies, media, and NGOs."
+	        )
+	      );
+	    }
+	  }]);
+
+	  return About;
+	})(_react.Component);
+
+	;
+
+	exports.default = About;
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _locale = __webpack_require__(170);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Hightlights = (function (_Component) {
+	  _inherits(Hightlights, _Component);
+
+	  function Hightlights() {
+	    _classCallCheck(this, Hightlights);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Hightlights).apply(this, arguments));
+	  }
+
+	  _createClass(Hightlights, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "After g0v summit 2014"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "highlights" },
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Here are some highlights in the local community:"
+	          ),
+	          _react2.default.createElement(
+	            "ul",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Taiwan topped the ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://index.okfn.org/place/", target: "_blank" },
+	                "OKFN Open Data Index"
+	              ),
+	              " in 2015 as the vibrant communities push for open government data, but more importantly the Open-Definition-compliant ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://data.gov.tw/license#eng", target: "_blank" },
+	                "Open Government Data License"
+	              ),
+	              " was enacted, which was also drafted in the community."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "The NGO alliance for constitution reform proposed several projects in the hackathon for people to better understand the issue."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "Minister Tsai, who spoke at the last summit, proposed a consultation platform focused on digital regulations in a hackathon which turned into the ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "http://blog.pol.is/vtaiwan-uberx/", target: "_blank" },
+	                "vTaiwan platform"
+	              ),
+	              "."
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              "During the ",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "https://en.wikipedia.org/wiki/Formosa_Fun_Coast_explosion", target: "_blank" },
+	                "dust explosion accident"
+	              ),
+	              ", the civic tech community mobilized and work with the official emergency response team to provide timely information, and started regular digital disaster response drills."
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "As the global civic tech communities continue to do exciting things to accelerate political changes, we'd like to invite you to share and celebrate some of the small successes, and your stories on what works (and what doesn't!)"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "We expect to bring together 750 people in this event.  Call for Talks and further details on speakers and sessions will be announced on http://summit.g0v.tw"
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Hightlights;
+	})(_react.Component);
+
+	;
+
+	exports.default = Hightlights;
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(182);
+	var content = __webpack_require__(184);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20599,7 +20719,7 @@
 	}
 
 /***/ },
-/* 182 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -20613,13 +20733,13 @@
 
 
 /***/ },
-/* 183 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(184);
+	var content = __webpack_require__(186);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20639,7 +20759,7 @@
 	}
 
 /***/ },
-/* 184 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
