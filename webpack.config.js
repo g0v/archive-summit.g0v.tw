@@ -24,16 +24,29 @@ var config = module.exports = {
   module: {
     loaders: [
       {
+        test: /\.html$/,
+        loader: "file",
+        query: {
+          name: "[name].[ext]"
+        }
+      },
+      {
         test: /\.(png|jpg)$/,
         loader: 'url',
       },
       {
         test: /[/]speakers2014[/]/,
-        loader: 'file?name=images/speakers2014/[name].[ext]',
+        loader: 'file',
+        query: {
+          name: "images/speakers2014/[name].[ext]"
+        }
       },
       {
         test: /[/]keynote[/]/,
-        loader: 'file?name=images/keynote/[name].[ext]',
+        loader: 'file',
+        query: {
+          name: "images/keynote/[name].[ext]"
+        }
       },
       {
         test: /\.jsx?$/,
