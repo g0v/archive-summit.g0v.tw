@@ -1,0 +1,10 @@
+{
+  "en-US": {
+    "header": "About g0v.tw",
+    "description": "g0v is a civic tech community established in late 2012 with deep open-source roots. With 1,000+ contributors through 30+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, citizen engagement, and online democracy.  Since the 2014 Summit, we’ve seen increasing collaboration between the civic tech communities in Taiwan, government agencies, media, and NGOs."
+  },
+  "zh-TW": {
+    "header": "關於臺灣零時政府",
+    "description": "臺灣零時政府是一個深植開源思想的公民技術社群，始於 2012 年底。超過一千位貢獻者參與了超過三十場這個世界上最大的公民科技社群舉辦的黑客松，聚焦於更良好的資訊開放，公民參與，和網路民主。2014 年的零時政府高峰會以來，我們也看到臺灣政府、媒體、和非政府組織間日漸增加的協作。"
+  }
+}
