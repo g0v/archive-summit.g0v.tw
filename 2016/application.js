@@ -1470,7 +1470,7 @@
 	 * will remain to ensure logic does not differ in production.
 	 */
 
-	var invariant = function (condition, format, a, b, c, d, e, f) {
+	function invariant(condition, format, a, b, c, d, e, f) {
 	  if (process.env.NODE_ENV !== 'production') {
 	    if (format === undefined) {
 	      throw new Error('invariant requires an error message argument');
@@ -1484,15 +1484,16 @@
 	    } else {
 	      var args = [a, b, c, d, e, f];
 	      var argIndex = 0;
-	      error = new Error('Invariant Violation: ' + format.replace(/%s/g, function () {
+	      error = new Error(format.replace(/%s/g, function () {
 	        return args[argIndex++];
 	      }));
+	      error.name = 'Invariant Violation';
 	    }
 
 	    error.framesToPop = 1; // we don't care about invariant's own frame
 	    throw error;
 	  }
-	};
+	}
 
 	module.exports = invariant;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
@@ -10919,8 +10920,8 @@
 	     */
 	    // autoCapitalize and autoCorrect are supported in Mobile Safari for
 	    // keyboard hints.
-	    autoCapitalize: null,
-	    autoCorrect: null,
+	    autoCapitalize: MUST_USE_ATTRIBUTE,
+	    autoCorrect: MUST_USE_ATTRIBUTE,
 	    // autoSave allows WebKit/Blink to persist values of input fields on page reloads
 	    autoSave: null,
 	    // color is for Safari mask-icon link
@@ -10951,9 +10952,7 @@
 	    httpEquiv: 'http-equiv'
 	  },
 	  DOMPropertyNames: {
-	    autoCapitalize: 'autocapitalize',
 	    autoComplete: 'autocomplete',
-	    autoCorrect: 'autocorrect',
 	    autoFocus: 'autofocus',
 	    autoPlay: 'autoplay',
 	    autoSave: 'autosave',
@@ -14032,7 +14031,7 @@
 	    var value = LinkedValueUtils.getValue(props);
 
 	    if (value != null) {
-	      updateOptions(this, props, value);
+	      updateOptions(this, Boolean(props.multiple), value);
 	    }
 	  }
 	}
@@ -17071,15 +17070,11 @@
 	 * Same as document.activeElement but wraps in a try-catch block. In IE it is
 	 * not safe to call document.activeElement if there is nothing focused.
 	 *
-	 * The activeElement will be null only if the document or document body is not yet defined.
+	 * The activeElement will be null only if the document body is not yet defined.
 	 */
-	'use strict';
+	"use strict";
 
 	function getActiveElement() /*?DOMElement*/{
-	  if (typeof document === 'undefined') {
-	    return null;
-	  }
-
 	  try {
 	    return document.activeElement || document.body;
 	  } catch (e) {
@@ -18819,7 +18814,9 @@
 	  'setValueForProperty': 'update attribute',
 	  'setValueForAttribute': 'update attribute',
 	  'deleteValueForProperty': 'remove attribute',
-	  'dangerouslyReplaceNodeWithMarkupByID': 'replace'
+	  'setValueForStyles': 'update styles',
+	  'replaceNodeWithMarkup': 'replace',
+	  'updateTextContent': 'set textContent'
 	};
 
 	function getTotalTime(measurements) {
@@ -19011,18 +19008,23 @@
 	'use strict';
 
 	var performance = __webpack_require__(153);
-	var curPerformance = performance;
+
+	var performanceNow;
 
 	/**
 	 * Detect if we can use `window.performance.now()` and gracefully fallback to
 	 * `Date.now()` if it doesn't exist. We need to support Firefox < 15 for now
 	 * because of Facebook's testing infrastructure.
 	 */
-	if (!curPerformance || !curPerformance.now) {
-	  curPerformance = Date;
+	if (performance.now) {
+	  performanceNow = function () {
+	    return performance.now();
+	  };
+	} else {
+	  performanceNow = function () {
+	    return Date.now();
+	  };
 	}
-
-	var performanceNow = curPerformance.now.bind(curPerformance);
 
 	module.exports = performanceNow;
 
@@ -19071,7 +19073,7 @@
 
 	'use strict';
 
-	module.exports = '0.14.3';
+	module.exports = '0.14.5';
 
 /***/ },
 /* 155 */
@@ -20070,7 +20072,7 @@
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _highlights = __webpack_require__(182);
+	var _highlights = __webpack_require__(183);
 
 	var _highlights2 = _interopRequireDefault(_highlights);
 
@@ -20330,6 +20332,12 @@
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
+	var _locale = __webpack_require__(170);
+
+	var _feature_speakers = __webpack_require__(173);
+
+	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20337,6 +20345,10 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	_feature_speakers2.default[(0, _locale.getLocale)()].map(function (speaker) {
+	  __webpack_require__(174)("./" + speaker.image);
+	});
 
 	var FeatureSpeakers = (function (_Component) {
 	  _inherits(FeatureSpeakers, _Component);
@@ -20361,7 +20373,7 @@
 	        _react2.default.createElement(
 	          "div",
 	          null,
-	          this.props.speakers.map(function (speaker) {
+	          _feature_speakers2.default[(0, _locale.getLocale)()].map(function (speaker) {
 	            return _react2.default.createElement(_speaker2.default, { key: speaker.name, className: "feature-speaker", speaker: speaker });
 	          })
 	        )
@@ -20374,51 +20386,78 @@
 
 	;
 
-	FeatureSpeakers.defaultProps = {};
-
-	FeatureSpeakers.defaultProps.speakers = __webpack_require__(173);
-	FeatureSpeakers.defaultProps.speakers.map(function (speaker) {
-	  __webpack_require__(174)("./" + speaker.image);
-	});
-
 	exports.default = FeatureSpeakers;
 
 /***/ },
 /* 173 */
 /***/ function(module, exports) {
 
-	module.exports = [
-		{
-			"image": "images/speakers2014/david.jpg",
-			"name": "David Eaves",
-			"title": ""
-		},
-		{
-			"image": "images/speakers2014/clays.jpg",
-			"name": "Clay Shirky",
-			"title": ""
-		},
-		{
-			"image": "images/speakers2014/audreyt.jpg",
-			"name": "Audrey Tang",
-			"title": ""
-		},
-		{
-			"image": "images/speakers2014/lucyp.jpg",
-			"name": "Lucy Park",
-			"title": "Director, Team POPONG"
-		},
-		{
-			"image": "images/speakers2014/kirby.png",
-			"name": "Kirby",
-			"title": "Co-founder, g0v.tw"
-		},
-		{
-			"image": "images/speakers2014/hlb.jpg",
-			"name": "Liang-Bin Hsueh",
-			"title": ""
-		}
-	];
+	module.exports = {
+		"en-US": [
+			{
+				"image": "images/speakers2014/david.jpg",
+				"name": "David Eaves",
+				"title": ""
+			},
+			{
+				"image": "images/speakers2014/clays.jpg",
+				"name": "Clay Shirky",
+				"title": ""
+			},
+			{
+				"image": "images/speakers2014/audreyt.jpg",
+				"name": "Audrey Tang",
+				"title": ""
+			},
+			{
+				"image": "images/speakers2014/lucyp.jpg",
+				"name": "Lucy Park",
+				"title": "Director, Team POPONG"
+			},
+			{
+				"image": "images/speakers2014/kirby.png",
+				"name": "Kirby",
+				"title": "Co-founder, g0v.tw"
+			},
+			{
+				"image": "images/speakers2014/hlb.jpg",
+				"name": "Liang-Bin Hsueh",
+				"title": ""
+			}
+		],
+		"zh-TW": [
+			{
+				"image": "images/speakers2014/david.jpg",
+				"name": "大衛 艾弗",
+				"title": ""
+			},
+			{
+				"image": "images/speakers2014/clays.jpg",
+				"name": "克雷 雪奇",
+				"title": ""
+			},
+			{
+				"image": "images/speakers2014/audreyt.jpg",
+				"name": "唐鳳",
+				"title": ""
+			},
+			{
+				"image": "images/speakers2014/lucyp.jpg",
+				"name": "露西 帕克",
+				"title": "Team POPONG 董事"
+			},
+			{
+				"image": "images/speakers2014/kirby.png",
+				"name": "吳泰輝",
+				"title": "臺灣零時政府共同創辦人"
+			},
+			{
+				"image": "images/speakers2014/hlb.jpg",
+				"name": "薛良斌",
+				"title": ""
+			}
+		]
+	};
 
 /***/ },
 /* 174 */
@@ -20440,8 +20479,8 @@
 		"./javascripts/components/about.jsx": 181,
 		"./javascripts/components/feature_speakers": 172,
 		"./javascripts/components/feature_speakers.jsx": 172,
-		"./javascripts/components/highlights": 182,
-		"./javascripts/components/highlights.jsx": 182,
+		"./javascripts/components/highlights": 183,
+		"./javascripts/components/highlights.jsx": 183,
 		"./javascripts/components/intro": 167,
 		"./javascripts/components/intro.jsx": 167,
 		"./javascripts/components/keynote": 168,
@@ -20450,11 +20489,12 @@
 		"./javascripts/components/speaker.jsx": 169,
 		"./javascripts/locale": 170,
 		"./javascripts/locale.js": 170,
+		"./jsons/about.json": 182,
 		"./jsons/feature_speakers.json": 173,
 		"./jsons/keynote_speaker.json": 171,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 183,
-		"./stylesheets/reset.css": 185
+		"./stylesheets/landing.css": 184,
+		"./stylesheets/reset.css": 186
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20524,6 +20564,10 @@
 
 	var _locale = __webpack_require__(170);
 
+	var _about = __webpack_require__(182);
+
+	var _about2 = _interopRequireDefault(_about);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20550,12 +20594,12 @@
 	        _react2.default.createElement(
 	          "h3",
 	          null,
-	          "About g0v.tw"
+	          _about2.default[(0, _locale.getLocale)()].header
 	        ),
 	        _react2.default.createElement(
 	          "p",
 	          { className: "highlights" },
-	          "g0v is a civic tech community established in late 2012 with deep open-source roots. With 1,000+ contributors through 30+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, citizen engagement, and online democracy.  Since the 2014 Summit, we’ve seen increasing collaboration between the civic tech communities in Taiwan, government agencies, media, and NGOs."
+	          _about2.default[(0, _locale.getLocale)()].description
 	        )
 	      );
 	    }
@@ -20570,6 +20614,21 @@
 
 /***/ },
 /* 182 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"en-US": {
+			"header": "About g0v.tw",
+			"description": "g0v is a civic tech community established in late 2012 with deep open-source roots. With 1,000+ contributors through 30+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, citizen engagement, and online democracy.  Since the 2014 Summit, we’ve seen increasing collaboration between the civic tech communities in Taiwan, government agencies, media, and NGOs."
+		},
+		"zh-TW": {
+			"header": "關於臺灣零時政府",
+			"description": "臺灣零時政府是一個深植開源思想的公民技術社群，始於 2012 年底。超過一千位貢獻者參與了超過三十場這個世界上最大的公民科技社群舉辦的黑客松，聚焦於更良好的資訊開放，公民參與，和網路民主。2014 年的零時政府高峰會以來，我們也看到臺灣政府、媒體、和非政府組織間日漸增加的協作。"
+		}
+	};
+
+/***/ },
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20693,13 +20752,13 @@
 	exports.default = Hightlights;
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(184);
+	var content = __webpack_require__(185);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20719,7 +20778,7 @@
 	}
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -20733,13 +20792,13 @@
 
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(186);
+	var content = __webpack_require__(187);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -20759,7 +20818,7 @@
 	}
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
