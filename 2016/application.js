@@ -20494,7 +20494,8 @@
 		"./jsons/keynote_speaker.json": 171,
 		"./stylesheets/application.css": 2,
 		"./stylesheets/landing.css": 184,
-		"./stylesheets/reset.css": 186
+		"./stylesheets/reset.css": 186,
+		"./templates/index.html": 188
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20830,6 +20831,12 @@
 
 	// exports
 
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "index.html";
 
 /***/ }
 /******/ ]);
