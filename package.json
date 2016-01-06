@@ -7,15 +7,22 @@
     "test": "npm run build",
     "webpack": "webpack --watch -d --display-reasons --display-chucks --progress"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:g0v/summit.g0v.tw.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "webpack": "*",
+    "webpack-dev-server": "*",
     "json-loader": "*",
     "file-loader": "*",
     "url-loader": "*",
     "style-loader": "*",
     "css-loader": "*",
     "postcss-loader": "*",
-    "babel-loader": "*",
+    "babel-core": "6.x",
+    "babel-loader": "6.x",
     "babel-preset-react": "*",
     "babel-preset-es2015": "*",
     "html-webpack-plugin": "*",

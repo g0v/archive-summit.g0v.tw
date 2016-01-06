@@ -1,9 +1,9 @@
-var path = require("path");
-var webpack = require("webpack");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var autoprefixer = require('autoprefixer');
+import webpack from "webpack";
+import path from "path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import autoprefixer from "autoprefixer";
 
-var config = module.exports = {
+export default {
   context: __dirname,
 
   entry: {
