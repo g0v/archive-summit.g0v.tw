@@ -8,7 +8,7 @@ import Footer from "./footer";
 class Root extends Component {
   render() {
     return <main>
-      <Header />
+      <Header root={this} />
       <Intro />
       <Footer />
     </main>;
