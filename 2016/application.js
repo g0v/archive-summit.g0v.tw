@@ -20395,7 +20395,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "keynote" },
-	        "Returning for a second year after 2014, the g0v Summit 2016 will again invite the global civic tech community to share their experiences for collaboration between public servants, technologists, and NGO workers.  We are pleased to have Felipe Heusser, founder and former Director of the Chilean NGO Ciudadano Inteligente and Fellow at the Berkman Center, as our keynote speaker.",
+	        _keynote_speaker2.default[(0, _locale.getLocale)()].description,
 	        _react2.default.createElement(_speaker2.default, { className: "keynote-speaker", speaker: _keynote_speaker2.default[(0, _locale.getLocale)()] })
 	      );
 	    }
@@ -20479,11 +20479,13 @@
 
 	module.exports = {
 		"en-US": {
+			"description": "Returning for a second year after 2014, the g0v Summit 2016 will again invite the global civic tech community to share their experiences for collaboration between public servants, technologists, and NGO workers.  We are pleased to have Felipe Heusser, founder and former Director of the Chilean NGO Ciudadano Inteligente and Fellow at the Berkman Center, as our keynote speaker.",
 			"image": "images/keynote/heusser.jpg",
 			"name": "Felipe Heusser",
 			"title": "founder and former Director, Ciudadano Inteligente"
 		},
 		"zh-TW": {
+			"description": "2014 之後又跳過了一整年，g0v summit 2016 再次邀請全球公民技術社群來分享公務員，技術人員，和非政府組織工作人員之間的協作經驗。我們很高興邀請到 Filipe Heusser 擔任今年的專題演講者，他也是 the Chilean NGO Ciudadano Inteligente 的創辦人和前股東，以及 Berkman Center 的成員",
 			"image": "images/keynote/heusser.jpg",
 			"name": "Felipe Heusser",
 			"title": "Ciudadano Inteligente 的創辦人與前董事"
