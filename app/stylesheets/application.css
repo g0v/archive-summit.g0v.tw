@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+.button:active {
+  background: #8A6189;
+}
+
 .right {
   float: right;
 }
