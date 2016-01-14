@@ -20280,6 +20280,10 @@
 
 	var _highlights2 = _interopRequireDefault(_highlights);
 
+	var _mail_chimp = __webpack_require__(188);
+
+	var _mail_chimp2 = _interopRequireDefault(_mail_chimp);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20307,34 +20311,7 @@
 	        _react2.default.createElement(_feature_speakers2.default, null),
 	        _react2.default.createElement(_about2.default, null),
 	        _react2.default.createElement(_highlights2.default, null),
-	        _react2.default.createElement(
-	          "div",
-	          { id: "mc_embed_signup" },
-	          _react2.default.createElement(
-	            "form",
-	            { action: "//facebook.us8.list-manage.com/subscribe/post?u=2cbe76b13b03aa196dea19786&id=6acce179ae", method: "post", id: "mc-embedded-subscribe-form", name: "mc-embedded-subscribe-form", className: "validate", target: "_blank", noValidate: true },
-	            _react2.default.createElement(
-	              "div",
-	              { id: "mc_embed_signup_scroll" },
-	              _react2.default.createElement(
-	                "label",
-	                { htmlFor: "mce-EMAIL" },
-	                "Subscribe to our mailing list"
-	              ),
-	              _react2.default.createElement("input", { type: "email", value: "", name: "EMAIL", className: "email", id: "mce-EMAIL", placeholder: "email address", required: true }),
-	              _react2.default.createElement(
-	                "div",
-	                { style: { position: "absolute", left: "-5000px" }, "aria-hidden": "true" },
-	                _react2.default.createElement("input", { type: "text", name: "b_2cbe76b13b03aa196dea19786_6acce179ae", tabIndex: "-1", value: "" })
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "clear" },
-	                _react2.default.createElement("input", { type: "submit", value: "Subscribe", name: "subscribe", id: "mc-embedded-subscribe", className: "button" })
-	              )
-	            )
-	          )
-	        )
+	        _react2.default.createElement(_mail_chimp2.default, null)
 	      );
 	    }
 	  }]);
@@ -20669,6 +20646,8 @@
 		"./javascripts/components/intro.jsx": 171,
 		"./javascripts/components/keynote": 172,
 		"./javascripts/components/keynote.jsx": 172,
+		"./javascripts/components/mail_chimp": 188,
+		"./javascripts/components/mail_chimp.jsx": 188,
 		"./javascripts/components/root": 167,
 		"./javascripts/components/root.jsx": 167,
 		"./javascripts/components/speaker": 173,
@@ -20680,9 +20659,9 @@
 		"./jsons/header.json": 170,
 		"./jsons/keynote_speaker.json": 174,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 188,
-		"./stylesheets/reset.css": 190,
-		"./templates/index.html": 192
+		"./stylesheets/landing.css": 189,
+		"./stylesheets/reset.css": 191,
+		"./templates/index.html": 193
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -21022,10 +21001,92 @@
 /* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var MailChimp = function (_Component) {
+	  _inherits(MailChimp, _Component);
+
+	  function MailChimp(props) {
+	    _classCallCheck(this, MailChimp);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MailChimp).call(this, props));
+
+	    _this.state = {
+	      email: ""
+	    };
+	    return _this;
+	  }
+
+	  _createClass(MailChimp, [{
+	    key: "change",
+	    value: function change(e) {
+	      this.setState({ email: e.target.value });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { id: "mc_embed_signup" },
+	        _react2.default.createElement(
+	          "form",
+	          { action: "//facebook.us8.list-manage.com/subscribe/post?u=2cbe76b13b03aa196dea19786&id=6acce179ae", method: "post", id: "mc-embedded-subscribe-form", name: "mc-embedded-subscribe-form", className: "validate", target: "_blank", noValidate: true },
+	          _react2.default.createElement(
+	            "div",
+	            { id: "mc_embed_signup_scroll" },
+	            _react2.default.createElement(
+	              "label",
+	              { htmlFor: "mce-EMAIL" },
+	              "Subscribe to our mailing list"
+	            ),
+	            _react2.default.createElement("input", { type: "email", value: this.state.email, onChange: this.change.bind(this), name: "EMAIL", className: "email", id: "mce-EMAIL", placeholder: "email address", required: true }),
+	            _react2.default.createElement(
+	              "div",
+	              { style: { position: "absolute", left: "-5000px" }, "aria-hidden": "true" },
+	              _react2.default.createElement("input", { type: "text", name: "b_2cbe76b13b03aa196dea19786_6acce179ae", tabIndex: "-1", value: "" })
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "clear" },
+	              _react2.default.createElement("input", { type: "submit", value: "Subscribe", name: "subscribe", id: "mc-embedded-subscribe", className: "button" })
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return MailChimp;
+	}(_react.Component);
+
+	exports.default = MailChimp;
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(189);
+	var content = __webpack_require__(190);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -21045,7 +21106,7 @@
 	}
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -21059,13 +21120,13 @@
 
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(191);
+	var content = __webpack_require__(192);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -21085,7 +21146,7 @@
 	}
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -21099,7 +21160,7 @@
 
 
 /***/ },
-/* 192 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "index.html";
