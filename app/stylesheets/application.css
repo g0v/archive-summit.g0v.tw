@@ -1,6 +1,25 @@
 @import "reset.css";
 @import "landing.css";
 
+.button {
+  padding: 3px 5px;
+  margin: 0 2px;
+  background: #BB93AE;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.right {
+  float: right;
+}
+
+.locale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px 5px;
+}
+
 header {
   padding: 180px 0 50px 0;
   h1 {
