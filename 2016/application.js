@@ -69,7 +69,7 @@
 
 	var _root2 = _interopRequireDefault(_root);
 
-	var _locale = __webpack_require__(172);
+	var _locale = __webpack_require__(169);
 
 	var _locale2 = _interopRequireDefault(_locale);
 
@@ -122,7 +122,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\nheader {\n  padding: 180px 0 50px 0;\n}\n\nheader h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\nheader h2 {\n  font-size: 1.8em;\n  text-align: center;\n}\n\n@media(max-width: 980px){\n  header {\n    padding: 150px 0 50px 0;\n  }\n  header h1 {\n    padding: 0 0 15% 0;\n  }\n  header h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  header {\n    padding: 80px 0 30px 0;\n  }\n  header h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n  height: 100%;\n  overflow : auto;\n}\n\n.intro h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  margin: 0 0 1em 0;\n}\n\n.intro h3:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro h3:last-child {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro .highlights:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n@media(max-width: 720px){\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro h3:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro h3:last-child {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro .highlights {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro .highlights:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro .highlights:last-child {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.keynote {\n  line-height: 1.5em;\n  margin: 0 0 1.5em 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 0 auto;\n  margin-bottom: 1.5em;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.feature-speakers h2 {\n  font-size: 2em;\n  text-align: center;\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  }\n\nfigure.feature-speaker:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(n) .name {}\n\nfigure.feature-speaker:nth-child(n) figcaption {}\n\nfigure.feature-speaker:nth-child(n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  text-align: center;\n  font-weight: normal;\n  padding: 20px 0;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  width: 15%;\n}\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.button {\n  padding: 3px 5px;\n  margin: 0 2px;\n  background: #BB93AE;\n  border-radius: 3px;\n  text-decoration: none;\n}\n\n.right {\n  float: right;\n}\n\n.locale {\n  position: absolute;\n  top: 0;\n  right: 0;\n  margin: 5px 5px;\n}\n\nheader {\n  padding: 180px 0 50px 0;\n}\n\nheader h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\nheader h2 {\n  font-size: 1.8em;\n  text-align: center;\n}\n\n@media(max-width: 980px){\n  header {\n    padding: 150px 0 50px 0;\n  }\n  header h1 {\n    padding: 0 0 15% 0;\n  }\n  header h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  header {\n    padding: 80px 0 30px 0;\n  }\n  header h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n  height: 100%;\n  overflow : auto;\n}\n\n.intro h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  margin: 0 0 1em 0;\n}\n\n.intro h3:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro h3:last-child {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro .highlights:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n@media(max-width: 720px){\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro h3:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro h3:last-child {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro .highlights {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro .highlights:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro .highlights:last-child {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.keynote {\n  line-height: 1.5em;\n  margin: 0 0 1.5em 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 0 auto;\n  margin-bottom: 1.5em;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.feature-speakers h2 {\n  font-size: 2em;\n  text-align: center;\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  }\n\nfigure.feature-speaker:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(n) .name {}\n\nfigure.feature-speaker:nth-child(n) figcaption {}\n\nfigure.feature-speaker:nth-child(n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  text-align: center;\n  font-weight: normal;\n  padding: 20px 0;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  width: 15%;\n}\n", ""]);
 
 	// exports
 
@@ -17066,15 +17066,21 @@
 	 * @typechecks
 	 */
 
+	/* eslint-disable fb-www/typeof-undefined */
+
 	/**
 	 * Same as document.activeElement but wraps in a try-catch block. In IE it is
 	 * not safe to call document.activeElement if there is nothing focused.
 	 *
-	 * The activeElement will be null only if the document body is not yet defined.
+	 * The activeElement will be null only if the document or document body is not
+	 * yet defined.
 	 */
-	"use strict";
+	'use strict';
 
 	function getActiveElement() /*?DOMElement*/{
+	  if (typeof document === 'undefined') {
+	    return null;
+	  }
 	  try {
 	    return document.activeElement || document.body;
 	  } catch (e) {
@@ -19073,7 +19079,7 @@
 
 	'use strict';
 
-	module.exports = '0.14.5';
+	module.exports = '0.14.6';
 
 /***/ },
 /* 155 */
@@ -20050,7 +20056,7 @@
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20064,7 +20070,7 @@
 
 	var _header2 = _interopRequireDefault(_header);
 
-	var _intro = __webpack_require__(169);
+	var _intro = __webpack_require__(170);
 
 	var _intro2 = _interopRequireDefault(_intro);
 
@@ -20080,7 +20086,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Root = (function (_Component) {
+	var Root = function (_Component) {
 	  _inherits(Root, _Component);
 
 	  function Root() {
@@ -20095,7 +20101,7 @@
 	      return _react2.default.createElement(
 	        "main",
 	        null,
-	        _react2.default.createElement(_header2.default, null),
+	        _react2.default.createElement(_header2.default, { root: this }),
 	        _react2.default.createElement(_intro2.default, null),
 	        _react2.default.createElement(_footer2.default, null)
 	      );
@@ -20103,7 +20109,7 @@
 	  }]);
 
 	  return Root;
-	})(_react.Component);
+	}(_react.Component);
 
 	;
 
@@ -20115,7 +20121,7 @@
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20125,6 +20131,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _locale = __webpack_require__(169);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20133,7 +20141,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Header = (function (_Component) {
+	var Header = function (_Component) {
 	  _inherits(Header, _Component);
 
 	  function Header() {
@@ -20143,6 +20151,13 @@
 	  }
 
 	  _createClass(Header, [{
+	    key: "changeLocale",
+	    value: function changeLocale(locale, e) {
+	      e.preventDefault();
+	      (0, _locale.setLocale)(locale);
+	      this.props.root.setState();
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -20162,13 +20177,27 @@
 	          "h2",
 	          null,
 	          "Academia Sinica, Taipei"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "locale" },
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#", onClick: this.changeLocale.bind(this, "zh-TW"), className: "button right" },
+	            "中文"
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#", onClick: this.changeLocale.bind(this, "en-US"), className: "button right" },
+	            "English"
+	          )
 	        )
 	      );
 	    }
 	  }]);
 
 	  return Header;
-	})(_react.Component);
+	}(_react.Component);
 
 	;
 
@@ -20176,11 +20205,37 @@
 
 /***/ },
 /* 169 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.locale = locale;
+	exports.setLocale = setLocale;
+	exports.getLocale = getLocale;
+	function locale() {
+	  return window.navigator.userLanguage || window.navigator.language;
+	};
+
+	function setLocale(locale) {
+	  return localStorage.setItem("locale", locale);
+	}
+
+	function getLocale() {
+	  return localStorage.getItem("locale");
+	}
+
+	exports.default = locale;
+
+/***/ },
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20190,7 +20245,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _keynote = __webpack_require__(170);
+	var _keynote = __webpack_require__(171);
 
 	var _keynote2 = _interopRequireDefault(_keynote);
 
@@ -20214,7 +20269,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Intro = (function (_Component) {
+	var Intro = function (_Component) {
 	  _inherits(Intro, _Component);
 
 	  function Intro() {
@@ -20266,19 +20321,19 @@
 	  }]);
 
 	  return Intro;
-	})(_react.Component);
+	}(_react.Component);
 
 	;
 
 	exports.default = Intro;
 
 /***/ },
-/* 170 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20288,11 +20343,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _speaker = __webpack_require__(171);
+	var _speaker = __webpack_require__(172);
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
-	var _locale = __webpack_require__(172);
+	var _locale = __webpack_require__(169);
 
 	var _keynote_speaker = __webpack_require__(173);
 
@@ -20306,7 +20361,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Keynote = (function (_Component) {
+	var Keynote = function (_Component) {
 	  _inherits(Keynote, _Component);
 
 	  function Keynote() {
@@ -20328,19 +20383,19 @@
 	  }]);
 
 	  return Keynote;
-	})(_react.Component);
+	}(_react.Component);
 
 	;
 
 	exports.default = Keynote;
 
 /***/ },
-/* 171 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20358,7 +20413,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Speaker = (function (_Component) {
+	var Speaker = function (_Component) {
 	  _inherits(Speaker, _Component);
 
 	  function Speaker() {
@@ -20393,37 +20448,11 @@
 	  }]);
 
 	  return Speaker;
-	})(_react.Component);
+	}(_react.Component);
 
 	;
 
 	exports.default = Speaker;
-
-/***/ },
-/* 172 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.locale = locale;
-	exports.setLocale = setLocale;
-	exports.getLocale = getLocale;
-	function locale() {
-	  return window.navigator.userLanguage || window.navigator.language;
-	};
-
-	function setLocale(locale) {
-	  return localStorage.setItem("locale", locale);
-	}
-
-	function getLocale() {
-	  return localStorage.getItem("locale");
-	}
-
-	exports.default = locale;
 
 /***/ },
 /* 173 */
@@ -20448,7 +20477,7 @@
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20458,11 +20487,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _speaker = __webpack_require__(171);
+	var _speaker = __webpack_require__(172);
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
-	var _locale = __webpack_require__(172);
+	var _locale = __webpack_require__(169);
 
 	var _feature_speakers = __webpack_require__(175);
 
@@ -20480,7 +20509,7 @@
 	  __webpack_require__(176)("./" + speaker.image);
 	});
 
-	var FeatureSpeakers = (function (_Component) {
+	var FeatureSpeakers = function (_Component) {
 	  _inherits(FeatureSpeakers, _Component);
 
 	  function FeatureSpeakers() {
@@ -20512,7 +20541,7 @@
 	  }]);
 
 	  return FeatureSpeakers;
-	})(_react.Component);
+	}(_react.Component);
 
 	;
 
@@ -20615,16 +20644,16 @@
 		"./javascripts/components/header.jsx": 168,
 		"./javascripts/components/highlights": 186,
 		"./javascripts/components/highlights.jsx": 186,
-		"./javascripts/components/intro": 169,
-		"./javascripts/components/intro.jsx": 169,
-		"./javascripts/components/keynote": 170,
-		"./javascripts/components/keynote.jsx": 170,
+		"./javascripts/components/intro": 170,
+		"./javascripts/components/intro.jsx": 170,
+		"./javascripts/components/keynote": 171,
+		"./javascripts/components/keynote.jsx": 171,
 		"./javascripts/components/root": 167,
 		"./javascripts/components/root.jsx": 167,
-		"./javascripts/components/speaker": 171,
-		"./javascripts/components/speaker.jsx": 171,
-		"./javascripts/locale": 172,
-		"./javascripts/locale.js": 172,
+		"./javascripts/components/speaker": 172,
+		"./javascripts/components/speaker.jsx": 172,
+		"./javascripts/locale": 169,
+		"./javascripts/locale.js": 169,
 		"./jsons/about.json": 184,
 		"./jsons/feature_speakers.json": 175,
 		"./jsons/keynote_speaker.json": 173,
@@ -20689,7 +20718,7 @@
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20699,7 +20728,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _locale = __webpack_require__(172);
+	var _locale = __webpack_require__(169);
 
 	var _about = __webpack_require__(184);
 
@@ -20713,7 +20742,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var About = (function (_Component) {
+	var About = function (_Component) {
 	  _inherits(About, _Component);
 
 	  function About() {
@@ -20743,7 +20772,7 @@
 	  }]);
 
 	  return About;
-	})(_react.Component);
+	}(_react.Component);
 
 	;
 
@@ -20770,7 +20799,7 @@
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20788,7 +20817,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Footer = (function (_Component) {
+	var Footer = function (_Component) {
 	  _inherits(Footer, _Component);
 
 	  function Footer() {
@@ -20837,7 +20866,7 @@
 	  }]);
 
 	  return Footer;
-	})(_react.Component);
+	}(_react.Component);
 
 	;
 
@@ -20849,7 +20878,7 @@
 
 	'use strict';
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -20859,7 +20888,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _locale = __webpack_require__(172);
+	var _locale = __webpack_require__(169);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20869,7 +20898,7 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Hightlights = (function (_Component) {
+	var Hightlights = function (_Component) {
 	  _inherits(Hightlights, _Component);
 
 	  function Hightlights() {
@@ -20961,7 +20990,7 @@
 	  }]);
 
 	  return Hightlights;
-	})(_react.Component);
+	}(_react.Component);
 
 	;
 
