@@ -82,6 +82,23 @@ header {
   }
 }
 
+.cfp-button {
+  background-color: #6C5368;
+  border: none;
+  border-radius: 5px;
+  height: 34px;
+  margin: 20px auto;
+  vertical-align: middle;
+  line-height: 34px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  width: 15%;
+  a {
+    text-decoration: none;
+  }
+}
+
 .intro {
   background: -moz-linear-gradient(top, rgba(144,110,169,0.9) 0%, rgba(193,128,170,1) 100%);
   background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);

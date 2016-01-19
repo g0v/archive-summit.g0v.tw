@@ -10,9 +10,11 @@ class CallForPapers extends Component {
       <h2>{data[getLocale()].title}</h2>
       <p>
         {data[getLocale()].text}
-        <a href={data[getLocale()].url}>
-          {data[getLocale()].url}
-        </a>
+        <div className="cfp-button">
+          <a href={data[getLocale()].url}>
+            {data[getLocale()].action}
+          </a>
+        </div>
       </p>
     </div>;
   }
