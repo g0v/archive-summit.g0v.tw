@@ -136,7 +136,7 @@ header {
   }
 }
 
-.keynote, .call_for_papers {
+.keynote, .call_for_papers, .early_bird {
   line-height: 1.5em;
   margin: 0 0 4em 0;
 }
@@ -152,11 +152,18 @@ header {
   }
 }
 
-.keynote, .call_for_papers, .feature-speakers {
+.keynote, .call_for_papers, .feature-speakers, .early_bird {
   h2 {
     font-size: 2em;
     text-align: center;
     margin: 0 0 1em 0;
+  }
+  h3 {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+  }
+  .info {
+    margin-top: 0.5em;
   }
 }
 
