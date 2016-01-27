@@ -122,7 +122,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.button {\n  padding: 3px 5px;\n  margin: 0 2px;\n  background: #BB93AE;\n  border-radius: 3px;\n  text-decoration: none;\n}\n\n.button:active {\n  background: #8A6189;\n}\n\n.right {\n  float: right;\n}\n\n.locale {\n  position: absolute;\n  top: 0;\n  right: 0;\n  margin: 5px 5px;\n}\n\nheader {\n  padding: 180px 0 50px 0;\n}\n\nheader h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\nheader h4 {\n  font-size: 1.2em;\n  text-align: center;\n}\n\nheader .affix {\n  background: rgba(192,169,203,0.95);\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 90%;\n  padding: 1% 5%;\n}\n\nheader .affix .locale {\n  position: relative;\n  display: inline;\n}\n\nheader .affix h4 {\n  margin-right: 1em;\n  display: inline;\n}\n\n@media(max-width: 980px){\n  header {\n    padding: 150px 0 50px 0;\n  }\n  header h1 {\n    padding: 0 0 15% 0;\n  }\n  header h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  header {\n    padding: 80px 0 30px 0;\n  }\n  header h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.cfp-button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  height: 34px;\n  margin: 20px auto;\n  vertical-align: middle;\n  line-height: 34px;\n  font-size: 18px;\n  cursor: pointer;\n  text-align: center;\n  width: 15%;\n}\n\n.cfp-button a {\n  text-decoration: none;\n}\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n  height: 100%;\n  overflow : auto;\n}\n\n.intro h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  margin: 0 0 1em 0;\n}\n\n.intro h3:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro h3:last-child {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro .highlights:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n@media(max-width: 720px){\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro h3:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro h3:last-child {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro .highlights {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro .highlights:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro .highlights:last-child {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.keynote, .call_for_papers {\n  line-height: 1.5em;\n  margin: 0 0 4em 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 0 auto;\n  margin-bottom: 1.5em;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.keynote h2, .call_for_papers h2, .feature-speakers h2 {\n  font-size: 2em;\n  text-align: center;\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  }\n\nfigure.feature-speaker:nth-child(n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(n) .name {}\n\nfigure.feature-speaker:nth-child(n) figcaption {}\n\nfigure.feature-speaker:nth-child(n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  text-align: center;\n  font-weight: normal;\n  padding: 20px 0;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  width: 15%;\n}\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.button {\n  padding: 3px 5px;\n  margin: 0 2px;\n  background: #BB93AE;\n  border-radius: 3px;\n  text-decoration: none;\n}\n\n.button:active {\n  background: #8A6189;\n}\n\n.right {\n  float: right;\n}\n\n.locale {\n  position: absolute;\n  top: 0;\n  right: 0;\n  margin: 5px 5px;\n}\n\nheader {\n  padding: 180px 0 50px 0;\n}\n\nheader h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\nheader h4 {\n  font-size: 1.2em;\n  text-align: center;\n}\n\nheader .affix {\n  background: rgba(192,169,203,0.95);\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 90%;\n  padding: 1% 5%;\n}\n\nheader .affix .locale {\n  position: relative;\n  display: inline;\n}\n\nheader .affix h4 {\n  margin-right: 1em;\n  display: inline;\n}\n\n@media(max-width: 980px){\n  header {\n    padding: 150px 0 50px 0;\n  }\n  header h1 {\n    padding: 0 0 15% 0;\n  }\n  header h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  header {\n    padding: 80px 0 30px 0;\n  }\n  header h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.cfp-button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  height: 34px;\n  margin: 20px auto;\n  vertical-align: middle;\n  line-height: 34px;\n  font-size: 18px;\n  cursor: pointer;\n  text-align: center;\n  width: 15%;\n}\n\n.cfp-button a {\n  text-decoration: none;\n}\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n  height: 100%;\n  overflow : auto;\n}\n\n.intro h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  margin: 0 0 1em 0;\n}\n\n.intro h3:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro h3:last-child {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n) {\n  float: right;\n}\n\n.intro h3:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro .highlights:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n) {\n  float: right;\n}\n\n.intro .highlights:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n@media(max-width: 720px){\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro h3:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro h3:last-child {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n) {\n    float: right;\n  }\n  .intro h3:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro .highlights {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro .highlights:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro .highlights:last-child {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n) {\n    float: right;\n  }\n  .intro .highlights:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.keynote, .call_for_papers, .early_bird {\n  line-height: 1.5em;\n  margin: 0 0 4em 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 0 auto;\n  margin-bottom: 1.5em;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.keynote h2, .call_for_papers h2, .feature-speakers h2, .early_bird h2 {\n  font-size: 2em;\n  text-align: center;\n  margin: 0 0 1em 0;\n}\n\n.keynote h3, .call_for_papers h3, .feature-speakers h3, .early_bird h3 {\n  font-size: 1.2em;\n  margin-top: 0.5em;\n}\n\n.keynote .info, .call_for_papers .info, .feature-speakers .info, .early_bird .info {\n  margin-top: 0.5em;\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    float: right;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  }\n\nfigure.feature-speaker:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(1n) .name {}\n\nfigure.feature-speaker:nth-child(1n) figcaption {}\n\nfigure.feature-speaker:nth-child(1n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  float: right;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  text-align: center;\n  font-weight: normal;\n  padding: 20px 0;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  width: 15%;\n}\n", ""]);
 
 	// exports
 
@@ -20074,7 +20074,7 @@
 
 	var _intro2 = _interopRequireDefault(_intro);
 
-	var _footer = __webpack_require__(189);
+	var _footer = __webpack_require__(191);
 
 	var _footer2 = _interopRequireDefault(_footer);
 
@@ -20341,27 +20341,33 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _locale = __webpack_require__(170);
+
 	var _call_for_papers = __webpack_require__(173);
 
 	var _call_for_papers2 = _interopRequireDefault(_call_for_papers);
 
-	var _keynote = __webpack_require__(175);
+	var _early_bird = __webpack_require__(175);
+
+	var _early_bird2 = _interopRequireDefault(_early_bird);
+
+	var _keynote = __webpack_require__(177);
 
 	var _keynote2 = _interopRequireDefault(_keynote);
 
-	var _feature_speakers = __webpack_require__(178);
+	var _feature_speakers = __webpack_require__(180);
 
 	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
 
-	var _about = __webpack_require__(187);
+	var _about = __webpack_require__(189);
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _highlights = __webpack_require__(190);
+	var _highlights = __webpack_require__(192);
 
 	var _highlights2 = _interopRequireDefault(_highlights);
 
-	var _mail_chimp = __webpack_require__(191);
+	var _mail_chimp = __webpack_require__(193);
 
 	var _mail_chimp2 = _interopRequireDefault(_mail_chimp);
 
@@ -20389,6 +20395,7 @@
 	        "div",
 	        { className: "intro" },
 	        _react2.default.createElement(_call_for_papers2.default, null),
+	        (0, _locale.getLocale)() === 'en-US' ? _react2.default.createElement(_early_bird2.default, null) : null,
 	        _react2.default.createElement(_keynote2.default, null),
 	        _react2.default.createElement(_feature_speakers2.default, null),
 	        _react2.default.createElement(_about2.default, null),
@@ -20513,13 +20520,107 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _speaker = __webpack_require__(176);
+	var _locale = __webpack_require__(170);
+
+	var _early_bird = __webpack_require__(176);
+
+	var _early_bird2 = _interopRequireDefault(_early_bird);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var EarlyBirdProgram = function (_Component) {
+	  _inherits(EarlyBirdProgram, _Component);
+
+	  function EarlyBirdProgram() {
+	    _classCallCheck(this, EarlyBirdProgram);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(EarlyBirdProgram).apply(this, arguments));
+	  }
+
+	  _createClass(EarlyBirdProgram, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "early_bird" },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          _early_bird2.default[(0, _locale.getLocale)()].header
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            _early_bird2.default[(0, _locale.getLocale)()].text
+	          ),
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            _early_bird2.default[(0, _locale.getLocale)()].subHeader
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            { className: "info" },
+	            _early_bird2.default[(0, _locale.getLocale)()].information,
+	            _react2.default.createElement("br", null),
+	            _early_bird2.default[(0, _locale.getLocale)()].more
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return EarlyBirdProgram;
+	}(_react.Component);
+
+	exports.default = EarlyBirdProgram;
+
+/***/ },
+/* 176 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"en-US": {
+			"header": "Early Bird Program",
+			"text": "g0v Summit 2016 International Early Bird Program is for residents in other countries, so you can make travel arrangements earlier.  Applicant should provide his/her proof of residence in forms of blog, Facebook / Google plus / LinkedIn profile with Location, along with a post like \"I'm visiting Taiwan for g0v Summit 2016\".",
+			"subHeader": "Open for Application",
+			"information": "February 15, 2016 at 20:00:00 - February 29, 2019 at 23:59:59 (GMT+8)",
+			"more": "(Notification will be sent on March 10)"
+		}
+	};
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _speaker = __webpack_require__(178);
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
 	var _locale = __webpack_require__(170);
 
-	var _keynote_speaker = __webpack_require__(177);
+	var _keynote_speaker = __webpack_require__(179);
 
 	var _keynote_speaker2 = _interopRequireDefault(_keynote_speaker);
 
@@ -20565,7 +20666,7 @@
 	exports.default = Keynote;
 
 /***/ },
-/* 176 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20630,7 +20731,7 @@
 	exports.default = Speaker;
 
 /***/ },
-/* 177 */
+/* 179 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -20649,7 +20750,7 @@
 	};
 
 /***/ },
-/* 178 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20664,13 +20765,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _speaker = __webpack_require__(176);
+	var _speaker = __webpack_require__(178);
 
 	var _speaker2 = _interopRequireDefault(_speaker);
 
 	var _locale = __webpack_require__(170);
 
-	var _feature_speakers = __webpack_require__(179);
+	var _feature_speakers = __webpack_require__(181);
 
 	var _feature_speakers2 = _interopRequireDefault(_feature_speakers);
 
@@ -20683,7 +20784,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	_feature_speakers2.default["en-US"].map(function (speaker) {
-	  __webpack_require__(180)("./" + speaker.image);
+	  __webpack_require__(182)("./" + speaker.image);
 	});
 
 	var FeatureSpeakers = function (_Component) {
@@ -20725,7 +20826,7 @@
 	exports.default = FeatureSpeakers;
 
 /***/ },
-/* 179 */
+/* 181 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -20796,54 +20897,57 @@
 	};
 
 /***/ },
-/* 180 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
 		"./images/g0v-summit-01bg.jpg": 5,
 		"./images/keynote/heusser.jpg": 8,
-		"./images/speakers2014/audreyt.jpg": 181,
-		"./images/speakers2014/clays.jpg": 182,
-		"./images/speakers2014/david.jpg": 183,
-		"./images/speakers2014/hlb.jpg": 184,
-		"./images/speakers2014/kirby.png": 185,
-		"./images/speakers2014/lucyp.jpg": 186,
+		"./images/speakers2014/audreyt.jpg": 183,
+		"./images/speakers2014/clays.jpg": 184,
+		"./images/speakers2014/david.jpg": 185,
+		"./images/speakers2014/hlb.jpg": 186,
+		"./images/speakers2014/kirby.png": 187,
+		"./images/speakers2014/lucyp.jpg": 188,
 		"./images/title.png": 6,
 		"./javascripts/application": 1,
 		"./javascripts/application.js": 1,
-		"./javascripts/components/about": 187,
-		"./javascripts/components/about.jsx": 187,
+		"./javascripts/components/about": 189,
+		"./javascripts/components/about.jsx": 189,
 		"./javascripts/components/call_for_papers": 173,
 		"./javascripts/components/call_for_papers.jsx": 173,
-		"./javascripts/components/feature_speakers": 178,
-		"./javascripts/components/feature_speakers.jsx": 178,
-		"./javascripts/components/footer": 189,
-		"./javascripts/components/footer.jsx": 189,
+		"./javascripts/components/early_bird": 175,
+		"./javascripts/components/early_bird.jsx": 175,
+		"./javascripts/components/feature_speakers": 180,
+		"./javascripts/components/feature_speakers.jsx": 180,
+		"./javascripts/components/footer": 191,
+		"./javascripts/components/footer.jsx": 191,
 		"./javascripts/components/header": 168,
 		"./javascripts/components/header.jsx": 168,
-		"./javascripts/components/highlights": 190,
-		"./javascripts/components/highlights.jsx": 190,
+		"./javascripts/components/highlights": 192,
+		"./javascripts/components/highlights.jsx": 192,
 		"./javascripts/components/intro": 172,
 		"./javascripts/components/intro.jsx": 172,
-		"./javascripts/components/keynote": 175,
-		"./javascripts/components/keynote.jsx": 175,
-		"./javascripts/components/mail_chimp": 191,
-		"./javascripts/components/mail_chimp.jsx": 191,
+		"./javascripts/components/keynote": 177,
+		"./javascripts/components/keynote.jsx": 177,
+		"./javascripts/components/mail_chimp": 193,
+		"./javascripts/components/mail_chimp.jsx": 193,
 		"./javascripts/components/root": 167,
 		"./javascripts/components/root.jsx": 167,
-		"./javascripts/components/speaker": 176,
-		"./javascripts/components/speaker.jsx": 176,
+		"./javascripts/components/speaker": 178,
+		"./javascripts/components/speaker.jsx": 178,
 		"./javascripts/locale": 170,
 		"./javascripts/locale.js": 170,
-		"./jsons/about.json": 188,
+		"./jsons/about.json": 190,
 		"./jsons/call_for_papers.json": 174,
-		"./jsons/feature_speakers.json": 179,
+		"./jsons/early_bird.json": 176,
+		"./jsons/feature_speakers.json": 181,
 		"./jsons/header.json": 171,
-		"./jsons/keynote_speaker.json": 177,
+		"./jsons/keynote_speaker.json": 179,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 192,
-		"./stylesheets/reset.css": 194,
-		"./templates/index.html": 196
+		"./stylesheets/landing.css": 194,
+		"./stylesheets/reset.css": 196,
+		"./templates/index.html": 198
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -20856,47 +20960,47 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 180;
+	webpackContext.id = 182;
 
-
-/***/ },
-/* 181 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
-
-/***/ },
-/* 182 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
 
 /***/ },
 /* 183 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2F1ZHJleXQuanBnIjs="
 
 /***/ },
 /* 184 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2NsYXlzLmpwZyI7"
 
 /***/ },
 /* 185 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2RhdmlkLmpwZyI7"
 
 /***/ },
 /* 186 */
 /***/ function(module, exports) {
 
-	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2x1Y3lwLmpwZyI7"
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2hsYi5qcGciOw=="
 
 /***/ },
 /* 187 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2tpcmJ5LnBuZyI7"
+
+/***/ },
+/* 188 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWFnZXMvc3BlYWtlcnMyMDE0L2x1Y3lwLmpwZyI7"
+
+/***/ },
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20913,7 +21017,7 @@
 
 	var _locale = __webpack_require__(170);
 
-	var _about = __webpack_require__(188);
+	var _about = __webpack_require__(190);
 
 	var _about2 = _interopRequireDefault(_about);
 
@@ -20962,7 +21066,7 @@
 	exports.default = About;
 
 /***/ },
-/* 188 */
+/* 190 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -20977,7 +21081,7 @@
 	};
 
 /***/ },
-/* 189 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21056,7 +21160,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 190 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21180,7 +21284,7 @@
 	exports.default = Hightlights;
 
 /***/ },
-/* 191 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21262,13 +21366,13 @@
 	exports.default = MailChimp;
 
 /***/ },
-/* 192 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(193);
+	var content = __webpack_require__(195);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -21288,7 +21392,7 @@
 	}
 
 /***/ },
-/* 193 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -21302,13 +21406,13 @@
 
 
 /***/ },
-/* 194 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(195);
+	var content = __webpack_require__(197);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -21328,7 +21432,7 @@
 	}
 
 /***/ },
-/* 195 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -21342,7 +21446,7 @@
 
 
 /***/ },
-/* 196 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "index.html";
