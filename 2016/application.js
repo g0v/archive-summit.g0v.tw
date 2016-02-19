@@ -122,7 +122,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.button {\n  padding: 3px 5px;\n  margin: 0 2px;\n  background: #BB93AE;\n  border-radius: 3px;\n  text-decoration: none;\n}\n\n.button:active {\n  background: #8A6189;\n}\n\n.right {\n  float: right;\n}\n\n.locale {\n  position: absolute;\n  top: 0;\n  right: 0;\n  margin: 5px 5px;\n}\n\nheader {\n  padding: 180px 0 50px 0;\n}\n\nheader h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\nheader h4 {\n  font-size: 1.2em;\n  text-align: center;\n}\n\nheader .affix {\n  background: rgba(192,169,203,0.95);\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 90%;\n  padding: 1% 5%;\n}\n\nheader .affix .locale {\n  position: relative;\n  display: inline;\n}\n\nheader .affix h4 {\n  margin-right: 1em;\n  display: inline;\n}\n\n@media(max-width: 980px){\n  header {\n    padding: 150px 0 50px 0;\n  }\n  header h1 {\n    padding: 0 0 15% 0;\n  }\n  header h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  header {\n    padding: 80px 0 30px 0;\n  }\n  header h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.cfp-button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  height: 34px;\n  margin: 20px auto;\n  vertical-align: middle;\n  line-height: 34px;\n  font-size: 18px;\n  cursor: pointer;\n  text-align: center;\n  width: 15%;\n}\n\n.cfp-button a {\n  text-decoration: none;\n}\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n  height: 100%;\n  overflow : auto;\n}\n\n.intro h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  margin: 0 0 1em 0;\n}\n\n.intro h3:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro h3:last-child {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n) {\n  float: right;\n}\n\n.intro h3:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro .highlights:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n) {\n  float: right;\n}\n\n.intro .highlights:nth-child(2n) {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n@media(max-width: 720px){\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro h3:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro h3:last-child {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n) {\n    float: right;\n  }\n  .intro h3:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro .highlights {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro .highlights:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro .highlights:last-child {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n) {\n    float: right;\n  }\n  .intro .highlights:nth-child(1n) {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.keynote, .call_for_papers, .early_bird {\n  line-height: 1.5em;\n  margin: 0 0 4em 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 0 auto;\n  margin-bottom: 1.5em;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.keynote h2, .call_for_papers h2, .feature-speakers h2, .early_bird h2 {\n  font-size: 2em;\n  text-align: center;\n  margin: 0 0 1em 0;\n}\n\n.keynote h3, .call_for_papers h3, .feature-speakers h3, .early_bird h3 {\n  font-size: 1.2em;\n  margin-top: 0.5em;\n}\n\n.keynote .info, .call_for_papers .info, .feature-speakers .info, .early_bird .info {\n  margin-top: 0.5em;\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    float: right;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  }\n\nfigure.feature-speaker:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(1n) .name {}\n\nfigure.feature-speaker:nth-child(1n) figcaption {}\n\nfigure.feature-speaker:nth-child(1n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  float: right;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  text-align: center;\n  font-weight: normal;\n  padding: 20px 0;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  width: 15%;\n}\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {}\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {}\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {}\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {}\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {}\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.button {\n  padding: 3px 5px;\n  margin: 0 2px;\n  background: #BB93AE;\n  border-radius: 3px;\n  text-decoration: none;\n}\n\n.button:active {\n  background: #8A6189;\n}\n\n.right {\n  float: right;\n}\n\n.locale {\n  position: absolute;\n  top: 0;\n  right: 0;\n  margin: 5px 5px;\n}\n\nheader {\n  padding: 180px 0 50px 0;\n}\n\nheader h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\nheader h4 {\n  font-size: 1.2em;\n  text-align: center;\n}\n\nheader .affix {\n  background: rgba(192,169,203,0.95);\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 90%;\n  padding: 1% 5%;\n}\n\nheader .affix .locale {\n  position: relative;\n  display: inline;\n}\n\nheader .affix h4 {\n  margin-right: 1em;\n  display: inline;\n}\n\n@media(max-width: 980px){\n  header {}\n  header {\n    padding: 150px 0 50px 0;\n  }\n  header h1 {\n    padding: 0 0 15% 0;\n  }\n  header h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  header {}\n  header {\n    padding: 80px 0 30px 0;\n  }\n  header h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.cfp-button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  height: 34px;\n  margin: 20px auto;\n  vertical-align: middle;\n  line-height: 34px;\n  font-size: 18px;\n  cursor: pointer;\n  text-align: center;\n  width: 15%;\n}\n\n.cfp-button a {\n  text-decoration: none;\n}\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n  height: 100%;\n  overflow : auto;\n}\n\n.intro h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  margin: 0 0 1em 0;\n}\n\n.intro h3:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro h3:last-child {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n) {\n  margin-right: 0;\n  float: right;\n}\n\n.intro h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro .highlights:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n) {\n  margin-right: 0;\n  float: right;\n}\n\n.intro .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n@media(max-width: 720px){\n  .intro {}\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro h3:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro h3:last-child {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n) {\n    margin-right: 0;\n    float: right;\n  }\n  .intro h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro .highlights {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro .highlights:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro .highlights:last-child {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n) {\n    margin-right: 0;\n    float: right;\n  }\n  .intro .highlights:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.keynote, .call_for_papers, .early_bird {\n  line-height: 1.5em;\n  margin: 0 0 4em 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 0 auto;\n  margin-bottom: 1.5em;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.milestone h2, .keynote h2, .call_for_papers h2, .feature-speakers h2, .early_bird h2 {\n  font-size: 2em;\n  text-align: center;\n  margin: 0 0 1em 0;\n}\n\n.milestone h3, .keynote h3, .call_for_papers h3, .feature-speakers h3, .early_bird h3 {\n  font-size: 1.2em;\n  margin-top: 0.5em;\n}\n\n.milestone .info, .keynote .info, .call_for_papers .info, .feature-speakers .info, .early_bird .info {\n  margin-top: 0.5em;\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker {}\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  figure.feature-speaker:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n    float: right;\n  }\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\nfigure.feature-speaker:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(1n) .name {}\n\nfigure.feature-speaker:nth-child(1n) figcaption {}\n\nfigure.feature-speaker:nth-child(1n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n) {}\n  figure.feature-speaker:nth-child(1n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n  float: right;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n.milestones {\n  text-align: center;\n  margin-bottom: 84px;\n}\n\n.milestone-range {\n  margin: 32px 0 16px;\n}\n\n.milestone-range * {\n  /* universal selector sucks... */\n  color: rgba(255, 255, 255, .56);\n}\n\n.milestone-title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.milestone-title a:link, .milestone-title a:visited {\n  text-decoration: none;\n}\n\n.milestone-title a:hover {\n  text-decoration: underline;\n}\n\n.milestone-label {\n  font-size: 12px;\n  color: rgba(144,110,169,0.9);\n  background: rgba(255, 255, 255, .56);\n  padding: 4px 8px;\n  margin-top: 16px;\n  border-radius: 2px;\n  display: inline-block;\n  font-weight: bold;\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {}\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  text-align: center;\n  font-weight: normal;\n  padding: 20px 0;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  width: 15%;\n}\n", ""]);
 
 	// exports
 
@@ -9712,6 +9712,7 @@
 	 */
 	var EventInterface = {
 	  type: null,
+	  target: null,
 	  // currentTarget is set when dispatching; no use in copying it here
 	  currentTarget: emptyFunction.thatReturnsNull,
 	  eventPhase: null,
@@ -9745,8 +9746,6 @@
 	  this.dispatchConfig = dispatchConfig;
 	  this.dispatchMarker = dispatchMarker;
 	  this.nativeEvent = nativeEvent;
-	  this.target = nativeEventTarget;
-	  this.currentTarget = nativeEventTarget;
 
 	  var Interface = this.constructor.Interface;
 	  for (var propName in Interface) {
@@ -9757,7 +9756,11 @@
 	    if (normalize) {
 	      this[propName] = normalize(nativeEvent);
 	    } else {
-	      this[propName] = nativeEvent[propName];
+	      if (propName === 'target') {
+	        this.target = nativeEventTarget;
+	      } else {
+	        this[propName] = nativeEvent[propName];
+	      }
 	    }
 	  }
 
@@ -13606,7 +13609,10 @@
 	      }
 	    });
 
-	    nativeProps.children = content;
+	    if (content) {
+	      nativeProps.children = content;
+	    }
+
 	    return nativeProps;
 	  }
 
@@ -19079,7 +19085,7 @@
 
 	'use strict';
 
-	module.exports = '0.14.6';
+	module.exports = '0.14.7';
 
 /***/ },
 /* 155 */
@@ -20056,11 +20062,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -20121,11 +20127,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -20331,11 +20337,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -20371,6 +20377,10 @@
 
 	var _mail_chimp2 = _interopRequireDefault(_mail_chimp);
 
+	var _milestone = __webpack_require__(194);
+
+	var _milestone2 = _interopRequireDefault(_milestone);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20394,6 +20404,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "intro" },
+	        _react2.default.createElement(_milestone2.default, null),
 	        _react2.default.createElement(_call_for_papers2.default, null),
 	        (0, _locale.getLocale)() === 'en-US' ? _react2.default.createElement(_early_bird2.default, null) : null,
 	        _react2.default.createElement(_keynote2.default, null),
@@ -20418,11 +20429,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -20510,11 +20521,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -20604,11 +20615,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -20671,11 +20682,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -20755,11 +20766,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -20932,6 +20943,8 @@
 		"./javascripts/components/keynote.jsx": 177,
 		"./javascripts/components/mail_chimp": 193,
 		"./javascripts/components/mail_chimp.jsx": 193,
+		"./javascripts/components/milestone": 194,
+		"./javascripts/components/milestone.jsx": 194,
 		"./javascripts/components/root": 167,
 		"./javascripts/components/root.jsx": 167,
 		"./javascripts/components/speaker": 178,
@@ -20944,10 +20957,11 @@
 		"./jsons/feature_speakers.json": 181,
 		"./jsons/header.json": 171,
 		"./jsons/keynote_speaker.json": 179,
+		"./jsons/milestones.json": 195,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 194,
-		"./stylesheets/reset.css": 196,
-		"./templates/index.html": 198
+		"./stylesheets/landing.css": 196,
+		"./stylesheets/reset.css": 198,
+		"./templates/index.html": 200
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -21005,11 +21019,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -21086,11 +21100,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -21165,11 +21179,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -21289,11 +21303,11 @@
 
 	'use strict';
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(9);
 
@@ -21369,10 +21383,203 @@
 /* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _locale = __webpack_require__(170);
+
+	var _milestones = __webpack_require__(195);
+
+	var _milestones2 = _interopRequireDefault(_milestones);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Milestone = function (_Component) {
+	  _inherits(Milestone, _Component);
+
+	  function Milestone() {
+	    _classCallCheck(this, Milestone);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Milestone).apply(this, arguments));
+	  }
+
+	  _createClass(Milestone, [{
+	    key: "render",
+	    value: function render() {
+	      var data = _milestones2.default[(0, _locale.getLocale)()];
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "milestone" },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          data.header
+	        ),
+	        _react2.default.createElement(
+	          "section",
+	          { className: "milestones" },
+	          data.milestones.map(function (_ref) {
+	            var range = _ref.range;
+	            var title = _ref.title;
+	            var url = _ref.url;
+	            var label = _ref.label;
+	            return _react2.default.createElement(
+	              "article",
+	              { className: "milestone", key: title },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "milestone-range" },
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "milestone-date" },
+	                  range[0]
+	                ),
+	                "－",
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "milestone-date" },
+	                  range[1]
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "milestone-title" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: url },
+	                  title
+	                ),
+	                label ? _react2.default.createElement(
+	                  "div",
+	                  null,
+	                  _react2.default.createElement(
+	                    "span",
+	                    { className: "milestone-label" },
+	                    label
+	                  )
+	                ) : ''
+	              )
+	            );
+	          })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Milestone;
+	}(_react.Component);
+
+	exports.default = Milestone;
+	;
+
+/***/ },
+/* 195 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"en-US": {
+			"header": "Important Dates",
+			"milestones": [
+				{
+					"range": [
+						"2016/1/12 12:00 CST",
+						"2016/2/22 23:50 CST"
+					],
+					"title": "Call for Paper",
+					"url": "http://g0v-summit2016.kktix.cc/events/g0v-cfp",
+					"label": "Due soon!"
+				},
+				{
+					"range": [
+						"2016/2/15",
+						"2016/3/20"
+					],
+					"title": "Early Bird Program",
+					"url": "http://g0v-summit2016.kktix.cc/events/early-bird"
+				},
+				{
+					"range": [
+						"2016/2/15",
+						"2016/3/20"
+					],
+					"title": "Contributor Registration",
+					"url": "http://g0v-summit2016.kktix.cc/events/g0ver"
+				},
+				{
+					"range": [
+						"2016/4/1",
+						"2016/4/15"
+					],
+					"title": "Regular Registration",
+					"url": "http://g0v-summit2016.kktix.cc/events/conference",
+					"label": "Not started yet"
+				}
+			]
+		},
+		"zh-TW": {
+			"header": "時間表",
+			"milestones": [
+				{
+					"range": [
+						"2016/1/12 12:00 CST",
+						"2016/2/22 23:50 CST"
+					],
+					"title": "徵求講者",
+					"url": "http://g0v-summit2016.kktix.cc/events/g0v-cfp",
+					"label": "即將截止！"
+				},
+				{
+					"range": [
+						"2016/2/15",
+						"2016/3/20"
+					],
+					"title": "國際早鳥票",
+					"url": "http://g0v-summit2016.kktix.cc/events/early-bird"
+				},
+				{
+					"range": [
+						"2016/2/15",
+						"2016/3/20"
+					],
+					"title": "社群貢獻票",
+					"url": "http://g0v-summit2016.kktix.cc/events/g0ver"
+				},
+				{
+					"range": [
+						"2016/4/1",
+						"2016/4/15"
+					],
+					"title": "一般票",
+					"url": "http://g0v-summit2016.kktix.cc/events/conference",
+					"label": "尚未開賣"
+				}
+			]
+		}
+	};
+
+/***/ },
+/* 196 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(195);
+	var content = __webpack_require__(197);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -21392,7 +21599,7 @@
 	}
 
 /***/ },
-/* 195 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -21400,19 +21607,19 @@
 
 
 	// module
-	exports.push([module.id, "* {\n  color: #fff;\n  font-size: 15px;\n}\n\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\n\np, ul {\n  line-height: 1.5;\n}\n\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\n\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden\n}\n\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n\n@media(max-width: 860px){\n\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n  }\n\n@media(max-width: 720px){\n\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n  }\n\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow : auto;\n  clear: both;\n}\n\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto\n}\n\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer\n}\n\n.sponsor li:hover {\n  opacity: 1;\n}\n\n@media(max-width: 1400px){\n\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n    }\n\n@media(max-width: 1280px){\n\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n    }\n\n@media(max-width: 720px) {\n\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n    }\n\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n", ""]);
+	exports.push([module.id, "* {\n  color: #fff;\n  font-size: 15px;\n}\n\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\n\np, ul {\n  line-height: 1.5;\n}\n\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\n\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden\n}\n\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n\n@media(max-width: 860px){\n\n  main {}\n\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n  }\n\n@media(max-width: 720px){\n\n  main {}\n\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n  }\n\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow : auto;\n  clear: both;\n}\n\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto\n}\n\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer\n}\n\n.sponsor li:hover {\n  opacity: 1;\n}\n\n@media(max-width: 1400px){\n\n  .sponsor ul {}\n\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n    }\n\n@media(max-width: 1280px){\n\n  .sponsor ul {}\n\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n    }\n\n@media(max-width: 720px) {\n\n  .sponsor ul {}\n\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n    }\n\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 196 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(197);
+	var content = __webpack_require__(199);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -21432,7 +21639,7 @@
 	}
 
 /***/ },
-/* 197 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -21446,7 +21653,7 @@
 
 
 /***/ },
-/* 198 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "index.html";
