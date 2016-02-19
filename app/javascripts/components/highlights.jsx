@@ -5,7 +5,7 @@ import { getLocale } from "../locale";
 
 class Hightlights extends Component {
   render() {
-    return <div>
+    return <div className="highlight clearfix">
       <h3>After g0v summit 2014</h3>
       <div className="highlights">
         <p>Here are some highlights in the local community:</p>

@@ -134,6 +134,9 @@ header {
       margin-left: 2.5em;
     }
   }
+  .clearfix {
+    overflow: auto;
+  }
 }
 
 .keynote, .call_for_papers, .early_bird {
