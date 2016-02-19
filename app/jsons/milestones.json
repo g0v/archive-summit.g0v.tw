@@ -1,0 +1,38 @@
+{
+  "en-US": {
+    "header": "Important Dates",
+    "milestones": [
+      {
+        "range": ["2016/1/12 12:00 CST", "2016/2/22 23:50 CST"],
+        "title": "Call for Paper"
+      }, {
+        "range": ["2016/2/15", "2016/3/20"],
+        "title": "Early Bird Program"
+      }, {
+        "range": ["2016/2/15", "2016/3/20"],
+        "title": "Contributor Registration"
+      }, {
+        "range": ["2016/4/1", "2016/4/15"],
+        "title": "Normal Registration"
+      }
+    ]
+  },
+  "zh-TW": {
+    "header": "時間表",
+    "milestones": [
+      {
+        "range": ["2016/1/12 Tue. 12:00 CST", "2016/2/22 Mon. 23:50 CST"],
+        "title": "徵求講者"
+      }, {
+        "range": ["2016/2/15", "2016/3/20"],
+        "title": "國際早鳥票"
+      }, {
+        "range": ["2016/2/15", "2016/3/20"],
+        "title": "社群貢獻票"
+      }, {
+        "range": ["2016/4/1", "2016/4/15"],
+        "title": "社群貢獻票"
+      }
+    ]
+  }
+}

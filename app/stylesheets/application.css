@@ -152,7 +152,7 @@ header {
   }
 }
 
-.keynote, .call_for_papers, .feature-speakers, .early_bird {
+.milestone, .keynote, .call_for_papers, .feature-speakers, .early_bird {
   h2 {
     font-size: 2em;
     text-align: center;
@@ -186,6 +186,23 @@ figure.feature-speaker {
     width: 120px;
     border-radius: 50%;
   }
+}
+
+.milestones {
+  text-align: center;
+  margin-bottom: 84px;
+}
+
+.milestone-range {
+  margin: 32px 0 16px;
+  * { /* universal selector sucks... */
+    color: rgba(255, 255, 255, .56);
+  }
+}
+
+.milestone-title {
+  font-size: 20px;
+  font-weight: 200;
 }
 
 #mc_embed_signup {
