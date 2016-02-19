@@ -203,6 +203,24 @@ figure.feature-speaker {
 .milestone-title {
   font-size: 20px;
   font-weight: 200;
+
+  a:link, a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.milestone-label {
+  font-size: 12px;
+  color: rgba(144,110,169,0.9);
+  background: rgba(255, 255, 255, .56);
+  padding: 4px 8px;
+  margin-top: 16px;
+  border-radius: 2px;
+  display: inline-block;
+  font-weight: bold;
 }
 
 #mc_embed_signup {
