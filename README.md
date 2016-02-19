@@ -4,7 +4,7 @@
 
 ### local setup
 
-Install packages via `$ npm install` and run `$ webpack-dev-server` to see `localhost:8080/2016`
+Install packages via `$ npm install` and run `$ npm start` to see `localhost:8080/2016/`
 
 ### git flow
 

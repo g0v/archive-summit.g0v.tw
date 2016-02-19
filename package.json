@@ -5,7 +5,8 @@
   "scripts": {
     "build": "webpack",
     "test": "npm run build",
-    "webpack": "webpack --watch -d --display-reasons --display-chucks --progress"
+    "webpack": "webpack --watch -d --display-reasons --display-chucks --progress",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
