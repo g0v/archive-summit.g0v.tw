@@ -9,10 +9,12 @@ import FeatureSpeakers from "./feature_speakers";
 import About from "./about";
 import Hightlights from "./highlights";
 import MailChimp from "./mail_chimp";
+import Milestone from './milestone';
 
 class Intro extends Component {
   render() {
     return <div className="intro">
+      <Milestone />
       <CallForPapers />
       { getLocale() === 'en-US' ? <EarlyBirdProgram /> : null }
       <Keynote />

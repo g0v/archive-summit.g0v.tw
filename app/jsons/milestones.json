@@ -1,0 +1,50 @@
+{
+  "en-US": {
+    "header": "Important Dates",
+    "milestones": [
+      {
+        "range": ["2016/1/12 12:00 CST", "2016/2/22 23:50 CST"],
+        "title": "Call for Paper",
+        "url": "http://g0v-summit2016.kktix.cc/events/g0v-cfp",
+        "label": "Due soon!"
+      }, {
+        "range": ["2016/2/15", "2016/3/20"],
+        "title": "Early Bird Program",
+        "url": "http://g0v-summit2016.kktix.cc/events/early-bird"
+      }, {
+        "range": ["2016/2/15", "2016/3/20"],
+        "title": "Contributor Registration",
+        "url": "http://g0v-summit2016.kktix.cc/events/g0ver"
+      }, {
+        "range": ["2016/4/1", "2016/4/15"],
+        "title": "Regular Registration",
+        "url": "http://g0v-summit2016.kktix.cc/events/conference",
+        "label": "Not started yet"
+      }
+    ]
+  },
+  "zh-TW": {
+    "header": "時間表",
+    "milestones": [
+      {
+        "range": ["2016/1/12 12:00 CST", "2016/2/22 23:50 CST"],
+        "title": "徵求講者",
+        "url": "http://g0v-summit2016.kktix.cc/events/g0v-cfp",
+        "label": "即將截止！"
+      }, {
+        "range": ["2016/2/15", "2016/3/20"],
+        "title": "國際早鳥票",
+        "url": "http://g0v-summit2016.kktix.cc/events/early-bird"
+      }, {
+        "range": ["2016/2/15", "2016/3/20"],
+        "title": "社群貢獻票",
+        "url": "http://g0v-summit2016.kktix.cc/events/g0ver"
+      }, {
+        "range": ["2016/4/1", "2016/4/15"],
+        "title": "一般票",
+        "url": "http://g0v-summit2016.kktix.cc/events/conference",
+        "label": "尚未開賣"
+      }
+    ]
+  }
+}
