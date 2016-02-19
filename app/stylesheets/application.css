@@ -42,6 +42,7 @@ header {
   }
   h4 {
     font-size: 1.2em;
+    line-height: 1.4;
     text-align: center;
   }
   .affix {
@@ -83,18 +84,21 @@ header {
 }
 
 .cfp-button {
-  background-color: #6C5368;
-  border: none;
-  border-radius: 5px;
-  height: 34px;
-  margin: 20px auto;
-  vertical-align: middle;
-  line-height: 34px;
-  font-size: 18px;
-  cursor: pointer;
   text-align: center;
-  width: 15%;
+
   a {
+    display: inline-block;
+    background-color: #6C5368;
+    border: none;
+    border-radius: 5px;
+    height: 34px;
+    margin: 20px auto;
+    vertical-align: middle;
+    line-height: 34px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 20px;
     text-decoration: none;
   }
 }
@@ -120,6 +124,7 @@ header {
 
   h3 {
     lost-column: 1/4 2;
+    line-height: 1.4;
     margin: 0 0 1em 0;
   }
   .highlights {
@@ -132,28 +137,31 @@ header {
       margin-left: 2.5em;
     }
   }
+  .clearfix {
+    overflow: auto;
+  }
 }
 
-.keynote, .call_for_papers, .early_bird {
+.milestones, .keynote, .call_for_papers, .early_bird, .feature-speakers, .about, .highlight{
   line-height: 1.5em;
-  margin: 0 0 4em 0;
+  margin: 0 0 84px 0;
 }
 
 .keynote-speaker {
   text-align: center;
   width: 30%;
-  margin: 0 auto;
-  margin-bottom: 1.5em;
+  margin: 1.5em auto;
   img {
     width: 120px;
     border-radius: 50%;
   }
 }
 
-.milestone, .keynote, .call_for_papers, .feature-speakers, .early_bird {
+.milestone, .keynote, .call_for_papers, .feature-speakers, .early_bird, #mc_embed_signup {
   h2 {
     font-size: 2em;
     text-align: center;
+    line-height: 1.4;
     margin: 0 0 1em 0;
   }
   h3 {
@@ -162,6 +170,12 @@ header {
   }
   .info {
     margin-top: 0.5em;
+  }
+}
+
+@media(min-width: 720px){
+  .feature-speakers h2 {
+    margin-bottom: 2em; /* enlarge horizontal gap match the vertical gaps of the circles below */
   }
 }
 
@@ -188,7 +202,6 @@ figure.feature-speaker {
 
 .milestones {
   text-align: center;
-  margin-bottom: 84px;
 }
 
 .milestone-range {
@@ -261,9 +274,7 @@ figure.feature-speaker {
 
 #mc_embed_signup_scroll {
   label {
-    text-align: center;
     font-weight: normal;
-    padding: 20px 0;
   }
 
   input.email {
@@ -282,6 +293,6 @@ figure.feature-speaker {
     border-radius: 5px;
     margin: 20px auto;
     cursor: pointer;
-    width: 15%;
+    padding: 4px 16px;
   }
 }
