@@ -18,7 +18,7 @@
       }, {
         "range": ["2016/4/1", "2016/4/15"],
         "title": "Regular Registration",
-        "url": "",
+        "url": "http://g0v-summit2016.kktix.cc/events/conference",
         "label": "Not started yet"
       }
     ]
@@ -42,7 +42,7 @@
       }, {
         "range": ["2016/4/1", "2016/4/15"],
         "title": "一般票",
-        "url": "",
+        "url": "http://g0v-summit2016.kktix.cc/events/conference",
         "label": "尚未開賣"
       }
     ]
