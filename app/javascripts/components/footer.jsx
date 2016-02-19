@@ -13,7 +13,7 @@ class Footer extends Component {
         </ul>
       </div>
 
-      Copyright © g0v Summit 2015
+      Copyright © g0v Summit 2015・
       <a href="https://g0v.hackpad.com/ep/pad/static/2mprMIpYMz9" target="_blank">Code of Conduct</a>
     </footer>;
   }
