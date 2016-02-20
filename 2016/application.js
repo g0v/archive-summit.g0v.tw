@@ -21501,8 +21501,8 @@
 			"milestones": [
 				{
 					"range": [
-						"2016/1/12 12:00 CST",
-						"2016/2/22 23:50 CST"
+						"2016/1/12 04:00 UTC",
+						"2016/2/22 17:50 UTC"
 					],
 					"title": "Call for Paper",
 					"url": "http://g0v-summit2016.kktix.cc/events/g0v-cfp",
