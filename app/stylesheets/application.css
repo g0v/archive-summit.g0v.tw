@@ -142,7 +142,7 @@ header {
   }
 }
 
-.milestones, .keynote, .call_for_papers, .early_bird, .feature-speakers, .about, .highlight{
+.milestones, .keynote, .call_for_papers, .early_bird, .feature-speakers, .about, .highlight, .sponsorship{
   line-height: 1.5em;
   margin: 0 0 84px 0;
 }
