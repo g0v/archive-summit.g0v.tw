@@ -157,7 +157,7 @@ header {
   }
 }
 
-.milestone, .keynote, .call_for_papers, .feature-speakers, .early_bird, #mc_embed_signup {
+.milestone, .keynote, .call_for_papers, .feature-speakers, .early_bird, #mc_embed_signup, .sponsorship {
   h2 {
     font-size: 2em;
     text-align: center;
@@ -236,7 +236,7 @@ figure.feature-speaker {
 
 #mc_embed_signup {
   clear: both;
-  margin: 0 auto;
+  margin: 0 auto 84px;
   text-align: center;
 
   p {
@@ -295,4 +295,8 @@ figure.feature-speaker {
     cursor: pointer;
     padding: 4px 16px;
   }
+}
+
+.sponsorship p {
+  text-align: center;
 }

@@ -10,6 +10,7 @@ import About from "./about";
 import Hightlights from "./highlights";
 import MailChimp from "./mail_chimp";
 import Milestone from './milestone';
+import Sponsorship from './sponsorship';
 
 class Intro extends Component {
   render() {
@@ -22,6 +23,7 @@ class Intro extends Component {
       <About />
       <Hightlights />
       <MailChimp />
+      <Sponsorship />
     </div>;
   }
 };
