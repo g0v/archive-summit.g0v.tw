@@ -122,7 +122,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n} /* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {}\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {}\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {}\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {}\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {}\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.button {\n  padding: 3px 5px;\n  margin: 0 2px;\n  background: #BB93AE;\n  border-radius: 3px;\n  text-decoration: none;\n}\n\n.button:active {\n  background: #8A6189;\n}\n\n.right {\n  float: right;\n}\n\n.locale {\n  position: absolute;\n  top: 0;\n  right: 0;\n  margin: 5px 5px;\n}\n\nheader {\n  padding: 180px 0 50px 0;\n}\n\nheader h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\nheader h4 {\n  font-size: 1.2em;\n  line-height: 1.4;\n  text-align: center;\n}\n\nheader .affix {\n  background: rgba(192,169,203,0.95);\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 90%;\n  padding: 1% 5%;\n}\n\nheader .affix .locale {\n  position: relative;\n  display: inline;\n}\n\nheader .affix h4 {\n  margin-right: 1em;\n  display: inline;\n}\n\n@media(max-width: 980px){\n  header {}\n  header {\n    padding: 150px 0 50px 0;\n  }\n  header h1 {\n    padding: 0 0 15% 0;\n  }\n  header h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  header {}\n  header {\n    padding: 80px 0 30px 0;\n  }\n  header h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.cfp-button {\n  text-align: center;\n}\n\n.cfp-button a {\n  display: inline-block;\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  height: 34px;\n  margin: 20px auto;\n  vertical-align: middle;\n  line-height: 34px;\n  font-size: 18px;\n  cursor: pointer;\n  text-align: center;\n  padding: 4px 20px;\n  text-decoration: none;\n}\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n}\n\n.intro h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  line-height: 1.4;\n  margin: 0 0 1em 0;\n}\n\n.intro h3:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro h3:last-child {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n) {\n  margin-right: 0;\n  float: right;\n}\n\n.intro h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro .highlights:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n) {\n  margin-right: 0;\n  float: right;\n}\n\n.intro .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n.intro .clearfix {\n  overflow: auto;\n}\n\n@media(max-width: 720px){\n  .intro {}\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro h3:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro h3:last-child {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n) {\n    margin-right: 0;\n    float: right;\n  }\n  .intro h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro .highlights {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro .highlights:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro .highlights:last-child {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n) {\n    margin-right: 0;\n    float: right;\n  }\n  .intro .highlights:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.milestones, .keynote, .call_for_papers, .early_bird, .feature-speakers, .about, .highlight{\n  line-height: 1.5em;\n  margin: 0 0 84px 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 1.5em auto;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.milestone h2, .keynote h2, .call_for_papers h2, .feature-speakers h2, .early_bird h2, #mc_embed_signup h2 {\n  font-size: 2em;\n  text-align: center;\n  line-height: 1.4;\n  margin: 0 0 1em 0;\n}\n\n.milestone h3, .keynote h3, .call_for_papers h3, .feature-speakers h3, .early_bird h3, #mc_embed_signup h3 {\n  font-size: 1.2em;\n  margin-top: 0.5em;\n}\n\n.milestone .info, .keynote .info, .call_for_papers .info, .feature-speakers .info, .early_bird .info, #mc_embed_signup .info {\n  margin-top: 0.5em;\n}\n\n@media(min-width: 720px){\n  .feature-speakers h2 {\n    margin-bottom: 2em; /* enlarge horizontal gap match the vertical gaps of the circles below */\n  }\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker {}\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  figure.feature-speaker:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n    float: right;\n  }\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\nfigure.feature-speaker:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(1n) .name {}\n\nfigure.feature-speaker:nth-child(1n) figcaption {}\n\nfigure.feature-speaker:nth-child(1n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n) {}\n  figure.feature-speaker:nth-child(1n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n  float: right;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n.milestones {\n  text-align: center;\n}\n\n.milestone-range {\n  margin: 32px 0 16px;\n}\n\n.milestone-range * { /* universal selector sucks... */\n  color: rgba(255, 255, 255, .56);\n}\n\n.milestone-title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.milestone-title a:link, .milestone-title a:visited {\n  text-decoration: none;\n}\n\n.milestone-title a:hover {\n  text-decoration: underline;\n}\n\n.milestone-label {\n  font-size: 12px;\n  color: rgba(144,110,169,0.9);\n  background: rgba(255, 255, 255, .56);\n  padding: 4px 8px;\n  margin-top: 16px;\n  border-radius: 2px;\n  display: inline-block;\n  font-weight: bold;\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {}\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  font-weight: normal;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  padding: 4px 16px;\n}\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n} /* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol, ul {\n  list-style: none;\n}\nblockquote, q {\n  quotes: none;\n}\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n* {\n  color: #fff;\n  font-size: 15px;\n}\nh3 {\n  font-size: 1.5em;\n  font-weight: bold;\n}\np, ul {\n  line-height: 1.5;\n}\nbody {\n  background-image: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0, #C180AA),\n    color-stop(1, #130E17)\n  );\n  background-image: -webkit-linear-gradient(bottom, #C180AA 0%, #130E17 100%);\n  background-image: -webkit-linear-gradient(top, #C180AA 0%, #130E17 100%);\n  background-image: linear-gradient(to bottom, #C180AA 0%, #130E17 100%);\n}\nmain {\n  position: relative;\n  max-width: 1140px;\n  margin: 0 auto;\n  clear: both;\n  overflow: hidden;\n}\nmain::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-size: 100%;\n  background-position: 0 -250px;\n  background-repeat: no-repeat;\n  opacity: 0.3;\n  z-index: -1;\n}\n@media(max-width: 860px) {\n  main {}\n  main {\n    background-size: 100%;\n    background-position: 0 -120px ;\n  }\n}\n@media(max-width: 720px) {\n  main {}\n  main {\n    background-size: 150%;\n    background-position: center -300px;\n  }\n}\n.sponsor {\n  background-color: #64455c;\n  padding: 40px 10%;\n  overflow: auto;\n  clear: both;\n}\n.sponsor h3 {\n  text-align: center;\n  margin-bottom: 20px;\n}\n.sponsor ul {\n  width: 100%;\n  max-width: 1120px;\n  padding: 0 30px;\n  margin: 0 auto;\n}\n.sponsor li {\n  opacity: 0.75;\n  float: left;\n  width: 260px;\n  height: 80px;\n  line-height: 30px;\n  margin: 10px 10px;\n  padding: 10px 0;\n  text-align: center;\n  border-radius: 5px;\n  background-color: rgba(255,255,255,0.2);\n  cursor: pointer;\n}\n.sponsor li:hover {\n  opacity: 1;\n}\n@media(max-width: 1400px) {\n  .sponsor ul {}\n  .sponsor ul {\n    max-width: 840px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 1280px) {\n  .sponsor ul {}\n  .sponsor ul {\n    max-width: 570px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\n@media(max-width: 720px) {\n  .sponsor ul {}\n  .sponsor ul {\n    max-width: 280px;\n    padding: 0;\n    margin: 0 auto;\n  }\n}\nfooter {\n  background-color: #64455c;\n  padding: 20px 0;\n  text-align: center;\n}\n\n.button {\n  padding: 3px 5px;\n  margin: 0 2px;\n  background: #BB93AE;\n  border-radius: 3px;\n  text-decoration: none;\n}\n\n.button:active {\n  background: #8A6189;\n}\n\n.right {\n  float: right;\n}\n\n.locale {\n  position: absolute;\n  top: 0;\n  right: 0;\n  margin: 5px 5px;\n}\n\nheader {\n  padding: 180px 0 50px 0;\n}\n\nheader h1 {\n  background-image: url(" + __webpack_require__(6) + ");\n  background-position: center top;\n  background-repeat: no-repeat;\n  background-size: 100% auto;\n  overflow: hidden;\n  padding: 0px 0px 12%;\n  text-indent: 100%;\n  white-space: nowrap;\n  height: 0px;\n  max-width: 380px;\n  width: 100%;\n  margin: 0 auto;\n}\n\nheader h4 {\n  font-size: 1.2em;\n  line-height: 1.4;\n  text-align: center;\n}\n\nheader .affix {\n  background: rgba(192,169,203,0.95);\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 90%;\n  padding: 1% 5%;\n}\n\nheader .affix .locale {\n  position: relative;\n  display: inline;\n}\n\nheader .affix h4 {\n  margin-right: 1em;\n  display: inline;\n}\n\n@media(max-width: 980px){\n  header {}\n  header {\n    padding: 150px 0 50px 0;\n  }\n  header h1 {\n    padding: 0 0 15% 0;\n  }\n  header h2 {\n    margin-top: 10px;\n  }\n  }\n\n@media(max-width: 720px){\n  header {}\n  header {\n    padding: 80px 0 30px 0;\n  }\n  header h1 {\n    width: 100%;\n    height: 40px;\n  }\n  }\n\n.cfp-button {\n  text-align: center;\n}\n\n.cfp-button a {\n  display: inline-block;\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  height: 34px;\n  margin: 20px auto;\n  vertical-align: middle;\n  line-height: 34px;\n  font-size: 18px;\n  cursor: pointer;\n  text-align: center;\n  padding: 4px 20px;\n  text-decoration: none;\n}\n\n.intro {\n  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );\n  padding: 50px 10%;\n}\n\n.intro h3 {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  line-height: 1.4;\n  margin: 0 0 1em 0;\n}\n\n.intro h3:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro h3:last-child {\n  margin-right: 0;\n}\n\n.intro h3:nth-child(2n) {\n  margin-right: 0;\n  float: right;\n}\n\n.intro h3:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro .highlights {\n  width: calc(99.99% * 3/4 - (30px - 30px * 3/4));\n  margin: 0 0 1.5em 0;\n}\n\n.intro .highlights:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.intro .highlights:last-child {\n  margin-right: 0;\n}\n\n.intro .highlights:nth-child(2n) {\n  margin-right: 0;\n  float: right;\n}\n\n.intro .highlights:nth-child(2n + 1) {\n  clear: left;\n}\n\n.intro ul {\n  list-style: circle\n}\n\n.intro ul > li {\n  margin-left: 2.5em;\n}\n\n.intro .clearfix {\n  overflow: auto;\n}\n\n@media(max-width: 720px){\n  .intro {}\n  .intro {\n    padding: 50px 5%;\n  }\n  .intro h3 {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro h3:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro h3:last-child {\n    margin-right: 0;\n  }\n  .intro h3:nth-child(1n) {\n    margin-right: 0;\n    float: right;\n  }\n  .intro h3:nth-child(1n + 1) {\n    clear: left;\n  }\n  .intro .highlights {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  .intro .highlights:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .intro .highlights:last-child {\n    margin-right: 0;\n  }\n  .intro .highlights:nth-child(1n) {\n    margin-right: 0;\n    float: right;\n  }\n  .intro .highlights:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\n.milestones, .keynote, .call_for_papers, .early_bird, .feature-speakers, .about, .highlight, .sponsorship{\n  line-height: 1.5em;\n  margin: 0 0 84px 0;\n}\n\n.keynote-speaker {\n  text-align: center;\n  width: 30%;\n  margin: 1.5em auto;\n}\n\n.keynote-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n.milestone h2, .keynote h2, .call_for_papers h2, .feature-speakers h2, .early_bird h2, #mc_embed_signup h2, .sponsorship h2 {\n  font-size: 2em;\n  text-align: center;\n  line-height: 1.4;\n  margin: 0 0 1em 0;\n}\n\n.milestone h3, .keynote h3, .call_for_papers h3, .feature-speakers h3, .early_bird h3, #mc_embed_signup h3, .sponsorship h3 {\n  font-size: 1.2em;\n  margin-top: 0.5em;\n}\n\n.milestone .info, .keynote .info, .call_for_papers .info, .feature-speakers .info, .early_bird .info, #mc_embed_signup .info, .sponsorship .info {\n  margin-top: 0.5em;\n}\n\n@media(min-width: 720px){\n  .feature-speakers h2 {\n    margin-bottom: 2em; /* enlarge horizontal gap match the vertical gaps of the circles below */\n  }\n}\n\nfigure.feature-speaker {\n  text-align: center;\n  width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n}\n\nfigure.feature-speaker .name {\n  font-weight: bold;\n  margin: 0.5em 0;\n}\n\nfigure.feature-speaker figcaption {\n  margin: 0 0 1em 0;\n}\n\nfigure.feature-speaker img {\n  width: 120px;\n  border-radius: 50%;\n}\n\n@media(max-width: 720px) {\n  figure.feature-speaker {}\n  figure.feature-speaker {\n    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));\n  }\n  figure.feature-speaker:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  figure.feature-speaker:last-child {\n    margin-right: 0;\n  }\n  figure.feature-speaker:nth-child(1n) {\n    margin-right: 0;\n    float: right;\n  }\n  figure.feature-speaker:nth-child(1n + 1) {\n    clear: left;\n  }\n  }\n\nfigure.feature-speaker:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\nfigure.feature-speaker:nth-child(1n) .name {}\n\nfigure.feature-speaker:nth-child(1n) figcaption {}\n\nfigure.feature-speaker:nth-child(1n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(1n) {}\n  figure.feature-speaker:nth-child(1n) {}\n}\n\nfigure.feature-speaker:last-child {\n  margin-right: 0;\n}\n\nfigure.feature-speaker:last-child .name {}\n\nfigure.feature-speaker:last-child figcaption {}\n\nfigure.feature-speaker:last-child img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:last-child {}\n  figure.feature-speaker:last-child {}\n}\n\nfigure.feature-speaker:nth-child(3n) {\n  margin-right: 0;\n  float: right;\n}\n\nfigure.feature-speaker:nth-child(3n) .name {}\n\nfigure.feature-speaker:nth-child(3n) figcaption {}\n\nfigure.feature-speaker:nth-child(3n) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n) {}\n  figure.feature-speaker:nth-child(3n) {}\n}\n\nfigure.feature-speaker:nth-child(3n + 1) {\n  clear: left;\n}\n\nfigure.feature-speaker:nth-child(3n + 1) .name {}\n\nfigure.feature-speaker:nth-child(3n + 1) figcaption {}\n\nfigure.feature-speaker:nth-child(3n + 1) img {}\n\n@media(max-width: 720px) {\n  figure.feature-speaker:nth-child(3n + 1) {}\n  figure.feature-speaker:nth-child(3n + 1) {}\n}\n\n.milestones {\n  text-align: center;\n}\n\n.milestone-range {\n  margin: 32px 0 16px;\n}\n\n.milestone-range * { /* universal selector sucks... */\n  color: rgba(255, 255, 255, .56);\n}\n\n.milestone-title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.milestone-title a:link, .milestone-title a:visited {\n  text-decoration: none;\n}\n\n.milestone-title a:hover {\n  text-decoration: underline;\n}\n\n.milestone-label {\n  font-size: 12px;\n  color: rgba(144,110,169,0.9);\n  background: rgba(255, 255, 255, .56);\n  padding: 4px 8px;\n  margin-top: 16px;\n  border-radius: 2px;\n  display: inline-block;\n  font-weight: bold;\n}\n\n#mc_embed_signup {\n  clear: both;\n  margin: 0 auto 84px;\n  text-align: center;\n}\n\n#mc_embed_signup p {\n  width: 100%;\n  padding: 20px 0;\n  text-align: center;\n}\n\n#mc_embed_signup input[type=email] {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%\n}\n\n#mc_embed_signup input[type=submit] {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n}\n\n#mc_embed_signup input[type=submit]:hover {\n  background-color: #5e3f59;\n}\n\n@media(max-width: 720px){\n  #mc_embed_signup input[type=email] {}\n  #mc_embed_signup input[type=email] {\n    width: 90%;\n  }\n    }\n\n#mc_embed_signup_scroll label {\n  font-weight: normal;\n}\n\n#mc_embed_signup_scroll input.email {\n  background-color: rgba(255,255,255,0.48);\n  border: 1px solid #fff;\n  padding: 0.5em 1em;\n  border-radius: 5px;\n  width: 40%;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n#mc_embed_signup_scroll input.button {\n  background-color: #6C5368;\n  border: none;\n  border-radius: 5px;\n  margin: 20px auto;\n  cursor: pointer;\n  padding: 4px 16px;\n}\n\n.sponsorship p {\n  text-align: center;\n}", ""]);
 
 	// exports
 
@@ -20381,6 +20381,10 @@
 
 	var _milestone2 = _interopRequireDefault(_milestone);
 
+	var _sponsorship = __webpack_require__(196);
+
+	var _sponsorship2 = _interopRequireDefault(_sponsorship);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20411,7 +20415,8 @@
 	        _react2.default.createElement(_feature_speakers2.default, null),
 	        _react2.default.createElement(_about2.default, null),
 	        _react2.default.createElement(_highlights2.default, null),
-	        _react2.default.createElement(_mail_chimp2.default, null)
+	        _react2.default.createElement(_mail_chimp2.default, null),
+	        _react2.default.createElement(_sponsorship2.default, null)
 	      );
 	    }
 	  }]);
@@ -20949,6 +20954,8 @@
 		"./javascripts/components/root.jsx": 167,
 		"./javascripts/components/speaker": 178,
 		"./javascripts/components/speaker.jsx": 178,
+		"./javascripts/components/sponsorship": 196,
+		"./javascripts/components/sponsorship.js": 196,
 		"./javascripts/locale": 170,
 		"./javascripts/locale.js": 170,
 		"./jsons/about.json": 190,
@@ -20959,9 +20966,9 @@
 		"./jsons/keynote_speaker.json": 179,
 		"./jsons/milestones.json": 195,
 		"./stylesheets/application.css": 2,
-		"./stylesheets/landing.css": 196,
-		"./stylesheets/reset.css": 198,
-		"./templates/index.html": 200
+		"./stylesheets/landing.css": 197,
+		"./stylesheets/reset.css": 199,
+		"./templates/index.html": 201
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -21580,10 +21587,94 @@
 /* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _locale = __webpack_require__(170);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Sponsorship = function (_Component) {
+	  _inherits(Sponsorship, _Component);
+
+	  function Sponsorship() {
+	    _classCallCheck(this, Sponsorship);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Sponsorship).apply(this, arguments));
+	  }
+
+	  _createClass(Sponsorship, [{
+	    key: "render",
+	    value: function render() {
+	      var isEn = (0, _locale.getLocale)() === 'en-US';
+
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "sponsorship" },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          isEn ? 'Sponsorship' : '贊助'
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          isEn ? _react2.default.createElement(
+	            "p",
+	            null,
+	            "If you would like to sponsor g0v Summit 2016, please kindly contact ",
+	            _react2.default.createElement(
+	              "a",
+	              { href: "mailto:g0v-summit-sponsor@googlegroups.com" },
+	              "g0v-summit-sponsor@googlegroups.com"
+	            ),
+	            "."
+	          ) : _react2.default.createElement(
+	            "p",
+	            null,
+	            "如果您欲贊助 g0v summit 2016，請與 ",
+	            _react2.default.createElement(
+	              "a",
+	              { href: "mailto:g0v-summit-sponsor@googlegroups.com" },
+	              "g0v-summit-sponsor@googlegroups.com"
+	            ),
+	            " 聯絡。"
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Sponsorship;
+	}(_react.Component);
+
+	;
+
+	exports.default = Sponsorship;
+
+/***/ },
+/* 197 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(197);
+	var content = __webpack_require__(198);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -21603,7 +21694,7 @@
 	}
 
 /***/ },
-/* 197 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -21617,13 +21708,13 @@
 
 
 /***/ },
-/* 198 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(199);
+	var content = __webpack_require__(200);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(7)(content, {});
@@ -21643,7 +21734,7 @@
 	}
 
 /***/ },
-/* 199 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -21657,7 +21748,7 @@
 
 
 /***/ },
-/* 200 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "index.html";
