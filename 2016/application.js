@@ -25344,6 +25344,19 @@
 	              )
 	            );
 	          })
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          _milestones2.default[(0, _locale.getLocale)()].media,
+	          _milestones2.default[(0, _locale.getLocale)()].person + ' ',
+	          "(",
+	          _react3.default.createElement(
+	            "a",
+	            { href: "mailto:" + _milestones2.default[(0, _locale.getLocale)()].email },
+	            _milestones2.default[(0, _locale.getLocale)()].email
+	          ),
+	          ")"
 	        )
 	      );
 	    }
@@ -25388,7 +25401,10 @@
 					"url": "http://g0v-summit2016.kktix.cc/events/conference",
 					"label": "Not started yet"
 				}
-			]
+			],
+			"media": "Media contact: ",
+			"person": "Lily Hsu",
+			"email": "g0v-summit-media@googlegroups.com"
 		},
 		"zh-TW": {
 			"header": "時間表",
@@ -25418,7 +25434,10 @@
 					"url": "http://g0v-summit2016.kktix.cc/events/conference",
 					"label": "尚未開賣"
 				}
-			]
+			],
+			"media": "媒體聯絡人：",
+			"person": "Lily Hsu",
+			"email": "g0v-summit-media@googlegroups.com"
 		}
 	};
 
@@ -25457,7 +25476,7 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__1qlYr {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 56px;\n  color: #000;\n}\n\n.styles-header__QOvXu {\n  margin: 29px 0 0 0;\n}\n.styles-range__30RdB {\n  margin: 32px 0 16px;\n}\n\n.styles-title__1v6LZ {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.styles-links__3LYNb {\n  color: #CB0031;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Milestone/styles.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,mBAAmB;EACnB,YAAY;EACZ,OAAO;EACP,mBAAmB;EACnB,4CAA4C;EAC5C,aAAa;EACb,qBAAqB;EACrB,YAAY;CACb;;AAED;EACE,mBAAmB;CACpB;AACD;EACE,oBAAoB;CACrB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB","file":"styles.css","sourcesContent":[".root {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 56px;\n  color: #000;\n}\n\n.header {\n  margin: 29px 0 0 0;\n}\n.range {\n  margin: 32px 0 16px;\n}\n\n.title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.links {\n  color: #CB0031;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__1qlYr {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n.styles-header__QOvXu {\n  margin: 29px 0 0 0;\n}\n.styles-range__30RdB {\n  margin: 22px 0 16px;\n}\n\n.styles-title__1v6LZ {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.styles-links__3LYNb {\n  color: #CB0031;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Milestone/styles.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,mBAAmB;EACnB,YAAY;EACZ,OAAO;EACP,mBAAmB;EACnB,4CAA4C;EAC5C,aAAa;EACb,oBAAoB;EACpB,YAAY;CACb;;AAED;EACE,mBAAmB;CACpB;AACD;EACE,oBAAoB;CACrB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB","file":"styles.css","sourcesContent":[".root {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n.header {\n  margin: 29px 0 0 0;\n}\n.range {\n  margin: 22px 0 16px;\n}\n\n.title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.links {\n  color: #CB0031;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
@@ -25594,6 +25613,16 @@
 	            _sponsors2.default[(0, _locale.getLocale)()].list
 	          ),
 	          _react3.default.createElement("ul", { className: _styles2.default.list })
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          _sponsors2.default[(0, _locale.getLocale)()].message,
+	          _react3.default.createElement(
+	            "a",
+	            { href: "mailto:" + _sponsors2.default[(0, _locale.getLocale)()].email },
+	            _sponsors2.default[(0, _locale.getLocale)()].email
+	          )
 	        )
 	      );
 	    }
@@ -25615,13 +25644,17 @@
 			"title": "Co-organizers",
 			"ocf": "Open Culture Foundation",
 			"iis": "Institute of Information Science, Academia Sinica",
-			"list": "Sponsors"
+			"list": "Sponsors",
+			"message": "If you would like to sponsor g0v Summit 2016, please kindly contact: ",
+			"email": "g0v-summit-sponsor@googlegroups.com"
 		},
 		"zh-TW": {
 			"title": "共同主辦",
 			"ocf": "財團法人開放文化基金會",
 			"iis": "中央研究院資訊科學研究所",
-			"list": "贊助夥伴"
+			"list": "贊助夥伴",
+			"message": "如果您欲贊助 g0v summit 2016，請聯繫：",
+			"email": "g0v-summit-sponsor@googlegroups.com"
 		}
 	};
 
@@ -25660,7 +25693,7 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__2LOKc {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 99px;\n}\n\n.styles-wrapper__1Y1Jq {\n  margin: 0 auto;\n  width: 960px;\n}\n\n.styles-header__3Iwlm {\n  margin: 0;\n  padding: 47px 0;\n  font-size: 24px;\n  color: #000;\n}\n\n.styles-list__1jJTE {\n  width: 960px;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.styles-item__PspLd {\n  display: inline-block;\n  width: 180px;\n  height: 119px;\n  margin: 0 15px;\n  vertical-align: middle;\n  padding: 24px 12px;\n  background-color: #FFF;\n  color: #000;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Sponsors/styles.css"],"names":[],"mappings":"AAAA;EACE,0BAA0B;EAC1B,mBAAmB;EACnB,qBAAqB;CACtB;;AAED;EACE,eAAe;EACf,aAAa;CACd;;AAED;EACE,UAAU;EACV,gBAAgB;EAChB,gBAAgB;EAChB,YAAY;CACb;;AAED;EACE,aAAa;EACb,iBAAiB;EACjB,UAAU;EACV,WAAW;CACZ;;AAED;EACE,sBAAsB;EACtB,aAAa;EACb,cAAc;EACd,eAAe;EACf,uBAAuB;EACvB,mBAAmB;EACnB,uBAAuB;EACvB,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 99px;\n}\n\n.wrapper {\n  margin: 0 auto;\n  width: 960px;\n}\n\n.header {\n  margin: 0;\n  padding: 47px 0;\n  font-size: 24px;\n  color: #000;\n}\n\n.list {\n  width: 960px;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.item {\n  display: inline-block;\n  width: 180px;\n  height: 119px;\n  margin: 0 15px;\n  vertical-align: middle;\n  padding: 24px 12px;\n  background-color: #FFF;\n  color: #000;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__2LOKc {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 17px;\n}\n\n.styles-wrapper__1Y1Jq {\n  margin: 0 auto;\n  width: 960px;\n}\n\n.styles-header__3Iwlm {\n  margin: 0;\n  padding: 47px 0;\n  font-size: 24px;\n  color: #000;\n}\n\n.styles-list__1jJTE {\n  width: 960px;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.styles-item__PspLd {\n  display: inline-block;\n  width: 180px;\n  height: 119px;\n  margin: 0 15px;\n  vertical-align: middle;\n  padding: 24px 12px;\n  background-color: #FFF;\n  color: #000;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Sponsors/styles.css"],"names":[],"mappings":"AAAA;EACE,0BAA0B;EAC1B,mBAAmB;EACnB,qBAAqB;CACtB;;AAED;EACE,eAAe;EACf,aAAa;CACd;;AAED;EACE,UAAU;EACV,gBAAgB;EAChB,gBAAgB;EAChB,YAAY;CACb;;AAED;EACE,aAAa;EACb,iBAAiB;EACjB,UAAU;EACV,WAAW;CACZ;;AAED;EACE,sBAAsB;EACtB,aAAa;EACb,cAAc;EACd,eAAe;EACf,uBAAuB;EACvB,mBAAmB;EACnB,uBAAuB;EACvB,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 17px;\n}\n\n.wrapper {\n  margin: 0 auto;\n  width: 960px;\n}\n\n.header {\n  margin: 0;\n  padding: 47px 0;\n  font-size: 24px;\n  color: #000;\n}\n\n.list {\n  width: 960px;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.item {\n  display: inline-block;\n  width: 180px;\n  height: 119px;\n  margin: 0 15px;\n  vertical-align: middle;\n  padding: 24px 12px;\n  background-color: #FFF;\n  color: #000;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
