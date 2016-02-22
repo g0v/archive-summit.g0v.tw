@@ -33,8 +33,7 @@ class Root extends Component {
         <AppBar />
         <MainSection>
           <MainInfo />
-          <Milestone />
-          <About />
+          {this.props.children}
           <Sponsors />
           <Footer />
         </MainSection>

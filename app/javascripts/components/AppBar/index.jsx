@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames";
+import { Link } from "react-router";
 import { getLocale } from "javascripts/locale";
 import info from "jsons/header.json";
 import styles from "./styles";
@@ -73,11 +74,21 @@ class Header extends Component {
           do {
             if (!this.state.hiddenMenu) {
               <ul className={styles.menu}>
-                <li className={styles.active}>{info[getLocale()].home}</li>
-                <li className={styles.item}>{info[getLocale()].schedule}</li>
-                <li className={styles.item}>{info[getLocale()].speakers}</li>
-                <li className={styles.item}>{info[getLocale()].sponsors}</li>
-                <li className={styles.item}>{info[getLocale()].transport}</li>
+                <li className={styles.active}>
+                  <Link to="/">{info[getLocale()].home}</Link>
+                </li>
+                <li className={styles.item}>
+                  {info[getLocale()].schedule}
+                </li>
+                <li className={styles.item}>
+                  <Link to="speakers">{info[getLocale()].speakers}</Link>
+                </li>
+                <li className={styles.item}>
+                  {info[getLocale()].sponsors}
+                </li>
+                <li className={styles.item}>
+                  {info[getLocale()].transport}
+                </li>
               </ul>
             }
           }

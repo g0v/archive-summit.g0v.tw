@@ -6,3 +6,4 @@ export Milestone from "./Milestone";
 export Sponsors from "./Sponsors";
 export Footer from "./Footer";
 export Root from "./Root";
+export SpeakerList from "./SpeakerList";
