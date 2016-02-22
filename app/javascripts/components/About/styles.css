@@ -1,0 +1,52 @@
+.root {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.94);
+  padding-bottom: 103px;
+  color: #000;
+}
+
+.wrapper {
+
+}
+
+.header {
+  padding-top: 55px;
+  margin: 0;
+}
+
+.description {
+  margin: 52px auto 84px;
+  width: 665px;
+}
+
+.links {
+
+}
+
+.title {
+  display: inline-block;
+  padding-top: 5px;
+  margin-right: 54px;
+  line-height: 22px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #FFF;
+  z-index: 10;
+  height: 46px;
+  padding: 11px 46px 13px 47px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  line-height: 22px;
+  margin: 0 21px;
+  cursor: pointer;
+}
+
+.active {
+  composes: button;
+  background-color: #CB0031;
+  color: #FFF;
+}

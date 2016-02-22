@@ -1,9 +1,19 @@
 {
   "en-US": {
+    "home": "Home",
+    "schedule": "Schedule",
+    "speakers": "Speakers",
+    "sponsors": "Sponsors",
+    "transport": "Transport",
     "date": "14-15 May, 2016",
     "location": "Academia Sinica, Taipei"
   },
   "zh-TW": {
+    "home": "首頁",
+    "schedule": "議程",
+    "speakers": "講者",
+    "sponsors": "贊助",
+    "transport": "交通",
     "date": "五月十四至十五，二零一六",
     "location": "中央研究院"
   }

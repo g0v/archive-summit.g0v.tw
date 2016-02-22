@@ -1,0 +1,27 @@
+.root {
+  display: block;
+  position: absolute;
+  right: 71px;
+  top: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.94);
+  width: 350px;
+  padding-bottom: 56px;
+  color: #000;
+}
+
+.header {
+  margin: 29px 0 0 0;
+}
+.range {
+  margin: 32px 0 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.links {
+  color: #CB0031;
+}

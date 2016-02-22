@@ -1,0 +1,5 @@
+.root {
+  background: url('./images/bg.png') 90px top;
+  width: 100%;
+  position: relative;
+}

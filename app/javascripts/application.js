@@ -1,11 +1,9 @@
-'use strict';
-
-import "../stylesheets/application.css";
-import "../images/keynote/heusser.jpg";
+import "normalize.css";
+import "stylesheets/application.css";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import Root from "./components/root";
+import { Root } from "javascripts/components";
 import locale, { getLocale, setLocale } from "./locale";
 
 if (!getLocale()) {
