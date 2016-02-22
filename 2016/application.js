@@ -22466,7 +22466,7 @@
 	      return _react2.default.createElement(
 	        "footer",
 	        { className: _styles2.default.root },
-	        "Copyright © g0v Summit 2015・",
+	        "Copyright © g0v Summit 2016・",
 	        _react2.default.createElement(
 	          "a",
 	          {
