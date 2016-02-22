@@ -1,0 +1,33 @@
+.root {
+  width: 504px;
+  text-align: right;
+  color: #000;
+  padding-top: 29px;
+  padding-bottom: 45px;
+}
+
+.year {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.logo {
+  height: 46px;
+  width: 239px;
+}
+
+.theme {
+  height: 168px;
+  width: 147px;
+}
+
+.day {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.place {
+  font-size: 32px;
+  font-weight: 600;
+}

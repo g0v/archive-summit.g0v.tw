@@ -4,10 +4,9 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import autoprefixer from "autoprefixer";
 
 export default {
-  context: __dirname,
 
   entry: {
-    application: ["./app/javascripts/application.js"],
+    application: "./app/javascripts/application.js",
   },
 
   output: {
@@ -17,8 +16,8 @@ export default {
   },
 
   resolve: {
-    extensions: ["", ".js", ".jsx"],
-    moduleDirectories: ["node_modules"],
+    extensions: ["", ".js", ".jsx", ".css"],
+    modulesDirectories: ["app", "node_modules"],
   },
 
   module: {
@@ -28,14 +27,14 @@ export default {
         loader: 'url',
       },
       {
-        test: /[/]speakers2014[/]/,
+        test: /app\/images\/speakers2014/,
         loader: 'file',
         query: {
           name: "images/speakers2014/[name].[ext]"
         }
       },
       {
-        test: /[/]keynote[/]/,
+        test: /app\/images\/keynote/,
         loader: 'file',
         query: {
           name: "images/keynote/[name].[ext]"
@@ -45,13 +44,10 @@ export default {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
-        query: {
-          presets: ['react', 'es2015'],
-        },
       },
       {
         test: /\.css$/,
-        loader: 'style!css!postcss',
+        loader: 'style!css?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!postcss',
       },
       {
         test: /\.json$/,
@@ -73,7 +69,6 @@ export default {
 
   plugins: [
     new HtmlWebpackPlugin({
-      inject: "head",
       title: "啥米零時政府 g0v 2016 summit",
       filename: "index.html",
       template: "app/templates/index.html"

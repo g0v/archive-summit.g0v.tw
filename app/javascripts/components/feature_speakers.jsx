@@ -5,7 +5,6 @@ import Speaker from "./speaker";
 import { getLocale } from "../locale";
 
 import speakers from "../../jsons/feature_speakers.json";
-speakers["en-US"].map((speaker) => { require(`../../${speaker.image}`); });
 
 class FeatureSpeakers extends Component {
   render() {

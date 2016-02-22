@@ -1,0 +1,35 @@
+.root {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding-bottom: 99px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.header {
+  margin: 0;
+  padding: 47px 0;
+  font-size: 24px;
+  color: #000;
+}
+
+.list {
+  width: 960px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: inline-block;
+  width: 180px;
+  height: 119px;
+  margin: 0 15px;
+  vertical-align: middle;
+  padding: 24px 12px;
+  background-color: #FFF;
+  color: #000;
+}
