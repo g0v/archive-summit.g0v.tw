@@ -6,7 +6,7 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 0.94);
   width: 350px;
-  padding-bottom: 56px;
+  padding-bottom: 1px;
   color: #000;
 }
 
@@ -14,7 +14,7 @@
   margin: 29px 0 0 0;
 }
 .range {
-  margin: 32px 0 16px;
+  margin: 22px 0 16px;
 }
 
 .title {

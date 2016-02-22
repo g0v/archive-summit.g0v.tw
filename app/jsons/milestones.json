@@ -16,7 +16,10 @@
         "url": "http://g0v-summit2016.kktix.cc/events/conference",
         "label": "Not started yet"
       }
-    ]
+    ],
+    "media": "Media contact: ",
+    "person": "Lily Hsu",
+    "email": "g0v-summit-media@googlegroups.com"
   },
   "zh-TW": {
     "header": "時間表",
@@ -35,6 +38,9 @@
         "url": "http://g0v-summit2016.kktix.cc/events/conference",
         "label": "尚未開賣"
       }
-    ]
+    ],
+    "media": "媒體聯絡人：",
+    "person": "Lily Hsu",
+    "email": "g0v-summit-media@googlegroups.com"
   }
 }

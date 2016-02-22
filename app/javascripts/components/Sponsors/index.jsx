@@ -17,6 +17,10 @@ class Sponsors extends Component {
         <ul className={styles.list}>
         </ul>
         </div>
+        <p>
+          {sponsors[getLocale()].message}
+          <a href={`mailto:${sponsors[getLocale()].email}`}>{sponsors[getLocale()].email}</a>
+        </p>
       </div>
     );
   }
