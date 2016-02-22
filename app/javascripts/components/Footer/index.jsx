@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className={styles.root}>
-        Copyright © g0v Summit 2015・
+        Copyright © g0v Summit 2016・
         <a
           className={styles.coc}
           href="https://g0v.hackpad.com/ep/pad/static/2mprMIpYMz9"
