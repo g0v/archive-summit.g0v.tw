@@ -17,5 +17,5 @@ if (!getLocale()) {
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  ReactDOM.render(<Root />, document.body);
+  ReactDOM.render(<Root />, document.getElementById('react-root'));
 });
