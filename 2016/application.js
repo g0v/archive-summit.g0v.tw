@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/2016/";
+/******/ 	__webpack_require__.p = "/2016";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -84,7 +84,7 @@
 	}
 
 	document.addEventListener("DOMContentLoaded", function (e) {
-	  _reactDom2.default.render(_react2.default.createElement(_root2.default, null), document.body);
+	  _reactDom2.default.render(_react2.default.createElement(_root2.default, null), document.getElementById('react-root'));
 	});
 
 /***/ },
@@ -20479,9 +20479,13 @@
 	          _call_for_papers2.default[(0, _locale.getLocale)()].title
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          "div",
 	          null,
-	          _call_for_papers2.default[(0, _locale.getLocale)()].text,
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            _call_for_papers2.default[(0, _locale.getLocale)()].text
+	          ),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "cfp-button" },
@@ -20967,8 +20971,7 @@
 		"./jsons/milestones.json": 195,
 		"./stylesheets/application.css": 2,
 		"./stylesheets/landing.css": 197,
-		"./stylesheets/reset.css": 199,
-		"./templates/index.html": 201
+		"./stylesheets/reset.css": 199
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -21632,7 +21635,7 @@
 	          isEn ? 'Sponsorship' : '贊助'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          "div",
 	          null,
 	          isEn ? _react2.default.createElement(
 	            "p",
@@ -21746,12 +21749,6 @@
 
 	// exports
 
-
-/***/ },
-/* 201 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "index.html";
 
 /***/ }
 /******/ ]);
