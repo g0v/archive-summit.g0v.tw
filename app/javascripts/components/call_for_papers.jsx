@@ -8,14 +8,14 @@ class CallForPapers extends Component {
   render() {
     return <div className="call_for_papers">
       <h2>{data[getLocale()].title}</h2>
-      <p>
-        {data[getLocale()].text}
+      <div>
+        <p>{data[getLocale()].text}</p>
         <div className="cfp-button">
           <a href={data[getLocale()].url}>
             {data[getLocale()].action}
           </a>
         </div>
-      </p>
+      </div>
     </div>;
   }
 }

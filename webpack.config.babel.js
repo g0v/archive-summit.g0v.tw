@@ -13,7 +13,7 @@ export default {
   output: {
     path: path.join(__dirname, "dist", "2016"),
     filename: "[name].js",
-    publicPath: "/2016/",
+    publicPath: "/2016",
   },
 
   resolve: {
@@ -23,13 +23,6 @@ export default {
 
   module: {
     loaders: [
-      {
-        test: /\.html$/,
-        loader: "file",
-        query: {
-          name: "[name].[ext]"
-        }
-      },
       {
         test: /\.(png|jpg)$/,
         loader: 'url',
@@ -72,6 +65,11 @@ export default {
     require('precss'),
     autoprefixer({ browsers: ['last 2 versions', '> 1%', 'Firefox > 20'] }),
   ],
+
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    publicPath: '/2016/',
+  },
 
   plugins: [
     new HtmlWebpackPlugin({
