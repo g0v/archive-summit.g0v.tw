@@ -4,28 +4,32 @@
 .button {
   padding: 3px 5px;
   margin: 0 2px;
-  background: #BB93AE;
   border-radius: 3px;
+  background-color: #9B0000;
   text-decoration: none;
 }
 
 .button:active {
-  background: #8A6189;
+  color: #aaa;
 }
 
 .right {
   float: right;
 }
 
-.locale {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 5px 5px;
-}
-
 header {
-  padding: 180px 0 50px 0;
+  padding: 1em 3em;
+  height: 2em;
+  background-color: #C70E38;
+
+  * {
+    color: #fff;
+  }
+
+  & > * {
+    line-height: 2em;
+  }
+
   h1 {
     background-image: url("../images/title.png");
     background-position: center top;
@@ -44,22 +48,6 @@ header {
     font-size: 1.2em;
     line-height: 1.4;
     text-align: center;
-  }
-  .affix {
-    background: rgba(192,169,203,0.95);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 90%;
-    padding: 1% 5%;
-    .locale {
-      position: relative;
-      display: inline;
-    }
-    h4 {
-      margin-right: 1em;
-      display: inline;
-    }
   }
   @media(max-width: 980px){
     & {
@@ -104,10 +92,8 @@ header {
 }
 
 .intro {
-  background: -moz-linear-gradient(top, rgba(144,110,169,0.9) 0%, rgba(193,128,170,1) 100%);
-  background: -webkit-linear-gradient(top, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);
-  background: linear-gradient(to bottom, rgba(144,110,169,0.9) 0%,rgba(193,128,170,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906ea9', endColorstr='#00c180aa',GradientType=0 );
+  box-shadow: #999 0px -1px 5px;
+  background: rgba(255,255,255,0.9);
   padding: 50px 10%;
 
   @media(max-width: 720px){
@@ -232,69 +218,6 @@ figure.feature-speaker {
   border-radius: 2px;
   display: inline-block;
   font-weight: bold;
-}
-
-#mc_embed_signup {
-  clear: both;
-  margin: 0 auto 84px;
-  text-align: center;
-
-  p {
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-  }
-
-  input[type=email] {
-    background-color: rgba(255,255,255,0.48);
-    border: 1px solid #fff;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    width: 40%;
-
-    @media(max-width: 720px){
-      & {
-        width: 90%;
-      }
-    }
-  }
-
-  input[type=submit] {
-    background-color: #6C5368;
-    border: none;
-    border-radius: 5px;
-    margin: 20px auto;
-    cursor: pointer;
-  }
-
-  input[type=submit]:hover {
-    background-color: #5e3f59;
-  }
-}
-
-#mc_embed_signup_scroll {
-  label {
-    font-weight: normal;
-  }
-
-  input.email {
-    background-color: rgba(255,255,255,0.48);
-    border: 1px solid #fff;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  input.button {
-    background-color: #6C5368;
-    border: none;
-    border-radius: 5px;
-    margin: 20px auto;
-    cursor: pointer;
-    padding: 4px 16px;
-  }
 }
 
 .sponsorship p {

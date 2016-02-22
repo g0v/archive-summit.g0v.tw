@@ -15,14 +15,6 @@ import Sponsorship from './sponsorship';
 class Intro extends Component {
   render() {
     return <div className="intro">
-      <Milestone />
-      <CallForPapers />
-      { getLocale() === 'en-US' ? <EarlyBirdProgram /> : null }
-      <Keynote />
-      <FeatureSpeakers />
-      <About />
-      <Hightlights />
-      <MailChimp />
       <Sponsorship />
     </div>;
   }
