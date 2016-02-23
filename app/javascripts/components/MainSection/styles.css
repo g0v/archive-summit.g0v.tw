@@ -1,5 +1,8 @@
 .root {
-  background: url('./images/bg.png') 90px top;
+  background-image: url(./images/bg.png);
+  background-repeat: no-repeat;
+  background-position: 100px 0px;
+  background-size: 90%;
   width: 100%;
   position: relative;
 }
