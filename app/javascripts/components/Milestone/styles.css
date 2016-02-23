@@ -10,6 +10,14 @@
   color: #000;
 }
 
+@media screen and (max-width: 715px) {
+  .root {
+    position: static;
+    width: 100%;
+    right: 0;
+  }
+}
+
 .header {
   margin: 29px 0 0 0;
 }

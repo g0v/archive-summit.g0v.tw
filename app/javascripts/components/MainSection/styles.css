@@ -5,4 +5,12 @@
   background-size: 90%;
   width: 100%;
   position: relative;
+  z-index: -100;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 830px) {
+  .root {
+    background-position: 100px 400px;
+  }
 }

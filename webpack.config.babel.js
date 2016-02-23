@@ -63,6 +63,7 @@ export default {
   ],
 
   devServer: {
+    host: process.env.HOST || 'localhost',
     contentBase: path.join(__dirname, "dist"),
     publicPath: '/2016/',
   },

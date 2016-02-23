@@ -4,9 +4,18 @@
   padding-bottom: 17px;
 }
 
+@media screen and (min-width: 830px) {
+  .wrapper {
+    width: 960px;
+  }
+
+  .list {
+    width: 960px;
+  }
+}
+
 .wrapper {
   margin: 0 auto;
-  width: 960px;
 }
 
 .header {
@@ -17,7 +26,6 @@
 }
 
 .list {
-  width: 960px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -25,9 +33,10 @@
 
 .item {
   display: inline-block;
+  font-size: 16px;
   width: 180px;
   height: 119px;
-  margin: 0 15px;
+  margin: 5px 15px;
   vertical-align: middle;
   padding: 24px 12px;
   background-color: #FFF;

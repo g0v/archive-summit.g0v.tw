@@ -16,9 +16,24 @@
   margin: 0;
 }
 
+@media screen and (min-width: 830px) {
+  .description {
+    width: 665px;
+  }
+
+  .title {
+    display: inline-block;
+  }
+
+  .button {
+    display: inline-block;
+  }
+}
+
 .description {
   margin: 52px auto 84px;
-  width: 665px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .links {
@@ -26,14 +41,13 @@
 }
 
 .title {
-  display: inline-block;
   padding-top: 5px;
   margin-right: 54px;
   line-height: 22px;
+  padding-bottom: 10px;
 }
 
 .button {
-  display: inline-block;
   background-color: #FFF;
   z-index: 10;
   height: 46px;
