@@ -463,7 +463,7 @@
 
 
 	// module
-	exports.push([module.id, "* {\n  -moz-box-sizing: border-box;\n       box-sizing: border-box;\n}\n\nbody {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, \"Heiti TC\", \"Apple LiGothic Medium\", \"\\5FAE\\8EDF\\6B63\\9ED1\\9AD4\", sans-serif;\n  font-size: 18px;\n  font-weight: 400;\n  color: #5D5D5D;\n}\n", "", {"version":3,"sources":["/./app/stylesheets/application.css"],"names":[],"mappings":"AAAA;EACE,4BAAuB;OAAvB,uBAAuB;CACxB;;AAED;EACE,2IAAuH;EACvH,gBAAgB;EAChB,iBAAiB;EACjB,eAAe;CAChB","file":"application.css","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, \"Heiti TC\", \"Apple LiGothic Medium\", \"微軟正黑體\", sans-serif;\n  font-size: 18px;\n  font-weight: 400;\n  color: #5D5D5D;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "* {\n  -moz-box-sizing: border-box;\n       box-sizing: border-box;\n}\n\nbody {\n  width: 100%;\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, \"Heiti TC\", \"Apple LiGothic Medium\", \"\\5FAE\\8EDF\\6B63\\9ED1\\9AD4\", sans-serif;\n  font-size: 18px;\n  font-weight: 400;\n  color: #5D5D5D;\n}\n", "", {"version":3,"sources":["/./app/stylesheets/application.css"],"names":[],"mappings":"AAAA;EACE,4BAAuB;OAAvB,uBAAuB;CACxB;;AAED;EACE,YAAY;EACZ,2IAAuH;EACvH,gBAAgB;EAChB,iBAAiB;EACjB,eAAe;CAChB","file":"application.css","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  width: 100%;\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, \"Heiti TC\", \"Apple LiGothic Medium\", \"微軟正黑體\", sans-serif;\n  font-size: 18px;\n  font-weight: 400;\n  color: #5D5D5D;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 
@@ -20188,18 +20188,76 @@
 	    }
 
 	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_Object$getPrototypeO = (0, _getPrototypeOf2.default)(Header)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.state = {
-	      affix: false
+	      hiddenMenu: false
 	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
 	  }
 
 	  (0, _createClass3.default)(Header, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      if (this.refs.header.offsetWidth <= 830) {
+	        this.setState({ hiddenMenu: true });
+	      }
+	      window.addEventListener('resize', this.handleResize.bind(this));
+	    }
+	  }, {
+	    key: "componentWillUnmount",
+	    value: function componentWillUnmount() {
+	      window.removeEventListener('resize', this.handleResize.bind(this));
+	    }
+	  }, {
+	    key: "handleResize",
+	    value: function handleResize(e) {
+	      if (this.state.hiddenMenu && this.refs.header.offsetWidth > 830) {
+	        this.setState({ hiddenMenu: false });
+	      } else if (!this.state.hiddenMenu && this.refs.header.offsetWidth <= 830) {
+	        this.setState({ hiddenMenu: true });
+	      }
+	    }
+	  }, {
+	    key: "showMenu",
+	    value: function showMenu() {
+	      this.setState({
+	        hiddenMenu: !this.state.hiddenMenu
+	      });
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      var _this2 = this;
 
 	      return _react2.default.createElement(
 	        "header",
-	        { className: _styles2.default.root },
+	        { className: _styles2.default.root, ref: "header" },
+	        _react2.default.createElement(
+	          "svg",
+	          {
+	            xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 25 31.25", version: "1.1", x: "0px", y: "0px",
+	            className: _styles2.default.ham,
+	            onClick: function onClick() {
+	              return _this2.showMenu();
+	            }
+	          },
+	          _react2.default.createElement(
+	            "title",
+	            null,
+	            "Hamburger Round"
+	          ),
+	          _react2.default.createElement(
+	            "desc",
+	            null,
+	            "Created by John Slater from the Noun Project"
+	          ),
+	          _react2.default.createElement(
+	            "g",
+	            { stroke: "none", strokeWidth: "1", fill: "none", fillRule: "evenodd" },
+	            _react2.default.createElement(
+	              "g",
+	              { fill: "#000000" },
+	              _react2.default.createElement("path", { d: "M0,4 C0,2.8954305 0.889763236,2 2.00359486,2 L22.9964051,2 C24.10296,2 25,2.88772964 25,4 C25,5.1045695 24.1102368,6 22.9964051,6 L2.00359486,6 C0.897039974,6 0,5.11227036 0,4 L0,4 Z M0,12 C0,10.8954305 0.889763236,10 2.00359486,10 L22.9964051,10 C24.10296,10 25,10.8877296 25,12 C25,13.1045695 24.1102368,14 22.9964051,14 L2.00359486,14 C0.897039974,14 0,13.1122704 0,12 L0,12 Z M0,20 C0,18.8954305 0.889763236,18 2.00359486,18 L22.9964051,18 C24.10296,18 25,18.8877296 25,20 C25,21.1045695 24.1102368,22 22.9964051,22 L2.00359486,22 C0.897039974,22 0,21.1122704 0,20 L0,20 Z" })
+	            )
+	          )
+	        ),
 	        _react2.default.createElement(
 	          "div",
 	          { className: _styles2.default.brand },
@@ -20237,7 +20295,7 @@
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(
+	        !this.state.hiddenMenu ? _react2.default.createElement(
 	          "ul",
 	          { className: _styles2.default.menu },
 	          _react2.default.createElement(
@@ -20265,7 +20323,7 @@
 	            { className: _styles2.default.item },
 	            _header2.default[(0, _locale.getLocale)()].transport
 	          )
-	        ),
+	        ) : undefined,
 	        _react2.default.createElement(
 	          "div",
 	          { className: _styles2.default.lang },
@@ -21539,11 +21597,12 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__XLEo0 {\n  height: 60px;\n  position: relative;\n  background-color: #CB0031;\n  color: #FFF;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  opacity: 0.94;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n}\n\n.styles-brand__2SDVp {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 265px;\n}\n\n.styles-title__zoMJG {\n  margin: 0;\n  text-transform: uppercase;\n  padding: 13px 18px 0 26px;\n}\n\n.styles-live__FIAAN {\n  display: inline-block;\n  padding-top: 13px;\n}\n\n.styles-menu__2mWqD {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  height: 60px;\n}\n\n.styles-item__ifhAL {\n  display: inline-block;\n  height: 100%;\n  width: 146px;\n  padding: 14px 26px 18px 26px;\n  text-align: center;\n  cursor: pointer;\n}\n\n.styles-active__26jg9 {\n  background-color: #FFF;\n  color: #000;\n}\n\n.styles-item__ifhAL:hover {\n  background-color: #FFF;\n  color: #000;\n  box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.50);\n}\n\n.styles-lang__2SUtg {\n  position: absolute;\n  right: 0;\n  height: 60px;\n}\n\n.styles-button__3nV7w {\n  display: inline-block;\n  color: #FFF;\n  padding: 14px 10px 0 0;\n  height: 100%;\n  width: 94px;\n  text-decoration: none;\n  text-align: right;\n  cursor: pointer;\n}\n\n.styles-button__3nV7w:hover {\n  color: #000;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/AppBar/styles.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,mBAAmB;EACnB,0BAA0B;EAC1B,YAAY;EACZ,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,cAAc;EACd,8CAA8C;CAC/C;;AAED;EACE,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,aAAa;CACd;;AAED;EACE,UAAU;EACV,0BAA0B;EAC1B,0BAA0B;CAC3B;;AAED;EACE,sBAAsB;EACtB,kBAAkB;CACnB;;AAED;EACE,UAAU;EACV,WAAW;EACX,iBAAiB;EACjB,aAAa;CACd;;AAED;EACE,sBAAsB;EACtB,aAAa;EACb,aAAa;EACb,6BAA6B;EAC7B,mBAAmB;EACnB,gBAAgB;CACjB;;AAED;EAEE,uBAAuB;EACvB,YAAY;CACb;;AAED;EACE,uBAAuB;EACvB,YAAY;EACZ,8CAA8C;CAC/C;;AAED;EACE,mBAAmB;EACnB,SAAS;EACT,aAAa;CACd;;AAED;EACE,sBAAsB;EACtB,YAAY;EACZ,uBAAuB;EACvB,aAAa;EACb,YAAY;EACZ,sBAAsB;EACtB,kBAAkB;EAClB,gBAAgB;CACjB;;AAED;EACE,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  height: 60px;\n  position: relative;\n  background-color: #CB0031;\n  color: #FFF;\n  display: flex;\n  opacity: 0.94;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n}\n\n.brand {\n  display: flex;\n  width: 265px;\n}\n\n.title {\n  margin: 0;\n  text-transform: uppercase;\n  padding: 13px 18px 0 26px;\n}\n\n.live {\n  display: inline-block;\n  padding-top: 13px;\n}\n\n.menu {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  height: 60px;\n}\n\n.item {\n  display: inline-block;\n  height: 100%;\n  width: 146px;\n  padding: 14px 26px 18px 26px;\n  text-align: center;\n  cursor: pointer;\n}\n\n.active {\n  composes: item;\n  background-color: #FFF;\n  color: #000;\n}\n\n.item:hover {\n  background-color: #FFF;\n  color: #000;\n  box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.50);\n}\n\n.lang {\n  position: absolute;\n  right: 0;\n  height: 60px;\n}\n\n.button {\n  display: inline-block;\n  color: #FFF;\n  padding: 14px 10px 0 0;\n  height: 100%;\n  width: 94px;\n  text-decoration: none;\n  text-align: right;\n  cursor: pointer;\n}\n\n.button:hover {\n  color: #000;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__XLEo0 {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #CB0031;\n  color: #FFF;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  opacity: 0.94;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n}\n\n.styles-ham__6Q4DB {\n  opacity: 0;\n  cursor: pointer;\n}\n\n.styles-brand__2SDVp {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 265px;\n}\n\n.styles-title__zoMJG {\n  margin: 0;\n  text-transform: uppercase;\n  padding: 13px 18px 0 26px;\n}\n\n.styles-live__FIAAN {\n  display: inline-block;\n  padding-top: 13px;\n}\n\n.styles-menu__2mWqD {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  height: 60px;\n}\n\n.styles-item__ifhAL {\n  display: inline-block;\n  height: 100%;\n  padding: 14px 26px 18px 26px;\n  text-align: center;\n  cursor: pointer;\n}\n\n@media screen and (max-width: 830px) {\n  .styles-root__XLEo0 {\n    display: block;\n  }\n\n  .styles-brand__2SDVp {\n    margin-left: 20px;\n  }\n\n  .styles-title__zoMJG {\n    padding-top: 7px;\n    padding-right: 7px;\n  }\n\n  .styles-live__FIAAN {\n    padding-top: 7px;\n  }\n\n  .styles-ham__6Q4DB {\n    opacity: 1;\n    height: 60px;\n    position: absolute;\n    top: 0;\n    left: 0;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n  }\n\n  .styles-ham__6Q4DB path {\n    fill: #FFF;\n  }\n\n  .styles-ham__6Q4DB:hover path {\n    fill: #000;\n  }\n\n  .styles-menu__2mWqD {\n    margin-top: 15px;\n  }\n\n  .styles-item__ifhAL {\n    display: block;\n    width: 100%;\n    background-color: #CB0031;\n  }\n}\n\n.styles-active__26jg9 {\n  background-color: #FFF;\n  color: #000;\n}\n\n.styles-item__ifhAL:hover {\n  background-color: #FFF;\n  color: #000;\n  box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.50);\n}\n\n.styles-lang__2SUtg {\n  position: absolute;\n  right: 0;\n  top: 0;\n  height: 60px;\n}\n\n.styles-button__3nV7w {\n  display: inline-block;\n  color: #FFF;\n  padding: 14px 10px 0 0;\n  height: 100%;\n  width: 94px;\n  text-decoration: none;\n  text-align: right;\n  cursor: pointer;\n}\n\n.styles-button__3nV7w:hover {\n  color: #000;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/AppBar/styles.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,OAAO;EACP,YAAY;EACZ,aAAa;EACb,0BAA0B;EAC1B,YAAY;EACZ,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,cAAc;EACd,8CAA8C;CAC/C;;AAED;EACE,WAAW;EACX,gBAAgB;CACjB;;AAED;EACE,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,aAAa;CACd;;AAED;EACE,UAAU;EACV,0BAA0B;EAC1B,0BAA0B;CAC3B;;AAED;EACE,sBAAsB;EACtB,kBAAkB;CACnB;;AAED;EACE,UAAU;EACV,WAAW;EACX,iBAAiB;EACjB,aAAa;CACd;;AAED;EACE,sBAAsB;EACtB,aAAa;EACb,6BAA6B;EAC7B,mBAAmB;EACnB,gBAAgB;CACjB;;AAED;EACE;IACE,eAAe;GAChB;;EAED;IACE,kBAAkB;GACnB;;EAED;IACE,iBAAiB;IACjB,mBAAmB;GACpB;;EAED;IACE,iBAAiB;GAClB;;EAED;IACE,WAAW;IACX,aAAa;IACb,mBAAmB;IACnB,OAAO;IACP,QAAQ;IACR,8BAAsB;YAAtB,sBAAsB;GACvB;;EAED;IACE,WAAW;GACZ;;EAED;IACE,WAAW;GACZ;;EAED;IACE,iBAAiB;GAClB;;EAED;IACE,eAAe;IACf,YAAY;IACZ,0BAA0B;GAC3B;CACF;;AAED;EAEE,uBAAuB;EACvB,YAAY;CACb;;AAED;EACE,uBAAuB;EACvB,YAAY;EACZ,8CAA8C;CAC/C;;AAED;EACE,mBAAmB;EACnB,SAAS;EACT,OAAO;EACP,aAAa;CACd;;AAED;EACE,sBAAsB;EACtB,YAAY;EACZ,uBAAuB;EACvB,aAAa;EACb,YAAY;EACZ,sBAAsB;EACtB,kBAAkB;EAClB,gBAAgB;CACjB;;AAED;EACE,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #CB0031;\n  color: #FFF;\n  display: flex;\n  opacity: 0.94;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n}\n\n.ham {\n  opacity: 0;\n  cursor: pointer;\n}\n\n.brand {\n  display: flex;\n  width: 265px;\n}\n\n.title {\n  margin: 0;\n  text-transform: uppercase;\n  padding: 13px 18px 0 26px;\n}\n\n.live {\n  display: inline-block;\n  padding-top: 13px;\n}\n\n.menu {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  height: 60px;\n}\n\n.item {\n  display: inline-block;\n  height: 100%;\n  padding: 14px 26px 18px 26px;\n  text-align: center;\n  cursor: pointer;\n}\n\n@media screen and (max-width: 830px) {\n  .root {\n    display: block;\n  }\n\n  .brand {\n    margin-left: 20px;\n  }\n\n  .title {\n    padding-top: 7px;\n    padding-right: 7px;\n  }\n\n  .live {\n    padding-top: 7px;\n  }\n\n  .ham {\n    opacity: 1;\n    height: 60px;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transform: scale(0.5);\n  }\n\n  .ham path {\n    fill: #FFF;\n  }\n\n  .ham:hover path {\n    fill: #000;\n  }\n\n  .menu {\n    margin-top: 15px;\n  }\n\n  .item {\n    display: block;\n    width: 100%;\n    background-color: #CB0031;\n  }\n}\n\n.active {\n  composes: item;\n  background-color: #FFF;\n  color: #000;\n}\n\n.item:hover {\n  background-color: #FFF;\n  color: #000;\n  box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.50);\n}\n\n.lang {\n  position: absolute;\n  right: 0;\n  top: 0;\n  height: 60px;\n}\n\n.button {\n  display: inline-block;\n  color: #FFF;\n  padding: 14px 10px 0 0;\n  height: 100%;\n  width: 94px;\n  text-decoration: none;\n  text-align: right;\n  cursor: pointer;\n}\n\n.button:hover {\n  color: #000;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
 		"root": "styles-root__XLEo0",
+		"ham": "styles-ham__6Q4DB",
 		"brand": "styles-brand__2SDVp",
 		"title": "styles-title__zoMJG",
 		"live": "styles-live__FIAAN",
@@ -21654,7 +21713,7 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__2Aq8q {\n  background-image: url(" + __webpack_require__(236) + ");\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/MainSection/styles.css"],"names":[],"mappings":"AAAA;EACE,gDAAuC;EACvC,6BAA6B;EAC7B,+BAA+B;EAC/B,qBAAqB;EACrB,YAAY;EACZ,mBAAmB;CACpB","file":"styles.css","sourcesContent":[".root {\n  background-image: url(./images/bg.png);\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__2Aq8q {\n  background-image: url(" + __webpack_require__(236) + ");\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n  z-index: -100;\n  margin-top: 60px;\n}\n\n@media screen and (max-width: 830px) {\n  .styles-root__2Aq8q {\n    background-position: 100px 400px;\n  }\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/MainSection/styles.css"],"names":[],"mappings":"AAAA;EACE,gDAAuC;EACvC,6BAA6B;EAC7B,+BAA+B;EAC/B,qBAAqB;EACrB,YAAY;EACZ,mBAAmB;EACnB,cAAc;EACd,iBAAiB;CAClB;;AAED;EACE;IACE,iCAAiC;GAClC;CACF","file":"styles.css","sourcesContent":[".root {\n  background-image: url(./images/bg.png);\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n  z-index: -100;\n  margin-top: 60px;\n}\n\n@media screen and (max-width: 830px) {\n  .root {\n    background-position: 100px 400px;\n  }\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
@@ -21966,7 +22025,7 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__gj93y {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  padding-bottom: 103px;\n  color: #000;\n}\n\n.styles-wrapper__10wHi {\n\n}\n\n.styles-header__2jnoV {\n  padding-top: 55px;\n  margin: 0;\n}\n\n.styles-description__biizs {\n  margin: 52px auto 84px;\n  width: 665px;\n}\n\n.styles-links__hubwx {\n\n}\n\n.styles-title__2fwYR {\n  display: inline-block;\n  padding-top: 5px;\n  margin-right: 54px;\n  line-height: 22px;\n}\n\n.styles-button__30agj {\n  display: inline-block;\n  background-color: #FFF;\n  z-index: 10;\n  height: 46px;\n  padding: 11px 46px 13px 47px;\n  border: 2px solid #000000;\n  border-radius: 4px;\n  line-height: 22px;\n  margin: 0 21px;\n  cursor: pointer;\n}\n\n.styles-active__1METK {\n  background-color: #CB0031;\n  color: #FFF;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/About/styles.css"],"names":[],"mappings":"AAAA;EACE,oBAAoB;EACpB,8CAA8C;EAC9C,mBAAmB;EACnB,4CAA4C;EAC5C,sBAAsB;EACtB,YAAY;CACb;;AAED;;CAEC;;AAED;EACE,kBAAkB;EAClB,UAAU;CACX;;AAED;EACE,uBAAuB;EACvB,aAAa;CACd;;AAED;;CAEC;;AAED;EACE,sBAAsB;EACtB,iBAAiB;EACjB,mBAAmB;EACnB,kBAAkB;CACnB;;AAED;EACE,sBAAsB;EACtB,uBAAuB;EACvB,YAAY;EACZ,aAAa;EACb,6BAA6B;EAC7B,0BAA0B;EAC1B,mBAAmB;EACnB,kBAAkB;EAClB,eAAe;EACf,gBAAgB;CACjB;;AAED;EAEE,0BAA0B;EAC1B,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  padding-bottom: 103px;\n  color: #000;\n}\n\n.wrapper {\n\n}\n\n.header {\n  padding-top: 55px;\n  margin: 0;\n}\n\n.description {\n  margin: 52px auto 84px;\n  width: 665px;\n}\n\n.links {\n\n}\n\n.title {\n  display: inline-block;\n  padding-top: 5px;\n  margin-right: 54px;\n  line-height: 22px;\n}\n\n.button {\n  display: inline-block;\n  background-color: #FFF;\n  z-index: 10;\n  height: 46px;\n  padding: 11px 46px 13px 47px;\n  border: 2px solid #000000;\n  border-radius: 4px;\n  line-height: 22px;\n  margin: 0 21px;\n  cursor: pointer;\n}\n\n.active {\n  composes: button;\n  background-color: #CB0031;\n  color: #FFF;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__gj93y {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  padding-bottom: 103px;\n  color: #000;\n}\n\n.styles-wrapper__10wHi {\n\n}\n\n.styles-header__2jnoV {\n  padding-top: 55px;\n  margin: 0;\n}\n\n@media screen and (min-width: 830px) {\n  .styles-description__biizs {\n    width: 665px;\n  }\n\n  .styles-title__2fwYR {\n    display: inline-block;\n  }\n\n  .styles-button__30agj {\n    display: inline-block;\n  }\n}\n\n.styles-description__biizs {\n  margin: 52px auto 84px;\n  padding-left: 15px;\n  padding-right: 15px;\n}\n\n.styles-links__hubwx {\n\n}\n\n.styles-title__2fwYR {\n  padding-top: 5px;\n  margin-right: 54px;\n  line-height: 22px;\n  padding-bottom: 10px;\n}\n\n.styles-button__30agj {\n  background-color: #FFF;\n  z-index: 10;\n  height: 46px;\n  padding: 11px 46px 13px 47px;\n  border: 2px solid #000000;\n  border-radius: 4px;\n  line-height: 22px;\n  margin: 0 21px;\n  cursor: pointer;\n}\n\n.styles-active__1METK {\n  background-color: #CB0031;\n  color: #FFF;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/About/styles.css"],"names":[],"mappings":"AAAA;EACE,oBAAoB;EACpB,8CAA8C;EAC9C,mBAAmB;EACnB,4CAA4C;EAC5C,sBAAsB;EACtB,YAAY;CACb;;AAED;;CAEC;;AAED;EACE,kBAAkB;EAClB,UAAU;CACX;;AAED;EACE;IACE,aAAa;GACd;;EAED;IACE,sBAAsB;GACvB;;EAED;IACE,sBAAsB;GACvB;CACF;;AAED;EACE,uBAAuB;EACvB,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;;CAEC;;AAED;EACE,iBAAiB;EACjB,mBAAmB;EACnB,kBAAkB;EAClB,qBAAqB;CACtB;;AAED;EACE,uBAAuB;EACvB,YAAY;EACZ,aAAa;EACb,6BAA6B;EAC7B,0BAA0B;EAC1B,mBAAmB;EACnB,kBAAkB;EAClB,eAAe;EACf,gBAAgB;CACjB;;AAED;EAEE,0BAA0B;EAC1B,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  padding-bottom: 103px;\n  color: #000;\n}\n\n.wrapper {\n\n}\n\n.header {\n  padding-top: 55px;\n  margin: 0;\n}\n\n@media screen and (min-width: 830px) {\n  .description {\n    width: 665px;\n  }\n\n  .title {\n    display: inline-block;\n  }\n\n  .button {\n    display: inline-block;\n  }\n}\n\n.description {\n  margin: 52px auto 84px;\n  padding-left: 15px;\n  padding-right: 15px;\n}\n\n.links {\n\n}\n\n.title {\n  padding-top: 5px;\n  margin-right: 54px;\n  line-height: 22px;\n  padding-bottom: 10px;\n}\n\n.button {\n  background-color: #FFF;\n  z-index: 10;\n  height: 46px;\n  padding: 11px 46px 13px 47px;\n  border: 2px solid #000000;\n  border-radius: 4px;\n  line-height: 22px;\n  margin: 0 21px;\n  cursor: pointer;\n}\n\n.active {\n  composes: button;\n  background-color: #CB0031;\n  color: #FFF;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
@@ -21974,9 +22033,9 @@
 		"wrapper": "styles-wrapper__10wHi",
 		"header": "styles-header__2jnoV",
 		"description": "styles-description__biizs",
-		"links": "styles-links__hubwx",
 		"title": "styles-title__2fwYR",
 		"button": "styles-button__30agj",
+		"links": "styles-links__hubwx",
 		"active": "styles-active__1METK styles-button__30agj"
 	};
 
@@ -22223,7 +22282,7 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__1qlYr {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n.styles-header__QOvXu {\n  margin: 29px 0 0 0;\n}\n.styles-range__30RdB {\n  margin: 22px 0 16px;\n}\n\n.styles-title__1v6LZ {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.styles-links__3LYNb {\n  color: #CB0031;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Milestone/styles.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,mBAAmB;EACnB,YAAY;EACZ,OAAO;EACP,mBAAmB;EACnB,4CAA4C;EAC5C,aAAa;EACb,oBAAoB;EACpB,YAAY;CACb;;AAED;EACE,mBAAmB;CACpB;AACD;EACE,oBAAoB;CACrB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB","file":"styles.css","sourcesContent":[".root {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n.header {\n  margin: 29px 0 0 0;\n}\n.range {\n  margin: 22px 0 16px;\n}\n\n.title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.links {\n  color: #CB0031;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__1qlYr {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n@media screen and (max-width: 715px) {\n  .styles-root__1qlYr {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n}\n\n.styles-header__QOvXu {\n  margin: 29px 0 0 0;\n}\n.styles-range__30RdB {\n  margin: 22px 0 16px;\n}\n\n.styles-title__1v6LZ {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.styles-links__3LYNb {\n  color: #CB0031;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Milestone/styles.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,mBAAmB;EACnB,YAAY;EACZ,OAAO;EACP,mBAAmB;EACnB,4CAA4C;EAC5C,aAAa;EACb,oBAAoB;EACpB,YAAY;CACb;;AAED;EACE;IACE,iBAAiB;IACjB,YAAY;IACZ,SAAS;GACV;CACF;;AAED;EACE,mBAAmB;CACpB;AACD;EACE,oBAAoB;CACrB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB","file":"styles.css","sourcesContent":[".root {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n@media screen and (max-width: 715px) {\n  .root {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n}\n\n.header {\n  margin: 29px 0 0 0;\n}\n.range {\n  margin: 22px 0 16px;\n}\n\n.title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.links {\n  color: #CB0031;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
@@ -22401,14 +22460,14 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__2LOKc {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 17px;\n}\n\n.styles-wrapper__1Y1Jq {\n  margin: 0 auto;\n  width: 960px;\n}\n\n.styles-header__3Iwlm {\n  margin: 0;\n  padding: 47px 0;\n  font-size: 24px;\n  color: #000;\n}\n\n.styles-list__1jJTE {\n  width: 960px;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.styles-item__PspLd {\n  display: inline-block;\n  width: 180px;\n  height: 119px;\n  margin: 0 15px;\n  vertical-align: middle;\n  padding: 24px 12px;\n  background-color: #FFF;\n  color: #000;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Sponsors/styles.css"],"names":[],"mappings":"AAAA;EACE,0BAA0B;EAC1B,mBAAmB;EACnB,qBAAqB;CACtB;;AAED;EACE,eAAe;EACf,aAAa;CACd;;AAED;EACE,UAAU;EACV,gBAAgB;EAChB,gBAAgB;EAChB,YAAY;CACb;;AAED;EACE,aAAa;EACb,iBAAiB;EACjB,UAAU;EACV,WAAW;CACZ;;AAED;EACE,sBAAsB;EACtB,aAAa;EACb,cAAc;EACd,eAAe;EACf,uBAAuB;EACvB,mBAAmB;EACnB,uBAAuB;EACvB,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 17px;\n}\n\n.wrapper {\n  margin: 0 auto;\n  width: 960px;\n}\n\n.header {\n  margin: 0;\n  padding: 47px 0;\n  font-size: 24px;\n  color: #000;\n}\n\n.list {\n  width: 960px;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.item {\n  display: inline-block;\n  width: 180px;\n  height: 119px;\n  margin: 0 15px;\n  vertical-align: middle;\n  padding: 24px 12px;\n  background-color: #FFF;\n  color: #000;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__2LOKc {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 17px;\n}\n\n@media screen and (min-width: 830px) {\n  .styles-wrapper__1Y1Jq {\n    width: 960px;\n  }\n\n  .styles-list__1jJTE {\n    width: 960px;\n  }\n}\n\n.styles-wrapper__1Y1Jq {\n  margin: 0 auto;\n}\n\n.styles-header__3Iwlm {\n  margin: 0;\n  padding: 47px 0;\n  font-size: 24px;\n  color: #000;\n}\n\n.styles-list__1jJTE {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.styles-item__PspLd {\n  display: inline-block;\n  font-size: 16px;\n  width: 180px;\n  height: 119px;\n  margin: 5px 15px;\n  vertical-align: middle;\n  padding: 24px 12px;\n  background-color: #FFF;\n  color: #000;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Sponsors/styles.css"],"names":[],"mappings":"AAAA;EACE,0BAA0B;EAC1B,mBAAmB;EACnB,qBAAqB;CACtB;;AAED;EACE;IACE,aAAa;GACd;;EAED;IACE,aAAa;GACd;CACF;;AAED;EACE,eAAe;CAChB;;AAED;EACE,UAAU;EACV,gBAAgB;EAChB,gBAAgB;EAChB,YAAY;CACb;;AAED;EACE,iBAAiB;EACjB,UAAU;EACV,WAAW;CACZ;;AAED;EACE,sBAAsB;EACtB,gBAAgB;EAChB,aAAa;EACb,cAAc;EACd,iBAAiB;EACjB,uBAAuB;EACvB,mBAAmB;EACnB,uBAAuB;EACvB,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 17px;\n}\n\n@media screen and (min-width: 830px) {\n  .wrapper {\n    width: 960px;\n  }\n\n  .list {\n    width: 960px;\n  }\n}\n\n.wrapper {\n  margin: 0 auto;\n}\n\n.header {\n  margin: 0;\n  padding: 47px 0;\n  font-size: 24px;\n  color: #000;\n}\n\n.list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.item {\n  display: inline-block;\n  font-size: 16px;\n  width: 180px;\n  height: 119px;\n  margin: 5px 15px;\n  vertical-align: middle;\n  padding: 24px 12px;\n  background-color: #FFF;\n  color: #000;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
 		"root": "styles-root__2LOKc",
 		"wrapper": "styles-wrapper__1Y1Jq",
-		"header": "styles-header__3Iwlm",
 		"list": "styles-list__1jJTE",
+		"header": "styles-header__3Iwlm",
 		"item": "styles-item__PspLd"
 	};
 
@@ -22521,7 +22580,7 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__iY35Z {\n  height: 92px;\n  background-color: #AC002B;\n  text-align: center;\n  color: #FFF;\n  padding: 30px 0 35px;\n}\n\n.styles-coc__2wy7y {\n  color: #FFF;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Footer/styles.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,0BAA0B;EAC1B,mBAAmB;EACnB,YAAY;EACZ,qBAAqB;CACtB;;AAED;EACE,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  height: 92px;\n  background-color: #AC002B;\n  text-align: center;\n  color: #FFF;\n  padding: 30px 0 35px;\n}\n\n.coc {\n  color: #FFF;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__iY35Z {\n  height: 92px;\n  background-color: #AC002B;\n  text-align: center;\n  color: #FFF;\n  padding: 30px 10px 35px;\n}\n\n.styles-coc__2wy7y {\n  color: #FFF;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Footer/styles.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,0BAA0B;EAC1B,mBAAmB;EACnB,YAAY;EACZ,wBAAwB;CACzB;;AAED;EACE,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  height: 92px;\n  background-color: #AC002B;\n  text-align: center;\n  color: #FFF;\n  padding: 30px 10px 35px;\n}\n\n.coc {\n  color: #FFF;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
