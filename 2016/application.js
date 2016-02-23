@@ -21713,7 +21713,7 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__2Aq8q {\n  background-image: url(" + __webpack_require__(236) + ");\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n  z-index: -100;\n  margin-top: 60px;\n}\n\n@media screen and (max-width: 830px) {\n  .styles-root__2Aq8q {\n    background-position: 100px 400px;\n  }\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/MainSection/styles.css"],"names":[],"mappings":"AAAA;EACE,gDAAuC;EACvC,6BAA6B;EAC7B,+BAA+B;EAC/B,qBAAqB;EACrB,YAAY;EACZ,mBAAmB;EACnB,cAAc;EACd,iBAAiB;CAClB;;AAED;EACE;IACE,iCAAiC;GAClC;CACF","file":"styles.css","sourcesContent":[".root {\n  background-image: url(./images/bg.png);\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n  z-index: -100;\n  margin-top: 60px;\n}\n\n@media screen and (max-width: 830px) {\n  .root {\n    background-position: 100px 400px;\n  }\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__2Aq8q {\n  background-image: url(" + __webpack_require__(236) + ");\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n  z-index: -100;\n  margin-top: 60px;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/MainSection/styles.css"],"names":[],"mappings":"AAAA;EACE,gDAAuC;EACvC,6BAA6B;EAC7B,+BAA+B;EAC/B,qBAAqB;EACrB,YAAY;EACZ,mBAAmB;EACnB,cAAc;EACd,iBAAiB;CAClB","file":"styles.css","sourcesContent":[".root {\n  background-image: url(./images/bg.png);\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n  z-index: -100;\n  margin-top: 60px;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
@@ -21782,30 +21782,34 @@
 	        { className: _styles2.default.root },
 	        _react2.default.createElement(
 	          "div",
-	          { className: _styles2.default.year },
-	          "2016 summit"
-	        ),
-	        _react2.default.createElement("img", {
-	          className: _styles2.default.logo,
-	          src: __webpack_require__(240)
-	        }),
-	        _react2.default.createElement(
-	          "div",
-	          null,
+	          { className: _styles2.default.wrapper },
+	          _react2.default.createElement(
+	            "div",
+	            { className: _styles2.default.year },
+	            "2016 summit"
+	          ),
 	          _react2.default.createElement("img", {
-	            className: _styles2.default.theme,
-	            src: __webpack_require__(241)
-	          })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: _styles2.default.day },
-	          "5. 14-15"
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: _styles2.default.place },
-	          "中央研究院"
+	            className: _styles2.default.logo,
+	            src: __webpack_require__(240)
+	          }),
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement("img", {
+	              className: _styles2.default.theme,
+	              src: __webpack_require__(241)
+	            })
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: _styles2.default.day },
+	            "5. 14-15"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: _styles2.default.place },
+	            "中央研究院"
+	          )
 	        )
 	      );
 	    }
@@ -21852,11 +21856,12 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__31pMV {\n  width: 280px;\n  text-align: right;\n  color: #000;\n  padding-top: 29px;\n  padding-bottom: 45px;\n}\n\n.styles-year__-pnX3 {\n  font-size: 32px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n\n.styles-logo__2WXng {\n  height: 46px;\n  width: 239px;\n}\n\n.styles-theme__dsqnF {\n  height: 168px;\n  width: 147px;\n}\n\n.styles-day__2f7O7 {\n  font-size: 46px;\n  font-weight: 600;\n}\n\n.styles-place__1oMDL {\n  font-size: 32px;\n  font-weight: 600;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/MainInfo/styles.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;EAClB,qBAAqB;CACtB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;EACjB,0BAA0B;CAC3B;;AAED;EACE,aAAa;EACb,aAAa;CACd;;AAED;EACE,cAAc;EACd,aAAa;CACd;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB","file":"styles.css","sourcesContent":[".root {\n  width: 280px;\n  text-align: right;\n  color: #000;\n  padding-top: 29px;\n  padding-bottom: 45px;\n}\n\n.year {\n  font-size: 32px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n\n.logo {\n  height: 46px;\n  width: 239px;\n}\n\n.theme {\n  height: 168px;\n  width: 147px;\n}\n\n.day {\n  font-size: 46px;\n  font-weight: 600;\n}\n\n.place {\n  font-size: 32px;\n  font-weight: 600;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__31pMV {\n\n}\n\n@media screen and (max-width: 830px) {\n  .styles-root__31pMV {\n    width: 100%;\n    background-color: rgba(255, 255, 255, 0.47);\n  }\n}\n\n.styles-wrapper__1Vtud {\n  width: 280px;\n  text-align: right;\n  color: #000;\n  padding-top: 29px;\n  padding-bottom: 45px;\n}\n\n.styles-year__-pnX3 {\n  font-size: 32px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n\n.styles-logo__2WXng {\n  height: 46px;\n  width: 239px;\n}\n\n.styles-theme__dsqnF {\n  height: 168px;\n  width: 147px;\n}\n\n.styles-day__2f7O7 {\n  font-size: 46px;\n  font-weight: 600;\n}\n\n.styles-place__1oMDL {\n  font-size: 32px;\n  font-weight: 600;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/MainInfo/styles.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;EACE;IACE,YAAY;IACZ,4CAA4C;GAC7C;CACF;;AAED;EACE,aAAa;EACb,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;EAClB,qBAAqB;CACtB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;EACjB,0BAA0B;CAC3B;;AAED;EACE,aAAa;EACb,aAAa;CACd;;AAED;EACE,cAAc;EACd,aAAa;CACd;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB","file":"styles.css","sourcesContent":[".root {\n\n}\n\n@media screen and (max-width: 830px) {\n  .root {\n    width: 100%;\n    background-color: rgba(255, 255, 255, 0.47);\n  }\n}\n\n.wrapper {\n  width: 280px;\n  text-align: right;\n  color: #000;\n  padding-top: 29px;\n  padding-bottom: 45px;\n}\n\n.year {\n  font-size: 32px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n\n.logo {\n  height: 46px;\n  width: 239px;\n}\n\n.theme {\n  height: 168px;\n  width: 147px;\n}\n\n.day {\n  font-size: 46px;\n  font-weight: 600;\n}\n\n.place {\n  font-size: 32px;\n  font-weight: 600;\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
 		"root": "styles-root__31pMV",
+		"wrapper": "styles-wrapper__1Vtud",
 		"year": "styles-year__-pnX3",
 		"logo": "styles-logo__2WXng",
 		"theme": "styles-theme__dsqnF",
@@ -22282,7 +22287,7 @@
 
 
 	// module
-	exports.push([module.id, ".styles-root__1qlYr {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n@media screen and (max-width: 715px) {\n  .styles-root__1qlYr {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n}\n\n.styles-header__QOvXu {\n  margin: 29px 0 0 0;\n}\n.styles-range__30RdB {\n  margin: 22px 0 16px;\n}\n\n.styles-title__1v6LZ {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.styles-links__3LYNb {\n  color: #CB0031;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Milestone/styles.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,mBAAmB;EACnB,YAAY;EACZ,OAAO;EACP,mBAAmB;EACnB,4CAA4C;EAC5C,aAAa;EACb,oBAAoB;EACpB,YAAY;CACb;;AAED;EACE;IACE,iBAAiB;IACjB,YAAY;IACZ,SAAS;GACV;CACF;;AAED;EACE,mBAAmB;CACpB;AACD;EACE,oBAAoB;CACrB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB","file":"styles.css","sourcesContent":[".root {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n@media screen and (max-width: 715px) {\n  .root {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n}\n\n.header {\n  margin: 29px 0 0 0;\n}\n.range {\n  margin: 22px 0 16px;\n}\n\n.title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.links {\n  color: #CB0031;\n}\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".styles-root__1qlYr {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n.styles-header__QOvXu {\n  margin: 29px 0 0 0;\n}\n\n.styles-range__30RdB {\n  margin: 22px 0 16px;\n}\n\n.styles-title__1v6LZ {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.styles-links__3LYNb {\n  color: #CB0031;\n}\n\n@media screen and (max-width: 715px) {\n  .styles-root__1qlYr {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n\n  .styles-header__QOvXu {\n    margin: 0;\n  }\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Milestone/styles.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,mBAAmB;EACnB,YAAY;EACZ,OAAO;EACP,mBAAmB;EACnB,4CAA4C;EAC5C,aAAa;EACb,oBAAoB;EACpB,YAAY;CACb;;AAED;EACE,mBAAmB;CACpB;;AAED;EACE,oBAAoB;CACrB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,eAAe;CAChB;;AAED;EACE;IACE,iBAAiB;IACjB,YAAY;IACZ,SAAS;GACV;;EAED;IACE,UAAU;GACX;CACF","file":"styles.css","sourcesContent":[".root {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n.header {\n  margin: 29px 0 0 0;\n}\n\n.range {\n  margin: 22px 0 16px;\n}\n\n.title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.links {\n  color: #CB0031;\n}\n\n@media screen and (max-width: 715px) {\n  .root {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n\n  .header {\n    margin: 0;\n  }\n}\n"],"sourceRoot":"webpack://"}]);
 
 	// exports
 	exports.locals = {
