@@ -1,4 +1,15 @@
 .root {
+
+}
+
+@media screen and (max-width: 830px) {
+  .root {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.47);
+  }
+}
+
+.wrapper {
   width: 280px;
   text-align: right;
   color: #000;

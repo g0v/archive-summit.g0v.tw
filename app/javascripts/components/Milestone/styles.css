@@ -10,17 +10,10 @@
   color: #000;
 }
 
-@media screen and (max-width: 715px) {
-  .root {
-    position: static;
-    width: 100%;
-    right: 0;
-  }
-}
-
 .header {
   margin: 29px 0 0 0;
 }
+
 .range {
   margin: 22px 0 16px;
 }
@@ -32,4 +25,16 @@
 
 .links {
   color: #CB0031;
+}
+
+@media screen and (max-width: 715px) {
+  .root {
+    position: static;
+    width: 100%;
+    right: 0;
+  }
+
+  .header {
+    margin: 0;
+  }
 }
