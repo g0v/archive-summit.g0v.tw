@@ -3,8 +3,17 @@ import "stylesheets/application.css";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { Root } from "javascripts/components";
+import { Router,  useRouterHistory } from 'react-router';
+import createHistory from 'history/lib/createHashHistory';
 import locale, { getLocale, setLocale } from "./locale";
+import getRoutes from './routes';
+
+const history = useRouterHistory(createHistory)({ queryKey: false });
+const component = (
+  <Router history={history} >
+    {getRoutes()}
+  </Router>
+);
 
 if (!getLocale()) {
   if (locale() === "zh-TW") {
@@ -15,5 +24,5 @@ if (!getLocale()) {
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  ReactDOM.render(<Root />, document.getElementById('react-root'));
+  ReactDOM.render(component, document.getElementById('react-root'));
 });

@@ -46,6 +46,11 @@
   cursor: pointer;
 }
 
+.item a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 @media screen and (max-width: 830px) {
   .root {
     display: block;
@@ -95,6 +100,11 @@
 .active {
   composes: item;
   background-color: #FFF;
+  color: #000;
+}
+
+.active a {
+  text-decoration: none;
   color: #000;
 }
 

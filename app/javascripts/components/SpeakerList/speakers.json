@@ -1,0 +1,66 @@
+{
+  "en-US": [
+    {
+      "image": "heusser.jpg",
+      "name": "Felipe Heusser",
+      "bio": ""
+    },
+    {
+      "image": "shigeomi.jpg",
+      "name": "Shigeomi Shibata",
+      "bio": ""
+    },
+    {
+      "image": "speakerholder.jpg",
+      "name": "Jen Bramley",
+      "bio": ""
+    },
+    {
+      "image": "speakerholder.jpg",
+      "name": "Julia Kloiber",
+      "bio": ""
+    },
+    {
+      "image": "speakerholder.jpg",
+      "name": "Colin Megill",
+      "bio": ""
+    },
+    {
+      "image": "speakerholder.jpg",
+      "name": "JK Suh",
+      "bio": ""
+    }
+  ],
+  "zh-TW": [
+    {
+      "image": "heusser.jpg",
+      "name": "Felipe Heusser",
+      "bio": ""
+    },
+    {
+      "image": "shigeomi.jpg",
+      "name": "Shigeomi Shibata",
+      "bio": ""
+    },
+    {
+      "image": "speakerholder.jpg",
+      "name": "Jen Bramley",
+      "bio": ""
+    },
+    {
+      "image": "speakerholder.jpg",
+      "name": "Julia Kloiber",
+      "bio": ""
+    },
+    {
+      "image": "speakerholder.jpg",
+      "name": "Colin Megill",
+      "bio": ""
+    },
+    {
+      "image": "speakerholder.jpg",
+      "name": "JK Suh",
+      "bio": ""
+    }
+  ]
+}
