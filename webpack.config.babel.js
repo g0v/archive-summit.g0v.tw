@@ -1,6 +1,7 @@
 import webpack from "webpack";
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import ExtractTextPlugin from "extract-text-webpack-plugin";
 import autoprefixer from "autoprefixer";
 
 export default {
@@ -11,7 +12,7 @@ export default {
 
   output: {
     path: path.join(__dirname, "dist", "2016"),
-    filename: "[name].js",
+    filename: "[name].[hash].js",
     publicPath: "/2016",
   },
 
@@ -47,7 +48,7 @@ export default {
       },
       {
         test: /\.css$/,
-        loader: 'style!css?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!postcss',
+        loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!postcss')
       },
       {
         test: /\.json$/,
@@ -69,6 +70,7 @@ export default {
   },
 
   plugins: [
+    new ExtractTextPlugin("[name].[hash].css"),
     new HtmlWebpackPlugin({
       title: "啥米零時政府 g0v 2016 summit",
       filename: "index.html",

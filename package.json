@@ -3,6 +3,7 @@
   "description": "g0v summit",
   "version": "0.0.1",
   "scripts": {
+    "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production webpack",
     "test": "npm run build",
     "webpack": "webpack --watch -d --display-reasons --display-chucks --progress",
@@ -25,6 +26,7 @@
     "babel-runtime": "^6.5.0",
     "classnames": "^2.2.3",
     "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "history": "^2.0.0",
     "html-webpack-plugin": "^2.9.0",
