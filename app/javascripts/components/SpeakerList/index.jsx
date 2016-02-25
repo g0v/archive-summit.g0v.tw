@@ -6,7 +6,7 @@ import speakers from "./speakers.json";
 class SpeakerList extends Component {
   speaker = (speaker) => {
     return (
-      <div className={styles.speaker}>
+      <div className={styles.speaker} key={speaker.name} >
         <img className={styles.avatar} src={require(`./${speaker.image}`)} />
         <div className={styles.name}>{speaker.name}</div>
         <p className={styles.bio}>{speaker.bio}</p>

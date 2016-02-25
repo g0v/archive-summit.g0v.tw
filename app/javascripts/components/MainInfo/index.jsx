@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { getLocale } from "javascripts/locale";
+import header from "jsons/header.json";
 import styles from "./styles.css";
 
 class MainInfo extends Component {
@@ -18,7 +20,7 @@ class MainInfo extends Component {
             />
           </div>
           <div className={styles.day}>5. 14-15</div>
-          <div className={styles.place}>中央研究院</div>
+          <div className={styles.place}>{header[getLocale()].location}</div>
         </div>
       </div>
     );
