@@ -16,11 +16,13 @@
   lost-column: 1/4;
   text-align: center;
   margin-bottom: 20px;
+  border-radius: 50%;
 }
 
 .avatar {
   width: 70%;
   border-radius: 50%;
+  background-color: rgba(254, 220, 117, 0.74);
 }
 
 .name {
