@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import classNames from "classnames";
-import { Link } from "react-router";
+import { IndexLink, Link } from "react-router";
 import { getLocale } from "javascripts/locale";
 import info from "jsons/header.json";
 import styles from "./styles";
@@ -10,6 +9,7 @@ class Header extends Component {
     hiddenMenu: false,
   };
   static contextTypes = {
+    router: React.PropTypes.object,
     changeLocale: React.PropTypes.func,
   };
   componentDidMount() {
@@ -34,6 +34,7 @@ class Header extends Component {
     });
   }
   render() {
+    const { isActive } = this.context.router;
     return (
       <header className={styles.root} ref="header">
         <svg
@@ -74,15 +75,23 @@ class Header extends Component {
           do {
             if (!this.state.hiddenMenu) {
               <ul className={styles.menu}>
-                <li className={styles.active}>
-                  <Link to="/">{info[getLocale()].home}</Link>
-                </li>
+                <IndexLink
+                  activeClassName={styles.active}
+                  className={styles.item}
+                  to="/"
+                >
+                  {info[getLocale()].home}
+                </IndexLink>
                 <li className={styles.item}>
                   {info[getLocale()].schedule}
                 </li>
-                <li className={styles.item}>
-                  <Link to="speakers">{info[getLocale()].speakers}</Link>
-                </li>
+                <Link
+                  activeClassName={styles.active}
+                  className={styles.item}
+                  to="speakers"
+                >
+                  {info[getLocale()].speakers}
+                </Link>
                 <li className={styles.item}>
                   {info[getLocale()].sponsors}
                 </li>

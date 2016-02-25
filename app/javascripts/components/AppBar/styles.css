@@ -44,6 +44,8 @@
   padding: 14px 26px 18px 26px;
   text-align: center;
   cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
 }
 
 .item a {
