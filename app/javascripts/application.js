@@ -7,8 +7,11 @@ import { Router,  useRouterHistory } from 'react-router';
 import createHistory from 'history/lib/createHashHistory';
 import locale, { getLocale, setLocale } from "./locale";
 import getRoutes from './routes';
+import ga from 'react-ga';
+ga.initialize('UA-41326468-1', { debug: true });
 
 const history = useRouterHistory(createHistory)({ queryKey: false });
+history.listen(location => ga.pageview(location.pathname));
 const component = (
   <Router history={history} >
     {getRoutes()}
