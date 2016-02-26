@@ -7,14 +7,18 @@ import styles from "./styles";
 class Header extends Component {
   state = {
     hiddenMenu: false,
+    offsetWidth: 0,
   };
   static contextTypes = {
     router: React.PropTypes.object,
     changeLocale: React.PropTypes.func,
   };
   componentDidMount() {
+    this.setState({
+      offsetWidth: this.refs.header.offsetWidth
+    });
     if (this.refs.header.offsetWidth <= 830) {
-      this.setState({ hiddenMenu: true });
+      this.setState({ hiddenMenu: true, });
     }
     window.addEventListener('resize', this.handleResize.bind(this));
   }
@@ -22,6 +26,9 @@ class Header extends Component {
     window.removeEventListener('resize', this.handleResize.bind(this));
   }
   handleResize(e) {
+    this.setState({
+      offsetWidth: this.refs.header.offsetWidth
+    });
     if (this.state.hiddenMenu && this.refs.header.offsetWidth > 830) {
       this.setState({ hiddenMenu: false });
     } else if (!this.state.hiddenMenu && this.refs.header.offsetWidth <= 830) {
@@ -70,35 +77,18 @@ class Header extends Component {
               </g>
             </svg>
           </div>
+          {
+            do {
+              if (this.state.offsetWidth >= 930) {
+                <Menu />
+              }
+            }
+          }
         </div>
         {
           do {
-            if (!this.state.hiddenMenu) {
-              <ul className={styles.menu}>
-                <IndexLink
-                  activeClassName={styles.active}
-                  className={styles.item}
-                  to="/"
-                >
-                  {info[getLocale()].home}
-                </IndexLink>
-                <li className={styles.item}>
-                  {info[getLocale()].schedule}
-                </li>
-                <Link
-                  activeClassName={styles.active}
-                  className={styles.item}
-                  to="speakers"
-                >
-                  {info[getLocale()].speakers}
-                </Link>
-                <li className={styles.item}>
-                  {info[getLocale()].sponsors}
-                </li>
-                <li className={styles.item}>
-                  {info[getLocale()].transport}
-                </li>
-              </ul>
+            if (!this.state.hiddenMenu && this.state.offsetWidth < 930) {
+              <Menu />
             }
           }
         }
@@ -110,5 +100,39 @@ class Header extends Component {
     );
   }
 };
+
+const Menu = () => {
+  return (
+    <ul className={styles.menu}>
+      <IndexLink
+        activeClassName={styles.active}
+        className={styles.item}
+        to="/"
+      >
+        {info[getLocale()].home}
+      </IndexLink>
+      <Link
+        activeClassName={styles.active}
+        className={styles.item}
+        to="schedules"
+      >
+        {info[getLocale()].schedule}
+      </Link>
+      <Link
+        activeClassName={styles.active}
+        className={styles.item}
+        to="speakers"
+      >
+        {info[getLocale()].speakers}
+      </Link>
+      <li className={styles.item}>
+        {info[getLocale()].sponsors}
+      </li>
+      <li className={styles.item}>
+        {info[getLocale()].transport}
+      </li>
+    </ul>
+  );
+}
 
 export default Header;

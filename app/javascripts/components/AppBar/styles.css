@@ -18,10 +18,11 @@
 
 .brand {
   display: flex;
-  width: 265px;
+  width: 100%;
 }
 
 .title {
+  font-family: Audiowide;
   margin: 0;
   text-transform: uppercase;
   padding: 13px 18px 0 26px;
@@ -37,6 +38,7 @@
   padding: 0;
   list-style: none;
   height: 60px;
+  margin-left: 18px;
 }
 
 .item {
@@ -52,52 +54,6 @@
 .item a {
   text-decoration: none;
   color: #FFF;
-}
-
-@media screen and (max-width: 830px) {
-  .root {
-    display: block;
-  }
-
-  .brand {
-    margin-left: 20px;
-  }
-
-  .title {
-    padding-top: 7px;
-    padding-right: 7px;
-  }
-
-  .live {
-    padding-top: 7px;
-  }
-
-  .ham {
-    display: block;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(0.5);
-  }
-
-  .ham path {
-    fill: #FFF;
-  }
-
-  .ham:hover path {
-    fill: #000;
-  }
-
-  .menu {
-    margin-top: 15px;
-  }
-
-  .item {
-    display: block;
-    width: 100%;
-    background-color: #CB0031;
-  }
 }
 
 .active {
@@ -137,4 +93,50 @@
 
 .button:hover {
   color: #000;
+}
+
+@media screen and (max-width: 930px) {
+  .root {
+    display: block;
+  }
+
+  .brand {
+    margin-left: 20px;
+  }
+
+  .ham {
+    display: block;
+    margin-top: 4px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.5);
+  }
+
+  .ham path {
+    fill: #FFF;
+  }
+
+  .ham:hover path {
+    fill: #000;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+
+  .item {
+    display: block;
+    width: 100%;
+    background-color: #CB0031;
+  }
+
+  .active {
+    background-color: #FFF;
+  }
+
+  .button {
+    width: 64px;
+  }
 }
