@@ -5,6 +5,6 @@
   background-size: 90%;
   width: 100%;
   position: relative;
-  z-index: -100;
+  z-index: 100;
   margin-top: 60px;
 }
