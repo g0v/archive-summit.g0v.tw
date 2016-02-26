@@ -12,32 +12,31 @@ export default class Milestone extends Component {
         <section className={styles.section}>
           {data.milestones.map(({range, title, url, label}) => (
             <article className={styles.article} key={title}>
-              <div className={styles.range}>
-                <span className={styles.date}>{range[0]}</span>
-                －
-                <span className={styles.date}>{range[1]}</span>
-              </div>
               <div className={styles.title}>
                 <a className={styles.links} href={url} target="_blank">
                   {title}
                 </a>
-                {
-                  do {
-                    if (label) {
-                      <div>
-                        <span className={styles.label}>{label}</span>
-                      </div>
+              </div>
+              <div className={styles.range}>
+                <span className={styles.date}>{range[0]}</span>
+                －
+                <span className={styles.date}>{range[1]}</span>
+                  {
+                    do {
+                      if (label) {
+                        <div>
+                          <span className={styles.label}>{label}</span>
+                        </div>
+                      }
                     }
                   }
-                }
               </div>
             </article>
           ))}
         </section>
         <p>
           {milestoneData[getLocale()].media}
-          {milestoneData[getLocale()].person + ' '}
-          (<a href={`mailto:${milestoneData[getLocale()].email}`}>{milestoneData[getLocale()].email}</a>)
+          (<a href={`mailto:${milestoneData[getLocale()].email}`}>{milestoneData[getLocale()].person}</a>)
         </p>
       </div>
     );
