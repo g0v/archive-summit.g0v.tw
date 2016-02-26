@@ -4,43 +4,47 @@
     "milestones": [
       {
         "range": ["2016/2/15", "2016/3/20"],
-        "title": "Early Bird Program",
+        "title": "International Early Bird (US$25)",
         "url": "http://g0v-summit2016.kktix.cc/events/early-bird"
       }, {
         "range": ["2016/2/15", "2016/3/20"],
-        "title": "Contributor Registration",
+        "title": "Contributor Tickets (US$25)",
         "url": "http://g0v-summit2016.kktix.cc/events/g0ver"
       }, {
         "range": ["2016/4/1", "2016/4/15"],
-        "title": "Regular Registration",
+        "title": "Regular Tickets (US$36)",
         "url": "http://g0v-summit2016.kktix.cc/events/conference",
         "label": "Not started yet"
       }
     ],
     "media": "Media contact: ",
     "person": "Lily Hsu",
-    "email": "g0v-summit-media@googlegroups.com"
+    "email": "g0v-summit-media@googlegroups.com",
+    "sponsor": "贊助大會",
+    "sponsoremail": "g0v-summit-sponsor@googlegroups.com"
   },
   "zh-TW": {
     "header": "時間表",
     "milestones": [
       {
         "range": ["2016/2/15", "2016/3/20"],
-        "title": "國際早鳥票",
+        "title": "國際早鳥票 (TW$800)",
         "url": "http://g0v-summit2016.kktix.cc/events/early-bird"
       }, {
         "range": ["2016/2/15", "2016/3/20"],
-        "title": "社群貢獻票",
+        "title": "社群貢獻票 (TW$800)",
         "url": "http://g0v-summit2016.kktix.cc/events/g0ver"
       }, {
         "range": ["2016/4/1", "2016/4/15"],
-        "title": "一般票",
+        "title": "一般票 (TW$1200)",
         "url": "http://g0v-summit2016.kktix.cc/events/conference",
         "label": "尚未開賣"
       }
     ],
     "media": "媒體聯絡人：",
     "person": "Lily Hsu",
-    "email": "g0v-summit-media@googlegroups.com"
+    "email": "g0v-summit-media@googlegroups.com",
+    "sponsor": "Sponsor this eventa",
+    "sponsoremail": "g0v-summit-sponsor@googlegroups.com"
   }
 }

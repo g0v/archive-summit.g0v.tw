@@ -36,7 +36,10 @@ export default class Milestone extends Component {
         </section>
         <p>
           {milestoneData[getLocale()].media}
-          (<a href={`mailto:${milestoneData[getLocale()].email}`}>{milestoneData[getLocale()].person}</a>)
+          <a href={`mailto:${milestoneData[getLocale()].email}`}>{milestoneData[getLocale()].person}</a>
+        </p>
+        <p>
+          <a href={`mailto:${milestoneData[getLocale()].sponsoremail}`}>{milestoneData[getLocale()].sponsor}</a>
         </p>
       </div>
     );
