@@ -12,7 +12,7 @@
 }
 
 .ham {
-  opacity: 0;
+  display: none;
   cursor: pointer;
 }
 
@@ -73,7 +73,7 @@
   }
 
   .ham {
-    opacity: 1;
+    display: block;
     height: 60px;
     position: absolute;
     top: 0;
