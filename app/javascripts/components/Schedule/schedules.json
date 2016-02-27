@@ -1,0 +1,465 @@
+{
+  "en-US": {
+    "header": "Schedule",
+    "day1": [
+      {
+        "time" : "08:30-09:20",
+        "event" : "Registration"
+      },
+      {
+        "time" : "09:20-09:30",
+        "event" : "Opening"
+      },
+      {
+        "time" : "09:30-10:00",
+        "event" : "Keynote"
+      },
+      {
+        "time" : "10:00-10:30",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "10:30-11:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "11:00-11:30",
+        "event": "Tea time"
+      },
+      {
+        "time" : "11:30-12:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "12:00-12:30",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "12:30-13:30",
+        "event" : "Launch"
+      },
+      {
+        "time" : "13:30-14:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "14:00-14:30",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "14:30-15:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "15:00-15:40",
+        "event" : "Tea time"
+      },
+      {
+        "time" : "15:40-16:10",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "16:10-16:40",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "16:45-17:30",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      }
+    ],
+    "day2": [
+      {
+        "time" : "08:30-09:20",
+        "event" : "Registration"
+      },
+      {
+        "time" : "09:20-09:30",
+        "event" : "Opening"
+      },
+      {
+        "time" : "09:30-10:30",
+        "event" : "Unconference 1"
+      },
+      {
+        "time" : "10:30-11:30",
+        "event" : "Unconference 2"
+      },
+      {
+        "time" : "11:30-12:00",
+        "event" : "Keynote"
+      },
+      {
+        "time" : "12:00-13:00",
+        "event" : "Launch"
+      },
+      {
+        "time" : "13:00-13:30",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "13:30-14:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "14:00-14:40",
+        "event": "Tea time"
+      },
+      {
+        "time" : "14:40-15:10",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "15:10-15:40",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "15:40-16:25",
+        "event" : "Keynote",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "",
+            "title": "",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "16:30-15:00",
+        "event": "Lightning Talk"
+      },
+      {
+        "time" : "17:30-17:40",
+        "event": "Closing"
+      }
+    ]
+  },
+  "zh-TW": {
+    "header": "議程表",
+    "day1": [],
+    "day2": []
+  }
+}
