@@ -1,0 +1,49 @@
+@value text-color: #888888;
+@value active-text-color: #126EBC;
+@value background-color: #F6F6F6;
+@value border-color: #E5E5E5;
+
+.tabs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  height: 40px;
+  background-color: background-color;
+  border: solid 1px border-color;
+  border-right: none;
+  border-left: none;
+}
+
+.label {
+  display: inline-block;
+  padding: 11px 30px 10px;
+  line-height: 19px;
+  color: text-color;
+  cursor: pointer;
+  border-right: solid 1px border-color;
+}
+
+.label:last-child {
+  border-right: none;
+}
+
+.active {
+  color: active-text-color;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+
+.tab:not(.tabActive) {
+  display: none;
+}
+
+.tabActive) {
+  display: block;
+}

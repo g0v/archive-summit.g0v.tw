@@ -13,6 +13,26 @@ export default class Schedule extends Component {
      this.setState({index});
    };
   render() {
+    const day1 = schedules[getLocale()]["day1"].map((it) => {
+      if (!it.events) return { colSpan: 3, ...it};
+      return {
+        time: it.time,
+        r1: (<Slot speaker={it.events[0].speaker} title={it.events[0].title} />),
+        r0: (<Slot speaker={it.events[1].speaker} title={it.events[1].title} />),
+        r2: (<Slot speaker={it.events[2].speaker} title={it.events[2].title} />),
+      };
+    });
+
+    const day2 = schedules[getLocale()]["day2"].map((it) => {
+      if (!it.events) return { colSpan: 3, ...it};
+      return {
+        time: it.time,
+        r1: (<Slot speaker={it.events[0].speaker} title={it.events[0].title} />),
+        r0: (<Slot speaker={it.events[1].speaker} title={it.events[1].title} />),
+        r2: (<Slot speaker={it.events[2].speaker} title={it.events[2].title} />),
+      };
+    });
+
     return (
       <div className={styles.root}>
         <h2 className={styles.header}>{schedules[getLocale()].header}</h2>
@@ -24,29 +44,13 @@ export default class Schedule extends Component {
             <Tab label="Day 1">
               <Table
                 model={Model}
-                source={schedules[getLocale()]["day1"].map((it) => {
-                  if (!it.events) return { colSpan: 3, ...it};
-                  return {
-                    time: it.time,
-                    r1: <Slot />,
-                    r0: <Slot />,
-                    r2: <Slot />,
-                  };
-                })}
+                source={day1}
               />
             </Tab>
             <Tab label="Day 2">
               <Table
                 model={Model}
-                source={schedules[getLocale()]["day2"].map((it) => {
-                  if (!it.events) return { colSpan: 3, ...it};
-                  return {
-                    time: it.time,
-                    r1: <Slot />,
-                    r0: <Slot />,
-                    r2: <Slot />,
-                  };
-                })}
+                source={day2}
               />
             </Tab>
           </Tabs>
@@ -56,11 +60,11 @@ export default class Schedule extends Component {
   }
 };
 
-const Slot = () => {
+const Slot = ({title, speaker}) => {
   return (
     <div>
-      <div>Title of Speech</div>
-      <div>Speaker</div>
+      <div>{title}</div>
+      <div>{speaker}</div>
     </div>
   );
 }

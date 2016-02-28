@@ -12,30 +12,30 @@
       },
       {
         "time" : "09:30-10:00",
-        "event" : "Keynote"
+        "event" : "Keynote 1: Felipe Heusser"
       },
       {
         "time" : "10:00-10:30",
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "D",
+            "speaker": "Hoony Jang",
+            "title": "How to extend Civic Tech to civic organizations (NPO, NGO, and the media) in KOREA?",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "Charlotte Richard",
+            "title": "Democracy and civic engagement as an open media ",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "D",
+            "speaker": "Kirby Wu",
+            "title": "媒體無間道 — 我在新聞界臥底的日子",
             "abstract": ""
           }
         ]
@@ -45,23 +45,23 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "I",
+            "speaker": "謝宗震",
+            "title": "Data For Social Good – 由資料驅動的公益新浪潮",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "JK Suh",
+            "title": "The Korean General Election and VAAs: the case of \"Ping\"",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "Katarzyna Mikołajczyk",
+            "title": "Cities are the key to engage citizens into open data",
             "abstract": ""
           }
         ]
@@ -75,23 +75,23 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "I",
+            "speaker": "高英勛",
+            "title": "從 .org 到 .g0v － 台灣NGO的網路參與與數位挑戰",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "C",
+            "speaker": "Yago Bermejo Abati",
+            "title": "Digital participation strategy in Podemos party.",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "F",
+            "speaker": "陳坤助",
+            "title": "強震即時警報 EEW",
             "abstract": ""
           }
         ]
@@ -101,53 +101,53 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "Sergejus Muravjovas",
+            "title": "On the Yellow Brick Road One Hundred Years Later: The Journey of Reinvention of a Classical NGO",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "Colin Megill",
+            "title": "Pol.is in Taiwan: Bridging the gap between public discourse, consultation, and policy",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "E",
+            "speaker": "Kuo-Yu slayer Chuang",
+            "title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project.",
             "abstract": ""
           }
         ]
       },
       {
         "time" : "12:30-13:30",
-        "event" : "Launch"
+        "event" : "Lunch"
       },
       {
         "time" : "13:30-14:00",
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "Jen Bramley",
+            "title": "Powering civic tech reuse with EveryPolitician data",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "E",
+            "speaker": "Liz Barry",
+            "title": "Community science for healthy environment",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "E",
+            "speaker": "詹為翔",
+            "title": "開放街圖在外交援助計畫上的應用",
             "abstract": ""
           }
         ]
@@ -157,23 +157,23 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "James Mckinney",
+            "title": "Civic Tech in Monitoring Legislatures: The Long Game",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "A",
+            "speaker": "Yantisa Akhadi",
+            "title": "Government (Participatory) Mapping",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "G",
+            "speaker": "劉宇倫",
+            "title": "傳染病開放資料過去、現在、未來-以登革熱為例",
             "abstract": ""
           }
         ]
@@ -183,23 +183,23 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "A",
+            "speaker": "Rajib Timalsina",
+            "title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "C",
+            "speaker": "Jim Horng",
+            "title": "從滅頂秒退地圖看網路世代無組織社運",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "E",
+            "speaker": "Dongpo Deng",
+            "title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
             "abstract": ""
           }
         ]
@@ -213,23 +213,23 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "I",
+            "speaker": "Dan Fowler",
+            "title": "Data Packages and Moving Toward a World of Frictionless Data",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "I",
+            "speaker": "ipa & ETBlue",
+            "title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "F",
+            "speaker": "蘇彥禎",
+            "title": "空污資料搭配風場的內插與視覺化",
             "abstract": ""
           }
         ]
@@ -239,52 +239,38 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "I",
+            "speaker": "Henare Degan",
+            "title": "morph.io: the international civic tech scraping platform",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "I",
+            "speaker": "Shigeomi Shibata",
+            "title": "How to spread the civic tech movement to non-techie people?",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "F",
+            "speaker": "洪申翰, 曾虹文",
+            "title": "綠盟兩岸環境資料透明與再應用專案",
             "abstract": ""
           }
         ]
       },
       {
-        "time" : "16:45-17:30",
-        "events" : [
-          {
-            "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
-            "abstract": ""
-          },
-          {
-            "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
-            "abstract": ""
-          },
-          {
-            "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
-            "abstract": ""
-          }
-        ]
+        "time": "16:45-17:00",
+        "event": "Code for All – Civic Tech around the World / Julia Kloiber"
+      },
+      {
+        "time": "17:00-17:15",
+        "event": "從g0v到gov -- 潛入衛福部400天 / 羅佩琪"
+      },
+      {
+        "time": "17:15-17:30",
+        "event": "TBA"
       }
     ],
     "day2": [
@@ -306,34 +292,34 @@
       },
       {
         "time" : "11:30-12:00",
-        "event" : "Keynote"
+        "event" : "Keynote (TBA)"
       },
       {
         "time" : "12:00-13:00",
-        "event" : "Launch"
+        "event" : "Lunch"
       },
       {
         "time" : "13:00-13:30",
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "梁翔勝",
+            "title": "不就是個比較表，能有什麼難的？",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "A",
+            "speaker": "Saul Peng",
+            "title": "g0v預算視覺化後續 - 臺北市經驗",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "D",
+            "speaker": "Venus Lui",
+            "title": "open archives and arts",
             "abstract": ""
           }
         ]
@@ -343,23 +329,23 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "C",
+            "speaker": "Walkingice",
+            "title": "鍵盤宅的輔選經驗談",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
+            "category" : "A",
             "speaker": "",
-            "title": "",
+            "title": "TBA",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "D",
+            "speaker": "董福興",
+            "title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
             "abstract": ""
           }
         ]
@@ -373,23 +359,23 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "Nanang Syaifudin",
+            "title": "True Story: Public e-Participatory for Election Monitoring (MataMassa or PublicEye)",
             "abstract": ""
           },
           {
             "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "A",
+            "speaker": "Lucien Lin",
+            "title": "Hack on \"Taiwan Open Government Data License version 1.0\"",
             "abstract": ""
           },
           {
             "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "E",
+            "speaker": "freyja van den boom",
+            "title": "Text/Data Mining",
             "abstract": ""
           }
         ]
@@ -399,53 +385,38 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "category" : "B",
+            "speaker": "Nicholas Doiron",
+            "title": "Myanmar Election",
             "abstract": ""
           },
           {
             "venue" : "R0",
             "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "speaker": "駱勁成",
+            "title": "立委／議員投票指南",
             "abstract": ""
           },
           {
             "venue" : "R2",
             "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
+            "speaker": "林雨蒼",
+            "title": "不開放、不透明的黨產開放資料",
             "abstract": ""
           }
         ]
       },
       {
-        "time" : "15:40-16:25",
-        "event" : "Keynote",
-        "events" : [
-          {
-            "venue" : "R1",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
-            "abstract": ""
-          },
-          {
-            "venue" : "R0",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
-            "abstract": ""
-          },
-          {
-            "venue" : "R2",
-            "category" : "Workshop / 工作坊",
-            "speaker": "",
-            "title": "",
-            "abstract": ""
-          }
-        ]
+        "time": "16:45-17:00",
+        "event": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions. / Miguel Arana Catania"
+      },
+      {
+        "time": "17:00-17:15",
+        "event": "國會沒代誌了嗎？ / clkao"
+      },
+      {
+        "time": "17:15-17:30",
+        "event": "TBA"
       },
       {
         "time" : "16:30-15:00",
@@ -459,7 +430,431 @@
   },
   "zh-TW": {
     "header": "議程表",
-    "day1": [],
-    "day2": []
+    "day1": [
+      {
+        "time" : "08:30-09:20",
+        "event" : "Registration"
+      },
+      {
+        "time" : "09:20-09:30",
+        "event" : "Opening"
+      },
+      {
+        "time" : "09:30-10:00",
+        "event" : "Keynote 1: Felipe Heusser"
+      },
+      {
+        "time" : "10:00-10:30",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "D",
+            "speaker": "Hoony Jang",
+            "title": "How to extend Civic Tech to civic organizations (NPO, NGO, and the media) in KOREA?",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "B",
+            "speaker": "Charlotte Richard",
+            "title": "Democracy and civic engagement as an open media ",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "D",
+            "speaker": "Kirby Wu",
+            "title": "媒體無間道 — 我在新聞界臥底的日子",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "10:30-11:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "I",
+            "speaker": "謝宗震",
+            "title": "Data For Social Good – 由資料驅動的公益新浪潮",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "B",
+            "speaker": "JK Suh",
+            "title": "The Korean General Election and VAAs: the case of \"Ping\"",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "B",
+            "speaker": "Katarzyna Mikołajczyk",
+            "title": "Cities are the key to engage citizens into open data",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "11:00-11:30",
+        "event": "Tea time"
+      },
+      {
+        "time" : "11:30-12:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "I",
+            "speaker": "高英勛",
+            "title": "從 .org 到 .g0v － 台灣NGO的網路參與與數位挑戰",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "C",
+            "speaker": "Yago Bermejo Abati",
+            "title": "Digital participation strategy in Podemos party.",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "F",
+            "speaker": "陳坤助",
+            "title": "強震即時警報 EEW",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "12:00-12:30",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "B",
+            "speaker": "Sergejus Muravjovas",
+            "title": "On the Yellow Brick Road One Hundred Years Later: The Journey of Reinvention of a Classical NGO",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "B",
+            "speaker": "Colin Megill",
+            "title": "Pol.is in Taiwan: Bridging the gap between public discourse, consultation, and policy",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "E",
+            "speaker": "Kuo-Yu slayer Chuang",
+            "title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project.",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "12:30-13:30",
+        "event" : "Lunch"
+      },
+      {
+        "time" : "13:30-14:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "B",
+            "speaker": "Jen Bramley",
+            "title": "Powering civic tech reuse with EveryPolitician data",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "E",
+            "speaker": "Liz Barry",
+            "title": "Community science for healthy environment",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "E",
+            "speaker": "詹為翔",
+            "title": "開放街圖在外交援助計畫上的應用",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "14:00-14:30",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "B",
+            "speaker": "James Mckinney",
+            "title": "Civic Tech in Monitoring Legislatures: The Long Game",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "A",
+            "speaker": "Yantisa Akhadi",
+            "title": "Government (Participatory) Mapping",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "G",
+            "speaker": "劉宇倫",
+            "title": "傳染病開放資料過去、現在、未來-以登革熱為例",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "14:30-15:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "A",
+            "speaker": "Rajib Timalsina",
+            "title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "C",
+            "speaker": "Jim Horng",
+            "title": "從滅頂秒退地圖看網路世代無組織社運",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "E",
+            "speaker": "Dongpo Deng",
+            "title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "15:00-15:40",
+        "event" : "Tea time"
+      },
+      {
+        "time" : "15:40-16:10",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "I",
+            "speaker": "Dan Fowler",
+            "title": "Data Packages and Moving Toward a World of Frictionless Data",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "I",
+            "speaker": "ipa & ETBlue",
+            "title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "F",
+            "speaker": "蘇彥禎",
+            "title": "空污資料搭配風場的內插與視覺化",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "16:10-16:40",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "I",
+            "speaker": "Henare Degan",
+            "title": "morph.io: the international civic tech scraping platform",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "I",
+            "speaker": "Shigeomi Shibata",
+            "title": "How to spread the civic tech movement to non-techie people?",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "F",
+            "speaker": "洪申翰, 曾虹文",
+            "title": "綠盟兩岸環境資料透明與再應用專案",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time": "16:45-17:00",
+        "event": "Code for All – Civic Tech around the World / Julia Kloiber"
+      },
+      {
+        "time": "17:00-17:15",
+        "event": "從g0v到gov -- 潛入衛福部400天 / 羅佩琪"
+      },
+      {
+        "time": "17:15-17:30",
+        "event": "TBA"
+      }
+    ],
+    "day2": [
+      {
+        "time" : "08:30-09:20",
+        "event" : "Registration"
+      },
+      {
+        "time" : "09:20-09:30",
+        "event" : "Opening"
+      },
+      {
+        "time" : "09:30-10:30",
+        "event" : "Unconference 1"
+      },
+      {
+        "time" : "10:30-11:30",
+        "event" : "Unconference 2"
+      },
+      {
+        "time" : "11:30-12:00",
+        "event" : "Keynote (TBA)"
+      },
+      {
+        "time" : "12:00-13:00",
+        "event" : "Lunch"
+      },
+      {
+        "time" : "13:00-13:30",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "B",
+            "speaker": "梁翔勝",
+            "title": "不就是個比較表，能有什麼難的？",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "A",
+            "speaker": "Saul Peng",
+            "title": "g0v預算視覺化後續 - 臺北市經驗",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "D",
+            "speaker": "Venus Lui",
+            "title": "open archives and arts",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "13:30-14:00",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "C",
+            "speaker": "Walkingice",
+            "title": "鍵盤宅的輔選經驗談",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "A",
+            "speaker": "",
+            "title": "TBA",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "D",
+            "speaker": "董福興",
+            "title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "14:00-14:40",
+        "event": "Tea time"
+      },
+      {
+        "time" : "14:40-15:10",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "B",
+            "speaker": "Nanang Syaifudin",
+            "title": "True Story: Public e-Participatory for Election Monitoring (MataMassa or PublicEye)",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "A",
+            "speaker": "Lucien Lin",
+            "title": "Hack on \"Taiwan Open Government Data License version 1.0\"",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "E",
+            "speaker": "freyja van den boom",
+            "title": "Text/Data Mining",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time" : "15:10-15:40",
+        "events" : [
+          {
+            "venue" : "R1",
+            "category" : "B",
+            "speaker": "Nicholas Doiron",
+            "title": "Myanmar Election",
+            "abstract": ""
+          },
+          {
+            "venue" : "R0",
+            "category" : "Workshop / 工作坊",
+            "speaker": "駱勁成",
+            "title": "立委／議員投票指南",
+            "abstract": ""
+          },
+          {
+            "venue" : "R2",
+            "category" : "Workshop / 工作坊",
+            "speaker": "林雨蒼",
+            "title": "不開放、不透明的黨產開放資料",
+            "abstract": ""
+          }
+        ]
+      },
+      {
+        "time": "16:45-17:00",
+        "event": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions. / Miguel Arana Catania"
+      },
+      {
+        "time": "17:00-17:15",
+        "event": "國會沒代誌了嗎？ / clkao"
+      },
+      {
+        "time": "17:15-17:30",
+        "event": "TBA"
+      },
+      {
+        "time" : "16:30-15:00",
+        "event": "Lightning Talk"
+      },
+      {
+        "time" : "17:30-17:40",
+        "event": "Closing"
+      }
+    ]
   }
 }
