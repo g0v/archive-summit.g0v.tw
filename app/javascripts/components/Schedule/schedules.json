@@ -140,7 +140,7 @@
             "venue" : "R0",
             "category" : "E",
             "speaker": "Liz Barry",
-            "title": "Community science for healthy environment",
+            "title": "Community science for healthy environments",
             "abstract": ""
           },
           {
@@ -266,7 +266,7 @@
       },
       {
         "time": "17:00-17:15",
-        "event": "從g0v到gov -- 潛入衛福部400天 / 羅佩琪"
+        "event": "從 g0v 到 gov -- 潛入衛福部400天 / 羅佩琪"
       },
       {
         "time": "17:15-17:30",
@@ -319,7 +319,7 @@
             "venue" : "R2",
             "category" : "D",
             "speaker": "Venus Lui",
-            "title": "open archives and arts",
+            "title": "Importance of having an Arts database in Asia",
             "abstract": ""
           }
         ]
@@ -368,14 +368,14 @@
             "venue" : "R0",
             "category" : "A",
             "speaker": "Lucien Lin",
-            "title": "Hack on \"Taiwan Open Government Data License version 1.0\"",
+            "title": "進擊的台灣政府資料開放授權條款",
             "abstract": ""
           },
           {
             "venue" : "R2",
             "category" : "E",
-            "speaker": "freyja van den boom",
-            "title": "Text/Data Mining",
+            "speaker": "Freyja van den boom",
+            "title": "Ever tried TDM and would you do it again ?",
             "abstract": ""
           }
         ]
@@ -569,7 +569,7 @@
             "venue" : "R0",
             "category" : "E",
             "speaker": "Liz Barry",
-            "title": "Community science for healthy environment",
+            "title": "Community science for healthy environments",
             "abstract": ""
           },
           {
@@ -695,7 +695,7 @@
       },
       {
         "time": "17:00-17:15",
-        "event": "從g0v到gov -- 潛入衛福部400天 / 羅佩琪"
+        "event": "從 g0v 到 gov -- 潛入衛福部400天 / 羅佩琪"
       },
       {
         "time": "17:15-17:30",
@@ -748,7 +748,7 @@
             "venue" : "R2",
             "category" : "D",
             "speaker": "Venus Lui",
-            "title": "open archives and arts",
+            "title": "Importance of having an Arts database in Asia",
             "abstract": ""
           }
         ]
@@ -797,14 +797,14 @@
             "venue" : "R0",
             "category" : "A",
             "speaker": "Lucien Lin",
-            "title": "Hack on \"Taiwan Open Government Data License version 1.0\"",
+            "title": "進擊的台灣政府資料開放授權條款",
             "abstract": ""
           },
           {
             "venue" : "R2",
             "category" : "E",
-            "speaker": "freyja van den boom",
-            "title": "Text/Data Mining",
+            "speaker": "Freyja van den boom",
+            "title": "Ever tried TDM and would you do it again ?",
             "abstract": ""
           }
         ]
