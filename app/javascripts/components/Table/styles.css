@@ -1,0 +1,64 @@
+@value font-size: 12px;
+@value text-color: #FFF;
+@value header-bg-color: #CB0031;
+@value cell-border-color: #E5E5E5;
+@value border-color: #BFBFBF;
+
+.root {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid border-color;
+  width: 100%;
+  font-size: font-size;
+}
+
+.root td,
+.root th {
+  border-left: 1px solid cell-border-color;
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0.5em 1em;
+}
+
+.root td:first-child,
+.root th:first-child {
+  border-left-width: 0;
+}
+
+.root thead {
+  background-color: header-bg-color;
+  color: text-color;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid cell-border-color;
+}
+
+.root thead th {
+  font-weight: 600;
+}
+
+.root tbody td {
+  font-weight: 300;
+  border-bottom: 1px solid cell-border-color;
+  text-align: center;
+}
+
+.root tbody tr:hover td {
+  background-color: #EFF8FF;
+}
+
+.amount {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.root tbody > tr:last-child > td {
+  border-bottom-width: 0;
+}
+
+.root tfoot td {
+  border-top: 1px solid cell-border-color;
+}

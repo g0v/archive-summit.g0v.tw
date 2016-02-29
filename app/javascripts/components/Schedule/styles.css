@@ -1,0 +1,13 @@
+.root {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
+  text-align: center;
+  padding-bottom: 103px;
+  color: #000;
+}
+
+.section {
+  width: 100%;
+  padding-left: 29px;
+  padding-right: 29px;
+}
