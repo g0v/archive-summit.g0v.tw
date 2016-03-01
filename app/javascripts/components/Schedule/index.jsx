@@ -14,7 +14,7 @@ export default class Schedule extends Component {
    };
   render() {
     const day1 = schedules[getLocale()]["day1"].map((it) => {
-      if (!it.events) return { colSpan: 3, ...it};
+      if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
       return {
         time: it.time,
         r1: (<Slot speaker={it.events[0].speaker} title={it.events[0].title} />),
@@ -24,7 +24,7 @@ export default class Schedule extends Component {
     });
 
     const day2 = schedules[getLocale()]["day2"].map((it) => {
-      if (!it.events) return { colSpan: 3, ...it};
+      if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
       return {
         time: it.time,
         r1: (<Slot speaker={it.events[0].speaker} title={it.events[0].title} />),
