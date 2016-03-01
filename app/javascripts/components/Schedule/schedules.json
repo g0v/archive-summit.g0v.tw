@@ -228,7 +228,7 @@
           {
             "venue" : "R2",
             "category" : "F",
-            "speaker": "蘇彥禎",
+            "speaker": "Yan-Jen Su",
             "title": "Interpolation and Visualization of Air Pollution based on Wind Fields",
             "abstract": "<p>A system based on wind fields to interpolate and to visualized air pollution is introduced. <br/> The air pollution information provided by the government is a set of values sampled on the measuring stations. <br/> In contrast to the traditional linear interpolation, wind fields are applied to estimate the air pollution indices between the measuring stations. <br/> The estimated results are  the associated with the wind field and geographic information to construct a 3D virtual world and display on Web browsers.<br/> It provides additional information for users to understand the conditions of the air pollution and the environment.</p>"
           }
