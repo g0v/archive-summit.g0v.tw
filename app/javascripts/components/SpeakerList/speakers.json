@@ -3,64 +3,88 @@
     {
       "image": "heusser.jpg",
       "name": "Felipe Heusser",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "shigeomi.jpg",
       "name": "Shigeomi Shibata",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "default.png",
       "name": "Jen Bramley",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "default.png",
       "name": "Julia Kloiber",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "default.png",
       "name": "Colin Megill",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "default.png",
       "name": "JK Suh",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     }
   ],
   "zh-TW": [
     {
       "image": "heusser.jpg",
       "name": "Felipe Heusser",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "shigeomi.jpg",
       "name": "Shigeomi Shibata",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "default.png",
       "name": "Jen Bramley",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "default.png",
       "name": "Julia Kloiber",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "default.png",
       "name": "Colin Megill",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     },
     {
       "image": "default.png",
       "name": "JK Suh",
-      "bio": ""
+      "bio": "",
+      "nation": "",
+      "twitter": ""
     }
   ]
 }
