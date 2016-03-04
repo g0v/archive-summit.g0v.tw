@@ -13,7 +13,7 @@ export default {
   output: {
     path: path.join(__dirname, "dist", "2016"),
     filename: "[name].[hash].js",
-    publicPath: "/2016",
+    publicPath: "/2016/",
   },
 
   resolve: {
@@ -25,7 +25,7 @@ export default {
     loaders: [
       {
         test: /\.(png|jpg)$/,
-        loader: 'url',
+        loader: 'url?limit=50000',
       },
       {
         test: /app\/images\/speakers2014/,
