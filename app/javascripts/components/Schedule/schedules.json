@@ -172,9 +172,9 @@
           {
             "venue" : "R2",
             "category" : "G",
-            "speaker": "劉宇倫",
-            "title": "傳染病開放資料過去、現在、未來-以登革熱為例",
-            "abstract": "<p>2015年台灣登革熱疫情病例數創歷史新高，在同年，於open data社群協助及期待下，釋出多項即時且較為精細的登革熱病例及病媒蚊調查等open data。本次分享內容主要如下：</p><ul><li>登革熱open data的釋出心路歷程及製作經驗</li><li>與社群合作的壓力與助力</li><li>中央與地方的競爭與合作</li><li>登革熱open data的國內、外應用實例</li><li>登革熱或傳染病open data的未來努力方向</li></ul>"
+            "speaker": "Yu-Lun Liu",
+            "title": "The Past, Present and Future of Open Communicable Disease Data - Using Dengue Fever As An Example",
+            "abstract": "<p>The number of cases in the 2015 dengue fever outbreak in Taiwan has hit a historical high. In response to the outbreak, Taiwan Centers for Disease Control has collaborated with the open data community and released several open data for the dengue epidemiological and vector surveillance. This talk will cover: the experience on producing and releasing dengue fever open data; the collaboration and competition between the local and the central governments; applications of dengue fever open data; and the future prospects of communicable disease open data movement of Taiwan CDC.<p>"
           }
         ]
       },
