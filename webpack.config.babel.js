@@ -4,6 +4,8 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import ExtractTextPlugin from "extract-text-webpack-plugin";
 import autoprefixer from "autoprefixer";
 
+import jld from "./jld.js";
+
 export default {
 
   entry: {
@@ -73,6 +75,7 @@ export default {
     new ExtractTextPlugin("[name].[hash].css"),
     new HtmlWebpackPlugin({
       title: "啥米零時政府 g0v 2016 summit",
+      jld: jld,
       filename: "index.html",
       template: "app/templates/index.html"
     }),
