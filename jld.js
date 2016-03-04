@@ -229,4 +229,4 @@ for (day in days) {
 }
 
 
-console.log(JSON.stringify(base));
+export default JSON.stringify(base);
