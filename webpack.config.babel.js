@@ -28,7 +28,7 @@ export default {
       {
         test: /\.(png|jpg)$/,
         loader: 'url?limit=50000',
-        exclude: /og\.png$/,
+        exclude: /og\.png$/, // Facebook can't recognize inline og:image.
       },
       {
         test: /app\/images\/speakers2014/,
