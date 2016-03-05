@@ -41,13 +41,13 @@ export default class Schedule extends Component {
             index={this.state.index}
             onChange={this.handleTabChange}
           >
-            <Tab label="Day 1">
+            <Tab className={styles.tab} label="Day 1">
               <Table
                 model={Model}
                 source={day1}
               />
             </Tab>
-            <Tab label="Day 2">
+            <Tab className={styles.tab} label="Day 2">
               <Table
                 model={Model}
                 source={day2}

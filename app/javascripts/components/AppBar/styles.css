@@ -148,3 +148,15 @@
     width: 64px;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .title {
+    padding: 13px 5px 0 21px;
+    font-size: 16px;
+    line-height: 36px;
+  }
+  
+  .lang > .button {
+    padding-right: 5px;
+  }
+}

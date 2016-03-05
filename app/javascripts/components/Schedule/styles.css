@@ -11,3 +11,8 @@
   padding-left: 29px;
   padding-right: 29px;
 }
+
+.tab {
+  max-width: 100%;
+  overflow: auto;
+}

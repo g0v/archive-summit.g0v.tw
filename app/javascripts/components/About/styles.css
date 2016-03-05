@@ -54,12 +54,31 @@
   border: 2px solid #000000;
   border-radius: 4px;
   line-height: 22px;
-  margin: 0 21px;
   cursor: pointer;
+}
+
+.button:not(:last-child) {
+    margin-right: 42px;
 }
 
 .active {
   composes: button;
   background-color: #CB0031;
   color: #FFF;
+}
+
+@media screen and (max-width: 830px) {
+  .button {
+    padding: 12px 24px;
+  }
+  
+  .button:not(:last-child) {
+    margin-right: 21px;
+  }
+    
+  .title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

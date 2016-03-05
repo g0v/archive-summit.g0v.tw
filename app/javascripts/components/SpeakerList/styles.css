@@ -3,6 +3,8 @@
   box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
   background-color: rgba(255, 255, 255, 0.94);
   min-height: 400px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 103px;
   lost-utility: clearfix;
 }
@@ -32,4 +34,10 @@
 .bio {
   margin-top: 0;
   font-size: 12px;
+}
+
+@media screen and (max-width: 430px) {
+  .speaker {
+    lost-column: 1/3;
+  }
 }
