@@ -8,7 +8,8 @@
     "postbuild": "babel-node scripts/static",
     "test": "npm run build",
     "webpack": "webpack --watch -d --display-reasons --display-chucks --progress",
-    "start": "webpack-dev-server --config webpack.config.babel.js --hot --inline"
+    "start": "webpack-dev-server --config webpack.config.babel.js --hot --inline",
+    "start:dist": "superstatic dist"
   },
   "repository": {
     "type": "git",
