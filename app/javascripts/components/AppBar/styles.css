@@ -47,7 +47,8 @@
 .item {
   display: inline-block;
   height: 100%;
-  padding: 14px 26px 18px 26px;
+  padding: 21px 26px 21px 26px;
+  line-height: 1;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -75,6 +76,9 @@
   color: #000;
   box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.50);
 }
+.item:hover a {
+  color: #000;
+}
 
 .lang {
   position: absolute;
@@ -86,8 +90,9 @@
 .button {
   display: inline-block;
   color: #FFF;
-  padding: 14px 10px 0 0;
+  padding: 21px 10px 0 0;
   height: 100%;
+  line-height: 1;
   width: 94px;
   text-decoration: none;
   text-align: right;
