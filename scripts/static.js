@@ -30,7 +30,8 @@ let connectApp = server.listen(async () => {
     console.log('Rendered ', path, 'to', filePath)
   }))
 
-  connectApp.close()
+  console.log('All rendered, closing down the server...')
+  process.exit()
 })
 
 // Utility functions
