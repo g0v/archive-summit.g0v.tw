@@ -36,13 +36,13 @@ export default class Schedule extends Component {
       <div className={styles.root}>
         <h2 className={styles.header}>{schedules[getLocale()].header}</h2>
         <section className={styles.section}>
-          <h3 id="day1">Day 1</h3>
+          <h3 id="day1"><a href="#day1">Day 1</a></h3>
           <Table
             className={styles.table}
             model={Model}
             source={day1}
           />
-          <h3 id="day2">Day 2</h3>
+          <h3 id="day2"><a href="#day2">Day 2</a></h3>
           <Table
             className={styles.table}
             model={Model}
