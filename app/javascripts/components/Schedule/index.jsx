@@ -30,14 +30,14 @@ export default class Schedule extends Component {
           />),
         r0: (
           <Slot
-            speaker={it.events[0].speaker}
-            title={it.events[0].title}
+            speaker={it.events[1].speaker}
+            title={it.events[1].title}
             onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].abstract)}
           />),
         r2: (
           <Slot
-            speaker={it.events[0].speaker}
-            title={it.events[0].title}
+            speaker={it.events[2].speaker}
+            title={it.events[2].title}
             onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].abstract)}
           />),
       };
@@ -55,14 +55,14 @@ export default class Schedule extends Component {
           />),
         r0: (
           <Slot
-            speaker={it.events[0].speaker}
-            title={it.events[0].title}
+            speaker={it.events[1].speaker}
+            title={it.events[1].title}
             onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].abstract)}
           />),
         r2: (
           <Slot
-            speaker={it.events[0].speaker}
-            title={it.events[0].title}
+            speaker={it.events[2].speaker}
+            title={it.events[2].title}
             onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].abstract)}
           />),
       };
