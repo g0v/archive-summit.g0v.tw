@@ -11,11 +11,19 @@
   padding-left: 29px;
   padding-right: 29px;
 }
+.section h3 {
+  margin-top: -70px;
+  padding-top: 70px;
+}
+.section h3 a:visited {
+  color: #000;
+}
 
 .table {
   max-width: 100%;
   overflow: auto;
   display: block;
+  margin-bottom: 40px;
 }
 .table th:nth-of-type(n+2) {
   width: 30%;
