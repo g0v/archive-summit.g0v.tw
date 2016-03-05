@@ -9,7 +9,7 @@ export default () => {
        { /* Home (main) route */ }
        <IndexRoute component={Home}/>
        <Route path="speakers" component={Speakers} />
-       <Route path="schedules" component={Schedules} />
+       <Route path="schedules*" component={Schedules} />
        {/*<Route path="sponsors" component={Sponsors} />*/}
        {/*<Route path="*" component={NotFound} status={404} />*/}
      </Route>
