@@ -1,24 +1,45 @@
 import React, { Component } from "react";
 import { getLocale } from "javascripts/locale";
 import schedules from './schedules.json';
+import lightbox from "./lightbox.json";
 import styles from "./styles.css";
 import Table from "../Table";
 
 export default class Schedule extends Component {
   state = {
-     index: 0,
-   };
-   handleTabChange = (index) => {
-     this.setState({index});
-   };
+    showLightbox: false,
+    heading: '',
+    content: '',
+  };
+  toggleLightBox(heading = '', content = '') {
+    this.setState({
+      showLightbox: !this.state.showLightbox,
+      heading, content,
+    });
+  }
   render() {
     const day1 = schedules[getLocale()]["day1"].map((it) => {
       if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
       return {
         time: it.time,
-        r1: (<Slot speaker={it.events[0].speaker} title={it.events[0].title} />),
-        r0: (<Slot speaker={it.events[1].speaker} title={it.events[1].title} />),
-        r2: (<Slot speaker={it.events[2].speaker} title={it.events[2].title} />),
+        r1: (
+          <Slot
+            speaker={it.events[0].speaker}
+            title={it.events[0].title}
+            onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].abstract)}
+          />),
+        r0: (
+          <Slot
+            speaker={it.events[0].speaker}
+            title={it.events[0].title}
+            onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].abstract)}
+          />),
+        r2: (
+          <Slot
+            speaker={it.events[0].speaker}
+            title={it.events[0].title}
+            onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].abstract)}
+          />),
       };
     });
 
@@ -26,9 +47,24 @@ export default class Schedule extends Component {
       if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
       return {
         time: it.time,
-        r1: (<Slot speaker={it.events[0].speaker} title={it.events[0].title} />),
-        r0: (<Slot speaker={it.events[1].speaker} title={it.events[1].title} />),
-        r2: (<Slot speaker={it.events[2].speaker} title={it.events[2].title} />),
+        r1: (
+          <Slot
+            speaker={it.events[0].speaker}
+            title={it.events[0].title}
+            onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].abstract)}
+          />),
+        r0: (
+          <Slot
+            speaker={it.events[0].speaker}
+            title={it.events[0].title}
+            onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].abstract)}
+          />),
+        r2: (
+          <Slot
+            speaker={it.events[0].speaker}
+            title={it.events[0].title}
+            onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].abstract)}
+          />),
       };
     });
 
@@ -48,15 +84,45 @@ export default class Schedule extends Component {
             model={Model}
             source={day2}
           />
+          {
+            do {
+              if (this.state.showLightbox) {
+                <LightBox
+                  heading={this.state.heading}
+                  content={this.state.content}
+                  toggle={() => this.toggleLightBox()}
+                />
+              }
+            }
+          }
         </section>
       </div>
     );
   }
 };
+{/*<button className={styles.lightboxbutton} onClick={this.closeLightBox.bind(this)}>{lightbox[getLocale()].close}</button>*/}
+//
+  // <button className={styles.lightboxclose} onClick={this.closeLightBox.bind(this)}>x</button>
 
-const Slot = ({title, speaker}) => {
+const LightBox = ({ heading, content, toggle }) => {
   return (
     <div>
+      <div className={styles.lightboxwrap}>
+        <div className={styles.lightboxcontainer}>
+          <div className={styles.lightboxheading}>
+            <h3>{heading}</h3>
+          </div>
+          <div dangerouslySetInnerHTML={{__html: content}} />
+          <button className={styles.lightboxbutton} onClick={toggle}>{lightbox[getLocale()].close}</button>
+        </div>
+        <button className={styles.lightboxclose} onClick={toggle}>x</button>
+      </div>
+    </div>
+  );
+}
+const Slot = ({title, speaker, onClick}) => {
+  return (
+    <div className={styles.slot} onClick={onClick}>
       <div>{title}</div>
       <div>{speaker}</div>
     </div>
