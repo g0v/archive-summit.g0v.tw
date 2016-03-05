@@ -12,7 +12,7 @@ const server = superstatic({
   config: {
     cleanUrls: true,
     debug: true,
-    errorPage: '2016/index.html', // relative to cwd
+    rewrites: paths.map(path => ({source: `/2016/${path}`, destination: '/2016/index.html'}))
   }
 })
 
@@ -37,13 +37,10 @@ let connectApp = server.listen(async () => {
 // Utility functions
 //
 
-function renderToString(path){
-  return new Promise((resolve, reject) => {
-    const browser = new Browser({waitDuration: '1s'})
-    browser.visit(`/2016/${path}`, () => {
-      resolve(`<!DOCTYPE html>${browser.document.documentElement.outerHTML}`)
-    })
-  })
+async function renderToString(path){
+  const browser = new Browser({waitDuration: '10s'})
+  await browser.visit(`/2016/${path}`)
+  return `<!DOCTYPE html>${browser.document.documentElement.outerHTML}`
 }
 
 function writeFileAsync(...args){
