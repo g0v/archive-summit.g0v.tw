@@ -3,7 +3,6 @@ import { getLocale } from "javascripts/locale";
 import schedules from './schedules.json';
 import styles from "./styles.css";
 import Table from "../Table";
-import { Tabs,Tab } from "../Tabs";
 
 export default class Schedule extends Component {
   state = {
@@ -37,23 +36,18 @@ export default class Schedule extends Component {
       <div className={styles.root}>
         <h2 className={styles.header}>{schedules[getLocale()].header}</h2>
         <section className={styles.section}>
-          <Tabs
-            index={this.state.index}
-            onChange={this.handleTabChange}
-          >
-            <Tab label="Day 1">
-              <Table
-                model={Model}
-                source={day1}
-              />
-            </Tab>
-            <Tab label="Day 2">
-              <Table
-                model={Model}
-                source={day2}
-              />
-            </Tab>
-          </Tabs>
+          <h3 id="day1">Day 1</h3>
+          <Table
+            className={styles.table}
+            model={Model}
+            source={day1}
+          />
+          <h3 id="day2">Day 2</h3>
+          <Table
+            className={styles.table}
+            model={Model}
+            source={day2}
+          />
         </section>
       </div>
     );
