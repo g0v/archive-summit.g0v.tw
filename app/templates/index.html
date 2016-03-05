@@ -9,6 +9,10 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css' />
     <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
     <script type="application/ld+json"><%= htmlWebpackPlugin.options.jld %></script>
+    <meta property="og:image" content="http://summit.g0v.tw<%= require('file!../images/og.png') %>">
+    <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@g0vtw">
   </head>
   <body>
     <div id="react-root"></div>
