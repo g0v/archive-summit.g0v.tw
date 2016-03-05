@@ -47,6 +47,11 @@
 .item {
   display: inline-block;
   height: 100%;
+} 
+.item a, 
+.item span {
+  display: block;
+  height: 100%;
   padding: 21px 26px 21px 26px;
   line-height: 1;
   text-align: center;
@@ -76,7 +81,8 @@
   color: #000;
   box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.50);
 }
-.item:hover a {
+.item:hover a,
+.item:hover span {
   color: #000;
 }
 
