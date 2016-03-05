@@ -25,6 +25,10 @@
   display: block;
   margin-bottom: 40px;
 }
+.table td a {
+  color: #000;
+  text-decoration: none;
+}
 .table th:nth-of-type(n+2) {
   width: 30%;
 }
@@ -75,6 +79,13 @@
 .lightboxbutton {
   display: block;
   margin: 20px auto;
+  padding: 3px 4px;
+  width: 80px;
+  text-align: center;
+  border: 1px solid black;
+  text-decoration: none;
+  color: #000;
+  background-color: #ccc;
 }
 
 .lightboxclose {
@@ -83,10 +94,11 @@
   font-size: 30px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 8px;
   border: 0;
   background: none;
   outline: none;
   box-shadow: none;
-  cursor: 'pointer',
+  cursor: 'pointer';
+  text-decoration: none;
 }
