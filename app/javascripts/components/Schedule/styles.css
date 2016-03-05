@@ -12,7 +12,14 @@
   padding-right: 29px;
 }
 
-.tab {
+.table {
   max-width: 100%;
   overflow: auto;
+  display: block;
+}
+.table th:nth-of-type(n+2) {
+  width: 30%;
+}
+.table td:nth-of-type(1) {
+  font-family: monospace;
 }

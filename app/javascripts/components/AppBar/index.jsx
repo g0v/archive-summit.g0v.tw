@@ -132,10 +132,14 @@ const Menu = () => {
         </Link>
       </li>
       <li className={styles.item}>
-        {info[getLocale()].sponsors}
+        <span>
+          {info[getLocale()].sponsors}
+        </span>
       </li>
       <li className={styles.item}>
-        {info[getLocale()].transport}
+        <span>
+          {info[getLocale()].transport}
+        </span>
       </li>
     </ul>
   );
