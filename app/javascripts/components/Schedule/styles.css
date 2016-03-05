@@ -11,7 +11,7 @@
   padding-left: 29px;
   padding-right: 29px;
 }
-.section h3 {
+.section > h3 {
   margin-top: -70px;
   padding-top: 70px;
 }
