@@ -5,10 +5,10 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production webpack --progress",
+    "postbuild": "babel-node scripts/static",
     "test": "npm run build",
     "webpack": "webpack --watch -d --display-reasons --display-chucks --progress",
-    "start": "webpack-dev-server --config webpack.config.babel.js --hot --inline",
-    "static": "babel-node scripts/static"
+    "start": "webpack-dev-server --config webpack.config.babel.js --hot --inline"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,6 @@
     "history": "^2.0.0",
     "html-to-text": "^2.0.0",
     "html-webpack-plugin": "^2.9.0",
-    "http-server": "^0.9.0",
     "json-loader": "^0.5.4",
     "jsonfile": "^2.2.3",
     "lost": "^6.7.2",
@@ -45,6 +44,7 @@
     "react-ga": "^1.2.0",
     "react-router": "^2.0.0",
     "style-loader": "^0.13.0",
+    "superstatic": "^4.0.2",
     "url-loader": "^0.5.7",
     "webpack": "^1.2.13",
     "webpack-dev-server": "^1.14.1",
