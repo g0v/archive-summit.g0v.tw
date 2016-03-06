@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router";
 import { getLocale } from "javascripts/locale";
 import schedules from './schedules.json';
 import lightbox from "./lightbox.json";
@@ -18,49 +19,63 @@ export default class Schedule extends Component {
     });
   }
   render() {
-    const day1 = schedules[getLocale()]["day1"].map((it) => {
+    var showLightbox = false;
+    var lightboxHeading = '';
+    var lightboxContent = '';
+    var lightboxToggle = '';
+
+    const day1 = schedules[getLocale()]["day1"].map((it, i) => {
       if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
+
       return {
         time: it.time,
         r1: (
           <Slot
+            id={"day1-r1-"+i}
             speaker={it.events[0].speaker}
             title={it.events[0].title}
             onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].speaker, it.events[0].abstract, it.events[0].bio)}
           />),
         r0: (
           <Slot
+            id={"day1-r0-"+i}
             speaker={it.events[1].speaker}
             title={it.events[1].title}
             onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].speaker, it.events[1].abstract, it.events[1].bio)}
           />),
         r2: (
           <Slot
+            id={"day1-r2-"+i}
             speaker={it.events[2].speaker}
             title={it.events[2].title}
             onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].speaker, it.events[2].abstract, it.events[2].bio)}
+
           />),
       };
     });
 
-    const day2 = schedules[getLocale()]["day2"].map((it) => {
+    const day2 = schedules[getLocale()]["day2"].map((it, i) => {
       if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
+
       return {
         time: it.time,
         r1: (
           <Slot
+            id={"day2-r1-"+i}
             speaker={it.events[0].speaker}
             title={it.events[0].title}
             onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].speaker, it.events[0].abstract, it.events[0].bio)}
           />),
         r0: (
           <Slot
+            id={"day2-r0-"+i}
             speaker={it.events[1].speaker}
             title={it.events[1].title}
             onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].speaker, it.events[1].abstract, it.events[1].bio)}
           />),
         r2: (
           <Slot
+            id={"day2-r2-"+i}
             speaker={it.events[2].speaker}
             title={it.events[2].title}
             onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].speaker, it.events[2].abstract, it.events[2].bio)}
@@ -72,13 +87,13 @@ export default class Schedule extends Component {
       <div className={styles.root}>
         <h2 className={styles.header}>{schedules[getLocale()].header}</h2>
         <section className={styles.section}>
-          <h3 id="/schedules_day1"><a href="#/schedules_day1">Day 1</a></h3>
+          <h3 id="day1"><a href="#day1">Day 1</a></h3>
           <Table
             className={styles.table}
             model={Model}
             source={day1}
           />
-          <h3 id="/schedules_day2"><a href="#/schedules_day2">Day 2</a></h3>
+          <h3 id="day2"><a href="#day2">Day 2</a></h3>
           <Table
             className={styles.table}
             model={Model}
@@ -125,12 +140,12 @@ const LightBox = ({ heading, speaker, content, bio, toggle }) => {
     </div>
   );
 }
-const Slot = ({title, speaker, onClick}) => {
+const Slot = ({title, speaker, id, onClick}) => {
   return (
-    <div className={styles.slot} onClick={onClick}>
+    <a href={'#'+id} id={id} className={styles.slot} onClick={onClick}>
       <div>{title}</div>
       <div>{speaker}</div>
-    </div>
+    </a>
   );
 }
 

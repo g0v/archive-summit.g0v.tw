@@ -5,7 +5,7 @@ import { Home, Speakers, Schedules } from 'javascripts/pages';
 
 export default () => {
   return (
-    <Route path="/" component={Root}>
+    <Route path="/2016" component={Root}>
        { /* Home (main) route */ }
        <IndexRoute component={Home}/>
        <Route path="speakers" component={Speakers} />
