@@ -11,10 +11,10 @@ export default class Schedule extends Component {
     heading: '',
     content: '',
   };
-  toggleLightBox(heading = '', content = '') {
+  toggleLightBox(heading = '', speaker = '', content = '', bio = '') {
     this.setState({
       showLightbox: !this.state.showLightbox,
-      heading, content,
+      heading, speaker, content, bio
     });
   }
   render() {
@@ -26,19 +26,19 @@ export default class Schedule extends Component {
           <Slot
             speaker={it.events[0].speaker}
             title={it.events[0].title}
-            onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].abstract)}
+            onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].speaker, it.events[0].abstract, it.events[0].bio)}
           />),
         r0: (
           <Slot
             speaker={it.events[1].speaker}
             title={it.events[1].title}
-            onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].abstract)}
+            onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].speaker, it.events[1].abstract, it.events[1].bio)}
           />),
         r2: (
           <Slot
             speaker={it.events[2].speaker}
             title={it.events[2].title}
-            onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].abstract)}
+            onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].speaker, it.events[2].abstract, it.events[2].bio)}
           />),
       };
     });
@@ -51,19 +51,19 @@ export default class Schedule extends Component {
           <Slot
             speaker={it.events[0].speaker}
             title={it.events[0].title}
-            onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].abstract)}
+            onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].speaker, it.events[0].abstract, it.events[0].bio)}
           />),
         r0: (
           <Slot
             speaker={it.events[1].speaker}
             title={it.events[1].title}
-            onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].abstract)}
+            onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].speaker, it.events[1].abstract, it.events[1].bio)}
           />),
         r2: (
           <Slot
             speaker={it.events[2].speaker}
             title={it.events[2].title}
-            onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].abstract)}
+            onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].speaker, it.events[2].abstract, it.events[2].bio)}
           />),
       };
     });
@@ -89,7 +89,9 @@ export default class Schedule extends Component {
               if (this.state.showLightbox) {
                 <LightBox
                   heading={this.state.heading}
+                  speaker={this.state.speaker}
                   content={this.state.content}
+                  bio={this.state.bio}
                   toggle={() => this.toggleLightBox()}
                 />
               }
@@ -104,15 +106,18 @@ export default class Schedule extends Component {
 //
   // <button className={styles.lightboxclose} onClick={this.closeLightBox.bind(this)}>x</button>
 
-const LightBox = ({ heading, content, toggle }) => {
+const LightBox = ({ heading, speaker, content, bio, toggle }) => {
   return (
     <div>
       <div className={styles.lightboxwrap}>
         <div className={styles.lightboxcontainer}>
           <div className={styles.lightboxheading}>
-            <h3>{heading}</h3>
+            <h3>{heading}<br/>{speaker}</h3>
           </div>
+          <h4>{lightbox[getLocale()].abstract}</h4>
           <div dangerouslySetInnerHTML={{__html: content}} />
+          <h4>{lightbox[getLocale()].bio}</h4>
+          <div dangerouslySetInnerHTML={{__html: bio}} />
           <button className={styles.lightboxbutton} onClick={toggle}>{lightbox[getLocale()].close}</button>
         </div>
         <button className={styles.lightboxclose} onClick={toggle}>x</button>

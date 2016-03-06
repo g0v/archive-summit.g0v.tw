@@ -59,10 +59,12 @@
   display: inline-block;
   vertical-align: middle;
   height: auto;
+  max-height: 100vh;
+  overflow: scroll;
   width: 70%;
   background-color: #fff;
   text-align: justify;
-  padding: 0 20px;
+  padding: 20px;
   word-wrap: break-word;
 }
 
