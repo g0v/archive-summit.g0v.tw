@@ -70,6 +70,7 @@ export default {
     host: process.env.HOST || 'localhost',
     contentBase: path.join(__dirname, "dist"),
     publicPath: '/2016/',
+    historyApiFallback: {index: '/2016/'},
   },
 
   plugins: [
