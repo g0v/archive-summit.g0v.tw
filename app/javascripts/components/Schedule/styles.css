@@ -63,13 +63,13 @@
   display: inline-block;
   vertical-align: middle;
   height: auto;
-  max-height: 100vh;
-  overflow: scroll;
+  max-height: 90%;
   width: 70%;
   background-color: #fff;
   text-align: justify;
   padding: 20px;
   word-wrap: break-word;
+  overflow-y: auto;
 }
 
 .lightboxheading {
