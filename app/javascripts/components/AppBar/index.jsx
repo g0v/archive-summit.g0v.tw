@@ -117,7 +117,7 @@ const Menu = () => {
         className={styles.item}
         activeClassName={styles.active}>
         <Link
-          to="/2016/schedules"
+          to="/2016/schedules.html"
         >
           {info[getLocale()].schedule}
         </Link>
@@ -126,7 +126,7 @@ const Menu = () => {
         className={styles.item}
         activeClassName={styles.active}>
         <Link
-          to="/2016/speakers"
+          to="/2016/speakers.html"
         >
           {info[getLocale()].speakers}
         </Link>
