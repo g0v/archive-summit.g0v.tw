@@ -7,48 +7,48 @@ import styles from "./styles.css";
 import Table from "../Table";
 
 export default class Schedule extends Component {
+  state = {
+    showLightbox: false,
+    heading: '',
+    content: '',
+  };
+  toggleLightBox(heading = '', content = '') {
+    this.setState({
+      showLightbox: !this.state.showLightbox,
+      heading, content,
+    });
+  }
   render() {
     var showLightbox = false;
     var lightboxHeading = '';
     var lightboxContent = '';
     var lightboxToggle = '';
-    var [_, anchor] = document.location.hash.split('_');
 
-    const ROOM = ['r1', 'r0', 'r2'];
-    var matchTalk = (anchor, day, i, events) => {
-      for (let j in events) {
-        let event = events[j];
-        if (anchor === day + '-' + ROOM[j] + '-' + i) {
-          showLightbox = true;
-          lightboxHeading = event.title;
-          lightboxContent = event.abstract;
-          lightboxToggle = "/schedules_" + day;
-        }
-      }
-    }
     const day1 = schedules[getLocale()]["day1"].map((it, i) => {
       if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
 
-      matchTalk(anchor, 'day1', i, it.events);
       return {
         time: it.time,
         r1: (
           <Slot
-            id={"/schedules_day1-r1-"+i}
+            id={"day1-r1-"+i}
             speaker={it.events[0].speaker}
             title={it.events[0].title}
+            onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].abstract)}
           />),
         r0: (
           <Slot
-            id={"/schedules_day1-r0-"+i}
+            id={"day1-r0-"+i}
             speaker={it.events[1].speaker}
             title={it.events[1].title}
+            onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].abstract)}
           />),
         r2: (
           <Slot
-            id={"/schedules_day1-r2-"+i}
+            id={"day1-r2-"+i}
             speaker={it.events[2].speaker}
             title={it.events[2].title}
+            onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].abstract)}
           />),
       };
     });
@@ -56,26 +56,28 @@ export default class Schedule extends Component {
     const day2 = schedules[getLocale()]["day2"].map((it, i) => {
       if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
 
-      matchTalk(anchor, 'day2', i, it.events);
       return {
         time: it.time,
         r1: (
           <Slot
-            id={"/schedules_day2-r1-"+i}
+            id={"day2-r1-"+i}
             speaker={it.events[0].speaker}
             title={it.events[0].title}
+            onClick={() => this.toggleLightBox(it.events[0].title, it.events[0].abstract)}
           />),
         r0: (
           <Slot
-            id={"/schedules_day2-r0-"+i}
+            id={"day2-r0-"+i}
             speaker={it.events[1].speaker}
             title={it.events[1].title}
+            onClick={() => this.toggleLightBox(it.events[1].title, it.events[1].abstract)}
           />),
         r2: (
           <Slot
-            id={"/schedules_day2-r2-"+i}
+            id={"day2-r2-"+i}
             speaker={it.events[2].speaker}
             title={it.events[2].title}
+            onClick={() => this.toggleLightBox(it.events[2].title, it.events[2].abstract)}
           />),
       };
     });
@@ -84,13 +86,13 @@ export default class Schedule extends Component {
       <div className={styles.root}>
         <h2 className={styles.header}>{schedules[getLocale()].header}</h2>
         <section className={styles.section}>
-          <h3 id="/schedules_day1"><a href="#/schedules_day1">Day 1</a></h3>
+          <h3 id="day1"><a href="#day1">Day 1</a></h3>
           <Table
             className={styles.table}
             model={Model}
             source={day1}
           />
-          <h3 id="/schedules_day2"><a href="#/schedules_day2">Day 2</a></h3>
+          <h3 id="day2"><a href="#day2">Day 2</a></h3>
           <Table
             className={styles.table}
             model={Model}
@@ -98,11 +100,11 @@ export default class Schedule extends Component {
           />
           {
             do {
-              if (showLightbox) {
+              if (this.state.showLightbox) {
                 <LightBox
-                  heading={lightboxHeading}
-                  content={lightboxContent}
-                  toggle={lightboxToggle}
+                  heading={this.state.heading}
+                  content={this.state.content}
+                  toggle={() => this.toggleLightBox()}
                 />
               }
             }
@@ -125,19 +127,19 @@ const LightBox = ({ heading, content, toggle }) => {
             <h3>{heading}</h3>
           </div>
           <div dangerouslySetInnerHTML={{__html: content}} />
-          <Link to={toggle} className={styles.lightboxbutton} onClick={toggle}>{lightbox[getLocale()].close}</Link>
+          <button className={styles.lightboxbutton} onClick={toggle}>{lightbox[getLocale()].close}</button>
         </div>
-        <Link to={toggle} className={styles.lightboxclose}>x</Link>
+        <button className={styles.lightboxclose} onClick={toggle}>x</button>
       </div>
     </div>
   );
 }
-const Slot = ({title, speaker, id}) => {
+const Slot = ({title, speaker, id, onClick}) => {
   return (
-    <Link to={id} id={id} className={styles.slot}>
+    <a href={'#'+id} id={id} className={styles.slot} onClick={onClick}>
       <div>{title}</div>
       <div>{speaker}</div>
-    </Link>
+    </a>
   );
 }
 
