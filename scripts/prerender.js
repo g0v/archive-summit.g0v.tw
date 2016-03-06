@@ -1,4 +1,5 @@
-import {writeFile} from 'fs'
+import sm from 'sitemap'
+import {writeFile, writeFileSync} from 'fs'
 import Browser from 'zombie'
 import webpack from 'webpack'
 import {resolve} from 'path'
@@ -66,3 +67,11 @@ process.on('unhandledRejection', function(reason, promise) {
   }
   console.error('Promise:', promise);
 });
+
+var sitemap = sm.createSitemap({
+  hostname: 'http://summit.g0v.org/'
+});
+
+paths.map(path => sitemap.add({url: `/2016/${path}`, changefreq: 'weekly', priority: 0.7}))
+
+writeFileSync(resolve(__dirname, "../dist/2016/sitemap.xml"), sitemap.toString());
