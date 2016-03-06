@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "NODE_ENV=production webpack --progress",
-    "postbuild": "babel-node scripts/static",
+    "postbuild": "babel-node scripts/prerender",
     "test": "npm run build",
     "webpack": "webpack --watch -d --display-reasons --display-chucks --progress",
     "start": "webpack-dev-server --config webpack.config.babel.js --hot --inline",
