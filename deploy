@@ -16,9 +16,9 @@ echo "$MERGED is last parent of $upstream/$publication"
 echo "$CURRENT is current $upstream/$development"
 
 if [[ $MERGED != $CURRENT ]]; then
-  rm -rf dist
+  mv dist dist-new
   git clone $REPO --depth 1 -b $publication dist
-  NODE_ENV=production ./node_modules/.bin/webpack
+  cp -R dist-new/ dist/
   cd dist
   if [[ -z `git diff --shortstat` ]]; then echo "no diff. abort."; exit; fi
   git fetch --depth 1 $upstream $development:$development
