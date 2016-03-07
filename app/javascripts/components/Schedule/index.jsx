@@ -19,14 +19,28 @@ export default class Schedule extends Component {
     });
   }
   render() {
-    var showLightbox = false;
-    var lightboxHeading = '';
-    var lightboxContent = '';
-    var lightboxToggle = '';
+    this.state.showLightbox = false;
+    this.state.heading = '';
+    this.state.content = '';
+    var anchor = document.location.hash.split('#')[1] || '';
+
+    const ROOM = ['r1', 'r0', 'r2'];
+    var matchTalk = (anchor, day, i, events) => {
+      for (let j in events) {
+        let event = events[j];
+        if (anchor === day + '-' + ROOM[j] + '-' + i) {
+          this.state.showLightbox = true;
+          this.state.heading = event.title;
+          this.state.content = event.abstract;
+        }
+      }
+    }
+
 
     const day1 = schedules[getLocale()]["day1"].map((it, i) => {
       if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
 
+      matchTalk(anchor, 'day1', i, it.events);
       return {
         time: it.time,
         r1: (
@@ -57,6 +71,7 @@ export default class Schedule extends Component {
     const day2 = schedules[getLocale()]["day2"].map((it, i) => {
       if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
 
+      matchTalk(anchor, 'day2', i, it.events);
       return {
         time: it.time,
         r1: (
@@ -133,9 +148,9 @@ const LightBox = ({ heading, speaker, content, bio, toggle }) => {
           <div dangerouslySetInnerHTML={{__html: content}} />
           <h4>{lightbox[getLocale()].bio}</h4>
           <div dangerouslySetInnerHTML={{__html: bio}} />
-          <button className={styles.lightboxbutton} onClick={toggle}>{lightbox[getLocale()].close}</button>
+          <a href="#" className={styles.lightboxbutton}>{lightbox[getLocale()].close}</a>
         </div>
-        <button className={styles.lightboxclose} onClick={toggle}>x</button>
+        <a href="#" className={styles.lightboxclose}>x</a>
       </div>
     </div>
   );
