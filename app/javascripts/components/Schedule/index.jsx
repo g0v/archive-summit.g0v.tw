@@ -127,7 +127,7 @@ const LightBox = ({ heading, speaker, content, bio, toggle }) => {
       <div className={styles.lightboxwrap}>
         <div className={styles.lightboxcontainer}>
           <div className={styles.lightboxheading}>
-            <h3>{heading}<br/>{speaker}</h3>
+            <h3 className={styles.lightboxTitle}>{heading}<br/>{speaker}</h3>
           </div>
           <h4>{lightbox[getLocale()].abstract}</h4>
           <div dangerouslySetInnerHTML={{__html: content}} />
@@ -143,7 +143,7 @@ const LightBox = ({ heading, speaker, content, bio, toggle }) => {
 const Slot = ({title, speaker, id, onClick}) => {
   return (
     <a href={'#'+id} id={id} className={styles.slot} onClick={onClick}>
-      <div>{title}</div>
+      <div className={styles.slotTitle}>{title}</div>
       <div>{speaker}</div>
     </a>
   );
