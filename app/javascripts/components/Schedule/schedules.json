@@ -789,7 +789,7 @@
             "speaker": "蘇彥禎",
             "title": "空污資料搭配風場的內插與視覺化",
             "bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
-            "abstract": "<p>空污會隨著風向擴散,<br/>而觀測站之間的空污濃度也不該是線性内插,<br/>我做出一個系統能畫出污染隨著風擴散的結果,<br/>並且讓使用者可以在3維空間中探索.</p><p>以下連結是系統的建構說明：<a href='http://www.slideshare.net/ked19/pm25-system-construction'>http://www.slideshare.net/ked19/pm25-system-construction</a></p>"
+            "abstract": "<p>空污會隨著風向擴散,<br/>而觀測站之間的空污濃度也不該是線性内插,<br/>我做出一個系統能畫出污染隨著風擴散的結果,<br/>並且讓使用者可以在3維空間中探索.</p><p>線上系統: <a href='http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm'>http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm</a><br/>系統的建構說明: <a href='http://www.slideshare.net/ked19/pm25-system-construction'>http://www.slideshare.net/ked19/pm25-system-construction</a></p>"
           }
         ]
       },
