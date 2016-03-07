@@ -109,6 +109,7 @@ const Menu = () => {
         activeClassName={styles.active}>
         <IndexLink
           to="/2016"
+          activeClassName={styles.active}
         >
           {info[getLocale()].home}
         </IndexLink>
@@ -118,6 +119,7 @@ const Menu = () => {
         activeClassName={styles.active}>
         <Link
           to="/2016/schedules.html"
+          activeClassName={styles.active}
         >
           {info[getLocale()].schedule}
         </Link>
