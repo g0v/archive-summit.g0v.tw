@@ -34,13 +34,24 @@ export default class Schedule extends Component {
     var onclick = (event) => (e) => {
       e.preventDefault();
       var id = e.currentTarget.href.split('#')[1] || '';
-      console.log(e.currentTarget.href, id)
       history.replaceState({}, event.title, `#${id}`);
       this.showLightBox(id, event.title, event.speaker, event.abstract, event.bio)
     }
 
     const day1 = schedules[getLocale()]["day1"].map((it, i) => {
-      if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
+      if (!it.events) {
+        if (it.event.title) {
+          return { colSpan: 3, time: it.time, event: (
+            <Slot
+              id={"day1-all-"+i}
+              speaker={it.event.speaker}
+              title={it.event.title}
+              onClick={onclick(it.event)}
+            />,
+          ) };
+        }
+        return { colSpan: 3, time: it.time, event: it.event };
+      }
 
       return {
         time: it.time,
@@ -69,7 +80,19 @@ export default class Schedule extends Component {
     });
 
     const day2 = schedules[getLocale()]["day2"].map((it, i) => {
-      if (!it.events) return { colSpan: 3, time: it.time, event: it.event };
+      if (!it.events) {
+        if (it.event.title) {
+          return { colSpan: 3, time: it.time, event: (
+            <Slot
+              id={"day2-all-"+i}
+              speaker={it.event.speaker}
+              title={it.event.title}
+              onClick={onclick(it.event)}
+            />,
+          ) };
+        }
+        return { colSpan: 3, time: it.time, event: it.event };
+      }
 
       return {
         time: it.time,

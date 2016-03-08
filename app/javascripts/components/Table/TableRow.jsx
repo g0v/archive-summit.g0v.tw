@@ -16,7 +16,12 @@ class TableRow extends React.Component {
     return Object.keys(this.props.data).map((key, idx) => {
       if (key === 'colSpan') return;
       if (idx === 1) return <td key={key}>{this.renderCell(key)}</td>;
-      return <td key={key} colSpan={this.props.data.colSpan}>{this.renderCell(key)}</td>;
+      const value = this.props.data[key];
+      if (typeof value === 'string' || Object.prototype.toString.call(value) === '[object Date]') {
+        return <td key={key} colSpan={this.props.data.colSpan}>{this.renderCell(key)}</td>;
+      } else {
+        return <td key={key} colSpan={this.props.data.colSpan}>{React.cloneElement(value)}</td>;
+      }
     });
   }
 
