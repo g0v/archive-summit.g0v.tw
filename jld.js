@@ -3,6 +3,12 @@ var htmlToText = require('html-to-text');
 
 var USEDROOM = {};
 const ROOM = {
+  "Rall": {
+    "@type": "Place",
+    "@id": "#Rall",
+    "name": "所有會議廳 All Conference Room",
+    "address": "台北市南港區研究院路二段128號3F / 3F No.128, Sec. 2, Academia Rd., Nangang Dist., Taipei City 115, Taiwan"
+  },
   "R0": {
     "@type": "Place",
     "@id": "#R0",
@@ -34,9 +40,9 @@ var base = {
   "startDate": "2016-05-14T09:00:00.000+08:00",
   "endDate": "2016-05-15T17:40:00.000+08:00",
   "location": {
-     "@type": "EventVenue",
-     "name": "中研院人文社會科學館 / Social Sciences Building, Academia Sinica, Taipei, Taiwan",
-     "address": "台北市南港區研究院路二段128號 / No.128, Sec. 2, Academia Rd., Nangang Dist., Taipei City 115, Taiwan"
+    "@type": "EventVenue",
+    "name": "中研院人文社會科學館 / Social Sciences Building, Academia Sinica, Taipei, Taiwan",
+    "address": "台北市南港區研究院路二段128號 / No.128, Sec. 2, Academia Rd., Nangang Dist., Taipei City 115, Taiwan"
   },
   "subEvents": [],
   "offers": [
@@ -169,6 +175,9 @@ var datetime = function (day, hhmm) {
 };
 
 var location_by_room = function (room) {
+  if (!room) {
+    room = 'Rall';
+  }
   if (USEDROOM[room]) {
     return {
       "@id": ROOM[room]['@id']
