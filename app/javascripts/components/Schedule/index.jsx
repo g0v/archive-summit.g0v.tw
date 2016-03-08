@@ -99,7 +99,7 @@ export default class Schedule extends Component {
 
     return (
       <div className={styles.root}>
-        <h2 className={styles.header}>{schedules[getLocale()].header}</h2>
+        <h2 className={styles.header}>{multilineText(schedules[getLocale()].header)}</h2>
         <section className={styles.section}>
           <h3 id="day1"><a href="#day1">Day 1</a></h3>
           <Table
@@ -144,6 +144,16 @@ export default class Schedule extends Component {
 //
   // <button className={styles.lightboxclose} onClick={this.closeLightBox.bind(this)}>x</button>
 
+var multilineText = (text) => {
+  var arr = text.split('\n');
+  var ret = [arr.shift()];
+  for (let line of arr) {
+    ret.push(<br/>);
+    ret.push(line);
+  }
+  return ret;
+}
+
 const LightBox = ({id, heading, speaker, content, bio, toggle }) => {
   return (
     <div>
@@ -166,7 +176,7 @@ const LightBox = ({id, heading, speaker, content, bio, toggle }) => {
 const Slot = ({id, title, speaker, onClick}) => {
   return (
     <a href={`#${id}`} id={`slot-${id}`} className={styles.slot} onClick={onClick}>
-      <div className={styles.slotTitle}>{title}</div>
+      <div className={styles.slotTitle}>{multilineText(title)}</div>
       <div>{speaker}</div>
     </a>
   );
