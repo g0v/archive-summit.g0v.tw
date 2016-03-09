@@ -12,7 +12,10 @@
       },
       {
         "time" : "09:30-10:00",
-        "event" : "Keynote 1: Felipe Heusser"
+        "event" : {
+          "title": "Keynote 1: Felipe Heusser",
+          "speaker": "Felipe Heusser"
+        }
       },
       {
         "time" : "10:00-10:30",
@@ -316,14 +319,20 @@
       },
       {
         "time": "16:45-17:00",
-        "event": "Code for All – Civic Tech around the World / Julia Kloiber",
-        "abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
+        "event": {
+          "title": "Code for All – Civic Tech around the World / Julia Kloiber",
+          "speaker": " Julia Kloiber",
+          "abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
+        }
       },
       {
         "time": "17:00-17:15",
-        "event": "從 g0v 到 gov -- 潛入衛福部400天 / 羅佩琪",
-        "bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
-        "abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
+        "event": {
+          "title": "從 g0v 到 gov -- 潛入衛福部400天",
+          "speaker": "羅佩琪",
+          "bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
+          "abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
+        }
       },
       {
         "time": "17:15-17:30",
@@ -401,7 +410,7 @@
             "venue" : "R0",
             "category" : "A",
             "speaker": "呂家華",
-            "title": "參與式治理：一個從主持人到中介者位置的觀察與思考",
+            "title": "政府 x 民間 x 網路 x 審議\n一個中介者的觀察與思考",
             "bio": "(TBC)",
             "abstract": "(TBC)"
           },
@@ -486,15 +495,21 @@
       },
       {
         "time": "15:45-16:00",
-        "event": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions. / Miguel Arana Catania",
-        "bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
-        "abstract": "<p>Since the 15th of May of 2011 Spain has lived a deep change with people taking control of politics. Huge movements have appeared, taking to the squares, defending the public services, stopping evictions, and in a last phase going inside the institutions.</p><p>In the last local elections of May 2015, new parties coming from the 15M movement have won the control of major governments like Madrid, Barcelona, Zaragoza, Cadiz, among others.</p><p>We will explain the current situation, and focus in the new citizen participation strategy of Madrid, and Consul, its new <a href='http://decide.madrid.es'>direct democracy free software platform</a> that is spreading fast to other cities; and the relations not only with those other Spanish cities, but also at an international level.</p>"
+        "event": {
+          "title": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions.",
+          "speaker": "Miguel Arana Catania",
+          "bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
+          "abstract": "<p>Since the 15th of May of 2011 Spain has lived a deep change with people taking control of politics. Huge movements have appeared, taking to the squares, defending the public services, stopping evictions, and in a last phase going inside the institutions.</p><p>In the last local elections of May 2015, new parties coming from the 15M movement have won the control of major governments like Madrid, Barcelona, Zaragoza, Cadiz, among others.</p><p>We will explain the current situation, and focus in the new citizen participation strategy of Madrid, and Consul, its new <a href='http://decide.madrid.es'>direct democracy free software platform</a> that is spreading fast to other cities; and the relations not only with those other Spanish cities, but also at an international level.</p>"
+        }
       },
       {
         "time": "16:00-16:15",
-        "event": "國會沒代誌了嗎？ / clkao",
-        "bio": "<p>clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。</p>",
-        "abstract": "<p>國會大代誌從 2012 g0v 發起，和多個國會相關專案互相串接資料。在此同時，立法院開始有 Open Data、而 2016 年國會第一次政黨輪替，迎接全新的民意，政黨協商也將要有錄影紀錄。更為透明的國會，似乎令人放心了？</p><p>本次演講將回顧國會資料的現況，國內外各相關專案監督的方式與比較，以及對新國會的監督，有哪些新的做法，需要什麼樣的專案來達成。</p>"
+        "event": {
+          "title": "國會沒代誌了嗎？",
+          "speaker": "clkao",
+          "bio": "<p>clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。</p>",
+          "abstract": "<p>國會大代誌從 2012 g0v 發起，和多個國會相關專案互相串接資料。在此同時，立法院開始有 Open Data、而 2016 年國會第一次政黨輪替，迎接全新的民意，政黨協商也將要有錄影紀錄。更為透明的國會，似乎令人放心了？</p><p>本次演講將回顧國會資料的現況，國內外各相關專案監督的方式與比較，以及對新國會的監督，有哪些新的做法，需要什麼樣的專案來達成。</p>"
+        }
       },
       {
         "time": "16:15-16:30",
@@ -523,7 +538,10 @@
       },
       {
         "time" : "09:30-10:00",
-        "event" : "Keynote 1: Felipe Heusser"
+        "event" : {
+          "title": "Keynote 1: Felipe Heusser",
+          "speaker": "Felipe Heusser"
+        }
       },
       {
         "time" : "10:00-10:30",
@@ -789,7 +807,7 @@
             "speaker": "蘇彥禎",
             "title": "空污資料搭配風場的內插與視覺化",
             "bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
-            "abstract": "<p>空污會隨著風向擴散,<br/>而觀測站之間的空污濃度也不該是線性内插,<br/>我做出一個系統能畫出污染隨著風擴散的結果,<br/>並且讓使用者可以在3維空間中探索.</p><p>以下連結是系統的建構說明：<a href='http://www.slideshare.net/ked19/pm25-system-construction'>http://www.slideshare.net/ked19/pm25-system-construction</a></p>"
+            "abstract": "<p>空污會隨著風向擴散,<br/>而觀測站之間的空污濃度也不該是線性内插,<br/>我做出一個系統能畫出污染隨著風擴散的結果,<br/>並且讓使用者可以在3維空間中探索.</p><p>線上系統: <a href='http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm'>http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm</a><br/>系統的建構說明: <a href='http://www.slideshare.net/ked19/pm25-system-construction'>http://www.slideshare.net/ked19/pm25-system-construction</a></p>"
           }
         ]
       },
@@ -827,14 +845,18 @@
       },
       {
         "time": "16:45-17:00",
-        "event": "Code for All – Civic Tech around the World / Julia Kloiber",
-        "abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
+        "event": {
+          "title": "Code for All – Civic Tech around the World / Julia Kloiber",
+          "abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
+        }
       },
       {
         "time": "17:00-17:15",
-        "event": "從 g0v 到 gov -- 潛入衛福部400天 / 羅佩琪",
-        "bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
-        "abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
+        "event": {
+          "title": "從 g0v 到 gov -- 潛入衛福部400天 / 羅佩琪",
+          "bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
+          "abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
+        }
       },
       {
         "time": "17:15-17:30",
@@ -912,7 +934,7 @@
             "venue" : "R0",
             "category" : "A",
             "speaker": "呂家華",
-            "title": "參與式治理：一個從主持人到中介者位置的觀察與思考",
+            "title": "政府 x 民間 x 網路 x 審議\n一個中介者的觀察與思考",
             "bio": "(TBC)",
             "abstract": "(TBC)"
           },
@@ -997,15 +1019,21 @@
       },
       {
         "time": "15:45-16:00",
-        "event": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions. / Miguel Arana Catania",
-        "bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
-        "abstract": "<p>Since the 15th of May of 2011 Spain has lived a deep change with people taking control of politics. Huge movements have appeared, taking to the squares, defending the public services, stopping evictions, and in a last phase going inside the institutions.</p><p>In the last local elections of May 2015, new parties coming from the 15M movement have won the control of major governments like Madrid, Barcelona, Zaragoza, Cadiz, among others.</p><p>We will explain the current situation, and focus in the new citizen participation strategy of Madrid, and Consul, its new <a href='http://decide.madrid.es'>direct democracy free software platform</a> that is spreading fast to other cities; and the relations not only with those other Spanish cities, but also at an international level.</p>"
+        "event": {
+          "title": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions.",
+          "speaker": "Miguel Arana Catania",
+          "bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
+          "abstract": "<p>Since the 15th of May of 2011 Spain has lived a deep change with people taking control of politics. Huge movements have appeared, taking to the squares, defending the public services, stopping evictions, and in a last phase going inside the institutions.</p><p>In the last local elections of May 2015, new parties coming from the 15M movement have won the control of major governments like Madrid, Barcelona, Zaragoza, Cadiz, among others.</p><p>We will explain the current situation, and focus in the new citizen participation strategy of Madrid, and Consul, its new <a href='http://decide.madrid.es'>direct democracy free software platform</a> that is spreading fast to other cities; and the relations not only with those other Spanish cities, but also at an international level.</p>"
+        }
       },
       {
         "time": "16:00-16:15",
-        "event": "國會沒代誌了嗎？ / clkao",
-        "bio": "<p>clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。</p>",
-        "abstract": "<p>國會大代誌從 2012 g0v 發起，和多個國會相關專案互相串接資料。在此同時，立法院開始有 Open Data、而 2016 年國會第一次政黨輪替，迎接全新的民意，政黨協商也將要有錄影紀錄。更為透明的國會，似乎令人放心了？</p><p>本次演講將回顧國會資料的現況，國內外各相關專案監督的方式與比較，以及對新國會的監督，有哪些新的做法，需要什麼樣的專案來達成。</p>"
+        "event": {
+          "title": "國會沒代誌了嗎？",
+          "speaker": "clkao",
+          "bio": "<p>clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。</p>",
+          "abstract": "<p>國會大代誌從 2012 g0v 發起，和多個國會相關專案互相串接資料。在此同時，立法院開始有 Open Data、而 2016 年國會第一次政黨輪替，迎接全新的民意，政黨協商也將要有錄影紀錄。更為透明的國會，似乎令人放心了？</p><p>本次演講將回顧國會資料的現況，國內外各相關專案監督的方式與比較，以及對新國會的監督，有哪些新的做法，需要什麼樣的專案來達成。</p>"
+        }
       },
       {
         "time": "16:15-16:30",

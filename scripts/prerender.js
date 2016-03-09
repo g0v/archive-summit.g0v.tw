@@ -5,13 +5,13 @@ import webpack from 'webpack'
 import {resolve} from 'path'
 import {server as superstatic} from 'superstatic'
 
-const paths = ['index.html', 'schedules.html', 'speakers.html']
+const paths = ['index', 'schedules', 'speakers']
 const PORT = 8081;
 const server = superstatic({
   port: PORT,
   cwd: resolve(__dirname, '../dist'),
   config: {
-    cleanUrls: false,
+    cleanUrls: true,
     debug: true,
     rewrites: paths.map(path => ({source: `/2016/${path}`, destination: '/2016/index.html'}))
   }
@@ -23,12 +23,12 @@ let connectApp = server.listen(async () => {
   console.log(`Static server listening at http://localhost:${PORT}`)
 
   await Promise.all(paths.map(async (path) => {
-    const filePath = resolve(__dirname, `../dist/2016/${path}`)
+    const outputFilePath = resolve(__dirname, `../dist/2016/${path}.html`)
     const html = await renderToString(path)
 
-    await writeFileAsync(filePath, html, 'utf-8')
+    await writeFileAsync(outputFilePath, html, 'utf-8')
 
-    console.log('Rendered ', path, 'to', filePath)
+    console.log('Rendered ', path, 'to', outputFilePath)
   }))
 
   console.log('All rendered, closing down the server...')

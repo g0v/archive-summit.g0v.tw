@@ -78,6 +78,9 @@
   text-align: center;
 }
 
+.lightboxTitle, .slotTitle {
+}
+
 .lightboxbutton {
   display: block;
   margin: 20px auto;
