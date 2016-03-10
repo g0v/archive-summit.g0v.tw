@@ -13,8 +13,10 @@
       {
         "time" : "09:30-10:00",
         "event" : {
-          "title": "Keynote 1: Felipe Heusser",
-          "speaker": "Felipe Heusser"
+          "title": "Keynote 1: The civics of civic tech",
+          "speaker": "Felipe Heusser",
+          "bio": "<p>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.</p><p>Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.</p>",
+          "abstract": "<p>Understanding the politics of technology as a mean for civic participation.</p>"
         }
       },
       {
@@ -539,8 +541,10 @@
       {
         "time" : "09:30-10:00",
         "event" : {
-          "title": "Keynote 1: Felipe Heusser",
-          "speaker": "Felipe Heusser"
+          "title": "Keynote 1: The civics of civic tech",
+          "speaker": "Felipe Heusser",
+          "bio": "<p>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.</p><p>Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.</p>",
+          "abstract": "<p>Understanding the politics of technology as a mean for civic participation.</p>"
         }
       },
       {
