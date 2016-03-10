@@ -1,11 +1,14 @@
 .root {
-  height: 92px;
+  height: 117px;
   background-color: #AC002B;
   text-align: center;
   color: #FFF;
-  padding: 30px 10px 35px;
+  padding: 20px 10px 25px;
+  line-height: 2;
 }
 
+
+.old,
 .coc {
   color: #FFF;
 }
