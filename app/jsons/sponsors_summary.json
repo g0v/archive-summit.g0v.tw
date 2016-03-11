@@ -1,0 +1,18 @@
+{
+  "en-US": {
+    "title": "Co-organizers",
+    "ocf": "Open Culture Foundation",
+    "iis": "Institute of Information Science, Academia Sinica",
+    "list": "Sponsors",
+    "message": "If you would like to sponsor g0v Summit 2016, please kindly contact: ",
+    "email": "g0v-summit-sponsor@googlegroups.com"
+  },
+  "zh-TW": {
+    "title": "共同主辦",
+    "ocf": "財團法人開放文化基金會",
+    "iis": "中央研究院資訊科學研究所",
+    "list": "贊助夥伴",
+    "message": "如果您欲贊助 g0v summit 2016，請聯繫：",
+    "email": "g0v-summit-sponsor@googlegroups.com"
+  }
+}

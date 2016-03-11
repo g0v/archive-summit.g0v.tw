@@ -5,7 +5,7 @@ import {
   MainInfo,
   Milestone,
   About,
-  Sponsors,
+  SponsorsSummary,
   Footer,
 } from "javascripts/components";
 import { getLocale, setLocale } from "javascripts/locale";
@@ -34,7 +34,7 @@ class Root extends Component {
         <MainSection>
           <MainInfo />
           {this.props.children}
-          <Sponsors />
+          {this.props.location.pathname !== '/2016/sponsors' ?  <SponsorsSummary /> : null}
           <Footer />
         </MainSection>
       </div>
