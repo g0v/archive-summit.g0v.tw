@@ -262,10 +262,10 @@
             "venue" : "R1",
             "category" : "I",
             "language": "",
-            "speaker": "Dan Fowler",
-            "title": "Data Packages and Moving Toward a World of Frictionless Data",
-            "bio":"<p>Dan Fowler is a Developer Advocate at Open Knowledge International and is helping to build a community of makers and doers around open data. He has a Master’s degree in Information and Communication Technologies for Development from Royal Holloway, University of London and a Bachelor’s degree from Princeton University.</p>",
-            "abstract": "<p>There is significant friction in the acquisition, sharing and reuse of data.  This friction stops people from creating, sharing, collaborating, and using data - especially among distributed communities. Open Knowledge, in working with researchers and government for more than a decade on these issues, have identified a specific area where this friction can be addressed: the technical process of preparing and sharing data. Toward this end, we are developing a lightweight specification and associated tooling for “packaging” data and transporting it easily and efficiently. The approach is titled “Data Package” because our work has a close analogy with “containerization” in shipping and “packaging” in software. Our goal is to make it easy for data go from one person’s tool (e.g. Excel) to another person’s tool as quickly and as easily as possible.</p><p>Through this approach, we think we can reduce friction enough to revolutionize how the open data ecosystem operates with massively improved data quality, utilization and sharing.</p>"
+            "speaker": "",
+            "title": "TBA",
+            "bio": "",
+            "abstract": ""
           },
           {
             "venue" : "R0",
@@ -790,10 +790,10 @@
             "venue" : "R1",
             "category" : "I",
             "language": "",
-            "speaker": "Dan Fowler",
-            "title": "Data Packages and Moving Toward a World of Frictionless Data",
-            "bio":"<p>Dan Fowler is a Developer Advocate at Open Knowledge International and is helping to build a community of makers and doers around open data. He has a Master’s degree in Information and Communication Technologies for Development from Royal Holloway, University of London and a Bachelor’s degree from Princeton University.</p>",
-            "abstract": "<p>There is significant friction in the acquisition, sharing and reuse of data.  This friction stops people from creating, sharing, collaborating, and using data - especially among distributed communities. Open Knowledge, in working with researchers and government for more than a decade on these issues, have identified a specific area where this friction can be addressed: the technical process of preparing and sharing data. Toward this end, we are developing a lightweight specification and associated tooling for “packaging” data and transporting it easily and efficiently. The approach is titled “Data Package” because our work has a close analogy with “containerization” in shipping and “packaging” in software. Our goal is to make it easy for data go from one person’s tool (e.g. Excel) to another person’s tool as quickly and as easily as possible.</p><p>Through this approach, we think we can reduce friction enough to revolutionize how the open data ecosystem operates with massively improved data quality, utilization and sharing.</p>"
+            "speaker": "",
+            "title": "TBA",
+            "bio":"",
+            "abstract": ""
           },
           {
             "venue" : "R0",
