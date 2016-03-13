@@ -1,18 +1,127 @@
 {
-  "en-US": {
-    "title": "Co-organizers",
-    "ocf": "Open Culture Foundation",
-    "iis": "Institute of Information Science, Academia Sinica",
-    "list": "Sponsors",
-    "message": "If you would like to sponsor g0v Summit 2016, please kindly contact: ",
-    "email": "g0v-summit-sponsor@googlegroups.com"
-  },
-  "zh-TW": {
-    "title": "共同主辦",
-    "ocf": "財團法人開放文化基金會",
-    "iis": "中央研究院資訊科學研究所",
-    "list": "贊助夥伴",
-    "message": "如果您欲贊助 g0v summit 2016，請聯繫：",
-    "email": "g0v-summit-sponsor@googlegroups.com"
-  }
+  "en-US": [
+    {
+      "category": "co-organizer",
+      "title": "Co-Organizer",
+      "sponsors": [
+        {
+          "name": "Open Culture Foundation",
+          "logo": "ocf.png",
+          "url": "http://ocf.tw/"
+        },
+        {
+          "name": "Academia Sinica Institute of Information Science",
+          "logo": "iis.png",
+          "url": "http://www.iis.sinica.edu.tw/"
+        }
+      ]
+    },
+    {
+      "category": "special-thanks",
+      "title": "Special Thanks",
+      "sponsors": [
+        {
+          "name": "新竹物流",
+          "logo": "hct.png",
+          "url": "https://www.hct.com.tw/"
+        },
+        {
+          "name": "RC Culture and Arts Foundation",
+          "logo": "rc.png"
+        }
+      ]
+    },
+    {
+      "category": "sponsors",
+      "title": "Sponsors",
+      "sponsors": [
+        {
+          "name": " Archilife Research Foundation",
+          "logo": "archilife.png",
+          "url": "http://www.archilife.org/"
+        },
+        {
+          "name": "Voxe.org",
+          "logo": "voxe.png",
+          "url": "http://voxe.org/welcome",
+          "desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
+        }
+      ]
+    },
+    {
+      "category": "partner",
+      "title": "Partner",
+      "sponsors": [
+        {
+          "name": "Wolf Tea",
+          "logo": "wolftea.png",
+          "url": "http://wolftea.com/",
+          "desc": "Wolf Tea believes Taiwan has the best tea in the world because of the climate and great tea makers. Each of our offering is a selected single-day-harvest, single-batch-creation which is superior and unique in flavour. We want to share the ever-changing experience of tea tasting, and carefully evaluate each sip. In a way, each taste of tea is “one chance in a lifetime” beautiful experience."
+        }
+      ]
+    }
+  ],
+  "zh-TW": [
+    {
+      "category": "co-organizer",
+      "title": "合作單位",
+      "sponsors": [
+        {
+          "name": "財團法人開放文化基金會",
+          "logo": "ocf.png",
+          "url": "http://ocf.tw/"
+        },
+        {
+          "name": "中央研究院資訊科學研究所",
+          "logo": "iis.png",
+          "url": "http://www.iis.sinica.edu.tw/"
+        }
+      ]
+    },
+    {
+      "category": "special-thanks",
+      "title": "共力夥伴",
+      "sponsors": [
+        {
+          "name": "新竹物流",
+          "logo": "hct.png",
+          "url": "https://www.hct.com.tw/"
+        },
+        {
+          "name": "財團法人RC文化藝術基金會",
+          "logo": "rc.png",
+          "url": "http://wolftea.com/"
+        }
+      ]
+    },
+    {
+      "category": "sponsors",
+      "title": "贊助單位",
+      "sponsors": [
+        {
+          "name": "祐生基金會",
+          "logo": "archilife.png",
+          "url": "http://www.archilife.org/"
+        },
+        {
+          "name": "Voxe.org",
+          "logo": "voxe.png",
+          "url": "http://voxe.org/welcome",
+          "desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
+        }
+      ]
+    },
+    {
+      "category": "partner",
+      "title": "合作夥伴",
+      "sponsors": [
+        {
+          "name": "琅茶",
+          "logo": "wolftea.png",
+          "url": "http://wolftea.com/",
+          "desc": "琅茶立志將台灣茶細膩之美，傳遞給全世界！每季親訪產地，嚴選上質茶園在最適天氣時辰，由優秀茶師採製的「單品茶」(Single Origin)，詳載茶事，與時俱進，售完不再，真正感受每片山林「此刻此地・獨一無二」的純粹美好。一起品遍千變萬化的台灣茶吧！開展好茶地圖，認識自己的味蕾，找到屬於你「琅琅上口」的好茶。"
+        }
+      ]
+    }
+  ]
 }
