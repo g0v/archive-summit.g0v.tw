@@ -58,8 +58,8 @@
             "venue" : "R1",
             "category" : "I",
             "language": "",
-            "speaker": "謝宗震",
-            "title": "Data For Social Good – 由資料驅動的公益新浪潮",
+            "speaker": "Hsieh, Tsung Chen",
+            "title": "Data For Social Good – Data-driven Charity",
             "bio": "<p>DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。</p>",
             "abstract": "<p>有人用勞力做公益，也有人用財力做公益，如果用資料力來做公益，不知道會擦出怎樣的火花？</p><p>2015年，我們打造一個「資料力，做公益」的交流與媒合平台，稱為「D4SG 計畫」 (Data for Social Good)。透過社群、黑客松、資料競賽、長期專案...等方式推動資料人與非營利組織的深度交流。這場演講將從資料人的角度分享如何與NPO/NGO合作，把冰冷的資料轉換化成有溫度的故事。</p>"
           },
@@ -532,11 +532,11 @@
     "day1": [
       {
         "time" : "08:30-09:20",
-        "event" : "Registration"
+        "event" : "報到"
       },
       {
         "time" : "09:20-09:30",
-        "event" : "Opening"
+        "event" : "開幕"
       },
       {
         "time" : "09:30-10:00",
@@ -555,7 +555,7 @@
             "category" : "D",
             "language": "",
             "speaker": "Hoony Jang",
-            "title": "How to extend Civic Tech to civic organizations (NPO, NGO, and the media) in KOREA?",
+            "title": "韓國經驗：如何推展公民科技到公民組織（NPO, NGO, 與媒體）",
             "bio": "<p>Civic Hacker at Creative Commons Korea<ul><li>project manager of Codenamu</li><li>organizer of Code for Seoul</li><li>github: @hoony</li><li>twitter: @thechunsik</li></li></p>",
             "abstract": "<p>CodeNamu, initiated by Creative Commons Korea as an open data project since 2011, has built communities, hosted yearly hackathons, and made lots of data storytelling projects. However we failed to put our message deeply, or some of results were quite meaningful but we fail to spread out our messages or our acts to outside community. How can we extend civic tech to civic organizations outside community?</p><p>In South Korea. most of civic organizations(NPO, NGO, and the media) are interested in data and data journalism, but they don’t have capacity to treat the data and data journalism. Event they don’t have any developers to maintain their own website. Because of that, after they constructed huge and valuable data to make stories for years, the data has been hidden somewhere on their PCs in not-machine-readable formats.</p><p>From this year, we’re developing a Data Specialists Working Group composed of civic hackers; technitians, designers, and data experts. This group will be in partnerships with NPO, NGO, and the media for data journalism projects. CodeNamu civic technitians and our partners composed of journalists and activits will make synergy to make those data open and to make various data journalism projects between CodeNamu’s civic tech and partners’ insight or messages. We hope that we’re going to introduce and discuss about the way to extend civic tech to outside civic tech community.</p>"
           },
@@ -871,11 +871,11 @@
     "day2": [
       {
         "time" : "08:30-09:20",
-        "event" : "Registration"
+        "event" : "報到"
       },
       {
         "time" : "09:20-09:30",
-        "event" : "Opening"
+        "event" : "開幕"
       },
       {
         "time" : "09:30-10:30",
@@ -900,7 +900,7 @@
             "venue" : "R1",
             "category" : "B",
             "speaker": "",
-            "title": "TBA",
+            "title": "敬請期待",
             "abstract": ""
           },
           {
@@ -917,7 +917,7 @@
             "category" : "D",
             "language": "",
             "speaker": "Venus Lui",
-            "title": "Importance of having an Arts database in Asia",
+            "title": "建立亞洲藝術資料庫的重要性",
             "bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
             "abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
           }
@@ -984,7 +984,7 @@
             "category" : "E",
             "language": "",
             "speaker": "Freyja van den boom",
-            "title": "Ever tried TDM and would you do it again?",
+            "title": "告別文字擷取與資料探勘的痛苦: FutureTDM",
             "bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
             "abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
           }
