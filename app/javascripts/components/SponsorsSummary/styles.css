@@ -39,7 +39,7 @@
   padding-top: 5px;
 }
 
-.sponsor:hover .name {
+a.sponsor:hover .name {
   text-decoration: underline;
 }
 

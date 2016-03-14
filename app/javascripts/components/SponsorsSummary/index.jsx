@@ -7,10 +7,13 @@ import styles from "./styles.css";
 class SponsorsSummary extends Component {
   sponsor = (sponsor) => {
     return (
-      <a href={sponsor.url} target="_blank" className={styles.sponsor} key={sponsor.name} >
+      (sponsor.url) ? <a href={sponsor.url} target="_blank" className={styles.sponsor} key={sponsor.name} >
         <img className={styles.logo} src={require(`images/sponsors/${sponsor.logo}`)} />
         <span className={styles.name}>{sponsor.name}</span>
-      </a>
+      </a> : <span className={styles.sponsor} key={sponsor.name} >
+        <img className={styles.logo} src={require(`images/sponsors/${sponsor.logo}`)} />
+        <span className={styles.name}>{sponsor.name}</span>
+      </span>
     );
   }
 

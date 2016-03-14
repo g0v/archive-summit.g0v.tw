@@ -57,6 +57,12 @@
           "logo": "wolftea.png",
           "url": "http://wolftea.com/",
           "desc": "Wolf Tea believes Taiwan has the best tea in the world because of the climate and great tea makers. Each of our offering is a selected single-day-harvest, single-batch-creation which is superior and unique in flavour. We want to share the ever-changing experience of tea tasting, and carefully evaluate each sip. In a way, each taste of tea is “one chance in a lifetime” beautiful experience."
+        },
+        {
+          "name": "LIVEhouse.in",
+          "logo": "livehousein.png",
+          "url": "https://livehouse.in/",
+          "desc": "No.1 Live Broadcasting Platform in Taiwan\nLIVEhouse.in is a brand new live-broadcasting platform developed by iKala team, which has strong technical skills and great design capabilities that can compete with any worldwide leading video platform. Since it’s launch in early 2014, LIVEhouse.in has gained much attention in Taiwan and pan-Asia countries. LIVEhouse.in has hosted over 100,000 live events with prominent enterprises, government departments, video studios, celebrities and public events, such as Public Television Service Taiwan, Computex, Apple Daily, BNext Magazine, TED...ect, bringing live video experience to the next level. We hope to provide you the best video-streaming quality and diverse video marketing showcase.\nAnd now, LIVEhouse.in is not only serving audiences in Taiwan, but also actively seeking opportunities to expand to overseas markets. LIVEhouse.in aims at building the best video streaming eco-system, seeking potential business partners from both international and local markets to create more high-quality programs. We hope that our platform can support people having talent of performing to be introduced to the world."
         }
       ]
     }
@@ -89,8 +95,7 @@
         },
         {
           "name": "財團法人RC文化藝術基金會",
-          "logo": "rc.png",
-          "url": "http://wolftea.com/"
+          "logo": "rc.png"
         }
       ]
     },
@@ -120,6 +125,12 @@
           "logo": "wolftea.png",
           "url": "http://wolftea.com/",
           "desc": "琅茶立志將台灣茶細膩之美，傳遞給全世界！每季親訪產地，嚴選上質茶園在最適天氣時辰，由優秀茶師採製的「單品茶」(Single Origin)，詳載茶事，與時俱進，售完不再，真正感受每片山林「此刻此地・獨一無二」的純粹美好。一起品遍千變萬化的台灣茶吧！開展好茶地圖，認識自己的味蕾，找到屬於你「琅琅上口」的好茶。"
+        },
+        {
+          "name": "LIVEhouse.in",
+          "logo": "livehousein.png",
+          "url": "https://livehouse.in/",
+          "desc": "台灣第一大直播社群平台\nLIVEhouse.in 為一嶄新台灣國產直播平台,其開發團隊擁有堅強技術及設計能力,備受各界肯定。自 2014 年初上線以來,LIVEhouse.in 已經播出超過 100,000 場直播節目。LIVEhouse.in 正積極與國內各產業進行跨界合作,我們擁有豐富經驗並累積許多成功客戶,包括公視、Computex、蘋果日報、數位時代、TED 講座 ... 等等,讓您擁有最佳影音品質和影音行銷操作實例。\nLIVEhouse.in 期望除了在台灣扎根,也積極邁向國際市場。目標是希望能結合國內外的合作夥伴,打造出最完善的影音生態圈,也將台灣的表演人才帶上國際的舞台。"
         }
       ]
     }
