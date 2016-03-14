@@ -13,7 +13,7 @@
       {
         "time" : "09:30-10:00",
         "event" : {
-          "title": "Keynote 1: The civics of civic tech",
+          "title": "Keynote 1: The Civics of Civic Tech",
           "speaker": "Felipe Heusser",
           "bio": "<p>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.</p><p>Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.</p>",
           "abstract": "<p>Understanding the politics of technology as a mean for civic participation.</p>"
@@ -36,7 +36,7 @@
             "category" : "B",
             "language": "",
             "speaker": "Charlotte Richard",
-            "title": "Democracy and civic engagement as an open media ",
+            "title": "Democracy and Civic Engagement as an Open Media ",
             "bio": "<p>Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).</p>",
             "abstract": "<p>At Voxe.org we seek to build online tools that revolutionize civic engagement by bringing to the public easy access, neutral and crowdsourced information.</p><p>We've already:<ul><li>created a <a href='http://voxe.org/welcome'>world comparison platform</a> for politics (16 countries, 3.5 million users and more than 20 media partners). </li><li>launched the weekly <a href='http://www.happydemocracy.com/'>civic tech newsletter</a></li><li>experienced <a href='http://hacklacop21.voxe.org/''>a tool to ask politician question</a> during COP21</li><li>we're designing a mobile app that pushes you engagement solutions in your pocket.</li></ul></p>"
           },
@@ -541,7 +541,7 @@
       {
         "time" : "09:30-10:00",
         "event" : {
-          "title": "Keynote 1: The civics of civic tech",
+          "title": "主題演講: 公民科技中的「公民精神」",
           "speaker": "Felipe Heusser",
           "bio": "<p>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.</p><p>Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.</p>",
           "abstract": "<p>Understanding the politics of technology as a mean for civic participation.</p>"
@@ -564,7 +564,7 @@
             "category" : "B",
             "language": "",
             "speaker": "Charlotte Richard",
-            "title": "Democracy and civic engagement as an open media ",
+            "title": "民主與公民參與之開放媒體",
             "bio": "<p>Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).</p>",
             "abstract": "<p>At Voxe.org we seek to build online tools that revolutionize civic engagement by bringing to the public easy access, neutral and crowdsourced information.</p><p>We've already:<ul><li>created a <a href='http://voxe.org/welcome'>world comparison platform</a> for politics (16 countries, 3.5 million users and more than 20 media partners). </li><li>launched the weekly <a href='http://www.happydemocracy.com/'>civic tech newsletter</a></li><li>experienced <a href='http://hacklacop21.voxe.org/''>a tool to ask politician question</a> during COP21</li><li>we're designing a mobile app that pushes you engagement solutions in your pocket.</li></ul></p>"
           },
@@ -596,7 +596,7 @@
             "category" : "B",
             "language": "",
             "speaker": "JK Suh",
-            "title": "The Korean General Election and VAAs: the case of \"Ping\"",
+            "title": "韓國大選與投票建議指南: \"Ping\"",
             "bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
             "abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
           },
@@ -632,7 +632,7 @@
             "category" : "C",
             "language": "",
             "speaker": "Yago Bermejo Abati",
-            "title": "Podemos黨的網上參與策略",
+            "title": "Podemos 黨的網路參與策略",
             "bio": "<p>Yago Bermejo Abati</p><p>I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur.</p><p>Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties…</p><p>After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating.<p><p>Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.</p>",
             "abstract": "<p>The summer of 2014 at team of 20 people was elected by a digital voting process to organise the structure of the new exponential party-movement called Podemos. At that time more than 300k people were subscribed as digital participants of this party. The social media team running a Facebook of more than 800k followers and a Twitter of more than 500k were looking for a new tool to interact with that huge amount of people. LaboDemo proposed a concrete strategy running different tools. We created a deliberative space hacking Reddit, proposed Loomio as a consensus-making tool for assemblies and a mobile app to make fast collective and massive decisions. Hundreds of thousands of people participate at this process creating a collective intelligence that finally faced top leaders at Podemos. I will explain how this kind of collective intelligence can change the way politics work and why we should engage direct a deliberative democracy to empower the crowd using internet combined with analogical participation.</p>"
           },
@@ -664,7 +664,7 @@
             "category" : "B",
             "language": "",
             "speaker": "Colin Megill",
-            "title": "Pol.is 在台灣: 縮小公共談論、磋商、政策之差距。",
+            "title": "Pol.is 在台灣: 跨越鴻溝之公共談論、意見徵求與政策",
             "bio": "<p>Colin is founder of Seattle based startup <a href='http://pol.is'>http://pol.is</a>, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.</p><p>He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.</p><p>Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.</p>",
             "abstract": "<p>Pol.is is a new tool for gathering crowd sentiment in a way that preserves and respects minority opinions. It scales to any number of users, while preserving high dimensional, organic feedback. g0v and vTaiwan have used pol.is to foster productive discourse in the public sphere and influence policy related to Uber and AirBnB. We'll discuss pol.is as a technology and the case study of vTaiwan's successes with it.</p>"
           },
@@ -831,7 +831,7 @@
             "venue" : "R0",
             "category" : "I",
             "language": "",
-            "speaker": "Shigeomi Shibata",
+            "speaker": "柴田 重臣",
             "title": "How to spread the civic tech movement to non-techie people?",
             "bio": "(TBC)",
             "abstract": "<p>Code for Japan which is established on 2013 Nov. has now 33 official brigades and 20+ candidate groups. Growing speed is great I think but the member of groups mainly are techie guys. From the point of view for civic tech, we need more non-techie people. So I want to let you share our challenges and achievement and ask your thought.</p><p>My name is Shigeomi Shibata, co-captain of code for Japan and a member of code for Ibaraki located on Mito-shi of Ibaraki prefecture.</p>"
