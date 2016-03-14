@@ -236,7 +236,7 @@
             "category" : "C",
             "language": "",
             "speaker": "Jim Horng",
-            "title": "從滅頂秒退地圖看網路世代無組織社運",
+            "title": "Netizen and Self-Organized Movement: A Case Study with Boycott Mapping",
             "bio": "<p>在台灣軟體業已有約 10 年經驗，自認角色為工程師、社會議題微參與者、open source微貢獻者。</p>",
             "abstract": "<p>抵抗黑心行動之一的滅頂秒退在 2015 年底到 2016 年初約熱了一個月時間，引發許多層次的討論。支持方的行動雖然一開始遍地開花，但似乎遇到輿論、成效、進度等阻力而漸式微，其中秒退地圖是想解決成效與進度透明化的部分，同時帶點組織化前置的概念。以結果論可能不算成功，但其過程包含網路推廣，早期使用者偕同設計，facebook 微組織合作，從中激發更多優化無組織社運的想法，這些便是作者想要分享的。</p><ul><li><a href='http://jimhorng.github.io/return_as_buy/'>滅頂秒退地圖</a></li><li><a href='https://jimhorng.wordpress.com/2016/01/19/%E5%BE%9E%E6%BB%85%E9%A0%82%E7%A7%92%E9%80%80%E7%9C%8B%E5%8F%B0%E7%81%A3%E8%BB%9F%E5%AF%A6%E5%8A%9B/'>從滅頂秒退看台灣軟實力</a></li></ul>"
           },
@@ -272,7 +272,7 @@
             "category" : "I",
             "language": "",
             "speaker": "ipa & ETBlue",
-            "title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
+            "title": "\"Bluepa\" Metrics and Case Studies for Interdisciplinarity: the Mystery of Openness and Interdisplinary in g0v",
             "bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
             "abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
           },
@@ -322,7 +322,7 @@
       {
         "time": "16:45-17:00",
         "event": {
-          "title": "Code for All – Civic Tech around the World / Julia Kloiber",
+          "title": "Code for All – Civic Tech around the World",
           "speaker": " Julia Kloiber",
           "abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
         }
@@ -330,8 +330,8 @@
       {
         "time": "17:00-17:15",
         "event": {
-          "title": "從 g0v 到 gov -- 潛入衛福部400天",
-          "speaker": "羅佩琪",
+          "title": "From g0v to gov - 400 Days in the Ministry of Health and Welfare",
+          "speaker": "Peggy Lo",
           "bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
           "abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
         }
@@ -381,7 +381,7 @@
             "category" : "A",
             "language": "",
             "speaker": "Saul Peng & 王景弘",
-            "title": "g0v預算視覺化後續 - 臺北市經驗",
+            "title": "g0v 預算視覺化後續 - 臺北市經驗",
             "bio": "<p>彭盛韶 Saul Peng<br/>經歷：<ul><li>柯文哲辦公室政策部研究員</li><li>臺北市資訊局專門委員</li></ul></p><p>王景弘<br/>經歷：<ul><li>普奇科技資深工程師</li><li>威聯通科技資深產品工程師</li><li>JavaScript.tw 技術社團發起人</li><li>JSDC 前端技術人年會共同發起人</li></ul></p>",
             "abstract": "<p>分享 2015 年臺北市資訊局與民間社群合作的經驗，運用原 2012 年 g0v 預算視覺化模組，更新後推出臺北市的版本。此案例在當時引起不小迴響，同時擴散至其他縣市。此演講中將分享行政體制的改變、公私協力的契機、技術部分的執行及後續造成地方政府的影響等。</p>"
           },
@@ -498,7 +498,7 @@
       {
         "time": "15:45-16:00",
         "event": {
-          "title": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions.",
+          "title": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions",
           "speaker": "Miguel Arana Catania",
           "bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
           "abstract": "<p>Since the 15th of May of 2011 Spain has lived a deep change with people taking control of politics. Huge movements have appeared, taking to the squares, defending the public services, stopping evictions, and in a last phase going inside the institutions.</p><p>In the last local elections of May 2015, new parties coming from the 15M movement have won the control of major governments like Madrid, Barcelona, Zaragoza, Cadiz, among others.</p><p>We will explain the current situation, and focus in the new citizen participation strategy of Madrid, and Consul, its new <a href='http://decide.madrid.es'>direct democracy free software platform</a> that is spreading fast to other cities; and the relations not only with those other Spanish cities, but also at an international level.</p>"
@@ -613,7 +613,7 @@
       },
       {
         "time" : "11:00-11:30",
-        "event": "Tea time"
+        "event": "茶點"
       },
       {
         "time" : "11:30-12:00",
@@ -781,7 +781,7 @@
       },
       {
         "time" : "15:00-15:40",
-        "event" : "Tea time"
+        "event" : "茶點",
       },
       {
         "time" : "15:40-16:10",
@@ -832,7 +832,7 @@
             "category" : "I",
             "language": "",
             "speaker": "柴田 重臣",
-            "title": "How to spread the civic tech movement to non-techie people?",
+            "title": "如何讓推廣公民科技給非技術宅？",
             "bio": "(TBC)",
             "abstract": "<p>Code for Japan which is established on 2013 Nov. has now 33 official brigades and 20+ candidate groups. Growing speed is great I think but the member of groups mainly are techie guys. From the point of view for civic tech, we need more non-techie people. So I want to let you share our challenges and achievement and ask your thought.</p><p>My name is Shigeomi Shibata, co-captain of code for Japan and a member of code for Ibaraki located on Mito-shi of Ibaraki prefecture.</p>"
           },
@@ -850,14 +850,15 @@
       {
         "time": "16:45-17:00",
         "event": {
-          "title": "Code for All – Civic Tech around the World / Julia Kloiber",
+          "title": "Code for All – 全球公民科技社群",
           "abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
         }
       },
       {
         "time": "17:00-17:15",
         "event": {
-          "title": "從 g0v 到 gov -- 潛入衛福部400天 / 羅佩琪",
+          "title": "從 g0v 到 gov -- 潛入衛福部 400 天",
+          "speaker": "羅佩琪",
           "bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
           "abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
         }
@@ -907,7 +908,7 @@
             "category" : "A",
             "language": "",
             "speaker": "Saul Peng & 王景弘",
-            "title": "g0v預算視覺化後續 - 臺北市經驗",
+            "title": "The Continuation of the g0v budget visualization - Taipei City Government",
             "bio": "<p>彭盛韶 Saul Peng<br/>經歷：<ul><li>柯文哲辦公室政策部研究員</li><li>臺北市資訊局專門委員</li></ul></p><p>王景弘<br/>經歷：<ul><li>普奇科技資深工程師</li><li>威聯通科技資深產品工程師</li><li>JavaScript.tw 技術社團發起人</li><li>JSDC 前端技術人年會共同發起人</li></ul></p>",
             "abstract": "<p>分享 2015 年臺北市資訊局與民間社群合作的經驗，運用原 2012 年 g0v 預算視覺化模組，更新後推出臺北市的版本。此案例在當時引起不小迴響，同時擴散至其他縣市。此演講中將分享行政體制的改變、公私協力的契機、技術部分的執行及後續造成地方政府的影響等。</p>"
           },
@@ -955,7 +956,7 @@
       },
       {
         "time" : "14:00-14:40",
-        "event": "Tea time"
+        "event": "茶點"
       },
       {
         "time" : "14:40-15:10",
@@ -1024,7 +1025,7 @@
       {
         "time": "15:45-16:00",
         "event": {
-          "title": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions.",
+          "title": "Consul - 西班牙的開放政府平台與數位民主革命",
           "speaker": "Miguel Arana Catania",
           "bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
           "abstract": "<p>Since the 15th of May of 2011 Spain has lived a deep change with people taking control of politics. Huge movements have appeared, taking to the squares, defending the public services, stopping evictions, and in a last phase going inside the institutions.</p><p>In the last local elections of May 2015, new parties coming from the 15M movement have won the control of major governments like Madrid, Barcelona, Zaragoza, Cadiz, among others.</p><p>We will explain the current situation, and focus in the new citizen participation strategy of Madrid, and Consul, its new <a href='http://decide.madrid.es'>direct democracy free software platform</a> that is spreading fast to other cities; and the relations not only with those other Spanish cities, but also at an international level.</p>"
