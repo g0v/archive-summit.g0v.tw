@@ -22,7 +22,6 @@
 .table {
   max-width: 100%;
   overflow: auto;
-  display: block;
   margin-bottom: 40px;
 }
 .table td a {
