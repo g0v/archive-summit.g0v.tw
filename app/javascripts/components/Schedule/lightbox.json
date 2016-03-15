@@ -1,0 +1,12 @@
+{
+  "en-US": {
+  	"bio": "Speaker Bio",
+  	"abstract": "Abstract",
+    "close": "Close"
+  },
+  "zh-TW": {
+  	"bio": "講者簡介",
+  	"abstract": "摘要",
+    "close": "關閉"
+  }
+}

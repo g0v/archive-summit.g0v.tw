@@ -104,37 +104,42 @@ class Header extends Component {
 const Menu = () => {
   return (
     <ul className={styles.menu}>
-      <li 
+      <li
         className={styles.item}
         activeClassName={styles.active}>
         <IndexLink
-          to="/"
+          to="/2016"
+          activeClassName={styles.active}
         >
           {info[getLocale()].home}
         </IndexLink>
       </li>
-      <li 
+      <li
         className={styles.item}
         activeClassName={styles.active}>
         <Link
-          to="schedules"
+          to="/2016/schedules"
         >
           {info[getLocale()].schedule}
         </Link>
       </li>
-      <li 
+      <li
         className={styles.item}
         activeClassName={styles.active}>
         <Link
-          to="speakers"
+          to="/2016/speakers"
         >
           {info[getLocale()].speakers}
         </Link>
       </li>
-      <li className={styles.item}>
-        <span>
+      <li
+        className={styles.item}
+        activeClassName={styles.active}>
+        <Link
+          to="/2016/sponsors"
+        >
           {info[getLocale()].sponsors}
-        </span>
+        </Link>
       </li>
       <li className={styles.item}>
         <span>
