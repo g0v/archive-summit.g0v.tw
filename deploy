@@ -18,7 +18,7 @@ echo "$CURRENT is current $upstream/$development"
 if [[ $MERGED != $CURRENT ]]; then
   mv dist dist-new
   git clone $REPO --depth 1 -b $publication dist
-  rsync -av dist-new/ dist/
+  rsync -av --delete dist-new/2016/ dist/2016/
   cd dist
   if [[ -z `git diff --shortstat` ]]; then echo "no diff. abort."; exit; fi
   git fetch --depth 1 $upstream $development:$development
