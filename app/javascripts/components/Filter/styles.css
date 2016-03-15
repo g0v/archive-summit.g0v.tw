@@ -1,0 +1,140 @@
+.filter {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.filterTitle {
+  padding: 20px 20px 20px 10px;
+  background: white;
+  border-bottom: 1px solid gray;
+  font-family: Polaris-Bold,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.filterCategories {
+	list-style: none;
+  margin: 0;
+  padding: 10px 10px 0px 0;
+	
+}
+@media screen and (min-width: 776px){
+  .filterCategories {
+      padding: 10px 20px 0px 0;   
+  }
+}
+.filterCategory {
+  font-size: 13px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+}
+@media screen and (min-width: 776px){
+  .filterCategory {
+      width: 100%; 
+  }
+}
+@media screen and (max-width: 402px){
+    .filterCategory {
+        font-size: 10px !important;
+    }
+}
+.filterCategoryIcon {
+	position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+/* THIS IS BAD */
+.filterCategory:hover .filterCategoryIcon_0{
+  background: hsl(47, 100%, 50%);
+}
+.filterCategory:hover .filterCategoryIcon_1{
+  background: hsl(47, 100%, 70%);
+}
+.filterCategory:hover .filterCategoryIcon_2{
+  background: hsl(47, 100%, 40%);
+}
+.filterCategory:hover .filterCategoryIcon_3{
+  background: hsl(81, 100%, 40%);
+}
+.filterCategory:hover .filterCategoryIcon_4{
+  background: hsl(81, 100%, 70%);
+}
+.filterCategory:hover .filterCategoryIcon_5{
+  background: hsl(0, 100%, 40%);
+}
+.filterCategory:hover .filterCategoryIcon_6{
+  background: hsl(0, 100%, 70%);
+}
+.filterCategory:hover .filterCategoryIcon_7{
+  background: hsl(189, 100%, 50%);
+}
+.filterCategory:hover .filterCategoryIcon_8{
+  background: hsl(216, 100%, 50%);
+}
+.filterCategory:hover .filterCategoryIcon_9{
+  background: hsl(243, 100%, 50%);
+}
+.filterCategory:hover .filterCategoryIcon_10{
+  background: hsl(270, 100%, 50%);
+}
+.filterCategory:hover .filterCategoryIcon_11{
+  background: hsl(297, 100%, 50%);
+}
+.filterCategory:hover .filterCategoryIcon_12{
+  background: rgb(200,200,200);
+}
+.filterCategory:hover .filterCategoryIcon_13{
+  background: rgb(0, 0, 0);
+}
+
+
+.filterCategoryText {
+  padding-left: 30px;
+  line-height: 1.6;
+
+}
+.filterActions {
+  padding: 10px;
+
+}
+.filterClose {
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block;
+  margin-right: 20px;
+}
+.filterComplete:hover{
+  color: rgb(50,53,52);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.filterClearAll {
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: transparent;
+  display: inline-block;
+
+}
+.filterClearAll.isActive {
+  color: rgb(120,120,120);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.filterClearAll.isActive:hover{
+  color: rgb(50,53,52);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}

@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { getLocale } from "javascripts/locale";
 import schedules from './schedules.json';
+import categoriesData from './categories.json';
 import styles from "./styles.css";
 import Table from "../Table";
+import Filter from "../Filter";
 
 export default class Schedule extends Component {
   state = {
@@ -31,6 +33,56 @@ export default class Schedule extends Component {
         r2: (<Slot speaker={it.events[2].speaker} title={it.events[2].title} />),
       };
     });
+    
+    // extract categories from event category
+/*
+    let categories = [];
+    
+    categories = categories.concat(schedules[getLocale()]["day1"].map((it) => {
+      if (it.events) {
+        for (var i = 0; i < it.events.length; i++) {
+          var event = it.events[i];
+          if (event && event.category)
+            return event.category;
+        }
+      }
+    }));
+    
+    categories = categories.concat(schedules[getLocale()]["day2"].map((it) => {
+      if (it.events) {
+        for (var i = 0; i < it.events.length; i++) {
+          var event = it.events[i];
+          if (event && event.category)
+            return event.category;
+        }
+      }
+    }));
+    
+    categories = categories.filter(function(item){
+      return typeof item === 'string';  
+    });
+*/
+
+    console.log(categoriesData.categories);
+    
+    var categories = categoriesData.categories.map((value,index)=>{
+        return (
+          {
+            "title" : value.title,
+            "color" : value.color,
+            "active" : false
+          }
+        )
+    });
+    
+    let filterOn = false;
+    let toggleCategoryHandler = () => {
+    };
+    let clearCategoryHandler = () => {
+    };
+    let togglePanelHander = () => {
+    
+    };
 
     return (
       <div className={styles.root}>
