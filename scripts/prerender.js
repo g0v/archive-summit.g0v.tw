@@ -25,6 +25,9 @@ const PAGES = [{
 }, {
   path: 'speakers',
   title: '講者',
+}, {
+  path: 'sponsors',
+  title: '贊助商',
 }]
 
 
