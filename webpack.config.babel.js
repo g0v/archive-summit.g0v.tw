@@ -31,13 +31,6 @@ export default {
         exclude: /og\.png$/, // Facebook can't recognize inline og:image.
       },
       {
-        test: /app\/images\/speakers2014/,
-        loader: 'file',
-        query: {
-          name: "images/speakers2014/[name].[ext]"
-        }
-      },
-      {
         test: /app\/images\/keynote/,
         loader: 'file',
         query: {
