@@ -25511,7 +25511,7 @@
 /* 241 */
 /***/ function(module, exports) {
 
-	var core = module.exports = {version: '2.1.5'};
+	var core = module.exports = {version: '2.2.0'};
 	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
 
 /***/ },
@@ -26307,11 +26307,13 @@
 	  , $JSON          = global.JSON
 	  , _stringify     = $JSON && $JSON.stringify
 	  , setter         = false
+	  , PROTOTYPE      = 'prototype'
 	  , HIDDEN         = wks('_hidden')
+	  , TO_PRIMITIVE   = wks('toPrimitive')
 	  , isEnum         = {}.propertyIsEnumerable
 	  , SymbolRegistry = shared('symbol-registry')
 	  , AllSymbols     = shared('symbols')
-	  , ObjectProto    = Object.prototype
+	  , ObjectProto    = Object[PROTOTYPE]
 	  , USE_NATIVE     = typeof $Symbol == 'function'
 	  , QObject        = global.QObject;
 
@@ -26328,7 +26330,7 @@
 	} : dP;
 
 	var wrap = function(tag){
-	  var sym = AllSymbols[tag] = _create($Symbol.prototype);
+	  var sym = AllSymbols[tag] = _create($Symbol[PROTOTYPE]);
 	  sym._k = tag;
 	  DESCRIPTORS && setter && setSymbolDesc(ObjectProto, tag, {
 	    configurable: true,
@@ -26340,8 +26342,10 @@
 	  return sym;
 	};
 
-	var isSymbol = function(it){
+	var isSymbol = USE_NATIVE && typeof $Symbol.iterator == 'symbol' ? function(it){
 	  return typeof it == 'symbol';
+	} : function(it){
+	  return it instanceof $Symbol;
 	};
 
 	var $defineProperty = function defineProperty(it, key, D){
@@ -26421,16 +26425,12 @@
 	// 19.4.1.1 Symbol([description])
 	if(!USE_NATIVE){
 	  $Symbol = function Symbol(){
-	    if(isSymbol(this))throw TypeError('Symbol is not a constructor');
+	    if(this instanceof $Symbol)throw TypeError('Symbol is not a constructor!');
 	    return wrap(uid(arguments.length > 0 ? arguments[0] : undefined));
 	  };
-	  redefine($Symbol.prototype, 'toString', function toString(){
+	  redefine($Symbol[PROTOTYPE], 'toString', function toString(){
 	    return this._k;
 	  });
-
-	  isSymbol = function(it){
-	    return it instanceof $Symbol;
-	  };
 
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f   = $defineProperty;
@@ -26466,7 +26466,7 @@
 	};
 
 	// Don't use setters in Qt Script, https://github.com/zloirock/core-js/issues/173
-	if(!QObject || !QObject.prototype || !QObject.prototype.findChild)setter = true;
+	if(!QObject || !QObject[PROTOTYPE] || !QObject[PROTOTYPE].findChild)setter = true;
 
 	$export($export.S + $export.F * !USE_NATIVE, 'Symbol', {
 	  // 19.4.2.1 Symbol.for(key)
@@ -26477,7 +26477,8 @@
 	  },
 	  // 19.4.2.5 Symbol.keyFor(sym)
 	  keyFor: function keyFor(key){
-	    return keyOf(SymbolRegistry, key);
+	    if(isSymbol(key))return keyOf(SymbolRegistry, key);
+	    throw TypeError(key + ' is not a symbol!');
 	  },
 	  useSetter: function(){ setter = true; },
 	  useSimple: function(){ setter = false; }
@@ -26501,6 +26502,8 @@
 	// 24.3.2 JSON.stringify(value [, replacer [, space]])
 	$JSON && $export($export.S + $export.F * (!USE_NATIVE || BUGGY_JSON), 'JSON', {stringify: $stringify});
 
+	// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
+	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(244)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
 	// 19.4.3.5 Symbol.prototype[@@toStringTag]
 	setToStringTag($Symbol, 'Symbol');
 	// 20.2.1.9 Math[@@toStringTag]
@@ -28693,7 +28696,7 @@
 							"category": "D",
 							"language": "",
 							"speaker": "Kirby Wu",
-							"title": "媒體無間道 — 我在新聞界臥底的日子",
+							"title": "My Covered Life in Journalism",
 							"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
 							"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
 						}
@@ -28761,7 +28764,7 @@
 							"category": "F",
 							"language": "",
 							"speaker": "陳坤助",
-							"title": "強震即時警報 EEW",
+							"title": "EEW: Early Earthquake Warnings",
 							"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
 							"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
 						}
@@ -29060,7 +29063,7 @@
 							"venue": "R0",
 							"category": "A",
 							"speaker": "Chia-hua Lu",
-							"title": "Government x Civil Society x Internet x Deliberation\nObservation and reflection of the mediator",
+							"title": "Government x Civil Society x Internet x Deliberation\nObservations and Reflections of a Mediator",
 							"bio": "(TBC)",
 							"abstract": "(TBC)"
 						},
