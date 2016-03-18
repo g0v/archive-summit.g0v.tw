@@ -4,6 +4,8 @@ import Browser from 'zombie'
 import {resolve} from 'path'
 import {server as superstatic} from 'superstatic'
 
+import {basic, schedule, sponsors} from '../jld.js'
+
 /*
 * Page data to prerender.
 *
@@ -19,15 +21,19 @@ import {server as superstatic} from 'superstatic'
 */
 const PAGES = [{
   path: 'index',
+  ld: basic
 }, {
   path: 'schedules',
   title: '議程表',
+  ld: schedule
 }, {
   path: 'speakers',
   title: '講者',
+  ld: basic
 }, {
   path: 'sponsors',
   title: '贊助商',
+  ld: sponsors
 }]
 
 
@@ -73,6 +79,10 @@ async function renderToString(page){
   if(page.title) {
     let titleElem = browser.document.querySelector('title')
     titleElem.innerHTML = `${page.title} :: ${titleElem.innerHTML}`
+  }
+  if(page.ld) {
+    let jld = browser.document.querySelector('#jld')
+    jld.innerHTML = page.ld
   }
 
   if(page.ogImage) {
