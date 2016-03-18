@@ -27,8 +27,8 @@ export default {
     loaders: [
       {
         test: /\.(png|jpg)$/,
-        loader: 'url?limit=50000',
-        exclude: /og\.png$/, // Facebook can't recognize inline og:image.
+        loader: 'url?limit=10000',
+        exclude: /sponsors|og\.png$/, // Facebook can't recognize inline og:image.
       },
       {
         test: /app\/images\/keynote/,
