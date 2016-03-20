@@ -28716,7 +28716,7 @@
 						},
 						{
 							"venue": "R0",
-							"title": "Global reimplementions of media, political parties, elections and public decisions"
+							"title": "Global reimplementions of media, elections, parties, and public decisions"
 						},
 						{
 							"venue": "R2",
@@ -28886,7 +28886,7 @@
 						},
 						{
 							"venue": "R0",
-							"title": "Intersectoral networks: Synchronization, collaboration and demonstration"
+							"title": "Intersectoral networks: Synchronizations, collaborations and demonstrations"
 						},
 						{
 							"venue": "R2",
@@ -29131,7 +29131,7 @@
 						},
 						{
 							"venue": "R0",
-							"title": "Transcending black boxes: Wiki-manuals for open governance"
+							"title": "Overcoming black boxes: Wiki-manuals for open governance"
 						},
 						{
 							"venue": "R2",
