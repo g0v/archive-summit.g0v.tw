@@ -21577,7 +21577,7 @@
 			// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
 			val = val === undefined ? null : decodeURIComponent(val);
 
-			if (!ret[key]) {
+			if (!ret.hasOwnProperty(key)) {
 				ret[key] = val;
 			} else if (Array.isArray(ret[key])) {
 				ret[key].push(val);
@@ -21586,7 +21586,7 @@
 			}
 
 			return ret;
-		}, Object.create(null));
+		}, {});
 	};
 
 	exports.stringify = function (obj) {
@@ -25511,7 +25511,7 @@
 /* 241 */
 /***/ function(module, exports) {
 
-	var core = module.exports = {version: '2.2.0'};
+	var core = module.exports = {version: '2.2.1'};
 	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
 
 /***/ },
@@ -26640,7 +26640,7 @@
 
 	var getWindowNames = function(it){
 	  try {
-	    return gOPN.f(it);
+	    return gOPN(it);
 	  } catch(e){
 	    return windowNames.slice();
 	  }
@@ -26649,6 +26649,7 @@
 	module.exports.f = function getOwnPropertyNames(it){
 	  return windowNames && toString.call(it) == '[object Window]' ? getWindowNames(it) : gOPN(toIObject(it));
 	};
+
 
 /***/ },
 /* 299 */
@@ -28690,6 +28691,40 @@
 					}
 				},
 				{
+					"time": "Topic",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "Power"
+						},
+						{
+							"venue": "R0",
+							"title": "Foundation"
+						},
+						{
+							"venue": "R2",
+							"title": "Construction"
+						}
+					]
+				},
+				{
+					"time": "Intro",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "公民科技時代，運動組織的馬力再升級"
+						},
+						{
+							"venue": "R0",
+							"title": "媒體、政黨、選舉與公眾決策，一窺全球開放精神的基礎建設實踐"
+						},
+						{
+							"venue": "R2",
+							"title": "資訊科技植入城市與社會，公民力量的關鍵思考"
+						}
+					]
+				},
+				{
 					"time": "10:00-10:30",
 					"events": [
 						{
@@ -28824,6 +28859,40 @@
 				{
 					"time": "12:30-13:30",
 					"event": "Lunch"
+				},
+				{
+					"time": "Topic",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "Blueprint"
+						},
+						{
+							"venue": "R0",
+							"title": "Wiring"
+						},
+						{
+							"venue": "R2",
+							"title": "Scaffold"
+						}
+					]
+				},
+				{
+					"time": "Intro",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來"
+						},
+						{
+							"venue": "R0",
+							"title": "同步、協作與進擊，打造跨界群眾串連的神經網絡"
+						},
+						{
+							"venue": "R2",
+							"title": "剖析環境災變，以數據力支援的智慧應變方案"
+						}
+					]
 				},
 				{
 					"time": "13:30-14:00",
@@ -29037,6 +29106,40 @@
 					"event": "Lunch"
 				},
 				{
+					"time": "Topic",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "Supervision"
+						},
+						{
+							"venue": "R0",
+							"title": "Ventilation"
+						},
+						{
+							"venue": "R2",
+							"title": "Furnishing"
+						}
+					]
+				},
+				{
+					"time": "Intro",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "當監督政府成為全民義務，亞洲網路草根民主的進化論"
+						},
+						{
+							"venue": "R0",
+							"title": "走出黑箱，開放政府的全民共筆指南"
+						},
+						{
+							"venue": "R2",
+							"title": "從藝術與文化出發的科技實驗"
+						}
+					]
+				},
+				{
 					"time": "13:00-13:30",
 					"events": [
 						{
@@ -29218,6 +29321,40 @@
 					}
 				},
 				{
+					"time": "Topic",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "動力"
+						},
+						{
+							"venue": "R0",
+							"title": "地基"
+						},
+						{
+							"venue": "R2",
+							"title": "骨架"
+						}
+					]
+				},
+				{
+					"time": "Intro",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "公民科技時代，運動組織的馬力再升級"
+						},
+						{
+							"venue": "R0",
+							"title": "媒體、政黨、選舉與公眾決策，一窺全球開放精神的基礎建設實踐"
+						},
+						{
+							"venue": "R2",
+							"title": "資訊科技植入城市與社會，公民力量的關鍵思考"
+						}
+					]
+				},
+				{
 					"time": "10:00-10:30",
 					"events": [
 						{
@@ -29352,6 +29489,40 @@
 				{
 					"time": "12:30-13:30",
 					"event": "午餐"
+				},
+				{
+					"time": "Topic",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "藍圖"
+						},
+						{
+							"venue": "R0",
+							"title": "配線"
+						},
+						{
+							"venue": "R2",
+							"title": "鷹架"
+						}
+					]
+				},
+				{
+					"time": "Intro",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來"
+						},
+						{
+							"venue": "R0",
+							"title": "同步、協作與進擊，打造跨界群眾串連的神經網絡"
+						},
+						{
+							"venue": "R2",
+							"title": "剖析環境災變，以數據力支援的智慧應變方案"
+						}
+					]
 				},
 				{
 					"time": "13:30-14:00",
@@ -29562,6 +29733,40 @@
 				{
 					"time": "12:00-13:00",
 					"event": "午餐"
+				},
+				{
+					"time": "Topic",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "監工"
+						},
+						{
+							"venue": "R0",
+							"title": "空調"
+						},
+						{
+							"venue": "R2",
+							"title": "裝潢"
+						}
+					]
+				},
+				{
+					"time": "Intro",
+					"events": [
+						{
+							"venue": "R1",
+							"title": "當監督政府成為全民義務，亞洲網路草根民主的進化論"
+						},
+						{
+							"venue": "R0",
+							"title": "走出黑箱，開放政府的全民共筆指南"
+						},
+						{
+							"venue": "R2",
+							"title": "從藝術與文化出發的科技實驗"
+						}
+					]
 				},
 				{
 					"time": "13:00-13:30",
