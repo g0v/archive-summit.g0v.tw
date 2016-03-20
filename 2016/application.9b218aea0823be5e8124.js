@@ -28747,12 +28747,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "D",
+							"category": "A",
 							"language": "",
-							"speaker": "Kirby Wu",
-							"title": "My Covered Life in Journalism",
-							"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
-							"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
+							"speaker": "Lucien Lin",
+							"title": "Charging towards the Taiwan Open Government Data License",
+							"bio": "<p>知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡 (Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任<a href='http://ifosslawbook.org/'>自由開源軟體法律參考書台灣專章</a>的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。</p>",
+							"abstract": "<p>國內從政府端戮力推動 Open Data 的發展已歷時三年餘，終於在2015年7月27日，經行政院國家發展委員會媒介跨部會的多次協商，同步與參與 g0v 的公民團體與網路社群進行討論，定案了「民撰官酌、官民協力」不同視野分工協調出來的正式版本。此一版本架構符合國際開放定義(Open Definition)，並內嵌 Creative Commons License 的融通轉換機制，協助國內開放資料專案，設有未來與國際專案接軌的延展性。本議程將從參與編撰討論者的角度，就如何官民協力以消爭止紛取得共識進行經驗分享，並就該條款發布近半年來常見的使用問題、與他國條款相較的不足處，以及未來可資改進調整的空間，提出中道並契合條款架構的說明與示範。</p>"
 						}
 					]
 				},
@@ -28770,12 +28770,12 @@
 						},
 						{
 							"venue": "R0",
-							"category": "B",
+							"category": "A",
 							"language": "",
-							"speaker": "JK Suh",
-							"title": "The Korean General Election and VAAs: the case of \"Ping\"",
-							"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
-							"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
+							"speaker": "Yantisa Akhadi",
+							"title": "Government (Participatory) Mapping",
+							"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
+							"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
 						},
 						{
 							"venue": "R2",
@@ -28815,12 +28815,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "F",
+							"category": "D",
 							"language": "",
-							"speaker": "陳坤助",
-							"title": "EEW: Early Earthquake Warnings",
-							"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
-							"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
+							"speaker": "Venus Lui",
+							"title": "Importance of having an Arts database in Asia",
+							"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
+							"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
 						}
 					]
 				},
@@ -28847,12 +28847,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "E",
+							"category": "D",
 							"language": "",
-							"speaker": "Kuo-Yu slayer Chuang",
-							"title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project",
-							"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
-							"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
+							"speaker": "Bobby Tung",
+							"title": "Do We Need Open Digital Libraries for Chinese Publication in Public Domain? and How?",
+							"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
+							"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
 						}
 					]
 				},
@@ -28908,21 +28908,21 @@
 						},
 						{
 							"venue": "R0",
-							"category": "E",
+							"category": "D",
 							"language": "",
-							"speaker": "Liz Barry",
-							"title": "Community science for healthy environments",
-							"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
-							"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
+							"speaker": "Kirby Wu",
+							"title": "My Covered Life in Journalism",
+							"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
+							"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
 						},
 						{
 							"venue": "R2",
-							"category": "E",
+							"category": "F",
 							"language": "",
-							"speaker": "詹為翔",
-							"title": "Using OpenStreetMap to help other countries and improve foreign relations",
-							"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
-							"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
+							"speaker": "陳坤助",
+							"title": "EEW: Early Earthquake Warnings",
+							"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
+							"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
 						}
 					]
 				},
@@ -28940,12 +28940,12 @@
 						},
 						{
 							"venue": "R0",
-							"category": "A",
+							"category": "C",
 							"language": "",
-							"speaker": "Yantisa Akhadi",
-							"title": "Government (Participatory) Mapping",
-							"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
-							"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
+							"speaker": "Walkingice",
+							"title": "Cmpaigning Experiences of a Geek",
+							"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
+							"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
 						},
 						{
 							"venue": "R2",
@@ -28963,12 +28963,12 @@
 					"events": [
 						{
 							"venue": "R1",
-							"category": "A",
+							"category": "I",
 							"language": "",
-							"speaker": "Rajib Timalsina",
-							"title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
-							"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
-							"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
+							"speaker": "Henare Degan",
+							"title": "morph.io: the international civic tech scraping platform",
+							"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
+							"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
 						},
 						{
 							"venue": "R0",
@@ -28983,10 +28983,10 @@
 							"venue": "R2",
 							"category": "E",
 							"language": "",
-							"speaker": "Dongpo Deng",
-							"title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
-							"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
-							"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
+							"speaker": "Kuo-Yu slayer Chuang",
+							"title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project",
+							"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
+							"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
 						}
 					]
 				},
@@ -28999,12 +28999,12 @@
 					"events": [
 						{
 							"venue": "R1",
-							"category": "I",
+							"category": "A",
 							"language": "",
-							"speaker": "",
-							"title": "TBA",
-							"bio": "",
-							"abstract": ""
+							"speaker": "Rajib Timalsina",
+							"title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
+							"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
+							"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
 						},
 						{
 							"venue": "R0",
@@ -29017,12 +29017,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "F",
+							"category": "E",
 							"language": "",
-							"speaker": "Yan-Jen Su",
-							"title": "Interpolation and Visualization of Air Pollution based on Wind Fields",
-							"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
-							"abstract": "<p>A system based on wind fields to interpolate and to visualized air pollution is introduced. <br/> The air pollution information provided by the government is a set of values sampled on the measuring stations. <br/> In contrast to the traditional linear interpolation, wind fields are applied to estimate the air pollution indices between the measuring stations. <br/> The estimated results are  the associated with the wind field and geographic information to construct a 3D virtual world and display on Web browsers.<br/> It provides additional information for users to understand the conditions of the air pollution and the environment.</p>"
+							"speaker": "詹為翔",
+							"title": "Using OpenStreetMap to help other countries and improve foreign relations",
+							"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
+							"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
 						}
 					]
 				},
@@ -29031,12 +29031,12 @@
 					"events": [
 						{
 							"venue": "R1",
-							"category": "I",
+							"category": "",
 							"language": "",
-							"speaker": "Henare Degan",
-							"title": "morph.io: the international civic tech scraping platform",
-							"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
-							"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
+							"speaker": "",
+							"title": "TBA",
+							"bio": "",
+							"abstract": ""
 						},
 						{
 							"venue": "R0",
@@ -29049,12 +29049,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "F",
+							"category": "E",
 							"language": "",
-							"speaker": "洪申翰, 曾虹文",
-							"title": "Environment data transparency application for cross strait",
-							"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
-							"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
+							"speaker": "Dongpo Deng",
+							"title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
+							"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
+							"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
 						}
 					]
 				},
@@ -29114,11 +29114,11 @@
 						},
 						{
 							"venue": "R0",
-							"title": "Ventilation"
+							"title": "Square"
 						},
 						{
 							"venue": "R2",
-							"title": "Furnishing"
+							"title": "Ventilation"
 						}
 					]
 				},
@@ -29135,7 +29135,7 @@
 						},
 						{
 							"venue": "R2",
-							"title": "Art and Culture: Experiments across sciences and technologies"
+							"title": ""
 						}
 					]
 				},
@@ -29145,9 +29145,11 @@
 						{
 							"venue": "R1",
 							"category": "B",
-							"speaker": "",
-							"title": "TBA",
-							"abstract": ""
+							"language": "",
+							"speaker": "Billy Lin",
+							"title": "The non-disclosed and opaque party-owned assets data",
+							"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
+							"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
 						},
 						{
 							"venue": "R0",
@@ -29160,12 +29162,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "D",
+							"category": "F",
 							"language": "",
-							"speaker": "Venus Lui",
-							"title": "Importance of having an Arts database in Asia",
-							"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
-							"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
+							"speaker": "Yan-Jen Su",
+							"title": "Interpolation and Visualization of Air Pollution based on Wind Fields",
+							"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
+							"abstract": "<p>A system based on wind fields to interpolate and to visualized air pollution is introduced. <br/> The air pollution information provided by the government is a set of values sampled on the measuring stations. <br/> In contrast to the traditional linear interpolation, wind fields are applied to estimate the air pollution indices between the measuring stations. <br/> The estimated results are  the associated with the wind field and geographic information to construct a 3D virtual world and display on Web browsers.<br/> It provides additional information for users to understand the conditions of the air pollution and the environment.</p>"
 						}
 					]
 				},
@@ -29174,12 +29176,12 @@
 					"events": [
 						{
 							"venue": "R1",
-							"category": "C",
+							"category": "E",
 							"language": "",
-							"speaker": "Walkingice",
-							"title": "Cmpaigning Experiences of a Geek",
-							"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
-							"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
+							"speaker": "Freyja van den boom",
+							"title": "Ever tried TDM and would you do it again?",
+							"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
+							"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
 						},
 						{
 							"venue": "R0",
@@ -29191,12 +29193,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "D",
+							"category": "E",
 							"language": "",
-							"speaker": "Bobby Tung",
-							"title": "Do We Need Open Digital Libraries for Chinese Publication in Public Domain? and How?",
-							"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
-							"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
+							"speaker": "Liz Barry",
+							"title": "Community science for healthy environments",
+							"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
+							"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
 						}
 					]
 				},
@@ -29218,21 +29220,21 @@
 						},
 						{
 							"venue": "R0",
-							"category": "A",
+							"category": "B",
 							"language": "",
-							"speaker": "Lucien Lin",
-							"title": "Charging towards the Taiwan Open Government Data License",
-							"bio": "<p>知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡 (Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任<a href='http://ifosslawbook.org/'>自由開源軟體法律參考書台灣專章</a>的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。</p>",
-							"abstract": "<p>國內從政府端戮力推動 Open Data 的發展已歷時三年餘，終於在2015年7月27日，經行政院國家發展委員會媒介跨部會的多次協商，同步與參與 g0v 的公民團體與網路社群進行討論，定案了「民撰官酌、官民協力」不同視野分工協調出來的正式版本。此一版本架構符合國際開放定義(Open Definition)，並內嵌 Creative Commons License 的融通轉換機制，協助國內開放資料專案，設有未來與國際專案接軌的延展性。本議程將從參與編撰討論者的角度，就如何官民協力以消爭止紛取得共識進行經驗分享，並就該條款發布近半年來常見的使用問題、與他國條款相較的不足處，以及未來可資改進調整的空間，提出中道並契合條款架構的說明與示範。</p>"
+							"speaker": "JK Suh",
+							"title": "The Korean General Election and VAAs: the case of \"Ping\"",
+							"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
+							"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
 						},
 						{
 							"venue": "R2",
-							"category": "E",
+							"category": "F",
 							"language": "",
-							"speaker": "Freyja van den boom",
-							"title": "Ever tried TDM and would you do it again?",
-							"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
-							"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
+							"speaker": "洪申翰, 曾虹文",
+							"title": "Environment data transparency application for cross strait",
+							"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
+							"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
 						}
 					]
 				},
@@ -29259,12 +29261,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "B",
+							"category": "F",
 							"language": "",
-							"speaker": "Billy Lin",
-							"title": "The non-disclosed and opaque party-owned assets data",
-							"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
-							"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
+							"speaker": "卞中佩",
+							"title": "從基礎工程到應用工程\ng0v資料與其它資料庫的整併及後續應用 ─ 以環保署污染源與公司結構資料為例",
+							"bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
+							"abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
 						}
 					]
 				},
@@ -29377,12 +29379,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "D",
+							"category": "A",
 							"language": "",
-							"speaker": "Kirby Wu",
-							"title": "媒體無間道 — 我在新聞界臥底的日子",
-							"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
-							"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
+							"speaker": "Lucien Lin",
+							"title": "進擊的台灣政府資料開放授權條款",
+							"bio": "<p>知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡 (Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任<a href='http://ifosslawbook.org/'>自由開源軟體法律參考書台灣專章</a>的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。</p>",
+							"abstract": "<p>國內從政府端戮力推動 Open Data 的發展已歷時三年餘，終於在2015年7月27日，經行政院國家發展委員會媒介跨部會的多次協商，同步與參與 g0v 的公民團體與網路社群進行討論，定案了「民撰官酌、官民協力」不同視野分工協調出來的正式版本。此一版本架構符合國際開放定義(Open Definition)，並內嵌 Creative Commons License 的融通轉換機制，協助國內開放資料專案，設有未來與國際專案接軌的延展性。本議程將從參與編撰討論者的角度，就如何官民協力以消爭止紛取得共識進行經驗分享，並就該條款發布近半年來常見的使用問題、與他國條款相較的不足處，以及未來可資改進調整的空間，提出中道並契合條款架構的說明與示範。</p>"
 						}
 					]
 				},
@@ -29400,12 +29402,12 @@
 						},
 						{
 							"venue": "R0",
-							"category": "B",
+							"category": "A",
 							"language": "",
-							"speaker": "JK Suh",
-							"title": "韓國大選與投票建議指南: \"Ping\"",
-							"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
-							"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
+							"speaker": "Yantisa Akhadi",
+							"title": "政府 (也參加) 畫地圖",
+							"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
+							"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
 						},
 						{
 							"venue": "R2",
@@ -29445,12 +29447,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "F",
+							"category": "D",
 							"language": "",
-							"speaker": "陳坤助",
-							"title": "強震即時警報 EEW",
-							"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
-							"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
+							"speaker": "Venus Lui",
+							"title": "建立亞洲藝術資料庫的重要性",
+							"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
+							"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
 						}
 					]
 				},
@@ -29477,12 +29479,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "E",
+							"category": "D",
 							"language": "",
-							"speaker": "Kuo-Yu slayer Chuang",
-							"title": "ICT 與群眾外包的災難適應力，亞洲開發銀行的案例研究",
-							"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
-							"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
+							"speaker": "董福興",
+							"title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
+							"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
+							"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
 						}
 					]
 				},
@@ -29538,21 +29540,21 @@
 						},
 						{
 							"venue": "R0",
-							"category": "E",
+							"category": "D",
 							"language": "",
-							"speaker": "Liz Barry",
-							"title": "社區科學與健康的環境",
-							"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
-							"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
+							"speaker": "Kirby Wu",
+							"title": "媒體無間道 — 我在新聞界臥底的日子",
+							"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
+							"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
 						},
 						{
 							"venue": "R2",
-							"category": "E",
+							"category": "F",
 							"language": "",
-							"speaker": "詹為翔",
-							"title": "開放街圖在外交援助計畫上的應用",
-							"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
-							"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
+							"speaker": "陳坤助",
+							"title": "強震即時警報 EEW",
+							"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
+							"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
 						}
 					]
 				},
@@ -29570,12 +29572,12 @@
 						},
 						{
 							"venue": "R0",
-							"category": "A",
+							"category": "C",
 							"language": "",
-							"speaker": "Yantisa Akhadi",
-							"title": "政府 (也參加) 畫地圖",
-							"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
-							"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
+							"speaker": "Walkingice",
+							"title": "鍵盤宅的輔選經驗談",
+							"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
+							"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
 						},
 						{
 							"venue": "R2",
@@ -29593,12 +29595,12 @@
 					"events": [
 						{
 							"venue": "R1",
-							"category": "A",
+							"category": "I",
 							"language": "",
-							"speaker": "Rajib Timalsina",
-							"title": "開源數位平臺，跨越尼泊爾公民與地方政府間的鴻溝",
-							"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
-							"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
+							"speaker": "Henare Degan",
+							"title": "morph.io: 國際公民科技社群建立的資料抓取平台",
+							"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
+							"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
 						},
 						{
 							"venue": "R0",
@@ -29613,10 +29615,10 @@
 							"venue": "R2",
 							"category": "E",
 							"language": "",
-							"speaker": "Dongpo Deng",
-							"title": "OpenStreetMap 與 LocalWiki 的整合：支援社區層級災害系統管理",
-							"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
-							"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
+							"speaker": "Kuo-Yu slayer Chuang",
+							"title": "ICT 與群眾外包的災難適應力，亞洲開發銀行的案例研究",
+							"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
+							"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
 						}
 					]
 				},
@@ -29629,12 +29631,12 @@
 					"events": [
 						{
 							"venue": "R1",
-							"category": "I",
+							"category": "A",
 							"language": "",
-							"speaker": "",
-							"title": "敬請期待",
-							"bio": "",
-							"abstract": ""
+							"speaker": "Rajib Timalsina",
+							"title": "開源數位平臺，跨越尼泊爾公民與地方政府間的鴻溝",
+							"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
+							"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
 						},
 						{
 							"venue": "R0",
@@ -29647,12 +29649,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "F",
+							"category": "E",
 							"language": "",
-							"speaker": "蘇彥禎",
-							"title": "空污資料搭配風場的內插與視覺化",
-							"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
-							"abstract": "<p>空污會隨著風向擴散,<br/>而觀測站之間的空污濃度也不該是線性内插,<br/>我做出一個系統能畫出污染隨著風擴散的結果,<br/>並且讓使用者可以在3維空間中探索.</p><p>線上系統: <a href='http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm'>http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm</a><br/>系統的建構說明: <a href='http://www.slideshare.net/ked19/pm25-system-construction'>http://www.slideshare.net/ked19/pm25-system-construction</a></p>"
+							"speaker": "詹為翔",
+							"title": "開放街圖在外交援助計畫上的應用",
+							"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
+							"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
 						}
 					]
 				},
@@ -29661,12 +29663,12 @@
 					"events": [
 						{
 							"venue": "R1",
-							"category": "I",
+							"category": "",
 							"language": "",
-							"speaker": "Henare Degan",
-							"title": "morph.io: 國際公民科技社群建立的資料抓取平台",
-							"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
-							"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
+							"speaker": "",
+							"title": "敬請期待",
+							"bio": "",
+							"abstract": ""
 						},
 						{
 							"venue": "R0",
@@ -29679,12 +29681,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "F",
+							"category": "E",
 							"language": "",
-							"speaker": "洪申翰, 曾虹文",
-							"title": "綠盟兩岸環境資料透明與再應用專案",
-							"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
-							"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
+							"speaker": "Dongpo Deng",
+							"title": "OpenStreetMap 與 LocalWiki 的整合：支援社區層級災害系統管理",
+							"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
+							"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
 						}
 					]
 				},
@@ -29743,11 +29745,11 @@
 						},
 						{
 							"venue": "R0",
-							"title": "空調"
+							"title": "廣場"
 						},
 						{
 							"venue": "R2",
-							"title": "裝潢"
+							"title": "空調"
 						}
 					]
 				},
@@ -29764,7 +29766,7 @@
 						},
 						{
 							"venue": "R2",
-							"title": "從藝術與文化出發的科技實驗"
+							"title": ""
 						}
 					]
 				},
@@ -29774,9 +29776,11 @@
 						{
 							"venue": "R1",
 							"category": "B",
-							"speaker": "",
-							"title": "敬請期待",
-							"abstract": ""
+							"language": "",
+							"speaker": "林雨蒼",
+							"title": "不開放、不透明的黨產開放資料",
+							"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
+							"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
 						},
 						{
 							"venue": "R0",
@@ -29789,12 +29793,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "D",
+							"category": "F",
 							"language": "",
-							"speaker": "Venus Lui",
-							"title": "建立亞洲藝術資料庫的重要性",
-							"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
-							"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
+							"speaker": "蘇彥禎",
+							"title": "空污資料搭配風場的內插與視覺化",
+							"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
+							"abstract": "<p>空污會隨著風向擴散,<br/>而觀測站之間的空污濃度也不該是線性内插,<br/>我做出一個系統能畫出污染隨著風擴散的結果,<br/>並且讓使用者可以在3維空間中探索.</p><p>線上系統: <a href='http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm'>http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm</a><br/>系統的建構說明: <a href='http://www.slideshare.net/ked19/pm25-system-construction'>http://www.slideshare.net/ked19/pm25-system-construction</a></p>"
 						}
 					]
 				},
@@ -29803,12 +29807,12 @@
 					"events": [
 						{
 							"venue": "R1",
-							"category": "C",
+							"category": "E",
 							"language": "",
-							"speaker": "Walkingice",
-							"title": "鍵盤宅的輔選經驗談",
-							"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
-							"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
+							"speaker": "Freyja van den boom",
+							"title": "告別文字擷取與資料探勘的痛苦: FutureTDM",
+							"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
+							"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
 						},
 						{
 							"venue": "R0",
@@ -29820,12 +29824,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "D",
+							"category": "E",
 							"language": "",
-							"speaker": "董福興",
-							"title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
-							"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
-							"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
+							"speaker": "Liz Barry",
+							"title": "社區科學與健康的環境",
+							"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
+							"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
 						}
 					]
 				},
@@ -29847,21 +29851,21 @@
 						},
 						{
 							"venue": "R0",
-							"category": "A",
+							"category": "B",
 							"language": "",
-							"speaker": "Lucien Lin",
-							"title": "進擊的台灣政府資料開放授權條款",
-							"bio": "<p>知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡 (Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任<a href='http://ifosslawbook.org/'>自由開源軟體法律參考書台灣專章</a>的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。</p>",
-							"abstract": "<p>國內從政府端戮力推動 Open Data 的發展已歷時三年餘，終於在2015年7月27日，經行政院國家發展委員會媒介跨部會的多次協商，同步與參與 g0v 的公民團體與網路社群進行討論，定案了「民撰官酌、官民協力」不同視野分工協調出來的正式版本。此一版本架構符合國際開放定義(Open Definition)，並內嵌 Creative Commons License 的融通轉換機制，協助國內開放資料專案，設有未來與國際專案接軌的延展性。本議程將從參與編撰討論者的角度，就如何官民協力以消爭止紛取得共識進行經驗分享，並就該條款發布近半年來常見的使用問題、與他國條款相較的不足處，以及未來可資改進調整的空間，提出中道並契合條款架構的說明與示範。</p>"
+							"speaker": "JK Suh",
+							"title": "韓國大選與投票建議指南: \"Ping\"",
+							"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
+							"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
 						},
 						{
 							"venue": "R2",
-							"category": "E",
+							"category": "F",
 							"language": "",
-							"speaker": "Freyja van den boom",
-							"title": "告別文字擷取與資料探勘的痛苦: FutureTDM",
-							"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
-							"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
+							"speaker": "洪申翰, 曾虹文",
+							"title": "綠盟兩岸環境資料透明與再應用專案",
+							"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
+							"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
 						}
 					]
 				},
@@ -29888,12 +29892,12 @@
 						},
 						{
 							"venue": "R2",
-							"category": "B",
+							"category": "F",
 							"language": "",
-							"speaker": "林雨蒼",
-							"title": "不開放、不透明的黨產開放資料",
-							"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
-							"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
+							"speaker": "卞中佩",
+							"title": "從基礎工程到應用工程\ng0v資料與其它資料庫的整併及後續應用 ─ 以環保署污染源與公司結構資料為例",
+							"bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
+							"abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
 						}
 					]
 				},
