@@ -37,6 +37,7 @@
     "json-loader": "^0.5.4",
     "jsonfile": "^2.2.3",
     "lost": "^6.7.2",
+    "md5": "^2.1.0",
     "normalize.css": "^3.0.3",
     "postcss-loader": "^0.8.1",
     "precss": "^1.4.0",
