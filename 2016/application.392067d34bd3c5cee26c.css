@@ -1001,7 +1001,7 @@ body {
   text-align: center;
 }
 
-.styles-lightboxTitle__WL7Ve, .styles-slotTitle__20h2I {
+.styles-lightboxTitle__WL7Ve { /* .slotTitle */
   white-space: pre;
 }
 

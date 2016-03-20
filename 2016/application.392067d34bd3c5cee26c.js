@@ -29957,7 +29957,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"root":"styles-root__2PG_F","section":"styles-section__1qu8G","table":"styles-table__3SemC","slot":"styles-slot__KapR5","lightboxwrap":"styles-lightboxwrap__3j8Sx","lightboxcontainer":"styles-lightboxcontainer__12jLi","lightboxheading":"styles-lightboxheading__1gS0N","lightboxTitle":"styles-lightboxTitle__WL7Ve","slotTitle":"styles-slotTitle__20h2I","lightboxbutton":"styles-lightboxbutton__2r04w","lightboxclose":"styles-lightboxclose__2L8YY"};
+	module.exports = {"root":"styles-root__2PG_F","section":"styles-section__1qu8G","table":"styles-table__3SemC","slot":"styles-slot__KapR5","lightboxwrap":"styles-lightboxwrap__3j8Sx","lightboxcontainer":"styles-lightboxcontainer__12jLi","lightboxheading":"styles-lightboxheading__1gS0N","lightboxTitle":"styles-lightboxTitle__WL7Ve","lightboxbutton":"styles-lightboxbutton__2r04w","lightboxclose":"styles-lightboxclose__2L8YY"};
 
 /***/ },
 /* 366 */,
