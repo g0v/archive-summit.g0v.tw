@@ -77,7 +77,7 @@
   text-align: center;
 }
 
-.lightboxTitle, .slotTitle {
+.lightboxTitle { /* .slotTitle */
   white-space: pre;
 }
 
