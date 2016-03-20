@@ -29221,7 +29221,7 @@
 							"category": "A",
 							"language": "",
 							"speaker": "Lucien Lin",
-							"title": "Attack on the Taiwan Open Government Data License",
+							"title": "Charging towards the Taiwan Open Government Data License",
 							"bio": "<p>知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡 (Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任<a href='http://ifosslawbook.org/'>自由開源軟體法律參考書台灣專章</a>的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。</p>",
 							"abstract": "<p>國內從政府端戮力推動 Open Data 的發展已歷時三年餘，終於在2015年7月27日，經行政院國家發展委員會媒介跨部會的多次協商，同步與參與 g0v 的公民團體與網路社群進行討論，定案了「民撰官酌、官民協力」不同視野分工協調出來的正式版本。此一版本架構符合國際開放定義(Open Definition)，並內嵌 Creative Commons License 的融通轉換機制，協助國內開放資料專案，設有未來與國際專案接軌的延展性。本議程將從參與編撰討論者的角度，就如何官民協力以消爭止紛取得共識進行經驗分享，並就該條款發布近半年來常見的使用問題、與他國條款相較的不足處，以及未來可資改進調整的空間，提出中道並契合條款架構的說明與示範。</p>"
 						},
