@@ -45,11 +45,11 @@
           },
           {
             "venue" : "R0",
-            "title" : "Global reimplementions of media, elections, parties, and public decisions"
+            "title" : "Global reimplementions of media, elections, governments and public decisions"
           },
           {
             "venue" : "R2",
-            "title" : "Infusing ICT with cities through the power of civil society"
+            "title" : "Open-culture experiments with data and technology"
           }
         ]
       },
@@ -219,7 +219,7 @@
           },
           {
             "venue" : "R2",
-            "title" : "Analyzing environmental disasters: Data-based contingency planning"
+            "title" : "Analyzing disasters: Data-based contingency planning"
           }
         ]
       },
@@ -464,7 +464,7 @@
           },
           {
             "venue" : "R2",
-            "title" : ""
+            "title" : "Demystifying pollution: Transparency in the air"
           }
         ]
       },
@@ -561,7 +561,7 @@
             "category" : "F",
             "language": "",
             "speaker": "洪申翰, 曾虹文",
-            "title": "Environment data transparency application for cross strait",
+            "title": "Environment data transparency for cross-strait applications",
             "bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
             "abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
           }
@@ -593,7 +593,7 @@
             "category" : "F",
             "language": "",
             "speaker": "卞中佩",
-            "title": "從基礎工程到應用工程\ng0v資料與其它資料庫的整併及後續應用 ─ 以環保署污染源與公司結構資料為例",
+            "title": "From infrastructure to applications\nLinking through g0v - a case study on the environmental agency and company registration data",
             "bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
             "abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
           }
@@ -677,11 +677,11 @@
           },
           {
             "venue" : "R0",
-            "title" : "媒體、政黨、選舉與公眾決策，一窺全球開放精神的基礎建設實踐"
+            "title" : "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐"
           },
           {
             "venue" : "R2",
-            "title" : "資訊科技植入城市與社會，公民力量的關鍵思考"
+            "title" : "從資料科技與文化領域出發的開放實驗"
           }
         ]
       },
@@ -851,7 +851,7 @@
           },
           {
             "venue" : "R2",
-            "title" : "剖析環境災變，以數據力支援的智慧應變方案"
+            "title" : "剖析災變，以數據力支援的智慧應變方案"
           }
         ]
       },
@@ -1095,7 +1095,7 @@
           },
           {
             "venue" : "R2",
-            "title" : ""
+            "title" : "破解環境污染密碼，釋出乾淨好空氣"
           }
         ]
       },
