@@ -1,6 +1,9 @@
 var jsonfile = require('jsonfile');
 var htmlToText = require('html-to-text');
 
+var fs = require('fs');
+var md5 = require('md5');
+
 var USEDROOM = {};
 const ROOM = {
   "Rall": {
@@ -257,6 +260,10 @@ var schedule = JSON.stringify(function () {
   return base;
 }());
 
+var hash_file = function (file) {
+  return md5(fs.readFileSync(file));
+};
+
 var sponsors = JSON.stringify(function () {
   var base = [Base()];
   var sponsors_data = jsonfile.readFileSync('./app/jsons/sponsors.json')['en-US'];
@@ -273,6 +280,9 @@ var sponsors = JSON.stringify(function () {
       }
       if (sponsor.desc) {
         agent.description = sponsor.desc;
+      }
+      if (sponsor.logo) {
+        agent.logo = `http://summit.g0v.tw/2016/${hash_file(`./app/images/sponsors/${sponsor.logo}`)}.png`;
       }
       base.push({
         "@context": "http://schema.org",
