@@ -27329,7 +27329,7 @@
 				}
 			],
 			"media": "Media contact: ",
-			"person": "Lily Hsu",
+			"person": "Joey Lee",
 			"email": "g0v-summit-media@googlegroups.com",
 			"sponsor": "Sponsor this event",
 			"sponsoremail": "g0v-summit-sponsor@googlegroups.com"
@@ -27364,7 +27364,7 @@
 				}
 			],
 			"media": "媒體聯絡人：",
-			"person": "Lily Hsu",
+			"person": "Joey Lee",
 			"email": "g0v-summit-media@googlegroups.com",
 			"sponsor": "贊助大會",
 			"sponsoremail": "g0v-summit-sponsor@googlegroups.com"
