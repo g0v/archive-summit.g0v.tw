@@ -54,51 +54,6 @@
   transition: background .3s;
 }
 
-/* THIS IS BAD */
-.filterCategory:hover .filterCategoryIcon_0{
-  background: hsl(47, 100%, 50%);
-}
-.filterCategory:hover .filterCategoryIcon_1{
-  background: hsl(47, 100%, 70%);
-}
-.filterCategory:hover .filterCategoryIcon_2{
-  background: hsl(47, 100%, 40%);
-}
-.filterCategory:hover .filterCategoryIcon_3{
-  background: hsl(81, 100%, 40%);
-}
-.filterCategory:hover .filterCategoryIcon_4{
-  background: hsl(81, 100%, 70%);
-}
-.filterCategory:hover .filterCategoryIcon_5{
-  background: hsl(0, 100%, 40%);
-}
-.filterCategory:hover .filterCategoryIcon_6{
-  background: hsl(0, 100%, 70%);
-}
-.filterCategory:hover .filterCategoryIcon_7{
-  background: hsl(189, 100%, 50%);
-}
-.filterCategory:hover .filterCategoryIcon_8{
-  background: hsl(216, 100%, 50%);
-}
-.filterCategory:hover .filterCategoryIcon_9{
-  background: hsl(243, 100%, 50%);
-}
-.filterCategory:hover .filterCategoryIcon_10{
-  background: hsl(270, 100%, 50%);
-}
-.filterCategory:hover .filterCategoryIcon_11{
-  background: hsl(297, 100%, 50%);
-}
-.filterCategory:hover .filterCategoryIcon_12{
-  background: rgb(200,200,200);
-}
-.filterCategory:hover .filterCategoryIcon_13{
-  background: rgb(0, 0, 0);
-}
-
-
 .filterCategoryText {
   padding-left: 30px;
   line-height: 1.6;
