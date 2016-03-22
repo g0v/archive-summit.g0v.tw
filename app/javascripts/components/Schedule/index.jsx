@@ -35,8 +35,8 @@ export default class Schedule extends Component {
   }
 
   toggleCategory(index) {
-    var current = this.state.categories;
-    current[index].active = !current[index].active;
+    var current = this.state.categories.slice(0);
+    current[index] = Object.assign({}, current[index], {active: !current[index].active})
 
     var sum = current.reduce((pre, current)=>{
         if(current.active){
@@ -73,8 +73,8 @@ export default class Schedule extends Component {
   clearCategory(){
     var current = this.state.categories.map((value,i)=>{
       return {
-        active: false,
-        ...value
+        ...value,
+        active: false
       }
     });
 
@@ -254,7 +254,11 @@ export default class Schedule extends Component {
       </div>
     );
     function filterEventItem(eventItem) {
-      return !filterOn || (categoryObj[eventItem.event.category] && categoryObj[eventItem.event.category].active)
+      // If there is no eventItem.event, that means it has multiple events.
+      // It will be filtered later on.
+      //
+      if(!filterOn || !eventItem.event) return true;
+      return categoryObj[eventItem.event.category] && categoryObj[eventItem.event.category].active;
     }
   }
   componentDidMount() {
