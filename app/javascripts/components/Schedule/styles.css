@@ -196,71 +196,40 @@ body.mobileScrollLock {
   color: rgb(53,55,54);
 }
 .Schedule-filterBtn.is-show {
-  color: transparent;
+  color: transparent; /* Hide "Filter" button text when filter is shown */
 }
 
-.Schedule-bar1 {
+.Schedule-bar1, .Schedule-bar2 {
   content: '';
   border-top: 2px solid transparent;
   position: absolute;
   top: 28px;
   width: 40px;
   left: 8px;
+  transform: rotate(0deg);
+}
 
-}
-.Schedule-bar2 {
+.Schedule-bar1.is-active, .Schedule-bar2.is-active {
   content: '';
-  border-top: 2px solid transparent;
-  position: absolute;
-  top: 28px;
-  width: 40px;
-  left: 8px;
+  border-color: rgb(213,62,79);
+  transition: transform .3s cubic-bezier(.4,0,.2,1);
 }
+
 .Schedule-bar1.is-active {
-  content: '';
-  border-top: 2px solid rgb(213,62,79);
-  position: absolute;
-  top: 28px;
-  width: 40px;
-  left: 8px;
   transform: rotate(45deg);
-  -webkit-transition: all .3s cubic-bezier(.4,0,.2,1);
-  transition: all .3s cubic-bezier(.4,0,.2,1);
-
 }
 .Schedule-bar2.is-active {
-  content: '';
-  border-top: 2px solid rgb(213,62,79);
-  position: absolute;
-  top: 28px;
-  width: 40px;
-  left: 8px;
-
   transform: rotate(-45deg);
-  -webkit-transition: all .3s cubic-bezier(.4,0,.2,1);
-  transition: all .3s cubic-bezier(.4,0,.2,1);
-
 }
 
-@media screen and (min-width: $breakpoint) {
-  .Schedule-filterBtn {
-    display: none;
-  }
-}
 .Schedule-filterPanel {
   max-height: 0px;
   overflow: hidden;
   will-change: max-height;
   transition: all .2s cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition: all .2s cubic-bezier(0, 1, 0.5, 1);
 }
 .Schedule-filterPanel.is-show {
   max-height: calc(100vh - 80px);
-
-  will-change: max-height;
-  transition: all .2s cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition: all .2s cubic-bezier(0, 1, 0.5, 1);
-  width: 100%;
 }
 .Schedule-filterPanel.is-show.is-fixed {
   position: fixed;
@@ -272,6 +241,11 @@ body.mobileScrollLock {
 }
 
 @media screen and (min-width: $breakpoint){
+  /* No filterButton and filterPanel on desktop */
+  .Schedule-filterBtn {
+    display: none;
+  }
+
   .Schedule-filterPanel.is-show.is-show { /* specificity override .is-show.is-fixed */
      display: none;
   }
