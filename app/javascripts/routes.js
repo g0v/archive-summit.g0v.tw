@@ -1,7 +1,7 @@
 import React from 'react';
 import { IndexRoute, Route, Redirect } from 'react-router';
 import { Root } from 'javascripts/components';
-import { Home, Speakers, Schedules, Sponsors } from 'javascripts/pages';
+import { Home, Speakers, Schedules, Sponsors, Transport } from 'javascripts/pages';
 
 export default () => {
   return (
@@ -12,6 +12,7 @@ export default () => {
        <Route path="speakers" component={Speakers} />
        <Route path="schedules" component={Schedules} />
        <Route path="sponsors" component={Sponsors} />
+       <Route path="transport" component={Transport} />
        {/*<Route path="*" component={NotFound} status={404} />*/}
      </Route>
   );

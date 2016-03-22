@@ -141,10 +141,13 @@ const Menu = () => {
           {info[getLocale()].sponsors}
         </Link>
       </li>
-      <li className={styles.item}>
-        <span>
+      <li className={styles.item}
+        activeClassName={styles.active}>
+        <Link
+          to="/2016/transport"
+        >
           {info[getLocale()].transport}
-        </span>
+        </Link>
       </li>
       <li
         className={styles.item}

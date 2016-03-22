@@ -1,0 +1,71 @@
+.root {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
+  background-color: rgba(255, 255, 255, 0.94);
+  min-height: 400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 103px;
+}
+
+.header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.section {
+  text-align: center;
+}
+
+.sponsor {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 960px;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #999;
+  zoom: 1;
+  overflow: auto;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+  border-radius: 3px;
+}
+
+.logo {
+  width: 240px;
+  height: 120px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.name {
+  display: block;
+  font-weight: bold;
+  color: #5D5D5D;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 260px;
+}
+
+.name a,
+.name a:visited {
+  color: #5d5d5d;
+  text-decoration: none;
+}
+.sponsor:hover .name a {
+  color: #5d5d5d;
+  border-bottom: 1px solid #5d5d5d;
+}
+
+.desc {
+  margin-top: 10px;
+  margin-left: 260px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.map {
+  border: 1px solid #777;
+  margin-top: 10px;
+}
