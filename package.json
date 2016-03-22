@@ -8,7 +8,7 @@
     "postbuild": "babel-node scripts/prerender",
     "test": "npm run build",
     "webpack": "webpack --watch -d --display-reasons --display-chucks --progress",
-    "start": "rm -rf dist; webpack-dev-server --config webpack.config.babel.js --hot --inline",
+    "start": "rm -rf dist; webpack-dev-server -d --config webpack.config.babel.js --hot --inline",
     "start:dist": "superstatic dist"
   },
   "repository": {
