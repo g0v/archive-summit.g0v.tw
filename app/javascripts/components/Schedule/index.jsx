@@ -3,211 +3,192 @@ import { Link } from "react-router";
 import { getLocale } from "javascripts/locale";
 import schedules from './schedules.json';
 import categoriesData from './categories.json';
-import lightbox from "./lightbox.json";
 import styles from "./styles.css";
 import Table from "../Table";
 import Filter from "../Filter";
+import classNames from "classnames";
 
 export default class Schedule extends Component {
   state = {
-    talkID: '',
-    heading: '',
-    speaker: '',
-    content: '',
-    bio: ''
+    showPanel: false,
+    categoryOn: false,
+    categories: categoriesData.categories,
+    currentSession: {}
   };
   defaultTitle = document.title;
 
-  showLightBox(id = '', heading = '', speaker = '', content = '', bio = '') {
-    this.state.showLightbox = true;
-    this.setState({
-      talkID: id,
-      heading, speaker, content, bio
-    });
+  constructor() {
+    super()
+
+    this.togglePanel = this.togglePanel.bind(this)
+    this.toggleCategory = this.toggleCategory.bind(this)
+    this.clearCategory = this.clearCategory.bind(this)
   }
-  hideLightBox(id = '', heading = '', speaker = '', content = '', bio = '') {
-    this.state.showLightbox = false;
-    this.setState({
-      talkID: id,
-      heading, speaker, content, bio
-    });
+
+  togglePanel() { // mobile filter
+    this.setState({showPanel: !this.state.showPanel})
   }
+
+  toggleCategory(index) {
+    console.log('toggleCategory', index)
+    return
+
+    var current = this.state.categories;
+    current[index].active = !current[index].active;
+
+    var sum = current.reduce((pre, current)=>{
+        if(current.active){
+           return pre + 1;
+        }else{
+           return pre;
+        }
+    },0);
+    var categoryOn = (sum > 0);
+
+    this.setState({
+        categories: current,
+        categoryOn: categoryOn
+    })
+  }
+
+  setSession(value, event) {
+    console.log('Will change route here', value, event)
+  }
+
+  clearCategory(){
+    console.log('clearCategory', index)
+    return
+
+    var current = this.state.categories.map((value,i)=>{
+      return {
+        title: value.title,
+        color: value.color,
+        active: false
+      }
+    });
+
+    this.setState({
+      categories: current,
+      categoryOn: false
+    })
+
+  }
+
+  goToElement(refName){
+    var node = this.refs[refName].getDOMNode();
+    // this.props.goToElementHandler(node.offsetTop);
+    console.log(`TODO: animate to ${refName}`)
+  }
+
   render() {
-    var onclick = (event) => (e) => {
-      e.preventDefault();
-      var id = e.currentTarget.href.split('#')[1] || '';
-      history.replaceState({}, event.title, `#${id}`);
-      this.showLightBox(id, event.title, event.speaker, event.abstract, event.bio)
+    const filterOn = this.state.categoryOn
+    const currentSession = this.state.currentSession
+    const categoryObj = {}
+    for(let category of this.state.categories) categoryObj[category.title] = category
+
+    const mapTimeSlotToItems = (value, i) => {
+      var itemClasses = classNames({
+
+        "Schedule-item" : value.event && !value.lightning,
+        "Schedule-itemLightning" : value.event && value.lightning === true,
+        "Schedule-itemLightningLast" : value.event && value.lightningLast === true,
+        "Schedule-itemWrapper" : value.events,
+        "has-top-border" : i !== 0
+      })
+
+
+      var content = "";
+      if(value.event){ //single event
+        if(typeof value.event === 'string'){
+          content = <div>{value.event}</div>
+        }else{
+          content = <div>
+            {value.event.title}
+            <div className="Schedule-keynotePresenter">{value.event.speaker}</div>
+          </div>;
+        }
+
+      }else{ //multile events
+        var filteredEvents = value.events
+        .filter(sessionItem => !filterOn || (categoryObj[sessionItem.category] && categoryObj[sessionItem.category].active))
+
+        content = filteredEvents
+        .map((v,k)=>{
+          var sessionClasses = classNames({
+            "Schedule-session" : true,
+            "is-last" : k === filteredEvents.length-1,
+            "is-active" : currentSession.event === v.event && currentSession.time === v.time && currentSession.venue === v.venue
+          })
+          var categoryStyle = {};
+          if(filterOn){
+             categoryStyle = {
+                "border" : `1px solid ${categoryObj[v.category].color}`,
+                "background" : categoryObj[v.category].color
+             }
+          }
+          var language = (v.EN) ? <div className="Schedule-en">EN</div> : "";
+
+          var venue = (v.venue) ? (
+                  <div className="Schedule-meta">
+                    <div className="Schedule-venue">{v.venue}</div>
+                  </div>) : "";
+          return(
+            <div className={sessionClasses}
+                  onClick={this.setSession.bind(this,v)}
+                  key={k}>
+                  {venue}
+                  <div className="Schedule-main">
+                    <div>{v.title}{language}</div>
+                    <div className="Schedule-presenter">{v.presenter}</div>
+                    <div className="Schedule-categoryIcon" style={categoryStyle}></div>
+                  </div>
+             </div>
+          )
+        })
+      }
+      return (
+        <div className={itemClasses}
+             key={i}>
+          <div className="Schedule-time">{value.time}</div>
+          <div className="Schedule-event">{content}</div>
+        </div>
+      )
     }
 
-    const day1 = schedules[getLocale()]["day1"].map((it, i) => {
-      if (!it.events) {
-        if (it.event.title) {
-          return { colSpan: 3, time: it.time, event: (
-            <Slot
-              id={"day1-all-"+i}
-              speaker={it.event.speaker}
-              title={it.event.title}
-              onClick={onclick(it.event)}
-            />,
-          ) };
-        }
-        return { colSpan: 3, time: it.time, event: it.event };
-      }
-
-      return {
-        time: it.time,
-        r1: (
-          <Slot
-            id={"day1-r1-"+i}
-            speaker={it.events[0].speaker}
-            title={it.events[0].title}
-            onClick={onclick(it.events[0])}
-          />),
-        r0: (
-          <Slot
-            id={"day1-r0-"+i}
-            speaker={it.events[1].speaker}
-            title={it.events[1].title}
-            onClick={onclick(it.events[1])}
-          />),
-        r2: (
-          <Slot
-            id={"day1-r2-"+i}
-            speaker={it.events[2].speaker}
-            title={it.events[2].title}
-            onClick={onclick(it.events[2])}
-          />),
-      };
-    });
-
-    const day2 = schedules[getLocale()]["day2"].map((it, i) => {
-      if (!it.events) {
-        if (it.event.title) {
-          return { colSpan: 3, time: it.time, event: (
-            <Slot
-              id={"day2-all-"+i}
-              speaker={it.event.speaker}
-              title={it.event.title}
-              onClick={onclick(it.event)}
-            />,
-          ) };
-        }
-        return { colSpan: 3, time: it.time, event: it.event };
-      }
-
-      return {
-        time: it.time,
-        r1: (
-          <Slot
-            id={"day2-r1-"+i}
-            speaker={it.events[0].speaker}
-            title={it.events[0].title}
-            onClick={onclick(it.events[0])}
-          />),
-        r0: (
-          <Slot
-            id={"day2-r0-"+i}
-            speaker={it.events[1].speaker}
-            title={it.events[1].title}
-            onClick={onclick(it.events[1])}
-          />),
-        r2: (
-          <Slot
-            id={"day2-r2-"+i}
-            speaker={it.events[2].speaker}
-            title={it.events[2].title}
-            onClick={onclick(it.events[2])}
-          />),
-      };
-    });
-    
-    // extract categories from event category
-/*
-    let categories = [];
-    
-    categories = categories.concat(schedules[getLocale()]["day1"].map((it) => {
-      if (it.events) {
-        for (var i = 0; i < it.events.length; i++) {
-          var event = it.events[i];
-          if (event && event.category)
-            return event.category;
-        }
-      }
-    }));
-    
-    categories = categories.concat(schedules[getLocale()]["day2"].map((it) => {
-      if (it.events) {
-        for (var i = 0; i < it.events.length; i++) {
-          var event = it.events[i];
-          if (event && event.category)
-            return event.category;
-        }
-      }
-    }));
-    
-    categories = categories.filter(function(item){
-      return typeof item === 'string';  
-    });
-*/
-
-    console.log(categoriesData.categories);
-    
-    var categories = categoriesData.categories.map((value,index)=>{
-        return (
-          {
-            "title" : value.title,
-            "color" : value.color,
-            "active" : false
-          }
-        )
-    });
-    
-    let filterOn = false;
-    let toggleCategoryHandler = () => {
-    };
-    let clearCategoryHandler = () => {
-    };
-    let togglePanelHander = () => {
-    
-    };
-
     return (
-      <div className={styles.root}>
-        <h2 className={styles.header}>{multilineText(schedules[getLocale()].header)}</h2>
-        <section className={styles.section}>
-          <h3 id="day1"><a href="#day1">Day 1</a></h3>
-          <Table
-            className={styles.table}
-            model={Model}
-            source={day1}
-          />
-          <h3 id="day2"><a href="#day2">Day 2</a></h3>
-          <Table
-            className={styles.table}
-            model={Model}
-            source={day2}
-          />
-          {
-            do {
-              if (this.state.talkID) {
-                <LightBox
-                  id={this.state.talkID}
-                  heading={this.state.heading}
-                  speaker={this.state.speaker}
-                  content={this.state.content}
-                  bio={this.state.bio}
-                  toggle={() => {
-                    history.replaceState({}, this.defaultTitle, '#');
-                    this.hideLightBox()
-                  }}
-                />
-              }
-            }
-          }
-        </section>
+      <div className={`Schedule`}>{/* todo: is-fixed */}
+        <div className={`Schedule-title without-session`}>{/* todo: session toggle */}
+          <div className={`Schedule-dayButton`}
+               onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
+          <div className={`Schedule-dayButton`}
+               onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
+          <div className={`Schedule-filterBtn`}
+               onClick={this.togglePanel}>Filter
+            <div className={`Schedule-bar1`}></div>
+            <div className={`Schedule-bar2`}></div>
+          </div>
+        </div>
+        <div className={`Schedule-filterPanel`}>
+          <Filter ref="filter"
+                  data={this.state.categories}
+                  filterOn={filterOn}
+                  toggleCategoryHandler={this.toggleCategory}
+                  clearCategoryHandler={this.clearCategoryHandler}
+                  togglePanelHander={this.togglePanel}/>
+        </div>
+        <div ref="day1" id="day1">
+          <div className="Schedule-day">5/14 (Sat.)</div>
+          {schedules[getLocale()]["day1"].filter(filterEventItem).map(mapTimeSlotToItems)}
+        </div>
+        <div ref="day2" id="day2">
+          <div className="Schedule-day">5/15 (Sun.)</div>
+          {schedules[getLocale()]["day2"].filter(filterEventItem).map(mapTimeSlotToItems)}
+        </div>
       </div>
     );
+    function filterEventItem(eventItem) {
+      return !filterOn || (categoryObj[eventItem.event.category] && categoryObj[eventItem.event.category].active)
+    }
   }
   componentDidMount() {
     var anchor = document.location.hash.split('#')[1] || '';
@@ -215,9 +196,6 @@ export default class Schedule extends Component {
     if (node && node.click) { node.click(); }
   }
 };
-{/*<button className={styles.lightboxbutton} onClick={this.closeLightBox.bind(this)}>{lightbox[getLocale()].close}</button>*/}
-//
-  // <button className={styles.lightboxclose} onClick={this.closeLightBox.bind(this)}>x</button>
 
 var multilineText = (text) => {
   var arr = text.split('\n');
@@ -227,51 +205,4 @@ var multilineText = (text) => {
     ret.push(line);
   }
   return ret;
-}
-
-const LightBox = ({id, heading, speaker, content, bio, toggle }) => {
-  return (
-    <div>
-      <div className={styles.lightboxwrap}>
-        <div className={styles.lightboxcontainer}>
-          <div className={styles.lightboxheading}>
-            <h3 className={styles.lightboxTitle}>{heading}<br/>{speaker}</h3>
-          </div>
-          <h4>{lightbox[getLocale()].abstract}</h4>
-          <div dangerouslySetInnerHTML={{__html: content}} />
-          <h4>{lightbox[getLocale()].bio}</h4>
-          <div dangerouslySetInnerHTML={{__html: bio}} />
-          <button className={styles.lightboxbutton} onClick={toggle}>{lightbox[getLocale()].close}</button>
-        </div>
-        <button className={styles.lightboxclose} onClick={toggle}>x</button>
-      </div>
-    </div>
-  );
-}
-const Slot = ({id, title, speaker, onClick}) => {
-  return (
-    <a href={`#${id}`} id={`slot-${id}`} className={styles.slot} onClick={onClick}>
-      <div className={styles.slotTitle}>{multilineText(title)}</div>
-      <div>{speaker}</div>
-    </a>
-  );
-}
-
-const Model = {
-  time: {
-    label: "Time",
-    type: String,
-  },
-  r1: {
-    label: "R1",
-    type: React.PropTypes.node,
-  },
-  r0: {
-    label: "R0",
-    type: React.PropTypes.node,
-  },
-  r2: {
-    label: "R2",
-    type: React.PropTypes.node,
-  }
 }
