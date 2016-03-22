@@ -391,8 +391,10 @@ $breakpoint: 1000px;
   color: rgb(53,55,54);
 }
 .Schedule-session {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   padding: 14px 30px 14px 10px;
-  cursor: pointer;
   will-change: background;
   line-height: 1.4;
   -webkit-transition: background .3s;
@@ -406,10 +408,10 @@ $breakpoint: 1000px;
   /*background: rgba(215, 253, 236, 0.82);*/
 }
 .Schedule-session.is-active {
-  background: rgba(215, 253, 236, 0.82);
+  background: #fff3f3;
 }
 .Schedule-session:hover {
-  background: rgba(215, 253, 236, 0.82);
+  background: #fff3f3;
   -webkit-transition: background .3s;
   transition: background .3s;
 }

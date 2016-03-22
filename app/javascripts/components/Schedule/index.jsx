@@ -6,11 +6,13 @@ import categoriesData from './categories.json';
 import styles from "./styles.css";
 import Table from "../Table";
 import Filter from "../Filter";
+import Session from './session';
 import classNames from "classnames";
 
 export default class Schedule extends Component {
   state = {
     showPanel: false,
+    showSession: false,
     categoryOn: false,
     categories: categoriesData.categories,
     currentSession: {}
@@ -23,6 +25,7 @@ export default class Schedule extends Component {
     this.togglePanel = this.togglePanel.bind(this)
     this.toggleCategory = this.toggleCategory.bind(this)
     this.clearCategory = this.clearCategory.bind(this)
+    this.resetSession = this.resetSession.bind(this)
   }
 
   togglePanel() { // mobile filter
@@ -52,7 +55,17 @@ export default class Schedule extends Component {
   }
 
   setSession(value, event) {
-    console.log('Will change route here', value, event)
+    this.setState({
+      showSession: true,
+      currentSession: value
+    })
+  }
+
+  resetSession() {
+    this.setState({
+      showSession: false,
+      currentSession: {}
+    })
   }
 
   clearCategory(){
@@ -86,7 +99,7 @@ export default class Schedule extends Component {
     const categoryObj = {}
     for(let category of this.state.categories) categoryObj[category.title] = category
 
-    const mapTimeSlotToItems = (value, i) => {
+    const mapTimeSlotToItems = (day, value, i) => {
       var itemClasses = classNames({
 
         "Schedule-item" : value.event && !value.lightning,
@@ -99,10 +112,12 @@ export default class Schedule extends Component {
 
       var content = "";
       if(value.event){ //single event
+        let id = `day${day}-all-${i}`
+
         if(typeof value.event === 'string'){
-          content = <div>{value.event}</div>
+          content = <div id={`slot-${id}`} href={`#${id}`}>{value.event}</div>
         }else{
-          content = <div>
+          content = <div id={`slot-${id}`} href={`#${id}`} >
             {value.event.title}
             <div className="Schedule-keynotePresenter">{value.event.speaker}</div>
           </div>;
@@ -114,11 +129,6 @@ export default class Schedule extends Component {
 
         content = filteredEvents
         .map((v,k)=>{
-          var sessionClasses = classNames({
-            "Schedule-session" : true,
-            "is-last" : k === filteredEvents.length-1,
-            "is-active" : currentSession.event === v.event && currentSession.time === v.time && currentSession.venue === v.venue
-          })
           var categoryStyle = {};
           if(filterOn){
              categoryStyle = {
@@ -132,17 +142,23 @@ export default class Schedule extends Component {
                   <div className="Schedule-meta">
                     <div className="Schedule-venue">{v.venue}</div>
                   </div>) : "";
+          var id = `day${day}-${v.venue.toLowerCase()}-${i}`;
+
           return(
-            <div className={sessionClasses}
-                  onClick={this.setSession.bind(this,v)}
-                  key={k}>
-                  {venue}
-                  <div className="Schedule-main">
-                    <div>{v.title}{language}</div>
-                    <div className="Schedule-presenter">{v.presenter}</div>
-                    <div className="Schedule-categoryIcon" style={categoryStyle}></div>
-                  </div>
-             </div>
+            <a className={classNames({
+                 "Schedule-session" : true,
+                 "is-last" : k === filteredEvents.length-1,
+                 "is-active" : currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
+               })}
+               onClick={this.setSession.bind(this,v)}
+               href={`#${id}`} key={k} id={`slot-${id}`}>
+              {venue}
+              <div className="Schedule-main">
+                <div>{v.title}{language}</div>
+                <div className="Schedule-presenter">{v.presenter}</div>
+                <div className="Schedule-categoryIcon" style={categoryStyle}></div>
+              </div>
+            </a>
           )
         })
       }
@@ -156,6 +172,7 @@ export default class Schedule extends Component {
     }
 
     const filterStyle = {}
+    const sessionStyle = {}
 
     return (
       <div className={styles.root}>
@@ -194,14 +211,24 @@ export default class Schedule extends Component {
               </div>
               <div ref="day1" id="day1">
                 <div className="Schedule-day">5/14 (Sat.)</div>
-                {schedules[getLocale()]["day1"].filter(filterEventItem).map(mapTimeSlotToItems)}
+                {schedules[getLocale()]["day1"].filter(filterEventItem).map(mapTimeSlotToItems.bind(this, 1))}
               </div>
               <div ref="day2" id="day2">
                 <div className="Schedule-day">5/15 (Sun.)</div>
-                {schedules[getLocale()]["day2"].filter(filterEventItem).map(mapTimeSlotToItems)}
+                {schedules[getLocale()]["day2"].filter(filterEventItem).map(mapTimeSlotToItems.bind(this, 2))}
               </div>
             </div>
           </div>
+          <div className={classNames({
+              "Home-session" : true,
+              "is-show" : this.state.showSession,
+            })}
+            style={sessionStyle}>
+            <Session sessionHandler={this.resetSession}
+                     data={currentSession}
+                     categories={this.state.categories}/>
+          </div>
+
         </div>
       </div>
     );
@@ -211,7 +238,7 @@ export default class Schedule extends Component {
   }
   componentDidMount() {
     var anchor = document.location.hash.split('#')[1] || '';
-    var node = document.getElementById(anchor);
+    var node = document.getElementById(`slot-${anchor}`);
     if (node && node.click) { node.click(); }
   }
 };
