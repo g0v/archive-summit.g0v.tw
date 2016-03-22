@@ -94,10 +94,10 @@ export default class Schedule extends Component {
   }
 
   render() {
-    const filterOn = this.state.categoryOn
-    const currentSession = this.state.currentSession
+    const {categoryOn: filterOn, currentSession, showSession, categories} = this.state
+
     const categoryObj = {}
-    for(let category of this.state.categories) categoryObj[category.title] = category
+    for(let category of categories) categoryObj[category.title] = category
 
     const mapTimeSlotToItems = (day, value, i) => {
       var itemClasses = classNames({
@@ -187,19 +187,31 @@ export default class Schedule extends Component {
             "Home-filter": true,
             "is-fixed": false,
           })} style={filterStyle}>
-            <Filter data={this.state.categories}
+            <Filter data={categories}
                     filterOn={filterOn}
                     toggleCategoryHandler={this.toggleCategory}
                     clearCategoryHandler={this.clearCategory}/>
           </div>
           <div className={classNames({
             "Home-schedule": true,
+            "with-session" : showSession,
           })}>
             <div className={`Schedule`}>{/* todo: is-fixed */}
-              <div className={`Schedule-title without-session`}>{/* todo: session toggle */}
-                <div className={`Schedule-dayButton`}
+              <div className={classNames({
+                  "Schedule-title" : true,
+                  "with-session" : showSession,
+                  "without-session" : !showSession
+                  /*"is-fixed" : inScheduleArea==="within" || (inScheduleArea==="passed" && showPanel),*/
+                })}>
+                <div className={classNames({
+                       "Schedule-dayButton" : true,
+                       /* "is-active" : currentSection === "day1" */
+                     })}
                      onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
-                <div className={`Schedule-dayButton`}
+                <div className={classNames({
+                       "Schedule-dayButton" : true,
+                       /* "is-active" : currentSection === "day2" */
+                     })}
                      onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
                 <div className={`Schedule-filterBtn`}
                      onClick={this.togglePanel}>Filter
@@ -209,7 +221,7 @@ export default class Schedule extends Component {
               </div>
               <div className={`Schedule-filterPanel`}>
                 <Filter ref="filter"
-                        data={this.state.categories}
+                        data={categories}
                         filterOn={filterOn}
                         toggleCategoryHandler={this.toggleCategory}
                         clearCategoryHandler={this.clearCategory}
@@ -227,7 +239,8 @@ export default class Schedule extends Component {
           </div>
           <div className={classNames({
               "Home-session" : true,
-              "is-show" : this.state.showSession,
+              "is-show": showSession,
+              "is-fixed": true,
             })}
             style={sessionStyle}>
             <Session sessionHandler={this.resetSession}

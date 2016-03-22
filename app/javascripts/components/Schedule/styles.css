@@ -1,4 +1,5 @@
 $breakpoint: 1000px;
+$container-width: 1000px;
 
 .root {
   background: #FFFFFF;
@@ -8,7 +9,7 @@ $breakpoint: 1000px;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: $container-width;
   margin: 0 auto;
 }
 
@@ -80,19 +81,18 @@ $breakpoint: 1000px;
     margin-bottom: 200px;
   }
   .Home-schedule.is-fixed {
-    width: 550px;
+    width: $container-width - $left-filter-width;
     margin-left: 360px;
     will-change: margin-left;
     -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
     transition: all .2s cubic-bezier(.4,0,.2,1);
   }
   .Home-schedule.with-session {
-    width: 550px;
+    width: $container-width - $left-filter-width;
     margin-left: 160px;
     will-change: margin-left;
-     -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
+    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
     transition: all .2s cubic-bezier(.4,0,.2,1);
-
   }
   .Home-schedule.with-session.is-hide {
     display: inline-block;
