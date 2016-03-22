@@ -1,6 +1,17 @@
 {
   "en-US": [
     {
+      "category": "host",
+      "title": "Host",
+      "sponsors": [
+        {
+          "name": "g0v summit 2016",
+          "logo": "g0vsummit.png",
+          "url": "http://summit.g0v.tw/2016/"
+        }
+      ]
+    },
+    {
       "category": "co-organizer",
       "title": "Co-Organizer",
       "sponsors": [
@@ -74,6 +85,17 @@
     }
   ],
   "zh-TW": [
+    {
+      "category": "host",
+      "title": "主辦單位",
+      "sponsors": [
+        {
+          "name": "g0v summit 2016",
+          "logo": "g0vsummit.png",
+          "url": "http://summit.g0v.tw/2016/"
+        }
+      ]
+    },
     {
       "category": "co-organizer",
       "title": "合作單位",
