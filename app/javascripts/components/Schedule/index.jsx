@@ -115,12 +115,18 @@ export default class Schedule extends Component {
         let id = `day${day}-all-${i}`
 
         if(typeof value.event === 'string'){
-          content = <div id={`slot-${id}`} href={`#${id}`}>{value.event}</div>
+          content = <div>{value.event}</div>
         }else{
-          content = <div id={`slot-${id}`} href={`#${id}`} >
+          content = <a id={`slot-${id}`} href={`#${id}`}
+            className={classNames({
+              "Schedule-session" : true,
+              "is-last" : true,
+              "is-active" : currentSession.title === value.event.title && currentSession.time === value.event.time && currentSession.venue === value.event.venue
+            })}
+            onClick={this.setSession.bind(this,value.event)}>
             {value.event.title}
             <div className="Schedule-keynotePresenter">{value.event.speaker}</div>
-          </div>;
+          </a>;
         }
 
       }else{ //multile events
