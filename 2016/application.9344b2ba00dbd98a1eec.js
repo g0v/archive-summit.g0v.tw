@@ -68,7 +68,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _reactGa = __webpack_require__(400);
+	var _reactGa = __webpack_require__(404);
 
 	var _reactGa2 = _interopRequireDefault(_reactGa);
 
@@ -24957,7 +24957,8 @@
 	    ' ',
 	    _react2.default.createElement(_reactRouter.Route, { path: 'speakers', component: _pages.Speakers }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'schedules', component: _pages.Schedules }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'sponsors', component: _pages.Sponsors })
+	    _react2.default.createElement(_reactRouter.Route, { path: 'sponsors', component: _pages.Sponsors }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'transport', component: _pages.Transport })
 	  );
 	};
 
@@ -25300,10 +25301,13 @@
 	    ),
 	    _react2.default.createElement(
 	      "li",
-	      { className: _styles2.default.item },
+	      { className: _styles2.default.item,
+	        activeClassName: _styles2.default.active },
 	      _react2.default.createElement(
-	        "span",
-	        null,
+	        _reactRouter.Link,
+	        {
+	          to: "/2016/transport"
+	        },
 	        _header2.default[(0, _locale.getLocale)()].transport
 	      )
 	    ),
@@ -30838,7 +30842,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.Sponsors = exports.Schedules = exports.Speakers = exports.Home = undefined;
+	exports.Transport = exports.Sponsors = exports.Schedules = exports.Speakers = exports.Home = undefined;
 
 	var _Home2 = __webpack_require__(396);
 
@@ -30856,12 +30860,17 @@
 
 	var _Sponsors3 = _interopRequireDefault(_Sponsors2);
 
+	var _Transport2 = __webpack_require__(400);
+
+	var _Transport3 = _interopRequireDefault(_Transport2);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.Home = _Home3.default;
 	exports.Speakers = _Speakers3.default;
 	exports.Schedules = _Schedules3.default;
 	exports.Sponsors = _Sponsors3.default;
+	exports.Transport = _Transport3.default;
 
 /***/ },
 /* 396 */
@@ -31106,6 +31115,172 @@
 
 /***/ },
 /* 400 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getPrototypeOf = __webpack_require__(228);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(254);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(255);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(259);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(302);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(7);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _locale = __webpack_require__(224);
+
+	var _transport = __webpack_require__(401);
+
+	var _transport2 = _interopRequireDefault(_transport);
+
+	var _styles = __webpack_require__(402);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Transport = function (_Component) {
+	  (0, _inherits3.default)(Transport, _Component);
+
+	  function Transport() {
+	    (0, _classCallCheck3.default)(this, Transport);
+	    return (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(Transport).apply(this, arguments));
+	  }
+
+	  (0, _createClass3.default)(Transport, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: _styles2.default.root },
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement("iframe", { className: _styles2.default.map, width: "100%", height: "500px", frameborder: "0", src: "https://umap.openstreetmap.fr/zh-tw/map/g0v-summit_16594?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&datalayersControl=true&onLoadPanel=undefined&datalayers=30448%2C30459#15/25.0495/121.6155" }),
+	          _transport2.default[(0, _locale.getLocale)()].map(function (cat) {
+	            return _react2.default.createElement(
+	              "section",
+	              { className: _styles2.default.section },
+	              _react2.default.createElement(
+	                "h3",
+	                { className: _styles2.default.header },
+	                cat.title
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                null,
+	                cat.detail
+	              )
+	            );
+	          })
+	        )
+	      );
+	    }
+	  }]);
+	  return Transport;
+	}(_react.Component);
+
+	;
+
+	exports.default = Transport;
+
+/***/ },
+/* 401 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"en-US": [
+			{
+				"title": "Venue",
+				"detail": "Humanities and Social Science Building (HSSB), Academia Sinica"
+			},
+			{
+				"title": "Address",
+				"detail": "No. 128, Sec. 2, Academia Rd., Nankang, Taipei 115, Taiwan"
+			},
+			{
+				"title": "By Bus",
+				"detail": "Take Bus 212, 276, 306, 620, 645, 679, 205, Mini Bus S5, S1, or S12 to Academica Sinica and walk to HSSB."
+			},
+			{
+				"title": "By MRT",
+				"detail": "Take MRT to Nankang Station, and transfer to Bus 212, 270, or B25 to Academica Sinica."
+			},
+			{
+				"title": "By Train",
+				"detail": "Take train to Nankang Station, and transfer to Bus 212, 270, or B25 to Academica Sinica. "
+			},
+			{
+				"title": "By Taxi",
+				"detail": "Take taxi to Academica Sinica directly."
+			},
+			{
+				"title": "By Car",
+				"detail": "Get off at the exit of “Nanshen Rd.- Academia Sinica” ramp <16km> on Highway No. 3, turn left to Nanshen Rd., and turn left again to JiuZuang Rd., go straight till the intersection of Academia Rd."
+			}
+		],
+		"zh-TW": [
+			{
+				"title": "地點",
+				"detail": "台北市南港區中央研究院人文館"
+			},
+			{
+				"title": "地址",
+				"detail": "台北市南港區研究院路二段128號"
+			},
+			{
+				"title": "搭乘公車",
+				"detail": "搭乘 212、276、306、620、645、679、205、 小5、小1、小12 等公車至中研院站，步行入院內至人文館"
+			},
+			{
+				"title": "搭乘捷運",
+				"detail": "搭乘捷運板南線至南港站（2 號出口）換乘公車 212、270 或藍 25 至中研院站，步行入院內至人文館"
+			},
+			{
+				"title": "搭乘火車",
+				"detail": "至南港站換乘公車 212、270 或藍 25 至中研院站，步行入院內至人文館"
+			},
+			{
+				"title": "搭乘計程車",
+				"detail": "可搭乘計程車進入院區"
+			},
+			{
+				"title": "自行開車",
+				"detail": "由國道三號，南深路-中研院匝道〈16km〉出國道三號後，左轉接南深路，再左轉接舊莊路一段直走，遇到與研究院路叉路口，即可看到中研院。車輛進入院區請持證件向大門警衛室換取臨時通行證。若您於週一至週五來訪，您須停車至人文社會館 B2，並需支付停車費用（每小時 20 元）。假日換證不收費，並請停車於院內道路旁停車格。"
+			}
+		]
+	};
+
+/***/ },
+/* 402 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__1gK3V","header":"styles-header__2-OSD","section":"styles-section__LrTFv","sponsor":"styles-sponsor__KVF2j","logo":"styles-logo__1STPn","name":"styles-name__1b107","desc":"styles-desc__2KfBd","map":"styles-map__209T3"};
+
+/***/ },
+/* 403 */,
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -31453,7 +31628,7 @@
 	  }
 	};
 
-	var OutboundLink = __webpack_require__(401);
+	var OutboundLink = __webpack_require__(405);
 	OutboundLink.trackLink = reactGA.outboundLink;
 	reactGA.OutboundLink = OutboundLink;
 
@@ -31461,7 +31636,7 @@
 
 
 /***/ },
-/* 401 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(7);
