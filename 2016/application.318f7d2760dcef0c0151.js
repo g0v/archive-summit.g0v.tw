@@ -28799,7 +28799,7 @@
 							"venue": "R1",
 							"category": "I",
 							"language": "",
-							"speaker": "高英勛",
+							"speaker": "Y.H. Kao",
 							"title": "From .org to .g0v －Internet participant and digital challenge of NGO in Taiwan",
 							"bio": "<p>撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。</p><p>台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。</p>",
 							"abstract": "<p>2000 年 dotcom 泡沫帶來最正向的影響之一就是連網的成本大幅降低，也創造了NGO透過網路發展的機遇。台灣環境資訊協會源起於 2000-4-17 創刊的環境資訊電子報，著眼於網路低成本高效率的資訊傳播，成為了 .org.tw 的成員之一。本次將藉由下列幾個主題切入，當 NGO 從 nobody 變成了 somebody 時， 組織運作和運用網路技術的問題和眉角進行回顧及反思。</p><ul><li>從 Web 1.0 到物聯網－時空背景的變化</li><li>「網路型NGO」在資訊公開，公民參與和網路技術發展的可能角色</li><li>反思與挑戰：駭客，技術長還是資訊長</li></ul>"
@@ -28919,7 +28919,7 @@
 							"venue": "R2",
 							"category": "F",
 							"language": "",
-							"speaker": "陳坤助",
+							"speaker": "KNY Chen",
 							"title": "EEW: Early Earthquake Warnings",
 							"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
 							"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
@@ -29019,7 +29019,7 @@
 							"venue": "R2",
 							"category": "E",
 							"language": "",
-							"speaker": "詹為翔",
+							"speaker": "W.S. Jhan",
 							"title": "Using OpenStreetMap to help other countries and improve foreign relations",
 							"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
 							"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
@@ -29263,7 +29263,7 @@
 							"venue": "R2",
 							"category": "F",
 							"language": "",
-							"speaker": "卞中佩",
+							"speaker": "Z.P. Bian",
 							"title": "From infrastructure to applications\nLinking through g0v - a case study on the environmental agency and company registration data",
 							"bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
 							"abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
