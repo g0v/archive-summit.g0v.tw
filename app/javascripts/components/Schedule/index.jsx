@@ -16,7 +16,7 @@ export default class Schedule extends Component {
     showPanel: false,
     showSession: false,
     categoryOn: false,
-    categories: categoriesData.categories,
+    categories: categoriesData[getLocale()],
     currentSession: {}
   };
   defaultTitle = document.title;
@@ -35,9 +35,6 @@ export default class Schedule extends Component {
   }
 
   toggleCategory(index) {
-    console.log('toggleCategory', index)
-    return
-
     var current = this.state.categories;
     current[index].active = !current[index].active;
 
@@ -74,14 +71,10 @@ export default class Schedule extends Component {
   }
 
   clearCategory(){
-    console.log('clearCategory', index)
-    return
-
     var current = this.state.categories.map((value,i)=>{
       return {
-        title: value.title,
-        color: value.color,
-        active: false
+        active: false,
+        ...value
       }
     });
 
