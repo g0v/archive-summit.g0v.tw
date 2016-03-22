@@ -4,8 +4,7 @@ import { getLocale } from "javascripts/locale";
 import schedules from './schedules.json';
 import categoriesData from './categories.json';
 import styles from "./styles.css";
-import Table from "../Table";
-import Filter from "../Filter";
+import Filter from "./filter";
 import Session from './session';
 import classNames from "classnames";
 
