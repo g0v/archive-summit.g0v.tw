@@ -7,7 +7,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link href='https://fonts.googleapis.com/css?family=Audiowide:400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css' />
-    <script type="application/ld+json"><%= htmlWebpackPlugin.options.jld %></script>
+    <script id="jld" type="application/ld+json"><%= htmlWebpackPlugin.options.jld %></script>
     <meta property="og:image" content="http://summit.g0v.tw<%= require('file!../images/og.png') %>">
     <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>">
     <meta name="twitter:card" content="summary_large_image">

@@ -20,7 +20,7 @@ export default class SponsorsList extends Component {
   sponsor = (sponsor, i) => {
     return (
       <section className={styles.sponsor} key={sponsor.name}>
-        <img className={styles.logo} src={require(`images/sponsors/${sponsor.logo}`)} />
+        <img className={styles.logo} src={require(`file!images/sponsors/${sponsor.logo}`)} />
         <h3 target="_blank" className={styles.name}>{
           (sponsor.url) ? <a href={sponsor.url} target="_blank">{sponsor.name}</a> : sponsor.name
         }</h3>
