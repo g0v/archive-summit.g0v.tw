@@ -25306,6 +25306,19 @@
 	        null,
 	        _header2.default[(0, _locale.getLocale)()].transport
 	      )
+	    ),
+	    _react2.default.createElement(
+	      "li",
+	      {
+	        className: _styles2.default.item,
+	        activeClassName: _styles2.default.active },
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        {
+	          to: "/2016/staff"
+	        },
+	        _header2.default[(0, _locale.getLocale)()].staff
+	      )
 	    )
 	  );
 	};
@@ -26814,6 +26827,7 @@
 			"speakers": "Speakers",
 			"sponsors": "Sponsors",
 			"transport": "Transport",
+			"staff": "Staff",
 			"date": "14-15 May, 2016",
 			"location": "Academia Sinica, Taipei"
 		},
@@ -26823,6 +26837,7 @@
 			"speakers": "講者",
 			"sponsors": "贊助",
 			"transport": "交通",
+			"staff": "工作人員",
 			"date": "五月十四至十五，二零一六",
 			"location": "中央研究院"
 		}
