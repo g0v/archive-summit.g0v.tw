@@ -43,6 +43,10 @@ export default {
         loader: 'babel',
       },
       {
+        test: /app\/fonts\//,
+        loader: 'file',
+      },
+      {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!postcss')
       },
