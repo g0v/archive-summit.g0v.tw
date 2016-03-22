@@ -6,11 +6,11 @@ $appbar-height: 60px;
   background: #FFFFFF;
   box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
   lost-utility: clearfix;
-  position: relative;
 }
 
 .container {
   max-width: $container-width;
+  position: relative;
   margin: 0 auto;
 }
 
@@ -29,15 +29,6 @@ body.mobileScrollLock {
 
 .Home-filter {
   display: none;
-}
-.Home-schedule {
-  display: block;
-  z-index: 10;
-}
-.Home-schedule.is-fixed, .Home-schedule.with-session {
-  display: block;
-  -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
-  transition: all .2s cubic-bezier(.4,0,.2,1);
 }
 .Home-session {
   position: fixed;
@@ -60,36 +51,26 @@ body.mobileScrollLock {
   .Home-filter {
     width: $left-filter-width;
     position: absolute;
+    top: 0;
+    left: 0;
     display: block;
   }
   .Home-filter.is-fixed {
     position: fixed;
-    top: 0;
-    left: 0;
   }
-  .Home-filter.is-passed{
+  .Home-filter.is-passed {
     position: absolute;
     /* top dynamically decided*/
   }
   .Home-schedule {
     margin-left: $left-filter-width;
-    will-change: margin-left;
-    /*-webkit-transition: margin-left .2s cubic-bezier(.4,0,.2,1);
-    transition: margin-left .2s cubic-bezier(.4,0,.2,1); */
+    border-left: 1px solid gray;
     z-index: 10;
-    margin-bottom: 200px;
-  }
-  .Home-schedule.is-fixed {
-    width: $container-width - $left-filter-width;
-    margin-left: 360px;
-    will-change: margin-left;
-    transition: all .2s cubic-bezier(.4,0,.2,1);
+    transition: transform .2s cubic-bezier(.4,0,.2,1);
+    transform: translate3d(0,0,0);
   }
   .Home-schedule.with-session {
-    width: $container-width - $left-filter-width;
-    margin-left: 160px;
-    will-change: margin-left;
-    transition: all .2s cubic-bezier(.4,0,.2,1);
+    transform: translate3d(calc(36px - $left-filter-width),0,0);
   }
   .Home-session {
     position: absolute;
