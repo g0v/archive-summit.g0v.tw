@@ -7,6 +7,9 @@ import styles from "./styles.css";
 import Filter from "./filter";
 import Session from './session';
 import classNames from "classnames";
+import classNamesBind from "classnames/bind";
+
+const cx = classNamesBind.bind(styles)
 
 export default class Schedule extends Component {
   state = {
@@ -251,6 +254,10 @@ export default class Schedule extends Component {
           </div>
 
         </div>
+        <div className={cx({
+          backdrop: true,
+          isShown: showSession,
+        })} onClick={this.resetSession} />
       </div>
     );
     function filterEventItem(eventItem) {

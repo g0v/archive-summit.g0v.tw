@@ -5,12 +5,27 @@ $appbar-height: 60px;
 .root {
   background: #FFFFFF;
   box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
+  position: relative; /* For backdrop */
   lost-utility: clearfix;
+}
+
+.backdrop {
+  background: rgba(255, 255, 255, .5);
+  position: absolute;
+  top: 0; right: 50%; bottom: 0; left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.backdrop.isShown {
+  opacity: 1;
+  z-index: 5;
 }
 
 .container {
   max-width: $container-width;
-  position: relative;
+  position: relative; /* For absolute-positioned filter */
   margin: 0 auto;
 }
 
@@ -65,6 +80,7 @@ body.mobileScrollLock {
   .Home-schedule {
     margin-left: $left-filter-width;
     border-left: 1px solid gray;
+    position: relative; /* make z-index work */
     z-index: 10;
     transition: transform .2s cubic-bezier(.4,0,.2,1);
     transform: translate3d(0,0,0);
@@ -87,8 +103,6 @@ body.mobileScrollLock {
   .Home-session.is-fixed {
     position: fixed;
     margin-top: $appbar-height;
-    // max-width: calc($container-width / 2);
-
     box-shadow: -3px 4px 4px rgba(0,0,0,.2);
   }
 }
