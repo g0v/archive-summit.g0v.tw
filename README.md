@@ -29,6 +29,12 @@ $ npm run start:dist
 
 And visit `http://localhost:3474/2016` to see the compiled site in action.
 
+
+# Credit
+
+* the menu icon "Hamburger Round" is by [John Slater @ Noun Project](https://thenounproject.com/term/menu/183512/), released under [CC-BY 3.0](http://creativecommons.org/licenses/by/3.0/us/)
+
+
 # License
 
 MIT http://g0v.mit-license.org
