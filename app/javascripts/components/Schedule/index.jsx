@@ -95,7 +95,7 @@ export default class Schedule extends Component {
     const {categoryOn: filterOn, currentSession, showSession, categories} = this.state
 
     const categoryObj = {}
-    for(let category of categories) categoryObj[category.title] = category
+    for(let category of categories) categoryObj[category.id] = category
 
     const mapTimeSlotToItems = (day, value, i) => {
       var itemClasses = classNames({
