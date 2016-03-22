@@ -146,6 +146,15 @@ const Menu = () => {
           {info[getLocale()].transport}
         </span>
       </li>
+      <li
+        className={styles.item}
+        activeClassName={styles.active}>
+        <Link
+          to="/2016/staff"
+        >
+          {info[getLocale()].staff}
+        </Link>
+      </li>
     </ul>
   );
 }
