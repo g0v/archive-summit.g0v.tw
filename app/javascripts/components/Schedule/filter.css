@@ -1,3 +1,5 @@
+$breakpoint: 1000px;
+
 .filter {
   position: relative;
   padding-bottom: 20px;
@@ -70,6 +72,13 @@
   display: inline-block;
   margin-right: 20px;
 }
+
+@media screen and (min-width: $breakpoint) {
+  .filterClose {
+    display: none;
+  }
+}
+
 .filterComplete:hover{
   color: rgb(50,53,52);
   -webkit-transition: all .3s;

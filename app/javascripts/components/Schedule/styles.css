@@ -195,10 +195,10 @@ body.mobileScrollLock {
 .Schedule-filterBtn:hover {
   color: rgb(53,55,54);
 }
-.Schedule-filterBtn:before {
-
-
+.Schedule-filterBtn.is-show {
+  color: transparent;
 }
+
 .Schedule-bar1 {
   content: '';
   border-top: 2px solid transparent;
@@ -270,21 +270,11 @@ body.mobileScrollLock {
   background: white;
   box-shadow: 0px 2px 2px 0 rgba(0,0,0,.22);
 }
-@media screen and (min-width: 768px) and (max-width: $breakpoint - 1px){
-  .Schedule-filterPanel.is-show.is-fixed {
-    width: calc(50% - 1px);
 
-    box-shadow: 0px 2px 2px 0 rgba(0,0,0,.22);
-    border-right: 1px solid rgb(100,100,100);
-
-  }
-
-}
 @media screen and (min-width: $breakpoint){
-  .Schedule-filterPanel.is-show.is-fixed {
+  .Schedule-filterPanel.is-show.is-show { /* specificity override .is-show.is-fixed */
      display: none;
   }
-
 }
 /* ===================== */
 

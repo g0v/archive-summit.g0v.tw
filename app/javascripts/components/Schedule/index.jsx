@@ -92,7 +92,7 @@ export default class Schedule extends Component {
   }
 
   render() {
-    const {categoryOn: filterOn, currentSession, showSession, categories} = this.state
+    const {categoryOn: filterOn, currentSession, showSession, categories, showPanel} = this.state
 
     const categoryObj = {}
     for(let category of categories) categoryObj[category.id] = category
@@ -211,13 +211,19 @@ export default class Schedule extends Component {
                        /* "is-active" : currentSection === "day2" */
                      })}
                      onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
-                <div className={`Schedule-filterBtn`}
+                <div className={classNames({
+                       'Schedule-filterBtn': true,
+                       'is-show': showPanel,
+                     })}
                      onClick={this.togglePanel}>Filter
-                  <div className={`Schedule-bar1`}></div>
-                  <div className={`Schedule-bar2`}></div>
+                  <div className={classNames({'Schedule-bar1': true, 'is-active': showPanel})}></div>
+                  <div className={classNames({'Schedule-bar2': true, 'is-active': showPanel})}></div>
                 </div>
               </div>
-              <div className={`Schedule-filterPanel`}>
+              <div className={classNames({
+                'Schedule-filterPanel': true,
+                'is-show': showPanel,
+              })}>
                 <Filter ref="filter"
                         data={categories}
                         filterOn={filterOn}
