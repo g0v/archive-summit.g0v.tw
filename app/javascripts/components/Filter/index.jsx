@@ -30,7 +30,7 @@ export default React.createClass({
       return (
         <div className={styles.filterCategory} key={i} onClick={toggleCategoryHandler.bind(null,i)}>
         <div className={`${styles.filterCategoryIcon} ${styles['filterCategoryIcon_' + i]}`} style={style}></div>
-        <div className="${styles.filterCategoryText}">{value.title}</div>
+        <div className={`${styles.filterCategoryText}`}>{value.title}</div>
         </div>
       )
     });
