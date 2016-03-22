@@ -155,34 +155,53 @@ export default class Schedule extends Component {
       )
     }
 
+    const filterStyle = {}
+
     return (
-      <div className={`Schedule`}>{/* todo: is-fixed */}
-        <div className={`Schedule-title without-session`}>{/* todo: session toggle */}
-          <div className={`Schedule-dayButton`}
-               onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
-          <div className={`Schedule-dayButton`}
-               onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
-          <div className={`Schedule-filterBtn`}
-               onClick={this.togglePanel}>Filter
-            <div className={`Schedule-bar1`}></div>
-            <div className={`Schedule-bar2`}></div>
+      <div className={styles.root}>
+        <div className={styles.container}>
+          <div className={classNames({
+            "Home-filter": true,
+            "is-fixed": false,
+          })} style={filterStyle}>
+            <Filter data={this.state.categories}
+                    filterOn={filterOn}
+                    toggleCategoryHandler={this.toggleCategory}
+                    clearCategoryHandler={this.clearCategory}/>
           </div>
-        </div>
-        <div className={`Schedule-filterPanel`}>
-          <Filter ref="filter"
-                  data={this.state.categories}
-                  filterOn={filterOn}
-                  toggleCategoryHandler={this.toggleCategory}
-                  clearCategoryHandler={this.clearCategoryHandler}
-                  togglePanelHander={this.togglePanel}/>
-        </div>
-        <div ref="day1" id="day1">
-          <div className="Schedule-day">5/14 (Sat.)</div>
-          {schedules[getLocale()]["day1"].filter(filterEventItem).map(mapTimeSlotToItems)}
-        </div>
-        <div ref="day2" id="day2">
-          <div className="Schedule-day">5/15 (Sun.)</div>
-          {schedules[getLocale()]["day2"].filter(filterEventItem).map(mapTimeSlotToItems)}
+          <div className={classNames({
+            "Home-schedule": true,
+          })}>
+            <div className={`Schedule`}>{/* todo: is-fixed */}
+              <div className={`Schedule-title without-session`}>{/* todo: session toggle */}
+                <div className={`Schedule-dayButton`}
+                     onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
+                <div className={`Schedule-dayButton`}
+                     onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
+                <div className={`Schedule-filterBtn`}
+                     onClick={this.togglePanel}>Filter
+                  <div className={`Schedule-bar1`}></div>
+                  <div className={`Schedule-bar2`}></div>
+                </div>
+              </div>
+              <div className={`Schedule-filterPanel`}>
+                <Filter ref="filter"
+                        data={this.state.categories}
+                        filterOn={filterOn}
+                        toggleCategoryHandler={this.toggleCategory}
+                        clearCategoryHandler={this.clearCategory}
+                        togglePanelHander={this.togglePanel}/>
+              </div>
+              <div ref="day1" id="day1">
+                <div className="Schedule-day">5/14 (Sat.)</div>
+                {schedules[getLocale()]["day1"].filter(filterEventItem).map(mapTimeSlotToItems)}
+              </div>
+              <div ref="day2" id="day2">
+                <div className="Schedule-day">5/15 (Sun.)</div>
+                {schedules[getLocale()]["day2"].filter(filterEventItem).map(mapTimeSlotToItems)}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

@@ -1,15 +1,137 @@
+$breakpoint: 1237px;
+
+.root {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
+  lost-utility: clearfix;
+  position: relative;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* Stuff directly stolen from coscup... :P */
 :global {
 
-.Schedule {
+.Home-filter {
+  display: none;
+}
+.Home-schedule {
+  display: block;
+  z-index: 10;
+}
+.Home-schedule.is-fixed, .Home-schedule.with-session {
+  display: block;
+  -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
+  transition: all .2s cubic-bezier(.4,0,.2,1);
+}
+.Home-schedule.with-session.is-hide {
+  display: none;
+
+}
+.Home-session {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 0px;
+  overflow: hidden;
+  will-change: right;
+  -webkit-transition: right .2s cubic-bezier(.4,0,.2,1);
+  transition: right .2s cubic-bezier(.4,0,.2,1);
+  z-index: 200;
+}
+.Home-session.is-show, .Home-session.is-show.is-fixed {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 100%;
+
+
+  will-change: right;
+  -webkit-transition: right .2s cubic-bezier(.4,0,.2,1);
+  transition: right .2s cubic-bezier(.4,0,.2,1);
+}
+
+@media screen and (min-width: $breakpoint){
+  $left-filter-width: 240px;
+
+  .Home-filter {
+    width: $left-filter-width;
+    position: absolute;
+    display: block;
+  }
+  .Home-filter.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .Home-filter.is-passed{
+    position: absolute;
+    /* top dynamically decided*/
+  }
+  .Home-schedule {
+    margin-left: $left-filter-width;
+    will-change: margin-left;
+    /*-webkit-transition: margin-left .2s cubic-bezier(.4,0,.2,1);
+    transition: margin-left .2s cubic-bezier(.4,0,.2,1); */
+    z-index: 10;
+    margin-bottom: 200px;
+  }
+  .Home-schedule.is-fixed {
+    width: 550px;
+    margin-left: 360px;
+    will-change: margin-left;
+    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
+    transition: all .2s cubic-bezier(.4,0,.2,1);
+  }
+  .Home-schedule.with-session {
+    width: 550px;
+    margin-left: 160px;
+    will-change: margin-left;
+     -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
+    transition: all .2s cubic-bezier(.4,0,.2,1);
+
+  }
+  .Home-schedule.with-session.is-hide {
+    display: inline-block;
+
+  }
+  .Home-session {
+    position: absolute;
+    top: 0;
+    right: -570px;
+    width: 0px;
+    overflow: hidden;
+    will-change: right;
+    -webkit-transition: right .2s cubic-bezier(.4,0,.2,1);
+    transition: right .2s cubic-bezier(.4,0,.2,1);
+  }
+  .Home-session.is-show {
+    position: absolute;
+    left: 711px;
+    width: 570px;
+    height: 100vh;
+    overflow: scroll;
+    will-change: right;
+    -webkit-transition: right .2s cubic-bezier(.4,0,.2,1);
+    transition: right .2s cubic-bezier(.4,0,.2,1);
+  }
+  .Home-session.is-show.is-fixed {
+    height: 100vh;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    width: 570px;
+  }
+}
+
+.Schedule {
   min-height: 100vh;
   position: relative;
   background: white;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
   z-index: 10;
-
 }
 .Schedule.is-fixed {
   padding-top: 56px;
@@ -46,7 +168,7 @@
   }
 
 }
-@media screen and (min-width: 1237px){
+@media screen and (min-width: $breakpoint){
   .Schedule-title {
     background: white;
     border-bottom: 1px solid gray;
@@ -140,7 +262,7 @@
 
 }
 
-@media screen and (min-width: 1237px) {
+@media screen and (min-width: $breakpoint) {
   .Schedule-filterBtn {
     display: none;
   }
@@ -168,7 +290,7 @@
   background: white;
   box-shadow: 0px 2px 2px 0 rgba(0,0,0,.22);
 }
-@media screen and (min-width: 768px) and (max-width: 1236px){
+@media screen and (min-width: 768px) and (max-width: $breakpoint - 1px){
   .Schedule-filterPanel.is-show.is-fixed {
     width: calc(50% - 1px);
 
@@ -178,7 +300,7 @@
   }
 
 }
-@media screen and (min-width: 1237px){
+@media screen and (min-width: $breakpoint){
   .Schedule-filterPanel.is-show.is-fixed {
      display: none;
   }
