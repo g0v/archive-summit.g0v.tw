@@ -59,6 +59,8 @@ export default class Schedule extends Component {
       showSession: true,
       currentSession: value
     })
+
+    document.body.classList.add(styles.mobileScrollLock);
   }
 
   resetSession() {
@@ -66,6 +68,7 @@ export default class Schedule extends Component {
       showSession: false,
       currentSession: {}
     })
+    document.body.classList.remove(styles.mobileScrollLock);
   }
 
   clearCategory(){
@@ -259,6 +262,9 @@ export default class Schedule extends Component {
     var anchor = document.location.hash.split('#')[1] || '';
     var node = document.getElementById(`slot-${anchor}`);
     if (node && node.click) { node.click(); }
+  }
+  componentWillUnmount() {
+    document.body.classList.remove(styles.mobileScrollLock);
   }
 };
 

@@ -14,6 +14,16 @@ $appbar-height: 60px;
   margin: 0 auto;
 }
 
+body.mobileScrollLock {
+  overflow: hidden;
+}
+
+@media screen and (min-width: $breakpoint) {
+  body.mobileScrollLock {
+    overflow: auto;
+  }
+}
+
 /* Stuff directly stolen from coscup... :P */
 :global {
 
@@ -28,10 +38,6 @@ $appbar-height: 60px;
   display: block;
   -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
   transition: all .2s cubic-bezier(.4,0,.2,1);
-}
-.Home-schedule.with-session.is-hide {
-  display: none;
-
 }
 .Home-session {
   position: fixed;
@@ -84,10 +90,6 @@ $appbar-height: 60px;
     margin-left: 160px;
     will-change: margin-left;
     transition: all .2s cubic-bezier(.4,0,.2,1);
-  }
-  .Home-schedule.with-session.is-hide {
-    display: inline-block;
-
   }
   .Home-session {
     position: absolute;
