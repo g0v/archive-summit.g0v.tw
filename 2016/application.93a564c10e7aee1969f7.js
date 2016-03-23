@@ -27548,7 +27548,7 @@
 					{
 						"name": "g0v summit 2016",
 						"logo": "g0vsummit.png",
-						"desc": "g0v Summit 2016 is host by community voluntiers"
+						"desc": "g0v Summit 2016 is organized by community volunteers"
 					}
 				]
 			},
