@@ -1,6 +1,17 @@
 {
   "en-US": [
     {
+      "category": "host",
+      "title": "Host",
+      "sponsors": [
+        {
+          "name": "g0v summit 2016",
+          "logo": "g0vsummit.png",
+          "desc": "g0v Summit 2016 is host by community voluntiers"
+        }
+      ]
+    },
+    {
       "category": "co-organizer",
       "title": "Co-Organizer",
       "sponsors": [
@@ -50,7 +61,7 @@
           "name": "skymizer",
           "logo": "skymizer.png",
           "url": "http://skymizer.com/",
-          "desc": ""          
+          "desc": "Skymizer is a software performance solution provider specializing in compiler optimization. Our core team comes from Andes, Google, HTC, Marvell, MediaTek, Yahoo etc., and is actively involved in renowned worldwide open source projects. We are now working with global leading software companies to create revolutionary products and offer you a better experience in software and life."
         }
       ]
     },
@@ -74,6 +85,17 @@
     }
   ],
   "zh-TW": [
+    {
+      "category": "host",
+      "title": "主辦單位",
+      "sponsors": [
+        {
+          "name": "g0v summit 2016",
+          "logo": "g0vsummit.png",
+          "desc": "g0v Summit 2016 為社群義務籌辦"
+        }
+      ]
+    },
     {
       "category": "co-organizer",
       "title": "合作單位",
@@ -124,7 +146,7 @@
           "name": "skymizer",
           "logo": "skymizer.png",
           "url": "http://skymizer.com/",
-          "desc": ""          
+          "desc": "Skymizer 是一個致力於效能解決方案的頂尖開發團隊，藉由其獨到的編譯器最佳化技術，強化軟體品質、增加效能。我們也提供開發工具與顧問服務，協助客戶加速其行動裝置、軟體、伺服器。\n我們成立於 2013 年冬季， 技術團隊來自世界各大知名軟硬體公司（Andes, Google, HTC, Marvell, MediaTek, Yahoo），團隊成員擁有豐富的跨國產品開發經驗。我們不只優化你的軟體，更優化你的工作與生活。"
         }
       ]
     },

@@ -1,0 +1,63 @@
+{
+  "en-US": [
+    {
+      "title": "Venue",
+      "detail": "Humanities and Social Science Building (HSSB), Academia Sinica"
+    },
+    {
+      "title": "Address",
+      "detail": "No. 128, Sec. 2, Academia Rd., Nankang, Taipei 115, Taiwan"
+    },
+    {
+      "title": "By Bus",
+      "detail": "Take Bus 212, 276, 306, 620, 645, 679, 205, Mini Bus S5, S1, or S12 to Academica Sinica and walk to HSSB."
+    },
+    {
+      "title": "By MRT",
+      "detail": "Take MRT to Nankang Station, and transfer to Bus 212, 270, or B25 to Academica Sinica."
+    },
+    {
+      "title": "By Train",
+      "detail": "Take train to Nankang Station, and transfer to Bus 212, 270, or B25 to Academica Sinica. "
+    },
+    {
+      "title": "By Taxi",
+      "detail": "Take taxi to Academica Sinica directly."
+    },
+    {
+      "title": "By Car",
+      "detail": "Get off at the exit of “Nanshen Rd.- Academia Sinica” ramp <16km> on Highway No. 3, turn left to Nanshen Rd., and turn left again to JiuZuang Rd., go straight till the intersection of Academia Rd."
+    }
+  ],
+  "zh-TW": [
+    {
+      "title": "地點",
+      "detail": "台北市南港區中央研究院人文館"
+    },
+    {
+      "title": "地址",
+      "detail": "台北市南港區研究院路二段128號"
+    },
+    {
+      "title": "搭乘公車",
+      "detail": "搭乘 212、276、306、620、645、679、205、 小5、小1、小12 等公車至中研院站，步行入院內至人文館"
+    },
+    {
+      "title": "搭乘捷運",
+      "detail": "搭乘捷運板南線至南港站（2 號出口）換乘公車 212、270 或藍 25 至中研院站，步行入院內至人文館"
+    },
+    {
+      "title": "搭乘火車",
+      "detail": "至南港站換乘公車 212、270 或藍 25 至中研院站，步行入院內至人文館"
+    },
+    {
+      "title": "搭乘計程車",
+      "detail": "可搭乘計程車進入院區"
+    },
+    {
+      "title": "自行開車",
+      "detail": "由國道三號，南深路-中研院匝道〈16km〉出國道三號後，左轉接南深路，再左轉接舊莊路一段直走，遇到與研究院路叉路口，即可看到中研院。車輛進入院區請持證件向大門警衛室換取臨時通行證。若您於週一至週五來訪，您須停車至人文社會館 B2，並需支付停車費用（每小時 20 元）。假日換證不收費，並請停車於院內道路旁停車格。"
+    }
+  ]
+}
+
