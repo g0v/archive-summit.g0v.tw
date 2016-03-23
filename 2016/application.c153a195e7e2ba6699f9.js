@@ -27548,7 +27548,7 @@
 					{
 						"name": "g0v summit 2016",
 						"logo": "g0vsummit.png",
-						"url": "http://summit.g0v.tw/2016/"
+						"desc": "g0v Summit 2016 is host by community voluntiers"
 					}
 				]
 			},
@@ -27633,7 +27633,7 @@
 					{
 						"name": "g0v summit 2016",
 						"logo": "g0vsummit.png",
-						"url": "http://summit.g0v.tw/2016/"
+						"desc": "g0v Summit 2016 為社群義務籌辦"
 					}
 				]
 			},
@@ -27759,7 +27759,7 @@
 /* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "5b4aad672c741453df4fda8527066156.png";
+	module.exports = __webpack_require__.p + "518e3c3b515cec0e67c6c68a16d582bb.png";
 
 /***/ },
 /* 338 */
