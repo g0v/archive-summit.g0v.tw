@@ -293,7 +293,7 @@ $mobile-item-leftstop: 96px;
   margin-top: 4px;
   font-weight: normal;
 }
-.Schedule-item.has-top-border, .Schedule-itemWrapper.has-top-border {
+.Schedule-item.has-top-border {
   border-top: 1px solid rgb(220,220,220);
 }
 .Schedule-time {
