@@ -1,4 +1,6 @@
 $breakpoint: 1000px;
+$mobile-padding: 16px;
+$desktop-padding: 20px;
 
 .filter {
   position: relative;
@@ -6,77 +8,44 @@ $breakpoint: 1000px;
 }
 
 .filterTitle {
-  padding: 20px 20px 20px 10px;
+  padding: $mobile-padding;
   background: white;
   border-bottom: 1px solid gray;
-  font-family: Polaris-Bold,Helvetica,Arial,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: .08em;
 }
 .filterCategories {
-	list-style: none;
+  padding: $mobile-padding 0;
+  list-style: none;
   margin: 0;
-  padding: 10px 10px 0px 0;
-	
-}
-@media screen and (min-width: 776px){
-  .filterCategories {
-      padding: 10px 20px 0px 0;   
-  }
+  display: flex;
+  flex-flow: row wrap;
 }
 .filterCategory {
-  font-size: 13px;
-  line-height: 14px;
-  margin-bottom: 10px;
-  position: relative;
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 $mobile-padding;
+  height: 36px;
+  font-size: 14px;
   cursor: pointer;
-  width: 50%;
-  vertical-align: top;
-  display: inline-block;
-}
-@media screen and (min-width: 776px){
-  .filterCategory {
-      width: 100%; 
-  }
-}
-@media screen and (max-width: 402px){
-    .filterCategory {
-        font-size: 10px !important;
-    }
 }
 .filterCategoryIcon {
-	position: absolute;
-  top: 5px;
-  left: 10px;
-  width: 12px;
-  height: 12px;
   border-radius: 2px;
-  -webkit-transition: background .3s;
+  width: 18px; height: 18px;
+  border: 2px solid #333;
+  margin-right: 18px;
   transition: background .3s;
 }
-
-.filterCategoryText {
-  padding-left: 30px;
-  line-height: 1.6;
-
-}
 .filterActions {
-  padding: 10px;
-
+  padding: $mobile-padding;
+  font-size: 14px;
 }
 .filterClose {
-  font-size: 12px;
   cursor: pointer;
   text-decoration: underline;
   display: inline-block;
   margin-right: 20px;
-}
-
-@media screen and (min-width: $breakpoint) {
-  .filterClose {
-    display: none;
-  }
 }
 
 .filterComplete:hover{
@@ -85,12 +54,10 @@ $breakpoint: 1000px;
   transition: all .3s;
 }
 .filterClearAll {
-  font-size: 12px;
   cursor: pointer;
   text-decoration: underline;
   color: transparent;
   display: inline-block;
-
 }
 .filterClearAll.isActive {
   color: rgb(120,120,120);
@@ -101,4 +68,30 @@ $breakpoint: 1000px;
   color: rgb(50,53,52);
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+@media screen and (min-width: $breakpoint) {
+  .filterClose {
+    display: none;
+  }
+  .filterTitle {
+    font-size: 20px;
+    padding: $desktop-padding 0;
+  }
+  .filterCategories {
+    padding: 18px 0;
+  }
+  .filterCategory {
+    height: 48px;
+    font-size: 16px;
+    flex-basis: 100%;
+    padding: 0;
+  }
+  .filterCategoryIcon {
+    width: 22px; height: 22px;
+  }
+  .filterActions {
+    font-size: 16px;
+    padding: 0;
+  }
 }
