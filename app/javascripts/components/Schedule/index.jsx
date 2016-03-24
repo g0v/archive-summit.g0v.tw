@@ -17,7 +17,8 @@ export default class Schedule extends Component {
     showSession: false,
     categoryOn: false,
     categories: categoriesData[getLocale()].map((cat, index) => ({...cat, index})),
-    currentSession: {}
+    currentSession: {},
+    currentSessionTime: null,
   };
   defaultTitle = document.title;
 
@@ -54,10 +55,11 @@ export default class Schedule extends Component {
     })
   }
 
-  setSession(value, event) {
+  setSession(value, time) {
     this.setState({
       showSession: true,
-      currentSession: value
+      currentSession: value,
+      currentSessionTime: time,
     })
 
     document.body.classList.add(styles.mobileScrollLock);
@@ -66,7 +68,8 @@ export default class Schedule extends Component {
   resetSession() {
     this.setState({
       showSession: false,
-      currentSession: {}
+      currentSession: {},
+      currentSessionTime: null,
     })
     document.body.classList.remove(styles.mobileScrollLock);
   }
@@ -125,7 +128,7 @@ export default class Schedule extends Component {
               "Schedule-event" : true,
               "is-active" : currentSession.title === value.event.title && currentSession.time === value.event.time && currentSession.venue === value.event.venue
             })}
-            onClick={this.setSession.bind(this,value.event)}>
+            onClick={this.setSession.bind(this, value.event, value.time)}>
             <div className="Schedule-main">
               {value.event.title}
               <div className="Schedule-presenter">{value.event.speaker}</div>
@@ -154,7 +157,7 @@ export default class Schedule extends Component {
                        "Schedule-event" : true,
                        "is-active" : currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
                      })}
-                     onClick={this.setSession.bind(this,v)}
+                     onClick={this.setSession.bind(this,v, value.time)}
                      href={`#${id}`} key={k} id={`slot-${id}`}>
                     {venue}
                     <div className="Schedule-main">
@@ -270,7 +273,7 @@ export default class Schedule extends Component {
             })}
             style={sessionStyle}>
             <Session sessionHandler={this.resetSession}
-                     data={currentSession}
+                     data={currentSession} time={this.state.currentSessionTime}
                      categories={this.state.categories}/>
           </div>
 

@@ -17,19 +17,19 @@ export default React.createClass({
     var items = data.map((value,i)=>{
 
       if(!filterOn || value.active){
-          var style = {
-              "background" : value.color
-          }
+        var style = {
+          "background" : value.color
+        }
       }else{
-          var style = {
-              "border" : `2px solid ${value.color}`
-          }
+        var style = {
+          "border" : `2px solid ${value.color}`
+        }
       }
 
       return (
         <div className={styles.filterCategory} key={i} onClick={toggleCategoryHandler.bind(null,i)}>
-        <div className={`${styles.filterCategoryIcon}`} style={style}></div>
-        <div className={`${styles.filterCategoryText}`}>{value.title}</div>
+          <div className={`${styles.filterCategoryIcon}`} style={style}></div>
+          <div className={`${styles.filterCategoryText}`}>{value.title}</div>
         </div>
       )
     });

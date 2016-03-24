@@ -6,18 +6,8 @@ export default React.createClass({
   displayName: "Session",
 
   render() {
-    var {sessionHandler, data, categories} = this.props;
-    var categoryObj = {};
-    categories.map((v,i)=>{
-        categoryObj[v.title] = v;
-    });
-    var categoryStyle = {};
-    if(categoryObj[data.category]){
-      categoryStyle = {
-        "border" : `1px solid ${categoryObj[data.category].color}`,
-        "background" : categoryObj[data.category].color
-      }
-    }
+    var {sessionHandler, data, categories, time} = this.props;
+    var category = categories.find(cat => cat.id === data.category)
     var venue = (data.venue) ? <div className="Session-venue">{data.venue}</div> : "";
     var language = (data.EN) ? <div className="Session-en">EN</div> : "";
 
@@ -34,7 +24,7 @@ export default React.createClass({
             <div className="Session-content">
                 <div className="Session-meta">
                   {venue}
-                  <div className="Session-time">{data.time}</div>
+                  <div className="Session-time">{time}</div>
                   {language}
                 </div>
                 <div className="Session-title">
@@ -44,10 +34,16 @@ export default React.createClass({
                     {data.presenter}
                 </div>
 
-                <div className="Session-category">
-                  <div className="Session-categoryIcon" style={categoryStyle}></div>
-                  {data.category}
-                </div>
+                {
+                  category ? (
+                    <div className="Session-category">
+                      <div className="Session-categoryIcon" style={{
+                             "background" : category.color
+                           }}></div>
+                      {category.title} - {category.tagline}
+                    </div>
+                  ) : null
+                }
 
                 <div className="Session-abstract">
                     <div className="Session-subTitle">Abstract</div>

@@ -31,7 +31,7 @@ $desktop-padding: 20px;
   cursor: pointer;
 }
 .filterCategoryIcon {
-  border-radius: 2px;
+  border-radius: 4px;
   width: 18px; height: 18px;
   border: 2px solid #333;
   margin-right: 18px;

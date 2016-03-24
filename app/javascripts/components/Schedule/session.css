@@ -1,3 +1,5 @@
+$breakpoint: 1000px;
+
 :global {
 .Session {
   background: white;
@@ -14,6 +16,7 @@
   white-space: pre-wrap;
 }
 .Session-close {
+  position: relative;
   width: 42px;
   height: 42px;
   border-radius: 44px;
@@ -52,9 +55,14 @@
     line-height: 1.6;
     background: white;
 }
-@media screen and (min-width: 1237px){
+@media screen and (min-width: $breakpoint){
+    .Session-close{
+      left: 20px;
+      top: 20px;
+    }
     .Session-content {
-        padding: 20px 40px 20px 20px;
+      padding: 40px;
+      max-width: 40em; /* Don't make text too long & difficult to read */
     }
 }
 .Session-meta {
@@ -67,11 +75,11 @@
 }
 .Session-venue {
   display: inline-block;
-  padding: 0px 6px;
+  padding: 1px 6px;
   margin-right: 10px;
   color: gray;
   background: rgb(220,220,220);
-  border-radius: 14px;
+  border-radius: 4px;
 }
 .Session-en {
   display: inline-block;
@@ -84,9 +92,10 @@
 .Session-title {
   font-size: 26px;
   font-weight: 700;
-  color: rgb(49, 153, 122);
+  color: #CB0031;
 
   position: relative;
+  margin-top: 20px;
 }
 .Session-subTitle {
   font-weight: 600;
