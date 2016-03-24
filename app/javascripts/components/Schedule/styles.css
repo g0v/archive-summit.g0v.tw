@@ -121,13 +121,12 @@ body.mobileScrollLock {
   border-bottom: 1px solid gray;
   width: 100%;
   z-index: 20;
-
+  display: flex;
 }
 .Schedule-title.is-fixed {
   position: fixed;
   top: 0;
 
-  -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
   transition: all .2s cubic-bezier(.4,0,.2,1);
 }
 @media screen and (min-width: 776px) and (max-width: 1236px){
@@ -181,16 +180,17 @@ body.mobileScrollLock {
 
 /* FILTER */
 .Schedule-filterBtn {
-  position: absolute;
-  right: 8px;
-  top: 0;
   color: rgb(80,80,80);
+  align-self: center;
   text-align: center;
-  line-height: 54px;
+  line-height: 56px;
   width: 56px;
   height: 56px;
   cursor: pointer;
   transition: all .3s;
+  margin-right: 8px;
+
+  position: relative; /* for bar1 and bar2 */
 }
 .Schedule-filterBtn:hover {
   color: rgb(53,55,54);
@@ -250,159 +250,152 @@ body.mobileScrollLock {
      display: none;
   }
 }
+
 /* ===================== */
 
-.Schedule-dayButton {
-  font-family: Polaris-Bold,Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  display: inline-block;
-  padding: 20px;
-  cursor: pointer;
+$category-icon-size: 16px;
+$mobile-padding: 16px;
+$mobile-item-leftstop: 96px;
 
+.Schedule-dayButtonLeftstop {
+  width: calc($mobile-item-leftstop - $mobile-padding);
+}
+.Schedule-dayButton {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: $mobile-padding;
+  cursor: pointer;
+  margin-right: auto;
 }
 .Schedule-dayButton:hover, .Schedule-dayButton.is-active {
   color: rgb(68,210,143);
   text-decoration: underline;
 }
 .Schedule-day {
-  background: rgb(220,220,220);
-  padding: 20px 20px 20px 26px;
-  font-family: Polaris-Book,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  /*'Gentium Basic',Gentium,serif;*/
-  font-weight: 800;
-  letter-spacing: 1px;
+  background: #f3f3f3;
+  border-top: 1px solid rgb(220,220,220);
+  border-bottom: 1px solid rgb(220,220,220);
+  font-size: 24px;
+  padding: $mobile-padding;
+  font-weight: bold;
 }
 .Schedule-item {
-  padding: 30px;
-  padding-left: 92px;
+  display: flex;
+  font-size: 16px;
 
-  background: white;
-  position: relative;
-  color: rgb(100,100,100);
-  overflow: hidden;
-}
-.Schedule-itemLightning {
-  padding: 4px;
-  padding-left: 92px;
-  padding-right: 20px;
-  line-height: 1.5;
-  background: white;
-  position: relative;
-  color: rgb(100,100,100);
-  overflow: hidden;
-}
-.Schedule-itemLightningLast {
-  padding: 4px;
-  padding-left: 92px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  line-height: 1.5;
-  background: white;
-  position: relative;
-  color: rgb(100,100,100);
-  overflow: hidden;
-}
-.Schedule-event {
-  overflow: hidden;
-}
-.Schedule-keynotePresenter {
-  color: rgb(125,124,123);
-  font-size: 14px;
-  margin-top: 4px;
-
-}
-.Schedule-itemWrapper {
-  overflow: hidden;
-  background: white;
-  position: relative;
-  padding-left: 80px;
-  overflow: hidden;
-
-}
-.Schedule-item.has-top-border, .Schedule-itemWrapper.has-top-border {
-  border-top: 1px solid rgb(220,220,220);
-}
-.Schedule-time {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90px;
-  line-height: 80px;
-  font-size: 14px;
-  text-align: center;
-  color: rgb(53,55,54);
-}
-.Schedule-session {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  padding: 14px 30px 14px 10px;
-  will-change: background;
-  line-height: 1.4;
-  -webkit-transition: background .3s;
-  transition: background .3s;
-  border-bottom: 1px solid rgb(220,220,220);
-  position: relative;
-  overflow: hidden;
-}
-.Schedule-session.is-last {
-  border-bottom: none;
-  /*background: rgba(215, 253, 236, 0.82);*/
-}
-.Schedule-session.is-active {
-  background: #fff3f3;
-}
-.Schedule-session:hover {
-  background: #fff3f3;
-  -webkit-transition: background .3s;
-  transition: background .3s;
-}
-.Schedule-venue {
-  display: inline-block;
-  padding: 1px 5px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  background: rgb(220,220,220);
-  border-radius: 12px;
-  color: gray;
-
-}
-@media screen and (min-width: 776px){
-
-  .Schedule-session {
-    display: flex;
-  }
-  .Schedule-meta {
-
-  }
-  .Schedule-main {
-    margin-left: 8px;
-    flex: 1;
+  > .Schedule-event {
+    flex: 1 0 0;
   }
 }
 .Schedule-presenter {
   color: rgb(125,124,123);
   font-size: 14px;
-  margin-left: 1px;
+  margin-top: 4px;
+  font-weight: normal;
+}
+.Schedule-item.has-top-border, .Schedule-itemWrapper.has-top-border {
+  border-top: 1px solid rgb(220,220,220);
+}
+.Schedule-time {
+  width: calc($mobile-item-leftstop - 14px);  /* 14px = event left padding */
+  padding: $mobile-padding;
+}
+.Schedule-timeEnd {
+  display: none;
+}
+.Schedule-event {
+  color: inherit; /* override <a> color */
+  display: block;
+  position: relative; /* For categoryIcon */
+  font-weight: bold;
+  text-decoration: none;
+  padding: $mobile-padding 14px;
+  transition: background .3s;
+  border-bottom: 1px solid rgb(220,220,220);
+}
+.Schedule-event.is-last {
+  border-bottom: none;
+}
+.Schedule-event.is-active {
+  background: #fff3f3;
+}
+.Schedule-event:hover {
+  background: #fff3f3;
+  transition: background .3s;
+}
+.Schedule-events {
+  flex: 1 0 0;
+}
+.Schedule-venue {
+  display: inline-block;
+  padding: 1px 8px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  background: rgb(220,220,220);
+  border-radius: 4px;
+  color: gray;
 }
 .Schedule-en {
   color: rgb(207,43,43);
   display: inline-block;
-  padding: 0 4px ;
+  padding: 0 4px;
 }
+
 .Schedule-categoryIcon {
   position: absolute;
-  top: 20px;
-  right: 10px;
-  width: 12px;
-  height: 12px;
-  border-radius: 2px;
+  width: $category-icon-size;
+  height: $category-icon-size;
+  right: 14px;
+  bottom: 17px;
+
+  border-radius: 3px;
   background: transparent;
   will-change: background;
   -webkit-transition: background .3s;
   transition: background .3s;
+}
+
+@media screen and (min-width: $breakpoint) {
+  $desktop-padding: 20px;
+  $desktop-item-leftstop: 240px;
+
+  .Schedule-dayButton {
+    font-size: 20px;
+    padding: $desktop-padding;
+  }
+
+  .Schedule-dayButtonLeftstop {
+    padding-left: calc(40px - $desktop-padding);
+    width: calc($desktop-item-leftstop - $desktop-padding);
+  }
+
+  .Schedule-time {
+    width: calc($desktop-item-leftstop - 14px); /* 14px = event left padding */
+    padding: $desktop-padding 40px;
+  }
+
+  .Schedule-timeEnd {
+    display: inline;
+  }
+
+  .Schedule-day {
+    padding: $desktop-padding 40px;
+  }
+
+  .Schedule-event {
+    display: flex;
+    padding: $desktop-padding calc(28px * 2 + $category-icon-size) $desktop-padding 14px;
+  }
+
+  .Schedule-meta {
+    margin-right: 14px;
+  }
+
+  .Schedule-categoryIcon {
+    top: 50%;
+    margin-top: calc(-$category-icon-size / 2);
+    right: 28px;
+  }
 }
 
 } /* ends :global */

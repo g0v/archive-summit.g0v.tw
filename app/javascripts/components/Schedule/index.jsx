@@ -99,11 +99,7 @@ export default class Schedule extends Component {
 
     const mapTimeSlotToItems = (day, value, i) => {
       var itemClasses = classNames({
-
-        "Schedule-item" : value.event && !value.lightning,
-        "Schedule-itemLightning" : value.event && value.lightning === true,
-        "Schedule-itemLightningLast" : value.event && value.lightningLast === true,
-        "Schedule-itemWrapper" : value.events,
+        "Schedule-item" : true,
         "has-top-border" : i !== 0
       })
 
@@ -113,17 +109,19 @@ export default class Schedule extends Component {
         let id = `day${day}-all-${i}`
 
         if(typeof value.event === 'string'){
-          content = <div>{value.event}</div>
+          content = <div className="Schedule-event is-last">{value.event}</div>
         }else{
           content = <a id={`slot-${id}`} href={`#${id}`}
             className={classNames({
-              "Schedule-session" : true,
+              "Schedule-event" : true,
               "is-last" : true,
               "is-active" : currentSession.title === value.event.title && currentSession.time === value.event.time && currentSession.venue === value.event.venue
             })}
             onClick={this.setSession.bind(this,value.event)}>
-            {value.event.title}
-            <div className="Schedule-keynotePresenter">{value.event.speaker}</div>
+            <div className="Schedule-main">
+              {value.event.title}
+              <div className="Schedule-presenter">{value.event.speaker}</div>
+            </div>
           </a>;
         }
 
@@ -131,46 +129,54 @@ export default class Schedule extends Component {
         var filteredEvents = value.events
         .filter(sessionItem => !filterOn || (categoryObj[sessionItem.category] && categoryObj[sessionItem.category].active))
 
-        content = filteredEvents
-        .map((v,k)=>{
-          var categoryStyle = {};
-          if(filterOn){
-             categoryStyle = {
-                "border" : `1px solid ${categoryObj[v.category].color}`,
-                "background" : categoryObj[v.category].color
-             }
-          }
-          var language = (v.EN) ? <div className="Schedule-en">EN</div> : "";
+        content = (
+          <div className="Schedule-events">
+            {
+              filteredEvents.map((v,k)=>{
+                var categoryStyle = {};
+                if(v.category && categoryObj[v.category]){
+                   categoryStyle = {
+                      "background" : categoryObj[v.category].color
+                   }
+                }
+                var language = (v.EN) ? <div className="Schedule-en">EN</div> : "";
 
-          var venue = (v.venue) ? (
-                  <div className="Schedule-meta">
-                    <div className="Schedule-venue">{v.venue}</div>
-                  </div>) : "";
-          var id = `day${day}-${v.venue.toLowerCase()}-${i}`;
+                var venue = (v.venue) ? (
+                        <div className="Schedule-meta">
+                          <div className="Schedule-venue">{v.venue}</div>
+                        </div>) : "";
+                var id = `day${day}-${v.venue.toLowerCase()}-${i}`;
 
-          return(
-            <a className={classNames({
-                 "Schedule-session" : true,
-                 "is-last" : k === filteredEvents.length-1,
-                 "is-active" : currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
-               })}
-               onClick={this.setSession.bind(this,v)}
-               href={`#${id}`} key={k} id={`slot-${id}`}>
-              {venue}
-              <div className="Schedule-main">
-                <div>{v.title}{language}</div>
-                <div className="Schedule-presenter">{v.presenter}</div>
-                <div className="Schedule-categoryIcon" style={categoryStyle}></div>
-              </div>
-            </a>
-          )
-        })
+                return(
+                  <a className={classNames({
+                       "Schedule-event" : true,
+                       "is-last" : k === filteredEvents.length-1,
+                       "is-active" : currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
+                     })}
+                     onClick={this.setSession.bind(this,v)}
+                     href={`#${id}`} key={k} id={`slot-${id}`}>
+                    {venue}
+                    <div className="Schedule-main">
+                      <div>{v.title}{language}</div>
+                      <div className="Schedule-presenter">{v.speaker}</div>
+                      <div className="Schedule-categoryIcon" style={categoryStyle}></div>
+                    </div>
+                  </a>
+                )
+              })
+            }
+          </div>
+        );
       }
+
+      let [timeStart, timeEnd] = value.time.split('-')
       return (
         <div className={itemClasses}
              key={i}>
-          <div className="Schedule-time">{value.time}</div>
-          <div className="Schedule-event">{content}</div>
+          <div className="Schedule-time">
+            {timeStart}<span className="Schedule-timeEnd"> - {timeEnd}</span>
+          </div>
+          {content}
         </div>
       )
     }
@@ -201,11 +207,13 @@ export default class Schedule extends Component {
                   "without-session" : !showSession
                   /*"is-fixed" : inScheduleArea==="within" || (inScheduleArea==="passed" && showPanel),*/
                 })}>
-                <div className={classNames({
-                       "Schedule-dayButton" : true,
-                       /* "is-active" : currentSection === "day1" */
-                     })}
-                     onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
+                <div className="Schedule-dayButtonLeftstop">
+                  <div className={classNames({
+                         "Schedule-dayButton" : true,
+                         /* "is-active" : currentSection === "day1" */
+                       })}
+                       onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
+                </div>
                 <div className={classNames({
                        "Schedule-dayButton" : true,
                        /* "is-active" : currentSection === "day2" */
