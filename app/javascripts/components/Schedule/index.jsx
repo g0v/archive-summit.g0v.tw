@@ -16,7 +16,7 @@ export default class Schedule extends Component {
     showPanel: false,
     showSession: false,
     categoryOn: false,
-    categories: categoriesData[getLocale()],
+    categories: categoriesData[getLocale()].map((cat, index) => ({...cat, index})),
     currentSession: {}
   };
   defaultTitle = document.title;
@@ -34,7 +34,8 @@ export default class Schedule extends Component {
     this.setState({showPanel: !this.state.showPanel})
   }
 
-  toggleCategory(index) {
+  toggleCategory(index, e) {
+    e.stopPropagation();
     var current = this.state.categories.slice(0);
     current[index] = Object.assign({}, current[index], {active: !current[index].active})
 
@@ -133,12 +134,6 @@ export default class Schedule extends Component {
           <div className="Schedule-events">
             {
               filteredEvents.map((v,k)=>{
-                var categoryStyle = {};
-                if(v.category && categoryObj[v.category]){
-                   categoryStyle = {
-                      "background" : categoryObj[v.category].color
-                   }
-                }
                 var language = (v.EN) ? <div className="Schedule-en">EN</div> : "";
 
                 var venue = (v.venue) ? (
@@ -159,7 +154,16 @@ export default class Schedule extends Component {
                     <div className="Schedule-main">
                       <div>{v.title}{language}</div>
                       <div className="Schedule-presenter">{v.speaker}</div>
-                      <div className="Schedule-categoryIcon" style={categoryStyle}></div>
+                      {
+                        v.category && categoryObj[v.category] ? (
+                          <div className="Schedule-categoryIcon" style={{
+                                 "background" : categoryObj[v.category].color
+                               }}
+                               title={`Toggle topic "${categoryObj[v.category].title}"`}
+                               onClick={this.toggleCategory.bind(this, categoryObj[v.category].index)}
+                               ></div>
+                        ):null
+                      }
                     </div>
                   </a>
                 )
