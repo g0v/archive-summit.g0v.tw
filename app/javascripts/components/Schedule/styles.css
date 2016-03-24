@@ -102,6 +102,7 @@ body.mobileScrollLock {
   }
   .Home-session.is-fixed {
     position: fixed;
+    height: calc(100vh - $appbar-height);
     margin-top: $appbar-height;
     box-shadow: -3px 4px 4px rgba(0,0,0,.2);
   }

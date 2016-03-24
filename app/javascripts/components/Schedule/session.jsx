@@ -11,10 +11,10 @@ export default React.createClass({
     var venue = (data.venue) ? <div className="Session-venue">{data.venue}</div> : "";
     var language = (data.EN) ? <div className="Session-en">EN</div> : "";
 
-    var bio = (data.biography) ? (
+    var bio = (data.bio) ? (
       <div className="Session-biography">
           <div className="Session-subTitle">Biography</div>
-          <div dangerouslySetInnerHTML={{__html: data.biography}}></div>
+          <div dangerouslySetInnerHTML={{__html: data.bio}}></div>
       </div>
     ): "";
     return (
@@ -31,7 +31,7 @@ export default React.createClass({
                   {data.title}
                 </div>
                 <div className="Session-presenter">
-                    {data.presenter}
+                    {data.speaker}
                 </div>
 
                 {
