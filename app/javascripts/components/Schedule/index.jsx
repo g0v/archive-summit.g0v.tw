@@ -98,24 +98,31 @@ export default class Schedule extends Component {
     const categoryObj = {}
     for(let category of categories) categoryObj[category.id] = category
 
+    const shouldPassFilter = (categoryId) => {
+      if(!filterOn) return true;
+      if(!categoryId) return false;
+      return categoryObj[categoryId] && categoryObj[categoryId].active;
+    }
+
     const mapTimeSlotToItems = (day, value, i) => {
       var itemClasses = classNames({
         "Schedule-item" : true,
-        "has-top-border" : i !== 0
       })
-
 
       var content = "";
       if(value.event){ //single event
+        if(!shouldPassFilter(value.event.category)) {
+          return null;
+        }
+
         let id = `day${day}-all-${i}`
 
         if(typeof value.event === 'string'){
-          content = <div className="Schedule-event is-last">{value.event}</div>
+          content = <div className="Schedule-event">{value.event}</div>
         }else{
           content = <a id={`slot-${id}`} href={`#${id}`}
             className={classNames({
               "Schedule-event" : true,
-              "is-last" : true,
               "is-active" : currentSession.title === value.event.title && currentSession.time === value.event.time && currentSession.venue === value.event.venue
             })}
             onClick={this.setSession.bind(this,value.event)}>
@@ -127,8 +134,8 @@ export default class Schedule extends Component {
         }
 
       }else{ //multile events
-        var filteredEvents = value.events
-        .filter(sessionItem => !filterOn || (categoryObj[sessionItem.category] && categoryObj[sessionItem.category].active))
+        let filteredEvents = value.events.filter(v => shouldPassFilter(v.category));
+        if(filteredEvents.length === 0) return null;
 
         content = (
           <div className="Schedule-events">
@@ -145,7 +152,6 @@ export default class Schedule extends Component {
                 return(
                   <a className={classNames({
                        "Schedule-event" : true,
-                       "is-last" : k === filteredEvents.length-1,
                        "is-active" : currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
                      })}
                      onClick={this.setSession.bind(this,v)}
@@ -245,11 +251,15 @@ export default class Schedule extends Component {
               </div>
               <div ref="day1" id="day1">
                 <div className="Schedule-day">5/14 (Sat.)</div>
-                {schedules[getLocale()]["day1"].filter(filterEventItem).map(mapTimeSlotToItems.bind(this, 1))}
+                <section>
+                  {schedules[getLocale()]["day1"].map(mapTimeSlotToItems.bind(this, 1))}
+                </section>
               </div>
               <div ref="day2" id="day2">
                 <div className="Schedule-day">5/15 (Sun.)</div>
-                {schedules[getLocale()]["day2"].filter(filterEventItem).map(mapTimeSlotToItems.bind(this, 2))}
+                <section>
+                  {schedules[getLocale()]["day2"].map(mapTimeSlotToItems.bind(this, 2))}
+                </section>
               </div>
             </div>
           </div>
@@ -271,13 +281,6 @@ export default class Schedule extends Component {
         })} onClick={this.resetSession} />
       </div>
     );
-    function filterEventItem(eventItem) {
-      // If there is no eventItem.event, that means it has multiple events.
-      // It will be filtered later on.
-      //
-      if(!filterOn || !eventItem.event) return true;
-      return categoryObj[eventItem.event.category] && categoryObj[eventItem.event.category].active;
-    }
   }
   componentDidMount() {
     var anchor = document.location.hash.split('#')[1] || '';
