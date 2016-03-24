@@ -43,6 +43,10 @@ export default {
         loader: 'babel',
       },
       {
+        test: /app\/fonts\//,
+        loader: 'file',
+      },
+      {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!postcss')
       },
@@ -67,7 +71,7 @@ export default {
   },
 
   plugins: [
-    new ExtractTextPlugin("[name].[hash].css"),
+    new ExtractTextPlugin("[name].[hash].css", {disable: !process.env.NODE_ENV !== 'production'}), // Disable extract-text-plugin during development for hot-reloading CSS.
     new HtmlWebpackPlugin({
       title: "啥米零時政府 g0v 2016 summit",
       jld: basic,

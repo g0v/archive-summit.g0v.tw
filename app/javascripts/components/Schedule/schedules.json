@@ -20,45 +20,11 @@
         }
       },
       {
-        "time" : "Topic",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "Power"
-          },
-          {
-            "venue" : "R0",
-            "title" : "Foundation"
-          },
-          {
-            "venue" : "R2",
-            "title" : "Construction"
-          }
-        ]
-      },
-      {
-        "time" : "Intro",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "Upgrading the organizing capacity of activism with civic tech"
-          },
-          {
-            "venue" : "R0",
-            "title" : "Global reimplementions of media, elections, governments and public decisions"
-          },
-          {
-            "venue" : "R2",
-            "title" : "Open-culture experiments with data and technology"
-          }
-        ]
-      },
-      {
         "time" : "10:00-10:30",
         "events" : [
           {
             "venue" : "R1",
-            "category" : "D",
+            "category" : "power",
             "language": "",
             "speaker": "Hoony Jang",
             "title": "How to extend Civic Tech to civic organizations (NPO, NGO, and the media) in KOREA?",
@@ -67,7 +33,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "B",
+            "category" : "foundation",
             "language": "",
             "speaker": "Charlotte Richard",
             "title": "Democracy and Civic Engagement as an Open Media ",
@@ -76,7 +42,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "A",
+            "category" : "construction",
             "language": "",
             "speaker": "Lucien Lin",
             "title": "Charging towards the Taiwan Open Government Data License",
@@ -90,7 +56,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "I",
+            "category" : "power",
             "language": "",
             "speaker": "Hsieh, Tsung Chen",
             "title": "Data For Social Good – Data-driven Charity",
@@ -99,7 +65,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "A",
+            "category" : "foundation",
             "language": "",
             "speaker": "Yantisa Akhadi",
             "title": "Government (Participatory) Mapping",
@@ -108,7 +74,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "B",
+            "category" : "construction",
             "language": "",
             "speaker": "Katarzyna Mikołajczyk",
             "title": "Cities are the key to engage citizens into open data",
@@ -126,7 +92,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "I",
+            "category" : "power",
             "language": "",
             "speaker": "Y.H. Kao",
             "title": "From .org to .g0v －Internet participant and digital challenge of NGO in Taiwan",
@@ -135,7 +101,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "C",
+            "category" : "foundation",
             "language": "",
             "speaker": "Yago Bermejo Abati",
             "title": "Digital participation strategy in Podemos party.",
@@ -144,7 +110,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "D",
+            "category" : "construction",
             "language": "",
             "speaker": "Venus Lui",
             "title": "Importance of having an Arts database in Asia",
@@ -158,7 +124,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "power",
             "language": "",
             "speaker": "Sergejus Muravjovas",
             "title": "On the Yellow Brick Road One Hundred Years Later: The Journey of Reinvention of a Classical NGO",
@@ -167,7 +133,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "B",
+            "category" : "foundation",
             "language": "",
             "speaker": "Colin Megill",
             "title": "Pol.is in Taiwan: Bridging the gap between public discourse, consultation, and policy",
@@ -176,7 +142,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "D",
+            "category" : "construction",
             "language": "",
             "speaker": "Bobby Tung",
             "title": "Do We Need Open Digital Libraries for Chinese Publication in Public Domain? and How?",
@@ -190,45 +156,11 @@
         "event" : "Lunch"
       },
       {
-        "time" : "Topic",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "Blueprint"
-          },
-          {
-            "venue" : "R0",
-            "title" : "Wiring"
-          },
-          {
-            "venue" : "R2",
-            "title" : "Scaffold"
-          }
-        ]
-      },
-      {
-        "time" : "Intro",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "Towards digital representation: A jigsaw of open government data endeavours"
-          },
-          {
-            "venue" : "R0",
-            "title" : "Intersectoral networks: Synchronizations, collaborations and demonstrations"
-          },
-          {
-            "venue" : "R2",
-            "title" : "Analyzing disasters: Data-based contingency planning"
-          }
-        ]
-      },
-      {
         "time" : "13:30-14:00",
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "blueprint",
             "language": "",
             "speaker": "Jen Bramley",
             "title": "Powering civic tech reuse with EveryPolitician data",
@@ -237,7 +169,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "D",
+            "category" : "wiring",
             "language": "",
             "speaker": "Kirby Wu",
             "title": "My Covered Life in Journalism",
@@ -246,7 +178,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "F",
+            "category" : "scaffold",
             "language": "",
             "speaker": "KNY Chen",
             "title": "EEW: Early Earthquake Warnings",
@@ -260,7 +192,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "blueprint",
             "language": "",
             "speaker": "James Mckinney",
             "title": "Civic Tech in Monitoring Legislatures: The Long Game",
@@ -269,7 +201,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "C",
+            "category" : "wiring",
             "language": "",
             "speaker": "Walkingice",
             "title": "Campaigning Experiences of a Geek",
@@ -278,7 +210,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "G",
+            "category" : "scaffold",
             "language": "",
             "speaker": "Yu-Lun Liu",
             "title": "The Past, Present and Future of Open Communicable Disease Data - Using Dengue Fever As An Example",
@@ -292,7 +224,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "I",
+            "category" : "blueprint",
             "language": "",
             "speaker": "Henare Degan",
             "title": "morph.io: the international civic tech scraping platform",
@@ -301,7 +233,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "C",
+            "category" : "wiring",
             "language": "",
             "speaker": "Jim Horng",
             "title": "Netizen and Self-Organized Movement: A Case Study with Boycott Mapping",
@@ -310,7 +242,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "E",
+            "category" : "scaffold",
             "language": "",
             "speaker": "Kuo-Yu slayer Chuang",
             "title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project",
@@ -328,7 +260,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "A",
+            "category" : "blueprint",
             "language": "",
             "speaker": "Rajib Timalsina",
             "title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
@@ -337,7 +269,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "I",
+            "category" : "wiring",
             "language": "",
             "speaker": "ipa & ETBlue",
             "title": "\"Bluepa\" Metrics and Case Studies for Interdisciplinarity: the Mystery of Openness and Interdisplinary in g0v",
@@ -346,7 +278,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "E",
+            "category" : "scaffold",
             "language": "",
             "speaker": "W.S. Jhan",
             "title": "Using OpenStreetMap to help other countries and improve foreign relations",
@@ -369,7 +301,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "I",
+            "category" : "wiring",
             "language": "",
             "speaker": "Shigeomi Shibata",
             "title": "How to spread the civic tech movement to non-techie people?",
@@ -378,7 +310,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "E",
+            "category" : "scaffold",
             "language": "",
             "speaker": "Dongpo Deng",
             "title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
@@ -435,45 +367,11 @@
         "event" : "Lunch"
       },
       {
-        "time" : "Topic",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "Supervision"
-          },
-          {
-            "venue" : "R0",
-            "title" : "Square"
-          },
-          {
-            "venue" : "R2",
-            "title" : "Ventilation"
-          }
-        ]
-      },
-      {
-        "time" : "Intro",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns"
-          },
-          {
-            "venue" : "R0",
-            "title" : "Overcoming black boxes: Wiki-manuals for open governance"
-          },
-          {
-            "venue" : "R2",
-            "title" : "Demystifying pollution: Transparency in the air"
-          }
-        ]
-      },
-      {
         "time" : "13:00-13:30",
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "supervision",
             "language": "",
             "speaker": "Billy Lin",
             "title": "The non-disclosed and opaque party-owned assets data",
@@ -482,7 +380,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "A",
+            "category" : "square",
             "language": "",
             "speaker": "Saul Peng & TonyQ",
             "title": "The Continuation of the g0v budget visualization - Taipei City Government",
@@ -491,7 +389,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "F",
+            "category" : "Ventilation",
             "language": "",
             "speaker": "Yan-Jen Su",
             "title": "Interpolation and Visualization of Air Pollution based on Wind Fields",
@@ -505,7 +403,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "E",
+            "category" : "supervision",
             "language": "",
             "speaker": "Freyja van den boom",
             "title": "Ever tried TDM and would you do it again?",
@@ -514,7 +412,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "A",
+            "category" : "square",
             "speaker": "Chia-hua Lu",
             "title": "Government x Civil Society x Internet x Deliberation\nObservations and Reflections of a Mediator",
             "bio": "(TBC)",
@@ -522,7 +420,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "E",
+            "category" : "Ventilation",
             "language": "",
             "speaker": "Liz Barry",
             "title": "Community science for healthy environments",
@@ -540,7 +438,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "supervision",
             "language": "",
             "speaker": "Nanang Syaifudin",
             "title": "True Story: Public e-Participatory for Election Monitoring (MataMassa or PublicEye)",
@@ -549,7 +447,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "B",
+            "category" : "square",
             "language": "",
             "speaker": "JK Suh",
             "title": "The Korean General Election and VAAs: the case of \"Ping\"",
@@ -558,7 +456,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "F",
+            "category" : "Ventilation",
             "language": "",
             "speaker": "S.H. Hung / H.W Tseng",
             "title": "Environment data transparency for cross-strait applications",
@@ -572,7 +470,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "supervision",
             "language": "",
             "speaker": "Nicholas Doiron",
             "title": "NodeJS in Naypyitaw: Opening Election Data in Myanmar Election",
@@ -581,7 +479,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "B",
+            "category" : "square",
             "language": "",
             "speaker": "Johnny Lo",
             "title": "Voter's Guide for Legislators and Council Members",
@@ -590,7 +488,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "F",
+            "category" : "Ventilation",
             "language": "",
             "speaker": "Chung-pei Pien",
             "title": "From infrastructure to applications\nLinking through g0v - a case study on the environmental agency and company registration data",
@@ -652,45 +550,11 @@
         }
       },
       {
-        "time" : "Topic",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "動力"
-          },
-          {
-            "venue" : "R0",
-            "title" : "地基"
-          },
-          {
-            "venue" : "R2",
-            "title" : "骨架"
-          }
-        ]
-      },
-      {
-        "time" : "Intro",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "公民科技時代，運動組織的馬力再升級"
-          },
-          {
-            "venue" : "R0",
-            "title" : "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐"
-          },
-          {
-            "venue" : "R2",
-            "title" : "從資料科技與文化領域出發的開放實驗"
-          }
-        ]
-      },
-      {
         "time" : "10:00-10:30",
         "events" : [
           {
             "venue" : "R1",
-            "category" : "D",
+            "category" : "power",
             "language": "",
             "speaker": "Hoony Jang",
             "title": "韓國經驗：如何推展公民科技到公民組織（NPO, NGO, 與媒體）",
@@ -699,7 +563,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "B",
+            "category" : "foundation",
             "language": "",
             "speaker": "Charlotte Richard",
             "title": "民主與公民參與之開放媒體",
@@ -708,7 +572,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "A",
+            "category" : "construction",
             "language": "",
             "speaker": "Lucien Lin",
             "title": "進擊的台灣政府資料開放授權條款",
@@ -722,7 +586,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "I",
+            "category" : "power",
             "language": "",
             "speaker": "謝宗震",
             "title": "Data For Social Good – 由資料驅動的公益新浪潮",
@@ -731,7 +595,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "A",
+            "category" : "foundation",
             "language": "",
             "speaker": "Yantisa Akhadi",
             "title": "政府 (也參加) 畫地圖",
@@ -740,7 +604,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "B",
+            "category" : "construction",
             "language": "",
             "speaker": "Katarzyna Mikołajczyk",
             "title": "城市就是從事公民參與開放資料的關鍵",
@@ -758,7 +622,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "I",
+            "category" : "power",
             "language": "",
             "speaker": "高英勛",
             "title": "從 .org 到 .g0v － 台灣NGO的網路參與與數位挑戰",
@@ -767,7 +631,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "C",
+            "category" : "foundation",
             "language": "",
             "speaker": "Yago Bermejo Abati",
             "title": "Podemos 黨的網路參與策略",
@@ -776,7 +640,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "D",
+            "category" : "construction",
             "language": "",
             "speaker": "Venus Lui",
             "title": "建立亞洲藝術資料庫的重要性",
@@ -790,7 +654,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "power",
             "language": "",
             "speaker": "Sergejus Muravjovas",
             "title": "一百年後走黃磚路：重塑傳統非政府組織之旅",
@@ -799,7 +663,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "B",
+            "category" : "foundation",
             "language": "",
             "speaker": "Colin Megill",
             "title": "Pol.is 在台灣: 跨越鴻溝之公共談論、意見徵求與政策",
@@ -808,7 +672,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "D",
+            "category" : "construction",
             "language": "",
             "speaker": "董福興",
             "title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
@@ -822,45 +686,11 @@
         "event" : "午餐"
       },
       {
-        "time" : "Topic",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "藍圖"
-          },
-          {
-            "venue" : "R0",
-            "title" : "配線"
-          },
-          {
-            "venue" : "R2",
-            "title" : "鷹架"
-          }
-        ]
-      },
-      {
-        "time" : "Intro",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "拼湊政府公開資料的圖像，數位代議民主的轉型與未來"
-          },
-          {
-            "venue" : "R0",
-            "title" : "同步、協作與進擊，打造跨界群眾串連的神經網絡"
-          },
-          {
-            "venue" : "R2",
-            "title" : "剖析災變，以數據力支援的智慧應變方案"
-          }
-        ]
-      },
-      {
         "time" : "13:30-14:00",
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "blueprint",
             "language": "",
             "speaker": "Jen Bramley",
             "title": "用 EveryPolitician 的資料，來增進公民科技重用",
@@ -869,7 +699,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "D",
+            "category" : "wiring",
             "language": "",
             "speaker": "Kirby Wu",
             "title": "媒體無間道 — 我在新聞界臥底的日子",
@@ -878,7 +708,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "F",
+            "category" : "scaffold",
             "language": "",
             "speaker": "陳坤助",
             "title": "強震即時警報 EEW",
@@ -892,7 +722,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "blueprint",
             "language": "",
             "speaker": "James Mckinney",
             "title": "公民科技監督國會：長久之計",
@@ -901,7 +731,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "C",
+            "category" : "wiring",
             "language": "",
             "speaker": "Walkingice",
             "title": "鍵盤宅的輔選經驗談",
@@ -910,7 +740,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "G",
+            "category" : "scaffold",
             "language": "",
             "speaker": "劉宇倫",
             "title": "傳染病開放資料過去、現在、未來-以登革熱為例",
@@ -924,7 +754,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "I",
+            "category" : "blueprint",
             "language": "",
             "speaker": "Henare Degan",
             "title": "morph.io: 國際公民科技社群建立的資料抓取平台",
@@ -933,7 +763,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "C",
+            "category" : "wiring",
             "language": "",
             "speaker": "Jim Horng",
             "title": "從滅頂秒退地圖看網路世代無組織社運",
@@ -942,7 +772,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "E",
+            "category" : "scaffold",
             "language": "",
             "speaker": "Kuo-Yu slayer Chuang",
             "title": "ICT 與群眾外包的災難適應力，亞洲開發銀行的案例研究",
@@ -960,7 +790,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "A",
+            "category" : "blueprint",
             "language": "",
             "speaker": "Rajib Timalsina",
             "title": "開源數位平臺，跨越尼泊爾公民與地方政府間的鴻溝",
@@ -969,7 +799,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "I",
+            "category" : "wiring",
             "language": "",
             "speaker": "ipa & ETBlue",
             "title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
@@ -978,7 +808,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "E",
+            "category" : "scaffold",
             "language": "",
             "speaker": "詹為翔",
             "title": "開放街圖在外交援助計畫上的應用",
@@ -1001,7 +831,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "I",
+            "category" : "wiring",
             "language": "",
             "speaker": "柴田 重臣",
             "title": "如何讓推廣公民科技給非技術宅？",
@@ -1010,7 +840,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "E",
+            "category" : "scaffold",
             "language": "",
             "speaker": "Dongpo Deng",
             "title": "OpenStreetMap 與 LocalWiki 的整合：支援社區層級災害系統管理",
@@ -1066,45 +896,11 @@
         "event" : "午餐"
       },
       {
-        "time" : "Topic",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "監工"
-          },
-          {
-            "venue" : "R0",
-            "title" : "廣場"
-          },
-          {
-            "venue" : "R2",
-            "title" : "空調"
-          }
-        ]
-      },
-      {
-        "time" : "Intro",
-        "events": [
-          {
-            "venue" : "R1",
-            "title" : "當監督政府成為全民義務，亞洲網路草根民主的進化論"
-          },
-          {
-            "venue" : "R0",
-            "title" : "走出黑箱，開放政府的全民共筆指南"
-          },
-          {
-            "venue" : "R2",
-            "title" : "破解環境污染密碼，開源釋出好空氣"
-          }
-        ]
-      },
-      {
         "time" : "13:00-13:30",
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "supervision",
             "language": "",
             "speaker": "林雨蒼",
             "title": "不開放、不透明的黨產開放資料",
@@ -1113,7 +909,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "A",
+            "category" : "square",
             "language": "",
             "speaker": "Saul Peng & 王景弘",
             "title": "g0v 預算視覺化後續 - 臺北市經驗",
@@ -1122,7 +918,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "F",
+            "category" : "Ventilation",
             "language": "",
             "speaker": "蘇彥禎",
             "title": "空污資料搭配風場的內插與視覺化",
@@ -1136,7 +932,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "E",
+            "category" : "supervision",
             "language": "",
             "speaker": "Freyja van den boom",
             "title": "告別文字擷取與資料探勘的痛苦: FutureTDM",
@@ -1145,7 +941,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "A",
+            "category" : "square",
             "speaker": "呂家華",
             "title": "政府 x 民間 x 網路 x 審議\n一個中介者的觀察與思考",
             "bio": "(TBC)",
@@ -1153,7 +949,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "E",
+            "category" : "Ventilation",
             "language": "",
             "speaker": "Liz Barry",
             "title": "社區科學與健康的環境",
@@ -1171,7 +967,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "supervision",
             "language": "",
             "speaker": "Nanang Syaifudin",
             "title": "真實案例：監票數位參與 (MataMassa \"公眾之眼\")",
@@ -1180,7 +976,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "B",
+            "category" : "square",
             "language": "",
             "speaker": "JK Suh",
             "title": "韓國大選與投票建議指南: \"Ping\"",
@@ -1189,7 +985,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "F",
+            "category" : "Ventilation",
             "language": "",
             "speaker": "洪申翰, 曾虹文",
             "title": "綠盟兩岸環境資料透明與再應用專案",
@@ -1203,7 +999,7 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "B",
+            "category" : "supervision",
             "language": "",
             "speaker": "Nicholas Doiron",
             "title": "在奈比多用 NodeJS：緬甸選舉資料開放",
@@ -1212,7 +1008,7 @@
           },
           {
             "venue" : "R0",
-            "category" : "B",
+            "category" : "square",
             "language": "",
             "speaker": "駱勁成",
             "title": "立委／議員投票指南",
@@ -1221,7 +1017,7 @@
           },
           {
             "venue" : "R2",
-            "category" : "F",
+            "category" : "Ventilation",
             "language": "",
             "speaker": "卞中佩",
             "title": "從基礎工程到應用工程\ng0v資料與其它資料庫的整併及後續應用 ─ 以環保署污染源與公司結構資料為例",

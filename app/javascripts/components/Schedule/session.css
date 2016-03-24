@@ -1,0 +1,135 @@
+$breakpoint: 1000px;
+
+:global {
+.Session {
+  background: white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+.Session a, .Session a:visited{
+  color: rgb(153,155,154);
+
+}
+.Session p {
+  white-space: pre-wrap;
+}
+.Session-close {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 44px;
+  cursor: pointer;
+}
+.Session-close:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: '';
+}
+.Session-close:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  content: '';
+}
+.Session-close:before, .Session-close:after {
+  -webkit-transition: background .3s;
+  transition: background .3s;
+  width: 18px;
+  height: 1px;
+  top: 30px;
+  left: 30px;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -1px;
+  background: gray;
+
+}
+.Session-close:hover:before, .Session-close:hover:after {
+  background: rgb(53,55,54);
+}
+.Session-content {
+    padding: 20px;
+    line-height: 1.6;
+    background: white;
+}
+@media screen and (min-width: $breakpoint){
+    .Session-close{
+      left: 20px;
+      top: 20px;
+    }
+    .Session-content {
+      padding: 40px;
+      max-width: 40em; /* Don't make text too long & difficult to read */
+    }
+}
+.Session-meta {
+  font-size: 14px;
+}
+.Session-time {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+.Session-venue {
+  display: inline-block;
+  padding: 1px 6px;
+  margin-right: 10px;
+  color: gray;
+  background: rgb(220,220,220);
+  border-radius: 4px;
+}
+.Session-en {
+  display: inline-block;
+  background: rgb(207,43,43);
+ /* rgb(213,62,79);*/
+  color: white;
+  padding: 0 4px ;
+}
+
+.Session-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #CB0031;
+
+  position: relative;
+  margin-top: 20px;
+}
+.Session-subTitle {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(53,55,54);
+}
+.Session-presenter {
+  color: rgb(55,54,53);
+}
+
+.Session-category {
+  position: relative;
+  vertical-align: top;
+  font-size: 14px;
+  color: rgb(80,80,80);
+  margin-top: 20px;
+}
+.Session-categoryIcon {
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
+  vertical-align: top;
+  margin-top: 5px;
+  margin-right: 6px;
+  border-radius: 2px;
+}
+
+.Session-abstract {
+  margin: 20px 0;
+  color: rgb(53,55,54);
+}
+.Session-biography {
+  margin: 20px 0;
+  color: rgb(53,55,54);
+}
+}

@@ -2,170 +2,298 @@ import React, { Component } from "react";
 import { Link } from "react-router";
 import { getLocale } from "javascripts/locale";
 import schedules from './schedules.json';
-import lightbox from "./lightbox.json";
+import categoriesData from './categories.json';
 import styles from "./styles.css";
-import Table from "../Table";
+import Filter from "./filter";
+import Session from './session';
+import classNames from "classnames";
+import classNamesBind from "classnames/bind";
+
+const cx = classNamesBind.bind(styles)
 
 export default class Schedule extends Component {
   state = {
-    talkID: '',
-    heading: '',
-    speaker: '',
-    content: '',
-    bio: ''
+    showPanel: false,
+    showSession: false,
+    categoryOn: false,
+    categories: categoriesData[getLocale()].map((cat, index) => ({...cat, index})),
+    currentSession: {},
+    currentSessionTime: null,
   };
   defaultTitle = document.title;
 
-  showLightBox(id = '', heading = '', speaker = '', content = '', bio = '') {
-    this.state.showLightbox = true;
-    this.setState({
-      talkID: id,
-      heading, speaker, content, bio
-    });
+  constructor() {
+    super()
+
+    this.togglePanel = this.togglePanel.bind(this)
+    this.toggleCategory = this.toggleCategory.bind(this)
+    this.clearCategory = this.clearCategory.bind(this)
+    this.resetSession = this.resetSession.bind(this)
   }
-  hideLightBox(id = '', heading = '', speaker = '', content = '', bio = '') {
-    this.state.showLightbox = false;
-    this.setState({
-      talkID: id,
-      heading, speaker, content, bio
-    });
+
+  togglePanel() { // mobile filter
+    this.setState({showPanel: !this.state.showPanel})
   }
+
+  toggleCategory(index, e) {
+    e.stopPropagation();
+    var current = this.state.categories.slice(0);
+    current[index] = Object.assign({}, current[index], {active: !current[index].active})
+
+    var sum = current.reduce((pre, current)=>{
+        if(current.active){
+           return pre + 1;
+        }else{
+           return pre;
+        }
+    },0);
+    var categoryOn = (sum > 0);
+
+    this.setState({
+        categories: current,
+        categoryOn: categoryOn
+    })
+  }
+
+  setSession(value, time) {
+    this.setState({
+      showSession: true,
+      currentSession: value,
+      currentSessionTime: time,
+    })
+
+    document.body.classList.add(styles.mobileScrollLock);
+  }
+
+  resetSession() {
+    this.setState({
+      showSession: false,
+      currentSession: {},
+      currentSessionTime: null,
+    })
+    document.body.classList.remove(styles.mobileScrollLock);
+  }
+
+  clearCategory(){
+    var current = this.state.categories.map((value,i)=>{
+      return {
+        ...value,
+        active: false
+      }
+    });
+
+    this.setState({
+      categories: current,
+      categoryOn: false
+    })
+
+  }
+
+  goToElement(refName){
+    var node = this.refs[refName].getDOMNode();
+    // this.props.goToElementHandler(node.offsetTop);
+    console.log(`TODO: animate to ${refName}`)
+  }
+
   render() {
-    var onclick = (event) => (e) => {
-      e.preventDefault();
-      var id = e.currentTarget.href.split('#')[1] || '';
-      history.replaceState({}, event.title, `#${id}`);
-      this.showLightBox(id, event.title, event.speaker, event.abstract, event.bio)
+    const {categoryOn: filterOn, currentSession, showSession, categories, showPanel} = this.state
+
+    const categoryObj = {}
+    for(let category of categories) categoryObj[category.id] = category
+
+    const shouldPassFilter = (categoryId) => {
+      if(!filterOn) return true;
+      if(!categoryId) return false;
+      return categoryObj[categoryId] && categoryObj[categoryId].active;
     }
 
-    const day1 = schedules[getLocale()]["day1"].map((it, i) => {
-      if (!it.events) {
-        if (it.event.title) {
-          return { colSpan: 3, time: it.time, event: (
-            <Slot
-              id={"day1-all-"+i}
-              speaker={it.event.speaker}
-              title={it.event.title}
-              onClick={onclick(it.event)}
-            />,
-          ) };
+    const mapTimeSlotToItems = (day, value, i) => {
+      var itemClasses = classNames({
+        "Schedule-item" : true,
+      })
+
+      var content = "";
+      if(value.event){ //single event
+        if(!shouldPassFilter(value.event.category)) {
+          return null;
         }
-        return { colSpan: 3, time: it.time, event: it.event };
+
+        let id = `day${day}-all-${i}`
+
+        if(typeof value.event === 'string'){
+          content = <div className="Schedule-event">{value.event}</div>
+        }else{
+          content = <a id={`slot-${id}`} href={`#${id}`}
+            className={classNames({
+              "Schedule-event" : true,
+              "is-active" : currentSession.title === value.event.title && currentSession.time === value.event.time && currentSession.venue === value.event.venue
+            })}
+            onClick={this.setSession.bind(this, value.event, value.time)}>
+            <div className="Schedule-main">
+              {value.event.title}
+              <div className="Schedule-presenter">{value.event.speaker}</div>
+            </div>
+          </a>;
+        }
+
+      }else{ //multile events
+        let filteredEvents = value.events.filter(v => shouldPassFilter(v.category));
+        if(filteredEvents.length === 0) return null;
+
+        content = (
+          <div className="Schedule-events">
+            {
+              filteredEvents.map((v,k)=>{
+                var language = (v.EN) ? <div className="Schedule-en">EN</div> : "";
+
+                var venue = (v.venue) ? (
+                        <div className="Schedule-meta">
+                          <div className="Schedule-venue">{v.venue}</div>
+                        </div>) : "";
+                var id = `day${day}-${v.venue.toLowerCase()}-${i}`;
+
+                return(
+                  <a className={classNames({
+                       "Schedule-event" : true,
+                       "is-active" : currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
+                     })}
+                     onClick={this.setSession.bind(this,v, value.time)}
+                     href={`#${id}`} key={k} id={`slot-${id}`}>
+                    {venue}
+                    <div className="Schedule-main">
+                      <div>{v.title}{language}</div>
+                      <div className="Schedule-presenter">{v.speaker}</div>
+                      {
+                        v.category && categoryObj[v.category] ? (
+                          <div className="Schedule-categoryIcon" style={{
+                                 "background" : categoryObj[v.category].color
+                               }}
+                               title={`Toggle topic "${categoryObj[v.category].title}"`}
+                               onClick={this.toggleCategory.bind(this, categoryObj[v.category].index)}
+                               ></div>
+                        ):null
+                      }
+                    </div>
+                  </a>
+                )
+              })
+            }
+          </div>
+        );
       }
 
-      return {
-        time: it.time,
-        r1: (
-          <Slot
-            id={"day1-r1-"+i}
-            speaker={it.events[0].speaker}
-            title={it.events[0].title}
-            onClick={onclick(it.events[0])}
-          />),
-        r0: (
-          <Slot
-            id={"day1-r0-"+i}
-            speaker={it.events[1].speaker}
-            title={it.events[1].title}
-            onClick={onclick(it.events[1])}
-          />),
-        r2: (
-          <Slot
-            id={"day1-r2-"+i}
-            speaker={it.events[2].speaker}
-            title={it.events[2].title}
-            onClick={onclick(it.events[2])}
-          />),
-      };
-    });
+      let [timeStart, timeEnd] = value.time.split('-')
+      return (
+        <div className={itemClasses}
+             key={i}>
+          <div className="Schedule-time">
+            {timeStart}<span className="Schedule-timeEnd"> - {timeEnd}</span>
+          </div>
+          {content}
+        </div>
+      )
+    }
 
-    const day2 = schedules[getLocale()]["day2"].map((it, i) => {
-      if (!it.events) {
-        if (it.event.title) {
-          return { colSpan: 3, time: it.time, event: (
-            <Slot
-              id={"day2-all-"+i}
-              speaker={it.event.speaker}
-              title={it.event.title}
-              onClick={onclick(it.event)}
-            />,
-          ) };
-        }
-        return { colSpan: 3, time: it.time, event: it.event };
-      }
-
-      return {
-        time: it.time,
-        r1: (
-          <Slot
-            id={"day2-r1-"+i}
-            speaker={it.events[0].speaker}
-            title={it.events[0].title}
-            onClick={onclick(it.events[0])}
-          />),
-        r0: (
-          <Slot
-            id={"day2-r0-"+i}
-            speaker={it.events[1].speaker}
-            title={it.events[1].title}
-            onClick={onclick(it.events[1])}
-          />),
-        r2: (
-          <Slot
-            id={"day2-r2-"+i}
-            speaker={it.events[2].speaker}
-            title={it.events[2].title}
-            onClick={onclick(it.events[2])}
-          />),
-      };
-    });
+    const filterStyle = {}
+    const sessionStyle = {}
 
     return (
       <div className={styles.root}>
-        <h2 className={styles.header}>{multilineText(schedules[getLocale()].header)}</h2>
-        <section className={styles.section}>
-          <h3 id="day1"><a href="#day1">Day 1</a></h3>
-          <Table
-            className={styles.table}
-            model={Model}
-            source={day1}
-          />
-          <h3 id="day2"><a href="#day2">Day 2</a></h3>
-          <Table
-            className={styles.table}
-            model={Model}
-            source={day2}
-          />
-          {
-            do {
-              if (this.state.talkID) {
-                <LightBox
-                  id={this.state.talkID}
-                  heading={this.state.heading}
-                  speaker={this.state.speaker}
-                  content={this.state.content}
-                  bio={this.state.bio}
-                  toggle={() => {
-                    history.replaceState({}, this.defaultTitle, '#');
-                    this.hideLightBox()
-                  }}
-                />
-              }
-            }
-          }
-        </section>
+        <div className={styles.container}>
+          <div className={classNames({
+            "Home-filter": true,
+            "is-fixed": false,
+          })} style={filterStyle}>
+            <Filter data={categories}
+                    filterOn={filterOn}
+                    toggleCategoryHandler={this.toggleCategory}
+                    clearCategoryHandler={this.clearCategory}/>
+          </div>
+          <div className={classNames({
+            "Home-schedule": true,
+            "with-session" : showSession,
+          })}>
+            <div className={`Schedule`}>{/* todo: is-fixed */}
+              <div className={classNames({
+                  "Schedule-title" : true,
+                  "with-session" : showSession,
+                  "without-session" : !showSession
+                  /*"is-fixed" : inScheduleArea==="within" || (inScheduleArea==="passed" && showPanel),*/
+                })}>
+                <div className="Schedule-dayButtonLeftstop">
+                  <div className={classNames({
+                         "Schedule-dayButton" : true,
+                         /* "is-active" : currentSection === "day1" */
+                       })}
+                       onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
+                </div>
+                <div className={classNames({
+                       "Schedule-dayButton" : true,
+                       /* "is-active" : currentSection === "day2" */
+                     })}
+                     onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
+                <div className={classNames({
+                       'Schedule-filterBtn': true,
+                       'is-show': showPanel,
+                     })}
+                     onClick={this.togglePanel}>Filter
+                  <div className={classNames({'Schedule-bar1': true, 'is-active': showPanel})}></div>
+                  <div className={classNames({'Schedule-bar2': true, 'is-active': showPanel})}></div>
+                </div>
+              </div>
+              <div className={classNames({
+                'Schedule-filterPanel': true,
+                'is-show': showPanel,
+              })}>
+                <Filter ref="filter"
+                        data={categories}
+                        filterOn={filterOn}
+                        toggleCategoryHandler={this.toggleCategory}
+                        clearCategoryHandler={this.clearCategory}
+                        togglePanelHander={this.togglePanel}/>
+              </div>
+              <div ref="day1" id="day1">
+                <div className="Schedule-day">5/14 (Sat.)</div>
+                <section>
+                  {schedules[getLocale()]["day1"].map(mapTimeSlotToItems.bind(this, 1))}
+                </section>
+              </div>
+              <div ref="day2" id="day2">
+                <div className="Schedule-day">5/15 (Sun.)</div>
+                <section>
+                  {schedules[getLocale()]["day2"].map(mapTimeSlotToItems.bind(this, 2))}
+                </section>
+              </div>
+            </div>
+          </div>
+          <div className={classNames({
+              "Home-session" : true,
+              "is-show": showSession,
+              "is-fixed": true,
+            })}
+            style={sessionStyle}>
+            <Session sessionHandler={this.resetSession}
+                     data={currentSession} time={this.state.currentSessionTime}
+                     categories={this.state.categories}/>
+          </div>
+
+        </div>
+        <div className={cx({
+          backdrop: true,
+          isShown: showSession,
+        })} onClick={this.resetSession} />
       </div>
     );
   }
   componentDidMount() {
     var anchor = document.location.hash.split('#')[1] || '';
-    var node = document.getElementById(anchor);
+    var node = document.getElementById(`slot-${anchor}`);
     if (node && node.click) { node.click(); }
   }
+  componentWillUnmount() {
+    document.body.classList.remove(styles.mobileScrollLock);
+  }
 };
-{/*<button className={styles.lightboxbutton} onClick={this.closeLightBox.bind(this)}>{lightbox[getLocale()].close}</button>*/}
-//
-  // <button className={styles.lightboxclose} onClick={this.closeLightBox.bind(this)}>x</button>
 
 var multilineText = (text) => {
   var arr = text.split('\n');
@@ -175,51 +303,4 @@ var multilineText = (text) => {
     ret.push(line);
   }
   return ret;
-}
-
-const LightBox = ({id, heading, speaker, content, bio, toggle }) => {
-  return (
-    <div>
-      <div className={styles.lightboxwrap}>
-        <div className={styles.lightboxcontainer}>
-          <div className={styles.lightboxheading}>
-            <h3 className={styles.lightboxTitle}>{heading}<br/>{speaker}</h3>
-          </div>
-          <h4>{lightbox[getLocale()].abstract}</h4>
-          <div dangerouslySetInnerHTML={{__html: content}} />
-          <h4>{lightbox[getLocale()].bio}</h4>
-          <div dangerouslySetInnerHTML={{__html: bio}} />
-          <button className={styles.lightboxbutton} onClick={toggle}>{lightbox[getLocale()].close}</button>
-        </div>
-        <button className={styles.lightboxclose} onClick={toggle}>x</button>
-      </div>
-    </div>
-  );
-}
-const Slot = ({id, title, speaker, onClick}) => {
-  return (
-    <a href={`#${id}`} id={`slot-${id}`} className={styles.slot} onClick={onClick}>
-      <div className={styles.slotTitle}>{multilineText(title)}</div>
-      <div>{speaker}</div>
-    </a>
-  );
-}
-
-const Model = {
-  time: {
-    label: "Time",
-    type: String,
-  },
-  r1: {
-    label: "R1",
-    type: React.PropTypes.node,
-  },
-  r0: {
-    label: "R0",
-    type: React.PropTypes.node,
-  },
-  r2: {
-    label: "R2",
-    type: React.PropTypes.node,
-  }
 }

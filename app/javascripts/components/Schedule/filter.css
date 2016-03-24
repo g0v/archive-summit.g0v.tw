@@ -1,0 +1,97 @@
+$breakpoint: 1000px;
+$mobile-padding: 16px;
+$desktop-padding: 20px;
+
+.filter {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.filterTitle {
+  padding: $mobile-padding;
+  background: white;
+  border-bottom: 1px solid gray;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.filterCategories {
+  padding: $mobile-padding 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+.filterCategory {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 $mobile-padding;
+  height: 36px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.filterCategoryIcon {
+  border-radius: 4px;
+  width: 18px; height: 18px;
+  border: 2px solid #333;
+  margin-right: 18px;
+  transition: background .3s;
+}
+.filterActions {
+  padding: $mobile-padding;
+  font-size: 14px;
+}
+.filterClose {
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.filterComplete:hover{
+  color: rgb(50,53,52);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.filterClearAll {
+  cursor: pointer;
+  text-decoration: underline;
+  color: transparent;
+  display: inline-block;
+}
+.filterClearAll.isActive {
+  color: rgb(120,120,120);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.filterClearAll.isActive:hover{
+  color: rgb(50,53,52);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@media screen and (min-width: $breakpoint) {
+  .filterClose {
+    display: none;
+  }
+  .filterTitle {
+    font-size: 20px;
+    padding: $desktop-padding 0;
+  }
+  .filterCategories {
+    padding: 18px 0;
+  }
+  .filterCategory {
+    height: 48px;
+    font-size: 16px;
+    flex-basis: 100%;
+    padding: 0;
+  }
+  .filterCategoryIcon {
+    width: 22px; height: 22px;
+  }
+  .filterActions {
+    font-size: 16px;
+    padding: 0;
+  }
+}

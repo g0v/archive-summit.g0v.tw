@@ -1,109 +1,399 @@
+$breakpoint: 1000px;
+$container-width: 1000px;
+$appbar-height: 60px;
+
 .root {
   background: #FFFFFF;
   box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
-  text-align: center;
-  padding-bottom: 103px;
-  color: #000;
+  position: relative; /* For backdrop */
+  lost-utility: clearfix;
 }
 
-.section {
-  width: 100%;
-  padding-left: 29px;
-  padding-right: 29px;
-}
-.section > h3 {
-  margin-top: -70px;
-  padding-top: 70px;
-}
-.section h3 a:visited {
-  color: #000;
+.backdrop {
+  background: rgba(255, 255, 255, .5);
+  position: absolute;
+  top: 0; right: 50%; bottom: 0; left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .2s;
 }
 
-.table {
-  max-width: 100%;
-  overflow: auto;
-  margin-bottom: 40px;
-}
-.table td a {
-  color: #000;
-  text-decoration: none;
-}
-.table th:nth-of-type(n+2) {
-  width: 30%;
-}
-.table td:nth-of-type(1) {
-  font-family: monospace;
+.backdrop.isShown {
+  opacity: 1;
+  z-index: 5;
 }
 
-.slot {
-  cursor: pointer;
+.container {
+  max-width: $container-width;
+  position: relative; /* For absolute-positioned filter */
+  margin: 0 auto;
 }
 
-.lightboxwrap {
+body.mobileScrollLock {
+  overflow: hidden;
+}
+
+@media screen and (min-width: $breakpoint) {
+  body.mobileScrollLock {
+    overflow: auto;
+  }
+}
+
+/* Stuff directly stolen from coscup... :P */
+:global {
+
+.Home-filter {
+  display: none;
+}
+.Home-session {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  z-index: 999;
-}
-
-.lightboxwrap:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  width: 0;
-}
-
-.lightboxcontainer {
-  display: inline-block;
-  vertical-align: middle;
-  height: auto;
-  max-height: 90%;
-  width: 70%;
-  background-color: #fff;
-  text-align: justify;
-  padding: 20px;
-  word-wrap: break-word;
+  width: 100%;
   overflow-y: auto;
+  transition: transform .2s cubic-bezier(.4,0,.2,1);
+  z-index: 200;
+  transform: translate3d(100%, 0, 0);
+}
+.Home-session.is-show, .Home-session.is-show.is-fixed {
+  transform: translate3d(0, 0, 0);
 }
 
-.lightboxheading {
-  display: block;
-  font-style: bold;
-  text-align: center;
+@media screen and (min-width: $breakpoint){
+  $left-filter-width: 240px;
+
+  .Home-filter {
+    width: $left-filter-width;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .Home-filter.is-fixed {
+    position: fixed;
+  }
+  .Home-filter.is-passed {
+    position: absolute;
+    /* top dynamically decided*/
+  }
+  .Home-schedule {
+    margin-left: $left-filter-width;
+    border-left: 1px solid gray;
+    position: relative; /* make z-index work */
+    z-index: 10;
+    transition: transform .2s cubic-bezier(.4,0,.2,1);
+    transform: translate3d(0,0,0);
+  }
+  .Home-schedule.with-session {
+    transform: translate3d(calc(36px - $left-filter-width),0,0);
+  }
+  .Home-session {
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    overflow-y: auto;
+    transition-property: opacity, transform;
+  }
+  .Home-session.is-show {
+    opacity: 1;
+  }
+  .Home-session.is-fixed {
+    position: fixed;
+    margin-top: $appbar-height;
+    box-shadow: -3px 4px 4px rgba(0,0,0,.2);
+  }
 }
 
-.lightboxTitle { /* .slotTitle */
-  white-space: pre;
+.Schedule {
+  min-height: 100vh;
+  position: relative;
+  background: white;
+  z-index: 10;
 }
-
-.lightboxbutton {
-  display: block;
-  margin: 20px auto;
-  padding: 3px 4px;
-  width: 80px;
-  text-align: center;
-  border: 1px solid black;
-  text-decoration: none;
-  color: #000;
-  background-color: #ccc;
+.Schedule.is-fixed {
+  padding-top: 56px;
 }
-
-.lightboxclose {
-  line-height: 30px;
-  color: #fff;
-  font-size: 30px;
-  position: absolute;
+.Schedule-title {
+  background: white;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  z-index: 20;
+  display: flex;
+}
+.Schedule-title.is-fixed {
+  position: fixed;
   top: 0;
-  right: 8px;
-  border: 0;
-  background: none;
-  outline: none;
-  box-shadow: none;
-  cursor: 'pointer';
-  text-decoration: none;
+
+  transition: all .2s cubic-bezier(.4,0,.2,1);
 }
+@media screen and (min-width: 776px) and (max-width: 1236px){
+  .Schedule-title {
+    background: white;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    z-index: 20;
+
+  }
+  .Schedule-title.is-fixed {
+    position: fixed;
+    top: 0;
+    max-width: calc(50% - 2px);
+
+    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
+    transition: all .2s cubic-bezier(.4,0,.2,1);
+  }
+
+}
+@media screen and (min-width: $breakpoint){
+  .Schedule-title {
+    background: white;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    z-index: 20;
+  }
+  .Schedule-title.is-fixed.without-session {
+    left: 361px;
+
+    position: fixed;
+    top: 0;
+    max-width: 548px;
+
+    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
+    transition: all .2s cubic-bezier(.4,0,.2,1);
+    will-change: left;
+  }
+  .Schedule-title.is-fixed.with-session {
+    left: 161px;
+
+    position: fixed;
+    top: 0;
+    max-width: 548px;
+
+    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
+    transition: all .2s cubic-bezier(.4,0,.2,1);
+    will-change: left;
+  }
+}
+
+/* FILTER */
+.Schedule-filterBtn {
+  color: rgb(80,80,80);
+  align-self: center;
+  text-align: center;
+  line-height: 56px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-right: 8px;
+
+  position: relative; /* for bar1 and bar2 */
+}
+.Schedule-filterBtn:hover {
+  color: rgb(53,55,54);
+}
+.Schedule-filterBtn.is-show {
+  color: transparent; /* Hide "Filter" button text when filter is shown */
+}
+
+.Schedule-bar1, .Schedule-bar2 {
+  content: '';
+  border-top: 2px solid transparent;
+  position: absolute;
+  top: 28px;
+  width: 40px;
+  left: 8px;
+  transform: rotate(0deg);
+}
+
+.Schedule-bar1.is-active, .Schedule-bar2.is-active {
+  content: '';
+  border-color: rgb(213,62,79);
+  transition: transform .3s cubic-bezier(.4,0,.2,1);
+}
+
+.Schedule-bar1.is-active {
+  transform: rotate(45deg);
+}
+.Schedule-bar2.is-active {
+  transform: rotate(-45deg);
+}
+
+.Schedule-filterPanel {
+  max-height: 0px;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all .2s cubic-bezier(0, 1, 0.5, 1);
+}
+.Schedule-filterPanel.is-show {
+  max-height: calc(100vh - 80px);
+}
+.Schedule-filterPanel.is-show.is-fixed {
+  position: fixed;
+  top: 57px;
+  z-index: 200;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 2px 2px 0 rgba(0,0,0,.22);
+}
+
+@media screen and (min-width: $breakpoint){
+  /* No filterButton and filterPanel on desktop */
+  .Schedule-filterBtn {
+    display: none;
+  }
+
+  .Schedule-filterPanel.is-show.is-show { /* specificity override .is-show.is-fixed */
+     display: none;
+  }
+}
+
+/* ===================== */
+
+$category-icon-size: 16px;
+$mobile-padding: 16px;
+$mobile-item-leftstop: 96px;
+
+.Schedule-dayButtonLeftstop {
+  width: calc($mobile-item-leftstop - $mobile-padding);
+}
+.Schedule-dayButton {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: $mobile-padding;
+  cursor: pointer;
+  margin-right: auto;
+}
+.Schedule-dayButton:hover, .Schedule-dayButton.is-active {
+  color: rgb(68,210,143);
+  text-decoration: underline;
+}
+.Schedule-day {
+  background: #f3f3f3;
+  border-bottom: 1px solid rgb(220,220,220);
+  font-size: 24px;
+  padding: $mobile-padding;
+  font-weight: bold;
+}
+.Schedule-item {
+  display: flex;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(220,220,220);
+
+  > .Schedule-event {
+    flex: 1 0 0;
+  }
+}
+.Schedule-presenter {
+  color: rgb(125,124,123);
+  font-size: 14px;
+  margin-top: 4px;
+  font-weight: normal;
+}
+.Schedule-time {
+  width: calc($mobile-item-leftstop - 14px);  /* 14px = event left padding */
+  padding: $mobile-padding;
+}
+.Schedule-timeEnd {
+  display: none;
+}
+.Schedule-event {
+  color: inherit; /* override <a> color */
+  display: block;
+  position: relative; /* For categoryIcon */
+  font-weight: bold;
+  text-decoration: none;
+  padding: $mobile-padding 14px;
+  transition: background .3s;
+  border-bottom: 1px solid rgb(220,220,220);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.Schedule-event.is-active {
+  background: #fff3f3;
+}
+.Schedule-event:hover {
+  background: #fff3f3;
+  transition: background .3s;
+}
+.Schedule-events {
+  flex: 1 0 0;
+}
+.Schedule-venue {
+  display: inline-block;
+  padding: 1px 8px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  background: rgb(220,220,220);
+  border-radius: 4px;
+  color: gray;
+}
+.Schedule-en {
+  color: rgb(207,43,43);
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.Schedule-categoryIcon {
+  position: absolute;
+  width: $category-icon-size;
+  height: $category-icon-size;
+  right: 14px;
+  bottom: 17px;
+
+  border-radius: 3px;
+  background: transparent;
+  will-change: background;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+@media screen and (min-width: $breakpoint) {
+  $desktop-padding: 20px;
+  $desktop-item-leftstop: 240px;
+
+  .Schedule-dayButton {
+    font-size: 20px;
+    padding: $desktop-padding;
+  }
+
+  .Schedule-dayButtonLeftstop {
+    padding-left: calc(40px - $desktop-padding);
+    width: calc($desktop-item-leftstop - $desktop-padding);
+  }
+
+  .Schedule-time {
+    width: calc($desktop-item-leftstop - 14px); /* 14px = event left padding */
+    padding: $desktop-padding 40px;
+  }
+
+  .Schedule-timeEnd {
+    display: inline;
+  }
+
+  .Schedule-day {
+    padding: $desktop-padding 40px;
+  }
+
+  .Schedule-event {
+    display: flex;
+    padding: $desktop-padding calc(28px * 2 + $category-icon-size) $desktop-padding 14px;
+  }
+
+  .Schedule-meta {
+    margin-right: 14px;
+  }
+
+  .Schedule-categoryIcon {
+    top: 50%;
+    margin-top: calc(-$category-icon-size / 2);
+    right: 28px;
+  }
+}
+
+} /* ends :global */
