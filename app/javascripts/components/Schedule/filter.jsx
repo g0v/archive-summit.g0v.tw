@@ -36,7 +36,7 @@ export default React.createClass({
 
     return (
       <div className={styles.filter}>
-        <div className={styles.filterTitle}>Topics</div>
+        <div className={styles.filterTitle}>Venues</div>
           <div className={styles.filterCategories}>{items}</div>
           <div className={styles.filterActions}>
             <div className={styles.filterClose} onClick={togglePanelHander}>Close</div>

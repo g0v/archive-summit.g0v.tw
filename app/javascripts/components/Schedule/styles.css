@@ -60,6 +60,10 @@ body.mobileScrollLock {
   transform: translate3d(0, 0, 0);
 }
 
+.Home-section.is-hidden {
+  display: none;
+}
+
 @media screen and (min-width: $breakpoint){
   $left-filter-width: 240px;
 
@@ -301,7 +305,7 @@ $mobile-item-leftstop: 96px;
 .Schedule-timeEnd {
   display: none;
 }
-.Schedule-event {
+.Schedule-event, .Schedule-tagline {
   color: inherit; /* override <a> color */
   display: block;
   position: relative; /* For categoryIcon */
