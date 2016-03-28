@@ -167,6 +167,7 @@ export default class Schedule extends Component {
                        "is-active" : this.state.currentSection === "day2"
                      })}
                      onClick={this.setSection.bind(this, 'day2')}>Day 2</div>
+                <div className="Schedule-switchBtn" onClick={this.props.onSwitch}>View Parallel</div>
                 <div className={cx({
                        'Schedule-filterBtn': true,
                        'is-show': this.state.mobileFilterOn,
@@ -237,3 +238,5 @@ export default class Schedule extends Component {
     );
   }
 }
+
+export {default as ScheduleParallel} from './time'
