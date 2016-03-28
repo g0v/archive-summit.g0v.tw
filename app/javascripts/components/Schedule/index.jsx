@@ -11,12 +11,12 @@ const noop = () => {}
 
 function mapTimeSlotToItems(day, value, i) {
   let id = `day${day}-all-${i}`;
-  let isActive = !value.event || !value.event.venue || this.state.isVenueActive[value.event.venue]
+  let venue = value.venue || (value.event && value.event.venue);
+  let isActive = !venue || this.state.isVenueActive[venue]
 
-  if (!isActive) {
+  if(!isActive) {
     return null
-  }
-  if (!value.time) {
+  } else if (!value.time) {
     return (
       <div
         className={cx({ "Schedule-item" : true})}
