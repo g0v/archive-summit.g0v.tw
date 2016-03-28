@@ -385,7 +385,7 @@ $mobile-item-leftstop: 96px;
     padding: $desktop-padding 40px;
   }
 
-  .Schedule-event {
+  .Schedule-event, .Schedule-tagline {
     display: flex;
     padding: $desktop-padding calc(28px * 2 + $category-icon-size) $desktop-padding 14px;
   }

@@ -11,6 +11,12 @@ const noop = () => {}
 
 function mapTimeSlotToItems(day, value, i) {
   let id = `day${day}-all-${i}`;
+  let venue = value.venue || (value.event && value.event.venue);
+
+  if(venue && this.state.categoryOn) {
+    let category = this.state.categories.filter(cat => cat.title === venue)[0]
+    if(!category.active) return false;
+  }
 
   let content;
   if (!value.time) {
@@ -21,7 +27,7 @@ function mapTimeSlotToItems(day, value, i) {
         style={{ color: '#FFF', backgroundColor: value.color}}
       >
         <div className="Schedule-time">
-          {value.title}
+          {value.title}／{venue}
         </div>
         <div className="Schedule-tagline">
           {value.tagline}
@@ -83,7 +89,8 @@ export default class Schedule extends Component {
   state = {
     showSession: false,
     categoryOn: false,
-    categories: categories.map(category => , {...category, active: false}),
+    mobileFilterOn: false,
+    categories: categories.map(category => ({...category, active: false})),
     currentSection: '',
     currentSession: {},
     currentSessionTime: null,
@@ -109,6 +116,20 @@ export default class Schedule extends Component {
     console.log(currentSection)
     this.setState({ currentSection });
   }
+  toggleCategory = id => {
+    let categories = this.state.categories.slice(0);
+    categories[id] = {...categories[id], active: !categories[id].active}
+    this.setState({categories, categoryOn: true})
+  }
+  clearCategory = () => {
+    this.setState({
+      categories: categories.map(category => ({...category, active: false})),
+      categoryOn: false
+    })
+  }
+  toggleMobileFilter = () => {
+    this.setState({mobileFilterOn: !this.state.mobileFilterOn})
+  }
   render () {
     return (
       <div className={styles.root}>
@@ -119,9 +140,9 @@ export default class Schedule extends Component {
           })}>
             <Filter
               data={this.state.categories}
-              filterOn={false}
-              toggleCategoryHandler={noop}
-              clearCategoryHandler={noop}
+              filterOn={this.state.categoryOn}
+              toggleCategoryHandler={this.toggleCategory}
+              clearCategoryHandler={this.clearCategory}
             />
           </div>
           <div className={cx({
@@ -146,6 +167,25 @@ export default class Schedule extends Component {
                        "is-active" : this.state.currentSection === "day2"
                      })}
                      onClick={this.setSection.bind(this, 'day2')}>Day 2</div>
+                <div className={cx({
+                       'Schedule-filterBtn': true,
+                       'is-show': this.state.mobileFilterOn,
+                     })}
+                     onClick={this.toggleMobileFilter}>Filter
+                  <div className={cx({'Schedule-bar1': true, 'is-active': this.state.mobileFilterOn})}></div>
+                  <div className={cx({'Schedule-bar2': true, 'is-active': this.state.mobileFilterOn})}></div>
+                </div>
+              </div>
+              <div className={cx({
+                'Schedule-filterPanel': true,
+                'is-show': this.state.mobileFilterOn,
+              })}>
+                <Filter ref="filter"
+                        data={this.state.categories}
+                        filterOn={this.state.categoryOn}
+                        toggleCategoryHandler={this.toggleCategory}
+                        clearCategoryHandler={this.clearCategory}
+                        togglePanelHander={this.toggleMobileFilter}/>
               </div>
               <div
                 className={cx({
