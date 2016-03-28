@@ -11,15 +11,12 @@ const noop = () => {}
 
 function mapTimeSlotToItems(day, value, i) {
   let id = `day${day}-all-${i}`;
-  let venue = value.venue || (value.event && value.event.venue);
-  let isActive = !venue || this.state.isVenueActive[venue]
 
-  if(!isActive) {
-    return null
-  } else if (!value.time) {
+  let content;
+  if (!value.time) {
     return (
       <div
-        className={cx({ "Schedule-item" : true})}
+        className={cx({ "Schedule-item" : true, })}
         key={i}
         style={{ color: '#FFF', backgroundColor: value.color}}
       >
@@ -64,18 +61,34 @@ function mapTimeSlotToItems(day, value, i) {
   }
 }
 
-const venues = ['R0', 'R1', 'R2'];
-const defaultVenueActive = {R0: true, R1: true, R2: true}
+const categories = [
+  {
+    "id": "r0",
+    "title": "R0",
+    "color": "#CE0D41"
+  },
+  {
+    "id": "r1",
+    "title": "R1",
+    "color": "#FCDE86"
+  },
+  {
+    "id": "r2",
+    "title": "R2",
+    "color": "#1BADBE"
+  }
+];
 
 export default class Schedule extends Component {
   state = {
     showSession: false,
-    isVenueActive: defaultVenueActive,
+    categoryOn: false,
+    categories: categories.map(category => , {...category, active: false}),
     currentSection: '',
     currentSession: {},
     currentSessionTime: null,
   };
-  setSession = (value, time) => {
+  setSession(value, time) {
     this.setState({
       showSession: true,
       currentSession: value,
@@ -92,15 +105,9 @@ export default class Schedule extends Component {
     })
     document.body.classList.remove(styles.mobileScrollLock);
   };
-  setSection = (currentSection) => {
+  setSection(currentSection) {
     console.log(currentSection)
     this.setState({ currentSection });
-  }
-  toggleFilter = (id) => {
-    this.setState({isVenueActive: {...this.state.isVenueActive, [id]: !this.state.isVenueActive[id]}});
-  }
-  resetFilter = () => {
-    this.setState({isVenueActive: defaultVenueActive})
   }
   render () {
     return (
@@ -111,11 +118,10 @@ export default class Schedule extends Component {
             "is-fixed": false,
           })}>
             <Filter
-              data={venues}
-              activeMap={this.state.isVenueActive}
-              onFilterToggle={this.toggleFilter}
-              onClear={this.resetFilter}
-              onPanelToggle={noop}
+              data={this.state.categories}
+              filterOn={false}
+              toggleCategoryHandler={noop}
+              clearCategoryHandler={noop}
             />
           </div>
           <div className={cx({
@@ -175,9 +181,10 @@ export default class Schedule extends Component {
               "is-fixed": true,
             })}>
             <Session
+              sessionHandler={this.resetSession}
               data={this.state.currentSession}
               time={this.state.currentSessionTime}
-              onClose={this.resetSession}
+              categories={categories}
             />
           </div>
 

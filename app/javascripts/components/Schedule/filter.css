@@ -29,15 +29,6 @@ $desktop-padding: 20px;
   height: 36px;
   font-size: 14px;
   cursor: pointer;
-
-  &.R0 .filterCategoryIcon {border-color: #CE0D41;}
-  &.R0.isActive .filterCategoryIcon {background: #CE0D41;}
-
-  &.R1 .filterCategoryIcon {border-color: #FCDE86;}
-  &.R1.isActive .filterCategoryIcon {background: #FCDE86;}
-
-  &.R2 .filterCategoryIcon {border-color: #1BADBE;}
-  &.R2.isActive .filterCategoryIcon {background: #1BADBE;}
 }
 .filterCategoryIcon {
   border-radius: 4px;
@@ -45,7 +36,6 @@ $desktop-padding: 20px;
   border: 2px solid #333;
   margin-right: 18px;
   transition: background .3s;
-  border: 2px solid black;
 }
 .filterActions {
   padding: $mobile-padding;

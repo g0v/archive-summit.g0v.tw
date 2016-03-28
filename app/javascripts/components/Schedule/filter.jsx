@@ -1,34 +1,35 @@
 import React from "react";
 import styles from "./filter.css";
-import classnames from 'classnames/bind'
-const cx = classnames.bind(styles);
 
 export default React.createClass({
   displayName: "Filter",
 
-  propTypes: {
-    data: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
-    activeMap: React.PropTypes.object.isRequired, // Maps ID to active or not (bool)
-    onFilterToggle: React.PropTypes.func.isRequired,
-    onClear: React.PropTypes.func.isRequired,
-    onPanelToggle: React.PropTypes.func.isRequired, // Invoke when toggling <Filter>'s presence on mobile.
-  },
-
   render() {
 
-    var {data, activeMap, onFilterToggle, onClear, onPanelToggle} = this.props;
-    var items = data.map(value => {
+    // var array = Array.apply(null, {length: 10}).map(Number.call, Number)
+    // var fakeItems = array.map((value,i)=>{
+    //   return (
+    //     <li className="Filter-category" key={i}>CATEGORY</li>
+    //   )
+    // });
+
+    var {data, filterOn, toggleCategoryHandler, clearCategoryHandler, togglePanelHander} = this.props;
+    var items = data.map((value,i)=>{
+
+      if(!filterOn || value.active){
+        var style = {
+          "background" : value.color
+        }
+      }else{
+        var style = {
+          "border" : `2px solid ${value.color}`
+        }
+      }
 
       return (
-        <div className={cx({
-          filterCategory: true,
-          [value]: true,
-          isActive: activeMap[value],
-        })} key={value} onClick={onFilterToggle.bind(null, value)}>
-          <div className={cx({
-            filterCategoryIcon: true
-          })}></div>
-          <div className={cx({filterCategoryText: true})}>{value}</div>
+        <div className={styles.filterCategory} key={i} onClick={toggleCategoryHandler.bind(null,i)}>
+          <div className={`${styles.filterCategoryIcon}`} style={style}></div>
+          <div className={`${styles.filterCategoryText}`}>{value.title}</div>
         </div>
       )
     });
@@ -38,8 +39,8 @@ export default React.createClass({
         <div className={styles.filterTitle}>Venues</div>
           <div className={styles.filterCategories}>{items}</div>
           <div className={styles.filterActions}>
-            <div className={styles.filterClose} onClick={onPanelToggle}>Close</div>
-            <div className={styles.filterClearAll} onClick={onClear}>All Venues</div>
+            <div className={styles.filterClose} onClick={togglePanelHander}>Close</div>
+            <div className={`${styles.filterClearAll} ${filterOn ? styles.isActive : ''}`} onClick={clearCategoryHandler}>All Topics</div>
           </div>
       </div>
     );
