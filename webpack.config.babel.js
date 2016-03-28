@@ -71,7 +71,7 @@ export default {
   },
 
   plugins: [
-    new ExtractTextPlugin("[name].[hash].css", {disable: !process.env.NODE_ENV !== 'production'}), // Disable extract-text-plugin during development for hot-reloading CSS.
+    new ExtractTextPlugin("[name].[hash].css", {disable: process.env.NODE_ENV !== 'production'}), // Disable extract-text-plugin during development for hot-reloading CSS.
     new HtmlWebpackPlugin({
       title: "啥米零時政府 g0v 2016 summit",
       jld: basic,
