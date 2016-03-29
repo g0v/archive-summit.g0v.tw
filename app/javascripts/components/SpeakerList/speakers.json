@@ -1,90 +1,366 @@
 {
   "en-US": [
     {
-      "image": "heusser.jpg",
-      "name": "Felipe Heusser",
-      "bio": "",
-      "nation": "",
-      "twitter": ""
-    },
-    {
       "image": "shigeomi.jpg",
       "name": "Shigeomi Shibata",
+      "organization": "Code for Japan, Code for Ibaraki",
+      "title": "How to spread the civic tech movement to non-techie people?",
       "bio": "",
-      "nation": "",
+      "nation": "Japan",
       "twitter": ""
     },
     {
       "image": "default.png",
       "name": "Jen Bramley",
+      "organization": "mySociety",
+      "title": "mySociety",
       "bio": "",
-      "nation": "",
+      "nation": "UK",
       "twitter": ""
     },
     {
       "image": "default.png",
       "name": "Julia Kloiber",
+      "organization": "Open Knowledge Foundation Germany /Code for All",
+      "title": "Code for All – Civic Tech around the World",
       "bio": "",
-      "nation": "",
+      "nation": "Germany",
       "twitter": ""
     },
     {
       "image": "default.png",
       "name": "Colin Megill",
+      "organization": "pol.is",
+      "title": "Pol.is in Taiwan: Bridging the gap between public discourse, consultation, and policy",
       "bio": "",
-      "nation": "",
+      "nation": "US",
       "twitter": ""
     },
     {
       "image": "default.png",
       "name": "JK Suh",
+      "organization": "WAGL",
+      "title": "The Korean General Election and VAAs: the case of "Ping"",
       "bio": "",
-      "nation": "",
+      "nation": "Korea",
       "twitter": ""
-    }
+    },    
+    {
+      "image": "heusser.jpg",
+      "name": "Felipe Heusser",
+      "organization": "founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv, Fellow at the Harvard Berkman Center for Internet and Society",
+      "title": " The Civics of Civic Tech: Understanding the politics of technology as a mean for civic participation",
+      "bio": "",
+      "nation": "Chile",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "James Mckinney",
+      "organization": "Various",
+      "title": "Civic Tech in Monitoring Legislatures: The Long Game",
+      "bio": "James McKinney regularly contributes to civil society initiatives relating to government, legislative and corporate transparency. He is currently focusing on Popolo (a set of legislative data specifications, used by parliamentary monitoring organizations and members of Poplus.org) and on Influence Mapping (a group of organizations that draw the networks of relations between politically exposed people and organizations). James is especially interested in how data standards can facilitate cooperation between organizations and individuals.James previously founded Open North, a Canadian nonprofit that creates websites to promote government transparency and public participation. He is co-lead of the Open Government Partnershipâ€™s Open Data Working Groupâ€™s Standards Stream. He was a member of the Open Contract Data Standard core team and of the W3C Government Linked Data Working Group. He has presented on open government and open data, most recently at the International Open Data Conference, Canadian Open Data Summit, and Spaghetti Open Data.",
+      "nation": "Canada",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Miguel Arana Catania",
+      "organization": "Madrid City Council",
+      "title": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions.",
+      "bio": "Miguel Arana is the Director of the Madrid city council participation project. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence http://decide.madrid.es Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A CoruÃ±a among others. He has been actively involved in the 15M movement in Spain since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries. Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.",
+      "nation": "Spain",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Yago Bermejo Abati",
+      "organization": "LaboDemo",
+      "title": "Digital participation strategy in Podemos party.",
+      "bio": "Yago Bermejo Abati I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur. Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties… After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating. Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.",
+      "nation": "Spain",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Rajib Timalsina",
+      "organization": "GalliGalli Not-For-Profit (www.galligalli.org)",
+      "title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
+      "bio": "Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at (www.galligalli.org). Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID. Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding. In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.",
+      "nation": "Nepal",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Sergejus Muravjovas",
+      "organization": "Transparency International Lithuania",
+      "title": "On the Yellow Brick Road One Hundred Years Later: The Journey of Reinvention of a Classical NGO",
+      "bio": "I am a social doer involved in creating change. I spend most of my time helping make transparency an easy-to-follow way of life for people around me. I do so by challenging the known, tapping into the under-researched and bridging the gaps between different groups of researchers and activists alike. Besides heading TI Lithuania and overseeing the development of TransparencySchool.org for the past seven years, I have been involved in a number of undertakings that in many ways complement each other. I teach Corporate Governance and Anti-Corruption at the International School of Management in Vilnius. I am also a board member of the Lithuanian responsible business initiative ""Clear Wave"" and an advisory council member of the Duke of Edinburgh's International Award Lithuania and the Žinių radijas. I have just joined supervisory boards of two healthcare establishments in Vilnius - the Central Policlinics of Vilnius and the National Vilnius University Hospital. I have also served as a local correspondent for Lithuania for the EU Commission Anti-Corruption report. As for other experiences under my sleeve, I was a member of the International Board of Directors of the global TI movement from 2009 to 2015 and a member of the Selection Commission of Candidates to the Judicial Office.",
+      "nation": "Vilnius, Lithuania",
+      "twitter": ""
+    },  
+    {
+      "image": "heusser.jpg",
+      "name": "Nicholas Doiron",
+      "organization": "The Asia Foundation",
+      "title": "NodeJS in Naypyitaw: Opening Election Data in Myanmar",
+      "bio": "Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.",
+      "nation": "US",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Katarzyna Mikołajczyk",
+      "organization": "ePF Foundation",
+      "title": "Cities are the key to engage citizens into open data",
+      "bio": "Katarzyna Mikołajczyk, Open Cities Program Coordinator in Poland. I use my work experience to open up cities in Poland. I want to increase transparency of the public administration, the growth of startups based on public data and increase the participation of informed citizens. Just this :) I do this while I work for ePF Foundation, an NGO which mission is to develop democracy, open and transparent authorities and civic engagement through new technologies. I’m coordinating Open Cities Program which is dedicated to local governments and helps them to publish public information and engage people to understand open data. I’m also a leader active in local community in city of Lodz for over 7 years. I managed civic engagement campaigns, educational projects, social consultations and advocacy work with the city authorities. I was always a passionate of open data and using them to plan for people. But only with people.",
+      "nation": "Poland",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Nanang Syaifudin",
+      "organization": "iLab",
+      "title": "True Story: Public e-Participatory for Election Monitoring (MataMassa or PublicEye)",
+      "bio": "Nanang Syaifudin is a member of Wikipedia Indonesia period iLab 2013. He is the founder and currently serves as the Executive Director iLab, a nonprofit organization engaged in the development of information technology for social change. Nanang helped in terms of technical and training projects Cipta Media Bersama First, open grant projects for improvement of media with Ford Foundation, Wikimedia Indonesia, ICT Watch and the Alliance of Independent Journalists. Nanang had previously helped Malaysian activists with community Bersih 2.0 and Fitness Komas to develop a system of monitoring the elections with the project name Jom Monitor, Nana also create a system for the people of Pattani in southern Thailand with institutions INSouthMedia for documentation of human rights violations based on the map with the project name WARTANI, then he made Encyclopedia Corruption Indonesia is Korupedia portal to document the Corruptor figures in Indonesia. Nanang also been a Project Manager at the Foundation AirPutih for capacity-building projects and alternative technologies in the area - particularly remote areas of Papua, on alternative technologies and the use of citizen media by using SMS cooperate with AJI Jayapura",
+      "nation": "Indonesia",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Charlotte Richard",
+      "organization": "Voxe.org",
+      "title": "Democracy and civic engagement as an open media",
+      "bio": "Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).",
+      "nation": "France",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Hoony Jang",
+      "organization": "Creative Commons Korea",
+      "title": "How to extend Civic Tech to civic organizations(NPO, NGO, and the media) in KOREA?",
+      "bio": "Civic Hacker at Creative Commons Korea project manager of Codenamu, organizer of Code for Seoul, github: @hoony",
+      "nation": "Korea",
+      "twitter": "@thechunsik"
+    },    
+    {
+      "image": "heusser.jpg",
+      "name": "Venus Lui",
+      "organization": "Wikimedia Hong Kong",
+      "title": "Importance of having an Arts database in Asia",
+      "bio": "Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong. In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.",
+      "nation": "Hong Kong",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Liz Barry",
+      "organization": "Public Lab, TreeKIT, Columbia University GSAPP",
+      "title": "Community science for healthy environments",
+      "bio": "Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.",
+      "nation": "US",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Yantisa Akhadi",
+      "organization": "Humanitarian OpenStreetMap Team",
+      "title": "Government (Participatory) Mapping",
+      "bio": "Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.",
+      "nation": "Indonesia",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Freyja van den Boom",
+      "organization": "Open Knowledge International",
+      "title": "Ever tried TDM and would you do it again ?",
+      "bio": "Freyja van den Boom is an artist/researcher on law and technology. Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright. She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University. Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.",
+      "nation": "UK",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Henare Degan",
+      "organization": "OpenAustralia Foundation",
+      "title": "morph.io: the international civic tech scraping platform",
+      "bio": "Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language. He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours. When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist."",
+      "nation": "Australia",
+      "twitter": ""
+    },    
   ],
   "zh-TW": [
     {
       "image": "heusser.jpg",
-      "name": "Felipe Heusser",
-      "bio": "",
+      "name": "羅佩琪",
+      "organization": "沒有人",
+      "title": "從g0v到gov -- 潛入衛福部400天",
+      "bio": "病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。",
       "nation": "",
       "twitter": ""
     },
     {
       "image": "shigeomi.jpg",
-      "name": "Shigeomi Shibata",
-      "bio": "",
+      "name": "Saul Peng",
+      "organization": "台北市政府資訊局",
+      "title": "g0v預算視覺化後續 - 臺北市經驗",
+      "bio": "彭盛韶 經歷：柯文哲辦公室政策部研究員,臺北市資訊局專門委員 王景弘 經歷：普奇科技資深工程師, 威聯通科技資深產品工程師, JavaScript.tw 技術社團發起人, JSDC 前端技術人年會共同發起人",
       "nation": "",
       "twitter": ""
     },
     {
       "image": "default.png",
-      "name": "Jen Bramley",
-      "bio": "",
+      "name": "clkao",
+      "organization": "g0v.tw",
+      "title": "國會沒代誌了嗎？",
+      "bio": "clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。",
       "nation": "",
       "twitter": ""
     },
     {
       "image": "default.png",
-      "name": "Julia Kloiber",
-      "bio": "",
+      "name": "雨蒼",
+      "organization": "民間司法改革基金會",
+      "title": "不開放、不透明的黨產開放資料",
+      "bio": "公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。",
       "nation": "",
       "twitter": ""
     },
     {
       "image": "default.png",
-      "name": "Colin Megill",
-      "bio": "",
+      "name": "駱勁成",
+      "organization": "g0v",
+      "title": "立委／議員投票指南",
+      "bio": "立委／議員投票指南",
       "nation": "",
       "twitter": ""
     },
     {
       "image": "default.png",
-      "name": "JK Suh",
-      "bio": "",
+      "name": "Jim Horng",
+      "organization": "open source",
+      "title": "從滅頂秒退地圖看網路世代無組織社運",
+      "bio": "在台灣軟體業已有約 10 年經驗，自認角色為工程師、社會議題微參與者、open source微貢獻者",
       "nation": "",
       "twitter": ""
-    }
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "謝宗震",
+      "organization": "DSP智庫驅動",
+      "title": "Data For Social Good – 由資料驅動的公益新浪潮",
+      "bio": "DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。",
+      "nation": "",
+      "twitter": ""
+    },  
+    {
+      "image": "heusser.jpg",
+      "name": "Walkingice",
+      "organization": "g0v",
+      "title": "鍵盤宅的輔選經驗談",
+      "bio": "網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Kirby Wu",
+      "organization": "g0v.tw",
+      "title": "媒體無間道 — 我在新聞界臥底的日子",
+      "bio": "infographics.tw 與 g0v.tw 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "詹為翔",
+      "organization": "Openstreetmap Taiwan",
+      "title": "開放街圖在外交援助計畫上的應用",
+      "bio": "台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為Opensatreetmap Taiwan理事會成員。",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Kuo-Yu slayer Chuang",
+      "organization": "GeoThings",
+      "title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project.",
+      "bio": "Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "Dongpo Deng",
+      "organization": "OSM TW",
+      "title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
+      "bio": "Chairperson, OSM TW Deputy Chairman, Taiwan Open Data Alliance",
+      "nation": "",
+      "twitter": ""
+    }, 
+    {
+      "image": "heusser.jpg",
+      "name": "蘇彥禎",
+      "organization": "Delta research center",
+      "title": "空污資料搭配風場的內插與視覺化 Interpolation and Visualization of Air Pollution based on Wind Fields",
+      "bio": "2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University, Taipei, Taiwan, Advisor: Yung-Yu Chuang. 2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan Ocean University, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng. 1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan Ocean University, Keelung, Taiwan.",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "高英勛",
+      "organization": "台灣環境資訊協會",
+      "title": "從 .org 到 .g0v － 台灣NGO的網路參與與數位挑戰",
+      "bio": "撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "陳坤助",
+      "organization": "KNY Co.",
+      "title": "強震即時警報 EEW",
+      "bio": "@KNYChen 陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。現任：KNY Co. 執行長,中華民國 App 跨界交流協會 理事長,台灣開放資料聯盟 副會長 / App組召集人,交通部資料開放諮詢小組 諮詢委員",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "劉宇倫",
+      "organization": "疾病管制署",
+      "title": "傳染病開放資料過去、現在、未來-以登革熱為例",
+      "bio": "現任職疾病管制署疫情中心，曾擔任急診主治醫師，並於奧地利維也納接受歐盟EPIET流行病學訓練，興趣在運用資訊技術於防疫資訊的收集、分析及呈現",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "董福興",
+      "organization": "WANDERER Digital Publishing Inc.",
+      "title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
+      "bio": "W3C Invited Expert, co-chair of Chinese Text Layout Task Force, WANDERER Digital Publishing inc.創辦人, 一堆顧問",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "ipa & ETBlue",
+      "organization": "g0v",
+      "title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
+      "bio": "ipa 瞿筱葳- g0v 沒有人- 文字/影像工作者- 反黑箱服貿行動參與者- 憲餅廚房共同發起人 關鍵字：社運、媒體、紀錄片藍一婷 ETBlue- g0v 動民主專案參與者- 反黑箱服貿行動參與者- 公民憲政動推動聯盟工具人- 開放文化基金會工具人關鍵字：插畫、UI、前端",
+      "nation": "",
+      "twitter": ""
+    },
+    {
+      "image": "heusser.jpg",
+      "name": "林誠夏",
+      "organization": "鈞理知識產權事務所",
+      "title": "進擊的台灣政府資料開放授權條款 / Hack on 'Taiwan Open Government Data License version 1.0'",
+      "bio": "知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡(Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任自由開源軟體法律參考書台灣專章(http://ifosslawbook.org/)的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。",
+      "nation": "",
+      "twitter": ""
+    },    
   ]
 }
