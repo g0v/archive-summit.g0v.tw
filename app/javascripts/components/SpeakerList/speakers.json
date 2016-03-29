@@ -1,7 +1,7 @@
 {
   "en-US": [
     {
-      "image": "shigeomi.jpg",
+      "avatar": "shigeomi.jpg",
       "name": "Shigeomi Shibata",
       "organization": "Code for Japan, Code for Ibaraki",
       "title": "How to spread the civic tech movement to non-techie people?",
@@ -10,7 +10,7 @@
       "twitter": ""
     },
     {
-      "image": "default.png",
+      "avatar": "default.png",
       "name": "Jen Bramley",
       "organization": "mySociety",
       "title": "mySociety",
@@ -19,7 +19,7 @@
       "twitter": ""
     },
     {
-      "image": "default.png",
+      "avatar": "default.png",
       "name": "Julia Kloiber",
       "organization": "Open Knowledge Foundation Germany /Code for All",
       "title": "Code for All – Civic Tech around the World",
@@ -28,7 +28,7 @@
       "twitter": ""
     },
     {
-      "image": "default.png",
+      "avatar": "default.png",
       "name": "Colin Megill",
       "organization": "pol.is",
       "title": "Pol.is in Taiwan: Bridging the gap between public discourse, consultation, and policy",
@@ -37,7 +37,7 @@
       "twitter": ""
     },
     {
-      "image": "default.png",
+      "avatar": "default.png",
       "name": "JK Suh",
       "organization": "WAGL",
       "title": "The Korean General Election and VAAs: the case of 'Ping' ",
@@ -46,7 +46,7 @@
       "twitter": ""
     },    
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Felipe Heusser",
       "organization": "founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv, Fellow at the Harvard Berkman Center for Internet and Society",
       "title": " The Civics of Civic Tech: Understanding the politics of technology as a mean for civic participation",
@@ -55,7 +55,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "James Mckinney",
       "organization": "Various",
       "title": "Civic Tech in Monitoring Legislatures: The Long Game",
@@ -64,7 +64,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Miguel Arana Catania",
       "organization": "Madrid City Council",
       "title": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions.",
@@ -73,7 +73,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Yago Bermejo Abati",
       "organization": "LaboDemo",
       "title": "Digital participation strategy in Podemos party.",
@@ -82,7 +82,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Rajib Timalsina",
       "organization": "GalliGalli Not-For-Profit (www.galligalli.org)",
       "title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
@@ -91,7 +91,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Sergejus Muravjovas",
       "organization": "Transparency International Lithuania",
       "title": "On the Yellow Brick Road One Hundred Years Later: The Journey of Reinvention of a Classical NGO",
@@ -100,7 +100,7 @@
       "twitter": ""
     },  
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Nicholas Doiron",
       "organization": "The Asia Foundation",
       "title": "NodeJS in Naypyitaw: Opening Election Data in Myanmar",
@@ -109,7 +109,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Katarzyna Mikołajczyk",
       "organization": "ePF Foundation",
       "title": "Cities are the key to engage citizens into open data",
@@ -118,7 +118,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Nanang Syaifudin",
       "organization": "iLab",
       "title": "True Story: Public e-Participatory for Election Monitoring (MataMassa or PublicEye)",
@@ -127,7 +127,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Charlotte Richard",
       "organization": "Voxe.org",
       "title": "Democracy and civic engagement as an open media",
@@ -136,7 +136,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Hoony Jang",
       "organization": "Creative Commons Korea",
       "title": "How to extend Civic Tech to civic organizations(NPO, NGO, and the media) in KOREA?",
@@ -145,7 +145,7 @@
       "twitter": "@thechunsik"
     },    
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Venus Lui",
       "organization": "Wikimedia Hong Kong",
       "title": "Importance of having an Arts database in Asia",
@@ -154,7 +154,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Liz Barry",
       "organization": "Public Lab, TreeKIT, Columbia University GSAPP",
       "title": "Community science for healthy environments",
@@ -163,7 +163,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Yantisa Akhadi",
       "organization": "Humanitarian OpenStreetMap Team",
       "title": "Government (Participatory) Mapping",
@@ -172,7 +172,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Freyja van den Boom",
       "organization": "Open Knowledge International",
       "title": "Ever tried TDM and would you do it again ?",
@@ -181,7 +181,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Henare Degan",
       "organization": "OpenAustralia Foundation",
       "title": "morph.io: the international civic tech scraping platform",
@@ -192,7 +192,7 @@
   ],
   "zh-TW": [
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "羅佩琪",
       "organization": "沒有人",
       "title": "從g0v到gov -- 潛入衛福部400天",
@@ -201,7 +201,7 @@
       "twitter": ""
     },
     {
-      "image": "shigeomi.jpg",
+      "avatar": "shigeomi.jpg",
       "name": "Saul Peng",
       "organization": "台北市政府資訊局",
       "title": "g0v預算視覺化後續 - 臺北市經驗",
@@ -210,7 +210,7 @@
       "twitter": ""
     },
     {
-      "image": "default.png",
+      "avatar": "default.png",
       "name": "clkao",
       "organization": "g0v.tw",
       "title": "國會沒代誌了嗎？",
@@ -219,7 +219,7 @@
       "twitter": ""
     },
     {
-      "image": "default.png",
+      "avatar": "default.png",
       "name": "雨蒼",
       "organization": "民間司法改革基金會",
       "title": "不開放、不透明的黨產開放資料",
@@ -228,7 +228,7 @@
       "twitter": ""
     },
     {
-      "image": "default.png",
+      "avatar": "default.png",
       "name": "駱勁成",
       "organization": "g0v",
       "title": "立委／議員投票指南",
@@ -237,7 +237,7 @@
       "twitter": ""
     },
     {
-      "image": "default.png",
+      "avatar": "default.png",
       "name": "Jim Horng",
       "organization": "open source",
       "title": "從滅頂秒退地圖看網路世代無組織社運",
@@ -246,7 +246,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "謝宗震",
       "organization": "DSP智庫驅動",
       "title": "Data For Social Good – 由資料驅動的公益新浪潮",
@@ -255,7 +255,7 @@
       "twitter": ""
     },  
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Walkingice",
       "organization": "g0v",
       "title": "鍵盤宅的輔選經驗談",
@@ -264,7 +264,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Kirby Wu",
       "organization": "g0v.tw",
       "title": "媒體無間道 — 我在新聞界臥底的日子",
@@ -273,7 +273,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "詹為翔",
       "organization": "Openstreetmap Taiwan",
       "title": "開放街圖在外交援助計畫上的應用",
@@ -282,7 +282,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Kuo-Yu slayer Chuang",
       "organization": "GeoThings",
       "title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project.",
@@ -291,7 +291,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "Dongpo Deng",
       "organization": "OSM TW",
       "title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
@@ -300,7 +300,7 @@
       "twitter": ""
     }, 
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "蘇彥禎",
       "organization": "Delta research center",
       "title": "空污資料搭配風場的內插與視覺化 Interpolation and Visualization of Air Pollution based on Wind Fields",
@@ -309,7 +309,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "高英勛",
       "organization": "台灣環境資訊協會",
       "title": "從 .org 到 .g0v － 台灣NGO的網路參與與數位挑戰",
@@ -318,7 +318,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "陳坤助",
       "organization": "KNY Co.",
       "title": "強震即時警報 EEW",
@@ -327,7 +327,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "劉宇倫",
       "organization": "疾病管制署",
       "title": "傳染病開放資料過去、現在、未來-以登革熱為例",
@@ -336,7 +336,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "董福興",
       "organization": "WANDERER Digital Publishing Inc.",
       "title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
@@ -345,7 +345,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "ipa & ETBlue",
       "organization": "g0v",
       "title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
@@ -354,7 +354,7 @@
       "twitter": ""
     },
     {
-      "image": "heusser.jpg",
+      "avatar": "heusser.jpg",
       "name": "林誠夏",
       "organization": "鈞理知識產權事務所",
       "title": "進擊的台灣政府資料開放授權條款 / Hack on 'Taiwan Open Government Data License version 1.0'",
