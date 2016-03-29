@@ -380,5 +380,50 @@
       "nation": "Taiwan",
       "twitter": "@lucien_cc"
     },    
+    {
+      "avatar": "bit.ly/1pvgKzQ",
+      "name": "蔡淑芳",
+      "organization": "開拓文教基金會 The Frontier Foundation",
+      "title": "",
+      "bio": "在開拓文教基金會當小工頭。透過各種連結、與許多不同的夥伴協力，希望縮短數位落差，增加非營利組織與資源相對匱乏的人和地方，善用資訊科技，對內提昇工作效能，對外增加發聲、串連與倡議改變的力量。",
+      "nation": "Taiwan",
+      "twitter": ""
+    },    
+    {
+      "avatar": "",
+      "name": "李怡志",
+      "organization": "",
+      "title": "",
+      "bio": "李怡志是一個網路媒體工作者，對資訊視覺化有多年的興趣，目前也是報導者基金會的董事。他非常關心社群與技術如何影響人類的溝通與相互理解。",
+      "nation": "Taiwan",
+      "twitter": "@richy"
+    },    
+    {
+      "avatar": "",
+      "name": "唐鳳",
+      "organization": "",
+      "title": "",
+      "bio": "Civic hacker. Grew up among Tiananmen exiles. “Conservative Anarchist.” Consultant @ Apple, OUP and Socialtext.",
+      "nation": "Taiwan",
+      "twitter": "@audreyt"
+    },    
+    {
+      "avatar": "https://www.facebook.com/peter.chung.50",
+      "name": "衷嵐焜(Lan-Kun Chung)",
+      "organization": "奇點無限有限公司(Singularity & Infinity Co., Ltd.",
+      "title": "",
+      "bio": "衷嵐焜是奇點無限有限公司的創辦人，同時也服務於逢甲大學地理資訊系統研究中心，亦擔任經濟部標檢局資訊及通訊國家標準委員會委員。衷嵐焜參與國內與國外災害管理計畫將近廿年，近年專注在國際標準的參與設計，並應用在防救災議題上，以及資料的混搭應用。",
+      "nation": "Taiwan",
+      "twitter": ""
+    },    
+    {
+      "avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10371359_1078460835501416_7207496057617610261_n.jpg?oh=2a1a5c77f431bd9fe41eb6288f1c546a&oe=578FE8DE",
+      "name": "吳銘軒",
+      "organization": "",
+      "title": "",
+      "bio": "阿端，前綠黨中執委，社運份子，參與多年廢核、性別與人權運動。專長為創意企劃、溝通設計與 php 程式設計。在 g0v 社群提供社運觀點與橫向聯繫。",
+      "nation": "Taiwan",
+      "twitter": ""
+    },    
   ]
 }
