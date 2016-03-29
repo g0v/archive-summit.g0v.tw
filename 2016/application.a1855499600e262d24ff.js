@@ -68,7 +68,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _reactGa = __webpack_require__(397);
+	var _reactGa = __webpack_require__(405);
 
 	var _reactGa2 = _interopRequireDefault(_reactGa);
 
@@ -97,417 +97,25 @@
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(2);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../postcss-loader/index.js!./normalize.css", function() {
-				var newContent = require("!!./../css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../postcss-loader/index.js!./normalize.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS and IE text size adjust after device orientation change,\n *    without disabling user zoom.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove default margin.\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\n\narticle, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {\n  display: block;\n}\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\n\naudio, canvas, progress, video {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n\n[hidden], template {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * Remove the gray background color from active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state.\n */\n\na:active, a:hover {\n  outline: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\n\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\n\nb, strong {\n  font-weight: bold;\n}\n\n/**\n * Address styling not present in Safari and Chrome.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Address styling not present in IE 8/9.\n */\n\nmark {\n  background: #ff0;\n  color: #000;\n}\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsup {\n  top: -0.5em;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\n\nimg {\n  border: 0;\n}\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * Address differences between Firefox and other browsers.\n */\n\nhr {\n  -moz-box-sizing: content-box;\n       box-sizing: content-box;\n  height: 0;\n}\n\n/**\n * Contain overflow in all browsers.\n */\n\npre {\n  overflow: auto;\n}\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\n\ncode, kbd, pre, samp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\n\nbutton, input, optgroup, select, textarea {\n  color: inherit; /* 1 */\n  font: inherit; /* 2 */\n  margin: 0; /* 3 */\n}\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\n\nbutton {\n  overflow: visible;\n}\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\n\nbutton, select {\n  text-transform: none;\n}\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\n\nbutton, html input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n  cursor: pointer; /* 3 */\n}\n\n/**\n * Re-set default cursor for disabled elements.\n */\n\nbutton[disabled], html input[disabled] {\n  cursor: default;\n}\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\n\nbutton::-moz-focus-inner, input::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\n\ninput {\n  line-height: normal;\n}\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\n\ninput[type=\"checkbox\"], input[type=\"radio\"] {\n  -moz-box-sizing: border-box;\n       box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\n\ninput[type=\"number\"]::-webkit-inner-spin-button, input[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\n */\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  -moz-box-sizing: content-box;\n       box-sizing: content-box; /* 2 */\n}\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\n\ninput[type=\"search\"]::-webkit-search-cancel-button, input[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Define consistent border, margin, and padding.\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\n\nlegend {\n  border: 0; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/* Tables\n   ========================================================================== */\n\n/**\n * Remove most spacing between table cells.\n */\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntd, th {\n  padding: 0;\n}\n", "", {"version":3,"sources":["/./node_modules/normalize.css/normalize.css"],"names":[],"mappings":"AAAA,4EAA4E;;AAE5E;;;;GAIG;;AAEH;EACE,wBAAwB,CAAC,OAAO;EAChC,2BAA2B,CAAC,OAAO;EACnC,+BAA+B,CAAC,OAAO;CACxC;;AAED;;GAEG;;AAEH;EACE,UAAU;CACX;;AAED;gFACgF;;AAEhF;;;;;GAKG;;AAEH;EAaE,eAAe;CAChB;;AAED;;;GAGG;;AAEH;EAIE,sBAAsB,CAAC,OAAO;EAC9B,yBAAyB,CAAC,OAAO;CAClC;;AAED;;;GAGG;;AAEH;EACE,cAAc;EACd,UAAU;CACX;;AAED;;;GAGG;;AAEH;EAEE,cAAc;CACf;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,8BAA8B;CAC/B;;AAED;;;GAGG;;AAEH;EAEE,WAAW;CACZ;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,0BAA0B;CAC3B;;AAED;;GAEG;;AAEH;EAEE,kBAAkB;CACnB;;AAED;;GAEG;;AAEH;EACE,mBAAmB;CACpB;;AAED;;;GAGG;;AAEH;EACE,eAAe;EACf,iBAAiB;CAClB;;AAED;;GAEG;;AAEH;EACE,iBAAiB;EACjB,YAAY;CACb;;AAED;;GAEG;;AAEH;EACE,eAAe;CAChB;;AAED;;GAEG;;AAEH;EAEE,eAAe;EACf,eAAe;EACf,mBAAmB;EACnB,yBAAyB;CAC1B;;AAED;EACE,YAAY;CACb;;AAED;EACE,gBAAgB;CACjB;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,UAAU;CACX;;AAED;;GAEG;;AAEH;EACE,iBAAiB;CAClB;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,iBAAiB;CAClB;;AAED;;GAEG;;AAEH;EACE,6BAAwB;OAAxB,wBAAwB;EACxB,UAAU;CACX;;AAED;;GAEG;;AAEH;EACE,eAAe;CAChB;;AAED;;GAEG;;AAEH;EAIE,kCAAkC;EAClC,eAAe;CAChB;;AAED;gFACgF;;AAEhF;;;GAGG;;AAEH;;;;;GAKG;;AAEH;EAKE,eAAe,CAAC,OAAO;EACvB,cAAc,CAAC,OAAO;EACtB,UAAU,CAAC,OAAO;CACnB;;AAED;;GAEG;;AAEH;EACE,kBAAkB;CACnB;;AAED;;;;;GAKG;;AAEH;EAEE,qBAAqB;CACtB;;AAED;;;;;;GAMG;;AAEH;EAIE,2BAA2B,CAAC,OAAO;EACnC,gBAAgB,CAAC,OAAO;CACzB;;AAED;;GAEG;;AAEH;EAEE,gBAAgB;CACjB;;AAED;;GAEG;;AAEH;EAEE,UAAU;EACV,WAAW;CACZ;;AAED;;;GAGG;;AAEH;EACE,oBAAoB;CACrB;;AAED;;;;;;GAMG;;AAEH;EAEE,4BAAuB;OAAvB,uBAAuB,CAAC,OAAO;EAC/B,WAAW,CAAC,OAAO;CACpB;;AAED;;;;GAIG;;AAEH;EAEE,aAAa;CACd;;AAED;;;GAGG;;AAEH;EACE,8BAA8B,CAAC,OAAO;EACtC,6BAAwB;OAAxB,wBAAwB,CAAC,OAAO;CACjC;;AAED;;;;GAIG;;AAEH;EAEE,yBAAyB;CAC1B;;AAED;;GAEG;;AAEH;EACE,0BAA0B;EAC1B,cAAc;EACd,+BAA+B;CAChC;;AAED;;;GAGG;;AAEH;EACE,UAAU,CAAC,OAAO;EAClB,WAAW,CAAC,OAAO;CACpB;;AAED;;GAEG;;AAEH;EACE,eAAe;CAChB;;AAED;;;GAGG;;AAEH;EACE,kBAAkB;CACnB;;AAED;gFACgF;;AAEhF;;GAEG;;AAEH;EACE,0BAA0B;EAC1B,kBAAkB;CACnB;;AAED;EAEE,WAAW;CACZ","file":"normalize.css","sourcesContent":["/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS and IE text size adjust after device orientation change,\n *    without disabling user zoom.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove default margin.\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\n\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n\n[hidden],\ntemplate {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * Remove the gray background color from active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state.\n */\n\na:active,\na:hover {\n  outline: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\n\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\n\nb,\nstrong {\n  font-weight: bold;\n}\n\n/**\n * Address styling not present in Safari and Chrome.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Address styling not present in IE 8/9.\n */\n\nmark {\n  background: #ff0;\n  color: #000;\n}\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsup {\n  top: -0.5em;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\n\nimg {\n  border: 0;\n}\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * Address differences between Firefox and other browsers.\n */\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n}\n\n/**\n * Contain overflow in all browsers.\n */\n\npre {\n  overflow: auto;\n}\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\n\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit; /* 1 */\n  font: inherit; /* 2 */\n  margin: 0; /* 3 */\n}\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\n\nbutton {\n  overflow: visible;\n}\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\n\nbutton,\nhtml input[type=\"button\"], /* 1 */\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n  cursor: pointer; /* 3 */\n}\n\n/**\n * Re-set default cursor for disabled elements.\n */\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\n\ninput {\n  line-height: normal;\n}\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\n */\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  box-sizing: content-box; /* 2 */\n}\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Define consistent border, margin, and padding.\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\n\nlegend {\n  border: 0; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/* Tables\n   ========================================================================== */\n\n/**\n * Remove most spacing between table cells.\n */\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntd,\nth {\n  padding: 0;\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-
-
-/***/ },
-/* 3 */
 /***/ function(module, exports) {
 
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
+	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	var stylesInDom = {},
-		memoize = function(fn) {
-			var memo;
-			return function () {
-				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-				return memo;
-			};
-		},
-		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
-		}),
-		getHeadElement = memoize(function () {
-			return document.head || document.getElementsByTagName("head")[0];
-		}),
-		singletonElement = null,
-		singletonCounter = 0,
-		styleElementsInsertedAtTop = [];
-
-	module.exports = function(list, options) {
-		if(false) {
-			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-		}
-
-		options = options || {};
-		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-		// tags it will allow on a page
-		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
-
-		// By default, add <style> tags to the bottom of <head>.
-		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
-
-		var styles = listToStyles(list);
-		addStylesToDom(styles, options);
-
-		return function update(newList) {
-			var mayRemove = [];
-			for(var i = 0; i < styles.length; i++) {
-				var item = styles[i];
-				var domStyle = stylesInDom[item.id];
-				domStyle.refs--;
-				mayRemove.push(domStyle);
-			}
-			if(newList) {
-				var newStyles = listToStyles(newList);
-				addStylesToDom(newStyles, options);
-			}
-			for(var i = 0; i < mayRemove.length; i++) {
-				var domStyle = mayRemove[i];
-				if(domStyle.refs === 0) {
-					for(var j = 0; j < domStyle.parts.length; j++)
-						domStyle.parts[j]();
-					delete stylesInDom[domStyle.id];
-				}
-			}
-		};
-	}
-
-	function addStylesToDom(styles, options) {
-		for(var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-			if(domStyle) {
-				domStyle.refs++;
-				for(var j = 0; j < domStyle.parts.length; j++) {
-					domStyle.parts[j](item.parts[j]);
-				}
-				for(; j < item.parts.length; j++) {
-					domStyle.parts.push(addStyle(item.parts[j], options));
-				}
-			} else {
-				var parts = [];
-				for(var j = 0; j < item.parts.length; j++) {
-					parts.push(addStyle(item.parts[j], options));
-				}
-				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-			}
-		}
-	}
-
-	function listToStyles(list) {
-		var styles = [];
-		var newStyles = {};
-		for(var i = 0; i < list.length; i++) {
-			var item = list[i];
-			var id = item[0];
-			var css = item[1];
-			var media = item[2];
-			var sourceMap = item[3];
-			var part = {css: css, media: media, sourceMap: sourceMap};
-			if(!newStyles[id])
-				styles.push(newStyles[id] = {id: id, parts: [part]});
-			else
-				newStyles[id].parts.push(part);
-		}
-		return styles;
-	}
-
-	function insertStyleElement(options, styleElement) {
-		var head = getHeadElement();
-		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
-		if (options.insertAt === "top") {
-			if(!lastStyleElementInsertedAtTop) {
-				head.insertBefore(styleElement, head.firstChild);
-			} else if(lastStyleElementInsertedAtTop.nextSibling) {
-				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
-			} else {
-				head.appendChild(styleElement);
-			}
-			styleElementsInsertedAtTop.push(styleElement);
-		} else if (options.insertAt === "bottom") {
-			head.appendChild(styleElement);
-		} else {
-			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
-		}
-	}
-
-	function removeStyleElement(styleElement) {
-		styleElement.parentNode.removeChild(styleElement);
-		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
-		if(idx >= 0) {
-			styleElementsInsertedAtTop.splice(idx, 1);
-		}
-	}
-
-	function createStyleElement(options) {
-		var styleElement = document.createElement("style");
-		styleElement.type = "text/css";
-		insertStyleElement(options, styleElement);
-		return styleElement;
-	}
-
-	function createLinkElement(options) {
-		var linkElement = document.createElement("link");
-		linkElement.rel = "stylesheet";
-		insertStyleElement(options, linkElement);
-		return linkElement;
-	}
-
-	function addStyle(obj, options) {
-		var styleElement, update, remove;
-
-		if (options.singleton) {
-			var styleIndex = singletonCounter++;
-			styleElement = singletonElement || (singletonElement = createStyleElement(options));
-			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
-			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
-		} else if(obj.sourceMap &&
-			typeof URL === "function" &&
-			typeof URL.createObjectURL === "function" &&
-			typeof URL.revokeObjectURL === "function" &&
-			typeof Blob === "function" &&
-			typeof btoa === "function") {
-			styleElement = createLinkElement(options);
-			update = updateLink.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-				if(styleElement.href)
-					URL.revokeObjectURL(styleElement.href);
-			};
-		} else {
-			styleElement = createStyleElement(options);
-			update = applyToTag.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-			};
-		}
-
-		update(obj);
-
-		return function updateStyle(newObj) {
-			if(newObj) {
-				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
-					return;
-				update(obj = newObj);
-			} else {
-				remove();
-			}
-		};
-	}
-
-	var replaceText = (function () {
-		var textStore = [];
-
-		return function (index, replacement) {
-			textStore[index] = replacement;
-			return textStore.filter(Boolean).join('\n');
-		};
-	})();
-
-	function applyToSingletonTag(styleElement, index, remove, obj) {
-		var css = remove ? "" : obj.css;
-
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = replaceText(index, css);
-		} else {
-			var cssNode = document.createTextNode(css);
-			var childNodes = styleElement.childNodes;
-			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
-			if (childNodes.length) {
-				styleElement.insertBefore(cssNode, childNodes[index]);
-			} else {
-				styleElement.appendChild(cssNode);
-			}
-		}
-	}
-
-	function applyToTag(styleElement, obj) {
-		var css = obj.css;
-		var media = obj.media;
-
-		if(media) {
-			styleElement.setAttribute("media", media)
-		}
-
-		if(styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = css;
-		} else {
-			while(styleElement.firstChild) {
-				styleElement.removeChild(styleElement.firstChild);
-			}
-			styleElement.appendChild(document.createTextNode(css));
-		}
-	}
-
-	function updateLink(linkElement, obj) {
-		var css = obj.css;
-		var sourceMap = obj.sourceMap;
-
-		if(sourceMap) {
-			// http://stackoverflow.com/a/26603875
-			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-		}
-
-		var blob = new Blob([css], { type: "text/css" });
-
-		var oldSrc = linkElement.href;
-
-		linkElement.href = URL.createObjectURL(blob);
-
-		if(oldSrc)
-			URL.revokeObjectURL(oldSrc);
-	}
-
-
-/***/ },
+/* 2 */,
+/* 3 */,
+/* 4 */,
 /* 5 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(6);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../node_modules/postcss-loader/index.js!./application.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../node_modules/postcss-loader/index.js!./application.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "* {\n  -moz-box-sizing: border-box;\n       box-sizing: border-box;\n}\n\nbody {\n  width: 100%;\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, \"Heiti TC\", \"Apple LiGothic Medium\", \"\\5FAE\\8EDF\\6B63\\9ED1\\9AD4\", sans-serif;\n  font-size: 18px;\n  font-weight: 400;\n  color: #5D5D5D;\n}\n\n@font-face {\n    font-family: 'icomoon';\n    src:    url(" + __webpack_require__(7) + ");\n    src:    url(" + __webpack_require__(7) + "#iefix) format('embedded-opentype'),\n            url(" + __webpack_require__(8) + ") format('truetype'),\n            url(" + __webpack_require__(9) + ") format('woff'),\n            url(" + __webpack_require__(10) + "#icomoon) format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n\n[class^=\"icon-\"], [class*=\" icon-\"] {\n    /* use !important to prevent issues with browser extensions that change fonts */\n    font-family: 'icomoon' !important;\n    speak: none;\n    font-style: normal;\n    font-weight: normal;\n    font-variant: normal;\n    text-transform: none;\n    line-height: 1;\n\n    /* Better Font Rendering =========== */\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n.icon-blueprint:before {\n  content: \"\\E900\";\n}\n\n.icon-construction:before {\n  content: \"\\E901\";\n}\n\n.icon-foundation:before {\n  content: \"\\E902\";\n}\n\n.icon-issue:before {\n  content: \"\\E903\";\n}\n\n.icon-location:before {\n  content: \"\\E904\";\n}\n\n.icon-power:before {\n  content: \"\\E905\";\n}\n\n.icon-register:before {\n  content: \"\\E906\";\n}\n\n.icon-scaffold:before {\n  content: \"\\E907\";\n}\n\n.icon-speakers:before {\n  content: \"\\E908\";\n}\n\n.icon-sponsor:before {\n  content: \"\\E909\";\n}\n\n.icon-square:before {\n  content: \"\\E90A\";\n}\n\n.icon-supervision:before {\n  content: \"\\E90B\";\n}\n\n.icon-Ventilation:before {\n  content: \"\\E90C\";\n}\n\n.icon-wiring:before {\n  content: \"\\E90D\";\n}", "", {"version":3,"sources":["/./app/stylesheets/application.css"],"names":[],"mappings":"AAAA;EACE,4BAAuB;OAAvB,uBAAuB;CACxB;;AAED;EACE,YAAY;EACZ,2IAAuH;EACvH,gBAAgB;EAChB,iBAAiB;EACjB,eAAe;CAChB;;AAED;IACI,uBAAuB;IACvB,sCAAwC;IACxC;;;wDAG8D;IAC9D,oBAAoB;IACpB,mBAAmB;CACtB;;AAED;IACI,gFAAgF;IAChF,kCAAkC;IAClC,YAAY;IACZ,mBAAmB;IACnB,oBAAoB;IACpB,qBAAqB;IACrB,qBAAqB;IACrB,eAAe;;IAEf,uCAAuC;IACvC,oCAAoC;IACpC,mCAAmC;CACtC;;AAIC;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB;;AACD;EACI,iBAAiB;CACpB","file":"application.css","sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nbody {\n  width: 100%;\n  font-family: \"Open Sans\", \"Helvetica Neue\", Helvetica, Arial, \"Heiti TC\", \"Apple LiGothic Medium\", \"微軟正黑體\", sans-serif;\n  font-size: 18px;\n  font-weight: 400;\n  color: #5D5D5D;\n}\n\n@font-face {\n    font-family: 'icomoon';\n    src:    url('fonts/icomoon.eot?2udnot');\n    src:    url('fonts/icomoon.eot?2udnot#iefix') format('embedded-opentype'),\n            url('fonts/icomoon.ttf?2udnot') format('truetype'),\n            url('fonts/icomoon.woff?2udnot') format('woff'),\n            url('fonts/icomoon.svg?2udnot#icomoon') format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n\n[class^=\"icon-\"], [class*=\" icon-\"] {\n    /* use !important to prevent issues with browser extensions that change fonts */\n    font-family: 'icomoon' !important;\n    speak: none;\n    font-style: normal;\n    font-weight: normal;\n    font-variant: normal;\n    text-transform: none;\n    line-height: 1;\n\n    /* Better Font Rendering =========== */\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n:global {\n\n  .icon-blueprint:before {\n      content: \"\\e900\";\n  }\n  .icon-construction:before {\n      content: \"\\e901\";\n  }\n  .icon-foundation:before {\n      content: \"\\e902\";\n  }\n  .icon-issue:before {\n      content: \"\\e903\";\n  }\n  .icon-location:before {\n      content: \"\\e904\";\n  }\n  .icon-power:before {\n      content: \"\\e905\";\n  }\n  .icon-register:before {\n      content: \"\\e906\";\n  }\n  .icon-scaffold:before {\n      content: \"\\e907\";\n  }\n  .icon-speakers:before {\n      content: \"\\e908\";\n  }\n  .icon-sponsor:before {\n      content: \"\\e909\";\n  }\n  .icon-square:before {\n      content: \"\\e90a\";\n  }\n  .icon-supervision:before {\n      content: \"\\e90b\";\n  }\n  .icon-Ventilation:before {\n      content: \"\\e90c\";\n  }\n  .icon-wiring:before {\n      content: \"\\e90d\";\n  }\n}"],"sourceRoot":"webpack://"}]);
-
-	// exports
-
-
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "ccac6918d8e04e5b484f353425bc4d39.eot";
-
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "38cb4ab412fa13f334343943d39862a1.ttf";
-
-/***/ },
-/* 9 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "e50d17296f3317ba6868cd14ad236d37.woff";
-
-/***/ },
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "5d5d39222b351480d345b93b4fe8f91e.svg";
-
-/***/ },
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
 /* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -25340,7 +24948,7 @@
 
 	var _components = __webpack_require__(230);
 
-	var _pages = __webpack_require__(388);
+	var _pages = __webpack_require__(396);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25409,7 +25017,7 @@
 
 	var _Schedule3 = _interopRequireDefault(_Schedule2);
 
-	var _SponsorsSummary2 = __webpack_require__(384);
+	var _SponsorsSummary2 = __webpack_require__(392);
 
 	var _SponsorsSummary3 = _interopRequireDefault(_SponsorsSummary2);
 
@@ -27245,56 +26853,13 @@
 
 /***/ },
 /* 315 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(316);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__XLEo0","ham":"styles-ham__6Q4DB","brand":"styles-brand__2SDVp","title":"styles-title__zoMJG","live":"styles-live__FIAAN","menu":"styles-menu__2mWqD","item":"styles-item__ifhAL","active":"styles-active__26jg9","lang":"styles-lang__2SUtg","button":"styles-button__3nV7w"};
 
 /***/ },
-/* 316 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__XLEo0 {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #CB0031;\n  color: #FFF;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  opacity: 0.94;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  z-index: 50;\n}\n\n.styles-ham__6Q4DB {\n  display: none;\n  cursor: pointer;\n}\n\n.styles-brand__2SDVp {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  width: 100%;\n}\n\n.styles-title__zoMJG {\n  float: left;\n  font-family: Audiowide;\n  margin: 0;\n  text-transform: uppercase;\n  padding: 13px 18px 0 26px;\n}\n\n.styles-live__FIAAN {\n  float: left;\n  display: inline-block;\n  padding-top: 13px;\n}\n\n.styles-menu__2mWqD {\n  float: left;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  height: 60px;\n  margin-left: 18px;\n}\n\n.styles-item__ifhAL {\n  display: inline-block;\n  height: 100%;\n} \n.styles-item__ifhAL a, .styles-item__ifhAL span {\n  display: block;\n  height: 100%;\n  padding: 21px 26px 21px 26px;\n  line-height: 1;\n  text-align: center;\n  cursor: pointer;\n  text-decoration: none;\n  color: #FFF;\n}\n\n.styles-item__ifhAL a {\n  text-decoration: none;\n  color: #FFF;\n}\n\n.styles-item__ifhAL a.styles-active__26jg9 {\n  background-color: #FFF;\n  color: #000;\n  text-decoration: none;\n}\n\n.styles-item__ifhAL:hover {\n  background-color: #FFF;\n  color: #000;\n  box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.50);\n}\n.styles-item__ifhAL:hover a, .styles-item__ifhAL:hover span {\n  color: #000;\n}\n\n.styles-lang__2SUtg {\n  position: absolute;\n  right: 0;\n  top: 0;\n  height: 60px;\n}\n\n.styles-button__3nV7w {\n  display: inline-block;\n  color: #FFF;\n  padding: 21px 10px 0 0;\n  height: 100%;\n  line-height: 1;\n  width: 94px;\n  text-decoration: none;\n  text-align: right;\n  cursor: pointer;\n}\n\n.styles-button__3nV7w:hover {\n  color: #000;\n}\n\n@media screen and (max-width: 930px) {\n  .styles-root__XLEo0 {\n    display: block;\n  }\n\n  .styles-brand__2SDVp {\n    margin-left: 20px;\n  }\n\n  .styles-ham__6Q4DB {\n    display: block;\n    margin-top: 4px;\n    height: 60px;\n    position: absolute;\n    top: 0;\n    left: 0;\n    -webkit-transform: scale(0.5);\n            transform: scale(0.5);\n  }\n\n  .styles-ham__6Q4DB path {\n    fill: #FFF;\n  }\n\n  .styles-ham__6Q4DB:hover path {\n    fill: #000;\n  }\n\n  .styles-menu__2mWqD {\n    margin-left: 0;\n  }\n\n  .styles-item__ifhAL {\n    display: block;\n    width: 100%;\n    background-color: #CB0031;\n  }\n\n  .styles-active__26jg9 {\n    background-color: #FFF;\n  }\n\n  .styles-button__3nV7w {\n    width: 64px;\n  }\n}\n\n@media screen and (max-width: 430px) {\n  .styles-title__zoMJG {\n    padding: 13px 5px 0 21px;\n    font-size: 16px;\n    line-height: 36px;\n  }\n  \n  .styles-lang__2SUtg > .styles-button__3nV7w {\n    padding-right: 5px;\n  }\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/AppBar/styles.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,OAAO;EACP,YAAY;EACZ,aAAa;EACb,0BAA0B;EAC1B,YAAY;EACZ,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,cAAc;EACd,8CAA8C;EAC9C,YAAY;CACb;;AAED;EACE,cAAc;EACd,gBAAgB;CACjB;;AAED;EACE,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,YAAY;CACb;;AAED;EACE,YAAY;EACZ,uBAAuB;EACvB,UAAU;EACV,0BAA0B;EAC1B,0BAA0B;CAC3B;;AAED;EACE,YAAY;EACZ,sBAAsB;EACtB,kBAAkB;CACnB;;AAED;EACE,YAAY;EACZ,UAAU;EACV,WAAW;EACX,iBAAiB;EACjB,aAAa;EACb,kBAAkB;CACnB;;AAED;EACE,sBAAsB;EACtB,aAAa;CACd;AACD;EAEE,eAAe;EACf,aAAa;EACb,6BAA6B;EAC7B,eAAe;EACf,mBAAmB;EACnB,gBAAgB;EAChB,sBAAsB;EACtB,YAAY;CACb;;AAED;EACE,sBAAsB;EACtB,YAAY;CACb;;AAED;EACE,uBAAuB;EACvB,YAAY;EACZ,sBAAsB;CACvB;;AAED;EACE,uBAAuB;EACvB,YAAY;EACZ,8CAA8C;CAC/C;AACD;EAEE,YAAY;CACb;;AAED;EACE,mBAAmB;EACnB,SAAS;EACT,OAAO;EACP,aAAa;CACd;;AAED;EACE,sBAAsB;EACtB,YAAY;EACZ,uBAAuB;EACvB,aAAa;EACb,eAAe;EACf,YAAY;EACZ,sBAAsB;EACtB,kBAAkB;EAClB,gBAAgB;CACjB;;AAED;EACE,YAAY;CACb;;AAED;EACE;IACE,eAAe;GAChB;;EAED;IACE,kBAAkB;GACnB;;EAED;IACE,eAAe;IACf,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,OAAO;IACP,QAAQ;IACR,8BAAsB;YAAtB,sBAAsB;GACvB;;EAED;IACE,WAAW;GACZ;;EAED;IACE,WAAW;GACZ;;EAED;IACE,eAAe;GAChB;;EAED;IACE,eAAe;IACf,YAAY;IACZ,0BAA0B;GAC3B;;EAED;IACE,uBAAuB;GACxB;;EAED;IACE,YAAY;GACb;CACF;;AAED;EACE;IACE,yBAAyB;IACzB,gBAAgB;IAChB,kBAAkB;GACnB;;EAED;IACE,mBAAmB;GACpB;CACF","file":"styles.css","sourcesContent":[".root {\n  position: fixed;\n  top: 0;\n  width: 100%;\n  height: 60px;\n  background-color: #CB0031;\n  color: #FFF;\n  display: flex;\n  opacity: 0.94;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  z-index: 50;\n}\n\n.ham {\n  display: none;\n  cursor: pointer;\n}\n\n.brand {\n  display: flex;\n  width: 100%;\n}\n\n.title {\n  float: left;\n  font-family: Audiowide;\n  margin: 0;\n  text-transform: uppercase;\n  padding: 13px 18px 0 26px;\n}\n\n.live {\n  float: left;\n  display: inline-block;\n  padding-top: 13px;\n}\n\n.menu {\n  float: left;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  height: 60px;\n  margin-left: 18px;\n}\n\n.item {\n  display: inline-block;\n  height: 100%;\n} \n.item a, \n.item span {\n  display: block;\n  height: 100%;\n  padding: 21px 26px 21px 26px;\n  line-height: 1;\n  text-align: center;\n  cursor: pointer;\n  text-decoration: none;\n  color: #FFF;\n}\n\n.item a {\n  text-decoration: none;\n  color: #FFF;\n}\n\n.item a.active {\n  background-color: #FFF;\n  color: #000;\n  text-decoration: none;\n}\n\n.item:hover {\n  background-color: #FFF;\n  color: #000;\n  box-shadow: 0px -1px 2px 0px rgba(0,0,0,0.50);\n}\n.item:hover a,\n.item:hover span {\n  color: #000;\n}\n\n.lang {\n  position: absolute;\n  right: 0;\n  top: 0;\n  height: 60px;\n}\n\n.button {\n  display: inline-block;\n  color: #FFF;\n  padding: 21px 10px 0 0;\n  height: 100%;\n  line-height: 1;\n  width: 94px;\n  text-decoration: none;\n  text-align: right;\n  cursor: pointer;\n}\n\n.button:hover {\n  color: #000;\n}\n\n@media screen and (max-width: 930px) {\n  .root {\n    display: block;\n  }\n\n  .brand {\n    margin-left: 20px;\n  }\n\n  .ham {\n    display: block;\n    margin-top: 4px;\n    height: 60px;\n    position: absolute;\n    top: 0;\n    left: 0;\n    transform: scale(0.5);\n  }\n\n  .ham path {\n    fill: #FFF;\n  }\n\n  .ham:hover path {\n    fill: #000;\n  }\n\n  .menu {\n    margin-left: 0;\n  }\n\n  .item {\n    display: block;\n    width: 100%;\n    background-color: #CB0031;\n  }\n\n  .active {\n    background-color: #FFF;\n  }\n\n  .button {\n    width: 64px;\n  }\n}\n\n@media screen and (max-width: 430px) {\n  .title {\n    padding: 13px 5px 0 21px;\n    font-size: 16px;\n    line-height: 36px;\n  }\n  \n  .lang > .button {\n    padding-right: 5px;\n  }\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__XLEo0",
-		"ham": "styles-ham__6Q4DB",
-		"brand": "styles-brand__2SDVp",
-		"title": "styles-title__zoMJG",
-		"live": "styles-live__FIAAN",
-		"menu": "styles-menu__2mWqD",
-		"item": "styles-item__ifhAL",
-		"active": "styles-active__26jg9",
-		"lang": "styles-lang__2SUtg",
-		"button": "styles-button__3nV7w"
-	};
-
-/***/ },
+/* 316 */,
 /* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27361,53 +26926,14 @@
 
 /***/ },
 /* 318 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(319);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__2Aq8q"};
 
 /***/ },
-/* 319 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__2Aq8q {\n  background-image: url(" + __webpack_require__(320) + ");\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n  margin-top: 60px;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/MainSection/styles.css"],"names":[],"mappings":"AAAA;EACE,gDAAuC;EACvC,6BAA6B;EAC7B,+BAA+B;EAC/B,qBAAqB;EACrB,YAAY;EACZ,mBAAmB;EACnB,iBAAiB;CAClB","file":"styles.css","sourcesContent":[".root {\n  background-image: url(./images/bg.png);\n  background-repeat: no-repeat;\n  background-position: 100px 0px;\n  background-size: 90%;\n  width: 100%;\n  position: relative;\n  margin-top: 60px;\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__2Aq8q"
-	};
-
-/***/ },
-/* 320 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "2a73cb5f9650926fb32d1eb7560ee72a.png";
-
-/***/ },
+/* 319 */,
+/* 320 */,
 /* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27510,53 +27036,13 @@
 
 /***/ },
 /* 322 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(323);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__31pMV","wrapper":"styles-wrapper__1Vtud","year":"styles-year__-pnX3","logo":"styles-logo__2WXng","theme":"styles-theme__dsqnF","day":"styles-day__2f7O7","place":"styles-place__1oMDL"};
 
 /***/ },
-/* 323 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__31pMV {\n\n}\n\n@media screen and (max-width: 830px) {\n  .styles-root__31pMV {\n    width: 100%;\n    background-color: rgba(255, 255, 255, 0.47);\n  }\n}\n\n.styles-wrapper__1Vtud {\n  width: 280px;\n  text-align: right;\n  color: #000;\n  padding-top: 29px;\n  padding-bottom: 45px;\n}\n\n.styles-year__-pnX3 {\n  font-size: 32px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n\n.styles-logo__2WXng {\n  height: 46px;\n  width: 239px;\n}\n\n.styles-theme__dsqnF {\n  height: 168px;\n  width: 147px;\n}\n\n.styles-day__2f7O7 {\n  font-size: 46px;\n  font-weight: 600;\n}\n\n.styles-place__1oMDL {\n  font-size: 32px;\n  font-weight: 600;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/MainInfo/styles.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;EACE;IACE,YAAY;IACZ,4CAA4C;GAC7C;CACF;;AAED;EACE,aAAa;EACb,kBAAkB;EAClB,YAAY;EACZ,kBAAkB;EAClB,qBAAqB;CACtB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;EACjB,0BAA0B;CAC3B;;AAED;EACE,aAAa;EACb,aAAa;CACd;;AAED;EACE,cAAc;EACd,aAAa;CACd;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB","file":"styles.css","sourcesContent":[".root {\n\n}\n\n@media screen and (max-width: 830px) {\n  .root {\n    width: 100%;\n    background-color: rgba(255, 255, 255, 0.47);\n  }\n}\n\n.wrapper {\n  width: 280px;\n  text-align: right;\n  color: #000;\n  padding-top: 29px;\n  padding-bottom: 45px;\n}\n\n.year {\n  font-size: 32px;\n  font-weight: 600;\n  text-transform: uppercase;\n}\n\n.logo {\n  height: 46px;\n  width: 239px;\n}\n\n.theme {\n  height: 168px;\n  width: 147px;\n}\n\n.day {\n  font-size: 46px;\n  font-weight: 600;\n}\n\n.place {\n  font-size: 32px;\n  font-weight: 600;\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__31pMV",
-		"wrapper": "styles-wrapper__1Vtud",
-		"year": "styles-year__-pnX3",
-		"logo": "styles-logo__2WXng",
-		"theme": "styles-theme__dsqnF",
-		"day": "styles-day__2f7O7",
-		"place": "styles-place__1oMDL"
-	};
-
-/***/ },
+/* 323 */,
 /* 324 */
 /***/ function(module, exports) {
 
@@ -27684,54 +27170,13 @@
 
 /***/ },
 /* 328 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(329);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__gj93y","wrapper":"styles-wrapper__10wHi","header":"styles-header__2jnoV","description":"styles-description__biizs","title":"styles-title__2fwYR","button":"styles-button__30agj","links":"styles-links__hubwx","active":"styles-active__1METK styles-button__30agj"};
 
 /***/ },
-/* 329 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__gj93y {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  padding-bottom: 103px;\n  color: #000;\n}\n\n.styles-wrapper__10wHi {\n\n}\n\n.styles-header__2jnoV {\n  padding-top: 55px;\n  margin: 0;\n}\n\n@media screen and (min-width: 830px) {\n  .styles-description__biizs {\n    width: 665px;\n  }\n\n  .styles-title__2fwYR {\n    display: inline-block;\n  }\n\n  .styles-button__30agj {\n    display: inline-block;\n  }\n}\n\n.styles-description__biizs {\n  margin: 52px auto 84px;\n  padding-left: 15px;\n  padding-right: 15px;\n}\n\n.styles-links__hubwx {\n\n}\n\n.styles-title__2fwYR {\n  padding-top: 5px;\n  margin-right: 54px;\n  line-height: 22px;\n  padding-bottom: 10px;\n}\n\n.styles-button__30agj {\n  background-color: #FFF;\n  height: 46px;\n  padding: 11px 46px 13px 47px;\n  border: 2px solid #000000;\n  border-radius: 4px;\n  line-height: 22px;\n  cursor: pointer;\n}\n\n.styles-button__30agj:not(:last-child) {\n    margin-right: 42px;\n}\n\n.styles-active__1METK {\n  background-color: #CB0031;\n  color: #FFF;\n}\n\n@media screen and (max-width: 830px) {\n  .styles-button__30agj {\n    padding: 12px 24px;\n  }\n  \n  .styles-button__30agj:not(:last-child) {\n    margin-right: 21px;\n  }\n    \n  .styles-title__2fwYR {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n  }\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/About/styles.css"],"names":[],"mappings":"AAAA;EACE,oBAAoB;EACpB,8CAA8C;EAC9C,mBAAmB;EACnB,4CAA4C;EAC5C,sBAAsB;EACtB,YAAY;CACb;;AAED;;CAEC;;AAED;EACE,kBAAkB;EAClB,UAAU;CACX;;AAED;EACE;IACE,aAAa;GACd;;EAED;IACE,sBAAsB;GACvB;;EAED;IACE,sBAAsB;GACvB;CACF;;AAED;EACE,uBAAuB;EACvB,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;;CAEC;;AAED;EACE,iBAAiB;EACjB,mBAAmB;EACnB,kBAAkB;EAClB,qBAAqB;CACtB;;AAED;EACE,uBAAuB;EACvB,aAAa;EACb,6BAA6B;EAC7B,0BAA0B;EAC1B,mBAAmB;EACnB,kBAAkB;EAClB,gBAAgB;CACjB;;AAED;IACI,mBAAmB;CACtB;;AAED;EAEE,0BAA0B;EAC1B,YAAY;CACb;;AAED;EACE;IACE,mBAAmB;GACpB;;EAED;IACE,mBAAmB;GACpB;;EAED;IACE,eAAe;IACf,kBAAkB;IAClB,mBAAmB;GACpB;CACF","file":"styles.css","sourcesContent":[".root {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  padding-bottom: 103px;\n  color: #000;\n}\n\n.wrapper {\n\n}\n\n.header {\n  padding-top: 55px;\n  margin: 0;\n}\n\n@media screen and (min-width: 830px) {\n  .description {\n    width: 665px;\n  }\n\n  .title {\n    display: inline-block;\n  }\n\n  .button {\n    display: inline-block;\n  }\n}\n\n.description {\n  margin: 52px auto 84px;\n  padding-left: 15px;\n  padding-right: 15px;\n}\n\n.links {\n\n}\n\n.title {\n  padding-top: 5px;\n  margin-right: 54px;\n  line-height: 22px;\n  padding-bottom: 10px;\n}\n\n.button {\n  background-color: #FFF;\n  height: 46px;\n  padding: 11px 46px 13px 47px;\n  border: 2px solid #000000;\n  border-radius: 4px;\n  line-height: 22px;\n  cursor: pointer;\n}\n\n.button:not(:last-child) {\n    margin-right: 42px;\n}\n\n.active {\n  composes: button;\n  background-color: #CB0031;\n  color: #FFF;\n}\n\n@media screen and (max-width: 830px) {\n  .button {\n    padding: 12px 24px;\n  }\n  \n  .button:not(:last-child) {\n    margin-right: 21px;\n  }\n    \n  .title {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n  }\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__gj93y",
-		"wrapper": "styles-wrapper__10wHi",
-		"header": "styles-header__2jnoV",
-		"description": "styles-description__biizs",
-		"title": "styles-title__2fwYR",
-		"button": "styles-button__30agj",
-		"links": "styles-links__hubwx",
-		"active": "styles-active__1METK styles-button__30agj"
-	};
-
-/***/ },
+/* 329 */,
 /* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27951,51 +27396,13 @@
 
 /***/ },
 /* 332 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(333);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__1qlYr","header":"styles-header__QOvXu","range":"styles-range__30RdB","title":"styles-title__1v6LZ","links":"styles-links__3LYNb"};
 
 /***/ },
-/* 333 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__1qlYr {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n.styles-root__1qlYr article {\n  margin: 20px;\n  border: 2px solid #CB0031;\n  border-radius: 20px;\n  padding: 10px;\n}\n\n.styles-header__QOvXu {\n  margin: 29px 0 0 0;\n}\n\n.styles-range__30RdB {\n  margin: 10px 0 10px;\n}\n\n.styles-title__1v6LZ {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.styles-links__3LYNb {\n  color: #CB0031;\n  text-decoration: none\n}\n\n@media screen and (max-width: 715px) {\n  .styles-root__1qlYr {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n\n  .styles-header__QOvXu {\n    margin: 0;\n  }\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Milestone/styles.css"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,mBAAmB;EACnB,YAAY;EACZ,OAAO;EACP,mBAAmB;EACnB,4CAA4C;EAC5C,aAAa;EACb,oBAAoB;EACpB,YAAY;CACb;;AAED;EACE,aAAa;EACb,0BAA0B;EAC1B,oBAAoB;EACpB,cAAc;CACf;;AAED;EACE,mBAAmB;CACpB;;AAED;EACE,oBAAoB;CACrB;;AAED;EACE,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,eAAe;EACf,qBAAqB;CACtB;;AAED;EACE;IACE,iBAAiB;IACjB,YAAY;IACZ,SAAS;GACV;;EAED;IACE,UAAU;GACX;CACF","file":"styles.css","sourcesContent":[".root {\n  display: block;\n  position: absolute;\n  right: 71px;\n  top: 0;\n  text-align: center;\n  background-color: rgba(255, 255, 255, 0.94);\n  width: 350px;\n  padding-bottom: 1px;\n  color: #000;\n}\n\n.root article {\n  margin: 20px;\n  border: 2px solid #CB0031;\n  border-radius: 20px;\n  padding: 10px;\n}\n\n.header {\n  margin: 29px 0 0 0;\n}\n\n.range {\n  margin: 10px 0 10px;\n}\n\n.title {\n  font-size: 20px;\n  font-weight: 200;\n}\n\n.links {\n  color: #CB0031;\n  text-decoration: none\n}\n\n@media screen and (max-width: 715px) {\n  .root {\n    position: static;\n    width: 100%;\n    right: 0;\n  }\n\n  .header {\n    margin: 0;\n  }\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__1qlYr",
-		"header": "styles-header__QOvXu",
-		"range": "styles-range__30RdB",
-		"title": "styles-title__1v6LZ",
-		"links": "styles-links__3LYNb"
-	};
-
-/***/ },
+/* 333 */,
 /* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -28126,53 +27533,13 @@
 
 /***/ },
 /* 335 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(336);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__1M9NA","header":"styles-header__3dbkE","section":"styles-section__7bwgt","sponsor":"styles-sponsor__26tBl","logo":"styles-logo__3wtqV","name":"styles-name__2ab55","desc":"styles-desc__2X2-r"};
 
 /***/ },
-/* 336 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__1M9NA {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  background-color: rgba(255, 255, 255, 0.94);\n  min-height: 400px;\n  padding-left: 15px;\n  padding-right: 15px;\n  padding-bottom: 103px;\n}\n\n.styles-header__3dbkE {\n  text-align: center;\n  padding-top: 20px;\n}\n\n.styles-section__7bwgt {\n  text-align: center;\n}\n\n.styles-sponsor__26tBl {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px;\n  max-width: 960px;\n  padding: 10px;\n  text-align: left;\n  border: 1px solid #999;\n  zoom: 1;\n  overflow: auto;\n  box-shadow: 1px 1px 6px rgba(0,0,0,0.3);\n  border-radius: 3px;\n}\n\n.styles-logo__3wtqV {\n  width: 240px;\n  height: 120px;\n  border: 1px solid #ccc;\n  float: left;\n}\n\n.styles-name__2ab55 {\n  display: block;\n  font-weight: bold;\n  color: #5D5D5D;\n  margin-top: 0;\n  margin-bottom: 10px;\n  margin-left: 260px;\n}\n\n.styles-name__2ab55 a, .styles-name__2ab55 a:visited {\n  color: #5d5d5d;\n  text-decoration: none;\n}\n.styles-sponsor__26tBl:hover .styles-name__2ab55 a {\n  color: #5d5d5d;\n  border-bottom: 1px solid #5d5d5d;\n}\n\n.styles-desc__2X2-r {\n  margin-top: 10px;\n  margin-left: 260px;\n  font-size: 16px;\n  line-height: 1.5;\n}\n\n@media screen and (max-width: 750px) {\n  .styles-logo__3wtqV {\n    margin-left: auto;\n    margin-right: auto;\n    display: block;\n    float: none;\n  }\n\n  .styles-name__2ab55 {\n    margin-top: 10px;\n    margin-left: 0;\n    text-align: center;\n  }\n  \n  .styles-desc__2X2-r {\n    margin: 10px;\n  }\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/SponsorsList/styles.css"],"names":[],"mappings":"AAAA;EACE,oBAAoB;EACpB,8CAA8C;EAC9C,4CAA4C;EAC5C,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,sBAAsB;CACvB;;AAED;EACE,mBAAmB;EACnB,kBAAkB;CACnB;;AAED;EACE,mBAAmB;CACpB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,iBAAiB;EACjB,cAAc;EACd,iBAAiB;EACjB,uBAAuB;EACvB,QAAQ;EACR,eAAe;EACf,wCAAwC;EACxC,mBAAmB;CACpB;;AAED;EACE,aAAa;EACb,cAAc;EACd,uBAAuB;EACvB,YAAY;CACb;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,eAAe;EACf,cAAc;EACd,oBAAoB;EACpB,mBAAmB;CACpB;;AAED;EAEE,eAAe;EACf,sBAAsB;CACvB;AACD;EACE,eAAe;EACf,iCAAiC;CAClC;;AAED;EACE,iBAAiB;EACjB,mBAAmB;EACnB,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE;IACE,kBAAkB;IAClB,mBAAmB;IACnB,eAAe;IACf,YAAY;GACb;;EAED;IACE,iBAAiB;IACjB,eAAe;IACf,mBAAmB;GACpB;;EAED;IACE,aAAa;GACd;CACF","file":"styles.css","sourcesContent":[".root {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  background-color: rgba(255, 255, 255, 0.94);\n  min-height: 400px;\n  padding-left: 15px;\n  padding-right: 15px;\n  padding-bottom: 103px;\n}\n\n.header {\n  text-align: center;\n  padding-top: 20px;\n}\n\n.section {\n  text-align: center;\n}\n\n.sponsor {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px;\n  max-width: 960px;\n  padding: 10px;\n  text-align: left;\n  border: 1px solid #999;\n  zoom: 1;\n  overflow: auto;\n  box-shadow: 1px 1px 6px rgba(0,0,0,0.3);\n  border-radius: 3px;\n}\n\n.logo {\n  width: 240px;\n  height: 120px;\n  border: 1px solid #ccc;\n  float: left;\n}\n\n.name {\n  display: block;\n  font-weight: bold;\n  color: #5D5D5D;\n  margin-top: 0;\n  margin-bottom: 10px;\n  margin-left: 260px;\n}\n\n.name a,\n.name a:visited {\n  color: #5d5d5d;\n  text-decoration: none;\n}\n.sponsor:hover .name a {\n  color: #5d5d5d;\n  border-bottom: 1px solid #5d5d5d;\n}\n\n.desc {\n  margin-top: 10px;\n  margin-left: 260px;\n  font-size: 16px;\n  line-height: 1.5;\n}\n\n@media screen and (max-width: 750px) {\n  .logo {\n    margin-left: auto;\n    margin-right: auto;\n    display: block;\n    float: none;\n  }\n\n  .name {\n    margin-top: 10px;\n    margin-left: 0;\n    text-align: center;\n  }\n  \n  .desc {\n    margin: 10px;\n  }\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__1M9NA",
-		"header": "styles-header__3dbkE",
-		"section": "styles-section__7bwgt",
-		"sponsor": "styles-sponsor__26tBl",
-		"logo": "styles-logo__3wtqV",
-		"name": "styles-name__2ab55",
-		"desc": "styles-desc__2X2-r"
-	};
-
-/***/ },
+/* 336 */,
 /* 337 */
 /***/ function(module, exports) {
 
@@ -28554,49 +27921,13 @@
 
 /***/ },
 /* 352 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(353);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__iY35Z","old":"styles-old__iD6mb","coc":"styles-coc__2wy7y"};
 
 /***/ },
-/* 353 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__iY35Z {\n  height: 117px;\n  background-color: #AC002B;\n  text-align: center;\n  color: #FFF;\n  padding: 20px 10px 25px;\n  line-height: 2;\n}\n\n\n.styles-old__iD6mb, .styles-coc__2wy7y {\n  color: #FFF;\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/Footer/styles.css"],"names":[],"mappings":"AAAA;EACE,cAAc;EACd,0BAA0B;EAC1B,mBAAmB;EACnB,YAAY;EACZ,wBAAwB;EACxB,eAAe;CAChB;;;AAGD;EAEE,YAAY;CACb","file":"styles.css","sourcesContent":[".root {\n  height: 117px;\n  background-color: #AC002B;\n  text-align: center;\n  color: #FFF;\n  padding: 20px 10px 25px;\n  line-height: 2;\n}\n\n\n.old,\n.coc {\n  color: #FFF;\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__iY35Z",
-		"old": "styles-old__iD6mb",
-		"coc": "styles-coc__2wy7y"
-	};
-
-/***/ },
+/* 353 */,
 /* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -28793,52 +28124,13 @@
 
 /***/ },
 /* 356 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(357);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__OtegJ","header":"styles-header__egdFO","speaker":"styles-speaker__1cmN-","avatar":"styles-avatar__2EMHu","name":"styles-name__2M6hH","bio":"styles-bio__1pDL_"};
 
 /***/ },
-/* 357 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__OtegJ {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  background-color: rgba(255, 255, 255, 0.94);\n  min-height: 400px;\n  padding-left: 15px;\n  padding-right: 15px;\n  padding-bottom: 103px;\n  *zoom: 1;\n}\n\n.styles-root__OtegJ:before {\n  content: '';\n  display: table;\n}\n\n.styles-root__OtegJ:after {\n  content: '';\n  display: table;\n  clear: both;\n}\n\n.styles-header__egdFO {\n  text-align: center;\n  padding-top: 20px;\n}\n\n.styles-speaker__1cmN- {\n  width: calc(99.99% * 1/4 - (30px - 30px * 1/4));\n  text-align: center;\n  margin-bottom: 20px;\n  border-radius: 50%;\n}\n\n.styles-speaker__1cmN-:nth-child(1n) {\n  float: left;\n  margin-right: 30px;\n  clear: none;\n}\n\n.styles-speaker__1cmN-:last-child {\n  margin-right: 0;\n}\n\n.styles-speaker__1cmN-:nth-child(4n) {\n  margin-right: 0;\n  float: right;\n}\n\n.styles-speaker__1cmN-:nth-child(4n + 1) {\n  clear: left;\n}\n\n.styles-avatar__2EMHu {\n  width: 70%;\n  border-radius: 50%;\n  background-color: rgba(254, 220, 117, 0.74);\n}\n\n.styles-name__2M6hH {\n  font-weight: bold;\n}\n\n.styles-bio__1pDL_ {\n  margin-top: 0;\n  font-size: 12px;\n}\n\n@media screen and (max-width: 430px) {\n  .styles-speaker__1cmN- {\n    width: calc(99.99% * 1/3 - (30px - 30px * 1/3));\n  }\n  .styles-speaker__1cmN-:nth-child(1n) {\n    float: left;\n    margin-right: 30px;\n    clear: none;\n  }\n  .styles-speaker__1cmN-:last-child {\n    margin-right: 0;\n  }\n  .styles-speaker__1cmN-:nth-child(3n) {\n    margin-right: 0;\n    float: right;\n  }\n  .styles-speaker__1cmN-:nth-child(3n + 1) {\n    clear: left;\n  }\n}\n", "", {"version":3,"sources":["/./app/javascripts/components/SpeakerList/styles.css"],"names":[],"mappings":"AAAA;EACE,oBAAoB;EACpB,8CAA8C;EAC9C,4CAA4C;EAC5C,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,sBAAsB;GACtB,QAAuB;CACxB;;AATD;EAQE,YAAuB;EAAvB,eAAuB;CACxB;;AATD;EAQE,YAAuB;EAAvB,eAAuB;EAAvB,YAAuB;CACxB;;AAED;EACE,mBAAmB;EACnB,kBAAkB;CACnB;;AAED;EACE,gDAAiB;EACjB,mBAAmB;EACnB,oBAAoB;EACpB,mBAAmB;CACpB;;AALD;EACE,YAAiB;EAAjB,mBAAiB;EAAjB,YAAiB;CAIlB;;AALD;EACE,gBAAiB;CAIlB;;AALD;EACE,gBAAiB;EAAjB,aAAiB;CAIlB;;AALD;EACE,YAAiB;CAIlB;;AAED;EACE,WAAW;EACX,mBAAmB;EACnB,4CAA4C;CAC7C;;AAED;EACE,kBAAkB;CACnB;;AAED;EACE,cAAc;EACd,gBAAgB;CACjB;;AAED;EACE;IACE,gDAAiB;GAClB;EAFD;IACE,YAAiB;IAAjB,mBAAiB;IAAjB,YAAiB;GAClB;EAFD;IACE,gBAAiB;GAClB;EAFD;IACE,gBAAiB;IAAjB,aAAiB;GAClB;EAFD;IACE,YAAiB;GAClB;CACF","file":"styles.css","sourcesContent":[".root {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  background-color: rgba(255, 255, 255, 0.94);\n  min-height: 400px;\n  padding-left: 15px;\n  padding-right: 15px;\n  padding-bottom: 103px;\n  lost-utility: clearfix;\n}\n\n.header {\n  text-align: center;\n  padding-top: 20px;\n}\n\n.speaker {\n  lost-column: 1/4;\n  text-align: center;\n  margin-bottom: 20px;\n  border-radius: 50%;\n}\n\n.avatar {\n  width: 70%;\n  border-radius: 50%;\n  background-color: rgba(254, 220, 117, 0.74);\n}\n\n.name {\n  font-weight: bold;\n}\n\n.bio {\n  margin-top: 0;\n  font-size: 12px;\n}\n\n@media screen and (max-width: 430px) {\n  .speaker {\n    lost-column: 1/3;\n  }\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__OtegJ",
-		"header": "styles-header__egdFO",
-		"speaker": "styles-speaker__1cmN-",
-		"avatar": "styles-avatar__2EMHu",
-		"name": "styles-name__2M6hH",
-		"bio": "styles-bio__1pDL_"
-	};
-
-/***/ },
+/* 357 */,
 /* 358 */
 /***/ function(module, exports) {
 
@@ -28988,6 +28280,11 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	exports.ScheduleParallel = undefined;
+
+	var _extends2 = __webpack_require__(364);
+
+	var _extends3 = _interopRequireDefault(_extends2);
 
 	var _getPrototypeOf = __webpack_require__(232);
 
@@ -29009,25 +28306,34 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _slicedToArray2 = __webpack_require__(364);
+	var _slicedToArray2 = __webpack_require__(369);
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
+
+	var _time = __webpack_require__(378);
+
+	Object.defineProperty(exports, 'ScheduleParallel', {
+	  enumerable: true,
+	  get: function get() {
+	    return _interopRequireDefault(_time).default;
+	  }
+	});
 
 	var _react = __webpack_require__(11);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _schedules_by_track = __webpack_require__(373);
+	var _schedules_by_track = __webpack_require__(391);
 
 	var _schedules_by_track2 = _interopRequireDefault(_schedules_by_track);
 
 	var _locale = __webpack_require__(228);
 
-	var _filter = __webpack_require__(374);
+	var _filter = __webpack_require__(383);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
-	var _session = __webpack_require__(377);
+	var _session = __webpack_require__(386);
 
 	var _session2 = _interopRequireDefault(_session);
 
@@ -29035,7 +28341,7 @@
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _bind = __webpack_require__(383);
+	var _bind = __webpack_require__(390);
 
 	var _bind2 = _interopRequireDefault(_bind);
 
@@ -29047,6 +28353,14 @@
 
 	function mapTimeSlotToItems(day, value, i) {
 	  var id = 'day' + day + '-all-' + i;
+	  var venue = value.venue || value.event && value.event.venue;
+
+	  if (venue && this.state.categoryOn) {
+	    var category = this.state.categories.filter(function (cat) {
+	      return cat.title === venue;
+	    })[0];
+	    if (!category.active) return false;
+	  }
 
 	  var content = void 0;
 	  if (!value.time) {
@@ -29060,7 +28374,9 @@
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'Schedule-time' },
-	        value.title
+	        value.title,
+	        '／',
+	        venue
 	      ),
 	      _react2.default.createElement(
 	        'div',
@@ -29150,6 +28466,10 @@
 	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_Object$getPrototypeO = (0, _getPrototypeOf2.default)(Schedule)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.state = {
 	      showSession: false,
 	      categoryOn: false,
+	      mobileFilterOn: false,
+	      categories: categories.map(function (category) {
+	        return (0, _extends3.default)({}, category, { active: false });
+	      }),
 	      currentSection: '',
 	      currentSession: {},
 	      currentSessionTime: null
@@ -29160,6 +28480,19 @@
 	        currentSessionTime: null
 	      });
 	      document.body.classList.remove(_styles2.default.mobileScrollLock);
+	    }, _this.toggleCategory = function (id) {
+	      var categories = _this.state.categories.slice(0);
+	      categories[id] = (0, _extends3.default)({}, categories[id], { active: !categories[id].active });
+	      _this.setState({ categories: categories, categoryOn: true });
+	    }, _this.clearCategory = function () {
+	      _this.setState({
+	        categories: categories.map(function (category) {
+	          return (0, _extends3.default)({}, category, { active: false });
+	        }),
+	        categoryOn: false
+	      });
+	    }, _this.toggleMobileFilter = function () {
+	      _this.setState({ mobileFilterOn: !_this.state.mobileFilterOn });
 	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
 	  }
 
@@ -29198,10 +28531,10 @@
 	                "is-fixed": false
 	              }) },
 	            _react2.default.createElement(_filter2.default, {
-	              data: categories,
-	              filterOn: false,
-	              toggleCategoryHandler: noop,
-	              clearCategoryHandler: noop
+	              data: this.state.categories,
+	              filterOn: this.state.categoryOn,
+	              toggleCategoryHandler: this.toggleCategory,
+	              clearCategoryHandler: this.clearCategory
 	            })
 	          ),
 	          _react2.default.createElement(
@@ -29241,7 +28574,36 @@
 	                    }),
 	                    onClick: this.setSection.bind(this, 'day2') },
 	                  'Day 2'
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'Schedule-switchBtn', onClick: this.props.onSwitch },
+	                  'View Parallel'
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: cx({
+	                      'Schedule-filterBtn': true,
+	                      'is-show': this.state.mobileFilterOn
+	                    }),
+	                    onClick: this.toggleMobileFilter },
+	                  'Filter',
+	                  _react2.default.createElement('div', { className: cx({ 'Schedule-bar1': true, 'is-active': this.state.mobileFilterOn }) }),
+	                  _react2.default.createElement('div', { className: cx({ 'Schedule-bar2': true, 'is-active': this.state.mobileFilterOn }) })
 	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: cx({
+	                    'Schedule-filterPanel': true,
+	                    'is-show': this.state.mobileFilterOn
+	                  }) },
+	                _react2.default.createElement(_filter2.default, { ref: 'filter',
+	                  data: this.state.categories,
+	                  filterOn: this.state.categoryOn,
+	                  toggleCategoryHandler: this.toggleCategory,
+	                  clearCategoryHandler: this.clearCategory,
+	                  togglePanelHander: this.toggleMobileFilter })
 	              ),
 	              _react2.default.createElement(
 	                'div',
@@ -29326,11 +28688,99 @@
 
 	exports.__esModule = true;
 
-	var _isIterable2 = __webpack_require__(365);
+	var _assign = __webpack_require__(365);
+
+	var _assign2 = _interopRequireDefault(_assign);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _assign2.default || function (target) {
+	  for (var i = 1; i < arguments.length; i++) {
+	    var source = arguments[i];
+
+	    for (var key in source) {
+	      if (Object.prototype.hasOwnProperty.call(source, key)) {
+	        target[key] = source[key];
+	      }
+	    }
+	  }
+
+	  return target;
+	};
+
+/***/ },
+/* 365 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(366), __esModule: true };
+
+/***/ },
+/* 366 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(367);
+	module.exports = __webpack_require__(245).Object.assign;
+
+/***/ },
+/* 367 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.3.1 Object.assign(target, source)
+	var $export = __webpack_require__(244);
+
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(368)});
+
+/***/ },
+/* 368 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	// 19.1.2.1 Object.assign(target, source, ...)
+	var getKeys  = __webpack_require__(277)
+	  , gOPS     = __webpack_require__(299)
+	  , pIE      = __webpack_require__(300)
+	  , toObject = __webpack_require__(235)
+	  , IObject  = __webpack_require__(280)
+	  , $assign  = Object.assign;
+
+	// should work with symbols and should have deterministic property order (V8 bug)
+	module.exports = !$assign || __webpack_require__(254)(function(){
+	  var A = {}
+	    , B = {}
+	    , S = Symbol()
+	    , K = 'abcdefghijklmnopqrst';
+	  A[S] = 7;
+	  K.split('').forEach(function(k){ B[k] = k; });
+	  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
+	}) ? function assign(target, source){ // eslint-disable-line no-unused-vars
+	  var T     = toObject(target)
+	    , aLen  = arguments.length
+	    , index = 1
+	    , getSymbols = gOPS.f
+	    , isEnum     = pIE.f;
+	  while(aLen > index){
+	    var S      = IObject(arguments[index++])
+	      , keys   = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S)
+	      , length = keys.length
+	      , j      = 0
+	      , key;
+	    while(length > j)if(isEnum.call(S, key = keys[j++]))T[key] = S[key];
+	  } return T;
+	} : $assign;
+
+/***/ },
+/* 369 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	exports.__esModule = true;
+
+	var _isIterable2 = __webpack_require__(370);
 
 	var _isIterable3 = _interopRequireDefault(_isIterable2);
 
-	var _getIterator2 = __webpack_require__(369);
+	var _getIterator2 = __webpack_require__(374);
 
 	var _getIterator3 = _interopRequireDefault(_getIterator2);
 
@@ -29375,24 +28825,24 @@
 	}();
 
 /***/ },
-/* 365 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(366), __esModule: true };
+	module.exports = { "default": __webpack_require__(371), __esModule: true };
 
 /***/ },
-/* 366 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(289);
 	__webpack_require__(267);
-	module.exports = __webpack_require__(367);
+	module.exports = __webpack_require__(372);
 
 /***/ },
-/* 367 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var classof   = __webpack_require__(368)
+	var classof   = __webpack_require__(373)
 	  , ITERATOR  = __webpack_require__(288)('iterator')
 	  , Iterators = __webpack_require__(273);
 	module.exports = __webpack_require__(245).isIterable = function(it){
@@ -29403,7 +28853,7 @@
 	};
 
 /***/ },
-/* 368 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// getting tag from 19.1.3.6 Object.prototype.toString()
@@ -29431,25 +28881,25 @@
 	};
 
 /***/ },
-/* 369 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(370), __esModule: true };
+	module.exports = { "default": __webpack_require__(375), __esModule: true };
 
 /***/ },
-/* 370 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(289);
 	__webpack_require__(267);
-	module.exports = __webpack_require__(371);
+	module.exports = __webpack_require__(376);
 
 /***/ },
-/* 371 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var anObject = __webpack_require__(250)
-	  , get      = __webpack_require__(372);
+	  , get      = __webpack_require__(377);
 	module.exports = __webpack_require__(245).getIterator = function(it){
 	  var iterFn = get(it);
 	  if(typeof iterFn != 'function')throw TypeError(it + ' is not iterable!');
@@ -29457,10 +28907,10 @@
 	};
 
 /***/ },
-/* 372 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var classof   = __webpack_require__(368)
+	var classof   = __webpack_require__(373)
 	  , ITERATOR  = __webpack_require__(288)('iterator')
 	  , Iterators = __webpack_require__(273);
 	module.exports = __webpack_require__(245).getIteratorMethod = function(it){
@@ -29470,7 +28920,555 @@
 	};
 
 /***/ },
-/* 373 */
+/* 378 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _getIterator2 = __webpack_require__(374);
+
+	var _getIterator3 = _interopRequireDefault(_getIterator2);
+
+	var _slicedToArray2 = __webpack_require__(369);
+
+	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
+
+	var _assign = __webpack_require__(365);
+
+	var _assign2 = _interopRequireDefault(_assign);
+
+	var _extends2 = __webpack_require__(364);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
+	var _getPrototypeOf = __webpack_require__(232);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(258);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(259);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(263);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(306);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
+	var _react = __webpack_require__(11);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(169);
+
+	var _locale = __webpack_require__(228);
+
+	var _schedules = __webpack_require__(379);
+
+	var _schedules2 = _interopRequireDefault(_schedules);
+
+	var _categories = __webpack_require__(380);
+
+	var _categories2 = _interopRequireDefault(_categories);
+
+	var _styles = __webpack_require__(381);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	var _filter = __webpack_require__(383);
+
+	var _filter2 = _interopRequireDefault(_filter);
+
+	var _session = __webpack_require__(386);
+
+	var _session2 = _interopRequireDefault(_session);
+
+	var _classnames = __webpack_require__(387);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _bind = __webpack_require__(390);
+
+	var _bind2 = _interopRequireDefault(_bind);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var cx = _bind2.default.bind(_styles2.default);
+
+	var ScheduleParallel = function (_Component) {
+	  (0, _inherits3.default)(ScheduleParallel, _Component);
+
+	  function ScheduleParallel() {
+	    (0, _classCallCheck3.default)(this, ScheduleParallel);
+
+	    var _this = (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(ScheduleParallel).call(this));
+
+	    _this.state = {
+	      showPanel: false,
+	      showSession: false,
+	      categoryOn: false,
+	      categories: _categories2.default[(0, _locale.getLocale)()].map(function (cat, index) {
+	        return (0, _extends3.default)({}, cat, { index: index });
+	      }),
+	      currentSession: {},
+	      currentSessionTime: null
+	    };
+	    _this.defaultTitle = document.title;
+
+
+	    _this.togglePanel = _this.togglePanel.bind(_this);
+	    _this.toggleCategory = _this.toggleCategory.bind(_this);
+	    _this.clearCategory = _this.clearCategory.bind(_this);
+	    _this.resetSession = _this.resetSession.bind(_this);
+	    return _this;
+	  }
+
+	  (0, _createClass3.default)(ScheduleParallel, [{
+	    key: "togglePanel",
+	    value: function togglePanel() {
+	      // mobile filter
+	      this.setState({ showPanel: !this.state.showPanel });
+	    }
+	  }, {
+	    key: "toggleCategory",
+	    value: function toggleCategory(index, e) {
+	      e.stopPropagation();
+	      var current = this.state.categories.slice(0);
+	      current[index] = (0, _assign2.default)({}, current[index], { active: !current[index].active });
+
+	      var sum = current.reduce(function (pre, current) {
+	        if (current.active) {
+	          return pre + 1;
+	        } else {
+	          return pre;
+	        }
+	      }, 0);
+	      var categoryOn = sum > 0;
+
+	      this.setState({
+	        categories: current,
+	        categoryOn: categoryOn
+	      });
+	    }
+	  }, {
+	    key: "setSession",
+	    value: function setSession(value, time) {
+	      this.setState({
+	        showSession: true,
+	        currentSession: value,
+	        currentSessionTime: time
+	      });
+
+	      document.body.classList.add(_styles2.default.mobileScrollLock);
+	    }
+	  }, {
+	    key: "resetSession",
+	    value: function resetSession() {
+	      this.setState({
+	        showSession: false,
+	        currentSession: {},
+	        currentSessionTime: null
+	      });
+	      document.body.classList.remove(_styles2.default.mobileScrollLock);
+	    }
+	  }, {
+	    key: "clearCategory",
+	    value: function clearCategory() {
+	      var current = this.state.categories.map(function (value, i) {
+	        return (0, _extends3.default)({}, value, {
+	          active: false
+	        });
+	      });
+
+	      this.setState({
+	        categories: current,
+	        categoryOn: false
+	      });
+	    }
+	  }, {
+	    key: "goToElement",
+	    value: function goToElement(refName) {
+	      var node = this.refs[refName].getDOMNode();
+	      // this.props.goToElementHandler(node.offsetTop);
+	      console.log("TODO: animate to " + refName);
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      var _this2 = this;
+
+	      var _state = this.state;
+	      var filterOn = _state.categoryOn;
+	      var currentSession = _state.currentSession;
+	      var showSession = _state.showSession;
+	      var categories = _state.categories;
+	      var showPanel = _state.showPanel;
+
+
+	      var categoryObj = {};
+	      var _iteratorNormalCompletion = true;
+	      var _didIteratorError = false;
+	      var _iteratorError = undefined;
+
+	      try {
+	        for (var _iterator = (0, _getIterator3.default)(categories), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+	          var category = _step.value;
+	          categoryObj[category.id] = category;
+	        }
+	      } catch (err) {
+	        _didIteratorError = true;
+	        _iteratorError = err;
+	      } finally {
+	        try {
+	          if (!_iteratorNormalCompletion && _iterator.return) {
+	            _iterator.return();
+	          }
+	        } finally {
+	          if (_didIteratorError) {
+	            throw _iteratorError;
+	          }
+	        }
+	      }
+
+	      var shouldPassFilter = function shouldPassFilter(categoryId) {
+	        if (!filterOn) return true;
+	        if (!categoryId) return false;
+	        return categoryObj[categoryId] && categoryObj[categoryId].active;
+	      };
+
+	      var mapTimeSlotToItems = function mapTimeSlotToItems(day, value, i) {
+	        var itemClasses = (0, _classnames2.default)({
+	          "Schedule-item": true
+	        });
+
+	        var content = "";
+	        if (value.event) {
+	          //single event
+	          if (!shouldPassFilter(value.event.category)) {
+	            return null;
+	          }
+
+	          var id = "day" + day + "-all-" + i;
+
+	          if (typeof value.event === 'string') {
+	            content = _react2.default.createElement(
+	              "div",
+	              { className: "Schedule-event" },
+	              value.event
+	            );
+	          } else {
+	            content = _react2.default.createElement(
+	              "a",
+	              { id: "slot-" + id, href: "#" + id,
+	                className: (0, _classnames2.default)({
+	                  "Schedule-event": true,
+	                  "is-active": currentSession.title === value.event.title && currentSession.time === value.event.time && currentSession.venue === value.event.venue
+	                }),
+	                onClick: _this2.setSession.bind(_this2, value.event, value.time) },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "Schedule-main" },
+	                value.event.title,
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "Schedule-presenter" },
+	                  value.event.speaker
+	                )
+	              )
+	            );
+	          }
+	        } else {
+	          //multile events
+	          var filteredEvents = value.events.filter(function (v) {
+	            return shouldPassFilter(v.category);
+	          });
+	          if (filteredEvents.length === 0) return null;
+
+	          content = _react2.default.createElement(
+	            "div",
+	            { className: "Schedule-events" },
+	            filteredEvents.map(function (v, k) {
+	              var language = v.EN ? _react2.default.createElement(
+	                "div",
+	                { className: "Schedule-en" },
+	                "EN"
+	              ) : "";
+
+	              var venue = v.venue ? _react2.default.createElement(
+	                "div",
+	                { className: "Schedule-meta" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "Schedule-venue" },
+	                  v.venue
+	                )
+	              ) : "";
+	              var id = "day" + day + "-" + v.venue.toLowerCase() + "-" + i;
+
+	              return _react2.default.createElement(
+	                "a",
+	                { className: (0, _classnames2.default)({
+	                    "Schedule-event": true,
+	                    "is-active": currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
+	                  }),
+	                  onClick: _this2.setSession.bind(_this2, v, value.time),
+	                  href: "#" + id, key: k, id: "slot-" + id },
+	                venue,
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "Schedule-main" },
+	                  _react2.default.createElement(
+	                    "div",
+	                    null,
+	                    v.title,
+	                    language
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "Schedule-presenter" },
+	                    v.speaker
+	                  ),
+	                  v.category && categoryObj[v.category] ? _react2.default.createElement("div", { className: "Schedule-categoryIcon", style: {
+	                      "background": categoryObj[v.category].color
+	                    },
+	                    title: "Toggle topic \"" + categoryObj[v.category].title + "\"",
+	                    onClick: _this2.toggleCategory.bind(_this2, categoryObj[v.category].index)
+	                  }) : null
+	                )
+	              );
+	            })
+	          );
+	        }
+
+	        var _value$time$split = value.time.split('-');
+
+	        var _value$time$split2 = (0, _slicedToArray3.default)(_value$time$split, 2);
+
+	        var timeStart = _value$time$split2[0];
+	        var timeEnd = _value$time$split2[1];
+
+	        return _react2.default.createElement(
+	          "div",
+	          { className: itemClasses,
+	            key: i },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "Schedule-time" },
+	            timeStart,
+	            _react2.default.createElement(
+	              "span",
+	              { className: "Schedule-timeEnd" },
+	              " - ",
+	              timeEnd
+	            )
+	          ),
+	          content
+	        );
+	      };
+
+	      var filterStyle = {};
+	      var sessionStyle = {};
+
+	      return _react2.default.createElement(
+	        "div",
+	        { className: _styles2.default.root },
+	        _react2.default.createElement(
+	          "div",
+	          { className: _styles2.default.container },
+	          _react2.default.createElement(
+	            "div",
+	            { className: (0, _classnames2.default)({
+	                "Home-filter": true,
+	                "is-fixed": false
+	              }), style: filterStyle },
+	            _react2.default.createElement(_filter2.default, { data: categories,
+	              filterOn: filterOn,
+	              toggleCategoryHandler: this.toggleCategory,
+	              clearCategoryHandler: this.clearCategory })
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: (0, _classnames2.default)({
+	                "Home-schedule": true,
+	                "with-session": showSession
+	              }) },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "Schedule" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: (0, _classnames2.default)({
+	                    "Schedule-title": true,
+	                    "with-session": showSession,
+	                    "without-session": !showSession
+	                    /*"is-fixed" : inScheduleArea==="within" || (inScheduleArea==="passed" && showPanel),*/
+	                  }) },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "Schedule-dayButtonLeftstop" },
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: (0, _classnames2.default)({
+	                        "Schedule-dayButton": true
+	                      }),
+	                      /* "is-active" : currentSection === "day1" */
+	                      onClick: this.goToElement.bind(this, "day1") },
+	                    "Day 1"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: (0, _classnames2.default)({
+	                      "Schedule-dayButton": true
+	                    }),
+	                    /* "is-active" : currentSection === "day2" */
+	                    onClick: this.goToElement.bind(this, "day2") },
+	                  "Day 2"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "Schedule-switchBtn", onClick: this.props.onSwitch },
+	                  "View Topics"
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: (0, _classnames2.default)({
+	                      'Schedule-filterBtn': true,
+	                      'is-show': showPanel
+	                    }),
+	                    onClick: this.togglePanel },
+	                  "Filter",
+	                  _react2.default.createElement("div", { className: (0, _classnames2.default)({ 'Schedule-bar1': true, 'is-active': showPanel }) }),
+	                  _react2.default.createElement("div", { className: (0, _classnames2.default)({ 'Schedule-bar2': true, 'is-active': showPanel }) })
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: (0, _classnames2.default)({
+	                    'Schedule-filterPanel': true,
+	                    'is-show': showPanel
+	                  }) },
+	                _react2.default.createElement(_filter2.default, { ref: "filter",
+	                  data: categories,
+	                  filterOn: filterOn,
+	                  toggleCategoryHandler: this.toggleCategory,
+	                  clearCategoryHandler: this.clearCategory,
+	                  togglePanelHander: this.togglePanel })
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { ref: "day1", id: "day1" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "Schedule-day" },
+	                  "5/14 (Sat.)"
+	                ),
+	                _react2.default.createElement(
+	                  "section",
+	                  null,
+	                  _schedules2.default[(0, _locale.getLocale)()]["day1"].map(mapTimeSlotToItems.bind(this, 1))
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { ref: "day2", id: "day2" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "Schedule-day" },
+	                  "5/15 (Sun.)"
+	                ),
+	                _react2.default.createElement(
+	                  "section",
+	                  null,
+	                  _schedules2.default[(0, _locale.getLocale)()]["day2"].map(mapTimeSlotToItems.bind(this, 2))
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: (0, _classnames2.default)({
+	                "Home-session": true,
+	                "is-show": showSession,
+	                "is-fixed": true
+	              }),
+	              style: sessionStyle },
+	            _react2.default.createElement(_session2.default, { sessionHandler: this.resetSession,
+	              data: currentSession, time: this.state.currentSessionTime,
+	              categories: this.state.categories })
+	          )
+	        ),
+	        _react2.default.createElement("div", { className: cx({
+	            backdrop: true,
+	            isShown: showSession
+	          }), onClick: this.resetSession })
+	      );
+	    }
+	  }, {
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      var anchor = document.location.hash.split('#')[1] || '';
+	      var node = document.getElementById("slot-" + anchor);
+	      if (node && node.click) {
+	        node.click();
+	      }
+	    }
+	  }, {
+	    key: "componentWillUnmount",
+	    value: function componentWillUnmount() {
+	      document.body.classList.remove(_styles2.default.mobileScrollLock);
+	    }
+	  }]);
+	  return ScheduleParallel;
+	}(_react.Component);
+
+	exports.default = ScheduleParallel;
+	;
+
+	var multilineText = function multilineText(text) {
+	  var arr = text.split('\n');
+	  var ret = [arr.shift()];
+	  var _iteratorNormalCompletion2 = true;
+	  var _didIteratorError2 = false;
+	  var _iteratorError2 = undefined;
+
+	  try {
+	    for (var _iterator2 = (0, _getIterator3.default)(arr), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+	      var line = _step2.value;
+
+	      ret.push(_react2.default.createElement("br", null));
+	      ret.push(line);
+	    }
+	  } catch (err) {
+	    _didIteratorError2 = true;
+	    _iteratorError2 = err;
+	  } finally {
+	    try {
+	      if (!_iteratorNormalCompletion2 && _iterator2.return) {
+	        _iterator2.return();
+	      }
+	    } finally {
+	      if (_didIteratorError2) {
+	        throw _iteratorError2;
+	      }
+	    }
+	  }
+
+	  return ret;
+	};
+
+/***/ },
+/* 379 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -29495,21 +29493,68 @@
 					}
 				},
 				{
-					"title": "Power",
-					"tagline": "Upgrading the organizing capacity of activism with civic tech",
-					"color": "#CE0D41"
+					"time": "10:00-10:30",
+					"events": [
+						{
+							"venue": "R1",
+							"category": "power",
+							"language": "",
+							"speaker": "Hoony Jang",
+							"title": "How to extend Civic Tech to civic organizations (NPO, NGO, and the media) in KOREA?",
+							"bio": "<p>Civic Hacker at Creative Commons Korea<ul><li>project manager of Codenamu</li><li>organizer of Code for Seoul</li><li>github: @hoony</li><li>twitter: @thechunsik</li></li></p>",
+							"abstract": "<p>CodeNamu, initiated by Creative Commons Korea as an open data project since 2011, has built communities, hosted yearly hackathons, and made lots of data storytelling projects. However we failed to put our message deeply, or some of results were quite meaningful but we fail to spread out our messages or our acts to outside community. How can we extend civic tech to civic organizations outside community?</p><p>In South Korea. most of civic organizations(NPO, NGO, and the media) are interested in data and data journalism, but they don’t have capacity to treat the data and data journalism. Event they don’t have any developers to maintain their own website. Because of that, after they constructed huge and valuable data to make stories for years, the data has been hidden somewhere on their PCs in not-machine-readable formats.</p><p>From this year, we’re developing a Data Specialists Working Group composed of civic hackers; technitians, designers, and data experts. This group will be in partnerships with NPO, NGO, and the media for data journalism projects. CodeNamu civic technitians and our partners composed of journalists and activits will make synergy to make those data open and to make various data journalism projects between CodeNamu’s civic tech and partners’ insight or messages. We hope that we’re going to introduce and discuss about the way to extend civic tech to outside civic tech community.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "foundation",
+							"language": "",
+							"speaker": "Charlotte Richard",
+							"title": "Democracy and Civic Engagement as an Open Media ",
+							"bio": "<p>Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).</p>",
+							"abstract": "<p>At Voxe.org we seek to build online tools that revolutionize civic engagement by bringing to the public easy access, neutral and crowdsourced information.</p><p>We've already:<ul><li>created a <a href='http://voxe.org/welcome'>world comparison platform</a> for politics (16 countries, 3.5 million users and more than 20 media partners). </li><li>launched the weekly <a href='http://www.happydemocracy.com/'>civic tech newsletter</a></li><li>experienced <a href='http://hacklacop21.voxe.org/''>a tool to ask politician question</a> during COP21</li><li>we're designing a mobile app that pushes you engagement solutions in your pocket.</li></ul></p>"
+						},
+						{
+							"venue": "R2",
+							"category": "construction",
+							"language": "",
+							"speaker": "Lucien Lin",
+							"title": "Charging towards the Taiwan Open Government Data License",
+							"bio": "<p>知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡 (Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任<a href='http://ifosslawbook.org/'>自由開源軟體法律參考書台灣專章</a>的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。</p>",
+							"abstract": "<p>國內從政府端戮力推動 Open Data 的發展已歷時三年餘，終於在2015年7月27日，經行政院國家發展委員會媒介跨部會的多次協商，同步與參與 g0v 的公民團體與網路社群進行討論，定案了「民撰官酌、官民協力」不同視野分工協調出來的正式版本。此一版本架構符合國際開放定義(Open Definition)，並內嵌 Creative Commons License 的融通轉換機制，協助國內開放資料專案，設有未來與國際專案接軌的延展性。本議程將從參與編撰討論者的角度，就如何官民協力以消爭止紛取得共識進行經驗分享，並就該條款發布近半年來常見的使用問題、與他國條款相較的不足處，以及未來可資改進調整的空間，提出中道並契合條款架構的說明與示範。</p>"
+						}
+					]
 				},
 				{
 					"time": "10:30-11:00",
-					"event": {
-						"venue": "R1",
-						"category": "power",
-						"language": "",
-						"speaker": "Hsieh, Tsung Chen",
-						"title": "Data For Social Good – Data-driven Charity",
-						"bio": "<p>DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。</p>",
-						"abstract": "<p>有人用勞力做公益，也有人用財力做公益，如果用資料力來做公益，不知道會擦出怎樣的火花？</p><p>2015年，我們打造一個「資料力，做公益」的交流與媒合平台，稱為「D4SG 計畫」 (Data for Social Good)。透過社群、黑客松、資料競賽、長期專案...等方式推動資料人與非營利組織的深度交流。這場演講將從資料人的角度分享如何與NPO/NGO合作，把冰冷的資料轉換化成有溫度的故事。</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "power",
+							"language": "",
+							"speaker": "Hsieh, Tsung Chen",
+							"title": "Data For Social Good – Data-driven Charity",
+							"bio": "<p>DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。</p>",
+							"abstract": "<p>有人用勞力做公益，也有人用財力做公益，如果用資料力來做公益，不知道會擦出怎樣的火花？</p><p>2015年，我們打造一個「資料力，做公益」的交流與媒合平台，稱為「D4SG 計畫」 (Data for Social Good)。透過社群、黑客松、資料競賽、長期專案...等方式推動資料人與非營利組織的深度交流。這場演講將從資料人的角度分享如何與NPO/NGO合作，把冰冷的資料轉換化成有溫度的故事。</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "foundation",
+							"language": "",
+							"speaker": "Yantisa Akhadi",
+							"title": "Government (Participatory) Mapping",
+							"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
+							"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "construction",
+							"language": "",
+							"speaker": "Katarzyna Mikołajczyk",
+							"title": "Cities are the key to engage citizens into open data",
+							"bio": "<p>Katarzyna Mikołajczyk, Open Cities Program Coordinator in Poland.</p><p>I use my work experience to open up cities in Poland. I want to increase transparency of the public administration, the growth of startups based on public data and increase the participation of informed citizens. Just this :)</p><p>I do this while I work for ePF Foundation, an NGO which mission is to develop democracy, open and transparent authorities and civic engagement through new technologies. I’m coordinating Open Cities Program which is dedicated to local governments and helps them to publish public information and engage people to understand open data.</p><p>I’m also a leader active in local community in city of Lodz for over 7 years. I managed civic engagement campaigns, educational projects, social consultations and advocacy work with the city authorities. I was always a passionate of open data and using them to plan for people. But only with people.</p>",
+							"abstract": "<p>Cities serve people who live in them. They are less political then governments, more focused on problem solving. They are never pefect but when you open up 10 cities with half a million people living in them - you suddenly make a national change. Bottom up and thumbs up. We created a formula which attracts cities to open up their data, engage citizens and make sure that data is used. And most importantly by introducing open data policies in Poland we make the change systemic.</p><p>Openness it is not only about publishing information. It’s essential part of building engagement in modern society. But we – citizens – need and often demand something more. We are ready to take responsibility for the place we live and work. We do care about the quality of the life we live in our cities. We need to be treated as partner by our government.</p><p>At first Personal Democracy Forum in Poland in 2013, Ellen Miller from Sunlight Fundation said that \"government is as strong as citizens informed\". Government can publish information, make it available, machine readable and up-to-date, but it will not encourage much more people to check them.</p><p>Can we do anything more to engage people in city life, to show them advantages of being active? How new technologies are moving us closer to participation? Did new applications can connect (or disconnect) citizens? Is it possible to empower citizens and allow them to manage our cities (not only from time to time, but daily)? How – by using technology – citizen can gather around idea, support it and make it happen?</p><p>And I can show examples of such process in Poland (Central Eastern Europe).</p>"
+						}
+					]
 				},
 				{
 					"time": "11:00-11:30",
@@ -29517,162 +29562,167 @@
 				},
 				{
 					"time": "11:30-12:00",
-					"event": {
-						"venue": "R1",
-						"category": "power",
-						"language": "",
-						"speaker": "Y.H. Kao",
-						"title": "From .org to .g0v －Internet participant and digital challenge of NGO in Taiwan",
-						"bio": "<p>撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。</p><p>台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。</p>",
-						"abstract": "<p>2000 年 dotcom 泡沫帶來最正向的影響之一就是連網的成本大幅降低，也創造了NGO透過網路發展的機遇。台灣環境資訊協會源起於 2000-4-17 創刊的環境資訊電子報，著眼於網路低成本高效率的資訊傳播，成為了 .org.tw 的成員之一。本次將藉由下列幾個主題切入，當 NGO 從 nobody 變成了 somebody 時， 組織運作和運用網路技術的問題和眉角進行回顧及反思。</p><ul><li>從 Web 1.0 到物聯網－時空背景的變化</li><li>「網路型NGO」在資訊公開，公民參與和網路技術發展的可能角色</li><li>反思與挑戰：駭客，技術長還是資訊長</li></ul>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "power",
+							"language": "",
+							"speaker": "Y.H. Kao",
+							"title": "From .org to .g0v －Internet participant and digital challenge of NGO in Taiwan",
+							"bio": "<p>撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。</p><p>台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。</p>",
+							"abstract": "<p>2000 年 dotcom 泡沫帶來最正向的影響之一就是連網的成本大幅降低，也創造了NGO透過網路發展的機遇。台灣環境資訊協會源起於 2000-4-17 創刊的環境資訊電子報，著眼於網路低成本高效率的資訊傳播，成為了 .org.tw 的成員之一。本次將藉由下列幾個主題切入，當 NGO 從 nobody 變成了 somebody 時， 組織運作和運用網路技術的問題和眉角進行回顧及反思。</p><ul><li>從 Web 1.0 到物聯網－時空背景的變化</li><li>「網路型NGO」在資訊公開，公民參與和網路技術發展的可能角色</li><li>反思與挑戰：駭客，技術長還是資訊長</li></ul>"
+						},
+						{
+							"venue": "R0",
+							"category": "foundation",
+							"language": "",
+							"speaker": "Yago Bermejo Abati",
+							"title": "Digital participation strategy in Podemos party.",
+							"bio": "<p>Yago Bermejo Abati</p><p>I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur.</p><p>Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties…</p><p>After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating.<p><p>Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.</p>",
+							"abstract": "<p>The summer of 2014 at team of 20 people was elected by a digital voting process to organise the structure of the new exponential party-movement called Podemos. At that time more than 300k people were subscribed as digital participants of this party. The social media team running a Facebook of more than 800k followers and a Twitter of more than 500k were looking for a new tool to interact with that huge amount of people. LaboDemo proposed a concrete strategy running different tools. We created a deliberative space hacking Reddit, proposed Loomio as a consensus-making tool for assemblies and a mobile app to make fast collective and massive decisions. Hundreds of thousands of people participate at this process creating a collective intelligence that finally faced top leaders at Podemos. I will explain how this kind of collective intelligence can change the way politics work and why we should engage direct a deliberative democracy to empower the crowd using internet combined with analogical participation.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "construction",
+							"language": "",
+							"speaker": "Venus Lui",
+							"title": "Importance of having an Arts database in Asia",
+							"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
+							"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
+						}
+					]
 				},
 				{
 					"time": "12:00-12:30",
-					"event": {
-						"venue": "R1",
-						"category": "power",
-						"language": "",
-						"speaker": "Sergejus Muravjovas",
-						"title": "On the Yellow Brick Road One Hundred Years Later: The Journey of Reinvention of a Classical NGO",
-						"bio": "<p>I am a social doer involved in creating change. I spend most of my time helping make transparency an easy-to-follow way of life for people around me. I do so by challenging the known, tapping into the under-researched and bridging the gaps between different groups of researchers and activists alike.</p><p>Besides heading TI Lithuania and overseeing the development of TransparencySchool.org for the past seven years, I have been involved in a number of undertakings that in many ways complement each other. I teach Corporate Governance and Anti-Corruption at the International School of Management in Vilnius. I am also a board member of the Lithuanian responsible business initiative \"Clear Wave\" and an advisory council member of the Duke of Edinburgh's International Award Lithuania and the Žinių radijas. I have just joined supervisory boards of two healthcare establishments in Vilnius - the Central Policlinics of Vilnius and the National Vilnius University Hospital. I have also served as a local correspondent for Lithuania for the EU Commission Anti-Corruption report.</p><p>As for other experiences under my sleeve, I was a member of the International Board of Directors of the global TI movement from 2009 to 2015 and a member of the Selection Commission of Candidates to the Judicial Office.</p>",
-						"abstract": "<p>In my talk I would like to share a story of the 21st century metamorphosis - a story of a classical NGO that has managed to drastically change its identity, expand its outreach and become more sustainable with the help of data and online tools.</p><p>By telling the audience the story of our successes and mistakes along the way, I will offer the audience with the state of mind that has allowed Transparency International (TI) Lithuania to grow into a top-notch go-to organization known to every second business person and every fifth member of the public - in our continuous advocacy efforts to encourage change and make sure that an ever-increasing number of Lithuanians become and act as owners of their state.</p><p>To illustrate this state of mind, I would like to show how TI Lithuania has successfully merged the availability of data, the talents of its coding teams and public advocacy savvy: <ol><li>to ensure greater transparency in Lithuanian politics with the help of the parliamentary oversight <a href='www.manoseimas.lt'>website</a>; </li><li>to allow for greater public awareness of media ownership and accountability by collecting and constantly updating all available data on media ownership at www.stirna.info; </li><li>to encourage people to find and contact their representatives with the help of <a href='www.parasykjiems'>www.parasykjiems.lt</a>; </li><li>to help Lithuanian courts open up to the public and be the first ones in the country to publish performance data of courts and judges with www.atvirasteismas.lt; and </li><li>to track interests of local politicians with <a href='www.jurgiokepure.lt'>www.jurgiokepure.lt</a>.</li></ul></p><p>In 2015, with all these tools combined TI Lithuania helped more than 100 thousand people, or almost 4 per cent of the entire Lithuania population, get engaged and individually seek greater transparency in their daily lives. With the numbers of concerned citizens and TI Lithuania partners growing every year, I hope my story will inspire others to explore innovative ways to create real-life change and prompt decision-makers and the public alike to check what technology has in store for democracy.</p>"
-					}
-				},
-				{
-					"title": "Foundation",
-					"tagline": "Global reimplementions of media, elections, governments and public decisions",
-					"color": "#FCDE86"
-				},
-				{
-					"time": "10:30-11:00",
-					"event": {
-						"venue": "R0",
-						"category": "foundation",
-						"language": "",
-						"speaker": "Yantisa Akhadi",
-						"title": "Government (Participatory) Mapping",
-						"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
-						"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
-					}
-				},
-				{
-					"time": "11:00-11:30",
-					"event": "Tea time"
-				},
-				{
-					"time": "11:30-12:00",
-					"event": {
-						"venue": "R0",
-						"category": "foundation",
-						"language": "",
-						"speaker": "Yago Bermejo Abati",
-						"title": "Digital participation strategy in Podemos party.",
-						"bio": "<p>Yago Bermejo Abati</p><p>I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur.</p><p>Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties…</p><p>After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating.<p><p>Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.</p>",
-						"abstract": "<p>The summer of 2014 at team of 20 people was elected by a digital voting process to organise the structure of the new exponential party-movement called Podemos. At that time more than 300k people were subscribed as digital participants of this party. The social media team running a Facebook of more than 800k followers and a Twitter of more than 500k were looking for a new tool to interact with that huge amount of people. LaboDemo proposed a concrete strategy running different tools. We created a deliberative space hacking Reddit, proposed Loomio as a consensus-making tool for assemblies and a mobile app to make fast collective and massive decisions. Hundreds of thousands of people participate at this process creating a collective intelligence that finally faced top leaders at Podemos. I will explain how this kind of collective intelligence can change the way politics work and why we should engage direct a deliberative democracy to empower the crowd using internet combined with analogical participation.</p>"
-					}
-				},
-				{
-					"time": "12:00-12:30",
-					"event": {
-						"venue": "R0",
-						"category": "foundation",
-						"language": "",
-						"speaker": "Colin Megill",
-						"title": "Pol.is in Taiwan: Bridging the gap between public discourse, consultation, and policy",
-						"bio": "<p>Colin is founder of Seattle based startup <a href='http://pol.is'>http://pol.is</a>, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.</p><p>He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.</p><p>Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.</p>",
-						"abstract": "<p>Pol.is is a new tool for gathering crowd sentiment in a way that preserves and respects minority opinions. It scales to any number of users, while preserving high dimensional, organic feedback. g0v and vTaiwan have used pol.is to foster productive discourse in the public sphere and influence policy related to Uber and AirBnB. We'll discuss pol.is as a technology and the case study of vTaiwan's successes with it.</p>"
-					}
-				},
-				{
-					"title": "Construction",
-					"tagline": "Open-culture experiments with data and technology",
-					"color": "#1BADBE"
-				},
-				{
-					"time": "10:30-11:00",
-					"event": {
-						"venue": "R2",
-						"category": "construction",
-						"language": "",
-						"speaker": "Katarzyna Mikołajczyk",
-						"title": "Cities are the key to engage citizens into open data",
-						"bio": "<p>Katarzyna Mikołajczyk, Open Cities Program Coordinator in Poland.</p><p>I use my work experience to open up cities in Poland. I want to increase transparency of the public administration, the growth of startups based on public data and increase the participation of informed citizens. Just this :)</p><p>I do this while I work for ePF Foundation, an NGO which mission is to develop democracy, open and transparent authorities and civic engagement through new technologies. I’m coordinating Open Cities Program which is dedicated to local governments and helps them to publish public information and engage people to understand open data.</p><p>I’m also a leader active in local community in city of Lodz for over 7 years. I managed civic engagement campaigns, educational projects, social consultations and advocacy work with the city authorities. I was always a passionate of open data and using them to plan for people. But only with people.</p>",
-						"abstract": "<p>Cities serve people who live in them. They are less political then governments, more focused on problem solving. They are never pefect but when you open up 10 cities with half a million people living in them - you suddenly make a national change. Bottom up and thumbs up. We created a formula which attracts cities to open up their data, engage citizens and make sure that data is used. And most importantly by introducing open data policies in Poland we make the change systemic.</p><p>Openness it is not only about publishing information. It’s essential part of building engagement in modern society. But we – citizens – need and often demand something more. We are ready to take responsibility for the place we live and work. We do care about the quality of the life we live in our cities. We need to be treated as partner by our government.</p><p>At first Personal Democracy Forum in Poland in 2013, Ellen Miller from Sunlight Fundation said that \"government is as strong as citizens informed\". Government can publish information, make it available, machine readable and up-to-date, but it will not encourage much more people to check them.</p><p>Can we do anything more to engage people in city life, to show them advantages of being active? How new technologies are moving us closer to participation? Did new applications can connect (or disconnect) citizens? Is it possible to empower citizens and allow them to manage our cities (not only from time to time, but daily)? How – by using technology – citizen can gather around idea, support it and make it happen?</p><p>And I can show examples of such process in Poland (Central Eastern Europe).</p>"
-					}
-				},
-				{
-					"time": "11:00-11:30",
-					"event": "Tea time"
-				},
-				{
-					"time": "11:30-12:00",
-					"event": {
-						"venue": "R2",
-						"category": "construction",
-						"language": "",
-						"speaker": "Venus Lui",
-						"title": "Importance of having an Arts database in Asia",
-						"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
-						"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
-					}
-				},
-				{
-					"time": "12:00-12:30",
-					"event": {
-						"venue": "R2",
-						"category": "construction",
-						"language": "",
-						"speaker": "Bobby Tung",
-						"title": "Do We Need Open Digital Libraries for Chinese Publication in Public Domain? and How?",
-						"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
-						"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "power",
+							"language": "",
+							"speaker": "Sergejus Muravjovas",
+							"title": "On the Yellow Brick Road One Hundred Years Later: The Journey of Reinvention of a Classical NGO",
+							"bio": "<p>I am a social doer involved in creating change. I spend most of my time helping make transparency an easy-to-follow way of life for people around me. I do so by challenging the known, tapping into the under-researched and bridging the gaps between different groups of researchers and activists alike.</p><p>Besides heading TI Lithuania and overseeing the development of TransparencySchool.org for the past seven years, I have been involved in a number of undertakings that in many ways complement each other. I teach Corporate Governance and Anti-Corruption at the International School of Management in Vilnius. I am also a board member of the Lithuanian responsible business initiative \"Clear Wave\" and an advisory council member of the Duke of Edinburgh's International Award Lithuania and the Žinių radijas. I have just joined supervisory boards of two healthcare establishments in Vilnius - the Central Policlinics of Vilnius and the National Vilnius University Hospital. I have also served as a local correspondent for Lithuania for the EU Commission Anti-Corruption report.</p><p>As for other experiences under my sleeve, I was a member of the International Board of Directors of the global TI movement from 2009 to 2015 and a member of the Selection Commission of Candidates to the Judicial Office.</p>",
+							"abstract": "<p>In my talk I would like to share a story of the 21st century metamorphosis - a story of a classical NGO that has managed to drastically change its identity, expand its outreach and become more sustainable with the help of data and online tools.</p><p>By telling the audience the story of our successes and mistakes along the way, I will offer the audience with the state of mind that has allowed Transparency International (TI) Lithuania to grow into a top-notch go-to organization known to every second business person and every fifth member of the public - in our continuous advocacy efforts to encourage change and make sure that an ever-increasing number of Lithuanians become and act as owners of their state.</p><p>To illustrate this state of mind, I would like to show how TI Lithuania has successfully merged the availability of data, the talents of its coding teams and public advocacy savvy: <ol><li>to ensure greater transparency in Lithuanian politics with the help of the parliamentary oversight <a href='www.manoseimas.lt'>website</a>; </li><li>to allow for greater public awareness of media ownership and accountability by collecting and constantly updating all available data on media ownership at www.stirna.info; </li><li>to encourage people to find and contact their representatives with the help of <a href='www.parasykjiems'>www.parasykjiems.lt</a>; </li><li>to help Lithuanian courts open up to the public and be the first ones in the country to publish performance data of courts and judges with www.atvirasteismas.lt; and </li><li>to track interests of local politicians with <a href='www.jurgiokepure.lt'>www.jurgiokepure.lt</a>.</li></ul></p><p>In 2015, with all these tools combined TI Lithuania helped more than 100 thousand people, or almost 4 per cent of the entire Lithuania population, get engaged and individually seek greater transparency in their daily lives. With the numbers of concerned citizens and TI Lithuania partners growing every year, I hope my story will inspire others to explore innovative ways to create real-life change and prompt decision-makers and the public alike to check what technology has in store for democracy.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "foundation",
+							"language": "",
+							"speaker": "Colin Megill",
+							"title": "Pol.is in Taiwan: Bridging the gap between public discourse, consultation, and policy",
+							"bio": "<p>Colin is founder of Seattle based startup <a href='http://pol.is'>http://pol.is</a>, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.</p><p>He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.</p><p>Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.</p>",
+							"abstract": "<p>Pol.is is a new tool for gathering crowd sentiment in a way that preserves and respects minority opinions. It scales to any number of users, while preserving high dimensional, organic feedback. g0v and vTaiwan have used pol.is to foster productive discourse in the public sphere and influence policy related to Uber and AirBnB. We'll discuss pol.is as a technology and the case study of vTaiwan's successes with it.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "construction",
+							"language": "",
+							"speaker": "Bobby Tung",
+							"title": "Do We Need Open Digital Libraries for Chinese Publication in Public Domain? and How?",
+							"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
+							"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
+						}
+					]
 				},
 				{
 					"time": "12:30-13:30",
 					"event": "Lunch"
 				},
 				{
-					"title": "Blueprint",
-					"tagline": "Towards digital representation: A jigsaw of open government data endeavours",
-					"color": "#F4AF3D"
-				},
-				{
 					"time": "13:30-14:00",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "Jen Bramley",
-						"title": "Powering civic tech reuse with EveryPolitician data",
-						"bio": "<p>Jen is the International Projects Manager at mySociety. If you email international@mysociety.org, Jen will be the one who responds to you first. She lives in London and works directly with organisations anywhere in the world, helping them with the practicalities of deploying our code and maintaining the resulting websites.</p><p>With a background as a working on media development and broadcasting reform projects in the Middle East and North Africa for BBC Media Action, she’s used to pitching in wherever needed for all sorts of projects.</p><p>Jen travels widely to meet our partners on their home ground: it’s always helpful to see our projects in the places where they’ll be deployed, and meet the people who will be using them. She’s passionate about ensuring that projects meet local needs and spending time with groups in their own countries helps her start to understand their motivations.</p>",
-						"abstract": "<p>Presenting the EveryPolitician project we will talk about the reasons why we're collecting all this open data and how it has already been used in different forms (for example: crowdsourcing data about the gender breakdown of every parliament in the world). We'll show real examples of the data being used to power civic technology sites in different countries - and hopefully you'll be inspired to create something yourself!</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "blueprint",
+							"language": "",
+							"speaker": "Jen Bramley",
+							"title": "Powering civic tech reuse with EveryPolitician data",
+							"bio": "<p>Jen is the International Projects Manager at mySociety. If you email international@mysociety.org, Jen will be the one who responds to you first. She lives in London and works directly with organisations anywhere in the world, helping them with the practicalities of deploying our code and maintaining the resulting websites.</p><p>With a background as a working on media development and broadcasting reform projects in the Middle East and North Africa for BBC Media Action, she’s used to pitching in wherever needed for all sorts of projects.</p><p>Jen travels widely to meet our partners on their home ground: it’s always helpful to see our projects in the places where they’ll be deployed, and meet the people who will be using them. She’s passionate about ensuring that projects meet local needs and spending time with groups in their own countries helps her start to understand their motivations.</p>",
+							"abstract": "<p>Presenting the EveryPolitician project we will talk about the reasons why we're collecting all this open data and how it has already been used in different forms (for example: crowdsourcing data about the gender breakdown of every parliament in the world). We'll show real examples of the data being used to power civic technology sites in different countries - and hopefully you'll be inspired to create something yourself!</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "Kirby Wu",
+							"title": "My Covered Life in Journalism",
+							"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
+							"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "KNY Chen",
+							"title": "EEW: Early Earthquake Warnings",
+							"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
+							"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
+						}
+					]
 				},
 				{
 					"time": "14:00-14:30",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "James Mckinney",
-						"title": "Civic Tech in Monitoring Legislatures: The Long Game",
-						"bio": "<p>James McKinney regularly contributes to civil society initiatives relating to government, legislative and corporate transparency. He is currently focusing on Popolo (a set of legislative data specifications, used by parliamentary monitoring organizations and members of Poplus.org) and on Influence Mapping (a group of organizations that draw the networks of relations between politically exposed people and organizations). James is especially interested in how data standards can facilitate cooperation between organizations and individuals.</p><p>James previously founded Open North, a Canadian nonprofit that creates websites to promote government transparency and public participation. He is co-lead of the Open Government Partnership’s Open Data Working Group’s Standards Stream. He was a member of the Open Contract Data Standard core team and of the W3C Government Linked Data Working Group. He has presented on open government and open data, most recently at the International Open Data Conference, Canadian Open Data Summit, and Spaghetti Open Data.</p>",
-						"abstract": "<p>The problems we often try to solve in civic tech are right in front of us: fixing a pothole, monitoring a government, opening up data, etc. The tools we create to address such problems often produce immediate value for users. I'm going to share a story about a much longer game, where the payoff is just starting to happen now, five years later.</p><p>This will be a story of how organizations around the world built a software stack for legislative monitoring. It starts with a vision shared in Warsaw in 2011. In 2012, work on a standard data interchange format begins, which will tie the stack together. Two organizations start authoring backend data management tools in 2013 using this format. In 2014, the first user-facing tools appear at the top of this stack. And in 2015, governments begin adopting the data standard, as more user-facing tools spread.</p><p>This journey will visit many organizations and projects around the world, from mySociety to OpenAustralia to Sunlight, and from PopIt to Councilmatic to Represent, among others. We're five years into this journey, and there's still more ground to cover for at least as many more years before the basic problems in legislative monitoring that we're solving can be taken for granted.</p><p>This talk ties into the fork-merge theme. Legislative monitoring generally involves forking the official website, which requires scraping data to reproduce the information. Through government adoption of data standards like Popolo, we can eliminate these scrapers, and merge good data publication practices into government.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "blueprint",
+							"language": "",
+							"speaker": "James Mckinney",
+							"title": "Civic Tech in Monitoring Legislatures: The Long Game",
+							"bio": "<p>James McKinney regularly contributes to civil society initiatives relating to government, legislative and corporate transparency. He is currently focusing on Popolo (a set of legislative data specifications, used by parliamentary monitoring organizations and members of Poplus.org) and on Influence Mapping (a group of organizations that draw the networks of relations between politically exposed people and organizations). James is especially interested in how data standards can facilitate cooperation between organizations and individuals.</p><p>James previously founded Open North, a Canadian nonprofit that creates websites to promote government transparency and public participation. He is co-lead of the Open Government Partnership’s Open Data Working Group’s Standards Stream. He was a member of the Open Contract Data Standard core team and of the W3C Government Linked Data Working Group. He has presented on open government and open data, most recently at the International Open Data Conference, Canadian Open Data Summit, and Spaghetti Open Data.</p>",
+							"abstract": "<p>The problems we often try to solve in civic tech are right in front of us: fixing a pothole, monitoring a government, opening up data, etc. The tools we create to address such problems often produce immediate value for users. I'm going to share a story about a much longer game, where the payoff is just starting to happen now, five years later.</p><p>This will be a story of how organizations around the world built a software stack for legislative monitoring. It starts with a vision shared in Warsaw in 2011. In 2012, work on a standard data interchange format begins, which will tie the stack together. Two organizations start authoring backend data management tools in 2013 using this format. In 2014, the first user-facing tools appear at the top of this stack. And in 2015, governments begin adopting the data standard, as more user-facing tools spread.</p><p>This journey will visit many organizations and projects around the world, from mySociety to OpenAustralia to Sunlight, and from PopIt to Councilmatic to Represent, among others. We're five years into this journey, and there's still more ground to cover for at least as many more years before the basic problems in legislative monitoring that we're solving can be taken for granted.</p><p>This talk ties into the fork-merge theme. Legislative monitoring generally involves forking the official website, which requires scraping data to reproduce the information. Through government adoption of data standards like Popolo, we can eliminate these scrapers, and merge good data publication practices into government.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "Walkingice",
+							"title": "Campaigning Experiences of a Geek",
+							"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
+							"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "Yu-Lun Liu",
+							"title": "The Past, Present and Future of Open Communicable Disease Data - Using Dengue Fever As An Example",
+							"bio": "<p>Yu-Lun Liu is medical officer of the Epidemic Intelligence Center of Taiwan Centers for Disease Control. He has a medical specialty in emergency medicine. He received the European Programme for Intervention Epidemiology Training (EPIET) in Vienna, Austria. He is interested in applying information technology on the data collection, analysis and visualization for infectious disease surveillance.</p>",
+							"abstract": "<p>The number of cases in the 2015 dengue fever outbreak in Taiwan has hit a historical high. In response to the outbreak, Taiwan Centers for Disease Control has collaborated with the open data community and released several open data for the dengue epidemiological and vector surveillance. This talk will cover: the experience on producing and releasing dengue fever open data; the collaboration and competition between the local and the central governments; applications of dengue fever open data; and the future prospects of communicable disease open data movement of Taiwan CDC.<p>"
+						}
+					]
 				},
 				{
 					"time": "14:30-15:00",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "Henare Degan",
-						"title": "morph.io: the international civic tech scraping platform",
-						"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
-						"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "blueprint",
+							"language": "",
+							"speaker": "Henare Degan",
+							"title": "morph.io: the international civic tech scraping platform",
+							"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
+							"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "Jim Horng",
+							"title": "Netizen and Self-Organized Movement: A Case Study with Boycott Mapping",
+							"bio": "<p>在台灣軟體業已有約 10 年經驗，自認角色為工程師、社會議題微參與者、open source微貢獻者。</p>",
+							"abstract": "<p>抵抗黑心行動之一的滅頂秒退在 2015 年底到 2016 年初約熱了一個月時間，引發許多層次的討論。支持方的行動雖然一開始遍地開花，但似乎遇到輿論、成效、進度等阻力而漸式微，其中秒退地圖是想解決成效與進度透明化的部分，同時帶點組織化前置的概念。以結果論可能不算成功，但其過程包含網路推廣，早期使用者偕同設計，facebook 微組織合作，從中激發更多優化無組織社運的想法，這些便是作者想要分享的。</p><ul><li><a href='http://jimhorng.github.io/return_as_buy/'>滅頂秒退地圖</a></li><li><a href='https://jimhorng.wordpress.com/2016/01/19/%E5%BE%9E%E6%BB%85%E9%A0%82%E7%A7%92%E9%80%80%E7%9C%8B%E5%8F%B0%E7%81%A3%E8%BB%9F%E5%AF%A6%E5%8A%9B/'>從滅頂秒退看台灣軟實力</a></li></ul>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "Kuo-Yu slayer Chuang",
+							"title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project",
+							"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
+							"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
+						}
+					]
 				},
 				{
 					"time": "15:00-15:40",
@@ -29680,165 +29730,67 @@
 				},
 				{
 					"time": "15:40-16:10",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "Rajib Timalsina",
-						"title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
-						"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
-						"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "blueprint",
+							"language": "",
+							"speaker": "Rajib Timalsina",
+							"title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
+							"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
+							"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "ipa & ETBlue",
+							"title": "\"Bluepa\" Metrics and Case Studies for Interdisciplinarity: the Mystery of Openness and Interdisplinary in g0v",
+							"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
+							"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "W.S. Jhan",
+							"title": "Using OpenStreetMap to help other countries and improve foreign relations",
+							"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
+							"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
+						}
+					]
 				},
 				{
 					"time": "16:10-16:40",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "",
-						"title": "TBA",
-						"bio": "",
-						"abstract": ""
-					}
-				},
-				{
-					"title": "Wiring",
-					"tagline": "Intersectoral networks: Synchronizations, collaborations and demonstrations",
-					"color": "#449FFC"
-				},
-				{
-					"time": "13:30-14:00",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "Kirby Wu",
-						"title": "My Covered Life in Journalism",
-						"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
-						"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
-					}
-				},
-				{
-					"time": "14:00-14:30",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "Walkingice",
-						"title": "Campaigning Experiences of a Geek",
-						"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
-						"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
-					}
-				},
-				{
-					"time": "14:30-15:00",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "Jim Horng",
-						"title": "Netizen and Self-Organized Movement: A Case Study with Boycott Mapping",
-						"bio": "<p>在台灣軟體業已有約 10 年經驗，自認角色為工程師、社會議題微參與者、open source微貢獻者。</p>",
-						"abstract": "<p>抵抗黑心行動之一的滅頂秒退在 2015 年底到 2016 年初約熱了一個月時間，引發許多層次的討論。支持方的行動雖然一開始遍地開花，但似乎遇到輿論、成效、進度等阻力而漸式微，其中秒退地圖是想解決成效與進度透明化的部分，同時帶點組織化前置的概念。以結果論可能不算成功，但其過程包含網路推廣，早期使用者偕同設計，facebook 微組織合作，從中激發更多優化無組織社運的想法，這些便是作者想要分享的。</p><ul><li><a href='http://jimhorng.github.io/return_as_buy/'>滅頂秒退地圖</a></li><li><a href='https://jimhorng.wordpress.com/2016/01/19/%E5%BE%9E%E6%BB%85%E9%A0%82%E7%A7%92%E9%80%80%E7%9C%8B%E5%8F%B0%E7%81%A3%E8%BB%9F%E5%AF%A6%E5%8A%9B/'>從滅頂秒退看台灣軟實力</a></li></ul>"
-					}
-				},
-				{
-					"time": "15:00-15:40",
-					"event": "Tea time"
-				},
-				{
-					"time": "15:40-16:10",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "ipa & ETBlue",
-						"title": "\"Bluepa\" Metrics and Case Studies for Interdisciplinarity: the Mystery of Openness and Interdisplinary in g0v",
-						"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
-						"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
-					}
-				},
-				{
-					"time": "16:10-16:40",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "Shigeomi Shibata",
-						"title": "How to spread the civic tech movement to non-techie people?",
-						"bio": "(TBC)",
-						"abstract": "<p>Code for Japan which is established on 2013 Nov. has now 33 official brigades and 20+ candidate groups. Growing speed is great I think but the member of groups mainly are techie guys. From the point of view for civic tech, we need more non-techie people. So I want to let you share our challenges and achievement and ask your thought.</p><p>My name is Shigeomi Shibata, co-captain of code for Japan and a member of code for Ibaraki located on Mito-shi of Ibaraki prefecture.</p>"
-					}
-				},
-				{
-					"title": "Scaffold",
-					"tagline": "Analyzing disasters: Data-based contingency planning",
-					"color": "#CE59E4"
-				},
-				{
-					"time": "13:30-14:00",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "KNY Chen",
-						"title": "EEW: Early Earthquake Warnings",
-						"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
-						"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
-					}
-				},
-				{
-					"time": "14:00-14:30",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "Yu-Lun Liu",
-						"title": "The Past, Present and Future of Open Communicable Disease Data - Using Dengue Fever As An Example",
-						"bio": "<p>Yu-Lun Liu is medical officer of the Epidemic Intelligence Center of Taiwan Centers for Disease Control. He has a medical specialty in emergency medicine. He received the European Programme for Intervention Epidemiology Training (EPIET) in Vienna, Austria. He is interested in applying information technology on the data collection, analysis and visualization for infectious disease surveillance.</p>",
-						"abstract": "<p>The number of cases in the 2015 dengue fever outbreak in Taiwan has hit a historical high. In response to the outbreak, Taiwan Centers for Disease Control has collaborated with the open data community and released several open data for the dengue epidemiological and vector surveillance. This talk will cover: the experience on producing and releasing dengue fever open data; the collaboration and competition between the local and the central governments; applications of dengue fever open data; and the future prospects of communicable disease open data movement of Taiwan CDC.<p>"
-					}
-				},
-				{
-					"time": "14:30-15:00",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "Kuo-Yu slayer Chuang",
-						"title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project",
-						"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
-						"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
-					}
-				},
-				{
-					"time": "15:00-15:40",
-					"event": "Tea time"
-				},
-				{
-					"time": "15:40-16:10",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "W.S. Jhan",
-						"title": "Using OpenStreetMap to help other countries and improve foreign relations",
-						"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
-						"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
-					}
-				},
-				{
-					"time": "16:10-16:40",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "Dongpo Deng",
-						"title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
-						"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
-						"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "",
+							"language": "",
+							"speaker": "",
+							"title": "TBA",
+							"bio": "",
+							"abstract": ""
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "Shigeomi Shibata",
+							"title": "How to spread the civic tech movement to non-techie people?",
+							"bio": "(TBC)",
+							"abstract": "<p>Code for Japan which is established on 2013 Nov. has now 33 official brigades and 20+ candidate groups. Growing speed is great I think but the member of groups mainly are techie guys. From the point of view for civic tech, we need more non-techie people. So I want to let you share our challenges and achievement and ask your thought.</p><p>My name is Shigeomi Shibata, co-captain of code for Japan and a member of code for Ibaraki located on Mito-shi of Ibaraki prefecture.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "Dongpo Deng",
+							"title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
+							"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
+							"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
+						}
+					]
 				},
 				{
 					"time": "16:45-17:00",
@@ -29888,33 +29840,67 @@
 					"event": "Lunch"
 				},
 				{
-					"title": "Supervision",
-					"tagline": "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns",
-					"color": "#C1EB96"
-				},
-				{
 					"time": "13:00-13:30",
-					"event": {
-						"venue": "R1",
-						"category": "supervision",
-						"language": "",
-						"speaker": "Billy Lin",
-						"title": "The non-disclosed and opaque party-owned assets data",
-						"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
-						"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "supervision",
+							"language": "",
+							"speaker": "Billy Lin",
+							"title": "The non-disclosed and opaque party-owned assets data",
+							"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
+							"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
+						},
+						{
+							"venue": "R0",
+							"category": "square",
+							"language": "",
+							"speaker": "Saul Peng & TonyQ",
+							"title": "The Continuation of the g0v budget visualization - Taipei City Government",
+							"bio": "<p>彭盛韶 Saul Peng<br/>經歷：<ul><li>柯文哲辦公室政策部研究員</li><li>臺北市資訊局專門委員</li></ul></p><p>王景弘<br/>經歷：<ul><li>普奇科技資深工程師</li><li>威聯通科技資深產品工程師</li><li>JavaScript.tw 技術社團發起人</li><li>JSDC 前端技術人年會共同發起人</li></ul></p>",
+							"abstract": "<p>分享 2015 年臺北市資訊局與民間社群合作的經驗，運用原 2012 年 g0v 預算視覺化模組，更新後推出臺北市的版本。此案例在當時引起不小迴響，同時擴散至其他縣市。此演講中將分享行政體制的改變、公私協力的契機、技術部分的執行及後續造成地方政府的影響等。</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "Ventilation",
+							"language": "",
+							"speaker": "Yan-Jen Su",
+							"title": "Interpolation and Visualization of Air Pollution based on Wind Fields",
+							"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
+							"abstract": "<p>A system based on wind fields to interpolate and to visualized air pollution is introduced. <br/> The air pollution information provided by the government is a set of values sampled on the measuring stations. <br/> In contrast to the traditional linear interpolation, wind fields are applied to estimate the air pollution indices between the measuring stations. <br/> The estimated results are  the associated with the wind field and geographic information to construct a 3D virtual world and display on Web browsers.<br/> It provides additional information for users to understand the conditions of the air pollution and the environment.</p>"
+						}
+					]
 				},
 				{
 					"time": "13:30-14:00",
-					"event": {
-						"venue": "R1",
-						"category": "supervision",
-						"language": "",
-						"speaker": "Freyja van den boom",
-						"title": "Ever tried TDM and would you do it again?",
-						"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
-						"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "supervision",
+							"language": "",
+							"speaker": "Freyja van den boom",
+							"title": "Ever tried TDM and would you do it again?",
+							"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
+							"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "square",
+							"speaker": "Chia-hua Lu",
+							"title": "Government x Civil Society x Internet x Deliberation\nObservations and Reflections of a Mediator",
+							"bio": "(TBC)",
+							"abstract": "(TBC)"
+						},
+						{
+							"venue": "R2",
+							"category": "Ventilation",
+							"language": "",
+							"speaker": "Liz Barry",
+							"title": "Community science for healthy environments",
+							"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
+							"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
+						}
+					]
 				},
 				{
 					"time": "14:00-14:40",
@@ -29922,140 +29908,67 @@
 				},
 				{
 					"time": "14:40-15:10",
-					"event": {
-						"venue": "R1",
-						"category": "supervision",
-						"language": "",
-						"speaker": "Nanang Syaifudin",
-						"title": "True Story: Public e-Participatory for Election Monitoring (MataMassa or PublicEye)",
-						"bio": "<p>Nanang Syaifudin is a member of Wikipedia Indonesia period iLab 2013. He is the founder and currently serves as the Executive Director iLab, a nonprofit organization engaged in the development of information technology for social change. Nanang helped in terms of technical and training projects Cipta Media Bersama First, open grant projects for improvement of media with Ford Foundation, Wikimedia Indonesia, ICT Watch and the Alliance of Independent Journalists.</p><p>Nanang had previously helped Malaysian activists with community Bersih 2.0 and Fitness Komas to develop a system of monitoring the elections with the project name Jom Monitor, Nana also create a system for the people of Pattani in southern Thailand with institutions INSouthMedia for documentation of human rights violations based on the map with the project name WARTANI, then he made Encyclopedia Corruption Indonesia is Korupedia portal to document the Corruptor figures in Indonesia.</p><p>Nanang also been a Project Manager at the Foundation AirPutih for capacity-building projects and alternative technologies in the area - particularly remote areas of Papua, on alternative technologies and the use of citizen media by using SMS cooperate with AJI Jayapura</p>",
-						"abstract": "<p>Indonesia was having its legislative election on April 9, 2014. As a new emerging democratic country, we would like to share MataMassa application experience in election monitoring, combining between technology, citizen participation/ engagement and collaboration. We would like to hear your experiences as well on your election monitoring and especially learning what to do afterwards. There will be souvenirs that we brought from Indonesia :D. More further info: <a href='www.matamassa.org'>www.matamassa.org</a> / <a href='pileg2014.matamassa.org'>pileg2014.matamassa.org</a> / <a href='pilpres2014.matamassa.org'>pilpres2014.matamassa.org</a></p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "supervision",
+							"language": "",
+							"speaker": "Nanang Syaifudin",
+							"title": "True Story: Public e-Participatory for Election Monitoring (MataMassa or PublicEye)",
+							"bio": "<p>Nanang Syaifudin is a member of Wikipedia Indonesia period iLab 2013. He is the founder and currently serves as the Executive Director iLab, a nonprofit organization engaged in the development of information technology for social change. Nanang helped in terms of technical and training projects Cipta Media Bersama First, open grant projects for improvement of media with Ford Foundation, Wikimedia Indonesia, ICT Watch and the Alliance of Independent Journalists.</p><p>Nanang had previously helped Malaysian activists with community Bersih 2.0 and Fitness Komas to develop a system of monitoring the elections with the project name Jom Monitor, Nana also create a system for the people of Pattani in southern Thailand with institutions INSouthMedia for documentation of human rights violations based on the map with the project name WARTANI, then he made Encyclopedia Corruption Indonesia is Korupedia portal to document the Corruptor figures in Indonesia.</p><p>Nanang also been a Project Manager at the Foundation AirPutih for capacity-building projects and alternative technologies in the area - particularly remote areas of Papua, on alternative technologies and the use of citizen media by using SMS cooperate with AJI Jayapura</p>",
+							"abstract": "<p>Indonesia was having its legislative election on April 9, 2014. As a new emerging democratic country, we would like to share MataMassa application experience in election monitoring, combining between technology, citizen participation/ engagement and collaboration. We would like to hear your experiences as well on your election monitoring and especially learning what to do afterwards. There will be souvenirs that we brought from Indonesia :D. More further info: <a href='www.matamassa.org'>www.matamassa.org</a> / <a href='pileg2014.matamassa.org'>pileg2014.matamassa.org</a> / <a href='pilpres2014.matamassa.org'>pilpres2014.matamassa.org</a></p>"
+						},
+						{
+							"venue": "R0",
+							"category": "square",
+							"language": "",
+							"speaker": "JK Suh",
+							"title": "The Korean General Election and VAAs: the case of \"Ping\"",
+							"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
+							"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "Ventilation",
+							"language": "",
+							"speaker": "S.H. Hung / H.W Tseng",
+							"title": "Environment data transparency for cross-strait applications",
+							"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
+							"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
+						}
+					]
 				},
 				{
 					"time": "15:10-15:40",
-					"event": {
-						"venue": "R1",
-						"category": "supervision",
-						"language": "",
-						"speaker": "Nicholas Doiron",
-						"title": "NodeJS in Naypyitaw: Opening Election Data in Myanmar Election",
-						"bio": "<p>Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.</p>",
-						"abstract": "<p>In November 2015, millions of Myanmar's citizens went to the polls for the first openly-contested national elections in 25 years. Tens of thousands of people used mobile apps to research political parties, find out their candidates ahead of time, and see candidates' profiles. Those apps' data came from the MaePaySoh API, a partnership between the Myanmar Union Election Commission in Naypyitaw and the Asia Foundation's. Behind the scenes there were weeks of paperwork, scanning, digitizing, Unicode issues, deal-making, data cleanup, and development leading up to a two-week-long Hackathon. Take a look inside a fledgling open source community in Yangon and a drive for civic tech apps.</p>"
-					}
-				},
-				{
-					"title": "Square",
-					"tagline": "Overcoming black boxes: Wiki-manuals for open governance",
-					"color": "#FB69B3"
-				},
-				{
-					"time": "13:00-13:30",
-					"event": {
-						"venue": "R0",
-						"category": "square",
-						"language": "",
-						"speaker": "Saul Peng & TonyQ",
-						"title": "The Continuation of the g0v budget visualization - Taipei City Government",
-						"bio": "<p>彭盛韶 Saul Peng<br/>經歷：<ul><li>柯文哲辦公室政策部研究員</li><li>臺北市資訊局專門委員</li></ul></p><p>王景弘<br/>經歷：<ul><li>普奇科技資深工程師</li><li>威聯通科技資深產品工程師</li><li>JavaScript.tw 技術社團發起人</li><li>JSDC 前端技術人年會共同發起人</li></ul></p>",
-						"abstract": "<p>分享 2015 年臺北市資訊局與民間社群合作的經驗，運用原 2012 年 g0v 預算視覺化模組，更新後推出臺北市的版本。此案例在當時引起不小迴響，同時擴散至其他縣市。此演講中將分享行政體制的改變、公私協力的契機、技術部分的執行及後續造成地方政府的影響等。</p>"
-					}
-				},
-				{
-					"time": "13:30-14:00",
-					"event": {
-						"venue": "R0",
-						"category": "square",
-						"speaker": "Chia-hua Lu",
-						"title": "Government x Civil Society x Internet x Deliberation\nObservations and Reflections of a Mediator",
-						"bio": "(TBC)",
-						"abstract": "(TBC)"
-					}
-				},
-				{
-					"time": "14:00-14:40",
-					"event": "Tea time"
-				},
-				{
-					"time": "14:40-15:10",
-					"event": {
-						"venue": "R0",
-						"category": "square",
-						"language": "",
-						"speaker": "JK Suh",
-						"title": "The Korean General Election and VAAs: the case of \"Ping\"",
-						"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
-						"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
-					}
-				},
-				{
-					"time": "15:10-15:40",
-					"event": {
-						"venue": "R0",
-						"category": "square",
-						"language": "",
-						"speaker": "Johnny Lo",
-						"title": "Voter's Guide for Legislators and Council Members",
-						"bio": "<p>立委／議員投票指南</p>",
-						"abstract": "<p>2014 議員選舉到 2016 立委選舉，投票指南在選前一個月都有四十到五十萬使用者<br/>投票指南的設計初衷是減少盲目投票，讓民主社會的台灣更進步<br/>究竟我們有沒有走到正確的道路上？</p>"
-					}
-				},
-				{
-					"title": "Ventilation",
-					"tagline": "Demystifying pollution: Transparency in the air",
-					"color": "#D8D9D8"
-				},
-				{
-					"time": "13:00-13:30",
-					"event": {
-						"venue": "R2",
-						"category": "Ventilation",
-						"language": "",
-						"speaker": "Yan-Jen Su",
-						"title": "Interpolation and Visualization of Air Pollution based on Wind Fields",
-						"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
-						"abstract": "<p>A system based on wind fields to interpolate and to visualized air pollution is introduced. <br/> The air pollution information provided by the government is a set of values sampled on the measuring stations. <br/> In contrast to the traditional linear interpolation, wind fields are applied to estimate the air pollution indices between the measuring stations. <br/> The estimated results are  the associated with the wind field and geographic information to construct a 3D virtual world and display on Web browsers.<br/> It provides additional information for users to understand the conditions of the air pollution and the environment.</p>"
-					}
-				},
-				{
-					"time": "13:30-14:00",
-					"event": {
-						"venue": "R2",
-						"category": "Ventilation",
-						"language": "",
-						"speaker": "Liz Barry",
-						"title": "Community science for healthy environments",
-						"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
-						"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
-					}
-				},
-				{
-					"time": "14:00-14:40",
-					"event": "Tea time"
-				},
-				{
-					"time": "14:40-15:10",
-					"event": {
-						"venue": "R2",
-						"category": "Ventilation",
-						"language": "",
-						"speaker": "S.H. Hung / H.W Tseng",
-						"title": "Environment data transparency for cross-strait applications",
-						"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
-						"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
-					}
-				},
-				{
-					"time": "15:10-15:40",
-					"event": {
-						"venue": "R2",
-						"category": "Ventilation",
-						"language": "",
-						"speaker": "Chung-pei Pien",
-						"title": "From infrastructure to applications\nLinking through g0v - a case study on the environmental agency and company registration data",
-						"bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
-						"abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "supervision",
+							"language": "",
+							"speaker": "Nicholas Doiron",
+							"title": "NodeJS in Naypyitaw: Opening Election Data in Myanmar Election",
+							"bio": "<p>Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.</p>",
+							"abstract": "<p>In November 2015, millions of Myanmar's citizens went to the polls for the first openly-contested national elections in 25 years. Tens of thousands of people used mobile apps to research political parties, find out their candidates ahead of time, and see candidates' profiles. Those apps' data came from the MaePaySoh API, a partnership between the Myanmar Union Election Commission in Naypyitaw and the Asia Foundation's. Behind the scenes there were weeks of paperwork, scanning, digitizing, Unicode issues, deal-making, data cleanup, and development leading up to a two-week-long Hackathon. Take a look inside a fledgling open source community in Yangon and a drive for civic tech apps.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "square",
+							"language": "",
+							"speaker": "Johnny Lo",
+							"title": "Voter's Guide for Legislators and Council Members",
+							"bio": "<p>立委／議員投票指南</p>",
+							"abstract": "<p>2014 議員選舉到 2016 立委選舉，投票指南在選前一個月都有四十到五十萬使用者<br/>投票指南的設計初衷是減少盲目投票，讓民主社會的台灣更進步<br/>究竟我們有沒有走到正確的道路上？</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "Ventilation",
+							"language": "",
+							"speaker": "Chung-pei Pien",
+							"title": "From infrastructure to applications\nLinking through g0v - a case study on the environmental agency and company registration data",
+							"bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
+							"abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
+						}
+					]
 				},
 				{
 					"time": "15:45-16:00",
@@ -30110,33 +30023,68 @@
 					}
 				},
 				{
-					"title": "動力",
-					"tagline": "公民科技時代，運動組織的馬力再升級",
-					"color": "#CE0D41"
-				},
-				{
 					"time": "10:00-10:30",
-					"event": {
-						"venue": "R1",
-						"category": "power",
-						"language": "",
-						"speaker": "Hoony Jang",
-						"title": "韓國經驗：如何推展公民科技到公民組織（NPO, NGO, 與媒體）",
-						"bio": "<p>Civic Hacker at Creative Commons Korea<ul><li>project manager of Codenamu</li><li>organizer of Code for Seoul</li><li>github: @hoony</li><li>twitter: @thechunsik</li></li></p>",
-						"abstract": "<p>CodeNamu, initiated by Creative Commons Korea as an open data project since 2011, has built communities, hosted yearly hackathons, and made lots of data storytelling projects. However we failed to put our message deeply, or some of results were quite meaningful but we fail to spread out our messages or our acts to outside community. How can we extend civic tech to civic organizations outside community?</p><p>In South Korea. most of civic organizations(NPO, NGO, and the media) are interested in data and data journalism, but they don’t have capacity to treat the data and data journalism. Event they don’t have any developers to maintain their own website. Because of that, after they constructed huge and valuable data to make stories for years, the data has been hidden somewhere on their PCs in not-machine-readable formats.</p><p>From this year, we’re developing a Data Specialists Working Group composed of civic hackers; technitians, designers, and data experts. This group will be in partnerships with NPO, NGO, and the media for data journalism projects. CodeNamu civic technitians and our partners composed of journalists and activits will make synergy to make those data open and to make various data journalism projects between CodeNamu’s civic tech and partners’ insight or messages. We hope that we’re going to introduce and discuss about the way to extend civic tech to outside civic tech community.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "power",
+							"language": "",
+							"speaker": "Hoony Jang",
+							"title": "韓國經驗：如何推展公民科技到公民組織（NPO, NGO, 與媒體）",
+							"bio": "<p>Civic Hacker at Creative Commons Korea<ul><li>project manager of Codenamu</li><li>organizer of Code for Seoul</li><li>github: @hoony</li><li>twitter: @thechunsik</li></li></p>",
+							"abstract": "<p>CodeNamu, initiated by Creative Commons Korea as an open data project since 2011, has built communities, hosted yearly hackathons, and made lots of data storytelling projects. However we failed to put our message deeply, or some of results were quite meaningful but we fail to spread out our messages or our acts to outside community. How can we extend civic tech to civic organizations outside community?</p><p>In South Korea. most of civic organizations(NPO, NGO, and the media) are interested in data and data journalism, but they don’t have capacity to treat the data and data journalism. Event they don’t have any developers to maintain their own website. Because of that, after they constructed huge and valuable data to make stories for years, the data has been hidden somewhere on their PCs in not-machine-readable formats.</p><p>From this year, we’re developing a Data Specialists Working Group composed of civic hackers; technitians, designers, and data experts. This group will be in partnerships with NPO, NGO, and the media for data journalism projects. CodeNamu civic technitians and our partners composed of journalists and activits will make synergy to make those data open and to make various data journalism projects between CodeNamu’s civic tech and partners’ insight or messages. We hope that we’re going to introduce and discuss about the way to extend civic tech to outside civic tech community.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "foundation",
+							"language": "",
+							"speaker": "Charlotte Richard",
+							"title": "民主與公民參與之開放媒體",
+							"bio": "<p>Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).</p>",
+							"abstract": "<p>At Voxe.org we seek to build online tools that revolutionize civic engagement by bringing to the public easy access, neutral and crowdsourced information.</p><p>We've already:<ul><li>created a <a href='http://voxe.org/welcome'>world comparison platform</a> for politics (16 countries, 3.5 million users and more than 20 media partners). </li><li>launched the weekly <a href='http://www.happydemocracy.com/'>civic tech newsletter</a></li><li>experienced <a href='http://hacklacop21.voxe.org/''>a tool to ask politician question</a> during COP21</li><li>we're designing a mobile app that pushes you engagement solutions in your pocket.</li></ul></p>"
+						},
+						{
+							"venue": "R2",
+							"category": "construction",
+							"language": "",
+							"speaker": "Lucien Lin",
+							"title": "進擊的台灣政府資料開放授權條款",
+							"bio": "<p>知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡 (Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任<a href='http://ifosslawbook.org/'>自由開源軟體法律參考書台灣專章</a>的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。</p>",
+							"abstract": "<p>國內從政府端戮力推動 Open Data 的發展已歷時三年餘，終於在2015年7月27日，經行政院國家發展委員會媒介跨部會的多次協商，同步與參與 g0v 的公民團體與網路社群進行討論，定案了「民撰官酌、官民協力」不同視野分工協調出來的正式版本。此一版本架構符合國際開放定義(Open Definition)，並內嵌 Creative Commons License 的融通轉換機制，協助國內開放資料專案，設有未來與國際專案接軌的延展性。本議程將從參與編撰討論者的角度，就如何官民協力以消爭止紛取得共識進行經驗分享，並就該條款發布近半年來常見的使用問題、與他國條款相較的不足處，以及未來可資改進調整的空間，提出中道並契合條款架構的說明與示範。</p>"
+						}
+					]
 				},
 				{
 					"time": "10:30-11:00",
-					"event": {
-						"venue": "R1",
-						"category": "power",
-						"language": "",
-						"speaker": "謝宗震",
-						"title": "Data For Social Good – 由資料驅動的公益新浪潮",
-						"bio": "<p>DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。</p>",
-						"abstract": "<p>有人用勞力做公益，也有人用財力做公益，如果用資料力來做公益，不知道會擦出怎樣的火花？</p><p>2015年，我們打造一個「資料力，做公益」的交流與媒合平台，稱為「D4SG 計畫」 (Data for Social Good)。透過社群、黑客松、資料競賽、長期專案...等方式推動資料人與非營利組織的深度交流。這場演講將從資料人的角度分享如何與NPO/NGO合作，把冰冷的資料轉換化成有溫度的故事。</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "power",
+							"language": "",
+							"speaker": "謝宗震",
+							"title": "Data For Social Good – 由資料驅動的公益新浪潮",
+							"bio": "<p>DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。</p>",
+							"abstract": "<p>有人用勞力做公益，也有人用財力做公益，如果用資料力來做公益，不知道會擦出怎樣的火花？</p><p>2015年，我們打造一個「資料力，做公益」的交流與媒合平台，稱為「D4SG 計畫」 (Data for Social Good)。透過社群、黑客松、資料競賽、長期專案...等方式推動資料人與非營利組織的深度交流。這場演講將從資料人的角度分享如何與NPO/NGO合作，把冰冷的資料轉換化成有溫度的故事。</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "foundation",
+							"language": "",
+							"speaker": "Yantisa Akhadi",
+							"title": "政府 (也參加) 畫地圖",
+							"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
+							"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "construction",
+							"language": "",
+							"speaker": "Katarzyna Mikołajczyk",
+							"title": "城市就是從事公民參與開放資料的關鍵",
+							"bio": "<p>Katarzyna Mikołajczyk, Open Cities Program Coordinator in Poland.</p><p>I use my work experience to open up cities in Poland. I want to increase transparency of the public administration, the growth of startups based on public data and increase the participation of informed citizens. Just this :)</p><p>I do this while I work for ePF Foundation, an NGO which mission is to develop democracy, open and transparent authorities and civic engagement through new technologies. I’m coordinating Open Cities Program which is dedicated to local governments and helps them to publish public information and engage people to understand open data.</p><p>I’m also a leader active in local community in city of Lodz for over 7 years. I managed civic engagement campaigns, educational projects, social consultations and advocacy work with the city authorities. I was always a passionate of open data and using them to plan for people. But only with people.</p>",
+							"abstract": "<p>Cities serve people who live in them. They are less political then governments, more focused on problem solving. They are never pefect but when you open up 10 cities with half a million people living in them - you suddenly make a national change. Bottom up and thumbs up. We created a formula which attracts cities to open up their data, engage citizens and make sure that data is used. And most importantly by introducing open data policies in Poland we make the change systemic.</p><p>Openness it is not only about publishing information. It’s essential part of building engagement in modern society. But we – citizens – need and often demand something more. We are ready to take responsibility for the place we live and work. We do care about the quality of the life we live in our cities. We need to be treated as partner by our government.</p><p>At first Personal Democracy Forum in Poland in 2013, Ellen Miller from Sunlight Fundation said that \"government is as strong as citizens informed\". Government can publish information, make it available, machine readable and up-to-date, but it will not encourage much more people to check them.</p><p>Can we do anything more to engage people in city life, to show them advantages of being active? How new technologies are moving us closer to participation? Did new applications can connect (or disconnect) citizens? Is it possible to empower citizens and allow them to manage our cities (not only from time to time, but daily)? How – by using technology – citizen can gather around idea, support it and make it happen?</p><p>And I can show examples of such process in Poland (Central Eastern Europe).</p>"
+						}
+					]
 				},
 				{
 					"time": "11:00-11:30",
@@ -30144,186 +30092,167 @@
 				},
 				{
 					"time": "11:30-12:00",
-					"event": {
-						"venue": "R1",
-						"category": "power",
-						"language": "",
-						"speaker": "高英勛",
-						"title": "從 .org 到 .g0v － 台灣NGO的網路參與與數位挑戰",
-						"bio": "<p>撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。</p><p>台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。</p>",
-						"abstract": "<p>2000 年 dotcom 泡沫帶來最正向的影響之一就是連網的成本大幅降低，也創造了NGO透過網路發展的機遇。台灣環境資訊協會源起於 2000-4-17 創刊的環境資訊電子報，著眼於網路低成本高效率的資訊傳播，成為了 .org.tw 的成員之一。本次將藉由下列幾個主題切入，當 NGO 從 nobody 變成了 somebody 時， 組織運作和運用網路技術的問題和眉角進行回顧及反思。</p><ul><li>從 Web 1.0 到物聯網－時空背景的變化</li><li>「網路型NGO」在資訊公開，公民參與和網路技術發展的可能角色</li><li>反思與挑戰：駭客，技術長還是資訊長</li></ul>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "power",
+							"language": "",
+							"speaker": "高英勛",
+							"title": "從 .org 到 .g0v － 台灣NGO的網路參與與數位挑戰",
+							"bio": "<p>撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。</p><p>台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。</p>",
+							"abstract": "<p>2000 年 dotcom 泡沫帶來最正向的影響之一就是連網的成本大幅降低，也創造了NGO透過網路發展的機遇。台灣環境資訊協會源起於 2000-4-17 創刊的環境資訊電子報，著眼於網路低成本高效率的資訊傳播，成為了 .org.tw 的成員之一。本次將藉由下列幾個主題切入，當 NGO 從 nobody 變成了 somebody 時， 組織運作和運用網路技術的問題和眉角進行回顧及反思。</p><ul><li>從 Web 1.0 到物聯網－時空背景的變化</li><li>「網路型NGO」在資訊公開，公民參與和網路技術發展的可能角色</li><li>反思與挑戰：駭客，技術長還是資訊長</li></ul>"
+						},
+						{
+							"venue": "R0",
+							"category": "foundation",
+							"language": "",
+							"speaker": "Yago Bermejo Abati",
+							"title": "Podemos 黨的網路參與策略",
+							"bio": "<p>Yago Bermejo Abati</p><p>I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur.</p><p>Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties…</p><p>After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating.<p><p>Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.</p>",
+							"abstract": "<p>The summer of 2014 at team of 20 people was elected by a digital voting process to organise the structure of the new exponential party-movement called Podemos. At that time more than 300k people were subscribed as digital participants of this party. The social media team running a Facebook of more than 800k followers and a Twitter of more than 500k were looking for a new tool to interact with that huge amount of people. LaboDemo proposed a concrete strategy running different tools. We created a deliberative space hacking Reddit, proposed Loomio as a consensus-making tool for assemblies and a mobile app to make fast collective and massive decisions. Hundreds of thousands of people participate at this process creating a collective intelligence that finally faced top leaders at Podemos. I will explain how this kind of collective intelligence can change the way politics work and why we should engage direct a deliberative democracy to empower the crowd using internet combined with analogical participation.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "construction",
+							"language": "",
+							"speaker": "Venus Lui",
+							"title": "建立亞洲藝術資料庫的重要性",
+							"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
+							"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
+						}
+					]
 				},
 				{
 					"time": "12:00-12:30",
-					"event": {
-						"venue": "R1",
-						"category": "power",
-						"language": "",
-						"speaker": "Sergejus Muravjovas",
-						"title": "一百年後走黃磚路：重塑傳統非政府組織之旅",
-						"bio": "<p>I am a social doer involved in creating change. I spend most of my time helping make transparency an easy-to-follow way of life for people around me. I do so by challenging the known, tapping into the under-researched and bridging the gaps between different groups of researchers and activists alike.</p><p>Besides heading TI Lithuania and overseeing the development of TransparencySchool.org for the past seven years, I have been involved in a number of undertakings that in many ways complement each other. I teach Corporate Governance and Anti-Corruption at the International School of Management in Vilnius. I am also a board member of the Lithuanian responsible business initiative \"Clear Wave\" and an advisory council member of the Duke of Edinburgh's International Award Lithuania and the Žinių radijas. I have just joined supervisory boards of two healthcare establishments in Vilnius - the Central Policlinics of Vilnius and the National Vilnius University Hospital. I have also served as a local correspondent for Lithuania for the EU Commission Anti-Corruption report.</p><p>As for other experiences under my sleeve, I was a member of the International Board of Directors of the global TI movement from 2009 to 2015 and a member of the Selection Commission of Candidates to the Judicial Office.</p>",
-						"abstract": "<p>In my talk I would like to share a story of the 21st century metamorphosis - a story of a classical NGO that has managed to drastically change its identity, expand its outreach and become more sustainable with the help of data and online tools.</p><p>By telling the audience the story of our successes and mistakes along the way, I will offer the audience with the state of mind that has allowed Transparency International (TI) Lithuania to grow into a top-notch go-to organization known to every second business person and every fifth member of the public - in our continuous advocacy efforts to encourage change and make sure that an ever-increasing number of Lithuanians become and act as owners of their state.</p><p>To illustrate this state of mind, I would like to show how TI Lithuania has successfully merged the availability of data, the talents of its coding teams and public advocacy savvy: <ol><li>to ensure greater transparency in Lithuanian politics with the help of the parliamentary oversight <a href='www.manoseimas.lt'>website</a>; </li><li>to allow for greater public awareness of media ownership and accountability by collecting and constantly updating all available data on media ownership at www.stirna.info; </li><li>to encourage people to find and contact their representatives with the help of <a href='www.parasykjiems'>www.parasykjiems.lt</a>; </li><li>to help Lithuanian courts open up to the public and be the first ones in the country to publish performance data of courts and judges with www.atvirasteismas.lt; and </li><li>to track interests of local politicians with <a href='www.jurgiokepure.lt'>www.jurgiokepure.lt</a>.</li></ul></p><p>In 2015, with all these tools combined TI Lithuania helped more than 100 thousand people, or almost 4 per cent of the entire Lithuania population, get engaged and individually seek greater transparency in their daily lives. With the numbers of concerned citizens and TI Lithuania partners growing every year, I hope my story will inspire others to explore innovative ways to create real-life change and prompt decision-makers and the public alike to check what technology has in store for democracy.</p>"
-					}
-				},
-				{
-					"title": "地基",
-					"tagline": "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐",
-					"color": "#FCDE86"
-				},
-				{
-					"time": "10:00-10:30",
-					"event": {
-						"venue": "R0",
-						"category": "foundation",
-						"language": "",
-						"speaker": "Charlotte Richard",
-						"title": "民主與公民參與之開放媒體",
-						"bio": "<p>Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).</p>",
-						"abstract": "<p>At Voxe.org we seek to build online tools that revolutionize civic engagement by bringing to the public easy access, neutral and crowdsourced information.</p><p>We've already:<ul><li>created a <a href='http://voxe.org/welcome'>world comparison platform</a> for politics (16 countries, 3.5 million users and more than 20 media partners). </li><li>launched the weekly <a href='http://www.happydemocracy.com/'>civic tech newsletter</a></li><li>experienced <a href='http://hacklacop21.voxe.org/''>a tool to ask politician question</a> during COP21</li><li>we're designing a mobile app that pushes you engagement solutions in your pocket.</li></ul></p>"
-					}
-				},
-				{
-					"time": "10:30-11:00",
-					"event": {
-						"venue": "R0",
-						"category": "foundation",
-						"language": "",
-						"speaker": "Yantisa Akhadi",
-						"title": "政府 (也參加) 畫地圖",
-						"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
-						"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
-					}
-				},
-				{
-					"time": "11:00-11:30",
-					"event": "茶點"
-				},
-				{
-					"time": "11:30-12:00",
-					"event": {
-						"venue": "R0",
-						"category": "foundation",
-						"language": "",
-						"speaker": "Yago Bermejo Abati",
-						"title": "Podemos 黨的網路參與策略",
-						"bio": "<p>Yago Bermejo Abati</p><p>I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur.</p><p>Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties…</p><p>After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating.<p><p>Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.</p>",
-						"abstract": "<p>The summer of 2014 at team of 20 people was elected by a digital voting process to organise the structure of the new exponential party-movement called Podemos. At that time more than 300k people were subscribed as digital participants of this party. The social media team running a Facebook of more than 800k followers and a Twitter of more than 500k were looking for a new tool to interact with that huge amount of people. LaboDemo proposed a concrete strategy running different tools. We created a deliberative space hacking Reddit, proposed Loomio as a consensus-making tool for assemblies and a mobile app to make fast collective and massive decisions. Hundreds of thousands of people participate at this process creating a collective intelligence that finally faced top leaders at Podemos. I will explain how this kind of collective intelligence can change the way politics work and why we should engage direct a deliberative democracy to empower the crowd using internet combined with analogical participation.</p>"
-					}
-				},
-				{
-					"time": "12:00-12:30",
-					"event": {
-						"venue": "R0",
-						"category": "foundation",
-						"language": "",
-						"speaker": "Colin Megill",
-						"title": "Pol.is 在台灣: 跨越鴻溝之公共談論、意見徵求與政策",
-						"bio": "<p>Colin is founder of Seattle based startup <a href='http://pol.is'>http://pol.is</a>, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.</p><p>He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.</p><p>Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.</p>",
-						"abstract": "<p>Pol.is is a new tool for gathering crowd sentiment in a way that preserves and respects minority opinions. It scales to any number of users, while preserving high dimensional, organic feedback. g0v and vTaiwan have used pol.is to foster productive discourse in the public sphere and influence policy related to Uber and AirBnB. We'll discuss pol.is as a technology and the case study of vTaiwan's successes with it.</p>"
-					}
-				},
-				{
-					"title": "骨架",
-					"tagline": "從資料科技與文化領域出發的開放實驗",
-					"color": "#1BADBE"
-				},
-				{
-					"time": "10:00-10:30",
-					"event": {
-						"venue": "R2",
-						"category": "construction",
-						"language": "",
-						"speaker": "Lucien Lin",
-						"title": "進擊的台灣政府資料開放授權條款",
-						"bio": "<p>知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡 (Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任<a href='http://ifosslawbook.org/'>自由開源軟體法律參考書台灣專章</a>的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。</p>",
-						"abstract": "<p>國內從政府端戮力推動 Open Data 的發展已歷時三年餘，終於在2015年7月27日，經行政院國家發展委員會媒介跨部會的多次協商，同步與參與 g0v 的公民團體與網路社群進行討論，定案了「民撰官酌、官民協力」不同視野分工協調出來的正式版本。此一版本架構符合國際開放定義(Open Definition)，並內嵌 Creative Commons License 的融通轉換機制，協助國內開放資料專案，設有未來與國際專案接軌的延展性。本議程將從參與編撰討論者的角度，就如何官民協力以消爭止紛取得共識進行經驗分享，並就該條款發布近半年來常見的使用問題、與他國條款相較的不足處，以及未來可資改進調整的空間，提出中道並契合條款架構的說明與示範。</p>"
-					}
-				},
-				{
-					"time": "10:30-11:00",
-					"event": {
-						"venue": "R2",
-						"category": "construction",
-						"language": "",
-						"speaker": "Katarzyna Mikołajczyk",
-						"title": "城市就是從事公民參與開放資料的關鍵",
-						"bio": "<p>Katarzyna Mikołajczyk, Open Cities Program Coordinator in Poland.</p><p>I use my work experience to open up cities in Poland. I want to increase transparency of the public administration, the growth of startups based on public data and increase the participation of informed citizens. Just this :)</p><p>I do this while I work for ePF Foundation, an NGO which mission is to develop democracy, open and transparent authorities and civic engagement through new technologies. I’m coordinating Open Cities Program which is dedicated to local governments and helps them to publish public information and engage people to understand open data.</p><p>I’m also a leader active in local community in city of Lodz for over 7 years. I managed civic engagement campaigns, educational projects, social consultations and advocacy work with the city authorities. I was always a passionate of open data and using them to plan for people. But only with people.</p>",
-						"abstract": "<p>Cities serve people who live in them. They are less political then governments, more focused on problem solving. They are never pefect but when you open up 10 cities with half a million people living in them - you suddenly make a national change. Bottom up and thumbs up. We created a formula which attracts cities to open up their data, engage citizens and make sure that data is used. And most importantly by introducing open data policies in Poland we make the change systemic.</p><p>Openness it is not only about publishing information. It’s essential part of building engagement in modern society. But we – citizens – need and often demand something more. We are ready to take responsibility for the place we live and work. We do care about the quality of the life we live in our cities. We need to be treated as partner by our government.</p><p>At first Personal Democracy Forum in Poland in 2013, Ellen Miller from Sunlight Fundation said that \"government is as strong as citizens informed\". Government can publish information, make it available, machine readable and up-to-date, but it will not encourage much more people to check them.</p><p>Can we do anything more to engage people in city life, to show them advantages of being active? How new technologies are moving us closer to participation? Did new applications can connect (or disconnect) citizens? Is it possible to empower citizens and allow them to manage our cities (not only from time to time, but daily)? How – by using technology – citizen can gather around idea, support it and make it happen?</p><p>And I can show examples of such process in Poland (Central Eastern Europe).</p>"
-					}
-				},
-				{
-					"time": "11:00-11:30",
-					"event": "茶點"
-				},
-				{
-					"time": "11:30-12:00",
-					"event": {
-						"venue": "R2",
-						"category": "construction",
-						"language": "",
-						"speaker": "Venus Lui",
-						"title": "建立亞洲藝術資料庫的重要性",
-						"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
-						"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
-					}
-				},
-				{
-					"time": "12:00-12:30",
-					"event": {
-						"venue": "R2",
-						"category": "construction",
-						"language": "",
-						"speaker": "董福興",
-						"title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
-						"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
-						"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "power",
+							"language": "",
+							"speaker": "Sergejus Muravjovas",
+							"title": "一百年後走黃磚路：重塑傳統非政府組織之旅",
+							"bio": "<p>I am a social doer involved in creating change. I spend most of my time helping make transparency an easy-to-follow way of life for people around me. I do so by challenging the known, tapping into the under-researched and bridging the gaps between different groups of researchers and activists alike.</p><p>Besides heading TI Lithuania and overseeing the development of TransparencySchool.org for the past seven years, I have been involved in a number of undertakings that in many ways complement each other. I teach Corporate Governance and Anti-Corruption at the International School of Management in Vilnius. I am also a board member of the Lithuanian responsible business initiative \"Clear Wave\" and an advisory council member of the Duke of Edinburgh's International Award Lithuania and the Žinių radijas. I have just joined supervisory boards of two healthcare establishments in Vilnius - the Central Policlinics of Vilnius and the National Vilnius University Hospital. I have also served as a local correspondent for Lithuania for the EU Commission Anti-Corruption report.</p><p>As for other experiences under my sleeve, I was a member of the International Board of Directors of the global TI movement from 2009 to 2015 and a member of the Selection Commission of Candidates to the Judicial Office.</p>",
+							"abstract": "<p>In my talk I would like to share a story of the 21st century metamorphosis - a story of a classical NGO that has managed to drastically change its identity, expand its outreach and become more sustainable with the help of data and online tools.</p><p>By telling the audience the story of our successes and mistakes along the way, I will offer the audience with the state of mind that has allowed Transparency International (TI) Lithuania to grow into a top-notch go-to organization known to every second business person and every fifth member of the public - in our continuous advocacy efforts to encourage change and make sure that an ever-increasing number of Lithuanians become and act as owners of their state.</p><p>To illustrate this state of mind, I would like to show how TI Lithuania has successfully merged the availability of data, the talents of its coding teams and public advocacy savvy: <ol><li>to ensure greater transparency in Lithuanian politics with the help of the parliamentary oversight <a href='www.manoseimas.lt'>website</a>; </li><li>to allow for greater public awareness of media ownership and accountability by collecting and constantly updating all available data on media ownership at www.stirna.info; </li><li>to encourage people to find and contact their representatives with the help of <a href='www.parasykjiems'>www.parasykjiems.lt</a>; </li><li>to help Lithuanian courts open up to the public and be the first ones in the country to publish performance data of courts and judges with www.atvirasteismas.lt; and </li><li>to track interests of local politicians with <a href='www.jurgiokepure.lt'>www.jurgiokepure.lt</a>.</li></ul></p><p>In 2015, with all these tools combined TI Lithuania helped more than 100 thousand people, or almost 4 per cent of the entire Lithuania population, get engaged and individually seek greater transparency in their daily lives. With the numbers of concerned citizens and TI Lithuania partners growing every year, I hope my story will inspire others to explore innovative ways to create real-life change and prompt decision-makers and the public alike to check what technology has in store for democracy.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "foundation",
+							"language": "",
+							"speaker": "Colin Megill",
+							"title": "Pol.is 在台灣: 跨越鴻溝之公共談論、意見徵求與政策",
+							"bio": "<p>Colin is founder of Seattle based startup <a href='http://pol.is'>http://pol.is</a>, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.</p><p>He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.</p><p>Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.</p>",
+							"abstract": "<p>Pol.is is a new tool for gathering crowd sentiment in a way that preserves and respects minority opinions. It scales to any number of users, while preserving high dimensional, organic feedback. g0v and vTaiwan have used pol.is to foster productive discourse in the public sphere and influence policy related to Uber and AirBnB. We'll discuss pol.is as a technology and the case study of vTaiwan's successes with it.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "construction",
+							"language": "",
+							"speaker": "董福興",
+							"title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
+							"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
+							"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
+						}
+					]
 				},
 				{
 					"time": "12:30-13:30",
 					"event": "午餐"
 				},
 				{
-					"title": "藍圖",
-					"tagline": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來",
-					"color": "#F4AF3D"
-				},
-				{
 					"time": "13:30-14:00",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "Jen Bramley",
-						"title": "用 EveryPolitician 的資料，來增進公民科技重用",
-						"bio": "<p>Jen is the International Projects Manager at mySociety. If you email international@mysociety.org, Jen will be the one who responds to you first. She lives in London and works directly with organisations anywhere in the world, helping them with the practicalities of deploying our code and maintaining the resulting websites.</p><p>With a background as a working on media development and broadcasting reform projects in the Middle East and North Africa for BBC Media Action, she’s used to pitching in wherever needed for all sorts of projects.</p><p>Jen travels widely to meet our partners on their home ground: it’s always helpful to see our projects in the places where they’ll be deployed, and meet the people who will be using them. She’s passionate about ensuring that projects meet local needs and spending time with groups in their own countries helps her start to understand their motivations.</p>",
-						"abstract": "<p>Presenting the EveryPolitician project we will talk about the reasons why we're collecting all this open data and how it has already been used in different forms (for example: crowdsourcing data about the gender breakdown of every parliament in the world). We'll show real examples of the data being used to power civic technology sites in different countries - and hopefully you'll be inspired to create something yourself!</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "blueprint",
+							"language": "",
+							"speaker": "Jen Bramley",
+							"title": "用 EveryPolitician 的資料，來增進公民科技重用",
+							"bio": "<p>Jen is the International Projects Manager at mySociety. If you email international@mysociety.org, Jen will be the one who responds to you first. She lives in London and works directly with organisations anywhere in the world, helping them with the practicalities of deploying our code and maintaining the resulting websites.</p><p>With a background as a working on media development and broadcasting reform projects in the Middle East and North Africa for BBC Media Action, she’s used to pitching in wherever needed for all sorts of projects.</p><p>Jen travels widely to meet our partners on their home ground: it’s always helpful to see our projects in the places where they’ll be deployed, and meet the people who will be using them. She’s passionate about ensuring that projects meet local needs and spending time with groups in their own countries helps her start to understand their motivations.</p>",
+							"abstract": "<p>Presenting the EveryPolitician project we will talk about the reasons why we're collecting all this open data and how it has already been used in different forms (for example: crowdsourcing data about the gender breakdown of every parliament in the world). We'll show real examples of the data being used to power civic technology sites in different countries - and hopefully you'll be inspired to create something yourself!</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "Kirby Wu",
+							"title": "媒體無間道 — 我在新聞界臥底的日子",
+							"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
+							"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "陳坤助",
+							"title": "強震即時警報 EEW",
+							"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
+							"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
+						}
+					]
 				},
 				{
 					"time": "14:00-14:30",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "James Mckinney",
-						"title": "公民科技監督國會：長久之計",
-						"bio": "<p>James McKinney regularly contributes to civil society initiatives relating to government, legislative and corporate transparency. He is currently focusing on Popolo (a set of legislative data specifications, used by parliamentary monitoring organizations and members of Poplus.org) and on Influence Mapping (a group of organizations that draw the networks of relations between politically exposed people and organizations). James is especially interested in how data standards can facilitate cooperation between organizations and individuals.</p><p>James previously founded Open North, a Canadian nonprofit that creates websites to promote government transparency and public participation. He is co-lead of the Open Government Partnership’s Open Data Working Group’s Standards Stream. He was a member of the Open Contract Data Standard core team and of the W3C Government Linked Data Working Group. He has presented on open government and open data, most recently at the International Open Data Conference, Canadian Open Data Summit, and Spaghetti Open Data.</p>",
-						"abstract": "<p>The problems we often try to solve in civic tech are right in front of us: fixing a pothole, monitoring a government, opening up data, etc. The tools we create to address such problems often produce immediate value for users. I'm going to share a story about a much longer game, where the payoff is just starting to happen now, five years later.</p><p>This will be a story of how organizations around the world built a software stack for legislative monitoring. It starts with a vision shared in Warsaw in 2011. In 2012, work on a standard data interchange format begins, which will tie the stack together. Two organizations start authoring backend data management tools in 2013 using this format. In 2014, the first user-facing tools appear at the top of this stack. And in 2015, governments begin adopting the data standard, as more user-facing tools spread.</p><p>This journey will visit many organizations and projects around the world, from mySociety to OpenAustralia to Sunlight, and from PopIt to Councilmatic to Represent, among others. We're five years into this journey, and there's still more ground to cover for at least as many more years before the basic problems in legislative monitoring that we're solving can be taken for granted.</p><p>This talk ties into the fork-merge theme. Legislative monitoring generally involves forking the official website, which requires scraping data to reproduce the information. Through government adoption of data standards like Popolo, we can eliminate these scrapers, and merge good data publication practices into government.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "blueprint",
+							"language": "",
+							"speaker": "James Mckinney",
+							"title": "公民科技監督國會：長久之計",
+							"bio": "<p>James McKinney regularly contributes to civil society initiatives relating to government, legislative and corporate transparency. He is currently focusing on Popolo (a set of legislative data specifications, used by parliamentary monitoring organizations and members of Poplus.org) and on Influence Mapping (a group of organizations that draw the networks of relations between politically exposed people and organizations). James is especially interested in how data standards can facilitate cooperation between organizations and individuals.</p><p>James previously founded Open North, a Canadian nonprofit that creates websites to promote government transparency and public participation. He is co-lead of the Open Government Partnership’s Open Data Working Group’s Standards Stream. He was a member of the Open Contract Data Standard core team and of the W3C Government Linked Data Working Group. He has presented on open government and open data, most recently at the International Open Data Conference, Canadian Open Data Summit, and Spaghetti Open Data.</p>",
+							"abstract": "<p>The problems we often try to solve in civic tech are right in front of us: fixing a pothole, monitoring a government, opening up data, etc. The tools we create to address such problems often produce immediate value for users. I'm going to share a story about a much longer game, where the payoff is just starting to happen now, five years later.</p><p>This will be a story of how organizations around the world built a software stack for legislative monitoring. It starts with a vision shared in Warsaw in 2011. In 2012, work on a standard data interchange format begins, which will tie the stack together. Two organizations start authoring backend data management tools in 2013 using this format. In 2014, the first user-facing tools appear at the top of this stack. And in 2015, governments begin adopting the data standard, as more user-facing tools spread.</p><p>This journey will visit many organizations and projects around the world, from mySociety to OpenAustralia to Sunlight, and from PopIt to Councilmatic to Represent, among others. We're five years into this journey, and there's still more ground to cover for at least as many more years before the basic problems in legislative monitoring that we're solving can be taken for granted.</p><p>This talk ties into the fork-merge theme. Legislative monitoring generally involves forking the official website, which requires scraping data to reproduce the information. Through government adoption of data standards like Popolo, we can eliminate these scrapers, and merge good data publication practices into government.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "Walkingice",
+							"title": "鍵盤宅的輔選經驗談",
+							"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
+							"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "劉宇倫",
+							"title": "傳染病開放資料過去、現在、未來-以登革熱為例",
+							"bio": "<p>現任職疾病管制署疫情中心，曾擔任急診主治醫師，並於奧地利維也納接受歐盟EPIET流行病學訓練，興趣在運用資訊技術於防疫資訊的收集、分析及呈現</p>",
+							"abstract": "<p>2015年台灣登革熱疫情病例數創歷史新高，在同年，於open data社群協助及期待下，釋出多項即時且較為精細的登革熱病例及病媒蚊調查等open data。本次分享內容主要如下：</p><ul><li>登革熱open data的釋出心路歷程及製作經驗</li><li>與社群合作的壓力與助力</li><li>中央與地方的競爭與合作</li><li>登革熱open data的國內、外應用實例</li><li>登革熱或傳染病open data的未來努力方向</li></ul>"
+						}
+					]
 				},
 				{
 					"time": "14:30-15:00",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "Henare Degan",
-						"title": "morph.io: 國際公民科技社群建立的資料抓取平台",
-						"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
-						"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "blueprint",
+							"language": "",
+							"speaker": "Henare Degan",
+							"title": "morph.io: 國際公民科技社群建立的資料抓取平台",
+							"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
+							"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "Jim Horng",
+							"title": "從滅頂秒退地圖看網路世代無組織社運",
+							"bio": "<p>在台灣軟體業已有約 10 年經驗，自認角色為工程師、社會議題微參與者、open source微貢獻者。</p>",
+							"abstract": "<p>抵抗黑心行動之一的滅頂秒退在 2015 年底到 2016 年初約熱了一個月時間，引發許多層次的討論。支持方的行動雖然一開始遍地開花，但似乎遇到輿論、成效、進度等阻力而漸式微，其中秒退地圖是想解決成效與進度透明化的部分，同時帶點組織化前置的概念。以結果論可能不算成功，但其過程包含網路推廣，早期使用者偕同設計，facebook 微組織合作，從中激發更多優化無組織社運的想法，這些便是作者想要分享的。</p><ul><li><a href='http://jimhorng.github.io/return_as_buy/'>滅頂秒退地圖</a></li><li><a href='https://jimhorng.wordpress.com/2016/01/19/%E5%BE%9E%E6%BB%85%E9%A0%82%E7%A7%92%E9%80%80%E7%9C%8B%E5%8F%B0%E7%81%A3%E8%BB%9F%E5%AF%A6%E5%8A%9B/'>從滅頂秒退看台灣軟實力</a></li></ul>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "Kuo-Yu slayer Chuang",
+							"title": "ICT 與群眾外包的災難適應力，亞洲開發銀行的案例研究",
+							"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
+							"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
+						}
+					]
 				},
 				{
 					"time": "15:00-15:40",
@@ -30331,165 +30260,67 @@
 				},
 				{
 					"time": "15:40-16:10",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "Rajib Timalsina",
-						"title": "開源數位平臺，跨越尼泊爾公民與地方政府間的鴻溝",
-						"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
-						"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "blueprint",
+							"language": "",
+							"speaker": "Rajib Timalsina",
+							"title": "開源數位平臺，跨越尼泊爾公民與地方政府間的鴻溝",
+							"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
+							"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "ipa & ETBlue",
+							"title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
+							"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
+							"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "詹為翔",
+							"title": "開放街圖在外交援助計畫上的應用",
+							"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
+							"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
+						}
+					]
 				},
 				{
 					"time": "16:10-16:40",
-					"event": {
-						"venue": "R1",
-						"category": "blueprint",
-						"language": "",
-						"speaker": "",
-						"title": "敬請期待",
-						"bio": "",
-						"abstract": ""
-					}
-				},
-				{
-					"title": "配線",
-					"tagline": "同步、協作與進擊，打造跨界群眾串連的神經網絡",
-					"color": "#449FFC"
-				},
-				{
-					"time": "13:30-14:00",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "Kirby Wu",
-						"title": "媒體無間道 — 我在新聞界臥底的日子",
-						"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
-						"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
-					}
-				},
-				{
-					"time": "14:00-14:30",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "Walkingice",
-						"title": "鍵盤宅的輔選經驗談",
-						"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
-						"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
-					}
-				},
-				{
-					"time": "14:30-15:00",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "Jim Horng",
-						"title": "從滅頂秒退地圖看網路世代無組織社運",
-						"bio": "<p>在台灣軟體業已有約 10 年經驗，自認角色為工程師、社會議題微參與者、open source微貢獻者。</p>",
-						"abstract": "<p>抵抗黑心行動之一的滅頂秒退在 2015 年底到 2016 年初約熱了一個月時間，引發許多層次的討論。支持方的行動雖然一開始遍地開花，但似乎遇到輿論、成效、進度等阻力而漸式微，其中秒退地圖是想解決成效與進度透明化的部分，同時帶點組織化前置的概念。以結果論可能不算成功，但其過程包含網路推廣，早期使用者偕同設計，facebook 微組織合作，從中激發更多優化無組織社運的想法，這些便是作者想要分享的。</p><ul><li><a href='http://jimhorng.github.io/return_as_buy/'>滅頂秒退地圖</a></li><li><a href='https://jimhorng.wordpress.com/2016/01/19/%E5%BE%9E%E6%BB%85%E9%A0%82%E7%A7%92%E9%80%80%E7%9C%8B%E5%8F%B0%E7%81%A3%E8%BB%9F%E5%AF%A6%E5%8A%9B/'>從滅頂秒退看台灣軟實力</a></li></ul>"
-					}
-				},
-				{
-					"time": "15:00-15:40",
-					"event": "Tea time"
-				},
-				{
-					"time": "15:40-16:10",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "ipa & ETBlue",
-						"title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
-						"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
-						"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
-					}
-				},
-				{
-					"time": "16:10-16:40",
-					"event": {
-						"venue": "R0",
-						"category": "wiring",
-						"language": "",
-						"speaker": "柴田 重臣",
-						"title": "如何讓推廣公民科技給非技術宅？",
-						"bio": "(TBC)",
-						"abstract": "<p>Code for Japan which is established on 2013 Nov. has now 33 official brigades and 20+ candidate groups. Growing speed is great I think but the member of groups mainly are techie guys. From the point of view for civic tech, we need more non-techie people. So I want to let you share our challenges and achievement and ask your thought.</p><p>My name is Shigeomi Shibata, co-captain of code for Japan and a member of code for Ibaraki located on Mito-shi of Ibaraki prefecture.</p>"
-					}
-				},
-				{
-					"title": "鷹架",
-					"tagline": "剖析災變，以數據力支援的智慧應變方案",
-					"color": "#CE59E4"
-				},
-				{
-					"time": "13:30-14:00",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "陳坤助",
-						"title": "強震即時警報 EEW",
-						"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
-						"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
-					}
-				},
-				{
-					"time": "14:00-14:30",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "劉宇倫",
-						"title": "傳染病開放資料過去、現在、未來-以登革熱為例",
-						"bio": "<p>現任職疾病管制署疫情中心，曾擔任急診主治醫師，並於奧地利維也納接受歐盟EPIET流行病學訓練，興趣在運用資訊技術於防疫資訊的收集、分析及呈現</p>",
-						"abstract": "<p>2015年台灣登革熱疫情病例數創歷史新高，在同年，於open data社群協助及期待下，釋出多項即時且較為精細的登革熱病例及病媒蚊調查等open data。本次分享內容主要如下：</p><ul><li>登革熱open data的釋出心路歷程及製作經驗</li><li>與社群合作的壓力與助力</li><li>中央與地方的競爭與合作</li><li>登革熱open data的國內、外應用實例</li><li>登革熱或傳染病open data的未來努力方向</li></ul>"
-					}
-				},
-				{
-					"time": "14:30-15:00",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "Kuo-Yu slayer Chuang",
-						"title": "ICT 與群眾外包的災難適應力，亞洲開發銀行的案例研究",
-						"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
-						"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
-					}
-				},
-				{
-					"time": "15:00-15:40",
-					"event": "Tea time"
-				},
-				{
-					"time": "15:40-16:10",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "詹為翔",
-						"title": "開放街圖在外交援助計畫上的應用",
-						"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
-						"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
-					}
-				},
-				{
-					"time": "16:10-16:40",
-					"event": {
-						"venue": "R2",
-						"category": "scaffold",
-						"language": "",
-						"speaker": "Dongpo Deng",
-						"title": "OpenStreetMap 與 LocalWiki 的整合：支援社區層級災害系統管理",
-						"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
-						"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "",
+							"language": "",
+							"speaker": "",
+							"title": "敬請期待",
+							"bio": "",
+							"abstract": ""
+						},
+						{
+							"venue": "R0",
+							"category": "wiring",
+							"language": "",
+							"speaker": "柴田 重臣",
+							"title": "如何讓推廣公民科技給非技術宅？",
+							"bio": "(TBC)",
+							"abstract": "<p>Code for Japan which is established on 2013 Nov. has now 33 official brigades and 20+ candidate groups. Growing speed is great I think but the member of groups mainly are techie guys. From the point of view for civic tech, we need more non-techie people. So I want to let you share our challenges and achievement and ask your thought.</p><p>My name is Shigeomi Shibata, co-captain of code for Japan and a member of code for Ibaraki located on Mito-shi of Ibaraki prefecture.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "scaffold",
+							"language": "",
+							"speaker": "Dongpo Deng",
+							"title": "OpenStreetMap 與 LocalWiki 的整合：支援社區層級災害系統管理",
+							"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
+							"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
+						}
+					]
 				},
 				{
 					"time": "16:45-17:00",
@@ -30538,33 +30369,67 @@
 					"event": "午餐"
 				},
 				{
-					"title": "監工",
-					"tagline": "當監督政府成為全民義務，亞洲網路草根民主的進化論",
-					"color": "#C1EB96"
-				},
-				{
 					"time": "13:00-13:30",
-					"event": {
-						"venue": "R1",
-						"category": "supervision",
-						"language": "",
-						"speaker": "林雨蒼",
-						"title": "不開放、不透明的黨產開放資料",
-						"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
-						"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "supervision",
+							"language": "",
+							"speaker": "林雨蒼",
+							"title": "不開放、不透明的黨產開放資料",
+							"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
+							"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
+						},
+						{
+							"venue": "R0",
+							"category": "square",
+							"language": "",
+							"speaker": "Saul Peng & 王景弘",
+							"title": "g0v 預算視覺化後續 - 臺北市經驗",
+							"bio": "<p>彭盛韶 Saul Peng<br/>經歷：<ul><li>柯文哲辦公室政策部研究員</li><li>臺北市資訊局專門委員</li></ul></p><p>王景弘<br/>經歷：<ul><li>普奇科技資深工程師</li><li>威聯通科技資深產品工程師</li><li>JavaScript.tw 技術社團發起人</li><li>JSDC 前端技術人年會共同發起人</li></ul></p>",
+							"abstract": "<p>分享 2015 年臺北市資訊局與民間社群合作的經驗，運用原 2012 年 g0v 預算視覺化模組，更新後推出臺北市的版本。此案例在當時引起不小迴響，同時擴散至其他縣市。此演講中將分享行政體制的改變、公私協力的契機、技術部分的執行及後續造成地方政府的影響等。</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "Ventilation",
+							"language": "",
+							"speaker": "蘇彥禎",
+							"title": "空污資料搭配風場的內插與視覺化",
+							"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
+							"abstract": "<p>空污會隨著風向擴散,<br/>而觀測站之間的空污濃度也不該是線性内插,<br/>我做出一個系統能畫出污染隨著風擴散的結果,<br/>並且讓使用者可以在3維空間中探索.</p><p>線上系統: <a href='http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm'>http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm</a><br/>系統的建構說明: <a href='http://www.slideshare.net/ked19/pm25-system-construction'>http://www.slideshare.net/ked19/pm25-system-construction</a></p>"
+						}
+					]
 				},
 				{
 					"time": "13:30-14:00",
-					"event": {
-						"venue": "R1",
-						"category": "supervision",
-						"language": "",
-						"speaker": "Freyja van den boom",
-						"title": "告別文字擷取與資料探勘的痛苦: FutureTDM",
-						"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
-						"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "supervision",
+							"language": "",
+							"speaker": "Freyja van den boom",
+							"title": "告別文字擷取與資料探勘的痛苦: FutureTDM",
+							"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
+							"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "square",
+							"speaker": "呂家華",
+							"title": "政府 x 民間 x 網路 x 審議\n一個中介者的觀察與思考",
+							"bio": "(TBC)",
+							"abstract": "(TBC)"
+						},
+						{
+							"venue": "R2",
+							"category": "Ventilation",
+							"language": "",
+							"speaker": "Liz Barry",
+							"title": "社區科學與健康的環境",
+							"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
+							"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
+						}
+					]
 				},
 				{
 					"time": "14:00-14:40",
@@ -30572,140 +30437,67 @@
 				},
 				{
 					"time": "14:40-15:10",
-					"event": {
-						"venue": "R1",
-						"category": "supervision",
-						"language": "",
-						"speaker": "Nanang Syaifudin",
-						"title": "真實案例：監票數位參與 (MataMassa \"公眾之眼\")",
-						"bio": "<p>Nanang Syaifudin is a member of Wikipedia Indonesia period iLab 2013. He is the founder and currently serves as the Executive Director iLab, a nonprofit organization engaged in the development of information technology for social change. Nanang helped in terms of technical and training projects Cipta Media Bersama First, open grant projects for improvement of media with Ford Foundation, Wikimedia Indonesia, ICT Watch and the Alliance of Independent Journalists.</p><p>Nanang had previously helped Malaysian activists with community Bersih 2.0 and Fitness Komas to develop a system of monitoring the elections with the project name Jom Monitor, Nana also create a system for the people of Pattani in southern Thailand with institutions INSouthMedia for documentation of human rights violations based on the map with the project name WARTANI, then he made Encyclopedia Corruption Indonesia is Korupedia portal to document the Corruptor figures in Indonesia.</p><p>Nanang also been a Project Manager at the Foundation AirPutih for capacity-building projects and alternative technologies in the area - particularly remote areas of Papua, on alternative technologies and the use of citizen media by using SMS cooperate with AJI Jayapura</p>",
-						"abstract": "<p>Indonesia was having its legislative election on April 9, 2014. As a new emerging democratic country, we would like to share MataMassa application experience in election monitoring, combining between technology, citizen participation/ engagement and collaboration. We would like to hear your experiences as well on your election monitoring and especially learning what to do afterwards. There will be souvenirs that we brought from Indonesia :D. More further info: <a href='www.matamassa.org'>www.matamassa.org</a> / <a href='pileg2014.matamassa.org'>pileg2014.matamassa.org</a> / <a href='pilpres2014.matamassa.org'>pilpres2014.matamassa.org</a></p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "supervision",
+							"language": "",
+							"speaker": "Nanang Syaifudin",
+							"title": "真實案例：監票數位參與 (MataMassa \"公眾之眼\")",
+							"bio": "<p>Nanang Syaifudin is a member of Wikipedia Indonesia period iLab 2013. He is the founder and currently serves as the Executive Director iLab, a nonprofit organization engaged in the development of information technology for social change. Nanang helped in terms of technical and training projects Cipta Media Bersama First, open grant projects for improvement of media with Ford Foundation, Wikimedia Indonesia, ICT Watch and the Alliance of Independent Journalists.</p><p>Nanang had previously helped Malaysian activists with community Bersih 2.0 and Fitness Komas to develop a system of monitoring the elections with the project name Jom Monitor, Nana also create a system for the people of Pattani in southern Thailand with institutions INSouthMedia for documentation of human rights violations based on the map with the project name WARTANI, then he made Encyclopedia Corruption Indonesia is Korupedia portal to document the Corruptor figures in Indonesia.</p><p>Nanang also been a Project Manager at the Foundation AirPutih for capacity-building projects and alternative technologies in the area - particularly remote areas of Papua, on alternative technologies and the use of citizen media by using SMS cooperate with AJI Jayapura</p>",
+							"abstract": "<p>Indonesia was having its legislative election on April 9, 2014. As a new emerging democratic country, we would like to share MataMassa application experience in election monitoring, combining between technology, citizen participation/ engagement and collaboration. We would like to hear your experiences as well on your election monitoring and especially learning what to do afterwards. There will be souvenirs that we brought from Indonesia :D. More further info: <a href='www.matamassa.org'>www.matamassa.org</a> / <a href='pileg2014.matamassa.org'>pileg2014.matamassa.org</a> / <a href='pilpres2014.matamassa.org'>pilpres2014.matamassa.org</a></p>"
+						},
+						{
+							"venue": "R0",
+							"category": "square",
+							"language": "",
+							"speaker": "JK Suh",
+							"title": "韓國大選與投票建議指南: \"Ping\"",
+							"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
+							"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "Ventilation",
+							"language": "",
+							"speaker": "洪申翰, 曾虹文",
+							"title": "綠盟兩岸環境資料透明與再應用專案",
+							"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
+							"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
+						}
+					]
 				},
 				{
 					"time": "15:10-15:40",
-					"event": {
-						"venue": "R1",
-						"category": "supervision",
-						"language": "",
-						"speaker": "Nicholas Doiron",
-						"title": "在奈比多用 NodeJS：緬甸選舉資料開放",
-						"bio": "<p>Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.</p>",
-						"abstract": "<p>In November 2015, millions of Myanmar's citizens went to the polls for the first openly-contested national elections in 25 years. Tens of thousands of people used mobile apps to research political parties, find out their candidates ahead of time, and see candidates' profiles. Those apps' data came from the MaePaySoh API, a partnership between the Myanmar Union Election Commission in Naypyitaw and the Asia Foundation's. Behind the scenes there were weeks of paperwork, scanning, digitizing, Unicode issues, deal-making, data cleanup, and development leading up to a two-week-long Hackathon. Take a look inside a fledgling open source community in Yangon and a drive for civic tech apps.</p>"
-					}
-				},
-				{
-					"title": "廣場",
-					"tagline": "走出黑箱，開放政府的全民共筆指南",
-					"color": "#FB69B3"
-				},
-				{
-					"time": "13:00-13:30",
-					"event": {
-						"venue": "R0",
-						"category": "square",
-						"language": "",
-						"speaker": "Saul Peng & 王景弘",
-						"title": "g0v 預算視覺化後續 - 臺北市經驗",
-						"bio": "<p>彭盛韶 Saul Peng<br/>經歷：<ul><li>柯文哲辦公室政策部研究員</li><li>臺北市資訊局專門委員</li></ul></p><p>王景弘<br/>經歷：<ul><li>普奇科技資深工程師</li><li>威聯通科技資深產品工程師</li><li>JavaScript.tw 技術社團發起人</li><li>JSDC 前端技術人年會共同發起人</li></ul></p>",
-						"abstract": "<p>分享 2015 年臺北市資訊局與民間社群合作的經驗，運用原 2012 年 g0v 預算視覺化模組，更新後推出臺北市的版本。此案例在當時引起不小迴響，同時擴散至其他縣市。此演講中將分享行政體制的改變、公私協力的契機、技術部分的執行及後續造成地方政府的影響等。</p>"
-					}
-				},
-				{
-					"time": "13:30-14:00",
-					"event": {
-						"venue": "R0",
-						"category": "square",
-						"speaker": "呂家華",
-						"title": "政府 x 民間 x 網路 x 審議\n一個中介者的觀察與思考",
-						"bio": "(TBC)",
-						"abstract": "(TBC)"
-					}
-				},
-				{
-					"time": "14:00-14:40",
-					"event": "茶點"
-				},
-				{
-					"time": "14:40-15:10",
-					"event": {
-						"venue": "R0",
-						"category": "square",
-						"language": "",
-						"speaker": "JK Suh",
-						"title": "韓國大選與投票建議指南: \"Ping\"",
-						"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
-						"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
-					}
-				},
-				{
-					"time": "15:10-15:40",
-					"event": {
-						"venue": "R0",
-						"category": "square",
-						"language": "",
-						"speaker": "駱勁成",
-						"title": "立委／議員投票指南",
-						"bio": "<p>立委／議員投票指南</p>",
-						"abstract": "<p>2014 議員選舉到 2016 立委選舉，投票指南在選前一個月都有四十到五十萬使用者<br/>投票指南的設計初衷是減少盲目投票，讓民主社會的台灣更進步<br/>究竟我們有沒有走到正確的道路上？</p>"
-					}
-				},
-				{
-					"title": "空調",
-					"tagline": "破解環境污染密碼，開源釋出好空氣",
-					"color": "#D8D9D8"
-				},
-				{
-					"time": "13:00-13:30",
-					"event": {
-						"venue": "R2",
-						"category": "Ventilation",
-						"language": "",
-						"speaker": "蘇彥禎",
-						"title": "空污資料搭配風場的內插與視覺化",
-						"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
-						"abstract": "<p>空污會隨著風向擴散,<br/>而觀測站之間的空污濃度也不該是線性内插,<br/>我做出一個系統能畫出污染隨著風擴散的結果,<br/>並且讓使用者可以在3維空間中探索.</p><p>線上系統: <a href='http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm'>http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm</a><br/>系統的建構說明: <a href='http://www.slideshare.net/ked19/pm25-system-construction'>http://www.slideshare.net/ked19/pm25-system-construction</a></p>"
-					}
-				},
-				{
-					"time": "13:30-14:00",
-					"event": {
-						"venue": "R2",
-						"category": "Ventilation",
-						"language": "",
-						"speaker": "Liz Barry",
-						"title": "社區科學與健康的環境",
-						"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
-						"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
-					}
-				},
-				{
-					"time": "14:00-14:40",
-					"event": "茶點"
-				},
-				{
-					"time": "14:40-15:10",
-					"event": {
-						"venue": "R2",
-						"category": "Ventilation",
-						"language": "",
-						"speaker": "洪申翰, 曾虹文",
-						"title": "綠盟兩岸環境資料透明與再應用專案",
-						"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
-						"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
-					}
-				},
-				{
-					"time": "15:10-15:40",
-					"event": {
-						"venue": "R2",
-						"category": "Ventilation",
-						"language": "",
-						"speaker": "卞中佩",
-						"title": "從基礎工程到應用工程\ng0v資料與其它資料庫的整併及後續應用 ─ 以環保署污染源與公司結構資料為例",
-						"bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
-						"abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
-					}
+					"events": [
+						{
+							"venue": "R1",
+							"category": "supervision",
+							"language": "",
+							"speaker": "Nicholas Doiron",
+							"title": "在奈比多用 NodeJS：緬甸選舉資料開放",
+							"bio": "<p>Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.</p>",
+							"abstract": "<p>In November 2015, millions of Myanmar's citizens went to the polls for the first openly-contested national elections in 25 years. Tens of thousands of people used mobile apps to research political parties, find out their candidates ahead of time, and see candidates' profiles. Those apps' data came from the MaePaySoh API, a partnership between the Myanmar Union Election Commission in Naypyitaw and the Asia Foundation's. Behind the scenes there were weeks of paperwork, scanning, digitizing, Unicode issues, deal-making, data cleanup, and development leading up to a two-week-long Hackathon. Take a look inside a fledgling open source community in Yangon and a drive for civic tech apps.</p>"
+						},
+						{
+							"venue": "R0",
+							"category": "square",
+							"language": "",
+							"speaker": "駱勁成",
+							"title": "立委／議員投票指南",
+							"bio": "<p>立委／議員投票指南</p>",
+							"abstract": "<p>2014 議員選舉到 2016 立委選舉，投票指南在選前一個月都有四十到五十萬使用者<br/>投票指南的設計初衷是減少盲目投票，讓民主社會的台灣更進步<br/>究竟我們有沒有走到正確的道路上？</p>"
+						},
+						{
+							"venue": "R2",
+							"category": "Ventilation",
+							"language": "",
+							"speaker": "卞中佩",
+							"title": "從基礎工程到應用工程\ng0v資料與其它資料庫的整併及後續應用 ─ 以環保署污染源與公司結構資料為例",
+							"bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
+							"abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
+						}
+					]
 				},
 				{
 					"time": "15:45-16:00",
@@ -30742,7 +30534,134 @@
 	};
 
 /***/ },
-/* 374 */
+/* 380 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"en-US": [
+			{
+				"id": "power",
+				"title": "Power",
+				"tagline": "Upgrading the organizing capacity of activism with civic tech",
+				"color": "#CE0D41"
+			},
+			{
+				"id": "foundation",
+				"title": "Foundation",
+				"tagline": "Global reimplementions of media, elections, governments and public decisions",
+				"color": "#FCDE86"
+			},
+			{
+				"id": "construction",
+				"title": "Construction",
+				"tagline": "Open-culture experiments with data and technology",
+				"color": "#1BADBE"
+			},
+			{
+				"id": "blueprint",
+				"title": "Blueprint",
+				"tagline": "Towards digital representation: A jigsaw of open government data endeavours",
+				"color": "#F4AF3D"
+			},
+			{
+				"id": "wiring",
+				"title": "Wiring",
+				"tagline": "Intersectoral networks: Synchronizations, collaborations and demonstrations",
+				"color": "#449FFC"
+			},
+			{
+				"id": "scaffold",
+				"title": "Scaffold",
+				"tagline": "Analyzing disasters: Data-based contingency planning",
+				"color": "#CE59E4"
+			},
+			{
+				"id": "supervision",
+				"title": "Supervision",
+				"tagline": "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns",
+				"color": "#C1EB96"
+			},
+			{
+				"id": "square",
+				"title": "Square",
+				"tagline": "Overcoming black boxes: Wiki-manuals for open governance",
+				"color": "#FB69B3"
+			},
+			{
+				"id": "Ventilation",
+				"title": "Ventilation",
+				"tagline": "Demystifying pollution: Transparency in the air",
+				"color": "#D8D9D8"
+			}
+		],
+		"zh-TW": [
+			{
+				"id": "power",
+				"title": "動力",
+				"tagline": "公民科技時代，運動組織的馬力再升級",
+				"color": "#CE0D41"
+			},
+			{
+				"id": "foundation",
+				"title": "地基",
+				"tagline": "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐",
+				"color": "#FCDE86"
+			},
+			{
+				"id": "construction",
+				"title": "骨架",
+				"tagline": "從資料科技與文化領域出發的開放實驗",
+				"color": "#1BADBE"
+			},
+			{
+				"id": "blueprint",
+				"title": "藍圖",
+				"tagline": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來",
+				"color": "#F4AF3D"
+			},
+			{
+				"id": "wiring",
+				"title": "配線",
+				"tagline": "同步、協作與進擊，打造跨界群眾串連的神經網絡",
+				"color": "#449FFC"
+			},
+			{
+				"id": "scaffold",
+				"title": "鷹架",
+				"tagline": "剖析災變，以數據力支援的智慧應變方案",
+				"color": "#CE59E4"
+			},
+			{
+				"id": "supervision",
+				"title": "監工",
+				"tagline": "當監督政府成為全民義務，亞洲網路草根民主的進化論",
+				"color": "#C1EB96"
+			},
+			{
+				"id": "square",
+				"title": "廣場",
+				"tagline": "走出黑箱，開放政府的全民共筆指南",
+				"color": "#FB69B3"
+			},
+			{
+				"id": "Ventilation",
+				"title": "空調",
+				"tagline": "破解環境污染密碼，開源釋出好空氣",
+				"color": "#D8D9D8"
+			}
+		]
+	};
+
+/***/ },
+/* 381 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__2PG_F","backdrop":"styles-backdrop__222h8","isShown":"styles-isShown__2X0WE","container":"styles-container__3fYMv","mobileScrollLock":"styles-mobileScrollLock__mMH7S"};
+
+/***/ },
+/* 382 */,
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30755,7 +30674,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _filter = __webpack_require__(375);
+	var _filter = __webpack_require__(384);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
@@ -30836,58 +30755,15 @@
 	});
 
 /***/ },
-/* 375 */
-/***/ function(module, exports, __webpack_require__) {
+/* 384 */
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(376);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./filter.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./filter.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"filter":"filter-filter__2Aq-6","filterTitle":"filter-filterTitle__34mGj","filterCategories":"filter-filterCategories__rz7LE","filterCategory":"filter-filterCategory__3S81z","filterCategoryIcon":"filter-filterCategoryIcon__2dYxM","filterActions":"filter-filterActions__1o6da","filterClose":"filter-filterClose__15PBf","filterComplete":"filter-filterComplete__2LotJ","filterClearAll":"filter-filterClearAll__3xsaW","isActive":"filter-isActive__2kS1y"};
 
 /***/ },
-/* 376 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".filter-filter__2Aq-6 {\n  position: relative;\n  padding-bottom: 20px;\n}\n\n.filter-filterTitle__34mGj {\n  padding: 16px;\n  background: white;\n  border-bottom: 1px solid gray;\n  font-size: 16px;\n  text-transform: uppercase;\n}\n.filter-filterCategories__rz7LE {\n  padding: 16px 0;\n  list-style: none;\n  margin: 0;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-flow: row wrap;\n      -ms-flex-flow: row wrap;\n          flex-flow: row wrap;\n}\n.filter-filterCategory__3S81z {\n  -webkit-box-flex: 0;\n  -webkit-flex: 0 0 50%;\n     -moz-box-flex: 0;\n      -ms-flex: 0 0 50%;\n          flex: 0 0 50%;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n     -moz-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 0 16px;\n  height: 36px;\n  font-size: 14px;\n  cursor: pointer;\n}\n.filter-filterCategoryIcon__2dYxM {\n  border-radius: 4px;\n  width: 18px; height: 18px;\n  border: 2px solid #333;\n  margin-right: 18px;\n  -webkit-transition: background .3s;\n  transition: background .3s;\n}\n.filter-filterActions__1o6da {\n  padding: 16px;\n  font-size: 14px;\n}\n.filter-filterClose__15PBf {\n  cursor: pointer;\n  text-decoration: underline;\n  display: inline-block;\n  margin-right: 20px;\n}\n\n.filter-filterComplete__2LotJ:hover{\n  color: rgb(50,53,52);\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n.filter-filterClearAll__3xsaW {\n  cursor: pointer;\n  text-decoration: underline;\n  color: transparent;\n  display: inline-block;\n}\n.filter-filterClearAll__3xsaW.filter-isActive__2kS1y {\n  color: rgb(120,120,120);\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n.filter-filterClearAll__3xsaW.filter-isActive__2kS1y:hover{\n  color: rgb(50,53,52);\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n\n@media screen and (min-width: 1000px) {\n  .filter-filterClose__15PBf {\n    display: none;\n  }\n  .filter-filterTitle__34mGj {\n    font-size: 20px;\n    padding: 20px 0;\n  }\n  .filter-filterCategories__rz7LE {\n    padding: 18px 0;\n  }\n  .filter-filterCategory__3S81z {\n    height: 48px;\n    font-size: 16px;\n    -webkit-flex-basis: 100%;\n        -ms-flex-preferred-size: 100%;\n            flex-basis: 100%;\n    padding: 0;\n  }\n  .filter-filterCategoryIcon__2dYxM {\n    width: 22px; height: 22px;\n  }\n  .filter-filterActions__1o6da {\n    font-size: 16px;\n    padding: 0;\n  }\n}", "", {"version":3,"sources":["/./app/javascripts/components/Schedule/filter.css"],"names":[],"mappings":"AAIA;EACE,mBAAmB;EACnB,qBAAqB;CACtB;;AAED;EACE,cAAyB;EACzB,kBAAkB;EAClB,8BAA8B;EAC9B,gBAAgB;EAChB,0BAA0B;CAC3B;AACD;EACE,gBAA2B;EAC3B,iBAAiB;EACjB,UAAU;EACV,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,4BAAoB;MAApB,wBAAoB;UAApB,oBAAoB;CACrB;AACD;EACE,oBAAc;EAAd,sBAAc;KAAd,iBAAc;MAAd,kBAAc;UAAd,cAAc;EACd,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,0BAAoB;EAApB,4BAAoB;KAApB,uBAAoB;MAApB,uBAAoB;UAApB,oBAAoB;EACpB,gBAA2B;EAC3B,aAAa;EACb,gBAAgB;EAChB,gBAAgB;CACjB;AACD;EACE,mBAAmB;EACnB,YAAY,CAAC,aAAa;EAC1B,uBAAuB;EACvB,mBAAmB;EACnB,mCAA2B;EAA3B,2BAA2B;CAC5B;AACD;EACE,cAAyB;EACzB,gBAAgB;CACjB;AACD;EACE,gBAAgB;EAChB,2BAA2B;EAC3B,sBAAsB;EACtB,mBAAmB;CACpB;;AAED;EACE,qBAAqB;EACrB,4BAA4B;EAC5B,oBAAoB;CACrB;AACD;EACE,gBAAgB;EAChB,2BAA2B;EAC3B,mBAAmB;EACnB,sBAAsB;CACvB;AACD;EACE,wBAAwB;EACxB,4BAA4B;EAC5B,oBAAoB;CACrB;AACD;EACE,qBAAqB;EACrB,4BAA4B;EAC5B,oBAAoB;CACrB;;AAED;EACE;IACE,cAAc;GACf;EACD;IACE,gBAAgB;IAChB,gBAA4B;GAC7B;EACD;IACE,gBAAgB;GACjB;EACD;IACE,aAAa;IACb,gBAAgB;IAChB,yBAAiB;QAAjB,8BAAiB;YAAjB,iBAAiB;IACjB,WAAW;GACZ;EACD;IACE,YAAY,CAAC,aAAa;GAC3B;EACD;IACE,gBAAgB;IAChB,WAAW;GACZ;CACF","file":"filter.css","sourcesContent":["$breakpoint: 1000px;\n$mobile-padding: 16px;\n$desktop-padding: 20px;\n\n.filter {\n  position: relative;\n  padding-bottom: 20px;\n}\n\n.filterTitle {\n  padding: $mobile-padding;\n  background: white;\n  border-bottom: 1px solid gray;\n  font-size: 16px;\n  text-transform: uppercase;\n}\n.filterCategories {\n  padding: $mobile-padding 0;\n  list-style: none;\n  margin: 0;\n  display: flex;\n  flex-flow: row wrap;\n}\n.filterCategory {\n  flex: 0 0 50%;\n  display: flex;\n  align-items: center;\n  padding: 0 $mobile-padding;\n  height: 36px;\n  font-size: 14px;\n  cursor: pointer;\n}\n.filterCategoryIcon {\n  border-radius: 4px;\n  width: 18px; height: 18px;\n  border: 2px solid #333;\n  margin-right: 18px;\n  transition: background .3s;\n}\n.filterActions {\n  padding: $mobile-padding;\n  font-size: 14px;\n}\n.filterClose {\n  cursor: pointer;\n  text-decoration: underline;\n  display: inline-block;\n  margin-right: 20px;\n}\n\n.filterComplete:hover{\n  color: rgb(50,53,52);\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n.filterClearAll {\n  cursor: pointer;\n  text-decoration: underline;\n  color: transparent;\n  display: inline-block;\n}\n.filterClearAll.isActive {\n  color: rgb(120,120,120);\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n.filterClearAll.isActive:hover{\n  color: rgb(50,53,52);\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n\n@media screen and (min-width: $breakpoint) {\n  .filterClose {\n    display: none;\n  }\n  .filterTitle {\n    font-size: 20px;\n    padding: $desktop-padding 0;\n  }\n  .filterCategories {\n    padding: 18px 0;\n  }\n  .filterCategory {\n    height: 48px;\n    font-size: 16px;\n    flex-basis: 100%;\n    padding: 0;\n  }\n  .filterCategoryIcon {\n    width: 22px; height: 22px;\n  }\n  .filterActions {\n    font-size: 16px;\n    padding: 0;\n  }\n}"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"filter": "filter-filter__2Aq-6",
-		"filterTitle": "filter-filterTitle__34mGj",
-		"filterCategories": "filter-filterCategories__rz7LE",
-		"filterCategory": "filter-filterCategory__3S81z",
-		"filterCategoryIcon": "filter-filterCategoryIcon__2dYxM",
-		"filterActions": "filter-filterActions__1o6da",
-		"filterClose": "filter-filterClose__15PBf",
-		"filterComplete": "filter-filterComplete__2LotJ",
-		"filterClearAll": "filter-filterClearAll__3xsaW",
-		"isActive": "filter-isActive__2kS1y"
-	};
-
-/***/ },
-/* 377 */
+/* 385 */,
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30900,11 +30776,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(378);
+	var _classnames = __webpack_require__(387);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	__webpack_require__(379);
+	__webpack_require__(388);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30998,7 +30874,7 @@
 	});
 
 /***/ },
-/* 378 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31052,93 +30928,14 @@
 
 
 /***/ },
-/* 379 */
-/***/ function(module, exports, __webpack_require__) {
+/* 388 */
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(380);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./session.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./session.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 380 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".Session {\n    background: white;\n    width: 100%;\n    height: 100%;\n    position: relative;\n}\n.Session a, .Session a:visited{\n    color: rgb(153,155,154);\n}\n.Session p {\n    white-space: pre-wrap;\n}\n.Session-close {\n    position: relative;\n    width: 42px;\n    height: 42px;\n    border-radius: 44px;\n    cursor: pointer;\n}\n.Session-close:before {\n    -webkit-transform: rotate(45deg);\n    transform: rotate(45deg);\n    content: '';\n}\n.Session-close:after {\n    -webkit-transform: rotate(-45deg);\n    transform: rotate(-45deg);\n    content: '';\n}\n.Session-close:before, .Session-close:after {\n    -webkit-transition: background .3s;\n    transition: background .3s;\n    width: 18px;\n    height: 1px;\n    top: 30px;\n    left: 30px;\n    position: absolute;\n    margin-left: -10px;\n    margin-top: -1px;\n    background: gray;\n}\n.Session-close:hover:before, .Session-close:hover:after {\n    background: rgb(53,55,54);\n}\n.Session-content {\n    padding: 20px;\n    line-height: 1.6;\n    background: white;\n}\n.Session-meta {\n    font-size: 14px;\n}\n.Session-time {\n    display: inline-block;\n    margin-right: 10px;\n}\n.Session-venue {\n    display: inline-block;\n    padding: 1px 6px;\n    margin-right: 10px;\n    color: gray;\n    background: rgb(220,220,220);\n    border-radius: 4px;\n}\n.Session-en {\n    display: inline-block;\n    background: rgb(207,43,43);\n    /* rgb(213,62,79);*/\n    color: white;\n    padding: 0 4px ;\n}\n.Session-title {\n    font-size: 26px;\n    font-weight: 700;\n    color: #CB0031;\n    position: relative;\n    margin-top: 20px;\n}\n.Session-subTitle {\n    font-weight: 600;\n    font-size: 20px;\n    color: rgb(53,55,54);\n}\n.Session-presenter {\n    color: rgb(55,54,53);\n}\n.Session-category {\n    position: relative;\n    vertical-align: top;\n    font-size: 14px;\n    color: rgb(80,80,80);\n    margin-top: 20px;\n}\n.Session-categoryIcon {\n    display: inline-block;\n    width: 12px;\n    height: 12px;\n    vertical-align: top;\n    margin-top: 5px;\n    margin-right: 6px;\n    border-radius: 2px;\n}\n.Session-abstract {\n    margin: 20px 0;\n    color: rgb(53,55,54);\n}\n.Session-biography {\n    margin: 20px 0;\n    color: rgb(53,55,54);\n}\n@media screen and (min-width: 1000px){\n    .Session-close {\n        left: 20px;\n        top: 20px;\n    }\n    .Session-content {\n        padding: 40px;\n        max-width: 40em;\n        /* Don't make text too long & difficult to read */\n    }\n}", "", {"version":3,"sources":["/./app/javascripts/components/Schedule/session.css"],"names":[],"mappings":"AAGA;IACE,kBAAkB;IAClB,YAAY;IACZ,aAAa;IACb,mBAAmB;CAEpB;AACD;IACE,wBAAwB;CAEzB;AACD;IACE,sBAAsB;CACvB;AACD;IACE,mBAAmB;IACnB,YAAY;IACZ,aAAa;IACb,oBAAoB;IACpB,gBAAgB;CACjB;AACD;IACE,iCAAiC;IAEjC,yBAAyB;IACzB,YAAY;CACb;AACD;IACE,kCAAkC;IAElC,0BAA0B;IAC1B,YAAY;CACb;AACD;IACE,mCAAmC;IACnC,2BAA2B;IAC3B,YAAY;IACZ,YAAY;IACZ,UAAU;IACV,WAAW;IACX,mBAAmB;IACnB,mBAAmB;IACnB,iBAAiB;IACjB,iBAAiB;CAElB;AACD;IACE,0BAA0B;CAC3B;AACD;IACI,cAAc;IACd,iBAAiB;IACjB,kBAAkB;CACrB;AAWD;IACE,gBAAgB;CACjB;AACD;IACE,sBAAsB;IACtB,mBAAmB;CAEpB;AACD;IACE,sBAAsB;IACtB,iBAAiB;IACjB,mBAAmB;IACnB,YAAY;IACZ,6BAA6B;IAC7B,mBAAmB;CACpB;AACD;IACE,sBAAsB;IACtB,2BAA2B;IAC5B,oBAAoB;IACnB,aAAa;IACb,gBAAgB;CACjB;AAED;IACE,gBAAgB;IAChB,iBAAiB;IACjB,eAAe;IAEf,mBAAmB;IACnB,iBAAiB;CAClB;AACD;IACE,iBAAiB;IACjB,gBAAgB;IAChB,qBAAqB;CACtB;AACD;IACE,qBAAqB;CACtB;AAED;IACE,mBAAmB;IACnB,oBAAoB;IACpB,gBAAgB;IAChB,qBAAqB;IACrB,iBAAiB;CAClB;AACD;IACE,sBAAsB;IAEtB,YAAY;IACZ,aAAa;IACb,oBAAoB;IACpB,gBAAgB;IAChB,kBAAkB;IAClB,mBAAmB;CACpB;AAED;IACE,eAAe;IACf,qBAAqB;CACtB;AACD;IACE,eAAe;IACf,qBAAqB;CACtB;AA5ED;IACI;QACE,WAAW;QACX,UAAU;KACX;IACD;QACE,cAAc;QACd,gBAAgB;QAAC,kDAAkD;KACpE;CACJ","file":"session.css","sourcesContent":["$breakpoint: 1000px;\n\n:global {\n.Session {\n  background: white;\n  width: 100%;\n  height: 100%;\n  position: relative;\n\n}\n.Session a, .Session a:visited{\n  color: rgb(153,155,154);\n\n}\n.Session p {\n  white-space: pre-wrap;\n}\n.Session-close {\n  position: relative;\n  width: 42px;\n  height: 42px;\n  border-radius: 44px;\n  cursor: pointer;\n}\n.Session-close:before {\n  -webkit-transform: rotate(45deg);\n  -ms-transform: rotate(45deg);\n  transform: rotate(45deg);\n  content: '';\n}\n.Session-close:after {\n  -webkit-transform: rotate(-45deg);\n  -ms-transform: rotate(-45deg);\n  transform: rotate(-45deg);\n  content: '';\n}\n.Session-close:before, .Session-close:after {\n  -webkit-transition: background .3s;\n  transition: background .3s;\n  width: 18px;\n  height: 1px;\n  top: 30px;\n  left: 30px;\n  position: absolute;\n  margin-left: -10px;\n  margin-top: -1px;\n  background: gray;\n\n}\n.Session-close:hover:before, .Session-close:hover:after {\n  background: rgb(53,55,54);\n}\n.Session-content {\n    padding: 20px;\n    line-height: 1.6;\n    background: white;\n}\n@media screen and (min-width: $breakpoint){\n    .Session-close{\n      left: 20px;\n      top: 20px;\n    }\n    .Session-content {\n      padding: 40px;\n      max-width: 40em; /* Don't make text too long & difficult to read */\n    }\n}\n.Session-meta {\n  font-size: 14px;\n}\n.Session-time {\n  display: inline-block;\n  margin-right: 10px;\n\n}\n.Session-venue {\n  display: inline-block;\n  padding: 1px 6px;\n  margin-right: 10px;\n  color: gray;\n  background: rgb(220,220,220);\n  border-radius: 4px;\n}\n.Session-en {\n  display: inline-block;\n  background: rgb(207,43,43);\n /* rgb(213,62,79);*/\n  color: white;\n  padding: 0 4px ;\n}\n\n.Session-title {\n  font-size: 26px;\n  font-weight: 700;\n  color: #CB0031;\n\n  position: relative;\n  margin-top: 20px;\n}\n.Session-subTitle {\n  font-weight: 600;\n  font-size: 20px;\n  color: rgb(53,55,54);\n}\n.Session-presenter {\n  color: rgb(55,54,53);\n}\n\n.Session-category {\n  position: relative;\n  vertical-align: top;\n  font-size: 14px;\n  color: rgb(80,80,80);\n  margin-top: 20px;\n}\n.Session-categoryIcon {\n  display: inline-block;\n\n  width: 12px;\n  height: 12px;\n  vertical-align: top;\n  margin-top: 5px;\n  margin-right: 6px;\n  border-radius: 2px;\n}\n\n.Session-abstract {\n  margin: 20px 0;\n  color: rgb(53,55,54);\n}\n.Session-biography {\n  margin: 20px 0;\n  color: rgb(53,55,54);\n}\n}"],"sourceRoot":"webpack://"}]);
-
-	// exports
-
-
-/***/ },
-/* 381 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(382);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 382 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__2PG_F {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  position: relative; /* For backdrop */\n  *zoom: 1;\n}\n\n.styles-root__2PG_F:before { /* For backdrop */\n  content: '';\n  display: table;\n}\n\n.styles-root__2PG_F:after { /* For backdrop */\n  content: '';\n  display: table;\n  clear: both;\n}\n\n.styles-backdrop__222h8 {\n  background: rgba(255, 255, 255, .5);\n  position: absolute;\n  top: 0; right: 50%; bottom: 0; left: 0;\n  z-index: -1;\n  opacity: 0;\n  -webkit-transition: opacity .2s;\n  transition: opacity .2s;\n}\n\n.styles-backdrop__222h8.styles-isShown__2X0WE {\n  opacity: 1;\n  z-index: 5;\n}\n\n.styles-container__3fYMv {\n  max-width: 1000px;\n  position: relative; /* For absolute-positioned filter */\n  margin: 0 auto;\n}\n\nbody.styles-mobileScrollLock__mMH7S {\n  overflow: hidden;\n}\n\n@media screen and (min-width: 1000px) {\n  body.styles-mobileScrollLock__mMH7S {\n    overflow: auto;\n  }\n}\n\n/* Stuff directly stolen from coscup... :P */\n.Home-filter {\n  display: none;\n}\n.Home-session {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  overflow-y: auto;\n  -webkit-transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1);\n  transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1);\n  transition: transform .2s cubic-bezier(.4,0,.2,1);\n  transition: transform .2s cubic-bezier(.4,0,.2,1), -webkit-transform .2s cubic-bezier(.4,0,.2,1);\n  z-index: 200;\n  -webkit-transform: translate3d(100%, 0, 0);\n          transform: translate3d(100%, 0, 0);\n}\n.Home-session.is-show, .Home-session.is-show.is-fixed {\n  -webkit-transform: translate3d(0, 0, 0);\n          transform: translate3d(0, 0, 0);\n}\n.Home-section.is-hidden {\n  display: none;\n}\n.Schedule {\n  min-height: 100vh;\n  position: relative;\n  background: white;\n  z-index: 10;\n}\n.Schedule.is-fixed {\n  padding-top: 56px;\n}\n.Schedule-title {\n  background: white;\n  border-bottom: 1px solid gray;\n  width: 100%;\n  z-index: 20;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n.Schedule-title.is-fixed {\n  position: fixed;\n  top: 0;\n  -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);\n  transition: all .2s cubic-bezier(.4,0,.2,1);\n}\n/* FILTER */\n.Schedule-filterBtn {\n  color: rgb(80,80,80);\n  -webkit-align-self: center;\n      -ms-flex-item-align: center;\n          align-self: center;\n  text-align: center;\n  line-height: 56px;\n  width: 56px;\n  height: 56px;\n  cursor: pointer;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n  margin-right: 8px;\n  position: relative; /* for bar1 and bar2 */\n}\n.Schedule-filterBtn:hover {\n  color: rgb(53,55,54);\n}\n.Schedule-filterBtn.is-show {\n  color: transparent; /* Hide \"Filter\" button text when filter is shown */\n}\n.Schedule-bar1, .Schedule-bar2 {\n  content: '';\n  border-top: 2px solid transparent;\n  position: absolute;\n  top: 28px;\n  width: 40px;\n  left: 8px;\n  -webkit-transform: rotate(0deg);\n          transform: rotate(0deg);\n}\n.Schedule-bar1.is-active, .Schedule-bar2.is-active {\n  content: '';\n  border-color: rgb(213,62,79);\n  -webkit-transition: -webkit-transform .3s cubic-bezier(.4,0,.2,1);\n  transition: -webkit-transform .3s cubic-bezier(.4,0,.2,1);\n  transition: transform .3s cubic-bezier(.4,0,.2,1);\n  transition: transform .3s cubic-bezier(.4,0,.2,1), -webkit-transform .3s cubic-bezier(.4,0,.2,1);\n}\n.Schedule-bar1.is-active {\n  -webkit-transform: rotate(45deg);\n          transform: rotate(45deg);\n}\n.Schedule-bar2.is-active {\n  -webkit-transform: rotate(-45deg);\n          transform: rotate(-45deg);\n}\n.Schedule-filterPanel {\n  max-height: 0px;\n  overflow: hidden;\n  will-change: max-height;\n  -webkit-transition: all .2s cubic-bezier(0, 1, 0.5, 1);\n  transition: all .2s cubic-bezier(0, 1, 0.5, 1);\n}\n.Schedule-filterPanel.is-show {\n  max-height: calc(100vh - 80px);\n}\n.Schedule-filterPanel.is-show.is-fixed {\n  position: fixed;\n  top: 57px;\n  z-index: 200;\n  width: 100%;\n  background: white;\n  box-shadow: 0px 2px 2px 0 rgba(0,0,0,.22);\n}\n/* ===================== */\n.Schedule-dayButtonLeftstop {\n  width: calc(96px - 16px);\n}\n.Schedule-dayButton {\n  font-size: 16px;\n  text-transform: uppercase;\n  padding: 16px;\n  cursor: pointer;\n  margin-right: auto;\n}\n.Schedule-dayButton:hover, .Schedule-dayButton.is-active {\n  color: rgb(68,210,143);\n  text-decoration: underline;\n}\n.Schedule-day {\n  background: #f3f3f3;\n  border-bottom: 1px solid rgb(220,220,220);\n  font-size: 24px;\n  padding: 16px;\n  font-weight: bold;\n}\n.Schedule-item {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -moz-box;\n  display: -ms-flexbox;\n  display: flex;\n  font-size: 16px;\n  border-bottom: 1px solid rgb(220,220,220);\n}\n.Schedule-item > .Schedule-event {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1 0 0;\n     -moz-box-flex: 1;\n      -ms-flex: 1 0 0;\n          flex: 1 0 0;\n}\n.Schedule-presenter {\n  color: rgb(125,124,123);\n  font-size: 14px;\n  margin-top: 4px;\n  font-weight: normal;\n}\n.Schedule-time {\n  width: calc(96px - 14px); /* 14px = event left padding */\n  padding: 16px;\n}\n.Schedule-timeEnd {\n  display: none;\n}\n.Schedule-event, .Schedule-tagline {\n  color: inherit; /* override <a> color */\n  display: block;\n  position: relative; /* For categoryIcon */\n  font-weight: bold;\n  text-decoration: none;\n  padding: 16px 14px;\n  -webkit-transition: background .3s;\n  transition: background .3s;\n  border-bottom: 1px solid rgb(220,220,220)\n}\n.Schedule-event:last-child, .Schedule-tagline:last-child {\n  border-bottom: none;\n}\n.Schedule-event.is-active {\n  background: #fff3f3;\n}\n.Schedule-event:hover {\n  background: #fff3f3;\n  -webkit-transition: background .3s;\n  transition: background .3s;\n}\n.Schedule-events {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1 0 0;\n     -moz-box-flex: 1;\n      -ms-flex: 1 0 0;\n          flex: 1 0 0;\n}\n.Schedule-venue {\n  display: inline-block;\n  padding: 1px 8px;\n  margin-bottom: 5px;\n  font-size: 14px;\n  background: rgb(220,220,220);\n  border-radius: 4px;\n  color: gray;\n}\n.Schedule-en {\n  color: rgb(207,43,43);\n  display: inline-block;\n  padding: 0 4px;\n}\n.Schedule-categoryIcon {\n  position: absolute;\n  width: 16px;\n  height: 16px;\n  right: 14px;\n  bottom: 17px;\n  border-radius: 3px;\n  background: transparent;\n  will-change: background;\n  -webkit-transition: background .3s;\n  transition: background .3s;\n}\n@media screen and (min-width: 1000px){\n\n  .Home-filter {\n    width: 240px;\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: block;\n  }\n\n  .Home-filter.is-fixed {\n    position: fixed;\n  }\n\n  .Home-filter.is-passed {\n    position: absolute; /* top dynamically decided*/\n  }\n\n  .Home-schedule {\n    margin-left: 240px;\n    border-left: 1px solid gray;\n    position: relative; /* make z-index work */\n    z-index: 10;\n    -webkit-transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1);\n    transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1);\n    transition: transform .2s cubic-bezier(.4,0,.2,1);\n    transition: transform .2s cubic-bezier(.4,0,.2,1), -webkit-transform .2s cubic-bezier(.4,0,.2,1);\n    -webkit-transform: translate3d(0,0,0);\n            transform: translate3d(0,0,0);\n  }\n\n  .Home-schedule.with-session {\n    -webkit-transform: translate3d(calc(36px - 240px),0,0);\n            transform: translate3d(calc(36px - 240px),0,0);\n  }\n\n  .Home-session {\n    position: absolute;\n    opacity: 0;\n    left: 50%;\n    width: 50%;\n    height: 100vh;\n    overflow-y: auto;\n    -webkit-transition-property: opacity, -webkit-transform;\n    transition-property: opacity, -webkit-transform;\n    transition-property: opacity, transform;\n    transition-property: opacity, transform, -webkit-transform;\n  }\n\n  .Home-session.is-show {\n    opacity: 1;\n  }\n\n  .Home-session.is-fixed {\n    position: fixed;\n    height: calc(100vh - 60px);\n    margin-top: 60px;\n    box-shadow: -3px 4px 4px rgba(0,0,0,.2);\n  }\n}\n@media screen and (min-width: 776px) and (max-width: 1236px){\n\n  .Schedule-title {\n    background: white;\n    border-bottom: 1px solid gray;\n    width: 100%;\n    z-index: 20;\n  }\n\n  .Schedule-title.is-fixed {\n    position: fixed;\n    top: 0;\n    max-width: calc(50% - 2px);\n    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);\n    transition: all .2s cubic-bezier(.4,0,.2,1);\n  }\n\n}\n@media screen and (min-width: 1000px){\n\n  .Schedule-title {\n    background: white;\n    border-bottom: 1px solid gray;\n    width: 100%;\n    z-index: 20;\n  }\n\n  .Schedule-title.is-fixed.without-session {\n    left: 361px;\n    position: fixed;\n    top: 0;\n    max-width: 548px;\n    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);\n    transition: all .2s cubic-bezier(.4,0,.2,1);\n    will-change: left;\n  }\n\n  .Schedule-title.is-fixed.with-session {\n    left: 161px;\n    position: fixed;\n    top: 0;\n    max-width: 548px;\n    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);\n    transition: all .2s cubic-bezier(.4,0,.2,1);\n    will-change: left;\n  }\n}\n@media screen and (min-width: 1000px){ /* No filterButton and filterPanel on desktop */\n\n  .Schedule-filterBtn {\n    display: none;\n  }\n\n  .Schedule-filterPanel.is-show.is-show { /* specificity override .is-show.is-fixed */\n    display: none;\n  }\n}\n@media screen and (min-width: 1000px) {\n\n  .Schedule-dayButton {\n    font-size: 20px;\n    padding: 20px;\n  }\n\n  .Schedule-dayButtonLeftstop {\n    padding-left: calc(40px - 20px);\n    width: calc(240px - 20px);\n  }\n\n  .Schedule-time {\n    width: calc(240px - 14px); /* 14px = event left padding */\n    padding: 20px 40px;\n  }\n\n  .Schedule-timeEnd {\n    display: inline;\n  }\n\n  .Schedule-day {\n    padding: 20px 40px;\n  }\n\n  .Schedule-event {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: flex;\n    padding: 20px calc(28px * 2 + 16px) 20px 14px;\n  }\n\n  .Schedule-meta {\n    margin-right: 14px;\n  }\n\n  .Schedule-categoryIcon {\n    top: 50%;\n    margin-top: calc(-16px / 2);\n    right: 28px;\n  }\n} /* ends :global */\n", "", {"version":3,"sources":["/./app/javascripts/components/Schedule/styles.css"],"names":[],"mappings":"AAIA;EACE,oBAAoB;EACpB,8CAA8C;EAC9C,mBAAmB,CAAC,kBAAkB;GACtC,QAAuB;CACxB;;AALD,6BAGsB,kBAAkB;EACtC,YAAuB;EAAvB,eAAuB;CACxB;;AALD,4BAGsB,kBAAkB;EACtC,YAAuB;EAAvB,eAAuB;EAAvB,YAAuB;CACxB;;AAED;EACE,oCAAoC;EACpC,mBAAmB;EACnB,OAAO,CAAC,WAAW,CAAC,UAAU,CAAC,QAAQ;EACvC,YAAY;EACZ,WAAW;EACX,gCAAwB;EAAxB,wBAAwB;CACzB;;AAED;EACE,WAAW;EACX,WAAW;CACZ;;AAED;EACE,kBAA4B;EAC5B,mBAAmB,CAAC,oCAAoC;EACxD,eAAe;CAChB;;AAED;EACE,iBAAiB;CAClB;;AAED;EACE;IACE,eAAe;GAChB;CACF;;AAED,6CAA6C;AAG7C;EACE,cAAc;CACf;AACD;EACE,gBAAgB;EAChB,OAAO;EACP,UAAU;EACV,QAAQ;EACR,YAAY;EACZ,iBAAiB;EACjB,kEAAkD;EAAlD,0DAAkD;EAAlD,kDAAkD;EAAlD,iGAAkD;EAClD,aAAa;EACb,2CAAmC;UAAnC,mCAAmC;CACpC;AACD;EACE,wCAAgC;UAAhC,gCAAgC;CACjC;AAED;EACE,cAAc;CACf;AAkDD;EACE,kBAAkB;EAClB,mBAAmB;EACnB,kBAAkB;EAClB,YAAY;CACb;AACD;EACE,kBAAkB;CACnB;AACD;EACE,kBAAkB;EAClB,8BAA8B;EAC9B,YAAY;EACZ,YAAY;EACZ,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;CACf;AACD;EACE,gBAAgB;EAChB,OAAO;EAEP,oDAA4C;EAA5C,4CAA4C;CAC7C;AAkDD,YAAY;AACZ;EACE,qBAAqB;EACrB,2BAAmB;MAAnB,4BAAmB;UAAnB,mBAAmB;EACnB,mBAAmB;EACnB,kBAAkB;EAClB,YAAY;EACZ,aAAa;EACb,gBAAgB;EAChB,4BAAoB;EAApB,oBAAoB;EACpB,kBAAkB;EAElB,mBAAmB,CAAC,uBAAuB;CAC5C;AACD;EACE,qBAAqB;CACtB;AACD;EACE,mBAAmB,CAAC,oDAAoD;CACzE;AAED;EACE,YAAY;EACZ,kCAAkC;EAClC,mBAAmB;EACnB,UAAU;EACV,YAAY;EACZ,UAAU;EACV,gCAAwB;UAAxB,wBAAwB;CACzB;AAED;EACE,YAAY;EACZ,6BAA6B;EAC7B,kEAAkD;EAAlD,0DAAkD;EAAlD,kDAAkD;EAAlD,iGAAkD;CACnD;AAED;EACE,iCAAyB;UAAzB,yBAAyB;CAC1B;AACD;EACE,kCAA0B;UAA1B,0BAA0B;CAC3B;AAED;EACE,gBAAgB;EAChB,iBAAiB;EACjB,wBAAwB;EACxB,uDAA+C;EAA/C,+CAA+C;CAChD;AACD;EACE,+BAA+B;CAChC;AACD;EACE,gBAAgB;EAChB,UAAU;EACV,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,0CAA0C;CAC3C;AAaD,2BAA2B;AAM3B;EACE,yBAAqD;CACtD;AACD;EACE,gBAAgB;EAChB,0BAA0B;EAC1B,cAAyB;EACzB,gBAAgB;EAChB,mBAAmB;CACpB;AACD;EACE,uBAAuB;EACvB,2BAA2B;CAC5B;AACD;EACE,oBAAoB;EACpB,0CAA0C;EAC1C,gBAAgB;EAChB,cAAyB;EACzB,kBAAkB;CACnB;AACD;EACE,qBAAc;EAAd,sBAAc;EAAd,kBAAc;EAAd,qBAAc;EAAd,cAAc;EACd,gBAAgB;EAChB,0CAA0C;CAK3C;AAHC;EACE,oBAAY;EAAZ,oBAAY;KAAZ,iBAAY;MAAZ,gBAAY;UAAZ,YAAY;CACb;AAEH;EACE,wBAAwB;EACxB,gBAAgB;EAChB,gBAAgB;EAChB,oBAAoB;CACrB;AACD;EACE,yBAA0C,CAAE,+BAA+B;EAC3E,cAAyB;CAC1B;AACD;EACE,cAAc;CACf;AACD;EACE,eAAe,CAAC,wBAAwB;EACxC,eAAe;EACf,mBAAmB,CAAC,sBAAsB;EAC1C,kBAAkB;EAClB,sBAAsB;EACtB,mBAA8B;EAC9B,mCAA2B;EAA3B,2BAA2B;EAC3B,yCAA0C;CAK3C;AAHC;EACE,oBAAoB;CACrB;AAEH;EACE,oBAAoB;CACrB;AACD;EACE,oBAAoB;EACpB,mCAA2B;EAA3B,2BAA2B;CAC5B;AACD;EACE,oBAAY;EAAZ,oBAAY;KAAZ,iBAAY;MAAZ,gBAAY;UAAZ,YAAY;CACb;AACD;EACE,sBAAsB;EACtB,iBAAiB;EACjB,mBAAmB;EACnB,gBAAgB;EAChB,6BAA6B;EAC7B,mBAAmB;EACnB,YAAY;CACb;AACD;EACE,sBAAsB;EACtB,sBAAsB;EACtB,eAAe;CAChB;AAED;EACE,mBAAmB;EACnB,YAA2B;EAC3B,aAA4B;EAC5B,YAAY;EACZ,aAAa;EAEb,mBAAmB;EACnB,wBAAwB;EACxB,wBAAwB;EACxB,mCAAmC;EACnC,2BAA2B;CAC5B;AApSD;;EAGE;IACE,aAA0B;IAC1B,mBAAmB;IACnB,OAAO;IACP,QAAQ;IACR,eAAe;GAChB;;EACD;IACE,gBAAgB;GACjB;;EACD;IACE,mBAAmB,CACnB,4BAA4B;GAC7B;;EACD;IACE,mBAAgC;IAChC,4BAA4B;IAC5B,mBAAmB,CAAC,uBAAuB;IAC3C,YAAY;IACZ,kEAAkD;IAAlD,0DAAkD;IAAlD,kDAAkD;IAAlD,iGAAkD;IAClD,sCAA8B;YAA9B,8BAA8B;GAC/B;;EACD;IACE,uDAA4D;YAA5D,+CAA4D;GAC7D;;EACD;IACE,mBAAmB;IACnB,WAAW;IACX,UAAU;IACV,WAAW;IACX,cAAc;IACd,iBAAiB;IACjB,wDAAwC;IAAxC,gDAAwC;IAAxC,wCAAwC;IAAxC,2DAAwC;GACzC;;EACD;IACE,WAAW;GACZ;;EACD;IACE,gBAAgB;IAChB,2BAAqC;IACrC,iBAA2B;IAC3B,wCAAwC;GACzC;CACF;AAwBD;;EACE;IACE,kBAAkB;IAClB,8BAA8B;IAC9B,YAAY;IACZ,YAAY;GAEb;;EACD;IACE,gBAAgB;IAChB,OAAO;IACP,2BAA2B;IAE3B,oDAAoD;IACpD,4CAA4C;GAC7C;;CAEF;AACD;;EACE;IACE,kBAAkB;IAClB,8BAA8B;IAC9B,YAAY;IACZ,YAAY;GACb;;EACD;IACE,YAAY;IAEZ,gBAAgB;IAChB,OAAO;IACP,iBAAiB;IAEjB,oDAAoD;IACpD,4CAA4C;IAC5C,kBAAkB;GACnB;;EACD;IACE,YAAY;IAEZ,gBAAgB;IAChB,OAAO;IACP,iBAAiB;IAEjB,oDAAoD;IACpD,4CAA4C;IAC5C,kBAAkB;GACnB;CACF;AAgED,uCACE,gDAAgD;;EAChD;IACE,cAAc;GACf;;EAED,wCAAwC,4CAA4C;IACjF,cAAc;GAChB;CACF;AAwGD;;EAIE;IACE,gBAAgB;IAChB,cAA0B;GAC3B;;EAED;IACE,gCAA4C;IAC5C,0BAAuD;GACxD;;EAED;IACE,0BAA2C,CAAC,+BAA+B;IAC3E,mBAA+B;GAChC;;EAED;IACE,gBAAgB;GACjB;;EAED;IACE,mBAA+B;GAChC;;EAED;IACE,qBAAc;IAAd,sBAAc;IAAd,kBAAc;IAAd,qBAAc;IAAd,cAAc;IACd,8CAAqF;GACtF;;EAED;IACE,mBAAmB;GACpB;;EAED;IACE,SAAS;IACT,4BAA2C;IAC3C,YAAY;GACb;CACF,CAEC,kBAAkB","file":"styles.css","sourcesContent":["$breakpoint: 1000px;\n$container-width: 1000px;\n$appbar-height: 60px;\n\n.root {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  position: relative; /* For backdrop */\n  lost-utility: clearfix;\n}\n\n.backdrop {\n  background: rgba(255, 255, 255, .5);\n  position: absolute;\n  top: 0; right: 50%; bottom: 0; left: 0;\n  z-index: -1;\n  opacity: 0;\n  transition: opacity .2s;\n}\n\n.backdrop.isShown {\n  opacity: 1;\n  z-index: 5;\n}\n\n.container {\n  max-width: $container-width;\n  position: relative; /* For absolute-positioned filter */\n  margin: 0 auto;\n}\n\nbody.mobileScrollLock {\n  overflow: hidden;\n}\n\n@media screen and (min-width: $breakpoint) {\n  body.mobileScrollLock {\n    overflow: auto;\n  }\n}\n\n/* Stuff directly stolen from coscup... :P */\n:global {\n\n.Home-filter {\n  display: none;\n}\n.Home-session {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  overflow-y: auto;\n  transition: transform .2s cubic-bezier(.4,0,.2,1);\n  z-index: 200;\n  transform: translate3d(100%, 0, 0);\n}\n.Home-session.is-show, .Home-session.is-show.is-fixed {\n  transform: translate3d(0, 0, 0);\n}\n\n.Home-section.is-hidden {\n  display: none;\n}\n\n@media screen and (min-width: $breakpoint){\n  $left-filter-width: 240px;\n\n  .Home-filter {\n    width: $left-filter-width;\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: block;\n  }\n  .Home-filter.is-fixed {\n    position: fixed;\n  }\n  .Home-filter.is-passed {\n    position: absolute;\n    /* top dynamically decided*/\n  }\n  .Home-schedule {\n    margin-left: $left-filter-width;\n    border-left: 1px solid gray;\n    position: relative; /* make z-index work */\n    z-index: 10;\n    transition: transform .2s cubic-bezier(.4,0,.2,1);\n    transform: translate3d(0,0,0);\n  }\n  .Home-schedule.with-session {\n    transform: translate3d(calc(36px - $left-filter-width),0,0);\n  }\n  .Home-session {\n    position: absolute;\n    opacity: 0;\n    left: 50%;\n    width: 50%;\n    height: 100vh;\n    overflow-y: auto;\n    transition-property: opacity, transform;\n  }\n  .Home-session.is-show {\n    opacity: 1;\n  }\n  .Home-session.is-fixed {\n    position: fixed;\n    height: calc(100vh - $appbar-height);\n    margin-top: $appbar-height;\n    box-shadow: -3px 4px 4px rgba(0,0,0,.2);\n  }\n}\n\n.Schedule {\n  min-height: 100vh;\n  position: relative;\n  background: white;\n  z-index: 10;\n}\n.Schedule.is-fixed {\n  padding-top: 56px;\n}\n.Schedule-title {\n  background: white;\n  border-bottom: 1px solid gray;\n  width: 100%;\n  z-index: 20;\n  display: flex;\n}\n.Schedule-title.is-fixed {\n  position: fixed;\n  top: 0;\n\n  transition: all .2s cubic-bezier(.4,0,.2,1);\n}\n@media screen and (min-width: 776px) and (max-width: 1236px){\n  .Schedule-title {\n    background: white;\n    border-bottom: 1px solid gray;\n    width: 100%;\n    z-index: 20;\n\n  }\n  .Schedule-title.is-fixed {\n    position: fixed;\n    top: 0;\n    max-width: calc(50% - 2px);\n\n    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);\n    transition: all .2s cubic-bezier(.4,0,.2,1);\n  }\n\n}\n@media screen and (min-width: $breakpoint){\n  .Schedule-title {\n    background: white;\n    border-bottom: 1px solid gray;\n    width: 100%;\n    z-index: 20;\n  }\n  .Schedule-title.is-fixed.without-session {\n    left: 361px;\n\n    position: fixed;\n    top: 0;\n    max-width: 548px;\n\n    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);\n    transition: all .2s cubic-bezier(.4,0,.2,1);\n    will-change: left;\n  }\n  .Schedule-title.is-fixed.with-session {\n    left: 161px;\n\n    position: fixed;\n    top: 0;\n    max-width: 548px;\n\n    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);\n    transition: all .2s cubic-bezier(.4,0,.2,1);\n    will-change: left;\n  }\n}\n\n/* FILTER */\n.Schedule-filterBtn {\n  color: rgb(80,80,80);\n  align-self: center;\n  text-align: center;\n  line-height: 56px;\n  width: 56px;\n  height: 56px;\n  cursor: pointer;\n  transition: all .3s;\n  margin-right: 8px;\n\n  position: relative; /* for bar1 and bar2 */\n}\n.Schedule-filterBtn:hover {\n  color: rgb(53,55,54);\n}\n.Schedule-filterBtn.is-show {\n  color: transparent; /* Hide \"Filter\" button text when filter is shown */\n}\n\n.Schedule-bar1, .Schedule-bar2 {\n  content: '';\n  border-top: 2px solid transparent;\n  position: absolute;\n  top: 28px;\n  width: 40px;\n  left: 8px;\n  transform: rotate(0deg);\n}\n\n.Schedule-bar1.is-active, .Schedule-bar2.is-active {\n  content: '';\n  border-color: rgb(213,62,79);\n  transition: transform .3s cubic-bezier(.4,0,.2,1);\n}\n\n.Schedule-bar1.is-active {\n  transform: rotate(45deg);\n}\n.Schedule-bar2.is-active {\n  transform: rotate(-45deg);\n}\n\n.Schedule-filterPanel {\n  max-height: 0px;\n  overflow: hidden;\n  will-change: max-height;\n  transition: all .2s cubic-bezier(0, 1, 0.5, 1);\n}\n.Schedule-filterPanel.is-show {\n  max-height: calc(100vh - 80px);\n}\n.Schedule-filterPanel.is-show.is-fixed {\n  position: fixed;\n  top: 57px;\n  z-index: 200;\n  width: 100%;\n  background: white;\n  box-shadow: 0px 2px 2px 0 rgba(0,0,0,.22);\n}\n\n@media screen and (min-width: $breakpoint){\n  /* No filterButton and filterPanel on desktop */\n  .Schedule-filterBtn {\n    display: none;\n  }\n\n  .Schedule-filterPanel.is-show.is-show { /* specificity override .is-show.is-fixed */\n     display: none;\n  }\n}\n\n/* ===================== */\n\n$category-icon-size: 16px;\n$mobile-padding: 16px;\n$mobile-item-leftstop: 96px;\n\n.Schedule-dayButtonLeftstop {\n  width: calc($mobile-item-leftstop - $mobile-padding);\n}\n.Schedule-dayButton {\n  font-size: 16px;\n  text-transform: uppercase;\n  padding: $mobile-padding;\n  cursor: pointer;\n  margin-right: auto;\n}\n.Schedule-dayButton:hover, .Schedule-dayButton.is-active {\n  color: rgb(68,210,143);\n  text-decoration: underline;\n}\n.Schedule-day {\n  background: #f3f3f3;\n  border-bottom: 1px solid rgb(220,220,220);\n  font-size: 24px;\n  padding: $mobile-padding;\n  font-weight: bold;\n}\n.Schedule-item {\n  display: flex;\n  font-size: 16px;\n  border-bottom: 1px solid rgb(220,220,220);\n\n  > .Schedule-event {\n    flex: 1 0 0;\n  }\n}\n.Schedule-presenter {\n  color: rgb(125,124,123);\n  font-size: 14px;\n  margin-top: 4px;\n  font-weight: normal;\n}\n.Schedule-time {\n  width: calc($mobile-item-leftstop - 14px);  /* 14px = event left padding */\n  padding: $mobile-padding;\n}\n.Schedule-timeEnd {\n  display: none;\n}\n.Schedule-event, .Schedule-tagline {\n  color: inherit; /* override <a> color */\n  display: block;\n  position: relative; /* For categoryIcon */\n  font-weight: bold;\n  text-decoration: none;\n  padding: $mobile-padding 14px;\n  transition: background .3s;\n  border-bottom: 1px solid rgb(220,220,220);\n\n  &:last-child {\n    border-bottom: none;\n  }\n}\n.Schedule-event.is-active {\n  background: #fff3f3;\n}\n.Schedule-event:hover {\n  background: #fff3f3;\n  transition: background .3s;\n}\n.Schedule-events {\n  flex: 1 0 0;\n}\n.Schedule-venue {\n  display: inline-block;\n  padding: 1px 8px;\n  margin-bottom: 5px;\n  font-size: 14px;\n  background: rgb(220,220,220);\n  border-radius: 4px;\n  color: gray;\n}\n.Schedule-en {\n  color: rgb(207,43,43);\n  display: inline-block;\n  padding: 0 4px;\n}\n\n.Schedule-categoryIcon {\n  position: absolute;\n  width: $category-icon-size;\n  height: $category-icon-size;\n  right: 14px;\n  bottom: 17px;\n\n  border-radius: 3px;\n  background: transparent;\n  will-change: background;\n  -webkit-transition: background .3s;\n  transition: background .3s;\n}\n\n@media screen and (min-width: $breakpoint) {\n  $desktop-padding: 20px;\n  $desktop-item-leftstop: 240px;\n\n  .Schedule-dayButton {\n    font-size: 20px;\n    padding: $desktop-padding;\n  }\n\n  .Schedule-dayButtonLeftstop {\n    padding-left: calc(40px - $desktop-padding);\n    width: calc($desktop-item-leftstop - $desktop-padding);\n  }\n\n  .Schedule-time {\n    width: calc($desktop-item-leftstop - 14px); /* 14px = event left padding */\n    padding: $desktop-padding 40px;\n  }\n\n  .Schedule-timeEnd {\n    display: inline;\n  }\n\n  .Schedule-day {\n    padding: $desktop-padding 40px;\n  }\n\n  .Schedule-event {\n    display: flex;\n    padding: $desktop-padding calc(28px * 2 + $category-icon-size) $desktop-padding 14px;\n  }\n\n  .Schedule-meta {\n    margin-right: 14px;\n  }\n\n  .Schedule-categoryIcon {\n    top: 50%;\n    margin-top: calc(-$category-icon-size / 2);\n    right: 28px;\n  }\n}\n\n} /* ends :global */\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__2PG_F",
-		"backdrop": "styles-backdrop__222h8",
-		"isShown": "styles-isShown__2X0WE",
-		"container": "styles-container__3fYMv",
-		"mobileScrollLock": "styles-mobileScrollLock__mMH7S"
-	};
-
-/***/ },
-/* 383 */
+/* 389 */,
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31192,7 +30989,1315 @@
 
 
 /***/ },
-/* 384 */
+/* 391 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"en-US": {
+			"header": "Schedule",
+			"day1": [
+				{
+					"time": "08:30-09:20",
+					"event": "Registration"
+				},
+				{
+					"time": "09:20-09:30",
+					"event": "Opening"
+				},
+				{
+					"time": "09:30-10:00",
+					"event": {
+						"title": "Keynote 1: The Civics of Civic Tech",
+						"speaker": "Felipe Heusser",
+						"bio": "<p>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.</p><p>Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.</p>",
+						"abstract": "<p>Understanding the politics of technology as a mean for civic participation.</p>"
+					}
+				},
+				{
+					"title": "Power",
+					"tagline": "Upgrading the organizing capacity of activism with civic tech",
+					"venue": "R1",
+					"color": "#CE0D41"
+				},
+				{
+					"time": "10:30-11:00",
+					"event": {
+						"venue": "R1",
+						"category": "power",
+						"language": "",
+						"speaker": "Hsieh, Tsung Chen",
+						"title": "Data For Social Good – Data-driven Charity",
+						"bio": "<p>DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。</p>",
+						"abstract": "<p>有人用勞力做公益，也有人用財力做公益，如果用資料力來做公益，不知道會擦出怎樣的火花？</p><p>2015年，我們打造一個「資料力，做公益」的交流與媒合平台，稱為「D4SG 計畫」 (Data for Social Good)。透過社群、黑客松、資料競賽、長期專案...等方式推動資料人與非營利組織的深度交流。這場演講將從資料人的角度分享如何與NPO/NGO合作，把冰冷的資料轉換化成有溫度的故事。</p>"
+					}
+				},
+				{
+					"time": "11:00-11:30",
+					"venue": "R1",
+					"event": "Tea time"
+				},
+				{
+					"time": "11:30-12:00",
+					"event": {
+						"venue": "R1",
+						"category": "power",
+						"language": "",
+						"speaker": "Y.H. Kao",
+						"title": "From .org to .g0v －Internet participant and digital challenge of NGO in Taiwan",
+						"bio": "<p>撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。</p><p>台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。</p>",
+						"abstract": "<p>2000 年 dotcom 泡沫帶來最正向的影響之一就是連網的成本大幅降低，也創造了NGO透過網路發展的機遇。台灣環境資訊協會源起於 2000-4-17 創刊的環境資訊電子報，著眼於網路低成本高效率的資訊傳播，成為了 .org.tw 的成員之一。本次將藉由下列幾個主題切入，當 NGO 從 nobody 變成了 somebody 時， 組織運作和運用網路技術的問題和眉角進行回顧及反思。</p><ul><li>從 Web 1.0 到物聯網－時空背景的變化</li><li>「網路型NGO」在資訊公開，公民參與和網路技術發展的可能角色</li><li>反思與挑戰：駭客，技術長還是資訊長</li></ul>"
+					}
+				},
+				{
+					"time": "12:00-12:30",
+					"event": {
+						"venue": "R1",
+						"category": "power",
+						"language": "",
+						"speaker": "Sergejus Muravjovas",
+						"title": "On the Yellow Brick Road One Hundred Years Later: The Journey of Reinvention of a Classical NGO",
+						"bio": "<p>I am a social doer involved in creating change. I spend most of my time helping make transparency an easy-to-follow way of life for people around me. I do so by challenging the known, tapping into the under-researched and bridging the gaps between different groups of researchers and activists alike.</p><p>Besides heading TI Lithuania and overseeing the development of TransparencySchool.org for the past seven years, I have been involved in a number of undertakings that in many ways complement each other. I teach Corporate Governance and Anti-Corruption at the International School of Management in Vilnius. I am also a board member of the Lithuanian responsible business initiative \"Clear Wave\" and an advisory council member of the Duke of Edinburgh's International Award Lithuania and the Žinių radijas. I have just joined supervisory boards of two healthcare establishments in Vilnius - the Central Policlinics of Vilnius and the National Vilnius University Hospital. I have also served as a local correspondent for Lithuania for the EU Commission Anti-Corruption report.</p><p>As for other experiences under my sleeve, I was a member of the International Board of Directors of the global TI movement from 2009 to 2015 and a member of the Selection Commission of Candidates to the Judicial Office.</p>",
+						"abstract": "<p>In my talk I would like to share a story of the 21st century metamorphosis - a story of a classical NGO that has managed to drastically change its identity, expand its outreach and become more sustainable with the help of data and online tools.</p><p>By telling the audience the story of our successes and mistakes along the way, I will offer the audience with the state of mind that has allowed Transparency International (TI) Lithuania to grow into a top-notch go-to organization known to every second business person and every fifth member of the public - in our continuous advocacy efforts to encourage change and make sure that an ever-increasing number of Lithuanians become and act as owners of their state.</p><p>To illustrate this state of mind, I would like to show how TI Lithuania has successfully merged the availability of data, the talents of its coding teams and public advocacy savvy: <ol><li>to ensure greater transparency in Lithuanian politics with the help of the parliamentary oversight <a href='www.manoseimas.lt'>website</a>; </li><li>to allow for greater public awareness of media ownership and accountability by collecting and constantly updating all available data on media ownership at www.stirna.info; </li><li>to encourage people to find and contact their representatives with the help of <a href='www.parasykjiems'>www.parasykjiems.lt</a>; </li><li>to help Lithuanian courts open up to the public and be the first ones in the country to publish performance data of courts and judges with www.atvirasteismas.lt; and </li><li>to track interests of local politicians with <a href='www.jurgiokepure.lt'>www.jurgiokepure.lt</a>.</li></ul></p><p>In 2015, with all these tools combined TI Lithuania helped more than 100 thousand people, or almost 4 per cent of the entire Lithuania population, get engaged and individually seek greater transparency in their daily lives. With the numbers of concerned citizens and TI Lithuania partners growing every year, I hope my story will inspire others to explore innovative ways to create real-life change and prompt decision-makers and the public alike to check what technology has in store for democracy.</p>"
+					}
+				},
+				{
+					"title": "Foundation",
+					"venue": "R0",
+					"tagline": "Global reimplementions of media, elections, governments and public decisions",
+					"color": "#FCDE86"
+				},
+				{
+					"time": "10:30-11:00",
+					"event": {
+						"venue": "R0",
+						"category": "foundation",
+						"language": "",
+						"speaker": "Yantisa Akhadi",
+						"title": "Government (Participatory) Mapping",
+						"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
+						"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
+					}
+				},
+				{
+					"time": "11:00-11:30",
+					"venue": "R0",
+					"event": "Tea time"
+				},
+				{
+					"time": "11:30-12:00",
+					"event": {
+						"venue": "R0",
+						"category": "foundation",
+						"language": "",
+						"speaker": "Yago Bermejo Abati",
+						"title": "Digital participation strategy in Podemos party.",
+						"bio": "<p>Yago Bermejo Abati</p><p>I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur.</p><p>Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties…</p><p>After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating.<p><p>Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.</p>",
+						"abstract": "<p>The summer of 2014 at team of 20 people was elected by a digital voting process to organise the structure of the new exponential party-movement called Podemos. At that time more than 300k people were subscribed as digital participants of this party. The social media team running a Facebook of more than 800k followers and a Twitter of more than 500k were looking for a new tool to interact with that huge amount of people. LaboDemo proposed a concrete strategy running different tools. We created a deliberative space hacking Reddit, proposed Loomio as a consensus-making tool for assemblies and a mobile app to make fast collective and massive decisions. Hundreds of thousands of people participate at this process creating a collective intelligence that finally faced top leaders at Podemos. I will explain how this kind of collective intelligence can change the way politics work and why we should engage direct a deliberative democracy to empower the crowd using internet combined with analogical participation.</p>"
+					}
+				},
+				{
+					"time": "12:00-12:30",
+					"event": {
+						"venue": "R0",
+						"category": "foundation",
+						"language": "",
+						"speaker": "Colin Megill",
+						"title": "Pol.is in Taiwan: Bridging the gap between public discourse, consultation, and policy",
+						"bio": "<p>Colin is founder of Seattle based startup <a href='http://pol.is'>http://pol.is</a>, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.</p><p>He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.</p><p>Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.</p>",
+						"abstract": "<p>Pol.is is a new tool for gathering crowd sentiment in a way that preserves and respects minority opinions. It scales to any number of users, while preserving high dimensional, organic feedback. g0v and vTaiwan have used pol.is to foster productive discourse in the public sphere and influence policy related to Uber and AirBnB. We'll discuss pol.is as a technology and the case study of vTaiwan's successes with it.</p>"
+					}
+				},
+				{
+					"title": "Construction",
+					"tagline": "Open-culture experiments with data and technology",
+					"venue": "R2",
+					"color": "#1BADBE"
+				},
+				{
+					"time": "10:30-11:00",
+					"event": {
+						"venue": "R2",
+						"category": "construction",
+						"language": "",
+						"speaker": "Katarzyna Mikołajczyk",
+						"title": "Cities are the key to engage citizens into open data",
+						"bio": "<p>Katarzyna Mikołajczyk, Open Cities Program Coordinator in Poland.</p><p>I use my work experience to open up cities in Poland. I want to increase transparency of the public administration, the growth of startups based on public data and increase the participation of informed citizens. Just this :)</p><p>I do this while I work for ePF Foundation, an NGO which mission is to develop democracy, open and transparent authorities and civic engagement through new technologies. I’m coordinating Open Cities Program which is dedicated to local governments and helps them to publish public information and engage people to understand open data.</p><p>I’m also a leader active in local community in city of Lodz for over 7 years. I managed civic engagement campaigns, educational projects, social consultations and advocacy work with the city authorities. I was always a passionate of open data and using them to plan for people. But only with people.</p>",
+						"abstract": "<p>Cities serve people who live in them. They are less political then governments, more focused on problem solving. They are never pefect but when you open up 10 cities with half a million people living in them - you suddenly make a national change. Bottom up and thumbs up. We created a formula which attracts cities to open up their data, engage citizens and make sure that data is used. And most importantly by introducing open data policies in Poland we make the change systemic.</p><p>Openness it is not only about publishing information. It’s essential part of building engagement in modern society. But we – citizens – need and often demand something more. We are ready to take responsibility for the place we live and work. We do care about the quality of the life we live in our cities. We need to be treated as partner by our government.</p><p>At first Personal Democracy Forum in Poland in 2013, Ellen Miller from Sunlight Fundation said that \"government is as strong as citizens informed\". Government can publish information, make it available, machine readable and up-to-date, but it will not encourage much more people to check them.</p><p>Can we do anything more to engage people in city life, to show them advantages of being active? How new technologies are moving us closer to participation? Did new applications can connect (or disconnect) citizens? Is it possible to empower citizens and allow them to manage our cities (not only from time to time, but daily)? How – by using technology – citizen can gather around idea, support it and make it happen?</p><p>And I can show examples of such process in Poland (Central Eastern Europe).</p>"
+					}
+				},
+				{
+					"time": "11:00-11:30",
+					"venue": "R2",
+					"event": "Tea time"
+				},
+				{
+					"time": "11:30-12:00",
+					"event": {
+						"venue": "R2",
+						"category": "construction",
+						"language": "",
+						"speaker": "Venus Lui",
+						"title": "Importance of having an Arts database in Asia",
+						"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
+						"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
+					}
+				},
+				{
+					"time": "12:00-12:30",
+					"event": {
+						"venue": "R2",
+						"category": "construction",
+						"language": "",
+						"speaker": "Bobby Tung",
+						"title": "Do We Need Open Digital Libraries for Chinese Publication in Public Domain? and How?",
+						"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
+						"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
+					}
+				},
+				{
+					"time": "12:30-13:30",
+					"event": "Lunch"
+				},
+				{
+					"title": "Blueprint",
+					"tagline": "Towards digital representation: A jigsaw of open government data endeavours",
+					"venue": "R1",
+					"color": "#F4AF3D"
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "Jen Bramley",
+						"title": "Powering civic tech reuse with EveryPolitician data",
+						"bio": "<p>Jen is the International Projects Manager at mySociety. If you email international@mysociety.org, Jen will be the one who responds to you first. She lives in London and works directly with organisations anywhere in the world, helping them with the practicalities of deploying our code and maintaining the resulting websites.</p><p>With a background as a working on media development and broadcasting reform projects in the Middle East and North Africa for BBC Media Action, she’s used to pitching in wherever needed for all sorts of projects.</p><p>Jen travels widely to meet our partners on their home ground: it’s always helpful to see our projects in the places where they’ll be deployed, and meet the people who will be using them. She’s passionate about ensuring that projects meet local needs and spending time with groups in their own countries helps her start to understand their motivations.</p>",
+						"abstract": "<p>Presenting the EveryPolitician project we will talk about the reasons why we're collecting all this open data and how it has already been used in different forms (for example: crowdsourcing data about the gender breakdown of every parliament in the world). We'll show real examples of the data being used to power civic technology sites in different countries - and hopefully you'll be inspired to create something yourself!</p>"
+					}
+				},
+				{
+					"time": "14:00-14:30",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "James Mckinney",
+						"title": "Civic Tech in Monitoring Legislatures: The Long Game",
+						"bio": "<p>James McKinney regularly contributes to civil society initiatives relating to government, legislative and corporate transparency. He is currently focusing on Popolo (a set of legislative data specifications, used by parliamentary monitoring organizations and members of Poplus.org) and on Influence Mapping (a group of organizations that draw the networks of relations between politically exposed people and organizations). James is especially interested in how data standards can facilitate cooperation between organizations and individuals.</p><p>James previously founded Open North, a Canadian nonprofit that creates websites to promote government transparency and public participation. He is co-lead of the Open Government Partnership’s Open Data Working Group’s Standards Stream. He was a member of the Open Contract Data Standard core team and of the W3C Government Linked Data Working Group. He has presented on open government and open data, most recently at the International Open Data Conference, Canadian Open Data Summit, and Spaghetti Open Data.</p>",
+						"abstract": "<p>The problems we often try to solve in civic tech are right in front of us: fixing a pothole, monitoring a government, opening up data, etc. The tools we create to address such problems often produce immediate value for users. I'm going to share a story about a much longer game, where the payoff is just starting to happen now, five years later.</p><p>This will be a story of how organizations around the world built a software stack for legislative monitoring. It starts with a vision shared in Warsaw in 2011. In 2012, work on a standard data interchange format begins, which will tie the stack together. Two organizations start authoring backend data management tools in 2013 using this format. In 2014, the first user-facing tools appear at the top of this stack. And in 2015, governments begin adopting the data standard, as more user-facing tools spread.</p><p>This journey will visit many organizations and projects around the world, from mySociety to OpenAustralia to Sunlight, and from PopIt to Councilmatic to Represent, among others. We're five years into this journey, and there's still more ground to cover for at least as many more years before the basic problems in legislative monitoring that we're solving can be taken for granted.</p><p>This talk ties into the fork-merge theme. Legislative monitoring generally involves forking the official website, which requires scraping data to reproduce the information. Through government adoption of data standards like Popolo, we can eliminate these scrapers, and merge good data publication practices into government.</p>"
+					}
+				},
+				{
+					"time": "14:30-15:00",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "Henare Degan",
+						"title": "morph.io: the international civic tech scraping platform",
+						"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
+						"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
+					}
+				},
+				{
+					"time": "15:00-15:40",
+					"venue": "R1",
+					"event": "Tea time"
+				},
+				{
+					"time": "15:40-16:10",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "Rajib Timalsina",
+						"title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
+						"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
+						"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
+					}
+				},
+				{
+					"time": "16:10-16:40",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "",
+						"title": "TBA",
+						"bio": "",
+						"abstract": ""
+					}
+				},
+				{
+					"title": "Wiring",
+					"tagline": "Intersectoral networks: Synchronizations, collaborations and demonstrations",
+					"venue": "R0",
+					"color": "#449FFC"
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "Kirby Wu",
+						"title": "My Covered Life in Journalism",
+						"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
+						"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
+					}
+				},
+				{
+					"time": "14:00-14:30",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "Walkingice",
+						"title": "Campaigning Experiences of a Geek",
+						"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
+						"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
+					}
+				},
+				{
+					"time": "14:30-15:00",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "Jim Horng",
+						"title": "Netizen and Self-Organized Movement: A Case Study with Boycott Mapping",
+						"bio": "<p>在台灣軟體業已有約 10 年經驗，自認角色為工程師、社會議題微參與者、open source微貢獻者。</p>",
+						"abstract": "<p>抵抗黑心行動之一的滅頂秒退在 2015 年底到 2016 年初約熱了一個月時間，引發許多層次的討論。支持方的行動雖然一開始遍地開花，但似乎遇到輿論、成效、進度等阻力而漸式微，其中秒退地圖是想解決成效與進度透明化的部分，同時帶點組織化前置的概念。以結果論可能不算成功，但其過程包含網路推廣，早期使用者偕同設計，facebook 微組織合作，從中激發更多優化無組織社運的想法，這些便是作者想要分享的。</p><ul><li><a href='http://jimhorng.github.io/return_as_buy/'>滅頂秒退地圖</a></li><li><a href='https://jimhorng.wordpress.com/2016/01/19/%E5%BE%9E%E6%BB%85%E9%A0%82%E7%A7%92%E9%80%80%E7%9C%8B%E5%8F%B0%E7%81%A3%E8%BB%9F%E5%AF%A6%E5%8A%9B/'>從滅頂秒退看台灣軟實力</a></li></ul>"
+					}
+				},
+				{
+					"time": "15:00-15:40",
+					"venue": "R0",
+					"event": "Tea time"
+				},
+				{
+					"time": "15:40-16:10",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "ipa & ETBlue",
+						"title": "\"Bluepa\" Metrics and Case Studies for Interdisciplinarity: the Mystery of Openness and Interdisplinary in g0v",
+						"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
+						"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
+					}
+				},
+				{
+					"time": "16:10-16:40",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "Shigeomi Shibata",
+						"title": "How to spread the civic tech movement to non-techie people?",
+						"bio": "(TBC)",
+						"abstract": "<p>Code for Japan which is established on 2013 Nov. has now 33 official brigades and 20+ candidate groups. Growing speed is great I think but the member of groups mainly are techie guys. From the point of view for civic tech, we need more non-techie people. So I want to let you share our challenges and achievement and ask your thought.</p><p>My name is Shigeomi Shibata, co-captain of code for Japan and a member of code for Ibaraki located on Mito-shi of Ibaraki prefecture.</p>"
+					}
+				},
+				{
+					"title": "Scaffold",
+					"tagline": "Analyzing disasters: Data-based contingency planning",
+					"venue": "R2",
+					"color": "#CE59E4"
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "KNY Chen",
+						"title": "EEW: Early Earthquake Warnings",
+						"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
+						"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
+					}
+				},
+				{
+					"time": "14:00-14:30",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "Yu-Lun Liu",
+						"title": "The Past, Present and Future of Open Communicable Disease Data - Using Dengue Fever As An Example",
+						"bio": "<p>Yu-Lun Liu is medical officer of the Epidemic Intelligence Center of Taiwan Centers for Disease Control. He has a medical specialty in emergency medicine. He received the European Programme for Intervention Epidemiology Training (EPIET) in Vienna, Austria. He is interested in applying information technology on the data collection, analysis and visualization for infectious disease surveillance.</p>",
+						"abstract": "<p>The number of cases in the 2015 dengue fever outbreak in Taiwan has hit a historical high. In response to the outbreak, Taiwan Centers for Disease Control has collaborated with the open data community and released several open data for the dengue epidemiological and vector surveillance. This talk will cover: the experience on producing and releasing dengue fever open data; the collaboration and competition between the local and the central governments; applications of dengue fever open data; and the future prospects of communicable disease open data movement of Taiwan CDC.<p>"
+					}
+				},
+				{
+					"time": "14:30-15:00",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "Kuo-Yu slayer Chuang",
+						"title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project",
+						"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
+						"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
+					}
+				},
+				{
+					"time": "15:00-15:40",
+					"venue": "R2",
+					"event": "Tea time"
+				},
+				{
+					"time": "15:40-16:10",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "W.S. Jhan",
+						"title": "Using OpenStreetMap to help other countries and improve foreign relations",
+						"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
+						"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
+					}
+				},
+				{
+					"time": "16:10-16:40",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "Dongpo Deng",
+						"title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
+						"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
+						"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
+					}
+				},
+				{
+					"time": "16:45-17:00",
+					"event": {
+						"title": "Code for All – Civic Tech around the World",
+						"speaker": " Julia Kloiber",
+						"abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
+					}
+				},
+				{
+					"time": "17:00-17:15",
+					"event": {
+						"title": "From g0v to gov - 400 Days in the Ministry of Health and Welfare",
+						"speaker": "Peggy Lo",
+						"bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
+						"abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
+					}
+				},
+				{
+					"time": "17:15-17:30",
+					"event": "TBA"
+				}
+			],
+			"day2": [
+				{
+					"time": "08:30-09:20",
+					"event": "Registration"
+				},
+				{
+					"time": "09:20-09:30",
+					"event": "Opening"
+				},
+				{
+					"time": "09:30-10:30",
+					"event": "Unconference 1"
+				},
+				{
+					"time": "10:30-11:30",
+					"event": "Unconference 2"
+				},
+				{
+					"time": "11:30-12:00",
+					"event": "Keynote (TBA)"
+				},
+				{
+					"time": "12:00-13:00",
+					"event": "Lunch"
+				},
+				{
+					"title": "Supervision",
+					"tagline": "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns",
+					"venue": "R1",
+					"color": "#C1EB96"
+				},
+				{
+					"time": "13:00-13:30",
+					"event": {
+						"venue": "R1",
+						"category": "supervision",
+						"language": "",
+						"speaker": "Billy Lin",
+						"title": "The non-disclosed and opaque party-owned assets data",
+						"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
+						"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
+					}
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R1",
+						"category": "supervision",
+						"language": "",
+						"speaker": "Freyja van den boom",
+						"title": "Ever tried TDM and would you do it again?",
+						"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
+						"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
+					}
+				},
+				{
+					"time": "14:00-14:40",
+					"venue": "R1",
+					"event": "Tea time"
+				},
+				{
+					"time": "14:40-15:10",
+					"event": {
+						"venue": "R1",
+						"category": "supervision",
+						"language": "",
+						"speaker": "Nanang Syaifudin",
+						"title": "True Story: Public e-Participatory for Election Monitoring (MataMassa or PublicEye)",
+						"bio": "<p>Nanang Syaifudin is a member of Wikipedia Indonesia period iLab 2013. He is the founder and currently serves as the Executive Director iLab, a nonprofit organization engaged in the development of information technology for social change. Nanang helped in terms of technical and training projects Cipta Media Bersama First, open grant projects for improvement of media with Ford Foundation, Wikimedia Indonesia, ICT Watch and the Alliance of Independent Journalists.</p><p>Nanang had previously helped Malaysian activists with community Bersih 2.0 and Fitness Komas to develop a system of monitoring the elections with the project name Jom Monitor, Nana also create a system for the people of Pattani in southern Thailand with institutions INSouthMedia for documentation of human rights violations based on the map with the project name WARTANI, then he made Encyclopedia Corruption Indonesia is Korupedia portal to document the Corruptor figures in Indonesia.</p><p>Nanang also been a Project Manager at the Foundation AirPutih for capacity-building projects and alternative technologies in the area - particularly remote areas of Papua, on alternative technologies and the use of citizen media by using SMS cooperate with AJI Jayapura</p>",
+						"abstract": "<p>Indonesia was having its legislative election on April 9, 2014. As a new emerging democratic country, we would like to share MataMassa application experience in election monitoring, combining between technology, citizen participation/ engagement and collaboration. We would like to hear your experiences as well on your election monitoring and especially learning what to do afterwards. There will be souvenirs that we brought from Indonesia :D. More further info: <a href='www.matamassa.org'>www.matamassa.org</a> / <a href='pileg2014.matamassa.org'>pileg2014.matamassa.org</a> / <a href='pilpres2014.matamassa.org'>pilpres2014.matamassa.org</a></p>"
+					}
+				},
+				{
+					"time": "15:10-15:40",
+					"event": {
+						"venue": "R1",
+						"category": "supervision",
+						"language": "",
+						"speaker": "Nicholas Doiron",
+						"title": "NodeJS in Naypyitaw: Opening Election Data in Myanmar Election",
+						"bio": "<p>Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.</p>",
+						"abstract": "<p>In November 2015, millions of Myanmar's citizens went to the polls for the first openly-contested national elections in 25 years. Tens of thousands of people used mobile apps to research political parties, find out their candidates ahead of time, and see candidates' profiles. Those apps' data came from the MaePaySoh API, a partnership between the Myanmar Union Election Commission in Naypyitaw and the Asia Foundation's. Behind the scenes there were weeks of paperwork, scanning, digitizing, Unicode issues, deal-making, data cleanup, and development leading up to a two-week-long Hackathon. Take a look inside a fledgling open source community in Yangon and a drive for civic tech apps.</p>"
+					}
+				},
+				{
+					"title": "Square",
+					"tagline": "Overcoming black boxes: Wiki-manuals for open governance",
+					"venue": "R0",
+					"color": "#FB69B3"
+				},
+				{
+					"time": "13:00-13:30",
+					"event": {
+						"venue": "R0",
+						"category": "square",
+						"language": "",
+						"speaker": "Saul Peng & TonyQ",
+						"title": "The Continuation of the g0v budget visualization - Taipei City Government",
+						"bio": "<p>彭盛韶 Saul Peng<br/>經歷：<ul><li>柯文哲辦公室政策部研究員</li><li>臺北市資訊局專門委員</li></ul></p><p>王景弘<br/>經歷：<ul><li>普奇科技資深工程師</li><li>威聯通科技資深產品工程師</li><li>JavaScript.tw 技術社團發起人</li><li>JSDC 前端技術人年會共同發起人</li></ul></p>",
+						"abstract": "<p>分享 2015 年臺北市資訊局與民間社群合作的經驗，運用原 2012 年 g0v 預算視覺化模組，更新後推出臺北市的版本。此案例在當時引起不小迴響，同時擴散至其他縣市。此演講中將分享行政體制的改變、公私協力的契機、技術部分的執行及後續造成地方政府的影響等。</p>"
+					}
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R0",
+						"category": "square",
+						"speaker": "Chia-hua Lu",
+						"title": "Government x Civil Society x Internet x Deliberation\nObservations and Reflections of a Mediator",
+						"bio": "(TBC)",
+						"abstract": "(TBC)"
+					}
+				},
+				{
+					"time": "14:00-14:40",
+					"venue": "R0",
+					"event": "Tea time"
+				},
+				{
+					"time": "14:40-15:10",
+					"event": {
+						"venue": "R0",
+						"category": "square",
+						"language": "",
+						"speaker": "JK Suh",
+						"title": "The Korean General Election and VAAs: the case of \"Ping\"",
+						"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
+						"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
+					}
+				},
+				{
+					"time": "15:10-15:40",
+					"event": {
+						"venue": "R0",
+						"category": "square",
+						"language": "",
+						"speaker": "Johnny Lo",
+						"title": "Voter's Guide for Legislators and Council Members",
+						"bio": "<p>立委／議員投票指南</p>",
+						"abstract": "<p>2014 議員選舉到 2016 立委選舉，投票指南在選前一個月都有四十到五十萬使用者<br/>投票指南的設計初衷是減少盲目投票，讓民主社會的台灣更進步<br/>究竟我們有沒有走到正確的道路上？</p>"
+					}
+				},
+				{
+					"title": "Ventilation",
+					"tagline": "Demystifying pollution: Transparency in the air",
+					"venue": "R2",
+					"color": "#D8D9D8"
+				},
+				{
+					"time": "13:00-13:30",
+					"event": {
+						"venue": "R2",
+						"category": "Ventilation",
+						"language": "",
+						"speaker": "Yan-Jen Su",
+						"title": "Interpolation and Visualization of Air Pollution based on Wind Fields",
+						"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
+						"abstract": "<p>A system based on wind fields to interpolate and to visualized air pollution is introduced. <br/> The air pollution information provided by the government is a set of values sampled on the measuring stations. <br/> In contrast to the traditional linear interpolation, wind fields are applied to estimate the air pollution indices between the measuring stations. <br/> The estimated results are  the associated with the wind field and geographic information to construct a 3D virtual world and display on Web browsers.<br/> It provides additional information for users to understand the conditions of the air pollution and the environment.</p>"
+					}
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R2",
+						"category": "Ventilation",
+						"language": "",
+						"speaker": "Liz Barry",
+						"title": "Community science for healthy environments",
+						"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
+						"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
+					}
+				},
+				{
+					"time": "14:00-14:40",
+					"venue": "R2",
+					"event": "Tea time"
+				},
+				{
+					"time": "14:40-15:10",
+					"event": {
+						"venue": "R2",
+						"category": "Ventilation",
+						"language": "",
+						"speaker": "S.H. Hung / H.W Tseng",
+						"title": "Environment data transparency for cross-strait applications",
+						"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
+						"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
+					}
+				},
+				{
+					"time": "15:10-15:40",
+					"event": {
+						"venue": "R2",
+						"category": "Ventilation",
+						"language": "",
+						"speaker": "Chung-pei Pien",
+						"title": "From infrastructure to applications\nLinking through g0v - a case study on the environmental agency and company registration data",
+						"bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
+						"abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
+					}
+				},
+				{
+					"time": "15:45-16:00",
+					"event": {
+						"title": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions",
+						"speaker": "Miguel Arana Catania",
+						"bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
+						"abstract": "<p>Since the 15th of May of 2011 Spain has lived a deep change with people taking control of politics. Huge movements have appeared, taking to the squares, defending the public services, stopping evictions, and in a last phase going inside the institutions.</p><p>In the last local elections of May 2015, new parties coming from the 15M movement have won the control of major governments like Madrid, Barcelona, Zaragoza, Cadiz, among others.</p><p>We will explain the current situation, and focus in the new citizen participation strategy of Madrid, and Consul, its new <a href='http://decide.madrid.es'>direct democracy free software platform</a> that is spreading fast to other cities; and the relations not only with those other Spanish cities, but also at an international level.</p>"
+					}
+				},
+				{
+					"time": "16:00-16:15",
+					"event": {
+						"title": "Congress Matters. Does it?",
+						"speaker": "clkao",
+						"bio": "<p>clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。</p>",
+						"abstract": "<p>國會大代誌從 2012 g0v 發起，和多個國會相關專案互相串接資料。在此同時，立法院開始有 Open Data、而 2016 年國會第一次政黨輪替，迎接全新的民意，政黨協商也將要有錄影紀錄。更為透明的國會，似乎令人放心了？</p><p>本次演講將回顧國會資料的現況，國內外各相關專案監督的方式與比較，以及對新國會的監督，有哪些新的做法，需要什麼樣的專案來達成。</p>"
+					}
+				},
+				{
+					"time": "16:15-16:30",
+					"event": "TBA"
+				},
+				{
+					"time": "16:30-17:30",
+					"event": "Lightning Talk"
+				},
+				{
+					"time": "17:30-17:40",
+					"event": "Closing"
+				}
+			]
+		},
+		"zh-TW": {
+			"header": "議程表",
+			"day1": [
+				{
+					"time": "08:30-09:20",
+					"event": "報到"
+				},
+				{
+					"time": "09:20-09:30",
+					"event": "開幕"
+				},
+				{
+					"time": "09:30-10:00",
+					"event": {
+						"title": "主題演講: 公民科技中的「公民精神」",
+						"speaker": "Felipe Heusser",
+						"bio": "<p>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.</p><p>Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.</p>",
+						"abstract": "<p>Understanding the politics of technology as a mean for civic participation.</p>"
+					}
+				},
+				{
+					"title": "動力",
+					"tagline": "公民科技時代，運動組織的馬力再升級",
+					"venue": "R1",
+					"color": "#CE0D41"
+				},
+				{
+					"time": "10:00-10:30",
+					"event": {
+						"venue": "R1",
+						"category": "power",
+						"language": "",
+						"speaker": "Hoony Jang",
+						"title": "韓國經驗：如何推展公民科技到公民組織（NPO, NGO, 與媒體）",
+						"bio": "<p>Civic Hacker at Creative Commons Korea<ul><li>project manager of Codenamu</li><li>organizer of Code for Seoul</li><li>github: @hoony</li><li>twitter: @thechunsik</li></li></p>",
+						"abstract": "<p>CodeNamu, initiated by Creative Commons Korea as an open data project since 2011, has built communities, hosted yearly hackathons, and made lots of data storytelling projects. However we failed to put our message deeply, or some of results were quite meaningful but we fail to spread out our messages or our acts to outside community. How can we extend civic tech to civic organizations outside community?</p><p>In South Korea. most of civic organizations(NPO, NGO, and the media) are interested in data and data journalism, but they don’t have capacity to treat the data and data journalism. Event they don’t have any developers to maintain their own website. Because of that, after they constructed huge and valuable data to make stories for years, the data has been hidden somewhere on their PCs in not-machine-readable formats.</p><p>From this year, we’re developing a Data Specialists Working Group composed of civic hackers; technitians, designers, and data experts. This group will be in partnerships with NPO, NGO, and the media for data journalism projects. CodeNamu civic technitians and our partners composed of journalists and activits will make synergy to make those data open and to make various data journalism projects between CodeNamu’s civic tech and partners’ insight or messages. We hope that we’re going to introduce and discuss about the way to extend civic tech to outside civic tech community.</p>"
+					}
+				},
+				{
+					"time": "10:30-11:00",
+					"event": {
+						"venue": "R1",
+						"category": "power",
+						"language": "",
+						"speaker": "謝宗震",
+						"title": "Data For Social Good – 由資料驅動的公益新浪潮",
+						"bio": "<p>DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。</p>",
+						"abstract": "<p>有人用勞力做公益，也有人用財力做公益，如果用資料力來做公益，不知道會擦出怎樣的火花？</p><p>2015年，我們打造一個「資料力，做公益」的交流與媒合平台，稱為「D4SG 計畫」 (Data for Social Good)。透過社群、黑客松、資料競賽、長期專案...等方式推動資料人與非營利組織的深度交流。這場演講將從資料人的角度分享如何與NPO/NGO合作，把冰冷的資料轉換化成有溫度的故事。</p>"
+					}
+				},
+				{
+					"time": "11:00-11:30",
+					"venue": "R1",
+					"event": "茶點"
+				},
+				{
+					"time": "11:30-12:00",
+					"event": {
+						"venue": "R1",
+						"category": "power",
+						"language": "",
+						"speaker": "高英勛",
+						"title": "從 .org 到 .g0v － 台灣NGO的網路參與與數位挑戰",
+						"bio": "<p>撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。</p><p>台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。</p>",
+						"abstract": "<p>2000 年 dotcom 泡沫帶來最正向的影響之一就是連網的成本大幅降低，也創造了NGO透過網路發展的機遇。台灣環境資訊協會源起於 2000-4-17 創刊的環境資訊電子報，著眼於網路低成本高效率的資訊傳播，成為了 .org.tw 的成員之一。本次將藉由下列幾個主題切入，當 NGO 從 nobody 變成了 somebody 時， 組織運作和運用網路技術的問題和眉角進行回顧及反思。</p><ul><li>從 Web 1.0 到物聯網－時空背景的變化</li><li>「網路型NGO」在資訊公開，公民參與和網路技術發展的可能角色</li><li>反思與挑戰：駭客，技術長還是資訊長</li></ul>"
+					}
+				},
+				{
+					"time": "12:00-12:30",
+					"event": {
+						"venue": "R1",
+						"category": "power",
+						"language": "",
+						"speaker": "Sergejus Muravjovas",
+						"title": "一百年後走黃磚路：重塑傳統非政府組織之旅",
+						"bio": "<p>I am a social doer involved in creating change. I spend most of my time helping make transparency an easy-to-follow way of life for people around me. I do so by challenging the known, tapping into the under-researched and bridging the gaps between different groups of researchers and activists alike.</p><p>Besides heading TI Lithuania and overseeing the development of TransparencySchool.org for the past seven years, I have been involved in a number of undertakings that in many ways complement each other. I teach Corporate Governance and Anti-Corruption at the International School of Management in Vilnius. I am also a board member of the Lithuanian responsible business initiative \"Clear Wave\" and an advisory council member of the Duke of Edinburgh's International Award Lithuania and the Žinių radijas. I have just joined supervisory boards of two healthcare establishments in Vilnius - the Central Policlinics of Vilnius and the National Vilnius University Hospital. I have also served as a local correspondent for Lithuania for the EU Commission Anti-Corruption report.</p><p>As for other experiences under my sleeve, I was a member of the International Board of Directors of the global TI movement from 2009 to 2015 and a member of the Selection Commission of Candidates to the Judicial Office.</p>",
+						"abstract": "<p>In my talk I would like to share a story of the 21st century metamorphosis - a story of a classical NGO that has managed to drastically change its identity, expand its outreach and become more sustainable with the help of data and online tools.</p><p>By telling the audience the story of our successes and mistakes along the way, I will offer the audience with the state of mind that has allowed Transparency International (TI) Lithuania to grow into a top-notch go-to organization known to every second business person and every fifth member of the public - in our continuous advocacy efforts to encourage change and make sure that an ever-increasing number of Lithuanians become and act as owners of their state.</p><p>To illustrate this state of mind, I would like to show how TI Lithuania has successfully merged the availability of data, the talents of its coding teams and public advocacy savvy: <ol><li>to ensure greater transparency in Lithuanian politics with the help of the parliamentary oversight <a href='www.manoseimas.lt'>website</a>; </li><li>to allow for greater public awareness of media ownership and accountability by collecting and constantly updating all available data on media ownership at www.stirna.info; </li><li>to encourage people to find and contact their representatives with the help of <a href='www.parasykjiems'>www.parasykjiems.lt</a>; </li><li>to help Lithuanian courts open up to the public and be the first ones in the country to publish performance data of courts and judges with www.atvirasteismas.lt; and </li><li>to track interests of local politicians with <a href='www.jurgiokepure.lt'>www.jurgiokepure.lt</a>.</li></ul></p><p>In 2015, with all these tools combined TI Lithuania helped more than 100 thousand people, or almost 4 per cent of the entire Lithuania population, get engaged and individually seek greater transparency in their daily lives. With the numbers of concerned citizens and TI Lithuania partners growing every year, I hope my story will inspire others to explore innovative ways to create real-life change and prompt decision-makers and the public alike to check what technology has in store for democracy.</p>"
+					}
+				},
+				{
+					"title": "地基",
+					"tagline": "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐",
+					"venue": "R0",
+					"color": "#FCDE86"
+				},
+				{
+					"time": "10:00-10:30",
+					"event": {
+						"venue": "R0",
+						"category": "foundation",
+						"language": "",
+						"speaker": "Charlotte Richard",
+						"title": "民主與公民參與之開放媒體",
+						"bio": "<p>Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).</p>",
+						"abstract": "<p>At Voxe.org we seek to build online tools that revolutionize civic engagement by bringing to the public easy access, neutral and crowdsourced information.</p><p>We've already:<ul><li>created a <a href='http://voxe.org/welcome'>world comparison platform</a> for politics (16 countries, 3.5 million users and more than 20 media partners). </li><li>launched the weekly <a href='http://www.happydemocracy.com/'>civic tech newsletter</a></li><li>experienced <a href='http://hacklacop21.voxe.org/''>a tool to ask politician question</a> during COP21</li><li>we're designing a mobile app that pushes you engagement solutions in your pocket.</li></ul></p>"
+					}
+				},
+				{
+					"time": "10:30-11:00",
+					"event": {
+						"venue": "R0",
+						"category": "foundation",
+						"language": "",
+						"speaker": "Yantisa Akhadi",
+						"title": "政府 (也參加) 畫地圖",
+						"bio": "<p>Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.</p>",
+						"abstract": "<p>The presentation will cover on the significant role of government in contributing open spatial data in Indonesia. It will tell a story on how government as a key element in the community to open up their data and local knowledge. Jakarta Mapping will be a key case, where more than 500 government officials actively involved in one of the biggest participatory mapping event to gather village level information.</p>"
+					}
+				},
+				{
+					"time": "11:00-11:30",
+					"venue": "R0",
+					"event": "茶點"
+				},
+				{
+					"time": "11:30-12:00",
+					"event": {
+						"venue": "R0",
+						"category": "foundation",
+						"language": "",
+						"speaker": "Yago Bermejo Abati",
+						"title": "Podemos 黨的網路參與策略",
+						"bio": "<p>Yago Bermejo Abati</p><p>I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur.</p><p>Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties…</p><p>After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating.<p><p>Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.</p>",
+						"abstract": "<p>The summer of 2014 at team of 20 people was elected by a digital voting process to organise the structure of the new exponential party-movement called Podemos. At that time more than 300k people were subscribed as digital participants of this party. The social media team running a Facebook of more than 800k followers and a Twitter of more than 500k were looking for a new tool to interact with that huge amount of people. LaboDemo proposed a concrete strategy running different tools. We created a deliberative space hacking Reddit, proposed Loomio as a consensus-making tool for assemblies and a mobile app to make fast collective and massive decisions. Hundreds of thousands of people participate at this process creating a collective intelligence that finally faced top leaders at Podemos. I will explain how this kind of collective intelligence can change the way politics work and why we should engage direct a deliberative democracy to empower the crowd using internet combined with analogical participation.</p>"
+					}
+				},
+				{
+					"time": "12:00-12:30",
+					"event": {
+						"venue": "R0",
+						"category": "foundation",
+						"language": "",
+						"speaker": "Colin Megill",
+						"title": "Pol.is 在台灣: 跨越鴻溝之公共談論、意見徵求與政策",
+						"bio": "<p>Colin is founder of Seattle based startup <a href='http://pol.is'>http://pol.is</a>, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.</p><p>He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.</p><p>Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.</p>",
+						"abstract": "<p>Pol.is is a new tool for gathering crowd sentiment in a way that preserves and respects minority opinions. It scales to any number of users, while preserving high dimensional, organic feedback. g0v and vTaiwan have used pol.is to foster productive discourse in the public sphere and influence policy related to Uber and AirBnB. We'll discuss pol.is as a technology and the case study of vTaiwan's successes with it.</p>"
+					}
+				},
+				{
+					"title": "骨架",
+					"tagline": "從資料科技與文化領域出發的開放實驗",
+					"venue": "R2",
+					"color": "#1BADBE"
+				},
+				{
+					"time": "10:00-10:30",
+					"event": {
+						"venue": "R2",
+						"category": "construction",
+						"language": "",
+						"speaker": "Lucien Lin",
+						"title": "進擊的台灣政府資料開放授權條款",
+						"bio": "<p>知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡 (Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任<a href='http://ifosslawbook.org/'>自由開源軟體法律參考書台灣專章</a>的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。</p>",
+						"abstract": "<p>國內從政府端戮力推動 Open Data 的發展已歷時三年餘，終於在2015年7月27日，經行政院國家發展委員會媒介跨部會的多次協商，同步與參與 g0v 的公民團體與網路社群進行討論，定案了「民撰官酌、官民協力」不同視野分工協調出來的正式版本。此一版本架構符合國際開放定義(Open Definition)，並內嵌 Creative Commons License 的融通轉換機制，協助國內開放資料專案，設有未來與國際專案接軌的延展性。本議程將從參與編撰討論者的角度，就如何官民協力以消爭止紛取得共識進行經驗分享，並就該條款發布近半年來常見的使用問題、與他國條款相較的不足處，以及未來可資改進調整的空間，提出中道並契合條款架構的說明與示範。</p>"
+					}
+				},
+				{
+					"time": "10:30-11:00",
+					"event": {
+						"venue": "R2",
+						"category": "construction",
+						"language": "",
+						"speaker": "Katarzyna Mikołajczyk",
+						"title": "城市就是從事公民參與開放資料的關鍵",
+						"bio": "<p>Katarzyna Mikołajczyk, Open Cities Program Coordinator in Poland.</p><p>I use my work experience to open up cities in Poland. I want to increase transparency of the public administration, the growth of startups based on public data and increase the participation of informed citizens. Just this :)</p><p>I do this while I work for ePF Foundation, an NGO which mission is to develop democracy, open and transparent authorities and civic engagement through new technologies. I’m coordinating Open Cities Program which is dedicated to local governments and helps them to publish public information and engage people to understand open data.</p><p>I’m also a leader active in local community in city of Lodz for over 7 years. I managed civic engagement campaigns, educational projects, social consultations and advocacy work with the city authorities. I was always a passionate of open data and using them to plan for people. But only with people.</p>",
+						"abstract": "<p>Cities serve people who live in them. They are less political then governments, more focused on problem solving. They are never pefect but when you open up 10 cities with half a million people living in them - you suddenly make a national change. Bottom up and thumbs up. We created a formula which attracts cities to open up their data, engage citizens and make sure that data is used. And most importantly by introducing open data policies in Poland we make the change systemic.</p><p>Openness it is not only about publishing information. It’s essential part of building engagement in modern society. But we – citizens – need and often demand something more. We are ready to take responsibility for the place we live and work. We do care about the quality of the life we live in our cities. We need to be treated as partner by our government.</p><p>At first Personal Democracy Forum in Poland in 2013, Ellen Miller from Sunlight Fundation said that \"government is as strong as citizens informed\". Government can publish information, make it available, machine readable and up-to-date, but it will not encourage much more people to check them.</p><p>Can we do anything more to engage people in city life, to show them advantages of being active? How new technologies are moving us closer to participation? Did new applications can connect (or disconnect) citizens? Is it possible to empower citizens and allow them to manage our cities (not only from time to time, but daily)? How – by using technology – citizen can gather around idea, support it and make it happen?</p><p>And I can show examples of such process in Poland (Central Eastern Europe).</p>"
+					}
+				},
+				{
+					"time": "11:00-11:30",
+					"venue": "R2",
+					"event": "茶點"
+				},
+				{
+					"time": "11:30-12:00",
+					"event": {
+						"venue": "R2",
+						"category": "construction",
+						"language": "",
+						"speaker": "Venus Lui",
+						"title": "建立亞洲藝術資料庫的重要性",
+						"bio": "<p>Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong.</p><p>In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.</p>",
+						"abstract": "<p>This presentation focuses on open archives and Arts. In Europe, there is Europeana.eu, an internet portal that acts as an interface to millions of books, paintings, films, museum objects and archival records that have been digitised throughout Europe. However, there is no such thing in Asia, and it is necessary for us to have one in Asia, as it gives access to different types of content from different types of heritage/arts institutions.</p><p>The presentation will explore the possibility of having arts database in Asia and the importance of having one in Asia, by taking Europeana.eu as the example.</p>"
+					}
+				},
+				{
+					"time": "12:00-12:30",
+					"event": {
+						"venue": "R2",
+						"category": "construction",
+						"language": "",
+						"speaker": "董福興",
+						"title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
+						"bio": "<ul><li>W3C Invited Expert, co-chair of Chinese Text Layout Task Force</li><li>WANDERER Digital Publishing inc.創辦人</li><li>一堆顧問</li></ul>",
+						"abstract": "<p>電子書除了作為一門生意之外，也肩負著典藏與資訊傳遞的目的，從古騰堡計畫到日本的青空文庫，積累的 Public Domain 作品與商售書相輔相成。但很可惜，中文世界裡雖然一直都有人出版Public Domain作品，但卻沒有如前述般的計畫。希望能夠分享以下資訊<ul><li>紐約公共圖書館如何從古騰堡計畫中撈金，擺脫Overdrive的宰制並節省稅金；</li><li>青空文庫的入稿流程，以及在前EPUB時代怎麼處理難搞的日文內容。</li></ul></p><p>最後希望探討：<ul><li>到底我們是否需要打造中文內容的相同計畫？</li><li>若需要，又要怎麼促動眾人協力？</li><li>如何提供夠簡單的工具與機制？</li></ul></p>"
+					}
+				},
+				{
+					"time": "12:30-13:30",
+					"event": "午餐"
+				},
+				{
+					"title": "藍圖",
+					"tagline": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來",
+					"venue": "R1",
+					"color": "#F4AF3D"
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "Jen Bramley",
+						"title": "用 EveryPolitician 的資料，來增進公民科技重用",
+						"bio": "<p>Jen is the International Projects Manager at mySociety. If you email international@mysociety.org, Jen will be the one who responds to you first. She lives in London and works directly with organisations anywhere in the world, helping them with the practicalities of deploying our code and maintaining the resulting websites.</p><p>With a background as a working on media development and broadcasting reform projects in the Middle East and North Africa for BBC Media Action, she’s used to pitching in wherever needed for all sorts of projects.</p><p>Jen travels widely to meet our partners on their home ground: it’s always helpful to see our projects in the places where they’ll be deployed, and meet the people who will be using them. She’s passionate about ensuring that projects meet local needs and spending time with groups in their own countries helps her start to understand their motivations.</p>",
+						"abstract": "<p>Presenting the EveryPolitician project we will talk about the reasons why we're collecting all this open data and how it has already been used in different forms (for example: crowdsourcing data about the gender breakdown of every parliament in the world). We'll show real examples of the data being used to power civic technology sites in different countries - and hopefully you'll be inspired to create something yourself!</p>"
+					}
+				},
+				{
+					"time": "14:00-14:30",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "James Mckinney",
+						"title": "公民科技監督國會：長久之計",
+						"bio": "<p>James McKinney regularly contributes to civil society initiatives relating to government, legislative and corporate transparency. He is currently focusing on Popolo (a set of legislative data specifications, used by parliamentary monitoring organizations and members of Poplus.org) and on Influence Mapping (a group of organizations that draw the networks of relations between politically exposed people and organizations). James is especially interested in how data standards can facilitate cooperation between organizations and individuals.</p><p>James previously founded Open North, a Canadian nonprofit that creates websites to promote government transparency and public participation. He is co-lead of the Open Government Partnership’s Open Data Working Group’s Standards Stream. He was a member of the Open Contract Data Standard core team and of the W3C Government Linked Data Working Group. He has presented on open government and open data, most recently at the International Open Data Conference, Canadian Open Data Summit, and Spaghetti Open Data.</p>",
+						"abstract": "<p>The problems we often try to solve in civic tech are right in front of us: fixing a pothole, monitoring a government, opening up data, etc. The tools we create to address such problems often produce immediate value for users. I'm going to share a story about a much longer game, where the payoff is just starting to happen now, five years later.</p><p>This will be a story of how organizations around the world built a software stack for legislative monitoring. It starts with a vision shared in Warsaw in 2011. In 2012, work on a standard data interchange format begins, which will tie the stack together. Two organizations start authoring backend data management tools in 2013 using this format. In 2014, the first user-facing tools appear at the top of this stack. And in 2015, governments begin adopting the data standard, as more user-facing tools spread.</p><p>This journey will visit many organizations and projects around the world, from mySociety to OpenAustralia to Sunlight, and from PopIt to Councilmatic to Represent, among others. We're five years into this journey, and there's still more ground to cover for at least as many more years before the basic problems in legislative monitoring that we're solving can be taken for granted.</p><p>This talk ties into the fork-merge theme. Legislative monitoring generally involves forking the official website, which requires scraping data to reproduce the information. Through government adoption of data standards like Popolo, we can eliminate these scrapers, and merge good data publication practices into government.</p>"
+					}
+				},
+				{
+					"time": "14:30-15:00",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "Henare Degan",
+						"title": "morph.io: 國際公民科技社群建立的資料抓取平台",
+						"bio": "<p>Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language.</p><p>He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours.</p><p>When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.</p>",
+						"abstract": "<p>The OpenAustralia Foundation runs major civic tech projects used by hundreds of thousands of people. Web scraping is essential to get the data that makes them possible. Every time you create a scraper you're faced with the same set of problems - where will I run my scraper? How will I store and access the data? How will I know if there's been a problem? That's why we built morph.io - the free and open source web scraping platform for the international civic tech community.</p><p>With morph.io code collaboration stays where it belongs - on GitHub. We support 5 of the most popular programming languages so you can write your scraper in the language you know and love. Your scraper runs in the cloud to your schedule and emails you if there are any problems. You can then download your data in CSV or even do SQL queries using the simple API.</p><p>In this talk I will introduce morph.io and show you how everything works behind the scenes. We will then explore some of the thousands of existing scrapers and I'll show you how you can access the tens of millions of rows of data they've already collected. Finally I will give you a whirlwind tour of how you can get started writing your very own scrapers to power your next civic tech project.</p>"
+					}
+				},
+				{
+					"time": "15:00-15:40",
+					"venue": "R1",
+					"event": "茶點"
+				},
+				{
+					"time": "15:40-16:10",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "Rajib Timalsina",
+						"title": "開源數位平臺，跨越尼泊爾公民與地方政府間的鴻溝",
+						"bio": "<p>Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at <a href='www.galligalli.org'>www.galligalli.org</a>. Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID.</p><p>Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding.</p><p>In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.</p>",
+						"abstract": "<p>From the point of view of urban governance, Nepal’s towns and cities have expanded rapidly. The Kathmandu Valley has grown especially rapidly – from a population of about 1.6 million in 2001 to a population of about 2.5 million in 2011. This unexpected and unplanned growth has proven a challenge to many aspects of city life. The systems by which residents communicate, organize themselves, and negotiate with each other and the state has altered. When the intention is to radically reform the system, large amounts of money and manpower must be gathered. At the same time, there are few initiatives as well who take the opposite approach. New belief is that limited resources and focus also be sufficient in order to begin to dent the system as much as possible on basis of collaborations and crowdsourcing even though there are no single and known solutions to the complex issues of urban governance and no guarantee that any given intervention will succeed.</p><p>GalliGalli is an initiative based in Kathmandu which gathers, packages, and disseminates information using new technologies for the civilians to make their lives easier by providing information on processes – formal and informal – for accessing government services. GalliGalli works both on-the-ground and online. GalliGalli’s core focus is to use open source approach to enable people to take part in social change by facilitating mass participation. This paper would like to explain how these processes and practices are developed and experimented by GalliGalli  using technologies to promote government transparency and attract civic participation through crowdsourcing on different topics which aims to bridge citizen-state gap into daily governance. </p><p>This paper will focus on ‘Nalibeli’ platform developed in Kathmandu to support state-citizens interaction as service providers-and-receivers. For example, when people want to start a business or non-profit, they have to register at the concerned government offices. Subsequently, there are periodic obligations such as submitting annual reports, filing tax returns, and calling general meeting. ‘Nalibeli’ plays a role of consultant to equip people with all the necessary information to fulfill these obligations. Not only through online open technology, a group of young volunteers also visit the concerned offices and guide people through each of the steps if they require support. ‘Nalibeli’ also perform Service Delivery Mapping which is an on-the-ground survey, research, and mapping initiative to document the nature of day-to-day problems faced by citizens, creating a listing of service providers by locality, understand the manner in which neighbourhoods organize. Most of these information are made available through an open platform (<a href='www.nalibeli.org'>www.nalibeli.org</a>) with step-by-step information on how to access a range of government services.  The platform runs on information shared by thousands of individual users. The usefulness of the platform increases as the number of active users grow. The platform has information in Nepali and English. This paper aims to unpack these complex realities of running open source approach to facilitate state-citizens relationship focusing on the ‘Nalibeli’ platform developed by GalliGalli initiative.</p>"
+					}
+				},
+				{
+					"time": "16:10-16:40",
+					"event": {
+						"venue": "R1",
+						"category": "blueprint",
+						"language": "",
+						"speaker": "",
+						"title": "敬請期待",
+						"bio": "",
+						"abstract": ""
+					}
+				},
+				{
+					"title": "配線",
+					"tagline": "同步、協作與進擊，打造跨界群眾串連的神經網絡",
+					"venue": "R0",
+					"color": "#449FFC"
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "Kirby Wu",
+						"title": "媒體無間道 — 我在新聞界臥底的日子",
+						"bio": "<p><a href='infographics.tw'>infographics.tw</a> 與 <a href='g0v.tw'>g0v.tw</a> 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。</p>",
+						"abstract": "<ul><li>零時政府 — 我的理想與願景</li><li>媒體亂象</li><li>聯合報採訪事件</li><li>零傳媒</li><li>潛入校園</li><li>infographics.tw</li><li>新聞媒體的未來</li></ul>"
+					}
+				},
+				{
+					"time": "14:00-14:30",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "Walkingice",
+						"title": "鍵盤宅的輔選經驗談",
+						"bio": "<p>網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。</p>",
+						"abstract": "<p>在 318 大力刺激公民政治意識之後，同年的地方選舉出現大量的素人參選，其中一位就是講者的國中好友。雖然只是選小小的鎮民代表，街頭的人情冷暖也是會完整嚐一遍。</p><p>本次想分享的是技術宅從鍵盤走向三次元世界的輔選經驗，雖然擅長的資訊技術在地方小選舉相當被侷限，沒有資源的競選團隊仍有些突破的辦法。希望能給有志投身政治者當個小墊腳石。</p>"
+					}
+				},
+				{
+					"time": "14:30-15:00",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "Jim Horng",
+						"title": "從滅頂秒退地圖看網路世代無組織社運",
+						"bio": "<p>在台灣軟體業已有約 10 年經驗，自認角色為工程師、社會議題微參與者、open source微貢獻者。</p>",
+						"abstract": "<p>抵抗黑心行動之一的滅頂秒退在 2015 年底到 2016 年初約熱了一個月時間，引發許多層次的討論。支持方的行動雖然一開始遍地開花，但似乎遇到輿論、成效、進度等阻力而漸式微，其中秒退地圖是想解決成效與進度透明化的部分，同時帶點組織化前置的概念。以結果論可能不算成功，但其過程包含網路推廣，早期使用者偕同設計，facebook 微組織合作，從中激發更多優化無組織社運的想法，這些便是作者想要分享的。</p><ul><li><a href='http://jimhorng.github.io/return_as_buy/'>滅頂秒退地圖</a></li><li><a href='https://jimhorng.wordpress.com/2016/01/19/%E5%BE%9E%E6%BB%85%E9%A0%82%E7%A7%92%E9%80%80%E7%9C%8B%E5%8F%B0%E7%81%A3%E8%BB%9F%E5%AF%A6%E5%8A%9B/'>從滅頂秒退看台灣軟實力</a></li></ul>"
+					}
+				},
+				{
+					"time": "15:00-15:40",
+					"venue": "R0",
+					"event": "Tea time"
+				},
+				{
+					"time": "15:40-16:10",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "ipa & ETBlue",
+						"title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
+						"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
+						"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
+					}
+				},
+				{
+					"time": "16:10-16:40",
+					"event": {
+						"venue": "R0",
+						"category": "wiring",
+						"language": "",
+						"speaker": "柴田 重臣",
+						"title": "如何讓推廣公民科技給非技術宅？",
+						"bio": "(TBC)",
+						"abstract": "<p>Code for Japan which is established on 2013 Nov. has now 33 official brigades and 20+ candidate groups. Growing speed is great I think but the member of groups mainly are techie guys. From the point of view for civic tech, we need more non-techie people. So I want to let you share our challenges and achievement and ask your thought.</p><p>My name is Shigeomi Shibata, co-captain of code for Japan and a member of code for Ibaraki located on Mito-shi of Ibaraki prefecture.</p>"
+					}
+				},
+				{
+					"title": "鷹架",
+					"tagline": "剖析災變，以數據力支援的智慧應變方案",
+					"venue": "R2",
+					"color": "#CE59E4"
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "陳坤助",
+						"title": "強震即時警報 EEW",
+						"bio": "<p>@KNYChen</p><p>陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。<br/>希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。</p><p>現任：<ul><li>KNY Co. 執行長</li><li>中華民國 App 跨界交流協會 理事長</li><li>台灣開放資料聯盟 副會長 / App組召集人</li><li>交通部資料開放諮詢小組 諮詢委員</li></ul></p>",
+						"abstract": "<p>政府提供的公共服務，傳統以來幾乎都是以標案的方式提供，但由於社會的開放與科技的演進，獨立開發者也能有機會與官方合作，提供更良善的公共服務給大種使用，並發展正向的公私夥伴關係。</p><p>以「KNY台灣天氣」與 中央氣象局 合作，將 強震即時警報 EEW 導入 App 為例，分享其中的經驗與心得。</p><p><a href='https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation'>https://play.google.com/store/apps/details?id=com.kny.TaiwanWeatherInformation</a></p>"
+					}
+				},
+				{
+					"time": "14:00-14:30",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "劉宇倫",
+						"title": "傳染病開放資料過去、現在、未來-以登革熱為例",
+						"bio": "<p>現任職疾病管制署疫情中心，曾擔任急診主治醫師，並於奧地利維也納接受歐盟EPIET流行病學訓練，興趣在運用資訊技術於防疫資訊的收集、分析及呈現</p>",
+						"abstract": "<p>2015年台灣登革熱疫情病例數創歷史新高，在同年，於open data社群協助及期待下，釋出多項即時且較為精細的登革熱病例及病媒蚊調查等open data。本次分享內容主要如下：</p><ul><li>登革熱open data的釋出心路歷程及製作經驗</li><li>與社群合作的壓力與助力</li><li>中央與地方的競爭與合作</li><li>登革熱open data的國內、外應用實例</li><li>登革熱或傳染病open data的未來努力方向</li></ul>"
+					}
+				},
+				{
+					"time": "14:30-15:00",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "Kuo-Yu slayer Chuang",
+						"title": "ICT 與群眾外包的災難適應力，亞洲開發銀行的案例研究",
+						"bio": "<p>Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.</p>",
+						"abstract": "<p>This talk is going to deliver the idea from the Asian Development Bank project, Applying Space-Based Technology (SBT) and Information and Communication Technology (ICT) to Strengthen Disaster Resilience. This ADB project was kicked off since September 2015 to leverage SBT and ICT for information collection, sharing and utilization for disaster risk reduction, post disaster response, recovery and reconstruction in Armenia, Bangladesh, Philippines, and Fiji. With the ICT tool it provides, we are looking forward to the better collaboration on \"Organization Coordination\", \"Resource Coordination\", and \"Volunteer Coordination\". Further detail of coordination for disaster about this talk can be found in <a href='http://geothings.tw/post/139329922145/after0206earthquake'>this blog post</a>.</p>"
+					}
+				},
+				{
+					"time": "15:00-15:40",
+					"venue": "R2",
+					"event": "Tea time"
+				},
+				{
+					"time": "15:40-16:10",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "詹為翔",
+						"title": "開放街圖在外交援助計畫上的應用",
+						"bio": "<p>台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為 Opensatreetmap Taiwan 理事會成員。</p>",
+						"abstract": "<p>開放街圖具有自由且開源的特性，適合集群眾之力來繪製圖資缺乏地區，本次將以在中西非聖多美及普林西比的瘧疾防治計畫為例，使用開放街圖來繪製當地基本圖資，使用繪製地圖的GPS等相關設備以及與當地人會談來收集資訊，將當地十分缺乏的地理資訊數位化、現代化，並可將圖資應用在各項計畫的分析上，如瘧疾病例與孳生源的空間關係分布等，結合當地實際數據，對瘧疾以及其他疾病更有效率的防治。</p>"
+					}
+				},
+				{
+					"time": "16:10-16:40",
+					"event": {
+						"venue": "R2",
+						"category": "scaffold",
+						"language": "",
+						"speaker": "Dongpo Deng",
+						"title": "OpenStreetMap 與 LocalWiki 的整合：支援社區層級災害系統管理",
+						"bio": "<p>Chairperson, OSM TW</p><p>Deputy Chairman, Taiwan Open Data Alliance</p>",
+						"abstract": "<p>LocalWiki is a good platform to citizens for sharing local knowledge about the matters in neighborhoods or communities, e.g., a restaurant’s food, a plaza’s history, or an old tree’s story. LocalWiki is using OSM for visualizing geographic objects, e.g., a restaurant, a plaza, or an old tree. However, the geographic objects visualized on LocalWiki aren’t interlinked to OSM. The users of LocalWiki actually draw the geographic objects but don’t take geographic objects from OSM. In addition, the geographic objects drawn on LocalWiki aren’t stored in OSM. This project undertakes the improvement of LocalWiki for working together with OSM. The improved LocalWiki will provide a function that users can directly select geographic objects form OSM. As a result, a geographic object textually described LocalWiki can be correspondingly linked to its geographic information on OSM.</p><p>In recent years, OSM often plays an important role in disaster relief. This is because OSM can provide users to map the areas influenced by disaster. In contrast, OSM also allows mappers to contribute the geographic objects associated with disasters such as shelters before a disaster happens. The mapping is a kind of disaster preparedness that is beneficial for mitigating the impact of a coming disaster. The improved LocalWiki will be used for citizens to provide disaster preparedness information and map the information in community level.</p>"
+					}
+				},
+				{
+					"time": "16:45-17:00",
+					"event": {
+						"title": "Code for All – 全球公民科技社群",
+						"abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
+					}
+				},
+				{
+					"time": "17:00-17:15",
+					"event": {
+						"title": "從 g0v 到 gov -- 潛入衛福部 400 天",
+						"speaker": "羅佩琪",
+						"bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
+						"abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
+					}
+				},
+				{
+					"time": "17:15-17:30",
+					"event": "敬請期待"
+				}
+			],
+			"day2": [
+				{
+					"time": "08:30-09:20",
+					"event": "報到"
+				},
+				{
+					"time": "09:20-09:30",
+					"event": "開幕"
+				},
+				{
+					"time": "09:30-10:30",
+					"event": "開放工作坊 1"
+				},
+				{
+					"time": "10:30-11:30",
+					"event": "開放工作坊 2"
+				},
+				{
+					"time": "11:30-12:00",
+					"event": "主題演講 (敬請期待)"
+				},
+				{
+					"time": "12:00-13:00",
+					"event": "午餐"
+				},
+				{
+					"title": "監工",
+					"tagline": "當監督政府成為全民義務，亞洲網路草根民主的進化論",
+					"venue": "R1",
+					"color": "#C1EB96"
+				},
+				{
+					"time": "13:00-13:30",
+					"event": {
+						"venue": "R1",
+						"category": "supervision",
+						"language": "",
+						"speaker": "林雨蒼",
+						"title": "不開放、不透明的黨產開放資料",
+						"bio": "<p>公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。</p>",
+						"abstract": "<ul><li>黨產的故事</li><li>我如何找到黨產資料</li><li>這些黨產可以看到什麼</li><li>國民黨如何面對黨產</li><li>未來該如何做</li></ul>"
+					}
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R1",
+						"category": "supervision",
+						"language": "",
+						"speaker": "Freyja van den boom",
+						"title": "告別文字擷取與資料探勘的痛苦: FutureTDM",
+						"bio": "<p>Freyja van den Boom is an artist/researcher on law and technology.</p><p>Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright.</p><p>She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University.</p><p>Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.</p>",
+						"abstract": "<p>Care to share your experiences and frustrations about text and datamining?<br/>Have you found a great tool or an inventive solution to your problems?<br/>Or even if you have no idea or want to see what you could do with all the data you've collected come and discuss with us.</p><p>Every day large amounts of data are being produced, not just scientific research data but any kind of data if its text, video or images can be used to provide relevant insight for academics, businesses and the curious. However research shows that for the potential benefits of TDM to be unlocked, a number of barriers need to be overcome. These include technical, legal and economical barriers but also a lack of awareness of TDM and a possible skills gap. Our aim is to understand what the problems are, who is affected by them and how we can solve them so we can all benefit.</p><p>FutureTDM is a European funded project that looks at why TDM uptake is falling behind in Europe and what to do about it.</p>"
+					}
+				},
+				{
+					"time": "14:00-14:40",
+					"venue": "R1",
+					"event": "茶點"
+				},
+				{
+					"time": "14:40-15:10",
+					"event": {
+						"venue": "R1",
+						"category": "supervision",
+						"language": "",
+						"speaker": "Nanang Syaifudin",
+						"title": "真實案例：監票數位參與 (MataMassa \"公眾之眼\")",
+						"bio": "<p>Nanang Syaifudin is a member of Wikipedia Indonesia period iLab 2013. He is the founder and currently serves as the Executive Director iLab, a nonprofit organization engaged in the development of information technology for social change. Nanang helped in terms of technical and training projects Cipta Media Bersama First, open grant projects for improvement of media with Ford Foundation, Wikimedia Indonesia, ICT Watch and the Alliance of Independent Journalists.</p><p>Nanang had previously helped Malaysian activists with community Bersih 2.0 and Fitness Komas to develop a system of monitoring the elections with the project name Jom Monitor, Nana also create a system for the people of Pattani in southern Thailand with institutions INSouthMedia for documentation of human rights violations based on the map with the project name WARTANI, then he made Encyclopedia Corruption Indonesia is Korupedia portal to document the Corruptor figures in Indonesia.</p><p>Nanang also been a Project Manager at the Foundation AirPutih for capacity-building projects and alternative technologies in the area - particularly remote areas of Papua, on alternative technologies and the use of citizen media by using SMS cooperate with AJI Jayapura</p>",
+						"abstract": "<p>Indonesia was having its legislative election on April 9, 2014. As a new emerging democratic country, we would like to share MataMassa application experience in election monitoring, combining between technology, citizen participation/ engagement and collaboration. We would like to hear your experiences as well on your election monitoring and especially learning what to do afterwards. There will be souvenirs that we brought from Indonesia :D. More further info: <a href='www.matamassa.org'>www.matamassa.org</a> / <a href='pileg2014.matamassa.org'>pileg2014.matamassa.org</a> / <a href='pilpres2014.matamassa.org'>pilpres2014.matamassa.org</a></p>"
+					}
+				},
+				{
+					"time": "15:10-15:40",
+					"event": {
+						"venue": "R1",
+						"category": "supervision",
+						"language": "",
+						"speaker": "Nicholas Doiron",
+						"title": "在奈比多用 NodeJS：緬甸選舉資料開放",
+						"bio": "<p>Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.</p>",
+						"abstract": "<p>In November 2015, millions of Myanmar's citizens went to the polls for the first openly-contested national elections in 25 years. Tens of thousands of people used mobile apps to research political parties, find out their candidates ahead of time, and see candidates' profiles. Those apps' data came from the MaePaySoh API, a partnership between the Myanmar Union Election Commission in Naypyitaw and the Asia Foundation's. Behind the scenes there were weeks of paperwork, scanning, digitizing, Unicode issues, deal-making, data cleanup, and development leading up to a two-week-long Hackathon. Take a look inside a fledgling open source community in Yangon and a drive for civic tech apps.</p>"
+					}
+				},
+				{
+					"title": "廣場",
+					"tagline": "走出黑箱，開放政府的全民共筆指南",
+					"venue": "R0",
+					"color": "#FB69B3"
+				},
+				{
+					"time": "13:00-13:30",
+					"event": {
+						"venue": "R0",
+						"category": "square",
+						"language": "",
+						"speaker": "Saul Peng & 王景弘",
+						"title": "g0v 預算視覺化後續 - 臺北市經驗",
+						"bio": "<p>彭盛韶 Saul Peng<br/>經歷：<ul><li>柯文哲辦公室政策部研究員</li><li>臺北市資訊局專門委員</li></ul></p><p>王景弘<br/>經歷：<ul><li>普奇科技資深工程師</li><li>威聯通科技資深產品工程師</li><li>JavaScript.tw 技術社團發起人</li><li>JSDC 前端技術人年會共同發起人</li></ul></p>",
+						"abstract": "<p>分享 2015 年臺北市資訊局與民間社群合作的經驗，運用原 2012 年 g0v 預算視覺化模組，更新後推出臺北市的版本。此案例在當時引起不小迴響，同時擴散至其他縣市。此演講中將分享行政體制的改變、公私協力的契機、技術部分的執行及後續造成地方政府的影響等。</p>"
+					}
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R0",
+						"category": "square",
+						"speaker": "呂家華",
+						"title": "政府 x 民間 x 網路 x 審議\n一個中介者的觀察與思考",
+						"bio": "(TBC)",
+						"abstract": "(TBC)"
+					}
+				},
+				{
+					"time": "14:00-14:40",
+					"venue": "R0",
+					"event": "茶點"
+				},
+				{
+					"time": "14:40-15:10",
+					"event": {
+						"venue": "R0",
+						"category": "square",
+						"language": "",
+						"speaker": "JK Suh",
+						"title": "韓國大選與投票建議指南: \"Ping\"",
+						"bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
+						"abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
+					}
+				},
+				{
+					"time": "15:10-15:40",
+					"event": {
+						"venue": "R0",
+						"category": "square",
+						"language": "",
+						"speaker": "駱勁成",
+						"title": "立委／議員投票指南",
+						"bio": "<p>立委／議員投票指南</p>",
+						"abstract": "<p>2014 議員選舉到 2016 立委選舉，投票指南在選前一個月都有四十到五十萬使用者<br/>投票指南的設計初衷是減少盲目投票，讓民主社會的台灣更進步<br/>究竟我們有沒有走到正確的道路上？</p>"
+					}
+				},
+				{
+					"title": "空調",
+					"tagline": "破解環境污染密碼，開源釋出好空氣",
+					"venue": "R2",
+					"color": "#D8D9D8"
+				},
+				{
+					"time": "13:00-13:30",
+					"event": {
+						"venue": "R2",
+						"category": "Ventilation",
+						"language": "",
+						"speaker": "蘇彥禎",
+						"title": "空污資料搭配風場的內插與視覺化",
+						"bio": "<p>2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University,Taipei, Taiwan, Advisor: Yung-Yu Chuang.<br/>2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng.<br/>1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan OceanUniversity, Keelung, Taiwan.</p>",
+						"abstract": "<p>空污會隨著風向擴散,<br/>而觀測站之間的空污濃度也不該是線性内插,<br/>我做出一個系統能畫出污染隨著風擴散的結果,<br/>並且讓使用者可以在3維空間中探索.</p><p>線上系統: <a href='http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm'>http://www.cmlab.csie.ntu.edu.tw/~ked/pm25.htm</a><br/>系統的建構說明: <a href='http://www.slideshare.net/ked19/pm25-system-construction'>http://www.slideshare.net/ked19/pm25-system-construction</a></p>"
+					}
+				},
+				{
+					"time": "13:30-14:00",
+					"event": {
+						"venue": "R2",
+						"category": "Ventilation",
+						"language": "",
+						"speaker": "Liz Barry",
+						"title": "社區科學與健康的環境",
+						"bio": "<p>Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.</p>",
+						"abstract": "<p>Open source community Public Laboratory for Open Technology and Science will share lessons learned from 5+ years of online & offline peer production in the Western Hemisphere, as well as from recent (2016!) collaborations in mainland China with environmental activists, engineers, and journalists. Be prepared to be surprised by what aspects of internet culture make -- or break -- traditional grassroots organizing, and vice versa. Explore successful techniques for extending the power of distributed collaboration into the real world through tangible examples of the impact of what we term \"community science\" on judicial and policy outcomes in the United States. During the unconference track, we can explore the latest developments in DIY spectrometer for comparing different types of oil (either petrochemicals or the ones found in your kitchen), and revel in flying traditional Taiwanese kites with micro cameras to make aerial map portraits of everyone attending summit.g0v.tw.</p>"
+					}
+				},
+				{
+					"time": "14:00-14:40",
+					"venue": "R2",
+					"event": "茶點"
+				},
+				{
+					"time": "14:40-15:10",
+					"event": {
+						"venue": "R2",
+						"category": "Ventilation",
+						"language": "",
+						"speaker": "洪申翰, 曾虹文",
+						"title": "綠盟兩岸環境資料透明與再應用專案",
+						"bio": "<p>洪申翰<br/>目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。</p><p>曾虹文<br/>綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。</p>",
+						"abstract": "<p>中國大陸近年在環境與污染資訊公開的推展上有相當大的躍進，其民間環保NGO也運用此發展的契機，設計一套NGO-政府資料公開－品牌－供應鏈的污染資料庫與施壓模式，透過促使「品牌倒逼」，強力要求供應鏈必須完成污染的整改工作，最後再由NGO主導最後的審核。</p><p>綠色公民行動聯盟計劃製作一企業污染資料庫與地圖，一方面施壓官方是出更多的環境污染資訊，同時結合Opendata之形式，將環境資料地圖化與建制企業環境表現檔案，強化地區環境知情權與公民行動介入的空間，協助建立地方的環境監督網絡。另外，由於兩岸之間生產轉移密切，也帶動不少污染行為的轉移，綠盟也將與中國大陸NGO合作，引入其收集整理的台資在中國的污染記錄，促成兩岸的資訊同步，形成協同監督污染轉移行為的網絡，更希望促成社會以企業社會責任的角度，重新思考企業污染轉移行為的影響、評價與規範。</p>"
+					}
+				},
+				{
+					"time": "15:10-15:40",
+					"event": {
+						"venue": "R2",
+						"category": "Ventilation",
+						"language": "",
+						"speaker": "卞中佩",
+						"title": "從基礎工程到應用工程\ng0v資料與其它資料庫的整併及後續應用 ─ 以環保署污染源與公司結構資料為例",
+						"bio": "<p>美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。</p>",
+						"abstract": "<p>g0v成立運作以來，已經從政府機關及其它單位取得許多資料，並成立了相關網站便於民眾查詢。這些「基礎工程」的橫向、及與其它資料庫的縱向整併，將能發揮更強的綜效，不過整併過程中有許多的資料先天限制及技術難題仍待克服。</p><p>g本報告將以環保署污染源與公司登記資料的整併為例，探討在現有g0v已經達成的基礎工程的成就上，與污染源資料以R進行整併後，能達到標定污染源公司、基本資料等應用成果，而進一步分析公司登記資料後，還能追溯上下游公司及集團母公司，描繪出集團結構圖，在環境運動上能進一步問責，學術上則能以樹狀結構或社會網絡等等做後續分析。</p><p>g但目前要再進一步整併資料已有困難，首先是資料的先天限制，環保署污染源資料的缺陷、公司登記資料僅有董監事席位等等，需要政府擴大執行範圍。第二則是技術問題，例如由公司登記資料描繪出的集團結構圖，如何與中華徵信所、台灣經濟新報的集團企業資料庫比對，取得更準確的資料，這部分則需要有新的社群合作模式，結合議題專業者、工程師、專案等角色，推動進一步的協作。</p>"
+					}
+				},
+				{
+					"time": "15:45-16:00",
+					"event": {
+						"title": "Consul - 西班牙的開放政府平台與數位民主革命",
+						"speaker": "Miguel Arana Catania",
+						"bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
+						"abstract": "<p>Since the 15th of May of 2011 Spain has lived a deep change with people taking control of politics. Huge movements have appeared, taking to the squares, defending the public services, stopping evictions, and in a last phase going inside the institutions.</p><p>In the last local elections of May 2015, new parties coming from the 15M movement have won the control of major governments like Madrid, Barcelona, Zaragoza, Cadiz, among others.</p><p>We will explain the current situation, and focus in the new citizen participation strategy of Madrid, and Consul, its new <a href='http://decide.madrid.es'>direct democracy free software platform</a> that is spreading fast to other cities; and the relations not only with those other Spanish cities, but also at an international level.</p>"
+					}
+				},
+				{
+					"time": "16:00-16:15",
+					"event": {
+						"title": "國會沒代誌了嗎？",
+						"speaker": "clkao",
+						"bio": "<p>clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。</p>",
+						"abstract": "<p>國會大代誌從 2012 g0v 發起，和多個國會相關專案互相串接資料。在此同時，立法院開始有 Open Data、而 2016 年國會第一次政黨輪替，迎接全新的民意，政黨協商也將要有錄影紀錄。更為透明的國會，似乎令人放心了？</p><p>本次演講將回顧國會資料的現況，國內外各相關專案監督的方式與比較，以及對新國會的監督，有哪些新的做法，需要什麼樣的專案來達成。</p>"
+					}
+				},
+				{
+					"time": "16:15-16:30",
+					"event": "敬請期待"
+				},
+				{
+					"time": "16:30-17:30",
+					"event": "閃電秀"
+				},
+				{
+					"time": "17:30-17:40",
+					"event": "閉幕"
+				}
+			]
+		}
+	};
+
+/***/ },
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31231,11 +32336,11 @@
 
 	var _sponsors2 = _interopRequireDefault(_sponsors);
 
-	var _sponsors_summary = __webpack_require__(385);
+	var _sponsors_summary = __webpack_require__(393);
 
 	var _sponsors_summary2 = _interopRequireDefault(_sponsors_summary);
 
-	var _styles = __webpack_require__(386);
+	var _styles = __webpack_require__(394);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -31323,7 +32428,7 @@
 	exports.default = SponsorsSummary;
 
 /***/ },
-/* 385 */
+/* 393 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -31346,54 +32451,15 @@
 	};
 
 /***/ },
-/* 386 */
-/***/ function(module, exports, __webpack_require__) {
+/* 394 */
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(387);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__3VPfm","header":"styles-header__9f_mX","section":"styles-section__3EW5z","sponsor":"styles-sponsor__3-_FS","logo":"styles-logo__3ZWdC","name":"styles-name__3p5Sj"};
 
 /***/ },
-/* 387 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__3VPfm {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 17px;\n}\n\n.styles-header__9f_mX {\n  text-align: center;\n  padding-top: 20px;\n}\n\n.styles-section__3EW5z {\n  text-align: center;\n}\n\n.styles-sponsor__3-_FS {\n  display: inline-block;\n  vertical-align: top;\n  margin-left: 10px;\n  margin-right: 10px;\n  width: 260px;\n  text-align: center;\n  margin-bottom: 20px;\n  text-decoration: none;\n}\n\n.styles-logo__3ZWdC {\n  height: 120px;\n  box-shadow: 1px 1px 6px rgba(0,0,0,0.3);\n  border-radius: 3px;\n}\n\n.styles-name__3p5Sj {\n  display: block;\n  font-weight: bold;\n  color: #5D5D5D;\n  text-decoration: none;\n  font-size: 15px;\n  padding-top: 5px;\n}\n\na.styles-sponsor__3-_FS:hover .styles-name__3p5Sj {\n  text-decoration: underline;\n}\n\n", "", {"version":3,"sources":["/./app/javascripts/components/SponsorsSummary/styles.css"],"names":[],"mappings":"AAAA;EACE,0BAA0B;EAC1B,mBAAmB;EACnB,qBAAqB;CACtB;;AAED;EACE,mBAAmB;EACnB,kBAAkB;CACnB;;AAED;EACE,mBAAmB;CACpB;;AAED;EACE,sBAAsB;EACtB,oBAAoB;EACpB,kBAAkB;EAClB,mBAAmB;EACnB,aAAa;EACb,mBAAmB;EACnB,oBAAoB;EACpB,sBAAsB;CACvB;;AAED;EACE,cAAc;EACd,wCAAwC;EACxC,mBAAmB;CACpB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,eAAe;EACf,sBAAsB;EACtB,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,2BAA2B;CAC5B","file":"styles.css","sourcesContent":[".root {\n  background-color: #F2F2F2;\n  text-align: center;\n  padding-bottom: 17px;\n}\n\n.header {\n  text-align: center;\n  padding-top: 20px;\n}\n\n.section {\n  text-align: center;\n}\n\n.sponsor {\n  display: inline-block;\n  vertical-align: top;\n  margin-left: 10px;\n  margin-right: 10px;\n  width: 260px;\n  text-align: center;\n  margin-bottom: 20px;\n  text-decoration: none;\n}\n\n.logo {\n  height: 120px;\n  box-shadow: 1px 1px 6px rgba(0,0,0,0.3);\n  border-radius: 3px;\n}\n\n.name {\n  display: block;\n  font-weight: bold;\n  color: #5D5D5D;\n  text-decoration: none;\n  font-size: 15px;\n  padding-top: 5px;\n}\n\na.sponsor:hover .name {\n  text-decoration: underline;\n}\n\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__3VPfm",
-		"header": "styles-header__9f_mX",
-		"section": "styles-section__3EW5z",
-		"sponsor": "styles-sponsor__3-_FS",
-		"logo": "styles-logo__3ZWdC",
-		"name": "styles-name__3p5Sj"
-	};
-
-/***/ },
-/* 388 */
+/* 395 */,
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31403,23 +32469,23 @@
 	});
 	exports.Transport = exports.Sponsors = exports.Schedules = exports.Speakers = exports.Home = undefined;
 
-	var _Home2 = __webpack_require__(389);
+	var _Home2 = __webpack_require__(397);
 
 	var _Home3 = _interopRequireDefault(_Home2);
 
-	var _Speakers2 = __webpack_require__(390);
+	var _Speakers2 = __webpack_require__(398);
 
 	var _Speakers3 = _interopRequireDefault(_Speakers2);
 
-	var _Schedules2 = __webpack_require__(391);
+	var _Schedules2 = __webpack_require__(399);
 
 	var _Schedules3 = _interopRequireDefault(_Schedules2);
 
-	var _Sponsors2 = __webpack_require__(392);
+	var _Sponsors2 = __webpack_require__(400);
 
 	var _Sponsors3 = _interopRequireDefault(_Sponsors2);
 
-	var _Transport2 = __webpack_require__(393);
+	var _Transport2 = __webpack_require__(401);
 
 	var _Transport3 = _interopRequireDefault(_Transport2);
 
@@ -31432,7 +32498,7 @@
 	exports.Transport = _Transport3.default;
 
 /***/ },
-/* 389 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31496,7 +32562,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 390 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31555,7 +32621,7 @@
 	exports.default = Speakers;
 
 /***/ },
-/* 391 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31588,7 +32654,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _components = __webpack_require__(230);
+	var _Schedule = __webpack_require__(363);
+
+	var _Schedule2 = _interopRequireDefault(_Schedule);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31596,14 +32664,35 @@
 	  (0, _inherits3.default)(Schedules, _Component);
 
 	  function Schedules() {
+	    var _Object$getPrototypeO;
+
+	    var _temp, _this, _ret;
+
 	    (0, _classCallCheck3.default)(this, Schedules);
-	    return (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(Schedules).apply(this, arguments));
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_Object$getPrototypeO = (0, _getPrototypeOf2.default)(Schedules)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.state = {
+	      type: 'topic'
+	    }, _this.handleSwitch = function () {
+	      if (_this.state.type === 'topic') {
+	        _this.setState({ type: 'parallel' });
+	      } else {
+	        _this.setState({ type: 'topic' });
+	      }
+	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
 	  }
 
 	  (0, _createClass3.default)(Schedules, [{
 	    key: "render",
 	    value: function render() {
-	      return _react2.default.createElement(_components.Schedule, null);
+	      if (this.state.type === 'topic') {
+	        return _react2.default.createElement(_Schedule2.default, { onSwitch: this.handleSwitch });
+	      } else {
+	        return _react2.default.createElement(_Schedule.ScheduleParallel, { onSwitch: this.handleSwitch });
+	      }
 	    }
 	  }]);
 	  return Schedules;
@@ -31614,7 +32703,7 @@
 	exports.default = Schedules;
 
 /***/ },
-/* 392 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31673,7 +32762,7 @@
 	exports.default = Sponsors;
 
 /***/ },
-/* 393 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31708,11 +32797,11 @@
 
 	var _locale = __webpack_require__(228);
 
-	var _transport = __webpack_require__(394);
+	var _transport = __webpack_require__(402);
 
 	var _transport2 = _interopRequireDefault(_transport);
 
-	var _styles = __webpack_require__(395);
+	var _styles = __webpack_require__(403);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -31764,7 +32853,7 @@
 	exports.default = Transport;
 
 /***/ },
-/* 394 */
+/* 402 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -31831,56 +32920,15 @@
 	};
 
 /***/ },
-/* 395 */
-/***/ function(module, exports, __webpack_require__) {
+/* 403 */
+/***/ function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(396);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js?modules&localIdentName=[name]-[local]__[hash:base64:5]&importLoaders=1&sourceMap!./../../../../node_modules/postcss-loader/index.js!./styles.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	// removed by extract-text-webpack-plugin
+	module.exports = {"root":"styles-root__1gK3V","header":"styles-header__2-OSD","section":"styles-section__LrTFv","sponsor":"styles-sponsor__KVF2j","logo":"styles-logo__1STPn","name":"styles-name__1b107","desc":"styles-desc__2KfBd","map":"styles-map__209T3"};
 
 /***/ },
-/* 396 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".styles-root__1gK3V {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  background-color: rgba(255, 255, 255, 0.94);\n  min-height: 400px;\n  padding-left: 15px;\n  padding-right: 15px;\n  padding-bottom: 103px;\n}\n\n.styles-header__2-OSD {\n  text-align: center;\n  padding-top: 20px;\n}\n\n.styles-section__LrTFv {\n  text-align: center;\n}\n\n.styles-sponsor__KVF2j {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px;\n  max-width: 960px;\n  padding: 10px;\n  text-align: left;\n  border: 1px solid #999;\n  zoom: 1;\n  overflow: auto;\n  box-shadow: 1px 1px 6px rgba(0,0,0,0.3);\n  border-radius: 3px;\n}\n\n.styles-logo__1STPn {\n  width: 240px;\n  height: 120px;\n  border: 1px solid #ccc;\n  float: left;\n}\n\n.styles-name__1b107 {\n  display: block;\n  font-weight: bold;\n  color: #5D5D5D;\n  margin-top: 0;\n  margin-bottom: 10px;\n  margin-left: 260px;\n}\n\n.styles-name__1b107 a, .styles-name__1b107 a:visited {\n  color: #5d5d5d;\n  text-decoration: none;\n}\n.styles-sponsor__KVF2j:hover .styles-name__1b107 a {\n  color: #5d5d5d;\n  border-bottom: 1px solid #5d5d5d;\n}\n\n.styles-desc__2KfBd {\n  margin-top: 10px;\n  margin-left: 260px;\n  font-size: 16px;\n  line-height: 1.5;\n}\n\n.styles-map__209T3 {\n  border: 1px solid #777;\n  margin-top: 10px;\n}\n", "", {"version":3,"sources":["/./app/javascripts/pages/Transport/styles.css"],"names":[],"mappings":"AAAA;EACE,oBAAoB;EACpB,8CAA8C;EAC9C,4CAA4C;EAC5C,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,sBAAsB;CACvB;;AAED;EACE,mBAAmB;EACnB,kBAAkB;CACnB;;AAED;EACE,mBAAmB;CACpB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,iBAAiB;EACjB,cAAc;EACd,iBAAiB;EACjB,uBAAuB;EACvB,QAAQ;EACR,eAAe;EACf,wCAAwC;EACxC,mBAAmB;CACpB;;AAED;EACE,aAAa;EACb,cAAc;EACd,uBAAuB;EACvB,YAAY;CACb;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,eAAe;EACf,cAAc;EACd,oBAAoB;EACpB,mBAAmB;CACpB;;AAED;EAEE,eAAe;EACf,sBAAsB;CACvB;AACD;EACE,eAAe;EACf,iCAAiC;CAClC;;AAED;EACE,iBAAiB;EACjB,mBAAmB;EACnB,gBAAgB;EAChB,iBAAiB;CAClB;;AAED;EACE,uBAAuB;EACvB,iBAAiB;CAClB","file":"styles.css","sourcesContent":[".root {\n  background: #FFFFFF;\n  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);\n  background-color: rgba(255, 255, 255, 0.94);\n  min-height: 400px;\n  padding-left: 15px;\n  padding-right: 15px;\n  padding-bottom: 103px;\n}\n\n.header {\n  text-align: center;\n  padding-top: 20px;\n}\n\n.section {\n  text-align: center;\n}\n\n.sponsor {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 20px;\n  max-width: 960px;\n  padding: 10px;\n  text-align: left;\n  border: 1px solid #999;\n  zoom: 1;\n  overflow: auto;\n  box-shadow: 1px 1px 6px rgba(0,0,0,0.3);\n  border-radius: 3px;\n}\n\n.logo {\n  width: 240px;\n  height: 120px;\n  border: 1px solid #ccc;\n  float: left;\n}\n\n.name {\n  display: block;\n  font-weight: bold;\n  color: #5D5D5D;\n  margin-top: 0;\n  margin-bottom: 10px;\n  margin-left: 260px;\n}\n\n.name a,\n.name a:visited {\n  color: #5d5d5d;\n  text-decoration: none;\n}\n.sponsor:hover .name a {\n  color: #5d5d5d;\n  border-bottom: 1px solid #5d5d5d;\n}\n\n.desc {\n  margin-top: 10px;\n  margin-left: 260px;\n  font-size: 16px;\n  line-height: 1.5;\n}\n\n.map {\n  border: 1px solid #777;\n  margin-top: 10px;\n}\n"],"sourceRoot":"webpack://"}]);
-
-	// exports
-	exports.locals = {
-		"root": "styles-root__1gK3V",
-		"header": "styles-header__2-OSD",
-		"section": "styles-section__LrTFv",
-		"sponsor": "styles-sponsor__KVF2j",
-		"logo": "styles-logo__1STPn",
-		"name": "styles-name__1b107",
-		"desc": "styles-desc__2KfBd",
-		"map": "styles-map__209T3"
-	};
-
-/***/ },
-/* 397 */
+/* 404 */,
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -32228,7 +33276,7 @@
 	  }
 	};
 
-	var OutboundLink = __webpack_require__(398);
+	var OutboundLink = __webpack_require__(406);
 	OutboundLink.trackLink = reactGA.outboundLink;
 	reactGA.OutboundLink = OutboundLink;
 
@@ -32236,7 +33284,7 @@
 
 
 /***/ },
-/* 398 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(11);
