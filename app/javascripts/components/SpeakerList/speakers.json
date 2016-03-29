@@ -1,7 +1,7 @@
 {
   "en-US": [
     {
-      "avatar": "shigeomi.jpg",
+      "avatar": "",
       "name": "Shigeomi Shibata",
       "organization": "Code for Japan, Code for Ibaraki",
       "title": "",
@@ -10,7 +10,7 @@
       "twitter": "@shigeomix"
     },
     {
-      "avatar": "default.png",
+      "avatar": "",
       "name": "Jen Bramley",
       "organization": "mySociety",
       "title": "",
@@ -19,7 +19,7 @@
       "twitter": ""
     },
     {
-      "avatar": "default.png",
+      "avatar": "http://juliakloiber.com/blog/wp-content/uploads/julia_klein1.jpg",
       "name": "Julia Kloiber",
       "organization": "Open Knowledge Foundation Germany /Code for All",
       "title": "",
@@ -28,7 +28,7 @@
       "twitter": "@j_kloiber"
     },
     {
-      "avatar": "default.png",
+      "avatar": "https://www.dropbox.com/s/2ytm0p76utdsm76/016_Heleyna-Holmes-Photograpy-compressor.jpg?dl=0",
       "name": "Colin Megill",
       "organization": "pol.is",
       "title": "",
@@ -37,7 +37,7 @@
       "twitter": "@colinmegill"
     },
     {
-      "avatar": "default.png",
+      "avatar": "",
       "name": "JK Suh",
       "organization": "WAGL",
       "title": "",
@@ -46,7 +46,7 @@
       "twitter": ""
     },    
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg",
       "name": "Felipe Heusser",
       "organization": "founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv, Fellow at the Harvard Berkman Center for Internet and Society",
       "title": "",
@@ -55,7 +55,7 @@
       "twitter": "@fheusser"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "http://1.gravatar.com/avatar/60f641dfbb4215f1f6d6c059eebf1848?size=400",
       "name": "James Mckinney",
       "organization": "Various",
       "title": "",
@@ -64,7 +64,7 @@
       "twitter": "@mckinneyjames"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "",
       "name": "Miguel Arana Catania",
       "organization": "Madrid City Council",
       "title": "Director of the Madrid city council participation project",
@@ -73,7 +73,7 @@
       "twitter": ""
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://pbs.twimg.com/profile_images/609112331440812034/UEkPbmP3.jpg",
       "name": "Yago Bermejo Abati",
       "organization": "LaboDemo",
       "title": "",
@@ -82,7 +82,7 @@
       "twitter": ""
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.facebook.com/photo.php?fbid=10203603459566263&set=t.1809004856&type=3&theater",
       "name": "Rajib Timalsina",
       "organization": "GalliGalli Not-For-Profit (www.galligalli.org)",
       "title": "Advisor",
@@ -91,7 +91,7 @@
       "twitter": ""
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "http://www.transparency.lt/wp-content/uploads/2015/09/SM_a.jpg",
       "name": "Sergejus Muravjovas",
       "organization": "Transparency International Lithuania",
       "title": "Executive Director",
@@ -100,7 +100,7 @@
       "twitter": "@SMuravjovas"
     },  
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://avatars2.githubusercontent.com/u/643918?v=3&s=460",
       "name": "Nicholas Doiron",
       "organization": "The Asia Foundation",
       "title": "Sr Applications Developer",
@@ -109,7 +109,7 @@
       "twitter": "@mapmeld"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAATAAAAAJGUwMTU0N2RiLWVkMTAtNDUzYS04OGNhLTEyMDQ1ODYzZWZlYw.jpg",
       "name": "Katarzyna Mikołajczyk",
       "organization": "ePF Foundation",
       "title": "Open Cities Coordinator",
@@ -118,7 +118,7 @@
       "twitter": "@kasia_lodz"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://s.gravatar.com/avatar/6b45dcc2487c0df9f15ce69cb5a8fce4?s=80",
       "name": "Nanang Syaifudin",
       "organization": "iLab",
       "title": "Director",
@@ -127,7 +127,7 @@
       "twitter": "@nanangsyaifudin"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.facebook.com/photo.php?fbid=10155972979335577&set=a.10150283562060577.542588.857990576&type=3&theater",
       "name": "Charlotte Richard",
       "organization": "Voxe.org",
       "title": "co-founder",
@@ -136,7 +136,7 @@
       "twitter": "@charlottrichard "
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.dropbox.com/s/v0jbpao1qkkodwt/hoony.jpg",
       "name": "Hoony Jang",
       "organization": "Creative Commons Korea",
       "title": "Civic Hacker",
@@ -145,7 +145,7 @@
       "twitter": "@thechunsik"
     },    
     {
-      "avatar": "heusser.jpg",
+      "avatar": "",
       "name": "Venus Lui",
       "organization": "Wikimedia Hong Kong",
       "title": "Project Manager",
@@ -154,7 +154,7 @@
       "twitter": ""
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "http://lizbarry.net/photo.jpg",
       "name": "Liz Barry",
       "organization": "Public Lab, TreeKIT, Columbia University GSAPP",
       "title": "",
@@ -163,7 +163,7 @@
       "twitter": "@lizbarry"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAN5AAAAJGRlMmJhYmQ3LTY0ZjktNGY0NS04MzM0LTliZmJmYzNjNWM2Mw.jpg",
       "name": "Yantisa Akhadi",
       "organization": "Humanitarian OpenStreetMap Team",
       "title": "Project Manager",
@@ -172,7 +172,7 @@
       "twitter": "@iyan31"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.facebook.com/photo.php?fbid=10205303052243109&l=c4cb63625a",
       "name": "Freyja van den Boom",
       "organization": "Open Knowledge International",
       "title": "Researcher FutureTDM",
@@ -181,7 +181,7 @@
       "twitter": ""
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.gravatar.com/avatar/c767419261bf0c4ce5587ca20307928e?s=200",
       "name": "Henare Degan",
       "organization": "OpenAustralia Foundation",
       "title": "Civic & democracy hacker",
@@ -192,7 +192,7 @@
   ],
   "zh-TW": [
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.facebook.com/photo.php?fbid=2134980616069&l=e80b608529",
       "name": "羅佩琪",
       "organization": "沒有人",
       "title": "",
@@ -201,16 +201,25 @@
       "twitter": ""
     },
     {
-      "avatar": "shigeomi.jpg",
+      "avatar": "https://goo.gl/8cekWg",
       "name": "Saul Peng",
       "organization": "台北市政府資訊局",
       "title": "專門委員",
-      "bio": "彭盛韶 經歷：柯文哲辦公室政策部研究員,臺北市資訊局專門委員 王景弘 經歷：普奇科技資深工程師, 威聯通科技資深產品工程師, JavaScript.tw 技術社團發起人, JSDC 前端技術人年會共同發起人",
+      "bio": "彭盛韶 經歷：柯文哲辦公室政策部研究員,臺北市資訊局專門委員",
       "nation": "",
-      "twitter": "@tonyq"
+      "twitter": ""
     },
     {
-      "avatar": "default.png",
+      "avatar": "https://www.facebook.com/photo.php?fbid=10201367678899642&set=a.3453602144492.165636.1403951219&type=3&theater",
+      "name": "王景弘",
+      "organization": "普奇科技",
+      "title": "資深工程師",
+      "bio": "王景弘 經歷：普奇科技資深工程師, 威聯通科技資深產品工程師, JavaScript.tw 技術社團發起人, JSDC 前端技術人年會共同發起人",
+      "nation": "",
+      "twitter": "@tonyq"
+    },    
+    {
+      "avatar": "https://scontent-sjc2-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/p320x320/11796293_10153255844110668_2797238177900281661_n.jpg?oh=ac1e9f2912f78c309558c2e23833da28&oe=57628456",
       "name": "clkao",
       "organization": "g0v.tw",
       "title": "",
@@ -219,7 +228,7 @@
       "twitter": "@clkao"
     },
     {
-      "avatar": "default.png",
+      "avatar": "https://scontent-nrt1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/1966086_814346955245326_225589478_o.jpg",
       "name": "雨蒼",
       "organization": "民間司法改革基金會",
       "title": "執行秘書",
@@ -228,7 +237,7 @@
       "twitter": "@billy3321"
     },
     {
-      "avatar": "default.png",
+      "avatar": "https://avatars2.githubusercontent.com/u/4479861",
       "name": "駱勁成",
       "organization": "g0v",
       "title": "",
@@ -237,7 +246,7 @@
       "twitter": ""
     },
     {
-      "avatar": "default.png",
+      "avatar": "https://avatars0.githubusercontent.com/u/4172809",
       "name": "Jim Horng",
       "organization": "open source",
       "title": "軟體工程師",
@@ -246,7 +255,7 @@
       "twitter": ""
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://dsp.im/wp-content/uploads/2014/10/johnson11.jpg",
       "name": "謝宗震",
       "organization": "DSP智庫驅動",
       "title": "資料科學家",
@@ -255,7 +264,7 @@
       "twitter": ""
     },  
     {
-      "avatar": "heusser.jpg",
+      "avatar": "http://julianchu.net/assets/default_avatar.jpg",
       "name": "Walkingice",
       "organization": "g0v",
       "title": "貓砂礦工",
@@ -264,7 +273,7 @@
       "twitter": "@walkingice"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://drive.google.com/file/d/0B-VVq3srA7dPLXZCWGJuSDVHNFU/view?usp=sharing",
       "name": "Kirby Wu",
       "organization": "g0v.tw",
       "title": "cofounder",
@@ -273,7 +282,7 @@
       "twitter": "@zbryikt"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.facebook.com/weisiang.jhan",
       "name": "詹為翔",
       "organization": "Openstreetmap Taiwan",
       "title": "",
@@ -282,7 +291,7 @@
       "twitter": ""
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.facebook.com/photo.php?fbid=10202856420588220&l=1e13504ac4",
       "name": "Kuo-Yu slayer Chuang",
       "organization": "GeoThings",
       "title": "Co-founder/CEO",
@@ -291,7 +300,7 @@
       "twitter": "@darkensiva"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/19c/045/3c47699.jpg",
       "name": "Dongpo Deng",
       "organization": "OSM TW",
       "title": "",
@@ -300,7 +309,7 @@
       "twitter": "@dongpo"
     }, 
     {
-      "avatar": "heusser.jpg",
+      "avatar": "http://www.cmlab.csie.ntu.edu.tw/~ked/ked.png",
       "name": "蘇彥禎",
       "organization": "Delta research center",
       "title": "",
@@ -309,7 +318,7 @@
       "twitter": ""
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "http://vps.pointing.tw/kao/kao-teia.png",
       "name": "高英勛",
       "organization": "台灣環境資訊協會",
       "title": "理事",
@@ -318,7 +327,7 @@
       "twitter": "@void_lps"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/12219437_1073869589291176_7016219417040057906_n.jpg?oh=888e661a35392780280ff628127de98d&oe=5793CE53",
       "name": "陳坤助",
       "organization": "KNY Co.",
       "title": "",
@@ -327,7 +336,7 @@
       "twitter": "@KNYChen"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "",
       "name": "劉宇倫",
       "organization": "疾病管制署",
       "title": "醫師",
@@ -336,7 +345,7 @@
       "twitter": ""
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.facebook.com/photo.php?fbid=10150231085957551&set=a.428388177550.205918.542347550",
       "name": "董福興",
       "organization": "WANDERER Digital Publishing Inc.",
       "title": "",
@@ -345,16 +354,25 @@
       "twitter": "@bobtung"
     },
     {
-      "avatar": "heusser.jpg",
-      "name": "ipa & ETBlue",
+      "avatar": "https://drive.google.com/file/d/0B0NsS2a-Qx8ZcldNNHdndUdMbkU/view?usp=sharing",
+      "name": "ETBlue",
       "organization": "g0v",
       "title": "",
-      "bio": "ipa 瞿筱葳- g0v 沒有人- 文字/影像工作者- 反黑箱服貿行動參與者- 憲餅廚房共同發起人 關鍵字：社運、媒體、紀錄片藍一婷 ETBlue- g0v 動民主專案參與者- 反黑箱服貿行動參與者- 公民憲政動推動聯盟工具人- 開放文化基金會工具人關鍵字：插畫、UI、前端",
+      "bio": "藍一婷 ETBlue- g0v 動民主專案參與者- 反黑箱服貿行動參與者- 公民憲政動推動聯盟工具人- 開放文化基金會工具人關鍵字：插畫、UI、前端",
       "nation": "",
-      "twitter": "@ETBlue, @ipa"
+      "twitter": "@ETBlue"
     },
     {
-      "avatar": "heusser.jpg",
+      "avatar": "https://www.facebook.com/photo.php?fbid=10208246837787753&set=a.1602955072910.80036.1207082906&type=3&theater",
+      "name": "ipa",
+      "organization": "g0v",
+      "title": "",
+      "bio": "ipa 瞿筱葳- g0v 沒有人- 文字/影像工作者- 反黑箱服貿行動參與者- 憲餅廚房共同發起人 關鍵字：社運、媒體、紀錄片",
+      "nation": "",
+      "twitter": "@ipa"
+    },    
+    {
+      "avatar": "https://twitter.com/lucien_cc",
       "name": "林誠夏",
       "organization": "鈞理知識產權事務所",
       "title": "法制顧問",
