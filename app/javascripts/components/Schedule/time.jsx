@@ -11,7 +11,7 @@ import classNamesBind from "classnames/bind";
 
 const cx = classNamesBind.bind(styles)
 
-export default class Schedule extends Component {
+export default class ScheduleParallel extends Component {
   state = {
     showPanel: false,
     showSession: false,
@@ -136,7 +136,52 @@ export default class Schedule extends Component {
           </a>;
         }
 
+      }else{ //multile events
+        let filteredEvents = value.events.filter(v => shouldPassFilter(v.category));
+        if(filteredEvents.length === 0) return null;
+ 
+        content = (
+          <div className="Schedule-events">
+            {
+              filteredEvents.map((v,k)=>{
+                var language = (v.EN) ? <div className="Schedule-en">EN</div> : "";
+ 
+                var venue = (v.venue) ? (
+                        <div className="Schedule-meta">
+                          <div className="Schedule-venue">{v.venue}</div>
+                        </div>) : "";
+                var id = `day${day}-${v.venue.toLowerCase()}-${i}`;
+ 
+                return(
+                  <a className={classNames({
+                       "Schedule-event" : true,
+                       "is-active" : currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
+                     })}
+                     onClick={this.setSession.bind(this,v, value.time)}
+                     href={`#${id}`} key={k} id={`slot-${id}`}>
+                    {venue}
+                    <div className="Schedule-main">
+                      <div>{v.title}{language}</div>
+                      <div className="Schedule-presenter">{v.speaker}</div>
+                      {
+                        v.category && categoryObj[v.category] ? (
+                          <div className="Schedule-categoryIcon" style={{
+                                 "background" : categoryObj[v.category].color
+                               }}
+                               title={`Toggle topic "${categoryObj[v.category].title}"`}
+                               onClick={this.toggleCategory.bind(this, categoryObj[v.category].index)}
+                               ></div>
+                        ):null
+                      }
+                    </div>
+                  </a>
+                )
+              })
+            }
+          </div>
+        );
       }
+ 
 
       let [timeStart, timeEnd] = value.time.split('-')
       return (
@@ -188,6 +233,7 @@ export default class Schedule extends Component {
                        /* "is-active" : currentSection === "day2" */
                      })}
                      onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
+                <div className="Schedule-switchBtn" onClick={this.props.onSwitch}>View Topics</div>
                 <div className={classNames({
                        'Schedule-filterBtn': true,
                        'is-show': showPanel,

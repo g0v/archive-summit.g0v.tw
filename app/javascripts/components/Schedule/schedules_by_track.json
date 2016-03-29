@@ -22,6 +22,7 @@
       {
         "title": "Power",
         "tagline": "Upgrading the organizing capacity of activism with civic tech",
+        "venue" : "R1",
         "color": "#CE0D41"
       },
       {
@@ -38,6 +39,7 @@
       },
       {
         "time" : "11:00-11:30",
+        "venue" : "R1",
         "event": "Tea time"
       },
       {
@@ -66,6 +68,7 @@
       },
       {
         "title": "Foundation",
+        "venue" : "R0",
         "tagline": "Global reimplementions of media, elections, governments and public decisions",
         "color": "#FCDE86"
       },
@@ -83,6 +86,7 @@
       },
       {
         "time" : "11:00-11:30",
+        "venue" : "R0",
         "event": "Tea time"
       },
       {
@@ -112,6 +116,7 @@
       {
         "title": "Construction",
         "tagline": "Open-culture experiments with data and technology",
+        "venue" : "R2",
         "color": "#1BADBE"
       },
       {
@@ -129,6 +134,7 @@
       },
       {
         "time" : "11:00-11:30",
+        "venue" : "R2",
         "event": "Tea time"
       },
       {
@@ -162,6 +168,7 @@
       {
         "title": "Blueprint",
         "tagline": "Towards digital representation: A jigsaw of open government data endeavours",
+        "venue" : "R1",
         "color": "#F4AF3D"
       },
       {
@@ -202,6 +209,7 @@
       },
       {
         "time" : "15:00-15:40",
+        "venue" : "R1",
         "event" : "Tea time"
       },
       {
@@ -231,6 +239,7 @@
       {
         "title": "Wiring",
         "tagline": "Intersectoral networks: Synchronizations, collaborations and demonstrations",
+        "venue" : "R0",
         "color": "#449FFC"
       },
       {
@@ -271,6 +280,7 @@
       },
       {
         "time" : "15:00-15:40",
+        "venue" : "R0",
         "event" : "Tea time"
       },
       {
@@ -300,6 +310,7 @@
       {
         "title": "Scaffold",
         "tagline": "Analyzing disasters: Data-based contingency planning",
+        "venue" : "R2",
         "color": "#CE59E4"
       },
       {
@@ -340,6 +351,7 @@
       },
       {
         "time" : "15:00-15:40",
+        "venue" : "R2",
         "event" : "Tea time"
       },
       {
@@ -416,6 +428,7 @@
       {
         "title": "Supervision",
         "tagline": "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns",
+        "venue" : "R1",
         "color": "#C1EB96"
       },
       {
@@ -444,6 +457,7 @@
       },
       {
         "time" : "14:00-14:40",
+        "venue" : "R1",
         "event": "Tea time"
       },
       {
@@ -473,6 +487,7 @@
       {
         "title": "Square",
         "tagline": "Overcoming black boxes: Wiki-manuals for open governance",
+        "venue" : "R0",
         "color": "#FB69B3"
       },
       {
@@ -500,6 +515,7 @@
       },
       {
         "time" : "14:00-14:40",
+        "venue" : "R0",
         "event": "Tea time"
       },
       {
@@ -529,6 +545,7 @@
       {
         "title": "Ventilation",
         "tagline": "Demystifying pollution: Transparency in the air",
+        "venue" : "R2",
         "color": "#D8D9D8"
       },
       {
@@ -557,6 +574,7 @@
       },
       {
         "time" : "14:00-14:40",
+        "venue" : "R2",
         "event": "Tea time"
       },
       {
@@ -638,6 +656,7 @@
       {
         "title": "動力",
         "tagline": "公民科技時代，運動組織的馬力再升級",
+        "venue" : "R1",
         "color": "#CE0D41"
       },
       {
@@ -666,6 +685,7 @@
       },
       {
         "time" : "11:00-11:30",
+        "venue" : "R1",
         "event": "茶點"
       },
       {
@@ -695,6 +715,7 @@
       {
         "title": "地基",
         "tagline": "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐",
+        "venue" : "R0",
         "color": "#FCDE86"
       },
       {
@@ -723,6 +744,7 @@
       },
       {
         "time" : "11:00-11:30",
+        "venue" : "R0",
         "event": "茶點"
       },
       {
@@ -752,6 +774,7 @@
       {
         "title": "骨架",
         "tagline": "從資料科技與文化領域出發的開放實驗",
+        "venue" : "R2",
         "color": "#1BADBE"
       },
       {
@@ -780,6 +803,7 @@
       },
       {
         "time" : "11:00-11:30",
+        "venue" : "R2",
         "event": "茶點"
       },
       {
@@ -813,6 +837,7 @@
       {
         "title": "藍圖",
         "tagline": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來",
+        "venue" : "R1",
         "color": "#F4AF3D"
       },
       {
@@ -853,6 +878,7 @@
       },
       {
         "time" : "15:00-15:40",
+        "venue" : "R1",
         "event" : "茶點"
       },
       {
@@ -882,6 +908,7 @@
       {
         "title": "配線",
         "tagline": "同步、協作與進擊，打造跨界群眾串連的神經網絡",
+        "venue" : "R0",
         "color": "#449FFC"
       },
       {
@@ -922,6 +949,7 @@
       },
       {
         "time" : "15:00-15:40",
+        "venue" : "R0",
         "event" : "Tea time"
       },
       {
@@ -951,6 +979,7 @@
       {
         "title": "鷹架",
         "tagline": "剖析災變，以數據力支援的智慧應變方案",
+        "venue" : "R2",
         "color": "#CE59E4"
       },
       {
@@ -991,6 +1020,7 @@
       },
       {
         "time" : "15:00-15:40",
+        "venue" : "R2",
         "event" : "Tea time"
       },
       {
@@ -1066,6 +1096,7 @@
       {
         "title": "監工",
         "tagline": "當監督政府成為全民義務，亞洲網路草根民主的進化論",
+        "venue" : "R1",
         "color": "#C1EB96"
       },
       {
@@ -1094,6 +1125,7 @@
       },
       {
         "time" : "14:00-14:40",
+        "venue" : "R1",
         "event": "茶點"
       },
       {
@@ -1123,6 +1155,7 @@
       {
         "title": "廣場",
         "tagline": "走出黑箱，開放政府的全民共筆指南",
+        "venue" : "R0",
         "color": "#FB69B3"
       },
       {
@@ -1150,6 +1183,7 @@
       },
       {
         "time" : "14:00-14:40",
+        "venue" : "R0",
         "event": "茶點"
       },
       {
@@ -1179,6 +1213,7 @@
       {
         "title": "空調",
         "tagline": "破解環境污染密碼，開源釋出好空氣",
+        "venue" : "R2",
         "color": "#D8D9D8"
       },
       {
@@ -1207,6 +1242,7 @@
       },
       {
         "time" : "14:00-14:40",
+        "venue" : "R2",
         "event": "茶點"
       },
       {

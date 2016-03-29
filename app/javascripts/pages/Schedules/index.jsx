@@ -1,11 +1,23 @@
 import React, { Component } from "react";
-import { Schedule } from "javascripts/components";
+import { default as Schedule, ScheduleParallel } from "javascripts/components/Schedule";
 
 class Schedules extends Component {
+  state = {
+    type: 'topic'
+  }
+  handleSwitch = () => {
+    if(this.state.type === 'topic') {
+      this.setState({type: 'parallel'})
+    }else{
+      this.setState({type: 'topic'})
+    }
+  }
   render() {
-    return (
-      <Schedule />
-    );
+    if(this.state.type==='topic') {
+      return <Schedule onSwitch={this.handleSwitch} />
+    } else {
+      return <ScheduleParallel onSwitch={this.handleSwitch} />
+    }
   }
 };
 

@@ -183,6 +183,12 @@ body.mobileScrollLock {
   }
 }
 
+.Schedule-switchBtn {
+  line-height: 56px;
+  align-self: center;
+  cursor: pointer;
+}
+
 /* FILTER */
 .Schedule-filterBtn {
   color: rgb(80,80,80);
@@ -193,6 +199,7 @@ body.mobileScrollLock {
   height: 56px;
   cursor: pointer;
   transition: all .3s;
+  margin-left: 16px;
   margin-right: 8px;
 
   position: relative; /* for bar1 and bar2 */
@@ -385,7 +392,7 @@ $mobile-item-leftstop: 96px;
     padding: $desktop-padding 40px;
   }
 
-  .Schedule-event {
+  .Schedule-event, .Schedule-tagline {
     display: flex;
     padding: $desktop-padding calc(28px * 2 + $category-icon-size) $desktop-padding 14px;
   }
