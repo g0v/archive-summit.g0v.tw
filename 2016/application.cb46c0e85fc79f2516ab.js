@@ -8014,6 +8014,10 @@
 	  }
 	};
 
+	function registerNullComponentID() {
+	  ReactEmptyComponentRegistry.registerNullComponentID(this._rootNodeID);
+	}
+
 	var ReactEmptyComponent = function (instantiate) {
 	  this._currentElement = null;
 	  this._rootNodeID = null;
@@ -8022,7 +8026,7 @@
 	assign(ReactEmptyComponent.prototype, {
 	  construct: function (element) {},
 	  mountComponent: function (rootID, transaction, context) {
-	    ReactEmptyComponentRegistry.registerNullComponentID(rootID);
+	    transaction.getReactMountReady().enqueue(registerNullComponentID, this);
 	    this._rootNodeID = rootID;
 	    return ReactReconciler.mountComponent(this._renderedComponent, rootID, transaction, context);
 	  },
@@ -18745,7 +18749,7 @@
 
 	'use strict';
 
-	module.exports = '0.14.7';
+	module.exports = '0.14.8';
 
 /***/ },
 /* 157 */
@@ -32995,13 +32999,14 @@
 	}
 
 	// See if s could be an email address. We don't want to send personal data like email.
+	// https://support.google.com/analytics/answer/2795983?hl=en
 	function mightBeEmail(s) {
 	  // There's no point trying to validate rfc822 fully, just look for ...@...
 	  return (/[^@]+@[^@]+/).test(s);
 	}
 
 	function format(s) {
-	  if(mightBeEmail(s)) {
+	  if (mightBeEmail(s)) {
 	    warn("This arg looks like an email address, redacting.");
 	    s = _redacted;
 	    return s;
@@ -33039,7 +33044,42 @@
 	       '//www.google-analytics.com/analytics.js', 'ga');
 	    /* jshint ignore:end */
 
-	    ga('create', gaTrackingID, 'auto');
+	    if (options && options.gaOptions) {
+	      ga('create', gaTrackingID, options.gaOptions);
+	    } else {
+	      ga('create', gaTrackingID, 'auto');
+	    }
+
+	  },
+
+	  /**
+	   * set:
+	   * GA tracker set method
+	   * @param {Object} fieldsObject - a field/value pair or a group of field/value pairs on the tracker
+	   */
+	  set: function(fieldsObject) {
+	    if (typeof ga === 'function') {
+	      if (!fieldsObject) {
+	        warn('`fieldsObject` is required in .set()');
+	        return;
+	      }
+
+	      if (typeof fieldsObject !== 'object') {
+	        warn('Expected `fieldsObject` arg to be an Object');
+	        return;
+	      }
+
+	      if (Object.keys(fieldsObject).length === 0) {
+	        warn('empty `fieldsObject` given to .set()');
+	      }
+
+	      ga('set', fieldsObject);
+
+	      if (_debug) {
+	        log('called ga(\'set\', fieldsObject);');
+	        log('with fieldsObject: ' + JSON.stringify(fieldsObject));
+	      }
+	    }
 	  },
 
 	  /**
@@ -33144,6 +33184,43 @@
 	          warn('`args.nonInteraction` must be a boolean.');
 	        } else {
 	          fieldObject.nonInteraction = args.nonInteraction;
+	        }
+	      }
+
+	      // Send to GA
+	      ga('send', fieldObject);
+
+	      if (_debug) {
+	        log('called ga(\'send\', fieldObject);');
+	        log('with fieldObject: ' + JSON.stringify(fieldObject));
+	      }
+	    }
+	  },
+
+	  /**
+	   * exception:
+	   * GA exception tracking
+	   * @param args.description {String} optional
+	   * @param args.fatal {boolean} optional
+	   */
+	  exception: function (args) {
+	    if (typeof ga === 'function') {
+
+	      // Required Fields
+	      var fieldObject = {
+	        'hitType': 'exception'
+	      };
+
+	      // Optional Fields
+	      if (args.description) {
+	        fieldObject.exDescription = format(args.description);
+	      }
+
+	      if (typeof args.fatal !== 'undefined') {
+	        if(typeof args.fatal !== 'boolean') {
+	          warn('`args.fatal` must be a boolean.');
+	        } else {
+	          fieldObject.exFatal = args.fatal;
 	        }
 	      }
 
