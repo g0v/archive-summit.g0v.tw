@@ -7,7 +7,10 @@ class SpeakerList extends Component {
   speaker = (speaker) => {
     return (
       <div className={styles.speaker} key={speaker.name} >
-        <img className={styles.avatar} src={speaker.avatar || require('./default.png')} />
+        <img className={styles.avatar} src={speaker.avatar || (
+            speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') :
+            speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook :
+            require('./default.png'))} />
         <div className={styles.name}>{speaker.name}</div>
         <p className={styles.bio}>{speaker.bio}</p>
       </div>

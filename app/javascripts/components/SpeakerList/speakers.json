@@ -1,7 +1,7 @@
 {
   "en-US": [
     {
-      "avatar": "https://avatars.io/twitter/shigeomix",
+      "avatar": "",
       "name": "Shigeomi Shibata",
       "organization": "Code for Japan, Code for Ibaraki",
       "title": "",
@@ -192,31 +192,33 @@
   ],
   "zh-TW": [
     {
-      "avatar": "https://avatars.io/facebook/peichi.lo.3",
+      "avatar": "",
       "name": "羅佩琪",
       "organization": "沒有人",
       "title": "",
       "bio": "病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。",
       "nation": "Taiwan",
+      "facebook": "peichi.lo.3",
       "twitter": ""
     },
     {
-      "avatar": "https://avatars.io/facebook/saul.peng",
+      "avatar": "",
       "name": "Saul Peng",
       "organization": "台北市政府資訊局",
       "title": "專門委員",
       "bio": "彭盛韶 經歷：柯文哲辦公室政策部研究員,臺北市資訊局專門委員",
       "nation": "Taiwan",
+      "facebook": "saul.peng",
       "twitter": ""
     },
     {
-      "avatar": "https://avatars.io/twitter/tonyq",
+      "avatar": "",
       "name": "王景弘",
       "organization": "普奇科技",
       "title": "資深工程師",
       "bio": "王景弘 經歷：普奇科技資深工程師, 威聯通科技資深產品工程師, JavaScript.tw 技術社團發起人, JSDC 前端技術人年會共同發起人",
       "nation": "Taiwan",
-      "twitter": "@tonyq"
+      "twitter": "@tonyq_tw"
     },
     {
       "avatar": "https://scontent-sjc2-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/p320x320/11796293_10153255844110668_2797238177900281661_n.jpg?oh=ac1e9f2912f78c309558c2e23833da28&oe=57628456",
@@ -273,7 +275,7 @@
       "twitter": "@walkingice"
     },
     {
-      "avatar": "https://avatars.io/twitter/zbryikt",
+      "avatar": "",
       "name": "Kirby Wu",
       "organization": "g0v.tw",
       "title": "cofounder",
@@ -282,16 +284,17 @@
       "twitter": "@zbryikt"
     },
     {
-      "avatar": "https://avatars.io/facebook/weisiang.jhan",
+      "avatar": "",
       "name": "詹為翔",
       "organization": "Openstreetmap Taiwan",
       "title": "",
       "bio": "台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為Opensatreetmap Taiwan理事會成員。",
       "nation": "Taiwan",
+      "facebook": "weisiang.jhan",
       "twitter": ""
     },
     {
-      "avatar": "https://avatars.io/twitter/darkensiva",
+      "avatar": "",
       "name": "Kuo-Yu slayer Chuang",
       "organization": "GeoThings",
       "title": "Co-founder/CEO",
@@ -345,7 +348,7 @@
       "twitter": ""
     },
     {
-      "avatar": "https://avatars.io/twitter/bobtung",
+      "avatar": "",
       "name": "董福興",
       "organization": "WANDERER Digital Publishing Inc.",
       "title": "",
@@ -363,7 +366,7 @@
       "twitter": "@ETBlue"
     },
     {
-      "avatar": "https://avatars.io/twitter/ipa",
+      "avatar": "",
       "name": "ipa",
       "organization": "g0v",
       "title": "",
@@ -372,7 +375,7 @@
       "twitter": "@ipa"
     },
     {
-      "avatar": "https://avatars.io/twitter/lucien_cc",
+      "avatar": "",
       "name": "林誠夏",
       "organization": "鈞理知識產權事務所",
       "title": "法制顧問",
@@ -381,16 +384,17 @@
       "twitter": "@lucien_cc"
     },
     {
-      "avatar": "https://avatars.io/facebook/shufang.tsai",
+      "avatar": "",
       "name": "蔡淑芳",
       "organization": "開拓文教基金會 The Frontier Foundation",
       "title": "",
       "bio": "在開拓文教基金會當小工頭。透過各種連結、與許多不同的夥伴協力，希望縮短數位落差，增加非營利組織與資源相對匱乏的人和地方，善用資訊科技，對內提昇工作效能，對外增加發聲、串連與倡議改變的力量。",
       "nation": "Taiwan",
+      "facebook": "shufang.tsai",
       "twitter": ""
     },
     {
-      "avatar": "https://avatars.io/twitter/richy",
+      "avatar": "",
       "name": "李怡志",
       "organization": "",
       "title": "",
@@ -399,7 +403,7 @@
       "twitter": "@richy"
     },
     {
-      "avatar": "https://avatars.io/twitter/audreyt",
+      "avatar": "",
       "name": "唐鳳",
       "organization": "",
       "title": "",
@@ -408,12 +412,13 @@
       "twitter": "@audreyt"
     },
     {
-      "avatar": "https://avatars.io/facebook/peter.chung.50",
+      "avatar": "",
       "name": "衷嵐焜(Lan-Kun Chung)",
       "organization": "奇點無限有限公司(Singularity & Infinity Co., Ltd.",
       "title": "",
       "bio": "衷嵐焜是奇點無限有限公司的創辦人，同時也服務於逢甲大學地理資訊系統研究中心，亦擔任經濟部標檢局資訊及通訊國家標準委員會委員。衷嵐焜參與國內與國外災害管理計畫將近廿年，近年專注在國際標準的參與設計，並應用在防救災議題上，以及資料的混搭應用。",
       "nation": "Taiwan",
+      "facebook": "peter.chung.50",
       "twitter": ""
     },
     {
