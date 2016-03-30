@@ -25,7 +25,8 @@
 }
 
 .logo {
-  height: 120px;
+  max-height: 120px;
+  max-width: 240px;
   box-shadow: 1px 1px 6px rgba(0,0,0,0.3);
   border-radius: 3px;
 }
@@ -42,4 +43,3 @@
 a.sponsor:hover .name {
   text-decoration: underline;
 }
-
