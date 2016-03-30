@@ -70,6 +70,12 @@
           "desc": "Skymizer is a software performance solution provider specializing in compiler optimization. Our core team comes from Andes, Google, HTC, Marvell, MediaTek, Yahoo etc., and is actively involved in renowned worldwide open source projects. We are now working with global leading software companies to create revolutionary products and offer you a better experience in software and life."
         },
         {
+          "name": "Skywatch",
+          "logo": "skywatch.png",
+          "url": "https://skywatch24.com/",
+          "desc": "Skywatch Innovation was founded in November 2011 by industry veterans and experts in video processing, with financial backing from Vivotek Inc., a leading provider of network cameras and related products. Our video surveillance solution, including hardware and software, has been in operation since 2012, and has been deployed to over 10 countries in the world. We are also expanding toward Home Automation with our IoT service infrastructure, and Smart Retailing with our video analytics technology."
+        },
+        {
           "name": "Voxe.org",
           "logo": "voxe.png",
           "url": "http://voxe.org/welcome",
@@ -165,6 +171,12 @@
           "logo": "skymizer.png",
           "url": "http://skymizer.com/",
           "desc": "Skymizer 是一個致力於效能解決方案的頂尖開發團隊，藉由其獨到的編譯器最佳化技術，強化軟體品質、增加效能。我們也提供開發工具與顧問服務，協助客戶加速其行動裝置、軟體、伺服器。\n我們成立於 2013 年冬季， 技術團隊來自世界各大知名軟硬體公司（Andes, Google, HTC, Marvell, MediaTek, Yahoo），團隊成員擁有豐富的跨國產品開發經驗。我們不只優化你的軟體，更優化你的工作與生活。"
+        },
+        {
+          "name": "Skywatch",
+          "logo": "skywatch.png",
+          "url": "https://skywatch24.com/",
+          "desc": "行品股份有限公司（Skywatch Innovation）創立於 2011年 11月，為業界資深專案開發、影像技術人員、與台灣安控上市公司所共同組成。我們的核心能力在於設計、開發、與提供物聯網（IoT）之平台與服務。Skywatch 解決方案完整涵蓋由攝影機、感應器等前端硬體、雲端服務器，到近端 Mobile Apps 與瀏覽器等。主力雲端影像服務，自 2012 年推出以來，已經應用在十幾個國家，並業已成為台灣政府部門的正式認證供應商之一。"
         },
         {
           "name": "Voxe.org",
