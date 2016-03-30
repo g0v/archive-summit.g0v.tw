@@ -28657,6 +28657,11 @@
 	        { className: _styles2.default.root },
 	        _react2.default.createElement(
 	          'div',
+	          { style: { color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center' } },
+	          'We have live interpretation in English/Chinese ;)'
+	        ),
+	        _react2.default.createElement(
+	          'div',
 	          { className: _styles2.default.container },
 	          _react2.default.createElement(
 	            'div',
