@@ -27118,16 +27118,34 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: _styles2.default.root },
-	        _react2.default.createElement(
-	          "h2",
-	          { className: _styles2.default.header },
-	          _about2.default[(0, _locale.getLocale)()].header
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          { className: _styles2.default.description },
-	          _about2.default[(0, _locale.getLocale)()].description
-	        ),
+	        _about2.default[(0, _locale.getLocale)()].sections.map(function (section) {
+	          return _react2.default.createElement(
+	            "section",
+	            null,
+	            _react2.default.createElement(
+	              "h2",
+	              { className: _styles2.default.header },
+	              section.header
+	            ),
+	            section.description.map(function (desc) {
+	              return _react2.default.createElement("p", { className: _styles2.default.description, dangerouslySetInnerHTML: { __html: desc } });
+	            }),
+	            section.sub.map(function (section) {
+	              return _react2.default.createElement(
+	                "section",
+	                null,
+	                _react2.default.createElement(
+	                  "h3",
+	                  { className: _styles2.default.subheader },
+	                  section.header
+	                ),
+	                section.description.map(function (desc) {
+	                  return _react2.default.createElement("p", { className: _styles2.default.description, dangerouslySetInnerHTML: { __html: desc } });
+	                })
+	              );
+	            })
+	          );
+	        }),
 	        _react2.default.createElement(
 	          "div",
 	          { className: _styles2.default.links },
@@ -27163,12 +27181,66 @@
 
 	module.exports = {
 		"en-US": {
-			"header": "About g0v.tw",
-			"description": "g0v is a civic tech community established in late 2012 with deep open-source roots. With 1,000+ contributors through 30+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, citizen engagement, and online democracy.  Since the 2014 Summit, we’ve seen increasing collaboration between the civic tech communities in Taiwan, government agencies, media, and NGOs."
+			"sections": [
+				{
+					"header": "About g0v.tw",
+					"description": [
+						"g0v is a civic tech community established in late 2012 with deep open-source roots. With 1,000+ contributors through 30+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, citizen engagement, and online democracy.  Since the 2014 Summit, we’ve seen increasing collaboration between the civic tech communities in Taiwan, government agencies, media, and NGOs."
+					],
+					"sub": []
+				}
+			]
 		},
 		"zh-TW": {
-			"header": "關於臺灣零時政府",
-			"description": "臺灣零時政府是一個深植開源思想的公民技術社群，始於 2012 年底。超過一千位貢獻者參與了超過三十場這個世界上最大的公民科技社群舉辦的黑客松，聚焦於更良好的資訊開放，公民參與，和網路民主。2014 年的零時政府高峰會以來，我們也看到臺灣政府、媒體、和非政府組織間日漸增加的協作。"
+			"sections": [
+				{
+					"header": "關於 g0v.tw 台灣零時政府社群",
+					"description": [],
+					"sub": [
+						{
+							"header": "草根的、科技的、開放的公民參與",
+							"description": [
+								"g0v.tw 台灣零時政府社群從 2012 年 10 月開始，用數位世代的思維，以開源  (open source)方式號召群眾以網路世代的新模式協作，運用科技力量促進政府透明化。截至 2016 年 3 月已有 40+ 場黑客松、受邀演講 50+ 場、媒體報導 80+ 次、1000+ 遍佈三大洲的貢獻者，成果皆以自由軟體模式釋出。 g0v 社群草根的、科技的、開放的特色，開創了公民參與的新想像。"
+							]
+						},
+						{
+							"header": "官民協作 開放參與",
+							"description": [
+								"三年多來 g0v 社群的開源群眾貢獻刺激了台灣開放政府、開放資料、公民參與、新媒體等領域的發展，直至今日仍是數位草根公民運動的重要動力。2015 年，台灣在英國「開放知識基金會」（Open Knowledge Foundation）的開放資料評比中，從前一年度11名躍升成為全球第一名，正是包括 g0v 在內多個開放資料社群以及政府部門共同的協作努力。「開放透明」「公民參與」也逐漸成為大眾對政治運作的基礎要求。"
+							]
+						},
+						{
+							"header": "從「寫程式改造社會」到「跨界公民參與」",
+							"description": [
+								"社群於 2014 年 11 月舉辦 g0v Summit 零時政府高峰會（g0v Summit 2014），2015 年 8 月與世界銀行集團合作舉辦資料新聞實戰營（d|Bootcamp Taipei），皆是希望促成更多多元跨界協做的努力。g0v 社群以強勁的跨界動能拓展各種成果，在國際公民科技（civic tech）社群也受到矚目，並迅速在三年間成為全球最大開源開放政府社群。"
+							]
+						}
+					]
+				},
+				{
+					"header": "關於 g0v Summit 2016",
+					"description": [
+						"2014 年底台灣歷經了大型公民運動的洗禮，g0v 社群首度舉辦 g0v Summit 高峰會，促成開放社群、政府、NGO、學術圈、網路界多方交流。是台灣各界摸索如何運用資訊科技與群眾參與尋找新路的一次盛會，也邀請到國際公民科技界重量級先驅來台分享。當時兩天的密集議程碰撞出許多跨界火花，也在社群持續運動中，延燒出新的協作成果。",
+						"台灣在 2016 年時值新舊政府交接，g0v 社群秉持熱愛開放分享的精神，也希望再度邀集各界齊聚，找出運用科技改變社會的下一步。",
+						"g0v Summit 2016將於 5 月 14-15 日在中央研究院人文社會科學館舉行，議程將涵蓋開放政府、開放資料及運用新科技公民運動等內容，預計參與人數約 750-800 人。大會完全由社群參與者義務籌辦，工作團隊約有 80 人。"
+					],
+					"sub": [
+						{
+							"header": "全球最活躍的 civic hackers 齊聚台灣",
+							"description": [
+								"本次我們收到了來自全球 17 國高達 70 份的投稿，預計將有來自 15 國（美國、加拿大、智利、英國、德國、法國、立陶宛、波蘭、西班牙、尼泊爾、日本、韓國、香港、印尼、澳洲），涵蓋各國公民科技社群，將在大會中分享他們的專業與經驗。",
+								"議題以科技促進民主與參與效能為主軸，包含：歐洲的新興政治經驗（西班牙的時代力量如何一舉在大選獲得五分之一的得票）、亞洲推展數位科技到傳統公民團體的經驗、各國數位進入政府搭建溝通橋樑的改造經驗（包括美國與台灣實際經驗）、資訊科技與環境應用（包括西非瘧疾救助、雅加達水災、透過公民科學家進行環境監測等），以及各類促進開放透明、公民參與的成果分享。以上議程已在年會網站<a href=\"/2016/schedules\">公布</a>。"
+							]
+						},
+						{
+							"header": "開放參與的精神：Unconference 與閃電秀",
+							"description": [
+								"大會將以兩天三軌共 44 場演講進行，除了大會規劃的議程外，g0v Summit 也維持開放參與的精神：第二天上午【開放工作坊】（Unconference）、以及閉幕前【閃電秀】（Lightening Show），都歡迎會眾現場投稿、上台分享。這兩項活動源自開源社群的開放精神，讓草根的跨界的分享帶來更多社群動能。"
+							]
+						}
+					]
+				}
+			]
 		}
 	};
 
@@ -27177,7 +27249,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"root":"styles-root__gj93y","wrapper":"styles-wrapper__10wHi","header":"styles-header__2jnoV","description":"styles-description__biizs","title":"styles-title__2fwYR","button":"styles-button__30agj","links":"styles-links__hubwx","active":"styles-active__1METK styles-button__30agj"};
+	module.exports = {"root":"styles-root__gj93y","wrapper":"styles-wrapper__10wHi","header":"styles-header__2jnoV","subheader":"styles-subheader__s_fVP","description":"styles-description__biizs","title":"styles-title__2fwYR","button":"styles-button__30agj","links":"styles-links__hubwx","active":"styles-active__1METK styles-button__30agj"};
 
 /***/ },
 /* 329 */,
@@ -27601,10 +27673,10 @@
 						"url": "http://www.archilife.org/"
 					},
 					{
-						"name": "Voxe.org",
-						"logo": "voxe.png",
-						"url": "http://voxe.org/welcome",
-						"desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
+						"name": "Junyi Academy",
+						"logo": "junyi.png",
+						"url": "http://www.junyiacademy.org/",
+						"desc": ""
 					},
 					{
 						"name": "skymizer",
@@ -27613,10 +27685,10 @@
 						"desc": "Skymizer is a software performance solution provider specializing in compiler optimization. Our core team comes from Andes, Google, HTC, Marvell, MediaTek, Yahoo etc., and is actively involved in renowned worldwide open source projects. We are now working with global leading software companies to create revolutionary products and offer you a better experience in software and life."
 					},
 					{
-						"name": "Junyi Academy",
-						"logo": "junyi.png",
-						"url": "http://www.junyiacademy.org/",
-						"desc": ""
+						"name": "Voxe.org",
+						"logo": "voxe.png",
+						"url": "http://voxe.org/welcome",
+						"desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
 					}
 				]
 			},
@@ -27692,10 +27764,10 @@
 						"url": "http://www.archilife.org/"
 					},
 					{
-						"name": "Voxe.org",
-						"logo": "voxe.png",
-						"url": "http://voxe.org/welcome",
-						"desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
+						"name": "均一教育平台",
+						"logo": "junyi.png",
+						"url": "http://www.junyiacademy.org/",
+						"desc": "中文的免費均等一流教育\n均一教育平台是由財團法人誠致教育基金會創辦。我們的目標是透過雲端平台提供免費的『均等、一流』的教育機會給每一個人。\n任何人都可以使用網站所有的資源。不管你是學生、老師、自學家庭、校長、二十年後想回去當學生的大人、或是對地球生物好奇的友善外星人，均一的課程內容與資源完全免費提供使用。"
 					},
 					{
 						"name": "skymizer",
@@ -27704,10 +27776,10 @@
 						"desc": "Skymizer 是一個致力於效能解決方案的頂尖開發團隊，藉由其獨到的編譯器最佳化技術，強化軟體品質、增加效能。我們也提供開發工具與顧問服務，協助客戶加速其行動裝置、軟體、伺服器。\n我們成立於 2013 年冬季， 技術團隊來自世界各大知名軟硬體公司（Andes, Google, HTC, Marvell, MediaTek, Yahoo），團隊成員擁有豐富的跨國產品開發經驗。我們不只優化你的軟體，更優化你的工作與生活。"
 					},
 					{
-						"name": "均一教育平台",
-						"logo": "junyi.png",
-						"url": "http://www.junyiacademy.org/",
-						"desc": "中文的免費均等一流教育\n均一教育平台是由財團法人誠致教育基金會創辦。我們的目標是透過雲端平台提供免費的『均等、一流』的教育機會給每一個人。\n任何人都可以使用網站所有的資源。不管你是學生、老師、自學家庭、校長、二十年後想回去當學生的大人、或是對地球生物好奇的友善外星人，均一的課程內容與資源完全免費提供使用。"
+						"name": "Voxe.org",
+						"logo": "voxe.png",
+						"url": "http://voxe.org/welcome",
+						"desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
 					}
 				]
 			},
