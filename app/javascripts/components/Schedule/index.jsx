@@ -134,6 +134,7 @@ export default class Schedule extends Component {
   render () {
     return (
       <div className={styles.root}>
+        <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>We have live interpretation in English/Chinese ;)</div>
         <div className={styles.container}>
           <div className={cx({
             "Home-filter": true,
