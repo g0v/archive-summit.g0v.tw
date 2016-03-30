@@ -28658,7 +28658,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { style: { color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center' } },
-	          'We have live interpretation in English/Chinese ;)'
+	          'Live interpretation are available for both English and Mandarin sessions.'
 	        ),
 	        _react2.default.createElement(
 	          'div',
