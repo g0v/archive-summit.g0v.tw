@@ -134,7 +134,7 @@ export default class Schedule extends Component {
   render () {
     return (
       <div className={styles.root}>
-        <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>We have live interpretation in English/Chinese ;)</div>
+        <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>Live interpretation are available for both English and Mandarin sessions.</div>
         <div className={styles.container}>
           <div className={cx({
             "Home-filter": true,
