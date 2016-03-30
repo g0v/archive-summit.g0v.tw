@@ -24,6 +24,12 @@
           "name": "Academia Sinica Institute of Information Science",
           "logo": "iis.png",
           "url": "http://www.iis.sinica.edu.tw/"
+        },
+        {
+          "name": "KKTIX",
+          "logo": "kktix.png",
+          "url": "http://kktix.com",
+          "desc": "Smooth Event Management Experience\nWant to get things done efficiently when organizing events? KKTIX keeps everything in just few clicks from creating page, event management, marketing, to selling tickets, all in one place."
         }
       ]
     },
@@ -127,6 +133,12 @@
           "name": "中央研究院資訊科學研究所",
           "logo": "iis.png",
           "url": "http://www.iis.sinica.edu.tw/"
+        },
+        {
+          "name": "KKTIX",
+          "logo": "kktix.png",
+          "url": "http://kktix.com",
+          "desc": "輕鬆流暢的活動管理體驗\n每次舉辦活動的時候，都在煩惱怎麼製作網頁、處理報名事宜嗎?\nKKTIX滿足您舉辦活動的各項需求，從建立、管理、行銷到售票，一切都在彈指之間完成。"
         }
       ]
     },
