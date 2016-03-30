@@ -1218,6 +1218,9 @@ body.styles-mobileScrollLock__mMH7S {
   padding: 16px;
   font-weight: bold;
 }
+.Schedule-keynote {
+  background: #eff;
+}
 .Schedule-item {
   display: -webkit-box;
   display: -webkit-flex;

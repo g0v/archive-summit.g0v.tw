@@ -28399,7 +28399,8 @@
 	    return _react2.default.createElement(
 	      'div',
 	      { className: cx({
-	          "Schedule-item": true
+	          "Schedule-item": true,
+	          "Schedule-keynote": !venue
 	        }),
 	        key: i },
 	      _react2.default.createElement(
