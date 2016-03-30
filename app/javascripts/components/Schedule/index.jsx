@@ -39,6 +39,7 @@ function mapTimeSlotToItems(day, value, i) {
     return (
       <div className={cx({
             "Schedule-item" : true,
+            "Schedule-keynote" : !venue,
             })}
            key={i}>
         <div className="Schedule-time">

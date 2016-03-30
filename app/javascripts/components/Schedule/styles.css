@@ -290,6 +290,9 @@ $mobile-item-leftstop: 96px;
   padding: $mobile-padding;
   font-weight: bold;
 }
+.Schedule-keynote {
+  background: #eff;
+}
 .Schedule-item {
   display: flex;
   font-size: 16px;
