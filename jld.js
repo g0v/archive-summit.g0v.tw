@@ -140,7 +140,7 @@ var Base = function () {
     }
   };
   var about_data = jsonfile.readFileSync('./app/jsons/about.json');
-  base.description = `${about_data["zh-TW"].description} / ${about_data["en-US"].description}`;
+  base.description = `${about_data["zh-TW"].sections[0].description.join(' ')} / ${about_data["en-US"].sections[0].description.join(' ')}`;
   return base;
 };
 

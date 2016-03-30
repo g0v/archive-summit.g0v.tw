@@ -7,8 +7,38 @@ class About extends Component {
   render() {
     return (
       <div className={styles.root}>
-        <h2 className={styles.header}>{about[getLocale()].header}</h2>
-        <p className={styles.description}>{about[getLocale()].description}</p>
+        { 
+          about[getLocale()].sections.map( section => {
+            return (
+              <section>
+                <h2 className={styles.header}>{section.header}</h2>
+                {
+                  section.description.map( desc => {
+                    return (
+                      <p className={styles.description} dangerouslySetInnerHTML={{__html: desc}}></p>
+                    )
+                  })
+                }
+                {
+                  section.sub.map( section => {
+                    return (
+                      <section>
+                        <h3 className={styles.subheader}>{section.header}</h3>
+                        {
+                          section.description.map( desc => {
+                            return (
+                              <p className={styles.description} dangerouslySetInnerHTML={{__html: desc}}></p>
+                            )
+                          })
+                        }
+                      </section>
+                    )
+                  })
+                }
+              </section>
+            )
+          }) 
+        }
         <div className={styles.links}>
           <h2 className={styles.title}>當日大會共筆</h2>
           <a className={styles.button}>Hackpad</a>
