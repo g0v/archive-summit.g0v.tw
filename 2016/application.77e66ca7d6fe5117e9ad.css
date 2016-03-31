@@ -1691,6 +1691,7 @@ body.styles-mobileScrollLock__mMH7S {
 }
 .Session-presenter {
     color: rgb(55,54,53);
+    font-size: larger;
 }
 .Session-category {
     position: relative;
@@ -1726,7 +1727,8 @@ body.styles-mobileScrollLock__mMH7S {
         max-width: 40em;
         /* Don't make text too long & difficult to read */
     }
-}.styles-root__3VPfm {
+}
+.styles-root__3VPfm {
   background-color: #F2F2F2;
   text-align: center;
   padding-bottom: 17px;

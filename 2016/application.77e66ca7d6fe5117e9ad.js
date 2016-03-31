@@ -68,7 +68,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _reactGa = __webpack_require__(409);
+	var _reactGa = __webpack_require__(410);
 
 	var _reactGa2 = _interopRequireDefault(_reactGa);
 
@@ -24959,7 +24959,7 @@
 
 	var _components = __webpack_require__(230);
 
-	var _pages = __webpack_require__(400);
+	var _pages = __webpack_require__(401);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25024,11 +25024,11 @@
 
 	var _SpeakerList3 = _interopRequireDefault(_SpeakerList2);
 
-	var _Schedule2 = __webpack_require__(376);
+	var _Schedule2 = __webpack_require__(377);
 
 	var _Schedule3 = _interopRequireDefault(_Schedule2);
 
-	var _SponsorsSummary2 = __webpack_require__(396);
+	var _SponsorsSummary2 = __webpack_require__(397);
 
 	var _SponsorsSummary3 = _interopRequireDefault(_SponsorsSummary2);
 
@@ -28927,6 +28927,20 @@
 				"bio": "阿端，前綠黨中執委，社運份子，參與多年廢核、性別與人權運動。專長為創意企劃、溝通設計與 php 程式設計。在 g0v 社群提供社運觀點與橫向聯繫。",
 				"nation": "Taiwan",
 				"twitter": ""
+			},
+			{
+				"avatar": "./simon.png",
+				"featured": true,
+				"name": "張善政",
+				"name_en": "Simon Chang",
+				"organization": "行政院",
+				"organization_en": "Executive Yuan, Taiwan",
+				"title": "院長",
+				"title_en": "Premier",
+				"bio": "學 歷:\n美國康乃爾大學土木工程博士                                1981\n美國史丹福大學土木工程碩士                                1977\n經 歷:\n行政院副院長 2014/12/08-2016/01/30\n科技部部長                                    2014/3/3-2014/12/8\n行政院政務委員                                       2012-2014\n美商 Google公司亞洲硬體營運總監                     2010-2012\n宏碁股份有限公司電子化事業群副總經理                 2000-2010\n行政院國家科學委員會企劃考核處處長                   1998-2000\n行政院國家科學委員會國家高速電腦中心主任             1991-1997\n國立臺灣大學土木工程學系 講師、副教授、教授          1981-1990",
+				"bio_en": "Education:\nPh.D., Civil and Environmental Engineering, Cornell University, USA       1981\nMS, Civil and Environmental Engineering, Stanford University, USA        1977\n\nExperience:\nVice Premier, Executive Yuan                        2014/12/08-2016/01/30\nMinister, Ministry of Science and Technology           2014/03/03-2014/12/08\nMinister without Portfolio, Executive Yuan                          2012-2014\nRegional Director of Hardware Operations in Asia, Google Inc.       2010-2012\nVice President, e-Enabling Services Business Group, Acer Inc.      2000-2010\nDirector, Department of Planning and Evaluation,                   1998-2000\nNational Science Council, Executive Yuan                                    \nDirector, National Center for High-performance Computing           1991-1997\nLecturer, Associate Professor and Professor,                       1981-1990\nDepartment of Civil Engineering, NTU",
+				"nation": "Taiwan",
+				"twitter": ""
 			}
 		]
 	};
@@ -28941,6 +28955,7 @@
 		"./index": 359,
 		"./index.jsx": 359,
 		"./shigeomi.jpg": 375,
+		"./simon.png": 376,
 		"./speakers.json": 371,
 		"./styles": 369,
 		"./styles.css": 369
@@ -28981,6 +28996,12 @@
 /* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "ac803dc448f8b92f923b161952bb20e0.png";
+
+/***/ },
+/* 377 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -28988,7 +29009,7 @@
 	});
 	exports.ScheduleParallel = undefined;
 
-	var _extends2 = __webpack_require__(377);
+	var _extends2 = __webpack_require__(378);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
@@ -29016,7 +29037,7 @@
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-	var _time = __webpack_require__(382);
+	var _time = __webpack_require__(383);
 
 	Object.defineProperty(exports, 'ScheduleParallel', {
 	  enumerable: true,
@@ -29029,25 +29050,25 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _schedules_by_track = __webpack_require__(395);
+	var _schedules_by_track = __webpack_require__(396);
 
 	var _schedules_by_track2 = _interopRequireDefault(_schedules_by_track);
 
 	var _locale = __webpack_require__(228);
 
-	var _filter = __webpack_require__(387);
+	var _filter = __webpack_require__(388);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
-	var _session = __webpack_require__(390);
+	var _session = __webpack_require__(391);
 
 	var _session2 = _interopRequireDefault(_session);
 
-	var _styles = __webpack_require__(385);
+	var _styles = __webpack_require__(386);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _bind = __webpack_require__(394);
+	var _bind = __webpack_require__(395);
 
 	var _bind2 = _interopRequireDefault(_bind);
 
@@ -29393,14 +29414,14 @@
 	exports.default = Schedule;
 
 /***/ },
-/* 377 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _assign = __webpack_require__(378);
+	var _assign = __webpack_require__(379);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
@@ -29421,29 +29442,29 @@
 	};
 
 /***/ },
-/* 378 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(379), __esModule: true };
-
-/***/ },
 /* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(380);
-	module.exports = __webpack_require__(245).Object.assign;
+	module.exports = { "default": __webpack_require__(380), __esModule: true };
 
 /***/ },
 /* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// 19.1.3.1 Object.assign(target, source)
-	var $export = __webpack_require__(244);
-
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(381)});
+	__webpack_require__(381);
+	module.exports = __webpack_require__(245).Object.assign;
 
 /***/ },
 /* 381 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.3.1 Object.assign(target, source)
+	var $export = __webpack_require__(244);
+
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(382)});
+
+/***/ },
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29481,7 +29502,7 @@
 	} : $assign;
 
 /***/ },
-/* 382 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29498,11 +29519,11 @@
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-	var _assign = __webpack_require__(378);
+	var _assign = __webpack_require__(379);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
-	var _extends2 = __webpack_require__(377);
+	var _extends2 = __webpack_require__(378);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
@@ -29534,31 +29555,31 @@
 
 	var _locale = __webpack_require__(228);
 
-	var _schedules = __webpack_require__(383);
+	var _schedules = __webpack_require__(384);
 
 	var _schedules2 = _interopRequireDefault(_schedules);
 
-	var _categories = __webpack_require__(384);
+	var _categories = __webpack_require__(385);
 
 	var _categories2 = _interopRequireDefault(_categories);
 
-	var _styles = __webpack_require__(385);
+	var _styles = __webpack_require__(386);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _filter = __webpack_require__(387);
+	var _filter = __webpack_require__(388);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
-	var _session = __webpack_require__(390);
+	var _session = __webpack_require__(391);
 
 	var _session2 = _interopRequireDefault(_session);
 
-	var _classnames = __webpack_require__(391);
+	var _classnames = __webpack_require__(392);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _bind = __webpack_require__(394);
+	var _bind = __webpack_require__(395);
 
 	var _bind2 = _interopRequireDefault(_bind);
 
@@ -30029,7 +30050,7 @@
 	};
 
 /***/ },
-/* 383 */
+/* 384 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -30373,7 +30394,10 @@
 				},
 				{
 					"time": "17:15-17:30",
-					"event": "TBA"
+					"event": {
+						"title": "Premier of Taiwan",
+						"speaker": "Simon Chang"
+					}
 				}
 			],
 			"day2": [
@@ -30904,7 +30928,10 @@
 				},
 				{
 					"time": "17:15-17:30",
-					"event": "敬請期待"
+					"event": {
+						"title": "行政院院長",
+						"speaker": "張善政"
+					}
 				}
 			],
 			"day2": [
@@ -31098,7 +31125,7 @@
 	};
 
 /***/ },
-/* 384 */
+/* 385 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -31217,15 +31244,15 @@
 	};
 
 /***/ },
-/* 385 */
+/* 386 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__2PG_F","backdrop":"styles-backdrop__222h8","avatar":"styles-avatar__1jkQH","isShown":"styles-isShown__2X0WE","container":"styles-container__3fYMv","mobileScrollLock":"styles-mobileScrollLock__mMH7S"};
 
 /***/ },
-/* 386 */,
-/* 387 */
+/* 387 */,
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31238,7 +31265,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _filter = __webpack_require__(388);
+	var _filter = __webpack_require__(389);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
@@ -31319,15 +31346,15 @@
 	});
 
 /***/ },
-/* 388 */
+/* 389 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"filter":"filter-filter__2Aq-6","filterTitle":"filter-filterTitle__34mGj","filterCategories":"filter-filterCategories__rz7LE","filterCategory":"filter-filterCategory__3S81z","filterCategoryIcon":"filter-filterCategoryIcon__2dYxM","filterActions":"filter-filterActions__1o6da","filterClose":"filter-filterClose__15PBf","filterComplete":"filter-filterComplete__2LotJ","filterClearAll":"filter-filterClearAll__3xsaW","isActive":"filter-isActive__2kS1y"};
 
 /***/ },
-/* 389 */,
-/* 390 */
+/* 390 */,
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31336,23 +31363,29 @@
 	  value: true
 	});
 
+	var _slicedToArray2 = __webpack_require__(360);
+
+	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
+
 	var _react = __webpack_require__(11);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(391);
+	var _classnames = __webpack_require__(392);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	__webpack_require__(392);
+	__webpack_require__(393);
 
 	var _speakers = __webpack_require__(371);
 
 	var _speakers2 = _interopRequireDefault(_speakers);
 
+	var _locale = __webpack_require__(228);
+
 	var _SpeakerList = __webpack_require__(359);
 
-	var _styles = __webpack_require__(385);
+	var _styles = __webpack_require__(386);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -31388,9 +31421,18 @@
 	      "EN"
 	    ) : "";
 
-	    var speaker = by_name[data.speaker_key || data.speaker];
-	    var bio_text = (data.bio || speaker && speaker.bio || '').replace(/\n/g, '<br/>');
+	    var _getLocale$split = (0, _locale.getLocale)().split('-');
 
+	    var _getLocale$split2 = (0, _slicedToArray3.default)(_getLocale$split, 1);
+
+	    var locale = _getLocale$split2[0];
+
+
+	    var speaker = by_name[data.speaker_key || data.speaker];
+	    var bio_text = (speaker && (0, _locale.getString)(speaker, 'bio', locale) || data.bio || '').replace(/\n/g, '<br/>');
+	    var speaker_title = speaker && (0, _locale.getString)(speaker, 'title', locale);
+	    var speaker_orgnization = speaker && (0, _locale.getString)(speaker, 'organization', locale);
+	    var speaker_name = speaker && (0, _locale.getString)(speaker, 'name', locale);
 	    var bio = bio_text ? _react2.default.createElement(
 	      "div",
 	      { className: "Session-biography" },
@@ -31429,7 +31471,17 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "Session-presenter" },
-	          data.speaker
+	          speaker_name
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "Session-presenter-title" },
+	          speaker_title
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "Session-presenter-organization" },
+	          speaker_orgnization
 	        ),
 	        avatar && _react2.default.createElement("img", { className: _styles2.default.avatar, src: avatar }),
 	        category ? _react2.default.createElement(
@@ -31459,7 +31511,7 @@
 	});
 
 /***/ },
-/* 391 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31513,14 +31565,14 @@
 
 
 /***/ },
-/* 392 */
+/* 393 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 393 */,
-/* 394 */
+/* 394 */,
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31574,7 +31626,7 @@
 
 
 /***/ },
-/* 395 */
+/* 396 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -32012,7 +32064,11 @@
 				},
 				{
 					"time": "17:15-17:30",
-					"event": "TBA"
+					"event": {
+						"title": "Premier of Taiwan",
+						"speaker": "Simon Chang",
+						"speaker_key": "張善政"
+					}
 				}
 			],
 			"day2": [
@@ -32681,7 +32737,10 @@
 				},
 				{
 					"time": "17:15-17:30",
-					"event": "敬請期待"
+					"event": {
+						"title": "行政院院長",
+						"speaker": "張善政"
+					}
 				}
 			],
 			"day2": [
@@ -32920,7 +32979,7 @@
 	};
 
 /***/ },
-/* 396 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32959,11 +33018,11 @@
 
 	var _sponsors2 = _interopRequireDefault(_sponsors);
 
-	var _sponsors_summary = __webpack_require__(397);
+	var _sponsors_summary = __webpack_require__(398);
 
 	var _sponsors_summary2 = _interopRequireDefault(_sponsors_summary);
 
-	var _styles = __webpack_require__(398);
+	var _styles = __webpack_require__(399);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -33051,7 +33110,7 @@
 	exports.default = SponsorsSummary;
 
 /***/ },
-/* 397 */
+/* 398 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -33074,15 +33133,15 @@
 	};
 
 /***/ },
-/* 398 */
+/* 399 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__3VPfm","header":"styles-header__9f_mX","section":"styles-section__3EW5z","sponsor":"styles-sponsor__3-_FS","logo":"styles-logo__3ZWdC","name":"styles-name__3p5Sj"};
 
 /***/ },
-/* 399 */,
-/* 400 */
+/* 400 */,
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33092,23 +33151,23 @@
 	});
 	exports.Transport = exports.Sponsors = exports.Schedules = exports.Speakers = exports.Home = undefined;
 
-	var _Home2 = __webpack_require__(401);
+	var _Home2 = __webpack_require__(402);
 
 	var _Home3 = _interopRequireDefault(_Home2);
 
-	var _Speakers2 = __webpack_require__(402);
+	var _Speakers2 = __webpack_require__(403);
 
 	var _Speakers3 = _interopRequireDefault(_Speakers2);
 
-	var _Schedules2 = __webpack_require__(403);
+	var _Schedules2 = __webpack_require__(404);
 
 	var _Schedules3 = _interopRequireDefault(_Schedules2);
 
-	var _Sponsors2 = __webpack_require__(404);
+	var _Sponsors2 = __webpack_require__(405);
 
 	var _Sponsors3 = _interopRequireDefault(_Sponsors2);
 
-	var _Transport2 = __webpack_require__(405);
+	var _Transport2 = __webpack_require__(406);
 
 	var _Transport3 = _interopRequireDefault(_Transport2);
 
@@ -33121,7 +33180,7 @@
 	exports.Transport = _Transport3.default;
 
 /***/ },
-/* 401 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33185,7 +33244,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 402 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33244,7 +33303,7 @@
 	exports.default = Speakers;
 
 /***/ },
-/* 403 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33277,7 +33336,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Schedule = __webpack_require__(376);
+	var _Schedule = __webpack_require__(377);
 
 	var _Schedule2 = _interopRequireDefault(_Schedule);
 
@@ -33326,7 +33385,7 @@
 	exports.default = Schedules;
 
 /***/ },
-/* 404 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33385,7 +33444,7 @@
 	exports.default = Sponsors;
 
 /***/ },
-/* 405 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33420,11 +33479,11 @@
 
 	var _locale = __webpack_require__(228);
 
-	var _transport = __webpack_require__(406);
+	var _transport = __webpack_require__(407);
 
 	var _transport2 = _interopRequireDefault(_transport);
 
-	var _styles = __webpack_require__(407);
+	var _styles = __webpack_require__(408);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -33476,7 +33535,7 @@
 	exports.default = Transport;
 
 /***/ },
-/* 406 */
+/* 407 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -33543,15 +33602,15 @@
 	};
 
 /***/ },
-/* 407 */
+/* 408 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__1gK3V","section":"styles-section__LrTFv","header":"styles-header__2-OSD","sponsor":"styles-sponsor__KVF2j","logo":"styles-logo__1STPn","name":"styles-name__1b107","desc":"styles-desc__2KfBd","map":"styles-map__209T3"};
 
 /***/ },
-/* 408 */,
-/* 409 */
+/* 409 */,
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -33972,7 +34031,7 @@
 	  }
 	};
 
-	var OutboundLink = __webpack_require__(410);
+	var OutboundLink = __webpack_require__(411);
 	OutboundLink.trackLink = reactGA.outboundLink;
 	reactGA.OutboundLink = OutboundLink;
 
@@ -33980,7 +34039,7 @@
 
 
 /***/ },
-/* 410 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(11);
