@@ -339,7 +339,10 @@
       },
       {
         "time": "17:15-17:30",
-        "event": "TBA"
+        "event": {
+          "title": "Premier of Taiwan",
+          "speaker": "Simon Chang"
+        }
       }
     ],
     "day2": [
@@ -870,7 +873,10 @@
       },
       {
         "time": "17:15-17:30",
-        "event": "敬請期待"
+        "event": {
+          "title": "行政院院長",
+          "speaker": "張善政"
+        }
       }
     ],
     "day2": [
