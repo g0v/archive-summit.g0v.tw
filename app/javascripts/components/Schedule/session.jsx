@@ -19,7 +19,7 @@ export default React.createClass({
     var language = (data.EN) ? <div className="Session-en">EN</div> : "";
 
     const speaker = by_name[data.speaker_key || data.speaker];
-    const bio_text = (data.bio || speaker.bio || '').replace(/\n/g, '<br/>');
+    const bio_text = (data.bio || (speaker && speaker.bio) || '').replace(/\n/g, '<br/>');
 
     var bio = bio_text ? (
       <div className="Session-biography">
