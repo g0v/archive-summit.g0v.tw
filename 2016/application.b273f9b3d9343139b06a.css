@@ -1064,6 +1064,18 @@ body {
   transition: opacity .2s;
 }
 
+.styles-avatar__1jkQH {
+  float: right;
+  width: 128px;
+  height: 128px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  background-color: rgba(254, 220, 117, 0.74);
+}
+
 .styles-backdrop__222h8.styles-isShown__2X0WE {
   opacity: 1;
   z-index: 5;

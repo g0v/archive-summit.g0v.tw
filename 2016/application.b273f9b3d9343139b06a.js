@@ -28202,6 +28202,8 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
+	exports.avatarURL = avatarURL;
+
 	var _react = __webpack_require__(11);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -28217,6 +28219,10 @@
 	var _speakers2 = _interopRequireDefault(_speakers);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function avatarURL(speaker) {
+	  return speaker.avatar ? speaker.avatar.match(/^\./) ? __webpack_require__(363)(speaker.avatar) : speaker.avatar : speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') : speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook : __webpack_require__(364);
+	}
 
 	var SpeakerList = function (_Component) {
 	  (0, _inherits3.default)(SpeakerList, _Component);
@@ -28234,7 +28240,7 @@
 
 	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_Object$getPrototypeO = (0, _getPrototypeOf2.default)(SpeakerList)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.speaker = function (speaker) {
 	      var bio = speaker.bio.replace(/\n/g, '<br/>');
-	      var avatar = speaker.avatar ? speaker.avatar.match(/^\./) ? __webpack_require__(363)(speaker.avatar) : speaker.avatar : speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') : speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook : __webpack_require__(364);
+	      var avatar = avatarURL(speaker);
 	      return _react2.default.createElement(
 	        "div",
 	        { className: _styles2.default.speaker, key: speaker.name },
@@ -30327,7 +30333,7 @@
 					"time": "16:45-17:00",
 					"event": {
 						"title": "Code for All – Civic Tech around the World",
-						"speaker": " Julia Kloiber",
+						"speaker": "Julia Kloiber",
 						"abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
 					}
 				},
@@ -31190,7 +31196,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"root":"styles-root__2PG_F","backdrop":"styles-backdrop__222h8","isShown":"styles-isShown__2X0WE","container":"styles-container__3fYMv","mobileScrollLock":"styles-mobileScrollLock__mMH7S"};
+	module.exports = {"root":"styles-root__2PG_F","backdrop":"styles-backdrop__222h8","avatar":"styles-avatar__1jkQH","isShown":"styles-isShown__2X0WE","container":"styles-container__3fYMv","mobileScrollLock":"styles-mobileScrollLock__mMH7S"};
 
 /***/ },
 /* 386 */,
@@ -31315,7 +31321,23 @@
 
 	__webpack_require__(392);
 
+	var _speakers = __webpack_require__(362);
+
+	var _speakers2 = _interopRequireDefault(_speakers);
+
+	var _SpeakerList = __webpack_require__(359);
+
+	var _styles = __webpack_require__(385);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var by_name = {};
+
+	_speakers2.default['en-US'].forEach(function (speaker) {
+	  return by_name[speaker.name] = speaker;
+	});
 
 	exports.default = _react2.default.createClass({
 	  displayName: "Session",
@@ -31341,7 +31363,10 @@
 	      "EN"
 	    ) : "";
 
-	    var bio = data.bio ? _react2.default.createElement(
+	    var speaker = by_name[data.speaker_key || data.speaker];
+	    var bio_text = (data.bio || speaker && speaker.bio || '').replace(/\n/g, '<br/>');
+
+	    var bio = bio_text ? _react2.default.createElement(
 	      "div",
 	      { className: "Session-biography" },
 	      _react2.default.createElement(
@@ -31349,8 +31374,9 @@
 	        { className: "Session-subTitle" },
 	        "Biography"
 	      ),
-	      _react2.default.createElement("div", { dangerouslySetInnerHTML: { __html: data.bio } })
+	      _react2.default.createElement("div", { dangerouslySetInnerHTML: { __html: bio_text } })
 	    ) : "";
+	    var avatar = speaker ? (0, _SpeakerList.avatarURL)(speaker) : '';
 	    return _react2.default.createElement(
 	      "div",
 	      { className: "Session" },
@@ -31380,6 +31406,7 @@
 	          { className: "Session-presenter" },
 	          data.speaker
 	        ),
+	        avatar && _react2.default.createElement("img", { className: _styles2.default.avatar, src: avatar }),
 	        category ? _react2.default.createElement(
 	          "div",
 	          { className: "Session-category" },
@@ -31390,7 +31417,7 @@
 	          " - ",
 	          category.tagline
 	        ) : null,
-	        _react2.default.createElement(
+	        data.abstract && _react2.default.createElement(
 	          "div",
 	          { className: "Session-abstract" },
 	          _react2.default.createElement(
