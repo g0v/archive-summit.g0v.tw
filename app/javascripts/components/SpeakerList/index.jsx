@@ -5,12 +5,15 @@ import speakers from "./speakers.json";
 
 class SpeakerList extends Component {
   speaker = (speaker) => {
+    const bio = speaker.bio.replace(/\n/g, '<br/>');
+    const avatar = speaker.avatar ?
+      speaker.avatar.match(/^\./) ? require(speaker.avatar) : speaker.avatar
+                                  : (speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') :
+                                     speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook :
+                                    require('./default.png'));
     return (
       <div className={styles.speaker} key={speaker.name} >
-        <img className={styles.avatar} src={speaker.avatar || (
-            speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') :
-            speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook :
-            require('./default.png'))} />
+        <img className={styles.avatar} src={avatar} />
           <div className={styles.name}>{speaker.name}</div>
             { speaker.title &&
               <div className={styles.title}>{speaker.title}</div>
@@ -18,9 +21,10 @@ class SpeakerList extends Component {
             { speaker.organization &&
               <div className={styles.organization}>{speaker.organization}</div>
             }
-        <p className={styles.bio}>{speaker.bio}</p>
       </div>
     );
+    // Make this into lightbox
+    // <p className={styles.bio} dangerouslySetInnerHTML={{__html: bio}}></p>
   }
 
   sortFunc = (a,b) => {

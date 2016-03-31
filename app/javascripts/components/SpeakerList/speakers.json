@@ -218,7 +218,6 @@
     {
       "avatar": "",
       "name": "王景弘",
-      "featured": true,
       "organization": "普奇科技",
       "title": "資深工程師",
       "bio": "王景弘 經歷：普奇科技資深工程師, 威聯通科技資深產品工程師, JavaScript.tw 技術社團發起人, JSDC 前端技術人年會共同發起人",
@@ -373,6 +372,7 @@
     {
       "avatar": "",
       "name": "ipa",
+      "featured": true,
       "organization": "g0v",
       "title": "",
       "bio": "ipa 瞿筱葳- g0v 沒有人- 文字/影像工作者- 反黑箱服貿行動參與者- 憲餅廚房共同發起人 關鍵字：社運、媒體、紀錄片",
