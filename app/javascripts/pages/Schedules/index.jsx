@@ -14,9 +14,9 @@ class Schedules extends Component {
   }
   render() {
     if(this.state.type==='topic') {
-      return <Schedule onSwitch={this.handleSwitch} />
+      return <Schedule onSwitch={this.handleSwitch} {...this.props} />
     } else {
-      return <ScheduleParallel onSwitch={this.handleSwitch} />
+      return <ScheduleParallel onSwitch={this.handleSwitch} {...this.props} />
     }
   }
 };

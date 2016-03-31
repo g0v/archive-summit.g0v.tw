@@ -96,6 +96,18 @@ export default class Schedule extends Component {
     currentSession: {},
     currentSessionTime: null,
   };
+  componentDidMount() {
+    const { hash } = this.props.location;
+    if (hash) {
+      const dataArray = hash.replace('#', '').split('-');
+      const value = schedules[getLocale()][dataArray[0]][dataArray[2]];
+      this.setState({
+        showSession: true,
+        currentSession: value.event,
+        currentSessionTime: value.time
+      })
+    }
+  }
   setSession(value, time) {
     this.setState({
       showSession: true,
