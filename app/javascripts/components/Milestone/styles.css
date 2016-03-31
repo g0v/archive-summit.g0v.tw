@@ -17,6 +17,10 @@
   padding: 10px;
 }
 
+.root article.faded {
+  opacity: 0.3;
+}
+
 .header {
   margin: 29px 0 0 0;
 }

@@ -10,8 +10,8 @@ export default class Milestone extends Component {
       <div className={styles.root}>
         <h2 className={styles.header}>{data.header}</h2>
         <section className={styles.section}>
-          {data.milestones.map(({range, title, url, label}) => (
-            <article className={styles.article} key={title}>
+          {data.milestones.map(({range, title, url, label, faded}) => (
+            <article className={styles.article + ' ' + (faded ? 'faded' : '')} key={title}>
               <div className={styles.title}>
                 <a className={styles.links} href={url} target="_blank">
                   {title}
