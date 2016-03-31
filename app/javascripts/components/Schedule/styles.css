@@ -18,6 +18,16 @@ $appbar-height: 60px;
   transition: opacity .2s;
 }
 
+.avatar {
+  float: right;
+  width: 128px;
+  height: 128px !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  background-color: rgba(254, 220, 117, 0.74);
+}
+
 .backdrop.isShown {
   opacity: 1;
   z-index: 5;

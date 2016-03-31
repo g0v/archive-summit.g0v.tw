@@ -1,6 +1,13 @@
 import React from "react";
 import classNames from "classnames";
 import "./session.css";
+import speakers from '../SpeakerList/speakers.json';
+import { avatarURL } from '../SpeakerList';
+import styles from "./styles.css";
+
+var by_name = {};
+
+speakers['en-US'].forEach((speaker) => by_name[speaker.name] = speaker);
 
 export default React.createClass({
   displayName: "Session",
@@ -11,12 +18,16 @@ export default React.createClass({
     var venue = (data.venue) ? <div className="Session-venue">{data.venue}</div> : "";
     var language = (data.EN) ? <div className="Session-en">EN</div> : "";
 
-    var bio = (data.bio) ? (
+    const speaker = by_name[data.speaker_key || data.speaker];
+    const bio_text = (data.bio || speaker.bio || '').replace(/\n/g, '<br/>');
+
+    var bio = bio_text ? (
       <div className="Session-biography">
           <div className="Session-subTitle">Biography</div>
-          <div dangerouslySetInnerHTML={{__html: data.bio}}></div>
+          <div dangerouslySetInnerHTML={{__html: bio_text}}></div>
       </div>
     ): "";
+    const avatar = speaker ? avatarURL(speaker) : '';
     return (
         <div className="Session">
             <div className="Session-close"
@@ -33,6 +44,7 @@ export default React.createClass({
                 <div className="Session-presenter">
                     {data.speaker}
                 </div>
+                { avatar && <img className={styles.avatar} src={avatar} /> }
 
                 {
                   category ? (
@@ -45,10 +57,11 @@ export default React.createClass({
                   ) : null
                 }
 
-                <div className="Session-abstract">
+                { data.abstract && <div className="Session-abstract">
                     <div className="Session-subTitle">Abstract</div>
                     <div dangerouslySetInnerHTML={{__html: data.abstract}}></div>
-                </div>
+                  </div>
+                }
                 {bio}
             </div>
         </div>

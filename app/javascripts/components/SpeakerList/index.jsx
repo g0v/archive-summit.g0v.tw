@@ -3,14 +3,19 @@ import { getLocale } from "javascripts/locale";
 import styles from "./styles.css";
 import speakers from "./speakers.json";
 
+export function avatarURL(speaker) {
+  return speaker.avatar ?
+    speaker.avatar.match(/^\./) ? require(speaker.avatar) : speaker.avatar
+                                : (speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') :
+                                   speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook :
+                                  require('./default.png'));
+}
+
+
 class SpeakerList extends Component {
   speaker = (speaker) => {
     const bio = speaker.bio.replace(/\n/g, '<br/>');
-    const avatar = speaker.avatar ?
-      speaker.avatar.match(/^\./) ? require(speaker.avatar) : speaker.avatar
-                                  : (speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') :
-                                     speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook :
-                                    require('./default.png'));
+    const avatar = avatarURL(speaker);
     return (
       <div className={styles.speaker} key={speaker.name} >
         <img className={styles.avatar} src={avatar} />
