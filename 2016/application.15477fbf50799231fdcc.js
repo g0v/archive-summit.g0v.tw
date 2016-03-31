@@ -29225,6 +29225,21 @@
 	  }
 
 	  (0, _createClass3.default)(Schedule, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var hash = this.props.location.hash;
+
+	      if (hash) {
+	        var dataArray = hash.replace('#', '').split('-');
+	        var value = _schedules_by_track2.default[(0, _locale.getLocale)()][dataArray[0]][dataArray[2]];
+	        this.setState({
+	          showSession: true,
+	          currentSession: value.event,
+	          currentSessionTime: value.time
+	        });
+	      }
+	    }
+	  }, {
 	    key: 'setSession',
 	    value: function setSession(value, time) {
 	      this.setState({
@@ -33312,6 +33327,10 @@
 	  value: true
 	});
 
+	var _extends2 = __webpack_require__(378);
+
+	var _extends3 = _interopRequireDefault(_extends2);
+
 	var _getPrototypeOf = __webpack_require__(232);
 
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -33371,9 +33390,9 @@
 	    key: "render",
 	    value: function render() {
 	      if (this.state.type === 'topic') {
-	        return _react2.default.createElement(_Schedule2.default, { onSwitch: this.handleSwitch });
+	        return _react2.default.createElement(_Schedule2.default, (0, _extends3.default)({ onSwitch: this.handleSwitch }, this.props));
 	      } else {
-	        return _react2.default.createElement(_Schedule.ScheduleParallel, { onSwitch: this.handleSwitch });
+	        return _react2.default.createElement(_Schedule.ScheduleParallel, (0, _extends3.default)({ onSwitch: this.handleSwitch }, this.props));
 	      }
 	    }
 	  }]);
