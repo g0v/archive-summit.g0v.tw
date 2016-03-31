@@ -21,7 +21,7 @@ class SpeakerList extends Component {
     return (
       <div className={styles.root}>
         <h2 className={styles.header}>講者</h2>
-        <div>{ speakers[getLocale()].map(this.speaker) }</div>
+        <div>{ speakers['en-US'].sort((a,b) => a.name.localeCompare(b.name)).map(this.speaker) }</div>
       </div>
     );
   }

@@ -22,7 +22,10 @@
 }
 
 .avatar {
-  width: 70%;
+  width: 128px;
+  height: 128px !important;
+  object-fit: cover;
+  object-position: center;
   border-radius: 50%;
   background-color: rgba(254, 220, 117, 0.74);
 }
