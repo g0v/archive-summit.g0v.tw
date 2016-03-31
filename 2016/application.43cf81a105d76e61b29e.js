@@ -24920,6 +24920,7 @@
 	exports.locale = locale;
 	exports.setLocale = setLocale;
 	exports.getLocale = getLocale;
+	exports.getString = getString;
 	function locale() {
 	  return window.navigator.userLanguage || window.navigator.language;
 	};
@@ -24930,6 +24931,12 @@
 
 	function getLocale() {
 	  return localStorage.getItem("locale");
+	}
+
+	function getString(object, key) {
+	  var locale = arguments.length <= 2 || arguments[2] === undefined ? getLocale() : arguments[2];
+
+	  return object[key + "_" + locale] || object[key];
 	}
 
 	exports.default = locale;
@@ -25017,7 +25024,7 @@
 
 	var _SpeakerList3 = _interopRequireDefault(_SpeakerList2);
 
-	var _Schedule2 = __webpack_require__(367);
+	var _Schedule2 = __webpack_require__(376);
 
 	var _Schedule3 = _interopRequireDefault(_Schedule2);
 
@@ -26841,7 +26848,7 @@
 			"transport": "Transport",
 			"staff": "Staff",
 			"date": "14-15 May, 2016",
-			"location": "Academia Sinica, Taipei"
+			"location": "Taipei"
 		},
 		"zh-TW": {
 			"home": "首頁",
@@ -28182,6 +28189,10 @@
 	  value: true
 	});
 
+	var _slicedToArray2 = __webpack_require__(360);
+
+	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
+
 	var _getPrototypeOf = __webpack_require__(232);
 
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -28210,18 +28221,18 @@
 
 	var _locale = __webpack_require__(228);
 
-	var _styles = __webpack_require__(360);
+	var _styles = __webpack_require__(369);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _speakers = __webpack_require__(362);
+	var _speakers = __webpack_require__(371);
 
 	var _speakers2 = _interopRequireDefault(_speakers);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function avatarURL(speaker) {
-	  return speaker.avatar ? speaker.avatar.match(/^\./) ? __webpack_require__(363)(speaker.avatar) : speaker.avatar : speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') : speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook : __webpack_require__(364);
+	  return speaker.avatar ? speaker.avatar.match(/^\./) ? __webpack_require__(372)(speaker.avatar) : speaker.avatar : speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') : speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook : __webpack_require__(373);
 	}
 
 	var SpeakerList = function (_Component) {
@@ -28241,6 +28252,13 @@
 	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_Object$getPrototypeO = (0, _getPrototypeOf2.default)(SpeakerList)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.speaker = function (speaker) {
 	      var bio = speaker.bio.replace(/\n/g, '<br/>');
 	      var avatar = avatarURL(speaker);
+
+	      var _getLocale$split = (0, _locale.getLocale)().split('-');
+
+	      var _getLocale$split2 = (0, _slicedToArray3.default)(_getLocale$split, 1);
+
+	      var locale = _getLocale$split2[0];
+
 	      return _react2.default.createElement(
 	        "div",
 	        { className: _styles2.default.speaker, key: speaker.name },
@@ -28248,17 +28266,17 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: _styles2.default.name },
-	          speaker.name
+	          (0, _locale.getString)(speaker, 'name', locale)
 	        ),
 	        speaker.title && _react2.default.createElement(
 	          "div",
 	          { className: _styles2.default.title },
-	          speaker.title
+	          (0, _locale.getString)(speaker, 'title', locale)
 	        ),
 	        speaker.organization && _react2.default.createElement(
 	          "div",
 	          { className: _styles2.default.organization },
-	          speaker.organization
+	          (0, _locale.getString)(speaker, 'organization', locale)
 	        )
 	      );
 	      // Make this into lightbox
@@ -28305,14 +28323,165 @@
 
 /***/ },
 /* 360 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	exports.__esModule = true;
+
+	var _isIterable2 = __webpack_require__(361);
+
+	var _isIterable3 = _interopRequireDefault(_isIterable2);
+
+	var _getIterator2 = __webpack_require__(365);
+
+	var _getIterator3 = _interopRequireDefault(_getIterator2);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function () {
+	  function sliceIterator(arr, i) {
+	    var _arr = [];
+	    var _n = true;
+	    var _d = false;
+	    var _e = undefined;
+
+	    try {
+	      for (var _i = (0, _getIterator3.default)(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
+	        _arr.push(_s.value);
+
+	        if (i && _arr.length === i) break;
+	      }
+	    } catch (err) {
+	      _d = true;
+	      _e = err;
+	    } finally {
+	      try {
+	        if (!_n && _i["return"]) _i["return"]();
+	      } finally {
+	        if (_d) throw _e;
+	      }
+	    }
+
+	    return _arr;
+	  }
+
+	  return function (arr, i) {
+	    if (Array.isArray(arr)) {
+	      return arr;
+	    } else if ((0, _isIterable3.default)(Object(arr))) {
+	      return sliceIterator(arr, i);
+	    } else {
+	      throw new TypeError("Invalid attempt to destructure non-iterable instance");
+	    }
+	  };
+	}();
+
+/***/ },
+/* 361 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(362), __esModule: true };
+
+/***/ },
+/* 362 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(289);
+	__webpack_require__(267);
+	module.exports = __webpack_require__(363);
+
+/***/ },
+/* 363 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var classof   = __webpack_require__(364)
+	  , ITERATOR  = __webpack_require__(288)('iterator')
+	  , Iterators = __webpack_require__(273);
+	module.exports = __webpack_require__(245).isIterable = function(it){
+	  var O = Object(it);
+	  return O[ITERATOR] !== undefined
+	    || '@@iterator' in O
+	    || Iterators.hasOwnProperty(classof(O));
+	};
+
+/***/ },
+/* 364 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// getting tag from 19.1.3.6 Object.prototype.toString()
+	var cof = __webpack_require__(281)
+	  , TAG = __webpack_require__(288)('toStringTag')
+	  // ES3 wrong here
+	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
+
+	// fallback for IE11 Script Access Denied error
+	var tryGet = function(it, key){
+	  try {
+	    return it[key];
+	  } catch(e){ /* empty */ }
+	};
+
+	module.exports = function(it){
+	  var O, T, B;
+	  return it === undefined ? 'Undefined' : it === null ? 'Null'
+	    // @@toStringTag case
+	    : typeof (T = tryGet(O = Object(it), TAG)) == 'string' ? T
+	    // builtinTag case
+	    : ARG ? cof(O)
+	    // ES3 arguments fallback
+	    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
+	};
+
+/***/ },
+/* 365 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(366), __esModule: true };
+
+/***/ },
+/* 366 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(289);
+	__webpack_require__(267);
+	module.exports = __webpack_require__(367);
+
+/***/ },
+/* 367 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var anObject = __webpack_require__(250)
+	  , get      = __webpack_require__(368);
+	module.exports = __webpack_require__(245).getIterator = function(it){
+	  var iterFn = get(it);
+	  if(typeof iterFn != 'function')throw TypeError(it + ' is not iterable!');
+	  return anObject(iterFn.call(it));
+	};
+
+/***/ },
+/* 368 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var classof   = __webpack_require__(364)
+	  , ITERATOR  = __webpack_require__(288)('iterator')
+	  , Iterators = __webpack_require__(273);
+	module.exports = __webpack_require__(245).getIteratorMethod = function(it){
+	  if(it != undefined)return it[ITERATOR]
+	    || it['@@iterator']
+	    || Iterators[classof(it)];
+	};
+
+/***/ },
+/* 369 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__OtegJ","header":"styles-header__egdFO","speaker":"styles-speaker__1cmN-","avatar":"styles-avatar__2EMHu","name":"styles-name__2M6hH","title":"styles-title__1ZJ4Z","bio":"styles-bio__1pDL_"};
 
 /***/ },
-/* 361 */,
-/* 362 */
+/* 370 */,
+/* 371 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -28368,9 +28537,9 @@
 				"avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg",
 				"name": "Felipe Heusser",
 				"featured": true,
-				"organization": "founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv, Fellow at the Harvard Berkman Center for Internet and Society",
-				"title": "",
-				"bio": "Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.  Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.",
+				"organization": "Harvard Berkman Center",
+				"title": "Fellow",
+				"bio": "founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv\nFelipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.  Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.",
 				"nation": "Chile",
 				"twitter": "@fheusser"
 			},
@@ -28513,8 +28682,10 @@
 			{
 				"avatar": "",
 				"name": "羅佩琪",
+				"name_en": "Peggy Lo",
 				"featured": true,
 				"organization": "沒有人",
+				"organization_en": "Nobody",
 				"title": "",
 				"bio": "病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。",
 				"nation": "Taiwan",
@@ -28526,6 +28697,8 @@
 				"name": "Saul Peng",
 				"featured": true,
 				"organization": "台北市政府資訊局",
+				"title_en": "Senior Officer",
+				"organization_en": "Department of IT, Taipei City Government",
 				"title": "專門委員",
 				"bio": "彭盛韶 經歷：柯文哲辦公室政策部研究員,臺北市資訊局專門委員",
 				"nation": "Taiwan",
@@ -28663,7 +28836,9 @@
 				"avatar": "",
 				"name": "劉宇倫",
 				"organization": "疾病管制署",
+				"organization_en": "Taiwan CDC",
 				"title": "醫師",
+				"title_en": "MD",
 				"bio": "現任職疾病管制署疫情中心，曾擔任急診主治醫師，並於奧地利維也納接受歐盟EPIET流行病學訓練，興趣在運用資訊技術於防疫資訊的收集、分析及呈現",
 				"nation": "Taiwan",
 				"twitter": ""
@@ -28708,7 +28883,8 @@
 			{
 				"avatar": "",
 				"name": "蔡淑芳",
-				"organization": "開拓文教基金會 The Frontier Foundation",
+				"organization": "開拓文教基金會",
+				"organization_en": "The Frontier Foundation",
 				"title": "",
 				"bio": "在開拓文教基金會當小工頭。透過各種連結、與許多不同的夥伴協力，希望縮短數位落差，增加非營利組織與資源相對匱乏的人和地方，善用資訊科技，對內提昇工作效能，對外增加發聲、串連與倡議改變的力量。",
 				"nation": "Taiwan",
@@ -28756,18 +28932,18 @@
 	};
 
 /***/ },
-/* 363 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./default.png": 364,
-		"./heusser.jpg": 365,
+		"./default.png": 373,
+		"./heusser.jpg": 374,
 		"./index": 359,
 		"./index.jsx": 359,
-		"./shigeomi.jpg": 366,
-		"./speakers.json": 362,
-		"./styles": 360,
-		"./styles.css": 360
+		"./shigeomi.jpg": 375,
+		"./speakers.json": 371,
+		"./styles": 369,
+		"./styles.css": 369
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -28780,29 +28956,29 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 363;
+	webpackContext.id = 372;
 
 
 /***/ },
-/* 364 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "6daeb1bbe5b62d841cfc4d5a31c7471a.png";
 
 /***/ },
-/* 365 */
+/* 374 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/jpeg;base64,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"
 
 /***/ },
-/* 366 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "0a12a159009b259993769f7e3e8096da.jpg";
 
 /***/ },
-/* 367 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28812,7 +28988,7 @@
 	});
 	exports.ScheduleParallel = undefined;
 
-	var _extends2 = __webpack_require__(368);
+	var _extends2 = __webpack_require__(377);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
@@ -28836,7 +29012,7 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _slicedToArray2 = __webpack_require__(373);
+	var _slicedToArray2 = __webpack_require__(360);
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
@@ -29217,14 +29393,14 @@
 	exports.default = Schedule;
 
 /***/ },
-/* 368 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _assign = __webpack_require__(369);
+	var _assign = __webpack_require__(378);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
@@ -29245,29 +29421,29 @@
 	};
 
 /***/ },
-/* 369 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(370), __esModule: true };
+	module.exports = { "default": __webpack_require__(379), __esModule: true };
 
 /***/ },
-/* 370 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(371);
+	__webpack_require__(380);
 	module.exports = __webpack_require__(245).Object.assign;
 
 /***/ },
-/* 371 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(244);
 
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(372)});
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(381)});
 
 /***/ },
-/* 372 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29305,157 +29481,6 @@
 	} : $assign;
 
 /***/ },
-/* 373 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	exports.__esModule = true;
-
-	var _isIterable2 = __webpack_require__(374);
-
-	var _isIterable3 = _interopRequireDefault(_isIterable2);
-
-	var _getIterator2 = __webpack_require__(378);
-
-	var _getIterator3 = _interopRequireDefault(_getIterator2);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = function () {
-	  function sliceIterator(arr, i) {
-	    var _arr = [];
-	    var _n = true;
-	    var _d = false;
-	    var _e = undefined;
-
-	    try {
-	      for (var _i = (0, _getIterator3.default)(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
-	        _arr.push(_s.value);
-
-	        if (i && _arr.length === i) break;
-	      }
-	    } catch (err) {
-	      _d = true;
-	      _e = err;
-	    } finally {
-	      try {
-	        if (!_n && _i["return"]) _i["return"]();
-	      } finally {
-	        if (_d) throw _e;
-	      }
-	    }
-
-	    return _arr;
-	  }
-
-	  return function (arr, i) {
-	    if (Array.isArray(arr)) {
-	      return arr;
-	    } else if ((0, _isIterable3.default)(Object(arr))) {
-	      return sliceIterator(arr, i);
-	    } else {
-	      throw new TypeError("Invalid attempt to destructure non-iterable instance");
-	    }
-	  };
-	}();
-
-/***/ },
-/* 374 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(375), __esModule: true };
-
-/***/ },
-/* 375 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(289);
-	__webpack_require__(267);
-	module.exports = __webpack_require__(376);
-
-/***/ },
-/* 376 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var classof   = __webpack_require__(377)
-	  , ITERATOR  = __webpack_require__(288)('iterator')
-	  , Iterators = __webpack_require__(273);
-	module.exports = __webpack_require__(245).isIterable = function(it){
-	  var O = Object(it);
-	  return O[ITERATOR] !== undefined
-	    || '@@iterator' in O
-	    || Iterators.hasOwnProperty(classof(O));
-	};
-
-/***/ },
-/* 377 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// getting tag from 19.1.3.6 Object.prototype.toString()
-	var cof = __webpack_require__(281)
-	  , TAG = __webpack_require__(288)('toStringTag')
-	  // ES3 wrong here
-	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
-
-	// fallback for IE11 Script Access Denied error
-	var tryGet = function(it, key){
-	  try {
-	    return it[key];
-	  } catch(e){ /* empty */ }
-	};
-
-	module.exports = function(it){
-	  var O, T, B;
-	  return it === undefined ? 'Undefined' : it === null ? 'Null'
-	    // @@toStringTag case
-	    : typeof (T = tryGet(O = Object(it), TAG)) == 'string' ? T
-	    // builtinTag case
-	    : ARG ? cof(O)
-	    // ES3 arguments fallback
-	    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
-	};
-
-/***/ },
-/* 378 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(379), __esModule: true };
-
-/***/ },
-/* 379 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(289);
-	__webpack_require__(267);
-	module.exports = __webpack_require__(380);
-
-/***/ },
-/* 380 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var anObject = __webpack_require__(250)
-	  , get      = __webpack_require__(381);
-	module.exports = __webpack_require__(245).getIterator = function(it){
-	  var iterFn = get(it);
-	  if(typeof iterFn != 'function')throw TypeError(it + ' is not iterable!');
-	  return anObject(iterFn.call(it));
-	};
-
-/***/ },
-/* 381 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var classof   = __webpack_require__(377)
-	  , ITERATOR  = __webpack_require__(288)('iterator')
-	  , Iterators = __webpack_require__(273);
-	module.exports = __webpack_require__(245).getIteratorMethod = function(it){
-	  if(it != undefined)return it[ITERATOR]
-	    || it['@@iterator']
-	    || Iterators[classof(it)];
-	};
-
-/***/ },
 /* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -29465,19 +29490,19 @@
 	  value: true
 	});
 
-	var _getIterator2 = __webpack_require__(378);
+	var _getIterator2 = __webpack_require__(365);
 
 	var _getIterator3 = _interopRequireDefault(_getIterator2);
 
-	var _slicedToArray2 = __webpack_require__(373);
+	var _slicedToArray2 = __webpack_require__(360);
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-	var _assign = __webpack_require__(369);
+	var _assign = __webpack_require__(378);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
-	var _extends2 = __webpack_require__(368);
+	var _extends2 = __webpack_require__(377);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
@@ -31321,7 +31346,7 @@
 
 	__webpack_require__(392);
 
-	var _speakers = __webpack_require__(362);
+	var _speakers = __webpack_require__(371);
 
 	var _speakers2 = _interopRequireDefault(_speakers);
 
@@ -33252,7 +33277,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Schedule = __webpack_require__(367);
+	var _Schedule = __webpack_require__(376);
 
 	var _Schedule2 = _interopRequireDefault(_Schedule);
 
