@@ -990,13 +990,21 @@ body {
 }
 
 .styles-avatar__2EMHu {
-  width: 70%;
+  width: 128px;
+  height: 128px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 50%;
   background-color: rgba(254, 220, 117, 0.74);
 }
 
 .styles-name__2M6hH {
   font-weight: bold;
+}
+
+.styles-title__1ZJ4Z {
 }
 
 .styles-bio__1pDL_ {

@@ -68,7 +68,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _reactGa = __webpack_require__(408);
+	var _reactGa = __webpack_require__(405);
 
 	var _reactGa2 = _interopRequireDefault(_reactGa);
 
@@ -24952,7 +24952,7 @@
 
 	var _components = __webpack_require__(230);
 
-	var _pages = __webpack_require__(399);
+	var _pages = __webpack_require__(396);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25017,11 +25017,11 @@
 
 	var _SpeakerList3 = _interopRequireDefault(_SpeakerList2);
 
-	var _Schedule2 = __webpack_require__(366);
+	var _Schedule2 = __webpack_require__(363);
 
 	var _Schedule3 = _interopRequireDefault(_Schedule2);
 
-	var _SponsorsSummary2 = __webpack_require__(395);
+	var _SponsorsSummary2 = __webpack_require__(392);
 
 	var _SponsorsSummary3 = _interopRequireDefault(_SponsorsSummary2);
 
@@ -28214,11 +28214,21 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: _styles2.default.speaker, key: speaker.name },
-	        _react2.default.createElement("img", { className: _styles2.default.avatar, src: __webpack_require__(362)("./" + speaker.image) }),
+	        _react2.default.createElement("img", { className: _styles2.default.avatar, src: speaker.avatar || (speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') : speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook : __webpack_require__(362)) }),
 	        _react2.default.createElement(
 	          "div",
 	          { className: _styles2.default.name },
 	          speaker.name
+	        ),
+	        speaker.title && _react2.default.createElement(
+	          "div",
+	          { className: _styles2.default.title },
+	          speaker.title
+	        ),
+	        speaker.organization && _react2.default.createElement(
+	          "div",
+	          { className: _styles2.default.organization },
+	          speaker.organization
 	        ),
 	        _react2.default.createElement(
 	          "p",
@@ -28226,6 +28236,8 @@
 	          speaker.bio
 	        )
 	      );
+	    }, _this.sortFunc = function (a, b) {
+	      return a.name.localeCompare(b.name);
 	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
 	  }
 
@@ -28243,7 +28255,16 @@
 	        _react2.default.createElement(
 	          "div",
 	          null,
-	          _speakers2.default[(0, _locale.getLocale)()].map(this.speaker)
+	          _speakers2.default['en-US'].filter(function (s) {
+	            return s.featured;
+	          }).sort(this.sortFunc).map(this.speaker)
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _speakers2.default['en-US'].filter(function (s) {
+	            return !s.featured;
+	          }).sort(this.sortFunc).map(this.speaker)
 	        )
 	      );
 	    }
@@ -28260,7 +28281,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"root":"styles-root__OtegJ","header":"styles-header__egdFO","speaker":"styles-speaker__1cmN-","avatar":"styles-avatar__2EMHu","name":"styles-name__2M6hH","bio":"styles-bio__1pDL_"};
+	module.exports = {"root":"styles-root__OtegJ","header":"styles-header__egdFO","speaker":"styles-speaker__1cmN-","avatar":"styles-avatar__2EMHu","name":"styles-name__2M6hH","title":"styles-title__1ZJ4Z","bio":"styles-bio__1pDL_"};
 
 /***/ },
 /* 360 */,
@@ -28270,89 +28291,438 @@
 	module.exports = {
 		"en-US": [
 			{
-				"image": "heusser.jpg",
-				"name": "Felipe Heusser",
-				"bio": "",
-				"nation": "",
-				"twitter": ""
-			},
-			{
-				"image": "shigeomi.jpg",
+				"avatar": "",
 				"name": "Shigeomi Shibata",
+				"organization": "Code for Japan, Code for Ibaraki",
+				"title": "",
 				"bio": "",
-				"nation": "",
-				"twitter": ""
+				"nation": "Japan",
+				"twitter": "@shigeomix"
 			},
 			{
-				"image": "default.png",
+				"avatar": "",
 				"name": "Jen Bramley",
+				"organization": "mySociety",
+				"title": "",
 				"bio": "",
-				"nation": "",
+				"nation": "UK",
 				"twitter": ""
 			},
 			{
-				"image": "default.png",
+				"avatar": "http://juliakloiber.com/blog/wp-content/uploads/julia_klein1.jpg",
 				"name": "Julia Kloiber",
-				"bio": "",
-				"nation": "",
-				"twitter": ""
+				"featured": true,
+				"organization": "Open Knowledge Foundation Germany /Code for All",
+				"title": "",
+				"bio": "Julia is an activist who’s passionate about growing open communities. Since 2013, she has put her background in design and media studies to use as a project lead for the Open Knowledge Foundation Germany and as a consultant for The Engine Room.  Julia has been running multiple community projects that foster the reuse of open data, such as Germany’s first Civic Tech Incubator and a series of hackathons. Code for Germany, her latest project, is a civic tech community with 25 labs and more than 350 members.  Julia leads open data projects in close collaboration with companies and governments alike. In 2015 she co-organized the international Code for All Summit in New York, a two-day conference that brought together leading experts and practitioners in civic tech. In 2016 she will be kicking off a prototype fund for civic tech projects in collaboration with the Federal Ministry of Education and Research of Germany.",
+				"nation": "Germany",
+				"twitter": "@j_kloiber"
 			},
 			{
-				"image": "default.png",
+				"avatar": "",
 				"name": "Colin Megill",
-				"bio": "",
-				"nation": "",
+				"featured": true,
+				"organization": "pol.is",
+				"title": "",
+				"bio": "Colin is founder of Seattle based startup http://pol.is, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.  He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.  Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.",
+				"nation": "US",
+				"twitter": "@colinmegill"
+			},
+			{
+				"avatar": "",
+				"name": "JK Suh",
+				"organization": "WAGL",
+				"title": "",
+				"bio": "I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.",
+				"nation": "Korea",
 				"twitter": ""
 			},
 			{
-				"image": "default.png",
-				"name": "JK Suh",
-				"bio": "",
-				"nation": "",
-				"twitter": ""
-			}
-		],
-		"zh-TW": [
-			{
-				"image": "heusser.jpg",
+				"avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg",
 				"name": "Felipe Heusser",
-				"bio": "",
-				"nation": "",
+				"featured": true,
+				"organization": "founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv, Fellow at the Harvard Berkman Center for Internet and Society",
+				"title": "",
+				"bio": "Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.  Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.",
+				"nation": "Chile",
+				"twitter": "@fheusser"
+			},
+			{
+				"avatar": "http://1.gravatar.com/avatar/60f641dfbb4215f1f6d6c059eebf1848?size=400",
+				"name": "James Mckinney",
+				"organization": "Various",
+				"title": "",
+				"bio": "James McKinney regularly contributes to civil society initiatives relating to government, legislative and corporate transparency. He is currently focusing on Popolo (a set of legislative data specifications, used by parliamentary monitoring organizations and members of Poplus.org) and on Influence Mapping (a group of organizations that draw the networks of relations between politically exposed people and organizations). James is especially interested in how data standards can facilitate cooperation between organizations and individuals.James previously founded Open North, a Canadian nonprofit that creates websites to promote government transparency and public participation. He is co-lead of the Open Government Partnershipâ€™s Open Data Working Groupâ€™s Standards Stream. He was a member of the Open Contract Data Standard core team and of the W3C Government Linked Data Working Group. He has presented on open government and open data, most recently at the International Open Data Conference, Canadian Open Data Summit, and Spaghetti Open Data.",
+				"nation": "Canada",
+				"twitter": "@mckinneyjames"
+			},
+			{
+				"avatar": "",
+				"name": "Miguel Arana Catania",
+				"featured": true,
+				"organization": "Madrid City Council",
+				"title": "Director of the Madrid city council participation project",
+				"bio": "Miguel Arana is the Director of the Madrid city council participation project. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence http://decide.madrid.es Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A CoruÃ±a among others. He has been actively involved in the 15M movement in Spain since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries. Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.",
+				"nation": "Spain",
 				"twitter": ""
 			},
 			{
-				"image": "shigeomi.jpg",
-				"name": "Shigeomi Shibata",
-				"bio": "",
-				"nation": "",
+				"avatar": "https://pbs.twimg.com/profile_images/609112331440812034/UEkPbmP3.jpg",
+				"name": "Yago Bermejo Abati",
+				"organization": "LaboDemo",
+				"title": "",
+				"bio": "Yago Bermejo Abati I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur. Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties… After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating. Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.",
+				"nation": "Spain",
 				"twitter": ""
 			},
 			{
-				"image": "default.png",
-				"name": "Jen Bramley",
-				"bio": "",
-				"nation": "",
+				"avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/12322404_10203603459566263_3744012269511690610_o.jpg",
+				"name": "Rajib Timalsina",
+				"organization": "GalliGalli Not-For-Profit (www.galligalli.org)",
+				"title": "Advisor",
+				"bio": "Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at (www.galligalli.org). Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID. Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding. In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.",
+				"nation": "Nepal",
 				"twitter": ""
 			},
 			{
-				"image": "default.png",
-				"name": "Julia Kloiber",
-				"bio": "",
-				"nation": "",
+				"avatar": "http://www.transparency.lt/wp-content/uploads/2015/09/SM_a.jpg",
+				"name": "Sergejus Muravjovas",
+				"organization": "Transparency International Lithuania",
+				"title": "Executive Director",
+				"bio": "I am a social doer involved in creating change. I spend most of my time helping make transparency an easy-to-follow way of life for people around me. I do so by challenging the known, tapping into the under-researched and bridging the gaps between different groups of researchers and activists alike. Besides heading TI Lithuania and overseeing the development of TransparencySchool.org for the past seven years, I have been involved in a number of undertakings that in many ways complement each other. I teach Corporate Governance and Anti-Corruption at the International School of Management in Vilnius. I am also a board member of the Lithuanian responsible business initiative \"Clear Wave\" and an advisory council member of the Duke of Edinburgh's International Award Lithuania and the Žinių radijas. I have just joined supervisory boards of two healthcare establishments in Vilnius - the Central Policlinics of Vilnius and the National Vilnius University Hospital. I have also served as a local correspondent for Lithuania for the EU Commission Anti-Corruption report. As for other experiences under my sleeve, I was a member of the International Board of Directors of the global TI movement from 2009 to 2015 and a member of the Selection Commission of Candidates to the Judicial Office.",
+				"nation": "Vilnius, Lithuania",
+				"twitter": "@SMuravjovas"
+			},
+			{
+				"avatar": "https://avatars2.githubusercontent.com/u/643918?v=3&s=460",
+				"name": "Nicholas Doiron",
+				"organization": "The Asia Foundation",
+				"title": "Sr Applications Developer",
+				"bio": "Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.",
+				"nation": "US",
+				"twitter": "@mapmeld"
+			},
+			{
+				"avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAATAAAAAJGUwMTU0N2RiLWVkMTAtNDUzYS04OGNhLTEyMDQ1ODYzZWZlYw.jpg",
+				"name": "Katarzyna Mikołajczyk",
+				"organization": "ePF Foundation",
+				"title": "Open Cities Coordinator",
+				"bio": "Katarzyna Mikołajczyk, Open Cities Program Coordinator in Poland. I use my work experience to open up cities in Poland. I want to increase transparency of the public administration, the growth of startups based on public data and increase the participation of informed citizens. Just this :) I do this while I work for ePF Foundation, an NGO which mission is to develop democracy, open and transparent authorities and civic engagement through new technologies. I’m coordinating Open Cities Program which is dedicated to local governments and helps them to publish public information and engage people to understand open data. I’m also a leader active in local community in city of Lodz for over 7 years. I managed civic engagement campaigns, educational projects, social consultations and advocacy work with the city authorities. I was always a passionate of open data and using them to plan for people. But only with people.",
+				"nation": "Poland",
+				"twitter": "@kasia_lodz"
+			},
+			{
+				"avatar": "https://s.gravatar.com/avatar/6b45dcc2487c0df9f15ce69cb5a8fce4?s=80",
+				"name": "Nanang Syaifudin",
+				"organization": "iLab",
+				"title": "Director",
+				"bio": "Nanang Syaifudin is a member of Wikipedia Indonesia period iLab 2013. He is the founder and currently serves as the Executive Director iLab, a nonprofit organization engaged in the development of information technology for social change. Nanang helped in terms of technical and training projects Cipta Media Bersama First, open grant projects for improvement of media with Ford Foundation, Wikimedia Indonesia, ICT Watch and the Alliance of Independent Journalists. Nanang had previously helped Malaysian activists with community Bersih 2.0 and Fitness Komas to develop a system of monitoring the elections with the project name Jom Monitor, Nana also create a system for the people of Pattani in southern Thailand with institutions INSouthMedia for documentation of human rights violations based on the map with the project name WARTANI, then he made Encyclopedia Corruption Indonesia is Korupedia portal to document the Corruptor figures in Indonesia. Nanang also been a Project Manager at the Foundation AirPutih for capacity-building projects and alternative technologies in the area - particularly remote areas of Papua, on alternative technologies and the use of citizen media by using SMS cooperate with AJI Jayapura",
+				"nation": "Indonesia",
+				"twitter": "@nanangsyaifudin"
+			},
+			{
+				"avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12049543_10155972979335577_7465819731254710195_n.jpg?oh=cd16d49425eaa194e2d95693ace92f7d&oe=578E39EF",
+				"name": "Charlotte Richard",
+				"organization": "Voxe.org",
+				"title": "co-founder",
+				"bio": "Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).",
+				"nation": "France",
+				"twitter": "@charlottrichard "
+			},
+			{
+				"avatar": "",
+				"name": "Hoony Jang",
+				"organization": "Creative Commons Korea",
+				"title": "Civic Hacker",
+				"bio": "Civic Hacker at Creative Commons Korea project manager of Codenamu, organizer of Code for Seoul, github: @hoony",
+				"nation": "Korea",
+				"twitter": "@thechunsik"
+			},
+			{
+				"avatar": "",
+				"name": "Venus Lui",
+				"organization": "Wikimedia Hong Kong",
+				"title": "Project Manager",
+				"bio": "Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong. In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.",
+				"nation": "Hong Kong",
 				"twitter": ""
 			},
 			{
-				"image": "default.png",
-				"name": "Colin Megill",
-				"bio": "",
-				"nation": "",
+				"avatar": "http://lizbarry.net/photo.jpg",
+				"name": "Liz Barry",
+				"organization": "Public Lab, TreeKIT, Columbia University GSAPP",
+				"title": "",
+				"bio": "Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.",
+				"nation": "US",
+				"twitter": "@lizbarry"
+			},
+			{
+				"avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAN5AAAAJGRlMmJhYmQ3LTY0ZjktNGY0NS04MzM0LTliZmJmYzNjNWM2Mw.jpg",
+				"name": "Yantisa Akhadi",
+				"organization": "Humanitarian OpenStreetMap Team",
+				"title": "Project Manager",
+				"bio": "Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.",
+				"nation": "Indonesia",
+				"twitter": "@iyan31"
+			},
+			{
+				"avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12345570_10205303052243109_8354385327649308541_n.jpg?oh=e1295af517884e277fe857b72e78e593&oe=577D71FC",
+				"name": "Freyja van den Boom",
+				"organization": "Open Knowledge International",
+				"title": "Researcher FutureTDM",
+				"bio": "Freyja van den Boom is an artist/researcher on law and technology. Before joining Open Knowledge to work on the FutureTDM project she worked as a trademark attorney, lecturer on law and ethics and as a researcher at Leuven University on European projects about Open Access, Privacy and Data Protection and Copyright. She has a Master in Law (LLM) from Tilburg University, studied Arts and philosophy and is currently doing a second master in Sociology at Lund University. Her research interests include disruptive digital developments such as the self driving car, 3D printing and artificial intelligence.",
+				"nation": "UK",
 				"twitter": ""
 			},
 			{
-				"image": "default.png",
-				"name": "JK Suh",
-				"bio": "",
-				"nation": "",
+				"avatar": "https://www.gravatar.com/avatar/c767419261bf0c4ce5587ca20307928e?s=200",
+				"name": "Henare Degan",
+				"organization": "OpenAustralia Foundation",
+				"title": "Civic & democracy hacker",
+				"bio": "Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language. He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours. When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.",
+				"nation": "Australia",
+				"twitter": "@henaredegan"
+			},
+			{
+				"avatar": "",
+				"name": "羅佩琪",
+				"featured": true,
+				"organization": "沒有人",
+				"title": "",
+				"bio": "病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。",
+				"nation": "Taiwan",
+				"facebook": "peichi.lo.3",
+				"twitter": ""
+			},
+			{
+				"avatar": "",
+				"name": "Saul Peng",
+				"featured": true,
+				"organization": "台北市政府資訊局",
+				"title": "專門委員",
+				"bio": "彭盛韶 經歷：柯文哲辦公室政策部研究員,臺北市資訊局專門委員",
+				"nation": "Taiwan",
+				"facebook": "saul.peng",
+				"twitter": ""
+			},
+			{
+				"avatar": "",
+				"name": "王景弘",
+				"featured": true,
+				"organization": "普奇科技",
+				"title": "資深工程師",
+				"bio": "王景弘 經歷：普奇科技資深工程師, 威聯通科技資深產品工程師, JavaScript.tw 技術社團發起人, JSDC 前端技術人年會共同發起人",
+				"nation": "Taiwan",
+				"twitter": "@tonyq_tw"
+			},
+			{
+				"avatar": "https://scontent-sjc2-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/p320x320/11796293_10153255844110668_2797238177900281661_n.jpg?oh=ac1e9f2912f78c309558c2e23833da28&oe=57628456",
+				"name": "clkao",
+				"organization": "g0v.tw",
+				"title": "",
+				"bio": "clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。",
+				"nation": "Taiwan",
+				"twitter": "@clkao"
+			},
+			{
+				"avatar": "https://scontent-nrt1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/1966086_814346955245326_225589478_o.jpg",
+				"name": "雨蒼",
+				"organization": "民間司法改革基金會",
+				"title": "執行秘書",
+				"bio": "公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。",
+				"nation": "Taiwan",
+				"twitter": "@billy3321"
+			},
+			{
+				"avatar": "https://avatars2.githubusercontent.com/u/4479861",
+				"name": "駱勁成",
+				"organization": "g0v",
+				"title": "",
+				"bio": "立委／議員投票指南",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "https://avatars0.githubusercontent.com/u/4172809",
+				"name": "Jim Horng",
+				"organization": "open source",
+				"title": "軟體工程師",
+				"bio": "在台灣軟體業已有約 10 年經驗，自認角色為工程師、社會議題微參與者、open source微貢獻者",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "https://dsp.im/wp-content/uploads/2014/10/johnson11.jpg",
+				"name": "謝宗震",
+				"organization": "DSP智庫驅動",
+				"title": "資料科學家",
+				"bio": "DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "http://julianchu.net/assets/default_avatar.jpg",
+				"name": "Walkingice",
+				"organization": "g0v",
+				"title": "貓砂礦工",
+				"bio": "網路上常用名稱為 Walkingice (走冰)，自由軟體愛好者，職業為前端軟體工程師。自 2012 年開始參與 g0v 活動，主要貢獻到國會相關的專案。",
+				"nation": "Taiwan",
+				"twitter": "@walkingice"
+			},
+			{
+				"avatar": "",
+				"name": "Kirby Wu",
+				"organization": "g0v.tw",
+				"title": "cofounder",
+				"bio": "infographics.tw 與 g0v.tw 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。",
+				"nation": "Taiwan",
+				"twitter": "@zbryikt"
+			},
+			{
+				"avatar": "",
+				"name": "詹為翔",
+				"organization": "Openstreetmap Taiwan",
+				"title": "",
+				"bio": "台大職業醫學與工業衛生研究所畢業，曾外交役派駐西非聖多美及普林西比執行瘧疾防治計畫，並繪製該國基本圖資，回台後曾在竹科工作，現在在台北某外商任職，目前為Opensatreetmap Taiwan理事會成員。",
+				"nation": "Taiwan",
+				"facebook": "weisiang.jhan",
+				"twitter": ""
+			},
+			{
+				"avatar": "",
+				"name": "Kuo-Yu slayer Chuang",
+				"organization": "GeoThings",
+				"title": "Co-founder/CEO",
+				"bio": "Kuo-Yu Chuang (a.k.a. slayer) has worked on Location-Based Service (LBS) and disaster response with ICT for years. His current focus is the young social enterprise, GeoThings, which based in Taiwan and provides an integrated ICT platform for Communities, NGOs, and Government Agencies on disaster management. He is also working with various international organization such as OGC, GEO, ITU, and actively joined the open communities like Open Street Map (OSM) and Crisis Mappers. With those collaborations, Kuo-Yu really look forward to a greater impact for disaster response with an idea he called “Humanitarian ICT”.",
+				"nation": "Taiwan",
+				"twitter": "@darkensiva"
+			},
+			{
+				"avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/19c/045/3c47699.jpg",
+				"name": "Dongpo Deng",
+				"organization": "OSM TW",
+				"title": "",
+				"bio": "Chairperson, OSM TW Deputy Chairman, Taiwan Open Data Alliance",
+				"nation": "Taiwan",
+				"twitter": "@dongpo"
+			},
+			{
+				"avatar": "http://www.cmlab.csie.ntu.edu.tw/~ked/ked.png",
+				"name": "蘇彥禎",
+				"organization": "Delta research center",
+				"title": "",
+				"bio": "2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University, Taipei, Taiwan, Advisor: Yung-Yu Chuang. 2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan Ocean University, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng. 1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan Ocean University, Keelung, Taiwan.",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "http://vps.pointing.tw/kao/kao-teia.png",
+				"name": "高英勛",
+				"organization": "台灣環境資訊協會",
+				"title": "理事",
+				"bio": "撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。",
+				"nation": "Taiwan",
+				"twitter": "@void_lps"
+			},
+			{
+				"avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/12219437_1073869589291176_7016219417040057906_n.jpg?oh=888e661a35392780280ff628127de98d&oe=5793CE53",
+				"name": "陳坤助",
+				"organization": "KNY Co.",
+				"title": "",
+				"bio": "@KNYChen 陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。現任：KNY Co. 執行長,中華民國 App 跨界交流協會 理事長,台灣開放資料聯盟 副會長 / App組召集人,交通部資料開放諮詢小組 諮詢委員",
+				"nation": "Taiwan",
+				"twitter": "@KNYChen"
+			},
+			{
+				"avatar": "",
+				"name": "劉宇倫",
+				"organization": "疾病管制署",
+				"title": "醫師",
+				"bio": "現任職疾病管制署疫情中心，曾擔任急診主治醫師，並於奧地利維也納接受歐盟EPIET流行病學訓練，興趣在運用資訊技術於防疫資訊的收集、分析及呈現",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "",
+				"name": "董福興",
+				"organization": "WANDERER Digital Publishing Inc.",
+				"title": "",
+				"bio": "W3C Invited Expert, co-chair of Chinese Text Layout Task Force, WANDERER Digital Publishing inc.創辦人, 一堆顧問",
+				"nation": "Taiwan",
+				"twitter": "@bobtung"
+			},
+			{
+				"avatar": "https://lh5.googleusercontent.com/-dHv-XXHP-pc/AAAAAAAAAAI/AAAAAAAAIjU/FjaQQfyWEaA/s64/photo.jpg",
+				"name": "ETBlue",
+				"organization": "g0v",
+				"title": "",
+				"bio": "藍一婷 ETBlue- g0v 動民主專案參與者- 反黑箱服貿行動參與者- 公民憲政動推動聯盟工具人- 開放文化基金會工具人關鍵字：插畫、UI、前端",
+				"nation": "Taiwan",
+				"twitter": "@ETBlue"
+			},
+			{
+				"avatar": "",
+				"name": "ipa",
+				"organization": "g0v",
+				"title": "",
+				"bio": "ipa 瞿筱葳- g0v 沒有人- 文字/影像工作者- 反黑箱服貿行動參與者- 憲餅廚房共同發起人 關鍵字：社運、媒體、紀錄片",
+				"nation": "Taiwan",
+				"twitter": "@ipa"
+			},
+			{
+				"avatar": "",
+				"name": "林誠夏",
+				"organization": "鈞理知識產權事務所",
+				"title": "法制顧問",
+				"bio": "知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡(Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任自由開源軟體法律參考書台灣專章(http://ifosslawbook.org/)的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。",
+				"nation": "Taiwan",
+				"twitter": "@lucien_cc"
+			},
+			{
+				"avatar": "",
+				"name": "蔡淑芳",
+				"organization": "開拓文教基金會 The Frontier Foundation",
+				"title": "",
+				"bio": "在開拓文教基金會當小工頭。透過各種連結、與許多不同的夥伴協力，希望縮短數位落差，增加非營利組織與資源相對匱乏的人和地方，善用資訊科技，對內提昇工作效能，對外增加發聲、串連與倡議改變的力量。",
+				"nation": "Taiwan",
+				"facebook": "shufang.tsai",
+				"twitter": ""
+			},
+			{
+				"avatar": "",
+				"name": "李怡志",
+				"organization": "",
+				"title": "",
+				"bio": "李怡志是一個網路媒體工作者，對資訊視覺化有多年的興趣，目前也是報導者基金會的董事。他非常關心社群與技術如何影響人類的溝通與相互理解。",
+				"nation": "Taiwan",
+				"twitter": "@richy"
+			},
+			{
+				"avatar": "",
+				"name": "唐鳳",
+				"organization": "",
+				"title": "",
+				"bio": "Civic hacker. Grew up among Tiananmen exiles. “Conservative Anarchist.” Consultant @ Apple, OUP and Socialtext.",
+				"nation": "Taiwan",
+				"twitter": "@audreyt"
+			},
+			{
+				"avatar": "",
+				"name": "衷嵐焜(Lan-Kun Chung)",
+				"organization": "奇點無限有限公司(Singularity & Infinity Co., Ltd.",
+				"title": "",
+				"bio": "衷嵐焜是奇點無限有限公司的創辦人，同時也服務於逢甲大學地理資訊系統研究中心，亦擔任經濟部標檢局資訊及通訊國家標準委員會委員。衷嵐焜參與國內與國外災害管理計畫將近廿年，近年專注在國際標準的參與設計，並應用在防救災議題上，以及資料的混搭應用。",
+				"nation": "Taiwan",
+				"facebook": "peter.chung.50",
+				"twitter": ""
+			},
+			{
+				"avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10371359_1078460835501416_7207496057617610261_n.jpg?oh=2a1a5c77f431bd9fe41eb6288f1c546a&oe=578FE8DE",
+				"name": "吳銘軒",
+				"organization": "",
+				"title": "",
+				"bio": "阿端，前綠黨中執委，社運份子，參與多年廢核、性別與人權運動。專長為創意企劃、溝通設計與 php 程式設計。在 g0v 社群提供社運觀點與橫向聯繫。",
+				"nation": "Taiwan",
 				"twitter": ""
 			}
 		]
@@ -28362,50 +28732,10 @@
 /* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var map = {
-		"./default.png": 363,
-		"./heusser.jpg": 364,
-		"./index": 358,
-		"./index.jsx": 358,
-		"./shigeomi.jpg": 365,
-		"./speakers.json": 361,
-		"./styles": 359,
-		"./styles.css": 359
-	};
-	function webpackContext(req) {
-		return __webpack_require__(webpackContextResolve(req));
-	};
-	function webpackContextResolve(req) {
-		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
-	};
-	webpackContext.keys = function webpackContextKeys() {
-		return Object.keys(map);
-	};
-	webpackContext.resolve = webpackContextResolve;
-	module.exports = webpackContext;
-	webpackContext.id = 362;
-
-
-/***/ },
-/* 363 */
-/***/ function(module, exports, __webpack_require__) {
-
 	module.exports = __webpack_require__.p + "6daeb1bbe5b62d841cfc4d5a31c7471a.png";
 
 /***/ },
-/* 364 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/jpeg;base64,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"
-
-/***/ },
-/* 365 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "0a12a159009b259993769f7e3e8096da.jpg";
-
-/***/ },
-/* 366 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28415,7 +28745,7 @@
 	});
 	exports.ScheduleParallel = undefined;
 
-	var _extends2 = __webpack_require__(367);
+	var _extends2 = __webpack_require__(364);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
@@ -28439,11 +28769,11 @@
 
 	var _inherits3 = _interopRequireDefault(_inherits2);
 
-	var _slicedToArray2 = __webpack_require__(372);
+	var _slicedToArray2 = __webpack_require__(369);
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-	var _time = __webpack_require__(381);
+	var _time = __webpack_require__(378);
 
 	Object.defineProperty(exports, 'ScheduleParallel', {
 	  enumerable: true,
@@ -28456,25 +28786,25 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _schedules_by_track = __webpack_require__(394);
+	var _schedules_by_track = __webpack_require__(391);
 
 	var _schedules_by_track2 = _interopRequireDefault(_schedules_by_track);
 
 	var _locale = __webpack_require__(228);
 
-	var _filter = __webpack_require__(386);
+	var _filter = __webpack_require__(383);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
-	var _session = __webpack_require__(389);
+	var _session = __webpack_require__(386);
 
 	var _session2 = _interopRequireDefault(_session);
 
-	var _styles = __webpack_require__(384);
+	var _styles = __webpack_require__(381);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _bind = __webpack_require__(393);
+	var _bind = __webpack_require__(390);
 
 	var _bind2 = _interopRequireDefault(_bind);
 
@@ -28820,14 +29150,14 @@
 	exports.default = Schedule;
 
 /***/ },
-/* 367 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _assign = __webpack_require__(368);
+	var _assign = __webpack_require__(365);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
@@ -28848,29 +29178,29 @@
 	};
 
 /***/ },
-/* 368 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(369), __esModule: true };
+	module.exports = { "default": __webpack_require__(366), __esModule: true };
 
 /***/ },
-/* 369 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(370);
+	__webpack_require__(367);
 	module.exports = __webpack_require__(245).Object.assign;
 
 /***/ },
-/* 370 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(244);
 
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(371)});
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(368)});
 
 /***/ },
-/* 371 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28908,18 +29238,18 @@
 	} : $assign;
 
 /***/ },
-/* 372 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _isIterable2 = __webpack_require__(373);
+	var _isIterable2 = __webpack_require__(370);
 
 	var _isIterable3 = _interopRequireDefault(_isIterable2);
 
-	var _getIterator2 = __webpack_require__(377);
+	var _getIterator2 = __webpack_require__(374);
 
 	var _getIterator3 = _interopRequireDefault(_getIterator2);
 
@@ -28964,24 +29294,24 @@
 	}();
 
 /***/ },
-/* 373 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(374), __esModule: true };
+	module.exports = { "default": __webpack_require__(371), __esModule: true };
 
 /***/ },
-/* 374 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(289);
 	__webpack_require__(267);
-	module.exports = __webpack_require__(375);
+	module.exports = __webpack_require__(372);
 
 /***/ },
-/* 375 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var classof   = __webpack_require__(376)
+	var classof   = __webpack_require__(373)
 	  , ITERATOR  = __webpack_require__(288)('iterator')
 	  , Iterators = __webpack_require__(273);
 	module.exports = __webpack_require__(245).isIterable = function(it){
@@ -28992,7 +29322,7 @@
 	};
 
 /***/ },
-/* 376 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// getting tag from 19.1.3.6 Object.prototype.toString()
@@ -29020,25 +29350,25 @@
 	};
 
 /***/ },
-/* 377 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(378), __esModule: true };
+	module.exports = { "default": __webpack_require__(375), __esModule: true };
 
 /***/ },
-/* 378 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(289);
 	__webpack_require__(267);
-	module.exports = __webpack_require__(379);
+	module.exports = __webpack_require__(376);
 
 /***/ },
-/* 379 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var anObject = __webpack_require__(250)
-	  , get      = __webpack_require__(380);
+	  , get      = __webpack_require__(377);
 	module.exports = __webpack_require__(245).getIterator = function(it){
 	  var iterFn = get(it);
 	  if(typeof iterFn != 'function')throw TypeError(it + ' is not iterable!');
@@ -29046,10 +29376,10 @@
 	};
 
 /***/ },
-/* 380 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var classof   = __webpack_require__(376)
+	var classof   = __webpack_require__(373)
 	  , ITERATOR  = __webpack_require__(288)('iterator')
 	  , Iterators = __webpack_require__(273);
 	module.exports = __webpack_require__(245).getIteratorMethod = function(it){
@@ -29059,7 +29389,7 @@
 	};
 
 /***/ },
-/* 381 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29068,19 +29398,19 @@
 	  value: true
 	});
 
-	var _getIterator2 = __webpack_require__(377);
+	var _getIterator2 = __webpack_require__(374);
 
 	var _getIterator3 = _interopRequireDefault(_getIterator2);
 
-	var _slicedToArray2 = __webpack_require__(372);
+	var _slicedToArray2 = __webpack_require__(369);
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-	var _assign = __webpack_require__(368);
+	var _assign = __webpack_require__(365);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
-	var _extends2 = __webpack_require__(367);
+	var _extends2 = __webpack_require__(364);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
@@ -29112,31 +29442,31 @@
 
 	var _locale = __webpack_require__(228);
 
-	var _schedules = __webpack_require__(382);
+	var _schedules = __webpack_require__(379);
 
 	var _schedules2 = _interopRequireDefault(_schedules);
 
-	var _categories = __webpack_require__(383);
+	var _categories = __webpack_require__(380);
 
 	var _categories2 = _interopRequireDefault(_categories);
 
-	var _styles = __webpack_require__(384);
+	var _styles = __webpack_require__(381);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _filter = __webpack_require__(386);
+	var _filter = __webpack_require__(383);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
-	var _session = __webpack_require__(389);
+	var _session = __webpack_require__(386);
 
 	var _session2 = _interopRequireDefault(_session);
 
-	var _classnames = __webpack_require__(390);
+	var _classnames = __webpack_require__(387);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _bind = __webpack_require__(393);
+	var _bind = __webpack_require__(390);
 
 	var _bind2 = _interopRequireDefault(_bind);
 
@@ -29607,7 +29937,7 @@
 	};
 
 /***/ },
-/* 382 */
+/* 379 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -30674,7 +31004,7 @@
 	};
 
 /***/ },
-/* 383 */
+/* 380 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -30793,15 +31123,15 @@
 	};
 
 /***/ },
-/* 384 */
+/* 381 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__2PG_F","backdrop":"styles-backdrop__222h8","isShown":"styles-isShown__2X0WE","container":"styles-container__3fYMv","mobileScrollLock":"styles-mobileScrollLock__mMH7S"};
 
 /***/ },
-/* 385 */,
-/* 386 */
+/* 382 */,
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30814,7 +31144,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _filter = __webpack_require__(387);
+	var _filter = __webpack_require__(384);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
@@ -30895,15 +31225,15 @@
 	});
 
 /***/ },
-/* 387 */
+/* 384 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"filter":"filter-filter__2Aq-6","filterTitle":"filter-filterTitle__34mGj","filterCategories":"filter-filterCategories__rz7LE","filterCategory":"filter-filterCategory__3S81z","filterCategoryIcon":"filter-filterCategoryIcon__2dYxM","filterActions":"filter-filterActions__1o6da","filterClose":"filter-filterClose__15PBf","filterComplete":"filter-filterComplete__2LotJ","filterClearAll":"filter-filterClearAll__3xsaW","isActive":"filter-isActive__2kS1y"};
 
 /***/ },
-/* 388 */,
-/* 389 */
+/* 385 */,
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30916,11 +31246,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(390);
+	var _classnames = __webpack_require__(387);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	__webpack_require__(391);
+	__webpack_require__(388);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31014,7 +31344,7 @@
 	});
 
 /***/ },
-/* 390 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31068,14 +31398,14 @@
 
 
 /***/ },
-/* 391 */
+/* 388 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 392 */,
-/* 393 */
+/* 389 */,
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31129,7 +31459,7 @@
 
 
 /***/ },
-/* 394 */
+/* 391 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -32473,7 +32803,7 @@
 	};
 
 /***/ },
-/* 395 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32512,11 +32842,11 @@
 
 	var _sponsors2 = _interopRequireDefault(_sponsors);
 
-	var _sponsors_summary = __webpack_require__(396);
+	var _sponsors_summary = __webpack_require__(393);
 
 	var _sponsors_summary2 = _interopRequireDefault(_sponsors_summary);
 
-	var _styles = __webpack_require__(397);
+	var _styles = __webpack_require__(394);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -32604,7 +32934,7 @@
 	exports.default = SponsorsSummary;
 
 /***/ },
-/* 396 */
+/* 393 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -32627,15 +32957,15 @@
 	};
 
 /***/ },
-/* 397 */
+/* 394 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__3VPfm","header":"styles-header__9f_mX","section":"styles-section__3EW5z","sponsor":"styles-sponsor__3-_FS","logo":"styles-logo__3ZWdC","name":"styles-name__3p5Sj"};
 
 /***/ },
-/* 398 */,
-/* 399 */
+/* 395 */,
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32645,23 +32975,23 @@
 	});
 	exports.Transport = exports.Sponsors = exports.Schedules = exports.Speakers = exports.Home = undefined;
 
-	var _Home2 = __webpack_require__(400);
+	var _Home2 = __webpack_require__(397);
 
 	var _Home3 = _interopRequireDefault(_Home2);
 
-	var _Speakers2 = __webpack_require__(401);
+	var _Speakers2 = __webpack_require__(398);
 
 	var _Speakers3 = _interopRequireDefault(_Speakers2);
 
-	var _Schedules2 = __webpack_require__(402);
+	var _Schedules2 = __webpack_require__(399);
 
 	var _Schedules3 = _interopRequireDefault(_Schedules2);
 
-	var _Sponsors2 = __webpack_require__(403);
+	var _Sponsors2 = __webpack_require__(400);
 
 	var _Sponsors3 = _interopRequireDefault(_Sponsors2);
 
-	var _Transport2 = __webpack_require__(404);
+	var _Transport2 = __webpack_require__(401);
 
 	var _Transport3 = _interopRequireDefault(_Transport2);
 
@@ -32674,7 +33004,7 @@
 	exports.Transport = _Transport3.default;
 
 /***/ },
-/* 400 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32738,7 +33068,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 401 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32797,7 +33127,7 @@
 	exports.default = Speakers;
 
 /***/ },
-/* 402 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32830,7 +33160,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Schedule = __webpack_require__(366);
+	var _Schedule = __webpack_require__(363);
 
 	var _Schedule2 = _interopRequireDefault(_Schedule);
 
@@ -32879,7 +33209,7 @@
 	exports.default = Schedules;
 
 /***/ },
-/* 403 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32938,7 +33268,7 @@
 	exports.default = Sponsors;
 
 /***/ },
-/* 404 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32973,11 +33303,11 @@
 
 	var _locale = __webpack_require__(228);
 
-	var _transport = __webpack_require__(405);
+	var _transport = __webpack_require__(402);
 
 	var _transport2 = _interopRequireDefault(_transport);
 
-	var _styles = __webpack_require__(406);
+	var _styles = __webpack_require__(403);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -33029,7 +33359,7 @@
 	exports.default = Transport;
 
 /***/ },
-/* 405 */
+/* 402 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -33096,15 +33426,15 @@
 	};
 
 /***/ },
-/* 406 */
+/* 403 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__1gK3V","section":"styles-section__LrTFv","header":"styles-header__2-OSD","sponsor":"styles-sponsor__KVF2j","logo":"styles-logo__1STPn","name":"styles-name__1b107","desc":"styles-desc__2KfBd","map":"styles-map__209T3"};
 
 /***/ },
-/* 407 */,
-/* 408 */
+/* 404 */,
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -33525,7 +33855,7 @@
 	  }
 	};
 
-	var OutboundLink = __webpack_require__(409);
+	var OutboundLink = __webpack_require__(406);
 	OutboundLink.trackLink = reactGA.outboundLink;
 	reactGA.OutboundLink = OutboundLink;
 
@@ -33533,7 +33863,7 @@
 
 
 /***/ },
-/* 409 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(11);
