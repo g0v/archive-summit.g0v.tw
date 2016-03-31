@@ -1,6 +1,7 @@
 {
   "en-US": {
     "header": "Schedule",
+    "interpretation": "Live interpretation are available for both English and Mandarin sessions.",
     "day1": [
       {
         "time" : "08:30-09:20",
@@ -670,6 +671,7 @@
   },
   "zh-TW": {
     "header": "議程表",
+    "interpretation": "英語與華語議程皆提供即時口譯",
     "day1": [
       {
         "time" : "08:30-09:20",
