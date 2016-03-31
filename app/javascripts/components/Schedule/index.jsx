@@ -97,9 +97,7 @@ export default class Schedule extends Component {
     currentSessionTime: null,
   };
   componentDidMount() {
-    console.log('hello');
     const { hash } = this.props.location;
-    console.log(this.props.location.hash);
     if (hash) {
       const dataArray = hash.replace('#', '').split('-');
       const value = schedules[getLocale()][dataArray[0]][dataArray[2]];
