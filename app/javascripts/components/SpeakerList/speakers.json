@@ -446,9 +446,13 @@
       "avatar": "./simon.png",
       "featured": true,
       "name": "張善政",
+      "name_en": "Simon Chang",
       "organization": "行政院",
+      "organization_en": "Executive Yuan, Taiwan",
       "title": "院長",
-      "bio": "學 歷:\n美國康乃爾大學土木工程博士                                1981\n美國史丹福大學土木工程碩士                                1977\n經 歷:\n科技部部長                                    2014/3/3-2014/12/8\n行政院政務委員                                       2012-2014\n美商 Google公司亞洲硬體營運總監                     2010-2012\n宏碁股份有限公司電子化事業群副總經理                 2000-2010\n行政院國家科學委員會企劃考核處處長                   1998-2000\n行政院國家科學委員會國家高速電腦中心主任             1991-1997\n國立臺灣大學土木工程學系 講師、副教授、教授          1981-1990",
+      "title_en": "Premier",
+      "bio": "學 歷:\n美國康乃爾大學土木工程博士                                1981\n美國史丹福大學土木工程碩士                                1977\n經 歷:\n行政院副院長 2014/12/08-2016/01/30\n科技部部長                                    2014/3/3-2014/12/8\n行政院政務委員                                       2012-2014\n美商 Google公司亞洲硬體營運總監                     2010-2012\n宏碁股份有限公司電子化事業群副總經理                 2000-2010\n行政院國家科學委員會企劃考核處處長                   1998-2000\n行政院國家科學委員會國家高速電腦中心主任             1991-1997\n國立臺灣大學土木工程學系 講師、副教授、教授          1981-1990",
+      "bio_en": "Education:\nPh.D., Civil and Environmental Engineering, Cornell University, USA       1981\nMS, Civil and Environmental Engineering, Stanford University, USA        1977\n\nExperience:\nVice Premier, Executive Yuan                        2014/12/08-2016/01/30\nMinister, Ministry of Science and Technology           2014/03/03-2014/12/08\nMinister without Portfolio, Executive Yuan                          2012-2014\nRegional Director of Hardware Operations in Asia, Google Inc.       2010-2012\nVice President, e-Enabling Services Business Group, Acer Inc.      2000-2010\nDirector, Department of Planning and Evaluation,                   1998-2000\nNational Science Council, Executive Yuan                                    \nDirector, National Center for High-performance Computing           1991-1997\nLecturer, Associate Professor and Professor,                       1981-1990\nDepartment of Civil Engineering, NTU",
       "nation": "Taiwan",
       "twitter": ""
     }

@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import "./session.css";
 import speakers from '../SpeakerList/speakers.json';
+import { getLocale, getString } from "javascripts/locale";
 import { avatarURL } from '../SpeakerList';
 import styles from "./styles.css";
 
@@ -17,10 +18,13 @@ export default React.createClass({
     var category = categories.find(cat => cat.id === data.category)
     var venue = (data.venue) ? <div className="Session-venue">{data.venue}</div> : "";
     var language = (data.EN) ? <div className="Session-en">EN</div> : "";
+    const [locale] = getLocale().split('-');
 
     const speaker = by_name[data.speaker_key || data.speaker];
-    const bio_text = (data.bio || (speaker && speaker.bio) || '').replace(/\n/g, '<br/>');
-
+    const bio_text = ((speaker && getString(speaker, 'bio', locale)) || data.bio || '').replace(/\n/g, '<br/>');
+    const speaker_title = speaker && getString(speaker, 'title', locale);
+    const speaker_orgnization = speaker && getString(speaker, 'organization', locale);
+    const speaker_name = speaker && getString(speaker, 'name', locale);
     var bio = bio_text ? (
       <div className="Session-biography">
           <div className="Session-subTitle">Biography</div>
@@ -42,7 +46,13 @@ export default React.createClass({
                   {data.title}
                 </div>
                 <div className="Session-presenter">
-                    {data.speaker}
+                    {speaker_name}
+                </div>
+                <div className="Session-presenter-title">
+                    {speaker_title}
+                </div>
+                <div className="Session-presenter-organization">
+                    {speaker_orgnization}
                 </div>
                 { avatar && <img className={styles.avatar} src={avatar} /> }
 
