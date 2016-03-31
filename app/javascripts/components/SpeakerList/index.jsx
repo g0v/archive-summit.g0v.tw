@@ -11,7 +11,13 @@ class SpeakerList extends Component {
             speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') :
             speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook :
             require('./default.png'))} />
-        <div className={styles.name}>{speaker.name}</div>
+          <div className={styles.name}>{speaker.name}</div>
+            { speaker.title &&
+              <div className={styles.title}>{speaker.title}</div>
+            }
+            { speaker.organization &&
+              <div className={styles.organization}>{speaker.organization}</div>
+            }
         <p className={styles.bio}>{speaker.bio}</p>
       </div>
     );
