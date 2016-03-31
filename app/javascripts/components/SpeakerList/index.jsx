@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getLocale } from "javascripts/locale";
+import { getLocale, getString } from "javascripts/locale";
 import styles from "./styles.css";
 import speakers from "./speakers.json";
 
@@ -16,15 +16,16 @@ class SpeakerList extends Component {
   speaker = (speaker) => {
     const bio = speaker.bio.replace(/\n/g, '<br/>');
     const avatar = avatarURL(speaker);
+    const [locale] = getLocale().split('-');
     return (
       <div className={styles.speaker} key={speaker.name} >
         <img className={styles.avatar} src={avatar} />
-          <div className={styles.name}>{speaker.name}</div>
+          <div className={styles.name}>{getString(speaker, 'name', locale)}</div>
             { speaker.title &&
-              <div className={styles.title}>{speaker.title}</div>
+              <div className={styles.title}>{getString(speaker, 'title', locale)}</div>
             }
             { speaker.organization &&
-              <div className={styles.organization}>{speaker.organization}</div>
+              <div className={styles.organization}>{getString(speaker, 'organization', locale)}</div>
             }
       </div>
     );
