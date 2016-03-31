@@ -27326,9 +27326,10 @@
 	            var title = _ref.title;
 	            var url = _ref.url;
 	            var label = _ref.label;
+	            var faded = _ref.faded;
 	            return _react2.default.createElement(
 	              "article",
-	              { className: _styles2.default.article, key: title },
+	              { className: _styles2.default.article + ' ' + (faded ? 'faded' : ''), key: title },
 	              _react2.default.createElement(
 	                "div",
 	                { className: _styles2.default.title },
@@ -27402,6 +27403,7 @@
 			"header": "Important Dates",
 			"milestones": [
 				{
+					"faded": true,
 					"range": [
 						"2016/2/15",
 						"2016/3/20"
@@ -27410,6 +27412,7 @@
 					"url": "http://g0v-summit2016.kktix.cc/events/early-bird"
 				},
 				{
+					"faded": true,
 					"range": [
 						"2016/2/15",
 						"2016/3/20"
@@ -27419,12 +27422,11 @@
 				},
 				{
 					"range": [
-						"2016/4/1",
+						"2016/4/1 01:00UTC",
 						"2016/4/15"
 					],
 					"title": "Regular Tickets (US$36)",
-					"url": "http://g0v-summit2016.kktix.cc/events/conference",
-					"label": "Not started yet"
+					"url": "http://g0v-summit2016.kktix.cc/events/conference"
 				}
 			],
 			"media": "Media contact: ",
@@ -27437,6 +27439,7 @@
 			"header": "時間表",
 			"milestones": [
 				{
+					"faded": true,
 					"range": [
 						"2016/2/15",
 						"2016/3/20"
@@ -27445,6 +27448,7 @@
 					"url": "http://g0v-summit2016.kktix.cc/events/early-bird"
 				},
 				{
+					"faded": true,
 					"range": [
 						"2016/2/15",
 						"2016/3/20"
@@ -27454,12 +27458,11 @@
 				},
 				{
 					"range": [
-						"2016/4/1",
+						"2016/4/1 09:00CST",
 						"2016/4/15"
 					],
 					"title": "一般票 (TW$1200)",
-					"url": "http://g0v-summit2016.kktix.cc/events/conference",
-					"label": "尚未開賣"
+					"url": "http://g0v-summit2016.kktix.cc/events/conference"
 				}
 			],
 			"media": "媒體聯絡人：",
@@ -27475,7 +27478,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"root":"styles-root__1qlYr","header":"styles-header__QOvXu","range":"styles-range__30RdB","title":"styles-title__1v6LZ","links":"styles-links__3LYNb"};
+	module.exports = {"root":"styles-root__1qlYr","faded":"styles-faded__3u0Mw","header":"styles-header__QOvXu","range":"styles-range__30RdB","title":"styles-title__1v6LZ","links":"styles-links__3LYNb"};
 
 /***/ },
 /* 333 */,
