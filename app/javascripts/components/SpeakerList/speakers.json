@@ -21,18 +21,20 @@
     {
       "avatar": "http://juliakloiber.com/blog/wp-content/uploads/julia_klein1.jpg",
       "name": "Julia Kloiber",
+      "featured": true,
       "organization": "Open Knowledge Foundation Germany /Code for All",
       "title": "",
-      "bio": "",
+      "bio": "Julia is an activist who’s passionate about growing open communities. Since 2013, she has put her background in design and media studies to use as a project lead for the Open Knowledge Foundation Germany and as a consultant for The Engine Room.  Julia has been running multiple community projects that foster the reuse of open data, such as Germany’s first Civic Tech Incubator and a series of hackathons. Code for Germany, her latest project, is a civic tech community with 25 labs and more than 350 members.  Julia leads open data projects in close collaboration with companies and governments alike. In 2015 she co-organized the international Code for All Summit in New York, a two-day conference that brought together leading experts and practitioners in civic tech. In 2016 she will be kicking off a prototype fund for civic tech projects in collaboration with the Federal Ministry of Education and Research of Germany.",
       "nation": "Germany",
       "twitter": "@j_kloiber"
     },
     {
       "avatar": "",
       "name": "Colin Megill",
+      "featured": true,
       "organization": "pol.is",
       "title": "",
-      "bio": "",
+      "bio": "Colin is founder of Seattle based startup http://pol.is, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.  He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.  Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.",
       "nation": "US",
       "twitter": "@colinmegill"
     },
@@ -41,16 +43,17 @@
       "name": "JK Suh",
       "organization": "WAGL",
       "title": "",
-      "bio": "",
+      "bio": "I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.",
       "nation": "Korea",
       "twitter": ""
     },
     {
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg",
       "name": "Felipe Heusser",
+      "featured": true,
       "organization": "founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv, Fellow at the Harvard Berkman Center for Internet and Society",
       "title": "",
-      "bio": "",
+      "bio": "Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.  Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.",
       "nation": "Chile",
       "twitter": "@fheusser"
     },
@@ -66,6 +69,7 @@
     {
       "avatar": "",
       "name": "Miguel Arana Catania",
+      "featured": true,
       "organization": "Madrid City Council",
       "title": "Director of the Madrid city council participation project",
       "bio": "Miguel Arana is the Director of the Madrid city council participation project. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence http://decide.madrid.es Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A CoruÃ±a among others. He has been actively involved in the 15M movement in Spain since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries. Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.",
@@ -192,6 +196,7 @@
     {
       "avatar": "",
       "name": "羅佩琪",
+      "featured": true,
       "organization": "沒有人",
       "title": "",
       "bio": "病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。",
@@ -202,6 +207,7 @@
     {
       "avatar": "",
       "name": "Saul Peng",
+      "featured": true,
       "organization": "台北市政府資訊局",
       "title": "專門委員",
       "bio": "彭盛韶 經歷：柯文哲辦公室政策部研究員,臺北市資訊局專門委員",
@@ -212,6 +218,7 @@
     {
       "avatar": "",
       "name": "王景弘",
+      "featured": true,
       "organization": "普奇科技",
       "title": "資深工程師",
       "bio": "王景弘 經歷：普奇科技資深工程師, 威聯通科技資深產品工程師, JavaScript.tw 技術社團發起人, JSDC 前端技術人年會共同發起人",

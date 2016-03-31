@@ -23,11 +23,16 @@ class SpeakerList extends Component {
     );
   }
 
+  sortFunc = (a,b) => {
+    return a.name.localeCompare(b.name);
+  }
+
   render() {
     return (
       <div className={styles.root}>
         <h2 className={styles.header}>講者</h2>
-        <div>{ speakers['en-US'].sort((a,b) => a.name.localeCompare(b.name)).map(this.speaker) }</div>
+        <div>{ speakers['en-US'].filter((s) => s.featured).sort(this.sortFunc).map(this.speaker) }</div>
+        <div>{ speakers['en-US'].filter((s) => !s.featured).sort(this.sortFunc).map(this.speaker) }</div>
       </div>
     );
   }
