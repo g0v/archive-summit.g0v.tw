@@ -29010,7 +29010,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { style: { color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center' } },
-	          'Live interpretation are available for both English and Mandarin sessions.'
+	          _schedules_by_track2.default[(0, _locale.getLocale)()].interpretation
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -29965,6 +29965,7 @@
 	module.exports = {
 		"en-US": {
 			"header": "Schedule",
+			"interpretation": "Live interpretation are available for both English and Mandarin sessions.",
 			"day1": [
 				{
 					"time": "08:30-09:20",
@@ -30495,6 +30496,7 @@
 		},
 		"zh-TW": {
 			"header": "議程表",
+			"interpretation": "英語與華語議程皆提供即時口譯",
 			"day1": [
 				{
 					"time": "08:30-09:20",
@@ -31487,6 +31489,7 @@
 	module.exports = {
 		"en-US": {
 			"header": "Schedule",
+			"interpretation": "Live interpretation are available for both English and Mandarin sessions.",
 			"day1": [
 				{
 					"time": "08:30-09:20",
@@ -32156,6 +32159,7 @@
 		},
 		"zh-TW": {
 			"header": "議程表",
+			"interpretation": "英語與華語議程皆提供即時口譯",
 			"day1": [
 				{
 					"time": "08:30-09:20",
