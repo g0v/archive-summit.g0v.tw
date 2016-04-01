@@ -20,18 +20,35 @@ export default React.createClass({
     var language = (data.EN) ? <div className="Session-en">EN</div> : "";
     const [locale] = getLocale().split('-');
 
-    const speaker = by_name[data.speaker_key || data.speaker];
-    const bio_text = ((speaker && getString(speaker, 'bio', locale)) || data.bio || '').replace(/\n/g, '<br/>');
-    const speaker_title = speaker && getString(speaker, 'title', locale);
-    const speaker_orgnization = speaker && getString(speaker, 'organization', locale);
-    const speaker_name = speaker && getString(speaker, 'name', locale);
-    var bio = bio_text ? (
-      <div className="Session-biography">
-          <div className="Session-subTitle">Biography</div>
-          <div dangerouslySetInnerHTML={{__html: bio_text}}></div>
-      </div>
-    ): "";
-    const avatar = speaker ? avatarURL(speaker) : '';
+    const speakers = data.speaker_key ? data.speaker_key : data.speaker ? [data.speaker] : [];
+    const speakers_bio = [];
+    const speakers_profile = speakers.map( speaker => by_name[speaker] ).map( speaker => {
+      const bio_text = ((speaker && getString(speaker, 'bio', locale)) || data.bio || '').replace(/\n/g, '<br/>');
+      const speaker_title = speaker && getString(speaker, 'title', locale);
+      const speaker_organization = speaker && getString(speaker, 'organization', locale);
+      const speaker_name = speaker && getString(speaker, 'name', locale);
+      const avatar = speaker ? avatarURL(speaker) : '';
+      var bio = bio_text ? (
+        <div className="Session-biography" key={`speaker_bio_${speaker_name}`}>
+            <div className="Session-subTitle">Biography</div>
+            <div dangerouslySetInnerHTML={{__html: bio_text}}></div>
+        </div>
+      ): "";
+      speakers_bio.push(bio);
+
+      return <div key={`speaker_${speaker_name}`}>
+        <div className="Session-presenter">
+            {speaker_name}
+        </div>
+        <div className="Session-presenter-title">
+            {speaker_title}
+        </div>
+        <div className="Session-presenter-organization">
+            {speaker_organization}
+        </div>
+        { avatar && <img className={styles.avatar} src={avatar} /> }
+      </div>;
+    });
     return (
         <div className="Session">
             <div className="Session-close"
@@ -45,16 +62,7 @@ export default React.createClass({
                 <div className="Session-title">
                   {data.title}
                 </div>
-                <div className="Session-presenter">
-                    {speaker_name}
-                </div>
-                <div className="Session-presenter-title">
-                    {speaker_title}
-                </div>
-                <div className="Session-presenter-organization">
-                    {speaker_orgnization}
-                </div>
-                { avatar && <img className={styles.avatar} src={avatar} /> }
+                { speakers_profile.map( profile => profile ) }
 
                 {
                   category ? (
@@ -72,7 +80,7 @@ export default React.createClass({
                     <div dangerouslySetInnerHTML={{__html: data.abstract}}></div>
                   </div>
                 }
-                {bio}
+                { speakers_bio.map( bio => bio) }
             </div>
         </div>
     );
