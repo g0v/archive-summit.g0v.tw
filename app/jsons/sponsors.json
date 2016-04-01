@@ -52,6 +52,12 @@
           "url": "http://www.archilife.org/"
         },
         {
+          "name": "CLBC",
+          "logo": "clbc.png",
+          "url": "http://clbc.tw/",
+          "desc": "As the biggest Coworking Space in Taiwan, CLBC understands the struggles of starting up business. Establishing a coworking space was indeed not an easy task, though it was a fun process to witness all the stories that had been made here! CLBC is not only a space for work, but more of a big family to startups. So, what are you waiting for? Let’s join in to build up more and more stories with us!"
+        },
+        {
           "name": "Junyi Academy",
           "logo": "junyi.png",
           "url": "http://www.junyiacademy.org/",
@@ -67,6 +73,12 @@
           "name": "NETivism",
           "logo": "netivism.png",
           "url": "http://netivism.com.tw/",
+          "desc": ""
+        },
+        {
+          "name": "Microsoft",
+          "logo": "ms.png",
+          "url": "http://microsoft.com/",
           "desc": ""
         },
         {
@@ -167,6 +179,12 @@
           "url": "http://www.archilife.org/"
         },
         {
+          "name": "CLBC",
+          "logo": "clbc.png",
+          "url": "http://clbc.tw/",
+          "desc": "CLBC 為台灣最大的工作空間,我們很可以理解創業本身的艱 難困苦,經營空間本身是一件辛苦但卻有趣的事情,辛苦自然 不在話下,但棒的是許多團隊來到這裡, 並在這空間裡合作創造出來許多故事,CLBC不僅只是一個工作 的地方,更像創業團隊的大家庭,在這發生了許許多多的故 事,也等著你、我一同來共創下一個故事。"
+        },
+        {
           "name": "均一教育平台",
           "logo": "junyi.png",
           "url": "http://www.junyiacademy.org/",
@@ -183,6 +201,12 @@
           "logo": "netivism.png",
           "url": "http://netivism.com.tw/",
           "desc": "網絡行動科技（NETivism）自許為從數位公益出發的社會企業，多年來專注為非營利組織提供以自由軟體為基礎的資訊科技應用解決方案。 我們認為網路資訊科技能夠促成社會變革，影響文化、政治、環境等公共議題，帶來娛樂與商業行為之外的改變。非營利組織工作者可以在我們以及其他有志於此的公司和社群的努力下，善用網際網路深化社會各種的力量，激勵人們採取行動，創造出更好的社會。"
+        },
+        {
+          "name": "微軟",
+          "logo": "ms.png",
+          "url": "http://microsoft.com/",
+          "desc": ""
         },
         {
           "name": "skymizer",
