@@ -21,8 +21,11 @@
 }
 
 @media screen and (min-width: 830px) {
-  .description {
+  .description, .root section {
     width: 665px;
+    text-align: left;
+    margin: 0 auto 0;
+    clear: both;
   }
 
   .title {
@@ -42,6 +45,17 @@
 
 .links {
 
+}
+
+.description img {
+  margin: 1rem;
+  float: left;
+  width: 160px;
+  height: 160px !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  background-color: rgba(254, 220, 117, 0.74);
 }
 
 .title {
