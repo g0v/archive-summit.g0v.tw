@@ -27724,9 +27724,10 @@
 				"title": "Sponsors",
 				"sponsors": [
 					{
-						"name": " Archilife Research Foundation",
+						"name": "Archilife Research Foundation",
 						"logo": "archilife.png",
-						"url": "http://www.archilife.org/"
+						"url": "http://www.archilife.org/",
+						"desc": "Since 1987, the Archilife Research Foundation started long-term researches in architecture, sustainability, and go on to other areas of knowledge integration. Efforts including previously giving scholarships in aforementioned areas, and currently holding reading group meetings and communion events for knowledge keepers to better our understandings of the world. Starting from 2011, we also have been sponsoring various open source related events, holding meetups and game jams for local game developers' community, and giving out scholarships to support indie game teams and encourage them to go to international game festivals."
 					},
 					{
 						"name": "CLBC",
@@ -27750,7 +27751,7 @@
 						"name": "NETivism",
 						"logo": "netivism.png",
 						"url": "http://netivism.com.tw/",
-						"desc": ""
+						"desc": "NETivism (Internet for Activism) is a social enterprise focus on solving digital divide for Non-Profit Organization, via Open Source solution(Drupal & CiviCRM) and Love."
 					},
 					{
 						"name": "Microsoft",
@@ -27851,9 +27852,10 @@
 				"title": "贊助單位",
 				"sponsors": [
 					{
-						"name": "祐生基金會",
+						"name": "佑生研究基金會",
 						"logo": "archilife.png",
-						"url": "http://www.archilife.org/"
+						"url": "http://www.archilife.org/",
+						"desc": "祐生研究基金會由推動建築與環境永續發展之研究開始，推動長期的知識累積與人才培養。除了過去建築、環境、生態、健康與資訊社會與文化等面向之碩士論文獎助主題外，本會目前定期舉辦的聯誼會及讀書會，強化祐生成員的知識密度。其後，於 2011 年起，本會持續針對國內開源活動進行贊助，也針對國內獨立遊戲開發者，推動知識與資訊分享聚會，並贊助台灣開發者前往特定國際遊戲競賽，期能幫助國內相關社群之發展。"
 					},
 					{
 						"name": "CLBC",
@@ -27877,7 +27879,7 @@
 						"name": "NETivism",
 						"logo": "netivism.png",
 						"url": "http://netivism.com.tw/",
-						"desc": "網絡行動科技（NETivism）自許為從數位公益出發的社會企業，多年來專注為非營利組織提供以自由軟體為基礎的資訊科技應用解決方案。 我們認為網路資訊科技能夠促成社會變革，影響文化、政治、環境等公共議題，帶來娛樂與商業行為之外的改變。非營利組織工作者可以在我們以及其他有志於此的公司和社群的努力下，善用網際網路深化社會各種的力量，激勵人們採取行動，創造出更好的社會。"
+						"desc": "網絡行動科技（NETivism）自許為從數位公益出發的社會企業，七年來專注為非營利組織提供以自由軟體為基礎的資訊科技應用解決方案。 我們認為網路資訊科技能夠促成社會變革，影響文化、政治、環境等公共議題，帶來娛樂與商業行為之外的改變。目前提供 netiCRM.tw 支持者關係管理雲端服務，協助非營利組織滿足定期定額線上捐款自動化、電子報行銷、活動報名等需求。"
 					},
 					{
 						"name": "微軟",
@@ -28034,7 +28036,7 @@
 /* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "48401e8fc2b7a0697f06355b708f4d2e.png";
+	module.exports = __webpack_require__.p + "09aa128f7d863ec3565c15e44605a158.png";
 
 /***/ },
 /* 350 */
