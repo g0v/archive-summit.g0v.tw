@@ -28577,7 +28577,7 @@
 				"name": "Shigeomi Shibata",
 				"organization": "Code for Japan, Code for Ibaraki",
 				"title": "",
-				"bio": "",
+				"bio": "<p>Currently working as a self-employed network engineer.</p><p>Co-captain of Code for Japan. A member of Code for Ibaraki.</p><p>Joined Code for Japan as a member of research team when it was established in 2013. And also, organize a weekly civic hack meetup event named “Idobata Kaigi”, water cooler talking in Japanese, over 100 times last 2 years. Now a project leader for Civic tech cafe of Code for Ibaraki, monthly talking meeting over open data and civic tech.</p><p>Live in Tokyo, Have two kids (4 years boy and 3 years girl) and one wife.</p><p>Specialties: Networking, Information security, Cloud  computing, Voice over IP, Project management, Community organizing</p>",
 				"nation": "Japan",
 				"twitter": "@shigeomix"
 			},
@@ -28586,7 +28586,7 @@
 				"name": "Jen Bramley",
 				"organization": "mySociety",
 				"title": "",
-				"bio": "",
+				"bio": "<p>Jen is the International Projects Manager at mySociety. If you email international@mysociety.org, Jen will be the one who responds to you first. She lives in London and works directly with organisations anywhere in the world, helping them with the practicalities of deploying our code and maintaining the resulting websites.</p><p>With a background as a working on media development and broadcasting reform projects in the Middle East and North Africa for BBC Media Action, she’s used to pitching in wherever needed for all sorts of projects.</p><p>Jen travels widely to meet our partners on their home ground: it’s always helpful to see our projects in the places where they’ll be deployed, and meet the people who will be using them. She’s passionate about ensuring that projects meet local needs and spending time with groups in their own countries helps her start to understand their motivations.</p>",
 				"nation": "UK",
 				"twitter": ""
 			},
@@ -28764,6 +28764,15 @@
 				"bio": "Henare was goaded into his first ever open source contribution in a chance encounter at a free software conference 7 years ago. Hacking on civic tech was the creative outlet for his passion for politics and open source that he'd been looking for. He's been volunteering at the OpenAustralia Foundation ever since and is now one of the first full-time staff where he does everything from software development to decoding government jargon into plain language. He has spoken at, and helped organise, civic tech and transparency conferences around the world and is a major contributor to several international open source civic tech projects. He has recently been teaching intensive scraping workshops. In these he has helped people with almost no programming knowledge write their very own scraper in just 4 hours. When not hacking democracy he is an enthusiastic amateur cook and is considered by some to be a master barbequist.",
 				"nation": "Australia",
 				"twitter": "@henaredegan"
+			},
+			{
+				"avatar": "https://www.flickr.com/photos/torrent-summer/3072456829/in/album-72157610547629000/",
+				"name": "卞中佩",
+				"organization": "Texas A&M University Sociology Department",
+				"title": "",
+				"bio": "美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。",
+				"nation": "Taiwan",
+				"twitter": ""
 			},
 			{
 				"avatar": "",
