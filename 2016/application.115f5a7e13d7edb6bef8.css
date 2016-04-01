@@ -728,8 +728,11 @@ body {
 }
 
 @media screen and (min-width: 830px) {
-  .styles-description__biizs {
+  .styles-description__biizs, .styles-root__gj93y section {
     width: 665px;
+    text-align: left;
+    margin: 0 auto 0;
+    clear: both;
   }
 
   .styles-title__2fwYR {
@@ -749,6 +752,19 @@ body {
 
 .styles-links__hubwx {
 
+}
+
+.styles-description__biizs img {
+  margin: 1rem;
+  float: left;
+  width: 160px;
+  height: 160px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  background-color: rgba(254, 220, 117, 0.74);
 }
 
 .styles-title__2fwYR {

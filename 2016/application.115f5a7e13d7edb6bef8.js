@@ -68,7 +68,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _reactGa = __webpack_require__(410);
+	var _reactGa = __webpack_require__(411);
 
 	var _reactGa2 = _interopRequireDefault(_reactGa);
 
@@ -24959,7 +24959,7 @@
 
 	var _components = __webpack_require__(230);
 
-	var _pages = __webpack_require__(401);
+	var _pages = __webpack_require__(402);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25024,11 +25024,11 @@
 
 	var _SpeakerList3 = _interopRequireDefault(_SpeakerList2);
 
-	var _Schedule2 = __webpack_require__(377);
+	var _Schedule2 = __webpack_require__(378);
 
 	var _Schedule3 = _interopRequireDefault(_Schedule2);
 
-	var _SponsorsSummary2 = __webpack_require__(397);
+	var _SponsorsSummary2 = __webpack_require__(398);
 
 	var _SponsorsSummary3 = _interopRequireDefault(_SponsorsSummary2);
 
@@ -27125,29 +27125,29 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: _styles2.default.root },
-	        _about2.default[(0, _locale.getLocale)()].sections.map(function (section) {
+	        _about2.default[(0, _locale.getLocale)()].sections.map(function (section, i_s) {
 	          return _react2.default.createElement(
 	            "section",
-	            null,
+	            { key: "section_" + i_s },
 	            _react2.default.createElement(
 	              "h2",
 	              { className: _styles2.default.header },
 	              section.header
 	            ),
-	            section.description.map(function (desc) {
-	              return _react2.default.createElement("p", { className: _styles2.default.description, dangerouslySetInnerHTML: { __html: desc } });
+	            section.description.map(function (desc, i) {
+	              return _react2.default.createElement("p", { key: "p_" + i_s + "_" + i, className: _styles2.default.description, dangerouslySetInnerHTML: { __html: desc } });
 	            }),
-	            section.sub.map(function (section) {
+	            section.sub.map(function (section, i) {
 	              return _react2.default.createElement(
 	                "section",
-	                null,
+	                { key: "subsection_" + i_s + "_" + i },
 	                _react2.default.createElement(
 	                  "h3",
 	                  { className: _styles2.default.subheader },
 	                  section.header
 	                ),
-	                section.description.map(function (desc) {
-	                  return _react2.default.createElement("p", { className: _styles2.default.description, dangerouslySetInnerHTML: { __html: desc } });
+	                section.description.map(function (desc, i) {
+	                  return _react2.default.createElement("p", { key: "sub_p_" + i_s + "_" + i, className: _styles2.default.description, dangerouslySetInnerHTML: { __html: desc } });
 	                })
 	              );
 	            })
@@ -27192,9 +27192,37 @@
 				{
 					"header": "About g0v.tw",
 					"description": [
-						"g0v is a civic tech community established in late 2012 with deep open-source roots. With 1,000+ contributors through 30+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, citizen engagement, and online democracy.  Since the 2014 Summit, we’ve seen increasing collaboration between the civic tech communities in Taiwan, government agencies, media, and NGOs."
+						"g0v.tw is a civic tech community in Taiwan since 2012 with deep open-source roots.  With 1,000+ contributors through 40+ hackathons, it is recognized as one of the largest group in the global civic tech community.  The community focuses on building tools for better information disclosure, engagement, and online democracy, advocating government transparency through the power of information technology.",
+						"Through the years, the g0v community stimulated the progress of open government, open data, civic participation, and new media in Taiwan.  Today the open community is still one of the main driving force for grass root civic movements, through interdisciplinary collaboration."
 					],
 					"sub": []
+				},
+				{
+					"header": "About g0v summit 2016",
+					"description": [
+						"Returning for a second year after 2014, the g0v Summit 2016 will again invite the global civic tech community to share their experiences for collaboration between public servants, technologists, and NGO workers.  We are pleased to have Felipe Heusser, founder and former Director of the Chilean NGO Ciudadano Inteligente and Fellow at the Berkman Center, as our keynote speaker.",
+						"g0v summit 2016 is set to be held on May 14th, 2016, at Humanities and Social Sciences Building in Academia Sinica, Taipei, Taiwan. 750 participants are expected to attend the conference. Open Government, Open Data, and civic tech engagement in civil movements are expected to be covered in the programmes."
+					],
+					"sub": [
+						{
+							"header": "Keynote Speaker - Felipe Heusser",
+							"description": [
+								"<img class=\"avatar\" src=\"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg\">founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv.<br/>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile. Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States."
+							]
+						},
+						{
+							"header": "Keynote Speaker - Miguel Arana Catania",
+							"description": [
+								"<img class=\"avatar\" src=\"/2016/ce0ac37eec641e7139fd046d5802bdf2.png\">Miguel Arana is the Director of the Madrid city council participation project. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence http://decide.madrid.es Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A CoruÃ±a among others. He has been actively involved in the 15M movement in Spain since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries. Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil."
+							]
+						},
+						{
+							"header": "Keynote Speaker - Premier of Taiwan: Simon Chang",
+							"description": [
+								"<img class=\"avatar\" src=\"/2016/ac803dc448f8b92f923b161952bb20e0.png\">Premier Chang has been advocating open data in Taiwan through his incumbency in the Executive Yuan, his efforts made Taiwan topped out the OKFN Open Data Index in 2015. Right before the new government assumes office, he will be at the g0v Summit sharing his experience on the collaboration between the public sector and open communities toward an open government."
+							]
+						}
+					]
 				}
 			]
 		},
@@ -27237,6 +27265,24 @@
 							"description": [
 								"本次我們收到了來自全球 17 國高達 70 份的投稿，預計將有來自 15 國（美國、加拿大、智利、英國、德國、法國、立陶宛、波蘭、西班牙、尼泊爾、日本、韓國、香港、印尼、澳洲），涵蓋各國公民科技社群，將在大會中分享他們的專業與經驗。",
 								"議題以科技促進民主與參與效能為主軸，包含：歐洲的新興政治經驗（西班牙的時代力量如何一舉在大選獲得五分之一的得票）、亞洲推展數位科技到傳統公民團體的經驗、各國數位進入政府搭建溝通橋樑的改造經驗（包括美國與台灣實際經驗）、資訊科技與環境應用（包括西非瘧疾救助、雅加達水災、透過公民科學家進行環境監測等），以及各類促進開放透明、公民參與的成果分享。以上議程已在年會網站<a href=\"/2016/schedules\">公布</a>。"
+							]
+						},
+						{
+							"header": "Keynote Speaker - Felipe Heusser",
+							"description": [
+								"<img class=\"avatar\" src=\"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg\">在本次的會議中，我們很榮幸邀請到在國際知名的公民科技參與者 Felipe Heusser 擔任主題講者。Felipe Heusser 是美國哈佛大學法學院貝克曼網路與社會中心的研究員，同時也是一名積極的倡議者、研究者、以及社會創業家。主要關注的領域是公民科技、資訊及網路自由、公民媒體、與開放政府。Felipe 也是智利 Ciudadano Inteligente 基金會的創辦人及前執行長，在他的執掌期間，Ciudadano Inteligente 基金會將其運作範圍擴大到拉丁美洲，共同創辦了拉丁美洲公民黑客（civic hackers）網路 Desarrollando America Latina，並且與英國 MySociety 合作發起 Poplus 專案，希望共同開發各種公民參與的開源元件，讓世界各地的 NGO 都可重複使用。"
+							]
+						},
+						{
+							"header": "Keynote Speaker - Miguel Arana Catania",
+							"description": [
+								"<img class=\"avatar\" src=\"/2016/ce0ac37eec641e7139fd046d5802bdf2.png\">Miguel Arana 是 2011 年起西班牙全國抗議運動 15M 的初期參與者，由該運動衍生的新興政黨，在 2015 年的選舉中一舉奪下主要城市的執政權：如馬德里、巴賽隆納、薩拉戈薩。他從抗議者變成公僕後，著手規劃馬德里市的開放政府策略，以自由軟體建構了群眾參與平台 http://decide.madrid.es ，並與西班牙其他的主要城市共同訂定全國的智慧城市策略。"
+							]
+						},
+						{
+							"header": "Keynote Speaker - 行政院 張善政院長",
+							"description": [
+								"<img class=\"avatar\" src=\"/2016/ac803dc448f8b92f923b161952bb20e0.png\">張院長自政務委員、科技部長、行政院副院長至院長任內，不遺餘力地推動開放資料，更使得 2015 年台灣在 OKFN 開放資料評比進步至全球第一。在卸任行政院長前夕，新舊政府交接之際，他將分享公部門與開放社群協作，打造開放政府的經驗。"
 							]
 						},
 						{
@@ -27633,7 +27679,7 @@
 		"en-US": [
 			{
 				"category": "host",
-				"title": "Host",
+				"title": "Organized by",
 				"sponsors": [
 					{
 						"name": "g0v summit 2016",
@@ -27644,7 +27690,7 @@
 			},
 			{
 				"category": "co-organizer",
-				"title": "Co-Organizer",
+				"title": "Co-Organizers",
 				"sponsors": [
 					{
 						"name": "Open Culture Foundation",
@@ -28553,7 +28599,7 @@
 				"twitter": "@mckinneyjames"
 			},
 			{
-				"avatar": "",
+				"avatar": "./miguel.png",
 				"name": "Miguel Arana Catania",
 				"featured": true,
 				"organization": "Madrid City Council",
@@ -28954,8 +29000,9 @@
 		"./heusser.jpg": 374,
 		"./index": 359,
 		"./index.jsx": 359,
-		"./shigeomi.jpg": 375,
-		"./simon.png": 376,
+		"./miguel.png": 375,
+		"./shigeomi.jpg": 376,
+		"./simon.png": 377,
 		"./speakers.json": 371,
 		"./styles": 369,
 		"./styles.css": 369
@@ -28990,16 +29037,22 @@
 /* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "0a12a159009b259993769f7e3e8096da.jpg";
+	module.exports = __webpack_require__.p + "ce0ac37eec641e7139fd046d5802bdf2.png";
 
 /***/ },
 /* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "ac803dc448f8b92f923b161952bb20e0.png";
+	module.exports = __webpack_require__.p + "0a12a159009b259993769f7e3e8096da.jpg";
 
 /***/ },
 /* 377 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "ac803dc448f8b92f923b161952bb20e0.png";
+
+/***/ },
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29009,7 +29062,7 @@
 	});
 	exports.ScheduleParallel = undefined;
 
-	var _extends2 = __webpack_require__(378);
+	var _extends2 = __webpack_require__(379);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
@@ -29037,7 +29090,7 @@
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-	var _time = __webpack_require__(383);
+	var _time = __webpack_require__(384);
 
 	Object.defineProperty(exports, 'ScheduleParallel', {
 	  enumerable: true,
@@ -29050,25 +29103,25 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _schedules_by_track = __webpack_require__(396);
+	var _schedules_by_track = __webpack_require__(397);
 
 	var _schedules_by_track2 = _interopRequireDefault(_schedules_by_track);
 
 	var _locale = __webpack_require__(228);
 
-	var _filter = __webpack_require__(388);
+	var _filter = __webpack_require__(389);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
-	var _session = __webpack_require__(391);
+	var _session = __webpack_require__(392);
 
 	var _session2 = _interopRequireDefault(_session);
 
-	var _styles = __webpack_require__(386);
+	var _styles = __webpack_require__(387);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _bind = __webpack_require__(395);
+	var _bind = __webpack_require__(396);
 
 	var _bind2 = _interopRequireDefault(_bind);
 
@@ -29429,14 +29482,14 @@
 	exports.default = Schedule;
 
 /***/ },
-/* 378 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	exports.__esModule = true;
 
-	var _assign = __webpack_require__(379);
+	var _assign = __webpack_require__(380);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
@@ -29457,29 +29510,29 @@
 	};
 
 /***/ },
-/* 379 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(380), __esModule: true };
-
-/***/ },
 /* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(381);
-	module.exports = __webpack_require__(245).Object.assign;
+	module.exports = { "default": __webpack_require__(381), __esModule: true };
 
 /***/ },
 /* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// 19.1.3.1 Object.assign(target, source)
-	var $export = __webpack_require__(244);
-
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(382)});
+	__webpack_require__(382);
+	module.exports = __webpack_require__(245).Object.assign;
 
 /***/ },
 /* 382 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.3.1 Object.assign(target, source)
+	var $export = __webpack_require__(244);
+
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(383)});
+
+/***/ },
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29517,7 +29570,7 @@
 	} : $assign;
 
 /***/ },
-/* 383 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29534,11 +29587,11 @@
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-	var _assign = __webpack_require__(379);
+	var _assign = __webpack_require__(380);
 
 	var _assign2 = _interopRequireDefault(_assign);
 
-	var _extends2 = __webpack_require__(378);
+	var _extends2 = __webpack_require__(379);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
@@ -29570,31 +29623,31 @@
 
 	var _locale = __webpack_require__(228);
 
-	var _schedules = __webpack_require__(384);
+	var _schedules = __webpack_require__(385);
 
 	var _schedules2 = _interopRequireDefault(_schedules);
 
-	var _categories = __webpack_require__(385);
+	var _categories = __webpack_require__(386);
 
 	var _categories2 = _interopRequireDefault(_categories);
 
-	var _styles = __webpack_require__(386);
+	var _styles = __webpack_require__(387);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _filter = __webpack_require__(388);
+	var _filter = __webpack_require__(389);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
-	var _session = __webpack_require__(391);
+	var _session = __webpack_require__(392);
 
 	var _session2 = _interopRequireDefault(_session);
 
-	var _classnames = __webpack_require__(392);
+	var _classnames = __webpack_require__(393);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _bind = __webpack_require__(395);
+	var _bind = __webpack_require__(396);
 
 	var _bind2 = _interopRequireDefault(_bind);
 
@@ -30065,7 +30118,7 @@
 	};
 
 /***/ },
-/* 384 */
+/* 385 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -31140,7 +31193,7 @@
 	};
 
 /***/ },
-/* 385 */
+/* 386 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -31259,15 +31312,15 @@
 	};
 
 /***/ },
-/* 386 */
+/* 387 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__2PG_F","backdrop":"styles-backdrop__222h8","avatar":"styles-avatar__1jkQH","isShown":"styles-isShown__2X0WE","container":"styles-container__3fYMv","mobileScrollLock":"styles-mobileScrollLock__mMH7S"};
 
 /***/ },
-/* 387 */,
-/* 388 */
+/* 388 */,
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31280,7 +31333,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _filter = __webpack_require__(389);
+	var _filter = __webpack_require__(390);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
@@ -31361,15 +31414,15 @@
 	});
 
 /***/ },
-/* 389 */
+/* 390 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"filter":"filter-filter__2Aq-6","filterTitle":"filter-filterTitle__34mGj","filterCategories":"filter-filterCategories__rz7LE","filterCategory":"filter-filterCategory__3S81z","filterCategoryIcon":"filter-filterCategoryIcon__2dYxM","filterActions":"filter-filterActions__1o6da","filterClose":"filter-filterClose__15PBf","filterComplete":"filter-filterComplete__2LotJ","filterClearAll":"filter-filterClearAll__3xsaW","isActive":"filter-isActive__2kS1y"};
 
 /***/ },
-/* 390 */,
-/* 391 */
+/* 391 */,
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31386,11 +31439,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(392);
+	var _classnames = __webpack_require__(393);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	__webpack_require__(393);
+	__webpack_require__(394);
 
 	var _speakers = __webpack_require__(371);
 
@@ -31400,7 +31453,7 @@
 
 	var _SpeakerList = __webpack_require__(359);
 
-	var _styles = __webpack_require__(386);
+	var _styles = __webpack_require__(387);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -31526,7 +31579,7 @@
 	});
 
 /***/ },
-/* 392 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31580,14 +31633,14 @@
 
 
 /***/ },
-/* 393 */
+/* 394 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 394 */,
-/* 395 */
+/* 395 */,
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -31641,7 +31694,7 @@
 
 
 /***/ },
-/* 396 */
+/* 397 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -32994,7 +33047,7 @@
 	};
 
 /***/ },
-/* 397 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33033,11 +33086,11 @@
 
 	var _sponsors2 = _interopRequireDefault(_sponsors);
 
-	var _sponsors_summary = __webpack_require__(398);
+	var _sponsors_summary = __webpack_require__(399);
 
 	var _sponsors_summary2 = _interopRequireDefault(_sponsors_summary);
 
-	var _styles = __webpack_require__(399);
+	var _styles = __webpack_require__(400);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -33125,7 +33178,7 @@
 	exports.default = SponsorsSummary;
 
 /***/ },
-/* 398 */
+/* 399 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -33148,15 +33201,15 @@
 	};
 
 /***/ },
-/* 399 */
+/* 400 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__3VPfm","header":"styles-header__9f_mX","section":"styles-section__3EW5z","sponsor":"styles-sponsor__3-_FS","logo":"styles-logo__3ZWdC","name":"styles-name__3p5Sj"};
 
 /***/ },
-/* 400 */,
-/* 401 */
+/* 401 */,
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33166,23 +33219,23 @@
 	});
 	exports.Transport = exports.Sponsors = exports.Schedules = exports.Speakers = exports.Home = undefined;
 
-	var _Home2 = __webpack_require__(402);
+	var _Home2 = __webpack_require__(403);
 
 	var _Home3 = _interopRequireDefault(_Home2);
 
-	var _Speakers2 = __webpack_require__(403);
+	var _Speakers2 = __webpack_require__(404);
 
 	var _Speakers3 = _interopRequireDefault(_Speakers2);
 
-	var _Schedules2 = __webpack_require__(404);
+	var _Schedules2 = __webpack_require__(405);
 
 	var _Schedules3 = _interopRequireDefault(_Schedules2);
 
-	var _Sponsors2 = __webpack_require__(405);
+	var _Sponsors2 = __webpack_require__(406);
 
 	var _Sponsors3 = _interopRequireDefault(_Sponsors2);
 
-	var _Transport2 = __webpack_require__(406);
+	var _Transport2 = __webpack_require__(407);
 
 	var _Transport3 = _interopRequireDefault(_Transport2);
 
@@ -33195,7 +33248,7 @@
 	exports.Transport = _Transport3.default;
 
 /***/ },
-/* 402 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33259,7 +33312,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 403 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33318,7 +33371,7 @@
 	exports.default = Speakers;
 
 /***/ },
-/* 404 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33327,7 +33380,7 @@
 	  value: true
 	});
 
-	var _extends2 = __webpack_require__(378);
+	var _extends2 = __webpack_require__(379);
 
 	var _extends3 = _interopRequireDefault(_extends2);
 
@@ -33355,7 +33408,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Schedule = __webpack_require__(377);
+	var _Schedule = __webpack_require__(378);
 
 	var _Schedule2 = _interopRequireDefault(_Schedule);
 
@@ -33404,7 +33457,7 @@
 	exports.default = Schedules;
 
 /***/ },
-/* 405 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33463,7 +33516,7 @@
 	exports.default = Sponsors;
 
 /***/ },
-/* 406 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33498,11 +33551,11 @@
 
 	var _locale = __webpack_require__(228);
 
-	var _transport = __webpack_require__(407);
+	var _transport = __webpack_require__(408);
 
 	var _transport2 = _interopRequireDefault(_transport);
 
-	var _styles = __webpack_require__(408);
+	var _styles = __webpack_require__(409);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -33554,7 +33607,7 @@
 	exports.default = Transport;
 
 /***/ },
-/* 407 */
+/* 408 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -33621,15 +33674,15 @@
 	};
 
 /***/ },
-/* 408 */
+/* 409 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__1gK3V","section":"styles-section__LrTFv","header":"styles-header__2-OSD","sponsor":"styles-sponsor__KVF2j","logo":"styles-logo__1STPn","name":"styles-name__1b107","desc":"styles-desc__2KfBd","map":"styles-map__209T3"};
 
 /***/ },
-/* 409 */,
-/* 410 */
+/* 410 */,
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34050,7 +34103,7 @@
 	  }
 	};
 
-	var OutboundLink = __webpack_require__(411);
+	var OutboundLink = __webpack_require__(412);
 	OutboundLink.trackLink = reactGA.outboundLink;
 	reactGA.OutboundLink = OutboundLink;
 
@@ -34058,7 +34111,7 @@
 
 
 /***/ },
-/* 411 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(11);
