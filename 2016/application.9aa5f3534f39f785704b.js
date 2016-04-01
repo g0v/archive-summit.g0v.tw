@@ -30436,6 +30436,10 @@
 							"category": "wiring",
 							"language": "",
 							"speaker": "ipa & ETBlue",
+							"speaker_key": [
+								"瞿筱葳",
+								"藍一婷"
+							],
 							"title": "\"Bluepa\" Metrics and Case Studies for Interdisciplinarity: the Mystery of Openness and Interdisplinary in g0v",
 							"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
 							"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
@@ -30970,6 +30974,10 @@
 							"category": "wiring",
 							"language": "",
 							"speaker": "ipa & ETBlue",
+							"speaker_key": [
+								"瞿筱葳",
+								"藍一婷"
+							],
 							"title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
 							"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
 							"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
@@ -31536,22 +31544,49 @@
 	    var locale = _getLocale$split2[0];
 
 
-	    var speaker = by_name[data.speaker_key || data.speaker];
-	    var bio_text = (speaker && (0, _locale.getString)(speaker, 'bio', locale) || data.bio || '').replace(/\n/g, '<br/>');
-	    var speaker_title = speaker && (0, _locale.getString)(speaker, 'title', locale);
-	    var speaker_orgnization = speaker && (0, _locale.getString)(speaker, 'organization', locale);
-	    var speaker_name = speaker && (0, _locale.getString)(speaker, 'name', locale);
-	    var bio = bio_text ? _react2.default.createElement(
-	      "div",
-	      { className: "Session-biography" },
-	      _react2.default.createElement(
+	    var speakers = data.speaker_key ? data.speaker_key : data.speaker ? [data.speaker] : [];
+	    var speakers_bio = [];
+	    var speakers_profile = speakers.map(function (speaker) {
+	      return by_name[speaker];
+	    }).map(function (speaker) {
+	      var bio_text = (speaker && (0, _locale.getString)(speaker, 'bio', locale) || data.bio || '').replace(/\n/g, '<br/>');
+	      var speaker_title = speaker && (0, _locale.getString)(speaker, 'title', locale);
+	      var speaker_organization = speaker && (0, _locale.getString)(speaker, 'organization', locale);
+	      var speaker_name = speaker && (0, _locale.getString)(speaker, 'name', locale);
+	      var avatar = speaker ? (0, _SpeakerList.avatarURL)(speaker) : '';
+	      var bio = bio_text ? _react2.default.createElement(
 	        "div",
-	        { className: "Session-subTitle" },
-	        "Biography"
-	      ),
-	      _react2.default.createElement("div", { dangerouslySetInnerHTML: { __html: bio_text } })
-	    ) : "";
-	    var avatar = speaker ? (0, _SpeakerList.avatarURL)(speaker) : '';
+	        { className: "Session-biography", key: "speaker_bio_" + speaker_name },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "Session-subTitle" },
+	          "Biography"
+	        ),
+	        _react2.default.createElement("div", { dangerouslySetInnerHTML: { __html: bio_text } })
+	      ) : "";
+	      speakers_bio.push(bio);
+
+	      return _react2.default.createElement(
+	        "div",
+	        { key: "speaker_" + speaker_name },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "Session-presenter" },
+	          speaker_name
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "Session-presenter-title" },
+	          speaker_title
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "Session-presenter-organization" },
+	          speaker_organization
+	        ),
+	        avatar && _react2.default.createElement("img", { className: _styles2.default.avatar, src: avatar })
+	      );
+	    });
 	    return _react2.default.createElement(
 	      "div",
 	      { className: "Session" },
@@ -31576,22 +31611,9 @@
 	          { className: "Session-title" },
 	          data.title
 	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "Session-presenter" },
-	          speaker_name
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "Session-presenter-title" },
-	          speaker_title
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "Session-presenter-organization" },
-	          speaker_orgnization
-	        ),
-	        avatar && _react2.default.createElement("img", { className: _styles2.default.avatar, src: avatar }),
+	        speakers_profile.map(function (profile) {
+	          return profile;
+	        }),
 	        category ? _react2.default.createElement(
 	          "div",
 	          { className: "Session-category" },
@@ -31612,7 +31634,9 @@
 	          ),
 	          _react2.default.createElement("div", { dangerouslySetInnerHTML: { __html: data.abstract } })
 	        ),
-	        bio
+	        speakers_bio.map(function (bio) {
+	          return bio;
+	        })
 	      )
 	    );
 	  }
@@ -32065,6 +32089,10 @@
 						"category": "wiring",
 						"language": "",
 						"speaker": "ipa & ETBlue",
+						"speaker_key": [
+							"瞿筱葳",
+							"藍一婷"
+						],
 						"title": "\"Bluepa\" Metrics and Case Studies for Interdisciplinarity: the Mystery of Openness and Interdisplinary in g0v",
 						"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
 						"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
@@ -32175,7 +32203,9 @@
 					"event": {
 						"title": "Premier of Taiwan",
 						"speaker": "Simon Chang",
-						"speaker_key": "張善政"
+						"speaker_key": [
+							"張善政"
+						]
 					}
 				}
 			],
@@ -32739,6 +32769,10 @@
 						"category": "wiring",
 						"language": "",
 						"speaker": "ipa & ETBlue",
+						"speaker_key": [
+							"瞿筱葳",
+							"藍一婷"
+						],
 						"title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
 						"bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
 						"abstract": "<p>g0v 社群一開始便吸引跨界專業的參與，也持續與其他團體跨界交流。秉持社群文化的開源人與 ngo / gov 的合作越來越緊密，不再只是當顧問、或分享成果，更多實際親身加入傳統組織，進行更深層協作的實例。</p><p>但對更多團體來說，如何與猶如變形蟲的開放非組織 g0v 協作，仍是一個謎；對習慣開放的開源社群人而言，與傳統團體合作也需要轉換邏輯。本 talk 由兩位 g0v 參與者設計的 「Blupa 量表：g0v 跨界量表」，由淺到深拉出各類合作型態光譜，檢視各種協作的火花、眉角、悲喜劇。</p><p>前半由 ipa 從開源社群與傳統團體文化差異談起，探討開源非組織的「沒有人」的 “release early, release often”、“fork & merge” 等開放黑客文化對傳統團體的衝擊，以及為何/如何與傳統組織協作。後半由 ETBlue 分享實際案例，使用 Blupa 量表來分析個人在憲動盟、OCF 蹲點經驗。期待拋磚給想讓手上專案加速的 NGO / GOV 成員以及希望手上專案接地氣的 g0ver / 開源人，讓開源的、開放的黑客版社會參與越來越不謎。</p>"
