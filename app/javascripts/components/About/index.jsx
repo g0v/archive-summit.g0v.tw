@@ -8,26 +8,26 @@ class About extends Component {
     return (
       <div className={styles.root}>
         { 
-          about[getLocale()].sections.map( section => {
+          about[getLocale()].sections.map( (section, i_s) => {
             return (
-              <section>
+              <section key={`section_${i_s}`}>
                 <h2 className={styles.header}>{section.header}</h2>
                 {
-                  section.description.map( desc => {
+                  section.description.map( (desc, i) => {
                     return (
-                      <p className={styles.description} dangerouslySetInnerHTML={{__html: desc}}></p>
+                      <p key={`p_${i_s}_${i}`} className={styles.description} dangerouslySetInnerHTML={{__html: desc}}></p>
                     )
                   })
                 }
                 {
-                  section.sub.map( section => {
+                  section.sub.map( (section, i) => {
                     return (
-                      <section>
+                      <section key={`subsection_${i_s}_${i}`}>
                         <h3 className={styles.subheader}>{section.header}</h3>
                         {
-                          section.description.map( desc => {
+                          section.description.map( (desc, i) => {
                             return (
-                              <p className={styles.description} dangerouslySetInnerHTML={{__html: desc}}></p>
+                              <p key={`sub_p_${i_s}_${i}`} className={styles.description} dangerouslySetInnerHTML={{__html: desc}}></p>
                             )
                           })
                         }
