@@ -12,7 +12,8 @@ const noop = () => {}
 function mapTimeSlotToItems(day, value, i) {
   let id = `day${day}-all-${i}`;
   let venue = value.venue || (value.event && value.event.venue);
-
+  let { hash } = this.props.location;
+  let selected = hash ? (hash === '#' + id) : false;
   if(venue && this.state.categoryOn) {
     let category = this.state.categories.filter(cat => cat.title === venue)[0]
     if(!category.active) return false;
@@ -54,6 +55,7 @@ function mapTimeSlotToItems(day, value, i) {
                 className={cx({
                   "Schedule-event" : true,
                 })}
+                style={selected ? {backgroundColor: '#fff3f3'} : {}}
                 onClick={this.setSession.bind(this, value.event, value.time)}>
                 <div className="Schedule-main">
                   {value.event.title}
@@ -99,13 +101,14 @@ export default class Schedule extends Component {
   componentDidMount() {
     const { hash } = this.props.location;
     if (hash) {
+      setTimeout(() => document.getElementById(hash.replace('#', 'slot-')).scrollIntoView(false), 300);
       const dataArray = hash.replace('#', '').split('-');
       const value = schedules[getLocale()][dataArray[0]][dataArray[2]];
       this.setState({
         showSession: true,
         currentSession: value.event,
         currentSessionTime: value.time
-      })
+      });
     }
   }
   setSession(value, time) {
