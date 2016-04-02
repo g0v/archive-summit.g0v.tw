@@ -31,7 +31,8 @@ function mapTimeSlotToItems(day, value, i) {
           {value.title}／{venue}
         </div>
         <div className="Schedule-tagline">
-          {value.tagline}
+          <div>{value.tagline}</div>
+          <div className="Schedule-anchor">{value.anchor}</div>
         </div>
       </div>
     );
