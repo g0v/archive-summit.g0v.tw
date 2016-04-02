@@ -17,7 +17,7 @@ export default class ScheduleParallel extends Component {
     showSession: false,
     categoryOn: false,
     categories: categoriesData[getLocale()].map((cat, index) => ({...cat, index})),
-    currentSession: () => {},
+    currentSession: () => ({}),
     currentSessionTime: null,
   };
   defaultTitle = document.title;
@@ -68,7 +68,7 @@ export default class ScheduleParallel extends Component {
   resetSession() {
     this.setState({
       showSession: false,
-      currentSession: () => {},
+      currentSession: () => ({}),
       currentSessionTime: null,
     })
     document.body.classList.remove(styles.mobileScrollLock);

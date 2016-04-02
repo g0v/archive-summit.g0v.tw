@@ -98,7 +98,7 @@ export default class Schedule extends Component {
     mobileFilterOn: false,
     categories: categories.map(category => ({...category, active: false})),
     currentSection: '',
-    currentSession: () => {},
+    currentSession: () => ({}),
     currentSessionTime: null,
     };
   }
@@ -129,7 +129,7 @@ export default class Schedule extends Component {
   resetSession = () => {
     this.setState({
       showSession: false,
-      currentSession: () => {},
+      currentSession: () => ({}),
       currentSessionTime: null,
     })
     document.body.classList.remove(styles.mobileScrollLock);
