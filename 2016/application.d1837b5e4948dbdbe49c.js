@@ -27456,29 +27456,11 @@
 			"header": "Important Dates",
 			"milestones": [
 				{
-					"faded": true,
-					"range": [
-						"2016/2/15",
-						"2016/3/20"
-					],
-					"title": "International Early Bird (US$25)",
-					"url": "http://g0v-summit2016.kktix.cc/events/early-bird"
-				},
-				{
-					"faded": true,
-					"range": [
-						"2016/2/15",
-						"2016/3/20"
-					],
-					"title": "Contributor Tickets (US$25)",
-					"url": "http://g0v-summit2016.kktix.cc/events/g0ver"
-				},
-				{
 					"range": [
 						"2016/4/1 01:00UTC",
 						"2016/4/15"
 					],
-					"title": "Regular Tickets (US$36)",
+					"title": "Register Now: Regular Tickets (US$36)",
 					"url": "http://g0v-summit2016.kktix.cc/events/conference"
 				}
 			],
@@ -27492,29 +27474,11 @@
 			"header": "時間表",
 			"milestones": [
 				{
-					"faded": true,
-					"range": [
-						"2016/2/15",
-						"2016/3/20"
-					],
-					"title": "國際早鳥票 (TW$800)",
-					"url": "http://g0v-summit2016.kktix.cc/events/early-bird"
-				},
-				{
-					"faded": true,
-					"range": [
-						"2016/2/15",
-						"2016/3/20"
-					],
-					"title": "社群貢獻票 (TW$800)",
-					"url": "http://g0v-summit2016.kktix.cc/events/g0ver"
-				},
-				{
 					"range": [
 						"2016/4/1 09:00CST",
 						"2016/4/15"
 					],
-					"title": "一般票 (TW$1200)",
+					"title": "我要參加！一般票 (TW$1200)",
 					"url": "http://g0v-summit2016.kktix.cc/events/conference"
 				}
 			],
