@@ -312,12 +312,20 @@ $mobile-item-leftstop: 96px;
     flex: 1 0 0;
   }
 }
+
 .Schedule-presenter {
   color: rgb(125,124,123);
   font-size: 14px;
   margin-top: 4px;
   font-weight: normal;
 }
+
+.Schedule-anchor {
+  font-size: 14px;
+  margin-top: 4px;
+  font-weight: normal;
+}
+
 .Schedule-time {
   width: calc($mobile-item-leftstop - 14px);  /* 14px = event left padding */
   padding: $mobile-padding;
@@ -339,6 +347,11 @@ $mobile-item-leftstop: 96px;
     border-bottom: none;
   }
 }
+
+.Schedule-tagline {
+  flex-direction: column;
+}
+
 .Schedule-event.is-active {
   background: #fff3f3;
 }
