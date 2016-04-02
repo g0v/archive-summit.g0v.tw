@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import "./session.css";
 import speakers from '../SpeakerList/speakers.json';
+import schedules from './schedules.json';
 import { getLocale, getString } from "javascripts/locale";
 import { avatarURL } from '../SpeakerList';
 import styles from "./styles.css";
@@ -51,6 +52,8 @@ export default React.createClass({
     });
     return (
         <div className="Session">
+          <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
+          </div>
             <div className="Session-close"
                  onClick={sessionHandler}></div>
             <div className="Session-content">
