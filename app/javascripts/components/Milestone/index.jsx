@@ -11,11 +11,10 @@ export default class Milestone extends Component {
         <h2 className={styles.header}>{data.header}</h2>
         <section className={styles.section}>
           {data.milestones.map(({range, title, url, label, faded}) => (
+            <a className={styles.links} href={url} target="_blank">
             <article className={styles.article + ' ' + (faded ? 'faded' : '')} key={title}>
               <div className={styles.title}>
-                <a className={styles.links} href={url} target="_blank">
                   {title}
-                </a>
               </div>
               <div className={styles.range}>
                 <span className={styles.date}>{range[0]}</span>
@@ -32,6 +31,7 @@ export default class Milestone extends Component {
                   }
               </div>
             </article>
+          </a>
           ))}
         </section>
         <p>
