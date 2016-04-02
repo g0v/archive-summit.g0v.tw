@@ -29178,7 +29178,16 @@
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'Schedule-tagline' },
-	        value.tagline
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          value.tagline
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'Schedule-anchor' },
+	          value.anchor
+	        )
 	      )
 	    );
 	  } else {
@@ -32447,6 +32456,7 @@
 				{
 					"title": "動力",
 					"tagline": "公民科技時代，運動組織的馬力再升級",
+					"anchor": "蔡淑芳",
 					"venue": "R1",
 					"color": "#CE0D41"
 				},
@@ -32506,6 +32516,7 @@
 				{
 					"title": "地基",
 					"tagline": "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐",
+					"anchor": "clkao",
 					"venue": "R0",
 					"color": "#FCDE86"
 				},
@@ -32565,6 +32576,7 @@
 				{
 					"title": "骨架",
 					"tagline": "從資料科技與文化領域出發的開放實驗",
+					"anchor": "李怡志",
 					"venue": "R2",
 					"color": "#1BADBE"
 				},
@@ -32628,6 +32640,7 @@
 				{
 					"title": "藍圖",
 					"tagline": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來",
+					"anchor": "au",
 					"venue": "R1",
 					"color": "#F4AF3D"
 				},
@@ -32699,6 +32712,7 @@
 				{
 					"title": "配線",
 					"tagline": "同步、協作與進擊，打造跨界群眾串連的神經網絡",
+					"anchor": "林祖儀",
 					"venue": "R0",
 					"color": "#449FFC"
 				},
@@ -32774,6 +32788,7 @@
 				{
 					"title": "鷹架",
 					"tagline": "剖析災變，以數據力支援的智慧應變方案",
+					"anchor": "衷嵐焜",
 					"venue": "R2",
 					"color": "#CE59E4"
 				},
@@ -32894,6 +32909,7 @@
 				{
 					"title": "監工",
 					"tagline": "當監督政府成為全民義務，亞洲網路草根民主的進化論",
+					"anchor": "劉致昕",
 					"venue": "R1",
 					"color": "#C1EB96"
 				},
@@ -32953,6 +32969,7 @@
 				{
 					"title": "廣場",
 					"tagline": "走出黑箱，開放政府的全民共筆指南",
+					"anchor": "吳銘軒",
 					"venue": "R0",
 					"color": "#FB69B3"
 				},
@@ -33011,6 +33028,7 @@
 				{
 					"title": "空調",
 					"tagline": "破解環境污染密碼，開源釋出好空氣",
+					"anchor": "Jimmy",
 					"venue": "R2",
 					"color": "#D8D9D8"
 				},
