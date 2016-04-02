@@ -27381,40 +27381,40 @@
 	            var label = _ref.label;
 	            var faded = _ref.faded;
 	            return _react2.default.createElement(
-	              "article",
-	              { className: _styles2.default.article + ' ' + (faded ? 'faded' : ''), key: title },
+	              "a",
+	              { className: _styles2.default.links, href: url, target: "_blank" },
 	              _react2.default.createElement(
-	                "div",
-	                { className: _styles2.default.title },
+	                "article",
+	                { className: _styles2.default.article + ' ' + (faded ? 'faded' : ''), key: title },
 	                _react2.default.createElement(
-	                  "a",
-	                  { className: _styles2.default.links, href: url, target: "_blank" },
-	                  title
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: _styles2.default.range },
-	                _react2.default.createElement(
-	                  "span",
-	                  { className: _styles2.default.date },
-	                  range[0]
-	                ),
-	                "－",
-	                _react2.default.createElement(
-	                  "span",
-	                  { className: _styles2.default.date },
-	                  range[1]
-	                ),
-	                label ? _react2.default.createElement(
 	                  "div",
-	                  null,
+	                  { className: _styles2.default.title },
+	                  title
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: _styles2.default.range },
 	                  _react2.default.createElement(
 	                    "span",
-	                    { className: _styles2.default.label },
-	                    label
-	                  )
-	                ) : void 0
+	                    { className: _styles2.default.date },
+	                    range[0]
+	                  ),
+	                  "－",
+	                  _react2.default.createElement(
+	                    "span",
+	                    { className: _styles2.default.date },
+	                    range[1]
+	                  ),
+	                  label ? _react2.default.createElement(
+	                    "div",
+	                    null,
+	                    _react2.default.createElement(
+	                      "span",
+	                      { className: _styles2.default.label },
+	                      label
+	                    )
+	                  ) : void 0
+	                )
 	              )
 	            );
 	          })
