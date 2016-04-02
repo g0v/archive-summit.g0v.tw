@@ -29185,7 +29185,9 @@
 	function mapTimeSlotToItems(day, value, i) {
 	  var id = 'day' + day + '-all-' + i;
 	  var venue = value.venue || value.event && value.event.venue;
+	  var hash = this.props.location.hash;
 
+	  var selected = hash ? hash === '#' + id : false;
 	  if (venue && this.state.categoryOn) {
 	    var category = this.state.categories.filter(function (cat) {
 	      return cat.title === venue;
@@ -29251,6 +29253,7 @@
 	          className: cx({
 	            "Schedule-event": true
 	          }),
+	          style: selected ? { backgroundColor: '#fff3f3' } : {},
 	          onClick: this.setSession.bind(this, value.event, value.time) },
 	        _react2.default.createElement(
 	          'div',
@@ -29334,6 +29337,9 @@
 	      var hash = this.props.location.hash;
 
 	      if (hash) {
+	        setTimeout(function () {
+	          return document.getElementById(hash.replace('#', 'slot-')).scrollIntoView(false);
+	        }, 300);
 	        var dataArray = hash.replace('#', '').split('-');
 	        var value = _schedules_by_track2.default[(0, _locale.getLocale)()][dataArray[0]][dataArray[2]];
 	        this.setState({

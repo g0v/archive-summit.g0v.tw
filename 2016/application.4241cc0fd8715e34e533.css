@@ -868,6 +868,18 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 103px;
+  *zoom: 1;
+}
+
+.styles-root__1M9NA:before {
+  content: '';
+  display: table;
+}
+
+.styles-root__1M9NA:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .styles-header__3dbkE {
@@ -1791,8 +1803,8 @@ a.styles-sponsor__3-_FS:hover .styles-name__3p5Sj {
 }
 .styles-root__1gK3V {
   background: #FFFFFF;
-  /*box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);*/
-  /*background-color: rgba(255, 255, 255, 0.94);*/
+  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
+  background-color: rgba(255, 255, 255, 0.94);
   min-height: 400px;
   padding-left: 15px;
   padding-right: 15px;
