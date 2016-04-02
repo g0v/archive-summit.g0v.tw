@@ -31487,6 +31487,10 @@
 
 	var _speakers2 = _interopRequireDefault(_speakers);
 
+	var _schedules = __webpack_require__(387);
+
+	var _schedules2 = _interopRequireDefault(_schedules);
+
 	var _locale = __webpack_require__(228);
 
 	var _SpeakerList = __webpack_require__(361);
@@ -31580,6 +31584,11 @@
 	    return _react2.default.createElement(
 	      "div",
 	      { className: "Session" },
+	      _react2.default.createElement(
+	        "div",
+	        { style: { color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center' } },
+	        _schedules2.default[(0, _locale.getLocale)()].interpretation
+	      ),
 	      _react2.default.createElement("div", { className: "Session-close",
 	        onClick: sessionHandler }),
 	      _react2.default.createElement(
