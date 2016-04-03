@@ -32525,7 +32525,7 @@
 				{
 					"title": "地基",
 					"tagline": "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐",
-					"anchor": "clkao",
+					"anchor": "高嘉良",
 					"venue": "R0",
 					"color": "#FCDE86"
 				},
@@ -32649,7 +32649,7 @@
 				{
 					"title": "藍圖",
 					"tagline": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來",
-					"anchor": "au",
+					"anchor": "唐鳳",
 					"venue": "R1",
 					"color": "#F4AF3D"
 				},
@@ -33037,7 +33037,7 @@
 				{
 					"title": "空調",
 					"tagline": "破解環境污染密碼，開源釋出好空氣",
-					"anchor": "Jimmy",
+					"anchor": "黃雋",
 					"venue": "R2",
 					"color": "#D8D9D8"
 				},
