@@ -551,7 +551,7 @@
           "speaker": "Chia-hua Lu",
           "title": "Government x Civil Society x Internet x Deliberation\nObservations and Reflections of a Mediator",
           "bio": "<p>05年開始為青年審議主持人出身，也陸續參與、協助學術研究團隊執行政府審議民主多項研究計劃，以及，協助民間團體進行內部工作坊或是相關程序論述，並協助或提供政府單位諮詢公民參與的實作想像、審議民主如何具體操作等相關培力、個案操作或制度建構。<br/>一個女人的精華歲月就在其中慢慢一點一滴的...</p>",
-            "abstract": "<p>After the 2014 Occupy, the concept of “citizen’s deliberation” seems to have created an opportunity to change the relationship between the government and the people, moving it away from a traditional top-down model.<br/>However, for “mediators” who plan and carry deliberations, there is a constant responsibility to review, in every deliberative setting: How much of it is led by the government? How much agenda-setting power is in the hands of people?<br/>The balance between these two sides must be built on an iterating, substantive communication that encompass all stakeholders. This is the only way to gradually reconcile activist and the proponents’ insights with policymakers and the civil servants’ insights, thereby establishing a genuine “deliberative system.”<br/>In the face of different types of intersectional stakeholders, what effective tricks do the so-called “mediating sector” have to promote communication?<br/>What role can be played by the so-called “Internet platforms”, and where should we direct our future efforts?</p>"
+          "abstract": "<p>After the 2014 Occupy, the concept of “citizen’s deliberation” seems to have created an opportunity to change the relationship between the government and the people, moving it away from a traditional top-down model.<br/>However, for “mediators” who plan and carry deliberations, there is a constant responsibility to review, in every deliberative setting: How much of it is led by the government? How much agenda-setting power is in the hands of people?<br/>The balance between these two sides must be built on an iterating, substantive communication that encompass all stakeholders. This is the only way to gradually reconcile activist and the proponents’ insights with policymakers and the civil servants’ insights, thereby establishing a genuine “deliberative system.”<br/>In the face of different types of intersectional stakeholders, what effective tricks do the so-called “mediating sector” have to promote communication?<br/>What role can be played by the so-called “Internet platforms”, and where should we direct our future efforts?</p>"
         }
       },
       {
@@ -691,8 +691,8 @@
         "event" : {
           "title": "主題演講: 公民科技中的「公民精神」",
           "speaker": "Felipe Heusser",
-          "bio": "<p>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.</p><p>Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.</p>",
-          "abstract": "<p>Understanding the politics of technology as a mean for civic participation.</p>"
+          "bio": "<p>Felipe Heusser 在智利發起了運用科技串連的公民運動，曾透過線上動員，成功催生拉丁美洲第一個遊說監管立法。他所主導的 Poplus 跨國社群（串起全球十數個類似 g0v 的公民科技社群），更持續開發各種開源元件。Poplus 的各種努力，逐漸成為全球各地公民運動的後勤。EveryPolitician 政治人物資料庫讓缺乏資源的非洲辛巴威首度建立了國會監督網站，SayIt 這套發言紀錄資料庫也廣泛運用在台灣政府與民間的審議紀錄。</p>",
+          "abstract": "<p>公民參與，從了解科技政治開始。</p>"
         }
       },
       {
@@ -1100,7 +1100,7 @@
         "time": "16:45-17:00",
         "event": {
           "title": "Code for All – 全球公民科技社群",
-          "abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
+          "abstract": "<p>Coding for the public good 是全球性的運動，從美國到日本，從墨西哥到巴基斯坦，開發人員使用他們的技藝，來確保政府承擔責任，並且改善我們所有人的生活。</p><p>我在建立起 Code for Germany 德國社群後，很榮幸能在 Code for All 全球網路裡貢獻一己之力，向全球分享迄今為止，社群學到了哪些事情。</p><p>我想透過一些國際 Code for All 社群的實踐經驗，帶領各位來場尋知之旅。在這些例子的基礎上，我想討論什麼能創造好的公民科技專案。為什麼有些方法的效果特別好？在公民科技中，使用者可以有怎麼樣的角色？各項專案的成功經驗，又能如何複製、延續？</p>"
         }
       },
       {
