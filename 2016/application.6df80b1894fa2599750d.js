@@ -27829,6 +27829,7 @@
 					},
 					{
 						"name": "均一教育平台",
+						"alt_name": "誠致教育基金會",
 						"logo": "junyi.png",
 						"url": "http://www.junyiacademy.org/",
 						"desc": "中文的免費均等一流教育\n均一教育平台是由財團法人誠致教育基金會創辦。我們的目標是透過雲端平台提供免費的『均等、一流』的教育機會給每一個人。\n任何人都可以使用網站所有的資源。不管你是學生、老師、自學家庭、校長、二十年後想回去當學生的大人、或是對地球生物好奇的友善外星人，均一的課程內容與資源完全免費提供使用。"
@@ -33193,6 +33194,7 @@
 	    }
 
 	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_Object$getPrototypeO = (0, _getPrototypeOf2.default)(SponsorsSummary)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.sponsor = function (sponsor) {
+	      var name = sponsor.alt_name || sponsor.name;
 	      return sponsor.url ? _react2.default.createElement(
 	        "a",
 	        { href: sponsor.url, target: "_blank", className: _styles2.default.sponsor, key: sponsor.name },
@@ -33200,7 +33202,7 @@
 	        _react2.default.createElement(
 	          "span",
 	          { className: _styles2.default.name },
-	          sponsor.name
+	          name
 	        )
 	      ) : _react2.default.createElement(
 	        "span",
@@ -33209,7 +33211,7 @@
 	        _react2.default.createElement(
 	          "span",
 	          { className: _styles2.default.name },
-	          sponsor.name
+	          name
 	        )
 	      );
 	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
