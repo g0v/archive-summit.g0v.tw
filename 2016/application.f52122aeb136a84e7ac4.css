@@ -1815,7 +1815,40 @@ body.styles-mobileScrollLock__mMH7S {
 a.styles-sponsor__3-_FS:hover .styles-name__3p5Sj {
   text-decoration: underline;
 }
-.styles-root__1gK3V {
+.styles-main__qmbws {
+  position: absolute;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  padding-top: 60px;
+  margin-top: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.styles-monitor__3a4Ss {
+  height: 446px;
+}
+
+.styles-channel__3Bot0 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
+  background-color: rgba(255, 255, 255, 0.94);
+}.styles-root__1gK3V {
   background: #FFFFFF;
   box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.50);
   background-color: rgba(255, 255, 255, 0.94);
