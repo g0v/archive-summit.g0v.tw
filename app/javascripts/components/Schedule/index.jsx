@@ -14,6 +14,7 @@ function mapTimeSlotToItems(day, value, i) {
   let venue = value.venue || (value.event && value.event.venue);
   let { hash } = this.props.location;
   let selected = hash ? (hash === '#' + id) : false;
+  let event = () => schedules[getLocale()][`day${day}`][i].event;
   if(venue && this.state.categoryOn) {
     let category = this.state.categories.filter(cat => cat.title === venue)[0]
     if(!category.active) return false;
@@ -57,7 +58,7 @@ function mapTimeSlotToItems(day, value, i) {
                   "Schedule-event" : true,
                 })}
                 style={selected ? {backgroundColor: '#fff3f3'} : {}}
-                onClick={this.setSession.bind(this, value.event, value.time)}>
+                onClick={this.setSession.bind(this, event, value.time)}>
                 <div className="Schedule-main">
                   {value.event.title}
                   <div className="Schedule-presenter">{value.event.speaker}</div>
@@ -90,15 +91,19 @@ const categories = [
 ];
 
 export default class Schedule extends Component {
-  state = {
+  constructor(props) {
+    super(props);
+    this.state = {
     showSession: false,
     categoryOn: false,
     mobileFilterOn: false,
     categories: categories.map(category => ({...category, active: false})),
     currentSection: '',
-    currentSession: {},
+    currentSession: () => ({}),
     currentSessionTime: null,
-  };
+    };
+  }
+ 
   componentDidMount() {
     const { hash } = this.props.location;
     if (hash) {
@@ -107,11 +112,12 @@ export default class Schedule extends Component {
       const value = schedules[getLocale()][dataArray[0]][dataArray[2]];
       this.setState({
         showSession: true,
-        currentSession: value.event,
+        currentSession: () => schedules[getLocale()][dataArray[0]][dataArray[2]].event,
         currentSessionTime: value.time
       });
     }
   }
+
   setSession(value, time) {
     this.setState({
       showSession: true,
@@ -124,7 +130,7 @@ export default class Schedule extends Component {
   resetSession = () => {
     this.setState({
       showSession: false,
-      currentSession: {},
+      currentSession: () => ({}),
       currentSessionTime: null,
     })
     document.body.classList.remove(styles.mobileScrollLock);
@@ -242,7 +248,7 @@ export default class Schedule extends Component {
             })}>
             <Session
               sessionHandler={this.resetSession}
-              data={this.state.currentSession}
+              data={this.state.currentSession()}
               time={this.state.currentSessionTime}
               categories={categories}
             />

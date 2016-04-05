@@ -17,7 +17,7 @@ export default class ScheduleParallel extends Component {
     showSession: false,
     categoryOn: false,
     categories: categoriesData[getLocale()].map((cat, index) => ({...cat, index})),
-    currentSession: {},
+    currentSession: () => ({}),
     currentSessionTime: null,
   };
   defaultTitle = document.title;
@@ -68,7 +68,7 @@ export default class ScheduleParallel extends Component {
   resetSession() {
     this.setState({
       showSession: false,
-      currentSession: {},
+      currentSession: () => ({}),
       currentSessionTime: null,
     })
     document.body.classList.remove(styles.mobileScrollLock);
@@ -111,7 +111,7 @@ export default class ScheduleParallel extends Component {
       var itemClasses = classNames({
         "Schedule-item" : true,
       })
-
+      let event = () => schedules[getLocale()][`day${day}`][i].event;
       var content = "";
       if(value.event){ //single event
         if(!shouldPassFilter(value.event.category)) {
@@ -125,10 +125,9 @@ export default class ScheduleParallel extends Component {
         }else{
           content = <a id={`slot-${id}`} href={`#${id}`}
             className={classNames({
-              "Schedule-event" : true,
-              "is-active" : currentSession.title === value.event.title && currentSession.time === value.event.time && currentSession.venue === value.event.venue
+              "Schedule-event" : true
             })}
-            onClick={this.setSession.bind(this, value.event, value.time)}>
+            onClick={this.setSession.bind(this, event, value.time)}>
             <div className="Schedule-main">
               {value.event.title}
               <div className="Schedule-presenter">{value.event.speaker}</div>
@@ -154,10 +153,9 @@ export default class ScheduleParallel extends Component {
  
                 return(
                   <a className={classNames({
-                       "Schedule-event" : true,
-                       "is-active" : currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
+                       "Schedule-event" : true
                      })}
-                     onClick={this.setSession.bind(this,v, value.time)}
+                     onClick={this.setSession.bind(this,() => v, value.time)}
                      href={`#${id}`} key={k} id={`slot-${id}`}>
                     {venue}
                     <div className="Schedule-main">
@@ -275,7 +273,7 @@ export default class ScheduleParallel extends Component {
             })}
             style={sessionStyle}>
             <Session sessionHandler={this.resetSession}
-                     data={currentSession} time={this.state.currentSessionTime}
+                     data={currentSession()} time={this.state.currentSessionTime}
                      categories={this.state.categories}/>
           </div>
 

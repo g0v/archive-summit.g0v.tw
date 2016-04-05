@@ -6,6 +6,7 @@ class Schedules extends Component {
     type: 'topic'
   }
   handleSwitch = () => {
+    this.props.history.pushState("", this.props.location.pathname);
     if(this.state.type === 'topic') {
       this.setState({type: 'parallel'})
     }else{

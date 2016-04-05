@@ -16,7 +16,7 @@ export default React.createClass({
 
   render() {
     var {sessionHandler, data, categories, time} = this.props;
-    var category = categories.find(cat => cat.id === data.category)
+    var category = categories.find(cat => cat.id === data.category);
     var venue = (data.venue) ? <div className="Session-venue">{data.venue}</div> : "";
     var language = (data.EN) ? <div className="Session-en">EN</div> : "";
     const [locale] = getLocale().split('-');
