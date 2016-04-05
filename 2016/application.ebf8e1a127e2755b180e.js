@@ -28943,6 +28943,33 @@
 				"twitter": "@lucien_cc"
 			},
 			{
+				"avatar": "https://goo.gl/RNq156",
+				"name": "洪申翰",
+				"organization": "綠色公民行動聯盟",
+				"title": "",
+				"bio": "目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "",
+				"name": "呂家華",
+				"organization": "阿嬸議民主",
+				"title": "",
+				"bio": "05年開始為青年審議主持人出身，也陸續參與、協助學術研究團隊執行政府審議民主多項研究計劃，以及，協助民間團體進行內部工作坊或是相關程序論述，並協助或提供政府單位諮詢公民參與的實作想像、審議民主如何具體操作等相關培力、個案操作或制度建構。一個女人的精華歲月就在其中慢慢一點一滴的...",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "",
+				"name": "曾虹文",
+				"organization": "綠色公民行動聯盟",
+				"title": "",
+				"bio": "對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
 				"avatar": "",
 				"name": "蔡淑芳",
 				"organization": "開拓文教基金會",
@@ -28987,6 +29014,42 @@
 				"organization": "",
 				"title": "",
 				"bio": "阿端，前綠黨中執委，社運份子，參與多年廢核、性別與人權運動。專長為創意企劃、溝通設計與 php 程式設計。在 g0v 社群提供社運觀點與橫向聯繫。",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "https://www.dropbox.com/s/di8p3l383w1vq2o/sherry.jpg",
+				"name": "李雪莉(Sherry Lee)",
+				"organization": "《報導者》，The Reporter",
+				"title": "總主筆",
+				"bio": "等待轉折，摸索顛倒，努力避免心靈與思想的退化。待過蒙特婁、北京、香港，半輩子在學習用文字和影像把故事說好。期許自己成為一位更好的人。有人類學的細膩、社會學的宏觀、能回到本質思索。目前擔任《報導者》總主筆。",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "",
+				"name": "Jimmy Huang",
+				"organization": "NETivism",
+				"title": "",
+				"bio": "網絡行動科技創辦人，關注環境問題與 NPO 的資訊應用",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "https://www.dropbox.com/s/f2fioibw6gh94sx/2015-02-07%2011.05.13.jpg",
+				"name": "林祖儀",
+				"organization": "沃草Watchout! / 割闌尾計畫 / 寓意科技",
+				"title": "",
+				"bio": "從政治冷漠，到積極參與公民運動，找到志向是「強化選舉權、推動罷免權」。不用把政治期待放在政治強人身上，透過選賢與能、罷不賢與無能，完善臺灣的民主SOP。「沃草」負責人；推動罷免權的割闌尾計畫發言人。批踢踢粉絲團主編。社企流志工。寓意科技財務長。財金作家，著有《看財經新聞解讀經濟現象》《圖解貨幣學》等書。",
+				"nation": "Taiwan",
+				"twitter": ""
+			},
+			{
+				"avatar": "",
+				"name": "劉致昕",
+				"organization": "",
+				"title": "",
+				"bio": "自由記者跟開咖啡店的人。曾做過海盜黨、ParliamentWatch、歐洲各國網路公民參與等系列報導，也曾被入坑鄉民有約線上直播。",
 				"nation": "Taiwan",
 				"twitter": ""
 			},
