@@ -149,6 +149,14 @@ const Menu = () => {
           {info[getLocale()].transport}
         </Link>
       </li>
+      <li className={styles.item}
+        activeClassName={styles.active}>
+        <Link
+          to="/2016/live"
+        >
+          {info[getLocale()].live}
+        </Link>
+      </li>
       <li
         className={styles.item}
         activeClassName={styles.active}>

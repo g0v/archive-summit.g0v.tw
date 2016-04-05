@@ -1,14 +1,13 @@
 import React, { Component } from "react";
+import c from 'classnames';
 import styles from "./styles.css";
 
-class MainSection extends Component {
-  render() {
-    return (
-      <main className={styles.root}>
-        {this.props.children}
-      </main>
-    );
-  }
+function MainSection({children, className}) {
+  return (
+    <main className={c(styles.root, className)}>
+      {children}
+    </main>
+  );
 };
 
 export default MainSection;
