@@ -27703,7 +27703,7 @@
 						"name": "Junyi Academy",
 						"logo": "junyi.png",
 						"url": "http://www.junyiacademy.org/",
-						"desc": ""
+						"desc": "Junyi, or 均一 in Chinese, means equal and first-class. Our vision is to provide equal opportunity for everyone to study by developing first-class education material online with free access anytime anywhere."
 					},
 					{
 						"name": "WeatherRisk",
@@ -29153,6 +29153,9 @@
 	  var hash = this.props.location.hash;
 
 	  var selected = hash ? hash === '#' + id : false;
+	  var event = function event() {
+	    return _schedules_by_track2.default[(0, _locale.getLocale)()]['day' + day][i].event;
+	  };
 	  if (venue && this.state.categoryOn) {
 	    var category = this.state.categories.filter(function (cat) {
 	      return cat.title === venue;
@@ -29228,7 +29231,7 @@
 	            "Schedule-event": true
 	          }),
 	          style: selected ? { backgroundColor: '#fff3f3' } : {},
-	          onClick: this.setSession.bind(this, value.event, value.time) },
+	          onClick: this.setSession.bind(this, event, value.time) },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'Schedule-main' },
@@ -29261,18 +29264,42 @@
 	var Schedule = function (_Component) {
 	  (0, _inherits3.default)(Schedule, _Component);
 
-	  function Schedule() {
-	    var _Object$getPrototypeO;
-
-	    var _temp, _this, _ret;
-
+	  function Schedule(props) {
 	    (0, _classCallCheck3.default)(this, Schedule);
 
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
+	    var _this = (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(Schedule).call(this, props));
 
-	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_Object$getPrototypeO = (0, _getPrototypeOf2.default)(Schedule)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.state = {
+	    _this.resetSession = function () {
+	      _this.setState({
+	        showSession: false,
+	        currentSession: function currentSession() {
+	          return {};
+	        },
+	        currentSessionTime: null
+	      });
+	      document.body.classList.remove(_styles2.default.mobileScrollLock);
+	    };
+
+	    _this.toggleCategory = function (id) {
+	      var categories = _this.state.categories.slice(0);
+	      categories[id] = (0, _extends3.default)({}, categories[id], { active: !categories[id].active });
+	      _this.setState({ categories: categories, categoryOn: true });
+	    };
+
+	    _this.clearCategory = function () {
+	      _this.setState({
+	        categories: categories.map(function (category) {
+	          return (0, _extends3.default)({}, category, { active: false });
+	        }),
+	        categoryOn: false
+	      });
+	    };
+
+	    _this.toggleMobileFilter = function () {
+	      _this.setState({ mobileFilterOn: !_this.state.mobileFilterOn });
+	    };
+
+	    _this.state = {
 	      showSession: false,
 	      categoryOn: false,
 	      mobileFilterOn: false,
@@ -29280,47 +29307,36 @@
 	        return (0, _extends3.default)({}, category, { active: false });
 	      }),
 	      currentSection: '',
-	      currentSession: {},
+	      currentSession: function currentSession() {
+	        return {};
+	      },
 	      currentSessionTime: null
-	    }, _this.resetSession = function () {
-	      _this.setState({
-	        showSession: false,
-	        currentSession: {},
-	        currentSessionTime: null
-	      });
-	      document.body.classList.remove(_styles2.default.mobileScrollLock);
-	    }, _this.toggleCategory = function (id) {
-	      var categories = _this.state.categories.slice(0);
-	      categories[id] = (0, _extends3.default)({}, categories[id], { active: !categories[id].active });
-	      _this.setState({ categories: categories, categoryOn: true });
-	    }, _this.clearCategory = function () {
-	      _this.setState({
-	        categories: categories.map(function (category) {
-	          return (0, _extends3.default)({}, category, { active: false });
-	        }),
-	        categoryOn: false
-	      });
-	    }, _this.toggleMobileFilter = function () {
-	      _this.setState({ mobileFilterOn: !_this.state.mobileFilterOn });
-	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	    };
+	    return _this;
 	  }
 
 	  (0, _createClass3.default)(Schedule, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
+	      var _this2 = this;
+
 	      var hash = this.props.location.hash;
 
 	      if (hash) {
-	        setTimeout(function () {
-	          return document.getElementById(hash.replace('#', 'slot-')).scrollIntoView(false);
-	        }, 300);
-	        var dataArray = hash.replace('#', '').split('-');
-	        var value = _schedules_by_track2.default[(0, _locale.getLocale)()][dataArray[0]][dataArray[2]];
-	        this.setState({
-	          showSession: true,
-	          currentSession: value.event,
-	          currentSessionTime: value.time
-	        });
+	        (function () {
+	          setTimeout(function () {
+	            return document.getElementById(hash.replace('#', 'slot-')).scrollIntoView(false);
+	          }, 300);
+	          var dataArray = hash.replace('#', '').split('-');
+	          var value = _schedules_by_track2.default[(0, _locale.getLocale)()][dataArray[0]][dataArray[2]];
+	          _this2.setState({
+	            showSession: true,
+	            currentSession: function currentSession() {
+	              return _schedules_by_track2.default[(0, _locale.getLocale)()][dataArray[0]][dataArray[2]].event;
+	            },
+	            currentSessionTime: value.time
+	          });
+	        })();
 	      }
 	    }
 	  }, {
@@ -29343,7 +29359,7 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
+	      var _this3 = this;
 
 	      return _react2.default.createElement(
 	        'div',
@@ -29445,7 +29461,7 @@
 	                    "is-hidden": this.state.currentSection !== '' && this.state.currentSection !== 'day1'
 	                  }),
 	                  ref: function ref(c) {
-	                    return _this2.day1 = c;
+	                    return _this3.day1 = c;
 	                  },
 	                  id: 'day1'
 	                },
@@ -29468,7 +29484,7 @@
 	                    "is-hidden": this.state.currentSection !== '' && this.state.currentSection !== 'day2'
 	                  }),
 	                  ref: function ref(c) {
-	                    return _this2.day2 = c;
+	                    return _this3.day2 = c;
 	                  },
 	                  id: 'day2'
 	                },
@@ -29494,7 +29510,7 @@
 	              }) },
 	            _react2.default.createElement(_session2.default, {
 	              sessionHandler: this.resetSession,
-	              data: this.state.currentSession,
+	              data: this.state.currentSession(),
 	              time: this.state.currentSessionTime,
 	              categories: categories
 	            })
@@ -29701,7 +29717,9 @@
 	      categories: _categories2.default[(0, _locale.getLocale)()].map(function (cat, index) {
 	        return (0, _extends3.default)({}, cat, { index: index });
 	      }),
-	      currentSession: {},
+	      currentSession: function currentSession() {
+	        return {};
+	      },
 	      currentSessionTime: null
 	    };
 	    _this.defaultTitle = document.title;
@@ -29757,7 +29775,9 @@
 	    value: function resetSession() {
 	      this.setState({
 	        showSession: false,
-	        currentSession: {},
+	        currentSession: function currentSession() {
+	          return {};
+	        },
 	        currentSessionTime: null
 	      });
 	      document.body.classList.remove(_styles2.default.mobileScrollLock);
@@ -29831,7 +29851,9 @@
 	        var itemClasses = (0, _classnames2.default)({
 	          "Schedule-item": true
 	        });
-
+	        var event = function event() {
+	          return _schedules2.default[(0, _locale.getLocale)()]["day" + day][i].event;
+	        };
 	        var content = "";
 	        if (value.event) {
 	          //single event
@@ -29852,10 +29874,9 @@
 	              "a",
 	              { id: "slot-" + id, href: "#" + id,
 	                className: (0, _classnames2.default)({
-	                  "Schedule-event": true,
-	                  "is-active": currentSession.title === value.event.title && currentSession.time === value.event.time && currentSession.venue === value.event.venue
+	                  "Schedule-event": true
 	                }),
-	                onClick: _this2.setSession.bind(_this2, value.event, value.time) },
+	                onClick: _this2.setSession.bind(_this2, event, value.time) },
 	              _react2.default.createElement(
 	                "div",
 	                { className: "Schedule-main" },
@@ -29899,10 +29920,11 @@
 	              return _react2.default.createElement(
 	                "a",
 	                { className: (0, _classnames2.default)({
-	                    "Schedule-event": true,
-	                    "is-active": currentSession.title === v.title && currentSession.time === v.time && currentSession.venue === v.venue
+	                    "Schedule-event": true
 	                  }),
-	                  onClick: _this2.setSession.bind(_this2, v, value.time),
+	                  onClick: _this2.setSession.bind(_this2, function () {
+	                    return v;
+	                  }, value.time),
 	                  href: "#" + id, key: k, id: "slot-" + id },
 	                venue,
 	                _react2.default.createElement(
@@ -30085,7 +30107,7 @@
 	              }),
 	              style: sessionStyle },
 	            _react2.default.createElement(_session2.default, { sessionHandler: this.resetSession,
-	              data: currentSession, time: this.state.currentSessionTime,
+	              data: currentSession(), time: this.state.currentSessionTime,
 	              categories: this.state.categories })
 	          )
 	        ),
@@ -33515,6 +33537,7 @@
 	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_Object$getPrototypeO = (0, _getPrototypeOf2.default)(Schedules)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.state = {
 	      type: 'topic'
 	    }, _this.handleSwitch = function () {
+	      _this.props.history.pushState("", _this.props.location.pathname);
 	      if (_this.state.type === 'topic') {
 	        _this.setState({ type: 'parallel' });
 	      } else {
