@@ -11,7 +11,7 @@ var multiParagraph = (text, className) => {
   var ret = [];
   for (let i in arr) {
     let line = arr[i];
-    ret.push(<p className={className} key={i}>{line}</p>);
+    ret.push(<p className={className} key={i} dangerouslySetInnerHTML={{__html: line}}></p>);
   }
   return ret;
 }
