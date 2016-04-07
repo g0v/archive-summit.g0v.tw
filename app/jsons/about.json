@@ -17,6 +17,8 @@
         "sub": [
           { "header": "Keynote Speaker - Felipe Heusser",
           "description": ["<img class=\"avatar\" src=\"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg\">founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv.<br/>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile. Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States."]},
+          { "header": "Keynote Speaker - Clay Shirky",
+          "description": ["<img class=\"avatar\" src=\"/2016/0005c9c5241726e3800610f45322e728.jpg\">NYU Professor, and author of 'Cognitive Surplus' and 'Here Comes Everybody'"]},
           { "header": "Keynote Speaker - Miguel Arana Catania",
           "description": ["<img class=\"avatar\" src=\"/2016/ce0ac37eec641e7139fd046d5802bdf2.png\">Miguel Arana is the Director of the Madrid city council participation project. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence http://decide.madrid.es Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A CoruÃ±a among others. He has been actively involved in the 15M movement in Spain since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries. Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil."]},
           { "header": "Keynote Speaker - Premier of Taiwan: Simon Chang",
@@ -62,6 +64,8 @@
           },
             { "header": "Keynote Speaker - Felipe Heusser",
             "description": ["<img class=\"avatar\" src=\"https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg\">在本次的會議中，我們很榮幸邀請到在國際知名的公民科技參與者 Felipe Heusser 擔任主題講者。Felipe Heusser 是美國哈佛大學法學院貝克曼網路與社會中心的研究員，同時也是一名積極的倡議者、研究者、以及社會創業家。主要關注的領域是公民科技、資訊及網路自由、公民媒體、與開放政府。Felipe 也是智利 Ciudadano Inteligente 基金會的創辦人及前執行長，在他的執掌期間，Ciudadano Inteligente 基金會將其運作範圍擴大到拉丁美洲，共同創辦了拉丁美洲公民黑客（civic hackers）網路 Desarrollando America Latina，並且與英國 MySociety 合作發起 Poplus 專案，希望共同開發各種公民參與的開源元件，讓世界各地的 NGO 都可重複使用。"]},
+            { "header": "Keynote Speaker - Clay Shirky",
+            "description": ["<img class=\"avatar\" src=\"/2016/0005c9c5241726e3800610f45322e728.jpg\">鄉民教父、紐約大學教授。《鄉民都來了：無組織的組織力量》作者。"]},
             { "header": "Keynote Speaker - Miguel Arana Catania",
             "description": ["<img class=\"avatar\" src=\"/2016/ce0ac37eec641e7139fd046d5802bdf2.png\">Miguel Arana 是 2011 年起西班牙全國抗議運動 15M 的初期參與者，由該運動衍生的新興政黨，在 2015 年的選舉中一舉奪下主要城市的執政權：如馬德里、巴賽隆納、薩拉戈薩。他從抗議者變成公僕後，著手規劃馬德里市的開放政府策略，以自由軟體建構了群眾參與平台 http://decide.madrid.es ，並與西班牙其他的主要城市共同訂定全國的智慧城市策略。"]},
             { "header": "Keynote Speaker - 行政院 張善政院長",
