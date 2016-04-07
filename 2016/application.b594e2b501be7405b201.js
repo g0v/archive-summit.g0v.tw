@@ -27732,7 +27732,7 @@
 						"name": "Galaxy Software Services",
 						"logo": "gss.png",
 						"url": "http://www.gss.com.tw/",
-						"desc": "Established in 1987, we are the leader in Taiwan’ s IT industry and the regional IT software and SaaS cloud service provider. The basis of our innovation and development are: providing long term commitment towards customers’ use case study, sophisticated software engineering, advanced collaboration, use of advanced mobile, IT and cloud technologies. Our innovative applications and tailored solutions has won the heart of over 2000 financial service firms, government organizations, hospitals, telecommunication providers and customers from other industries as well as over 10,000 individual cloud application users."
+						"desc": "Established in 1987, we are the leader in Taiwan’ s IT industry and the regional IT software and SaaS cloud service provider. The basis of our innovation and development are: providing long term commitment towards customers’ use case study, sophisticated software engineering, advanced collaboration, use of advanced mobile, IT and cloud technologies. Our innovative applications and tailored solutions has won the heart of over 2000 financial service firms, government organizations, hospitals, telecommunication providers and customers from other industries as well as over 10,000 individual cloud application users.  Locations Taipei, Kaohsiung, Shanghai Awards 2015 GSS awarded the 3nd TAIWAN MITTELSTAND AWARD 2015 2015 Taiwan Excellence Award( Vitals ESP-Enterprise Social Platform) Main products  Vitals ESP – Enterprise Social Platform  teamKube – Task and Meeting Management  Vital – GSS Cloud Services Family"
 					},
 					{
 						"name": "Archilife Research Foundation",
@@ -28616,6 +28616,7 @@
 				"title": "",
 				"bio": "<p>Jen is the International Projects Manager at mySociety. If you email international@mysociety.org, Jen will be the one who responds to you first. She lives in London and works directly with organisations anywhere in the world, helping them with the practicalities of deploying our code and maintaining the resulting websites.</p><p>With a background as a working on media development and broadcasting reform projects in the Middle East and North Africa for BBC Media Action, she’s used to pitching in wherever needed for all sorts of projects.</p><p>Jen travels widely to meet our partners on their home ground: it’s always helpful to see our projects in the places where they’ll be deployed, and meet the people who will be using them. She’s passionate about ensuring that projects meet local needs and spending time with groups in their own countries helps her start to understand their motivations.</p>",
 				"nation": "UK",
+				"interview": "https://www.youtube.com/watch?v=BA3FpAwqzVM",
 				"twitter": ""
 			},
 			{
@@ -28680,6 +28681,7 @@
 				"title": "Director of the Madrid city council participation project",
 				"bio": "Miguel Arana is the Director of the Madrid city council participation project. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence http://decide.madrid.es Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A CoruÃ±a among others. He has been actively involved in the 15M movement in Spain since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries. Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.",
 				"nation": "Spain",
+				"interview": "https://www.youtube.com/watch?v=tTXbvg44Bdo",
 				"twitter": ""
 			},
 			{
@@ -28690,6 +28692,7 @@
 				"title": "",
 				"bio": "Yago Bermejo Abati I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur. Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties… After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating. Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.",
 				"nation": "Spain",
+				"interview": "https://www.youtube.com/watch?v=JX3XNjq93K4",
 				"twitter": ""
 			},
 			{
@@ -28700,6 +28703,7 @@
 				"title": "Advisor",
 				"bio": "Rajib Timalsina is an advisor of GalliGalli initiatives in Nepal which gathers, packages, and disseminates information using new technologies to make people’s lives easier for accessing government services. Details available at (www.galligalli.org). Mr. Timalsina has  extensive experience in conducting monitoring and evaluation of development projects, specifically related to local and urban governance, and peacebuilding. He has served as a Conflict Mediation Expert in the mid-term evaluation of Sajhedari Bikas, a large-scale partnership between Ministry of Local Governance, GoN and USAID. Mr. Timalsina is a Lecturer at the Department of Conflict, Peace and Development Studies (CPDS), Tribhuvan University. He is also an expert contributor and lecturer for the Armed Police Staff College in Kathmandu. For 2014 – 2016 tenure he is serving as Convener of Peace Negotiation, Dialogue and Mediation Commission formed under the International Peace Research Association (IPRA). Mr. Timalsina has  extensive experience in conducting social researches, specifically related to governance, project evaluation & monitoring, security and peacebuilding. In 2013, Mr. Timalsina was awarded the Nepal Bidya Bhusan from the President of Nepal for academic excellence.",
 				"nation": "Nepal",
+				"interview": "https://www.youtube.com/watch?v=0mXGUdtBfGA",
 				"twitter": ""
 			},
 			{
@@ -28780,6 +28784,7 @@
 				"title": "",
 				"bio": "Liz Barry is a founding member of the Public Laboratory for Open Technology and Science and is on staff as Director of Community Development to guide the group’s unique combination of place-based organizing and online peer production. She teaches in Columbia University’s graduate department of urban design and speaks internationally on collaboration and urban environmental management. In 2015, the City of New York scaled TreeKIT -- a project she co-founded with Philip Silva to measure, map and monitor street trees -- into a city-wide initiative (TreesCount!) in which thousands of New Yorkers mapped over half a million trees. She served as a Fellow at the Design Trust for Public Space on Five Borough Farm Phases II & III and was named a Sunlight Foundation OpenGov Champion.",
 				"nation": "US",
+				"interview": "https://www.youtube.com/watch?v=PbX8mQT5E40",
 				"twitter": "@lizbarry"
 			},
 			{
@@ -29134,7 +29139,7 @@
 				"twitter": ""
 			},
 			{
-				"avatar": "https://www.dropbox.com/s/di8p3l383w1vq2o/sherry.jpg",
+				"avatar": "https://www.dropbox.com/s/di8p3l383w1vq2o/sherry.jpg?raw=1",
 				"name": "李雪莉(Sherry Lee)",
 				"organization": "《報導者》，The Reporter",
 				"title": "總主筆",
@@ -29152,7 +29157,7 @@
 				"twitter": ""
 			},
 			{
-				"avatar": "https://www.dropbox.com/s/f2fioibw6gh94sx/2015-02-07%2011.05.13.jpg",
+				"avatar": "https://www.dropbox.com/s/f2fioibw6gh94sx/2015-02-07%2011.05.13.jpg?raw=1",
 				"name": "林祖儀",
 				"organization": "沃草Watchout! / 割闌尾計畫 / 寓意科技",
 				"title": "",
