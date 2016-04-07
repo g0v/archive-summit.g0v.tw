@@ -69,6 +69,7 @@
       "id": "jjlhcu",
       "avatar": "http://1.gravatar.com/avatar/60f641dfbb4215f1f6d6c059eebf1848?size=400",
       "name": "James Mckinney",
+      "featured": true,
       "organization": "Various",
       "title": "",
       "bio": "James McKinney regularly contributes to civil society initiatives relating to government, legislative and corporate transparency. He is currently focusing on Popolo (a set of legislative data specifications, used by parliamentary monitoring organizations and members of Poplus.org) and on Influence Mapping (a group of organizations that draw the networks of relations between politically exposed people and organizations). James is especially interested in how data standards can facilitate cooperation between organizations and individuals.James previously founded Open North, a Canadian nonprofit that creates websites to promote government transparency and public participation. He is co-lead of the Open Government Partnershipâ€™s Open Data Working Groupâ€™s Standards Stream. He was a member of the Open Contract Data Standard core team and of the W3C Government Linked Data Working Group. He has presented on open government and open data, most recently at the International Open Data Conference, Canadian Open Data Summit, and Spaghetti Open Data.",
@@ -182,6 +183,7 @@
     {
       "id": "qsdwpr",
       "avatar": "http://lizbarry.net/photo.jpg",
+      "featured": true,
       "name": "Liz Barry",
       "organization": "Public Lab, TreeKIT, Columbia University GSAPP",
       "title": "",
@@ -397,6 +399,7 @@
       "id": "nyarql",
       "avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/12219437_1073869589291176_7016219417040057906_n.jpg?oh=888e661a35392780280ff628127de98d&oe=5793CE53",
       "name": "陳坤助",
+      "featured": true,
       "organization": "KNY Co.",
       "title": "",
       "bio": "@KNYChen 陳坤助先生，近年關注與推動台灣 App 產業的發展，並積極倡議 Open Data 的政策。希望透過科技與開放的力量，用新方法解決社會問題，建構更美好的未來。現任：KNY Co. 執行長,中華民國 App 跨界交流協會 理事長,台灣開放資料聯盟 副會長 / App組召集人,交通部資料開放諮詢小組 諮詢委員",
