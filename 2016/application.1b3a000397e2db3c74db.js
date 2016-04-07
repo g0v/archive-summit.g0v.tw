@@ -30413,6 +30413,7 @@
 						"title": "Keynote 1: The Civics of Civic Tech",
 						"speaker_id": "eybuyw",
 						"speaker": "Felipe Heusser",
+						"language": "English",
 						"bio": "<p>Felipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.</p><p>Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.</p>",
 						"abstract": "<p>Understanding the politics of technology as a mean for civic participation.</p>"
 					}
@@ -30423,7 +30424,7 @@
 						{
 							"venue": "R1",
 							"category": "power",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "vkebqj",
 							"speaker": "Hoony Jang",
 							"title": "How to extend Civic Tech to civic organizations (NPO, NGO, and the media) in KOREA?",
@@ -30433,7 +30434,7 @@
 						{
 							"venue": "R0",
 							"category": "foundation",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "kzsupx",
 							"speaker": "Charlotte Richard",
 							"title": "Democracy and Civic Engagement as an Open Media",
@@ -30443,7 +30444,7 @@
 						{
 							"venue": "R2",
 							"category": "construction",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "nypxqa",
 							"speaker": "Lucien Lin",
 							"title": "Charging towards the Taiwan Open Government Data License",
@@ -30458,7 +30459,7 @@
 						{
 							"venue": "R1",
 							"category": "power",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "vxqlvr",
 							"speaker": "Hsieh, Tsung Chen",
 							"title": "Data For Social Good – Data-driven Charity",
@@ -30468,7 +30469,7 @@
 						{
 							"venue": "R0",
 							"category": "foundation",
-							"language": "",
+							"language": "English",
 							"speaker_id": "yeblyv",
 							"speaker": "Yantisa Akhadi",
 							"title": "Government (Participatory) Mapping",
@@ -30478,7 +30479,7 @@
 						{
 							"venue": "R2",
 							"category": "construction",
-							"language": "",
+							"language": "English",
 							"speaker_id": "nyprqi",
 							"speaker": "Katarzyna Mikołajczyk",
 							"title": "Cities are the key to engage citizens into open data",
@@ -30497,7 +30498,7 @@
 						{
 							"venue": "R1",
 							"category": "power",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "nkbexc",
 							"speaker": "Y.H. Kao",
 							"title": "From .org to .g0v －Internet participant and digital challenge of NGO in Taiwan",
@@ -30507,7 +30508,7 @@
 						{
 							"venue": "R0",
 							"category": "foundation",
-							"language": "",
+							"language": "English",
 							"speaker_id": "vkrywc",
 							"speaker": "Yago Bermejo Abati",
 							"title": "Digital participation strategy in Podemos party.",
@@ -30517,7 +30518,7 @@
 						{
 							"venue": "R2",
 							"category": "construction",
-							"language": "",
+							"language": "English",
 							"speaker_id": "yysuyv",
 							"speaker": "Venus Lui",
 							"title": "Importance of having an Arts database in Asia",
@@ -30532,7 +30533,7 @@
 						{
 							"venue": "R1",
 							"category": "power",
-							"language": "",
+							"language": "English",
 							"speaker_id": "nycsci",
 							"speaker": "Sergejus Muravjovas",
 							"title": "On the Yellow Brick Road One Hundred Years Later: The Journey of Reinvention of a Classical NGO",
@@ -30542,7 +30543,7 @@
 						{
 							"venue": "R0",
 							"category": "foundation",
-							"language": "",
+							"language": "English",
 							"speaker_id": "eyjscl",
 							"speaker": "Colin Megill",
 							"title": "Pol.is in Taiwan: Bridging the gap between public discourse, consultation, and policy",
@@ -30552,7 +30553,7 @@
 						{
 							"venue": "R2",
 							"category": "construction",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "evemal",
 							"speaker": "Bobby Tung",
 							"title": "Do We Need Open Digital Libraries for Chinese Publication in Public Domain? and How?",
@@ -30571,7 +30572,7 @@
 						{
 							"venue": "R1",
 							"category": "blueprint",
-							"language": "",
+							"language": "English",
 							"speaker_id": "nyhbqi",
 							"speaker": "Jen Bramley",
 							"title": "Powering civic tech reuse with EveryPolitician data",
@@ -30581,7 +30582,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "njtsud",
 							"speaker": "Kirby Wu",
 							"title": "My Covered Life in Journalism",
@@ -30591,7 +30592,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "nyarql",
 							"speaker": "KNY Chen",
 							"title": "EEW: Early Earthquake Warnings",
@@ -30606,7 +30607,7 @@
 						{
 							"venue": "R1",
 							"category": "blueprint",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "jjlhcu",
 							"speaker": "James Mckinney",
 							"title": "Civic Tech in Monitoring Legislatures: The Long Game",
@@ -30616,7 +30617,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "llhqij",
 							"speaker": "Walkingice",
 							"title": "Campaigning Experiences of a Geek",
@@ -30626,7 +30627,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "vemaew",
 							"speaker": "Yu-Lun Liu",
 							"title": "The Past, Present and Future of Open Communicable Disease Data - Using Dengue Fever As An Example",
@@ -30641,7 +30642,7 @@
 						{
 							"venue": "R1",
 							"category": "blueprint",
-							"language": "",
+							"language": "English",
 							"speaker_id": "nkwgbq",
 							"speaker": "Henare Degan",
 							"title": "morph.io: the international civic tech scraping platform",
@@ -30651,7 +30652,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "jmgbci",
 							"speaker": "Jim Horng",
 							"title": "Netizen and Self-Organized Movement: A Case Study with Boycott Mapping",
@@ -30661,7 +30662,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "nysddy",
 							"speaker": "Kuo-Yu slayer Chuang",
 							"title": "Disaster Resilience with ICT and Crowdsourcing, a case study from Asian Development Bank project",
@@ -30680,7 +30681,7 @@
 						{
 							"venue": "R1",
 							"category": "blueprint",
-							"language": "",
+							"language": "English",
 							"speaker_id": "vgidvy",
 							"speaker": "Rajib Timalsina",
 							"title": "Open Source Digital Platform for Bridging the Gap between Citizens and Local Government in Nepal",
@@ -30690,7 +30691,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": [
 								"nkwiwp",
 								"ygjopy"
@@ -30707,7 +30708,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "kzxcxp",
 							"speaker": "W.S. Jhan",
 							"title": "Using OpenStreetMap to help other countries and improve foreign relations",
@@ -30731,7 +30732,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "English",
 							"speaker_id": "ekmodd",
 							"speaker": "Shigeomi Shibata",
 							"title": "How to spread the civic tech movement to non-techie people?",
@@ -30741,7 +30742,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "English",
 							"speaker_id": "ejnopj",
 							"speaker": "Dongpo Deng",
 							"title": "Integration of OpenStreetMap and LocalWiki for supporting community-level disaster information management",
@@ -30754,6 +30755,7 @@
 					"time": "16:45-17:00",
 					"event": {
 						"title": "Code for All – Civic Tech around the World",
+						"language": "English",
 						"speaker_id": "vsipkd",
 						"speaker": "Julia Kloiber",
 						"abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
@@ -30763,6 +30765,7 @@
 					"time": "17:00-17:15",
 					"event": {
 						"title": "From g0v to gov - 400 Days in the Ministry of Health and Welfare",
+						"language": "Mandarin",
 						"speaker_id": "eyioov",
 						"speaker": "Peggy Lo",
 						"bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
@@ -30773,6 +30776,7 @@
 					"time": "17:15-17:30",
 					"event": {
 						"title": "Premier of Taiwan",
+						"language": "Mandarin",
 						"speaker_id": "njwjup",
 						"speaker": "Simon Chang"
 					}
@@ -30809,7 +30813,7 @@
 						{
 							"venue": "R1",
 							"category": "supervision",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "njgxev",
 							"speaker": "Billy Lin",
 							"title": "The non-disclosed and opaque party-owned assets data",
@@ -30819,7 +30823,7 @@
 						{
 							"venue": "R0",
 							"category": "square",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": [
 								"ekoiod",
 								"kjodwj"
@@ -30832,7 +30836,7 @@
 						{
 							"venue": "R2",
 							"category": "Ventilation",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "vjxgre",
 							"speaker": "Yan-Jen Su",
 							"title": "Interpolation and Visualization of Air Pollution based on Wind Fields",
@@ -30847,7 +30851,7 @@
 						{
 							"venue": "R1",
 							"category": "supervision",
-							"language": "",
+							"language": "English",
 							"speaker_id": "ejkoow",
 							"speaker": "Freyja van den Boom",
 							"title": "Ever tried TDM and would you do it again?",
@@ -30857,6 +30861,7 @@
 						{
 							"venue": "R0",
 							"category": "square",
+							"language": "Mandarin",
 							"speaker_id": "nzsicb",
 							"speaker": "Chia-hua Lu",
 							"title": "Government x Civil Society x Internet x Deliberation\nObservations and Reflections of a Mediator",
@@ -30866,7 +30871,7 @@
 						{
 							"venue": "R2",
 							"category": "Ventilation",
-							"language": "",
+							"language": "English",
 							"speaker_id": "qsdwpr",
 							"speaker": "Liz Barry",
 							"title": "Community science for healthy environments",
@@ -30885,7 +30890,7 @@
 						{
 							"venue": "R1",
 							"category": "supervision",
-							"language": "",
+							"language": "English",
 							"speaker_id": "nyjwyv",
 							"speaker": "Nanang Syaifudin",
 							"title": "True Story: Public e-Participatory for Election Monitoring (MataMassa or PublicEye)",
@@ -30895,7 +30900,7 @@
 						{
 							"venue": "R0",
 							"category": "square",
-							"language": "",
+							"language": "English",
 							"speaker_id": "vypsuv",
 							"speaker": "JK Suh",
 							"title": "The Korean General Election and VAAs: the case of \"Ping\"",
@@ -30905,7 +30910,7 @@
 						{
 							"venue": "R2",
 							"category": "Ventilation",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": [
 								"jmsucb",
 								"ensizd"
@@ -30923,7 +30928,7 @@
 						{
 							"venue": "R1",
 							"category": "supervision",
-							"language": "",
+							"language": "English",
 							"speaker_id": "vjriov",
 							"speaker": "Nicholas Doiron",
 							"title": "NodeJS in Naypyitaw: Opening Election Data in Myanmar Election",
@@ -30933,7 +30938,7 @@
 						{
 							"venue": "R0",
 							"category": "square",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "ekwlmc",
 							"speaker": "Johnny Lo",
 							"title": "Voter's Guide for Legislators and Council Members",
@@ -30943,7 +30948,7 @@
 						{
 							"venue": "R2",
 							"category": "Ventilation",
-							"language": "",
+							"language": "Mandarin",
 							"speaker_id": "vyrhlc",
 							"speaker": "Chung-pei Pien",
 							"title": "From infrastructure to applications\nLinking through g0v - a case study on the environmental agency and company registration data",
@@ -30956,6 +30961,7 @@
 					"time": "15:45-16:00",
 					"event": {
 						"title": "Consul, the new Spanish Open Government Platform and the digital democratic revolution in the Spanish institutions",
+						"language": "English",
 						"speaker_id": "jyeidw",
 						"speaker": "Miguel Arana Catania",
 						"bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
@@ -30966,6 +30972,7 @@
 					"time": "16:00-16:15",
 					"event": {
 						"title": "Congress Matters. Does it?",
+						"language": "Mandarin",
 						"speaker_id": "ygljow",
 						"speaker": "clkao",
 						"bio": "<p>clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。</p>",
@@ -31004,6 +31011,7 @@
 						"title": "主題演講: 公民科技中的「公民精神」",
 						"speaker_id": "eybuyw",
 						"speaker": "Felipe Heusser",
+						"language": "英語",
 						"bio": "<p>Felipe Heusser 在智利發起了運用科技串連的公民運動，曾透過線上動員，成功催生拉丁美洲第一個遊說監管立法。他所主導的 Poplus 跨國社群（串起全球十數個類似 g0v 的公民科技社群），更持續開發各種開源元件。Poplus 的各種努力，逐漸成為全球各地公民運動的後勤。EveryPolitician 政治人物資料庫讓缺乏資源的非洲辛巴威首度建立了國會監督網站，SayIt 這套發言紀錄資料庫也廣泛運用在台灣政府與民間的審議紀錄。</p>",
 						"abstract": "<p>公民參與，從了解科技政治開始。</p>"
 					}
@@ -31014,7 +31022,7 @@
 						{
 							"venue": "R1",
 							"category": "power",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "vkebqj",
 							"speaker": "Hoony Jang",
 							"title": "韓國經驗：如何推展公民科技到公民組織（NPO, NGO, 與媒體）",
@@ -31024,7 +31032,7 @@
 						{
 							"venue": "R0",
 							"category": "foundation",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "kzsupx",
 							"speaker": "Charlotte Richard",
 							"title": "民主與公民參與之開放媒體",
@@ -31034,7 +31042,7 @@
 						{
 							"venue": "R2",
 							"category": "construction",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "nypxqa",
 							"speaker": "Lucien Lin",
 							"title": "進擊的台灣政府資料開放授權條款",
@@ -31049,7 +31057,7 @@
 						{
 							"venue": "R1",
 							"category": "power",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "vxqlvr",
 							"speaker": "謝宗震",
 							"title": "Data For Social Good – 由資料驅動的公益新浪潮",
@@ -31059,7 +31067,7 @@
 						{
 							"venue": "R0",
 							"category": "foundation",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "yeblyv",
 							"speaker": "Yantisa Akhadi",
 							"title": "政府（也參加）畫地圖",
@@ -31069,7 +31077,7 @@
 						{
 							"venue": "R2",
 							"category": "construction",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "nyprqi",
 							"speaker": "Katarzyna Mikołajczyk",
 							"title": "城市就是從事公民參與開放資料的關鍵",
@@ -31088,7 +31096,7 @@
 						{
 							"venue": "R1",
 							"category": "power",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "nkbexc",
 							"speaker": "高英勛",
 							"title": "從 .org 到 .g0v － 台灣NGO的網路參與與數位挑戰",
@@ -31098,7 +31106,7 @@
 						{
 							"venue": "R0",
 							"category": "foundation",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "vkrywc",
 							"speaker": "Yago Bermejo Abati",
 							"title": "Podemos 黨的網路參與策略",
@@ -31108,7 +31116,7 @@
 						{
 							"venue": "R2",
 							"category": "construction",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "yysuyv",
 							"speaker": "Venus Lui",
 							"title": "建立亞洲藝術資料庫的重要性",
@@ -31123,7 +31131,7 @@
 						{
 							"venue": "R1",
 							"category": "power",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "nycsci",
 							"speaker": "Sergejus Muravjovas",
 							"title": "一百年後走黃磚路：重塑傳統非政府組織之旅",
@@ -31133,7 +31141,7 @@
 						{
 							"venue": "R0",
 							"category": "foundation",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "eyjscl",
 							"speaker": "Colin Megill",
 							"title": "Pol.is 在台灣: 跨越鴻溝之公共談論、意見徵求與政策",
@@ -31143,7 +31151,7 @@
 						{
 							"venue": "R2",
 							"category": "construction",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "evemal",
 							"speaker": "董福興",
 							"title": "我們需要中文公共領域作品的開放數位圖書館嗎？又，如何打造？",
@@ -31162,7 +31170,7 @@
 						{
 							"venue": "R1",
 							"category": "blueprint",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "nyhbqi",
 							"speaker": "Jen Bramley",
 							"title": "用 EveryPolitician 的資料，來增進公民科技重用",
@@ -31172,7 +31180,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "njtsud",
 							"speaker": "Kirby Wu",
 							"title": "媒體無間道 — 我在新聞界臥底的日子",
@@ -31182,7 +31190,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "nyarql",
 							"speaker": "陳坤助",
 							"title": "強震即時警報 EEW",
@@ -31197,7 +31205,7 @@
 						{
 							"venue": "R1",
 							"category": "blueprint",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "jjlhcu",
 							"speaker": "James Mckinney",
 							"title": "公民科技監督國會：長久之計",
@@ -31207,7 +31215,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "llhqij",
 							"speaker": "Walkingice",
 							"title": "鍵盤宅的輔選經驗談",
@@ -31217,7 +31225,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "vemaew",
 							"speaker": "劉宇倫",
 							"title": "傳染病開放資料過去、現在、未來-以登革熱為例",
@@ -31232,7 +31240,7 @@
 						{
 							"venue": "R1",
 							"category": "blueprint",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "nkwgbq",
 							"speaker": "Henare Degan",
 							"title": "morph.io: 國際公民科技社群建立的資料抓取平台",
@@ -31242,7 +31250,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "jmgbci",
 							"speaker": "Jim Horng",
 							"title": "從滅頂秒退地圖看網路世代無組織社運",
@@ -31252,7 +31260,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "nysddy",
 							"speaker": "Kuo-Yu slayer Chuang",
 							"title": "ICT 與群眾外包的災難適應力，亞洲開發銀行的案例研究",
@@ -31271,7 +31279,7 @@
 						{
 							"venue": "R1",
 							"category": "blueprint",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "vgidvy",
 							"speaker": "Rajib Timalsina",
 							"title": "開源數位平臺，跨越尼泊爾公民與地方政府間的鴻溝",
@@ -31281,7 +31289,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "華語",
 							"speaker_id": [
 								"nkwiwp",
 								"ygjopy"
@@ -31298,7 +31306,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "kzxcxp",
 							"speaker": "詹為翔",
 							"title": "開放街圖在外交援助計畫上的應用",
@@ -31322,7 +31330,7 @@
 						{
 							"venue": "R0",
 							"category": "wiring",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "ekmodd",
 							"speaker": "柴田 重臣",
 							"title": "如何讓推廣公民科技給非技術宅？",
@@ -31332,7 +31340,7 @@
 						{
 							"venue": "R2",
 							"category": "scaffold",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "ejnopj",
 							"speaker": "Dongpo Deng",
 							"title": "OpenStreetMap 與 LocalWiki 的整合：支援社區層級災害系統管理",
@@ -31345,6 +31353,7 @@
 					"time": "16:45-17:00",
 					"event": {
 						"title": "Code for All – 全球公民科技社群",
+						"language": "英語",
 						"speaker_id": "vsipkd",
 						"speaker": " Julia Kloiber",
 						"abstract": "<p>Coding for the public good 是全球性的運動，從美國到日本，從墨西哥到巴基斯坦，開發人員使用他們的技藝，來確保政府承擔責任，並且改善我們所有人的生活。</p><p>我在建立起 Code for Germany 德國社群後，很榮幸能在 Code for All 全球網路裡貢獻一己之力，向全球分享迄今為止，社群學到了哪些事情。</p><p>我想透過一些國際 Code for All 社群的實踐經驗，帶領各位來場尋知之旅。在這些例子的基礎上，我想討論什麼能創造好的公民科技專案。為什麼有些方法的效果特別好？在公民科技中，使用者可以有怎麼樣的角色？各項專案的成功經驗，又能如何複製、延續？</p>"
@@ -31354,6 +31363,7 @@
 					"time": "17:00-17:15",
 					"event": {
 						"title": "從 g0v 到 gov -- 潛入衛福部 400 天",
+						"language": "華語",
 						"speaker_id": "eyioov",
 						"speaker": "羅佩琪",
 						"bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
@@ -31364,6 +31374,7 @@
 					"time": "17:15-17:30",
 					"event": {
 						"title": "行政院院長",
+						"language": "華語",
 						"speaker_id": "njwjup",
 						"speaker": "張善政"
 					}
@@ -31400,7 +31411,7 @@
 						{
 							"venue": "R1",
 							"category": "supervision",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "njgxev",
 							"speaker": "林雨蒼",
 							"title": "不開放、不透明的黨產開放資料",
@@ -31410,7 +31421,7 @@
 						{
 							"venue": "R0",
 							"category": "square",
-							"language": "",
+							"language": "華語",
 							"speaker_id": [
 								"ekoiod",
 								"kjodwj"
@@ -31423,7 +31434,7 @@
 						{
 							"venue": "R2",
 							"category": "Ventilation",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "vjxgre",
 							"speaker": "蘇彥禎",
 							"title": "空污資料搭配風場的內插與視覺化",
@@ -31438,7 +31449,7 @@
 						{
 							"venue": "R1",
 							"category": "supervision",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "ejkoow",
 							"speaker": "Freyja van den Boom",
 							"title": "告別文字擷取與資料探勘的痛苦: FutureTDM",
@@ -31448,6 +31459,7 @@
 						{
 							"venue": "R0",
 							"category": "square",
+							"language": "華語",
 							"speaker_id": "nzsicb",
 							"speaker": "呂家華",
 							"title": "政府 x 民間 x 網路 x 審議\n一個中介者的觀察與思考",
@@ -31457,7 +31469,7 @@
 						{
 							"venue": "R2",
 							"category": "Ventilation",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "qsdwpr",
 							"speaker": "Liz Barry",
 							"title": "社區科學與健康的環境",
@@ -31476,7 +31488,7 @@
 						{
 							"venue": "R1",
 							"category": "supervision",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "nyjwyv",
 							"speaker": "Nanang Syaifudin",
 							"title": "真實案例：監票數位參與 (MataMassa \"公眾之眼\")",
@@ -31486,7 +31498,7 @@
 						{
 							"venue": "R0",
 							"category": "square",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "vypsuv",
 							"speaker": "JK Suh",
 							"title": "韓國大選與投票建議指南: \"Ping\"",
@@ -31496,7 +31508,7 @@
 						{
 							"venue": "R2",
 							"category": "Ventilation",
-							"language": "",
+							"language": "華語",
 							"speaker_id": [
 								"jmsucb",
 								"ensizd"
@@ -31514,7 +31526,7 @@
 						{
 							"venue": "R1",
 							"category": "supervision",
-							"language": "",
+							"language": "英語",
 							"speaker_id": "vjriov",
 							"speaker": "Nicholas Doiron",
 							"title": "在奈比多用 NodeJS：緬甸選舉資料開放",
@@ -31524,7 +31536,7 @@
 						{
 							"venue": "R0",
 							"category": "square",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "ekwlmc",
 							"speaker": "駱勁成",
 							"title": "立委／議員投票指南",
@@ -31534,7 +31546,7 @@
 						{
 							"venue": "R2",
 							"category": "Ventilation",
-							"language": "",
+							"language": "華語",
 							"speaker_id": "vyrhlc",
 							"speaker": "卞中佩",
 							"title": "從基礎工程到應用工程\ng0v資料與其它資料庫的整併及後續應用 ─ 以環保署污染源與公司結構資料為例",
@@ -31547,6 +31559,7 @@
 					"time": "15:45-16:00",
 					"event": {
 						"title": "Consul - 西班牙的開放政府平台與數位民主革命",
+						"language": "英語",
 						"speaker_id": "jyeidw",
 						"speaker": "Miguel Arana Catania",
 						"bio": "<p>Miguel Arana is the Director of the Madrid city council participationproject. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence <a href='http://decide.madrid.es'>http://decide.madrid.es</a></p><p>Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A Coruña among others.</p><p>He has been actively involved in the 15M movement in Spain.  Since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries.</p><p>Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.</p>",
@@ -31557,6 +31570,7 @@
 					"time": "16:00-16:15",
 					"event": {
 						"title": "國會沒代誌了嗎？",
+						"language": "華語",
 						"speaker_id": "ygljow",
 						"speaker": "clkao",
 						"bio": "<p>clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。</p>",
