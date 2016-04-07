@@ -1,8 +1,10 @@
 {
   "en-US": [
     {
+      "id": "ekmodd",
       "avatar": "",
-      "name": "Shigeomi Shibata",
+      "name": "柴田 重臣",
+      "name_en": "Shigeomi Shibata",
       "organization": "Code for Japan, Code for Ibaraki",
       "title": "",
       "bio": "<p>Currently working as a self-employed network engineer.</p><p>Co-captain of Code for Japan. A member of Code for Ibaraki.</p><p>Joined Code for Japan as a member of research team when it was established in 2013. And also, organize a weekly civic hack meetup event named “Idobata Kaigi”, water cooler talking in Japanese, over 100 times last 2 years. Now a project leader for Civic tech cafe of Code for Ibaraki, monthly talking meeting over open data and civic tech.</p><p>Live in Tokyo, Have two kids (4 years boy and 3 years girl) and one wife.</p><p>Specialties: Networking, Information security, Cloud  computing, Voice over IP, Project management, Community organizing</p>",
@@ -10,6 +12,7 @@
       "twitter": "@shigeomix"
     },
     {
+      "id": "nyhbqi",
       "avatar": "",
       "name": "Jen Bramley",
       "organization": "mySociety",
@@ -19,6 +22,7 @@
       "twitter": ""
     },
     {
+      "id": "vsipkd",
       "avatar": "http://juliakloiber.com/blog/wp-content/uploads/julia_klein1.jpg",
       "name": "Julia Kloiber",
       "featured": true,
@@ -29,6 +33,7 @@
       "twitter": "@j_kloiber"
     },
     {
+      "id": "eyjscl",
       "avatar": "",
       "name": "Colin Megill",
       "featured": true,
@@ -39,6 +44,7 @@
       "twitter": "@colinmegill"
     },
     {
+      "id": "vypsuv",
       "avatar": "",
       "name": "JK Suh",
       "organization": "WAGL",
@@ -48,6 +54,7 @@
       "twitter": ""
     },
     {
+      "id": "eybuyw",
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg",
       "name": "Felipe Heusser",
       "featured": true,
@@ -58,6 +65,7 @@
       "twitter": "@fheusser"
     },
     {
+      "id": "jjlhcu",
       "avatar": "http://1.gravatar.com/avatar/60f641dfbb4215f1f6d6c059eebf1848?size=400",
       "name": "James Mckinney",
       "organization": "Various",
@@ -67,6 +75,7 @@
       "twitter": "@mckinneyjames"
     },
     {
+      "id": "jyeidw",
       "avatar": "./miguel.png",
       "name": "Miguel Arana Catania",
       "featured": true,
@@ -77,6 +86,7 @@
       "twitter": ""
     },
     {
+      "id": "vkrywc",
       "avatar": "https://pbs.twimg.com/profile_images/609112331440812034/UEkPbmP3.jpg",
       "name": "Yago Bermejo Abati",
       "organization": "LaboDemo",
@@ -86,6 +96,7 @@
       "twitter": ""
     },
     {
+      "id": "vgidvy",
       "avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/12322404_10203603459566263_3744012269511690610_o.jpg",
       "name": "Rajib Timalsina",
       "organization": "GalliGalli Not-For-Profit (www.galligalli.org)",
@@ -95,6 +106,7 @@
       "twitter": ""
     },
     {
+      "id": "nycsci",
       "avatar": "http://www.transparency.lt/wp-content/uploads/2015/09/SM_a.jpg",
       "name": "Sergejus Muravjovas",
       "organization": "Transparency International Lithuania",
@@ -104,6 +116,7 @@
       "twitter": "@SMuravjovas"
     },
     {
+      "id": "vjriov",
       "avatar": "https://avatars2.githubusercontent.com/u/643918?v=3&s=460",
       "name": "Nicholas Doiron",
       "organization": "The Asia Foundation",
@@ -113,6 +126,7 @@
       "twitter": "@mapmeld"
     },
     {
+      "id": "nyprqi",
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAATAAAAAJGUwMTU0N2RiLWVkMTAtNDUzYS04OGNhLTEyMDQ1ODYzZWZlYw.jpg",
       "name": "Katarzyna Mikołajczyk",
       "organization": "ePF Foundation",
@@ -122,6 +136,7 @@
       "twitter": "@kasia_lodz"
     },
     {
+      "id": "nyjwyv",
       "avatar": "https://s.gravatar.com/avatar/6b45dcc2487c0df9f15ce69cb5a8fce4?s=80",
       "name": "Nanang Syaifudin",
       "organization": "iLab",
@@ -131,6 +146,7 @@
       "twitter": "@nanangsyaifudin"
     },
     {
+      "id": "kzsupx",
       "avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12049543_10155972979335577_7465819731254710195_n.jpg?oh=cd16d49425eaa194e2d95693ace92f7d&oe=578E39EF",
       "name": "Charlotte Richard",
       "organization": "Voxe.org",
@@ -140,6 +156,7 @@
       "twitter": "@charlottrichard "
     },
     {
+      "id": "vkebqj",
       "avatar": "",
       "name": "Hoony Jang",
       "organization": "Creative Commons Korea",
@@ -149,6 +166,7 @@
       "twitter": "@thechunsik"
     },
     {
+      "id": "yysuyv",
       "avatar": "",
       "name": "Venus Lui",
       "organization": "Wikimedia Hong Kong",
@@ -158,6 +176,7 @@
       "twitter": ""
     },
     {
+      "id": "qsdwpr",
       "avatar": "http://lizbarry.net/photo.jpg",
       "name": "Liz Barry",
       "organization": "Public Lab, TreeKIT, Columbia University GSAPP",
@@ -167,6 +186,7 @@
       "twitter": "@lizbarry"
     },
     {
+      "id": "yeblyv",
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAN5AAAAJGRlMmJhYmQ3LTY0ZjktNGY0NS04MzM0LTliZmJmYzNjNWM2Mw.jpg",
       "name": "Yantisa Akhadi",
       "organization": "Humanitarian OpenStreetMap Team",
@@ -176,6 +196,7 @@
       "twitter": "@iyan31"
     },
     {
+      "id": "ejkoow",
       "avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12345570_10205303052243109_8354385327649308541_n.jpg?oh=e1295af517884e277fe857b72e78e593&oe=577D71FC",
       "name": "Freyja van den Boom",
       "organization": "Open Knowledge International",
@@ -185,6 +206,7 @@
       "twitter": ""
     },
     {
+      "id": "nkwgbq",
       "avatar": "https://www.gravatar.com/avatar/c767419261bf0c4ce5587ca20307928e?s=200",
       "name": "Henare Degan",
       "organization": "OpenAustralia Foundation",
@@ -203,6 +225,7 @@
       "twitter": ""
     },    
     {
+      "id": "eyioov",
       "avatar": "",
       "name": "羅佩琪",
       "name_en": "Peggy Lo",
@@ -216,6 +239,7 @@
       "twitter": ""
     },
     {
+      "id": "ekoiod",
       "avatar": "",
       "name": "Saul Peng",
       "featured": true,
@@ -229,6 +253,7 @@
       "twitter": ""
     },
     {
+      "id": "kjodwj",
       "avatar": "",
       "name": "王景弘",
       "organization": "普奇科技",
@@ -238,6 +263,7 @@
       "twitter": "@tonyq_tw"
     },
     {
+      "id": "ygljow",
       "avatar": "https://scontent-sjc2-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/p320x320/11796293_10153255844110668_2797238177900281661_n.jpg?oh=ac1e9f2912f78c309558c2e23833da28&oe=57628456",
       "name": "clkao",
       "organization": "g0v.tw",
@@ -247,8 +273,10 @@
       "twitter": "@clkao"
     },
     {
+      "id": "njgxev",
       "avatar": "https://scontent-nrt1-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/1966086_814346955245326_225589478_o.jpg",
       "name": "雨蒼",
+      "name_en": "Billy Lin",
       "organization": "民間司法改革基金會",
       "title": "執行秘書",
       "bio": "公民記者、自由軟體工作者，目前在民間司改會擔任執行秘書，關心自由軟體、司法、立法院及轉型正義議題。",
@@ -256,8 +284,10 @@
       "twitter": "@billy3321"
     },
     {
+      "id": "ekwlmc",
       "avatar": "https://avatars2.githubusercontent.com/u/4479861",
       "name": "駱勁成",
+      "name_en": "Johnny Lo",
       "organization": "g0v",
       "title": "",
       "bio": "立委／議員投票指南",
@@ -265,6 +295,7 @@
       "twitter": ""
     },
     {
+      "id": "jmgbci",
       "avatar": "https://avatars0.githubusercontent.com/u/4172809",
       "name": "Jim Horng",
       "organization": "open source",
@@ -274,8 +305,10 @@
       "twitter": ""
     },
     {
+      "id": "vxqlvr",
       "avatar": "https://dsp.im/wp-content/uploads/2014/10/johnson11.jpg",
       "name": "謝宗震",
+      "name_en": "Hsieh, Tsung Chen",
       "organization": "DSP智庫驅動",
       "title": "資料科學家",
       "bio": "DSP智庫驅動資料科學家，清華統計博士，對於統計方法與工具的推廣具有極大的熱忱，期望利用統計思維及分析工具幫助各個領域解決問題。輔導超過300位政府、企業、非營利組織人士成為資料分析人才。 Data for Social Good (D4SG) 計畫共同發起人，打造一個「資料力，做公益」的交流與媒合平台。",
@@ -283,6 +316,7 @@
       "twitter": ""
     },
     {
+      "id": "llhqij",
       "avatar": "http://julianchu.net/assets/default_avatar.jpg",
       "name": "Walkingice",
       "organization": "g0v",
@@ -292,6 +326,7 @@
       "twitter": "@walkingice"
     },
     {
+      "id": "njtsud",
       "avatar": "",
       "name": "Kirby Wu",
       "organization": "g0v.tw",
@@ -301,6 +336,7 @@
       "twitter": "@zbryikt"
     },
     {
+      "id": "kzxcxp",
       "avatar": "",
       "name": "詹為翔",
       "organization": "Openstreetmap Taiwan",
@@ -311,6 +347,7 @@
       "twitter": ""
     },
     {
+      "id": "nysddy",
       "avatar": "",
       "name": "Kuo-Yu slayer Chuang",
       "organization": "GeoThings",
@@ -320,6 +357,7 @@
       "twitter": "@darkensiva"
     },
     {
+      "id": "ejnopj",
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/19c/045/3c47699.jpg",
       "name": "Dongpo Deng",
       "organization": "OSM TW",
@@ -329,8 +367,10 @@
       "twitter": "@dongpo"
     },
     {
+      "id": "vjxgre",
       "avatar": "http://www.cmlab.csie.ntu.edu.tw/~ked/ked.png",
       "name": "蘇彥禎",
+      "name_en": "Yan-Jen Su",
       "organization": "Delta research center",
       "title": "",
       "bio": "2009–2015 Ph.D., Graduate Institute of Networking and Multimedia, National Taiwan University, Taipei, Taiwan, Advisor: Yung-Yu Chuang. 2002–2004 M.S., Department of Computer Science and Engineering, National Taiwan Ocean University, Keelung, Taiwan, Advisor: Shyh-Kuang Ueng. 1998–2002 B.S., Department of Computer Science and Engineering, National Taiwan Ocean University, Keelung, Taiwan.",
@@ -338,8 +378,10 @@
       "twitter": ""
     },
     {
+      "id": "nkbexc",
       "avatar": "http://vps.pointing.tw/kao/kao-teia.png",
       "name": "高英勛",
+      "name_en": "Y.H. Kao",
       "organization": "台灣環境資訊協會",
       "title": "理事",
       "bio": "撥接時代 (FidoNet) 就存在的老網路人，現任星輿公司工程師。台灣環境資訊協會草創時期的系統工程師，卸任後擔任協會理事，見證了台灣環境資訊協會的發展歷程。",
@@ -347,6 +389,7 @@
       "twitter": "@void_lps"
     },
     {
+      "id": "nyarql",
       "avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/12219437_1073869589291176_7016219417040057906_n.jpg?oh=888e661a35392780280ff628127de98d&oe=5793CE53",
       "name": "陳坤助",
       "organization": "KNY Co.",
@@ -356,8 +399,10 @@
       "twitter": "@KNYChen"
     },
     {
+      "id": "vemaew",
       "avatar": "",
       "name": "劉宇倫",
+      "name_en": "Yu-Lun Liu",
       "organization": "疾病管制署",
       "organization_en": "Taiwan CDC",
       "title": "醫師",
@@ -367,6 +412,7 @@
       "twitter": ""
     },
     {
+      "id": "evemal",
       "avatar": "",
       "name": "董福興",
       "organization": "WANDERER Digital Publishing Inc.",
@@ -376,6 +422,7 @@
       "twitter": "@bobtung"
     },
     {
+      "id": "ygjopy",
       "avatar": "https://lh5.googleusercontent.com/-dHv-XXHP-pc/AAAAAAAAAAI/AAAAAAAAIjU/FjaQQfyWEaA/s64/photo.jpg",
       "name": "藍一婷",
       "name_en": "ETBlue",
@@ -386,6 +433,7 @@
       "twitter": "@ETBlue"
     },
     {
+      "id": "nkwiwp",
       "avatar": "",
       "name": "瞿筱葳",
       "name_en": "Ipa Chiu",
@@ -397,8 +445,10 @@
       "nation": "Taiwan"
     },
     {
+      "id": "nypxqa",
       "avatar": "",
       "name": "林誠夏",
+      "name_en": "Lucien Lin",
       "organization": "鈞理知識產權事務所",
       "title": "法制顧問",
       "bio": "知識背景為科技法律，但也喜歡任何新奇有趣的事物。05-16年間任職於中研院自由軟體鑄造場、與台灣創用CC計畫，從事公眾授權模式的研究與推廣，目前已轉任民間事務所，撥付工作之餘的心力營建國內開源授權知識的分享網絡(Open Source Legal Network, Taiwan)。近年的研究成果包括：擔任自由開源軟體法律參考書台灣專章(http://ifosslawbook.org/)的編撰作者，以及協助各界參與者，釐清Open Data、Open Content，以及Open Data的授權與應用問題。",
@@ -433,6 +483,7 @@
       "twitter": ""
     },    
     {
+      "id": "yzgric",
       "avatar": "",
       "name": "蔡淑芳",
       "organization": "開拓文教基金會",
@@ -444,6 +495,7 @@
       "twitter": ""
     },
     {
+      "id": "eywxbb",
       "avatar": "",
       "name": "李怡志",
       "organization": "",
@@ -453,6 +505,7 @@
       "twitter": "@richy"
     },
     {
+      "id": "eexriz",
       "avatar": "",
       "name": "唐鳳",
       "organization": "",
@@ -462,8 +515,10 @@
       "twitter": "@audreyt"
     },
     {
+      "id": "ekklhz",
       "avatar": "",
-      "name": "衷嵐焜(Lan-Kun Chung)",
+      "name": "衷嵐焜",
+      "name_en": "Lan-Kun Chung",
       "organization": "奇點無限有限公司(Singularity & Infinity Co., Ltd.",
       "title": "",
       "bio": "衷嵐焜是奇點無限有限公司的創辦人，同時也服務於逢甲大學地理資訊系統研究中心，亦擔任經濟部標檢局資訊及通訊國家標準委員會委員。衷嵐焜參與國內與國外災害管理計畫將近廿年，近年專注在國際標準的參與設計，並應用在防救災議題上，以及資料的混搭應用。",
@@ -472,6 +527,7 @@
       "twitter": ""
     },
     {
+      "id": "nycsib",
       "avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/10371359_1078460835501416_7207496057617610261_n.jpg?oh=2a1a5c77f431bd9fe41eb6288f1c546a&oe=578FE8DE",
       "name": "吳銘軒",
       "organization": "",
@@ -517,6 +573,7 @@
       "twitter": ""
     },        
     {
+      "id": "njwjup",
       "avatar": "./simon.png",
       "featured": true,
       "name": "張善政",
@@ -527,6 +584,46 @@
       "title_en": "Premier",
       "bio": "學 歷:\n美國康乃爾大學土木工程博士                                1981\n美國史丹福大學土木工程碩士                                1977\n經 歷:\n行政院副院長 2014/12/08-2016/01/30\n科技部部長                                    2014/3/3-2014/12/8\n行政院政務委員                                       2012-2014\n美商 Google公司亞洲硬體營運總監                     2010-2012\n宏碁股份有限公司電子化事業群副總經理                 2000-2010\n行政院國家科學委員會企劃考核處處長                   1998-2000\n行政院國家科學委員會國家高速電腦中心主任             1991-1997\n國立臺灣大學土木工程學系 講師、副教授、教授          1981-1990",
       "bio_en": "Education:\nPh.D., Civil and Environmental Engineering, Cornell University, USA       1981\nMS, Civil and Environmental Engineering, Stanford University, USA        1977\n\nExperience:\nVice Premier, Executive Yuan                        2014/12/08-2016/01/30\nMinister, Ministry of Science and Technology           2014/03/03-2014/12/08\nMinister without Portfolio, Executive Yuan                          2012-2014\nRegional Director of Hardware Operations in Asia, Google Inc.       2010-2012\nVice President, e-Enabling Services Business Group, Acer Inc.      2000-2010\nDirector, Department of Planning and Evaluation,                   1998-2000\nNational Science Council, Executive Yuan                                    \nDirector, National Center for High-performance Computing           1991-1997\nLecturer, Associate Professor and Professor,                       1981-1990\nDepartment of Civil Engineering, NTU",
+      "nation": "Taiwan",
+      "twitter": ""
+    },
+    {
+      "id": "nzsicb",
+      "name": "呂家華",
+      "name_en": "Chia-hua Lu",
+      "organization": "",
+      "title": "",
+      "bio": "",
+      "nation": "Taiwan",
+      "twitter": ""
+    },
+    {
+      "id": "jmsucb",
+      "name": "洪申翰",
+      "name_en": "S.H. Hung",
+      "organization": "",
+      "title": "",
+      "bio": "目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。",
+      "nation": "Taiwan",
+      "twitter": ""
+    },
+    {
+      "id": "ensizd",
+      "name": "曾虹文",
+      "name_en": "H.W Tseng",
+      "organization": "",
+      "title": "",
+      "bio": "綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。",
+      "nation": "Taiwan",
+      "twitter": ""
+    },
+    {
+      "id": "vyrhlc",
+      "name": "卞中佩",
+      "name_en": "Chung-pei Pien",
+      "organization": "",
+      "title": "",
+      "bio": "美國德州農工大學社會系博士候選人、報導者專欄作者，關注社會運動、企業行為及中國議題。目前研究主題為台灣企業集團結構、中國環保運動及中國環保產業發展。",
       "nation": "Taiwan",
       "twitter": ""
     }
