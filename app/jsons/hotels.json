@@ -1,0 +1,58 @@
+{
+  "en-US": {
+  	"title": "Hotels Information",
+  	"name": "",
+  	"site": "Website",
+  	"price": "Price",
+  	"distance": "Drive (to Academia Sinica)",
+    "sep": ": ",
+  	"entries": [
+      {
+    	"name": "Forward Hotel(Nangang)",
+    	"site": "http://fw.tfhg.com.tw/about_en.php",
+    	"price": "$97~$142 USD",
+    	"distance": "6 mins"
+      },
+      {
+    	"name": "Gallery Hotel",
+    	"site": "http://www.galleryhotel.com.tw/en/",
+    	"price": "$131~$166 USD",
+    	"distance": "10 mins"
+      },
+      {
+    	"name": "City Lake Hotel",
+    	"site": "http://www.citylake.com.tw/",
+    	"price": "$125~$146 USD",
+    	"distance": "15 mins"
+      }
+    ]
+  },
+  "zh-TW": {
+  	"title": "旅館資訊",
+  	"name": "",
+  	"site": "官網",
+  	"price": "價位",
+  	"distance": "車程(至中研院)",
+  	"sep": "：",
+  	"entries": [
+      {
+    	"name": "馥華商旅(南港店)",
+    	"site": "http://fw.tfhg.com.tw/about_ch.php",
+    	"price": "$2,880 ~ $4,200 TWD",
+    	"distance": "6 分鐘"
+      },
+      {
+    	"name": "麒麟商務會館",
+    	"site": "http://www.galleryhotel.com.tw/",
+    	"price": "$3,130 ~ 3,965 TWD",
+    	"distance": "10 分鐘"
+      },
+      {
+    	"name": "麗湖飯店",
+    	"site": "http://www.citylake.com.tw/cn/",
+    	"price": "$3,696 ~ $4,312 TWD",
+    	"distance": "15 分鐘"
+      }
+    ]
+  }
+}
