@@ -68,7 +68,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _reactGa = __webpack_require__(418);
+	var _reactGa = __webpack_require__(419);
 
 	var _reactGa2 = _interopRequireDefault(_reactGa);
 
@@ -27744,7 +27744,7 @@
 						"name": "Galaxy Software Services",
 						"logo": "gss.png",
 						"url": "http://www.gss.com.tw/",
-						"desc": "Established in 1987, we are the leader in Taiwan’ s IT industry and the regional IT software and SaaS cloud service provider. The basis of our innovation and development are: providing long term commitment towards customers’ use case study, sophisticated software engineering, advanced collaboration, use of advanced mobile, IT and cloud technologies. Our innovative applications and tailored solutions has won the heart of over 2000 financial service firms, government organizations, hospitals, telecommunication providers and customers from other industries as well as over 10,000 individual cloud application users.  Locations Taipei, Kaohsiung, Shanghai Awards 2015 GSS awarded the 3nd TAIWAN MITTELSTAND AWARD 2015 2015 Taiwan Excellence Award( Vitals ESP-Enterprise Social Platform) Main products  Vitals ESP – Enterprise Social Platform  teamKube – Task and Meeting Management  Vital – GSS Cloud Services Family"
+						"desc": "Established in 1987, we are the leader in Taiwan’ s IT industry and the regional IT software and SaaS cloud service provider. The basis of our innovation and development are: providing long term commitment towards customers’ use case study, sophisticated software engineering, advanced collaboration, use of advanced mobile, IT and cloud technologies. Our innovative applications and tailored solutions has won the heart of over 2000 financial service firms, government organizations, hospitals, telecommunication providers and customers from other industries as well as over 10,000 individual cloud application users.\nLocations<br>Taipei, Kaohsiung, Shanghai\nAwards<br>2015 GSS awarded the 3nd TAIWAN MITTELSTAND AWARD<br>2015 2015 Taiwan Excellence Award( Vitals ESP-Enterprise Social Platform)\nMain products<br>Vitals ESP – Enterprise Social Platform<br>teamKube – Task and Meeting Management<br>Vital – GSS Cloud Services Family"
 					},
 					{
 						"name": "Archilife Research Foundation",
@@ -34088,7 +34088,11 @@
 
 	var _transport2 = _interopRequireDefault(_transport);
 
-	var _styles = __webpack_require__(416);
+	var _hotels = __webpack_require__(416);
+
+	var _hotels2 = _interopRequireDefault(_hotels);
+
+	var _styles = __webpack_require__(417);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -34125,6 +34129,42 @@
 	                "div",
 	                null,
 	                cat.detail
+	              )
+	            );
+	          }),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            _hotels2.default[(0, _locale.getLocale)()].title
+	          ),
+	          _hotels2.default[(0, _locale.getLocale)()].entries.map(function (hotel) {
+	            return _react2.default.createElement(
+	              "section",
+	              { className: _styles2.default.section },
+	              _react2.default.createElement(
+	                "h3",
+	                { className: _styles2.default.header },
+	                hotel.name
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                null,
+	                _hotels2.default[(0, _locale.getLocale)()].site,
+	                _hotels2.default[(0, _locale.getLocale)()].sep,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "{hotel.site}", target: "_blank" },
+	                  hotel.site
+	                ),
+	                _react2.default.createElement("br", null),
+	                _hotels2.default[(0, _locale.getLocale)()].price,
+	                _hotels2.default[(0, _locale.getLocale)()].sep,
+	                hotel.price,
+	                " ",
+	                _react2.default.createElement("br", null),
+	                _hotels2.default[(0, _locale.getLocale)()].distance,
+	                _hotels2.default[(0, _locale.getLocale)()].sep,
+	                hotel.distance
 	              )
 	            );
 	          })
@@ -34210,12 +34250,75 @@
 /* 416 */
 /***/ function(module, exports) {
 
+	module.exports = {
+		"en-US": {
+			"title": "Hotels Information",
+			"name": "",
+			"site": "Website",
+			"price": "Price",
+			"distance": "Drive (to Academia Sinica)",
+			"sep": ": ",
+			"entries": [
+				{
+					"name": "Forward Hotel(Nangang)",
+					"site": "http://fw.tfhg.com.tw/about_en.php",
+					"price": "$97~$142 USD",
+					"distance": "6 mins"
+				},
+				{
+					"name": "Gallery Hotel",
+					"site": "http://www.galleryhotel.com.tw/en/",
+					"price": "$131~$166 USD",
+					"distance": "10 mins"
+				},
+				{
+					"name": "City Lake Hotel",
+					"site": "http://www.citylake.com.tw/",
+					"price": "$125~$146 USD",
+					"distance": "15 mins"
+				}
+			]
+		},
+		"zh-TW": {
+			"title": "旅館資訊",
+			"name": "",
+			"site": "官網",
+			"price": "價位",
+			"distance": "車程(至中研院)",
+			"sep": "：",
+			"entries": [
+				{
+					"name": "馥華商旅(南港店)",
+					"site": "http://fw.tfhg.com.tw/about_ch.php",
+					"price": "$2,880 ~ $4,200 TWD",
+					"distance": "6 分鐘"
+				},
+				{
+					"name": "麒麟商務會館",
+					"site": "http://www.galleryhotel.com.tw/",
+					"price": "$3,130 ~ 3,965 TWD",
+					"distance": "10 分鐘"
+				},
+				{
+					"name": "麗湖飯店",
+					"site": "http://www.citylake.com.tw/cn/",
+					"price": "$3,696 ~ $4,312 TWD",
+					"distance": "15 分鐘"
+				}
+			]
+		}
+	};
+
+/***/ },
+/* 417 */
+/***/ function(module, exports) {
+
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__1gK3V","section":"styles-section__LrTFv","header":"styles-header__2-OSD","sponsor":"styles-sponsor__KVF2j","logo":"styles-logo__1STPn","name":"styles-name__1b107","desc":"styles-desc__2KfBd","map":"styles-map__209T3"};
 
 /***/ },
-/* 417 */,
-/* 418 */
+/* 418 */,
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34636,7 +34739,7 @@
 	  }
 	};
 
-	var OutboundLink = __webpack_require__(419);
+	var OutboundLink = __webpack_require__(420);
 	OutboundLink.trackLink = reactGA.outboundLink;
 	reactGA.OutboundLink = OutboundLink;
 
@@ -34644,7 +34747,7 @@
 
 
 /***/ },
-/* 419 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(11);
