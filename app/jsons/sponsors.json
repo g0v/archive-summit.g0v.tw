@@ -105,6 +105,12 @@
           "logo": "voxe.png",
           "url": "http://voxe.org/welcome",
           "desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
+        },
+        {
+          "name": "Open Knowledge International",
+          "logo": "okfn.png",
+          "url" : "http://okfn.org/",
+          "desc": "Open Knowledge is a worldwide non-profit network of people passionate about openness, using advocacy, technology and training to unlock information and enable people to work with it to create and share knowledge."
         }
       ]
     },
@@ -240,6 +246,12 @@
           "logo": "voxe.png",
           "url": "http://voxe.org/welcome",
           "desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
+        },
+        {
+          "name": "Open Knowledge International",
+          "logo": "okfn.png",
+          "url" : "http://okfn.org/",
+          "desc": "Open Knowledge is a worldwide non-profit network of people passionate about openness, using advocacy, technology and training to unlock information and enable people to work with it to create and share knowledge."
         }
       ]
     },
