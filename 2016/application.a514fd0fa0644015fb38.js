@@ -28901,9 +28901,9 @@
 				"id": "ygljow",
 				"avatar": "https://scontent-sjc2-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/p320x320/11796293_10153255844110668_2797238177900281661_n.jpg?oh=ac1e9f2912f78c309558c2e23833da28&oe=57628456",
 				"name": "clkao",
-				"organization": "g0v.tw",
+				"organization": "g0v",
 				"title": "",
-				"bio": "clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v.tw 計畫。",
+				"bio": "clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v 計畫。",
 				"nation": "Taiwan",
 				"twitter": "@clkao"
 			},
@@ -28964,9 +28964,9 @@
 				"id": "njtsud",
 				"avatar": "",
 				"name": "Kirby Wu",
-				"organization": "g0v.tw",
+				"organization": "g0v",
 				"title": "cofounder",
-				"bio": "infographics.tw 與 g0v.tw 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。",
+				"bio": "infographics.tw 與 g0v 共同發起人，亦為資料視覺化領域與網頁技術專家。曾擔任 Google Taiwan DigiCamp 2014 技術顧問以及籌辦 2015 年資料新聞實戰營 ( dBootcamp Taipei )，並曾受邀至台大、交大、世新、政大、輔大、文化等大學之新聞與傳播相關課程演講及授課。",
 				"nation": "Taiwan",
 				"twitter": "@zbryikt"
 			},
