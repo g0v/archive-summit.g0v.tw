@@ -4,7 +4,7 @@ import "./session.css";
 import speakers from '../SpeakerList/speakers.json';
 import schedules from './schedules.json';
 import { getLocale, getString } from "javascripts/locale";
-import { avatarURL } from '../SpeakerList';
+import avatarURL from "javascripts/helpers/avatar";
 import styles from "./styles.css";
 
 var by_name = {};
