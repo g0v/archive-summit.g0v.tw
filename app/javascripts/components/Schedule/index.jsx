@@ -7,7 +7,29 @@ import styles from "./styles.css";
 import classnames from "classnames/bind";
 const cx = classnames.bind(styles);
 
-const noop = () => {}
+const venues = [
+  {
+    "id": "r1",
+    "title": "R1",
+    "color": "#F4AF3D"
+  },
+  {
+    "id": "r0",
+    "title": "R0",
+    "color": "#CE0D41"
+  },
+  {
+    "id": "r2",
+    "title": "R2",
+    "color": "#1BADBE"
+  }
+];
+
+const venueObj = venues.reduce((aggObj, venue, idx) => {
+  aggObj[venue.title] = venue
+  aggObj.index = idx
+  return aggObj
+}, {})
 
 function mapTimeSlotToItems(day, value, i) {
   let id = `day${day}-all-${i}`;
@@ -15,9 +37,9 @@ function mapTimeSlotToItems(day, value, i) {
   let { hash } = this.props.location;
   let selected = hash ? (hash === '#' + id) : false;
   let event = () => schedules[getLocale()][`day${day}`][i].event;
-  if(venue && this.state.categoryOn) {
-    let category = this.state.categories.filter(cat => cat.title === venue)[0]
-    if(!category.active) return false;
+  if(venue && this.state.venueOn) {
+    let venueState = this.state.venues.filter(cat => cat.title === venue)[0]
+    if(!venueState.active) return false;
   }
 
   let content;
@@ -26,7 +48,7 @@ function mapTimeSlotToItems(day, value, i) {
       <div
         className={cx({ "Schedule-item" : true, })}
         key={i}
-        style={{ color: '#FFF', backgroundColor: value.color}}
+        style={{ color: '#FFF', backgroundColor: venueObj[value.venue].color}}
       >
         <div className="Schedule-time">
           {value.title}／{venue}
@@ -62,6 +84,16 @@ function mapTimeSlotToItems(day, value, i) {
                 <div className="Schedule-main">
                   {value.event.title}
                   <div className="Schedule-presenter">{value.event.speaker}</div>
+                  {
+                    venue ? (
+                      <div className="Schedule-categoryIcon" style={{
+                             "background" : venueObj[venue].color
+                           }}
+                           title={`Toggle venue "${venue}"`}
+                           onClick={this.toggleVenue.bind(this, venueObj[venue].index)}
+                           ></div>
+                    ) : null
+                  }
                 </div>
               </a>
             }
@@ -72,38 +104,20 @@ function mapTimeSlotToItems(day, value, i) {
   }
 }
 
-const categories = [
-  {
-    "id": "r0",
-    "title": "R0",
-    "color": "#CE0D41"
-  },
-  {
-    "id": "r1",
-    "title": "R1",
-    "color": "#FCDE86"
-  },
-  {
-    "id": "r2",
-    "title": "R2",
-    "color": "#1BADBE"
-  }
-];
-
 export default class Schedule extends Component {
   constructor(props) {
     super(props);
     this.state = {
     showSession: false,
-    categoryOn: false,
+    venueOn: false,
     mobileFilterOn: false,
-    categories: categories.map(category => ({...category, active: false})),
+    venues: venues.map(venue => ({...venue, active: false})),
     currentSection: '',
     currentSession: () => ({}),
     currentSessionTime: null,
     };
   }
- 
+
   componentDidMount() {
     const { hash } = this.props.location;
     if (hash) {
@@ -139,15 +153,15 @@ export default class Schedule extends Component {
     console.log(currentSection)
     this.setState({ currentSection });
   }
-  toggleCategory = id => {
-    let categories = this.state.categories.slice(0);
-    categories[id] = {...categories[id], active: !categories[id].active}
-    this.setState({categories, categoryOn: true})
+  toggleVenue = id => {
+    let venues = this.state.venues.slice(0);
+    venues[id] = {...venues[id], active: !venues[id].active}
+    this.setState({venues, venueOn: true})
   }
-  clearCategory = () => {
+  clearVenue = () => {
     this.setState({
-      categories: categories.map(category => ({...category, active: false})),
-      categoryOn: false
+      venues: venues.map(venue => ({...venue, active: false})),
+      venueOn: false
     })
   }
   toggleMobileFilter = () => {
@@ -156,18 +170,18 @@ export default class Schedule extends Component {
   render () {
     return (
       <div className={styles.root}>
-        <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
-        </div>
+        <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}</div>
         <div className={styles.container}>
           <div className={cx({
             "Home-filter": true,
             "is-fixed": false,
           })}>
             <Filter
-              data={this.state.categories}
-              filterOn={this.state.categoryOn}
-              toggleCategoryHandler={this.toggleCategory}
-              clearCategoryHandler={this.clearCategory}
+              title='venues'
+              data={this.state.venues}
+              filterOn={this.state.venueOn}
+              toggleCategoryHandler={this.toggleVenue}
+              clearCategoryHandler={this.clearVenue}
             />
           </div>
           <div className={cx({
@@ -207,11 +221,12 @@ export default class Schedule extends Component {
                 'is-show': this.state.mobileFilterOn,
               })}>
                 <Filter ref="filter"
-                        data={this.state.categories}
-                        filterOn={this.state.categoryOn}
-                        toggleCategoryHandler={this.toggleCategory}
-                        clearCategoryHandler={this.clearCategory}
-                        togglePanelHander={this.toggleMobileFilter}/>
+                        title='venues'
+                        data={this.state.venues}
+                        filterOn={this.state.venueOn}
+                        toggleCategoryHandler={this.toggleVenue}
+                        clearCategoryHandler={this.clearVenue}
+                        togglePanelHandler={this.toggleMobileFilter}/>
               </div>
               <div
                 className={cx({
@@ -250,7 +265,7 @@ export default class Schedule extends Component {
               sessionHandler={this.resetSession}
               data={this.state.currentSession()}
               time={this.state.currentSessionTime}
-              categories={categories}
+              categories={venues}
             />
           </div>
 
@@ -264,4 +279,4 @@ export default class Schedule extends Component {
   }
 }
 
-export {default as ScheduleParallel} from './time'
+export {default as ScheduleParallel} from './parallel'
