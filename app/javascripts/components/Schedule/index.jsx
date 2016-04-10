@@ -7,7 +7,29 @@ import styles from "./styles.css";
 import classnames from "classnames/bind";
 const cx = classnames.bind(styles);
 
-const noop = () => {}
+const venues = [
+  {
+    "id": "r1",
+    "title": "R1",
+    "color": "#F4AF3D"
+  },
+  {
+    "id": "r0",
+    "title": "R0",
+    "color": "#CE0D41"
+  },
+  {
+    "id": "r2",
+    "title": "R2",
+    "color": "#1BADBE"
+  }
+];
+
+const venueObj = venues.reduce((aggObj, venue, idx) => {
+  aggObj[venue.title] = venue
+  aggObj.index = idx
+  return aggObj
+}, {})
 
 function mapTimeSlotToItems(day, value, i) {
   let id = `day${day}-all-${i}`;
@@ -26,7 +48,7 @@ function mapTimeSlotToItems(day, value, i) {
       <div
         className={cx({ "Schedule-item" : true, })}
         key={i}
-        style={{ color: '#FFF', backgroundColor: value.color}}
+        style={{ color: '#FFF', backgroundColor: venueObj[value.venue].color}}
       >
         <div className="Schedule-time">
           {value.title}／{venue}
@@ -71,24 +93,6 @@ function mapTimeSlotToItems(day, value, i) {
     );
   }
 }
-
-const venues = [
-  {
-    "id": "r0",
-    "title": "R0",
-    "color": "#CE0D41"
-  },
-  {
-    "id": "r1",
-    "title": "R1",
-    "color": "#FCDE86"
-  },
-  {
-    "id": "r2",
-    "title": "R2",
-    "color": "#1BADBE"
-  }
-];
 
 export default class Schedule extends Component {
   constructor(props) {
