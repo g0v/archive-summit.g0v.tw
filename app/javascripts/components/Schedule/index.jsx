@@ -15,9 +15,9 @@ function mapTimeSlotToItems(day, value, i) {
   let { hash } = this.props.location;
   let selected = hash ? (hash === '#' + id) : false;
   let event = () => schedules[getLocale()][`day${day}`][i].event;
-  if(venue && this.state.categoryOn) {
-    let category = this.state.categories.filter(cat => cat.title === venue)[0]
-    if(!category.active) return false;
+  if(venue && this.state.venueOn) {
+    let venueState = this.state.venues.filter(cat => cat.title === venue)[0]
+    if(!venueState.active) return false;
   }
 
   let content;
@@ -72,7 +72,7 @@ function mapTimeSlotToItems(day, value, i) {
   }
 }
 
-const categories = [
+const venues = [
   {
     "id": "r0",
     "title": "R0",
@@ -95,15 +95,15 @@ export default class Schedule extends Component {
     super(props);
     this.state = {
     showSession: false,
-    categoryOn: false,
+    venueOn: false,
     mobileFilterOn: false,
-    categories: categories.map(category => ({...category, active: false})),
+    venues: venues.map(venue => ({...venue, active: false})),
     currentSection: '',
     currentSession: () => ({}),
     currentSessionTime: null,
     };
   }
- 
+
   componentDidMount() {
     const { hash } = this.props.location;
     if (hash) {
@@ -139,15 +139,15 @@ export default class Schedule extends Component {
     console.log(currentSection)
     this.setState({ currentSection });
   }
-  toggleCategory = id => {
-    let categories = this.state.categories.slice(0);
-    categories[id] = {...categories[id], active: !categories[id].active}
-    this.setState({categories, categoryOn: true})
+  toggleVenue = id => {
+    let venues = this.state.venues.slice(0);
+    venues[id] = {...venues[id], active: !venues[id].active}
+    this.setState({venues, venueOn: true})
   }
-  clearCategory = () => {
+  clearVenue = () => {
     this.setState({
-      categories: categories.map(category => ({...category, active: false})),
-      categoryOn: false
+      venues: venues.map(venue => ({...venue, active: false})),
+      venueOn: false
     })
   }
   toggleMobileFilter = () => {
@@ -156,18 +156,17 @@ export default class Schedule extends Component {
   render () {
     return (
       <div className={styles.root}>
-        <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
-        </div>
+        <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}</div>
         <div className={styles.container}>
           <div className={cx({
             "Home-filter": true,
             "is-fixed": false,
           })}>
             <Filter
-              data={this.state.categories}
-              filterOn={this.state.categoryOn}
-              toggleCategoryHandler={this.toggleCategory}
-              clearCategoryHandler={this.clearCategory}
+              data={this.state.venues}
+              filterOn={this.state.venueOn}
+              toggleCategoryHandler={this.toggleVenue}
+              clearCategoryHandler={this.clearVenue}
             />
           </div>
           <div className={cx({
@@ -207,10 +206,10 @@ export default class Schedule extends Component {
                 'is-show': this.state.mobileFilterOn,
               })}>
                 <Filter ref="filter"
-                        data={this.state.categories}
-                        filterOn={this.state.categoryOn}
-                        toggleCategoryHandler={this.toggleCategory}
-                        clearCategoryHandler={this.clearCategory}
+                        data={this.state.venues}
+                        filterOn={this.state.venueOn}
+                        toggleCategoryHandler={this.toggleVenue}
+                        clearCategoryHandler={this.clearVenue}
                         togglePanelHander={this.toggleMobileFilter}/>
               </div>
               <div
@@ -250,7 +249,7 @@ export default class Schedule extends Component {
               sessionHandler={this.resetSession}
               data={this.state.currentSession()}
               time={this.state.currentSessionTime}
-              categories={categories}
+              categories={venues}
             />
           </div>
 
