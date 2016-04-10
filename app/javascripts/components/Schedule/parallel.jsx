@@ -202,7 +202,6 @@ export default class ScheduleParallel extends Component {
         <div className={styles.container}>
           <div className={classNames({
             "Home-filter": true,
-            "is-fixed": false,
           })} style={filterStyle}>
             <Filter title="categories"
                     data={categories}
@@ -214,12 +213,11 @@ export default class ScheduleParallel extends Component {
             "Home-schedule": true,
             "with-session" : showSession,
           })}>
-            <div className={`Schedule`}>{/* todo: is-fixed */}
+            <div className={`Schedule`}>
               <div className={classNames({
                   "Schedule-title" : true,
                   "with-session" : showSession,
                   "without-session" : !showSession
-                  /*"is-fixed" : inScheduleArea==="within" || (inScheduleArea==="passed" && showPanel),*/
                 })}>
                 <div className="Schedule-dayButtonLeftstop">
                   <div className={classNames({
@@ -272,7 +270,6 @@ export default class ScheduleParallel extends Component {
           <div className={classNames({
               "Home-session" : true,
               "is-show": showSession,
-              "is-fixed": true,
             })}
             style={sessionStyle}>
             <Session sessionHandler={this.resetSession}

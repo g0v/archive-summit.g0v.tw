@@ -174,7 +174,6 @@ export default class Schedule extends Component {
         <div className={styles.container}>
           <div className={cx({
             "Home-filter": true,
-            "is-fixed": false,
           })}>
             <Filter
               title='venues'
@@ -188,7 +187,7 @@ export default class Schedule extends Component {
             "Home-schedule": true,
             "with-session" : this.state.showSession,
           })}>
-            <div className={`Schedule`}>{/* todo: is-fixed */}
+            <div className={`Schedule`}>
               <div className={cx({
                   "Schedule-title" : true,
                   "with-session" : this.state.showSession,
@@ -259,7 +258,6 @@ export default class Schedule extends Component {
           <div className={cx({
               "Home-session" : true,
               "is-show": this.state.showSession,
-              "is-fixed": true,
             })}>
             <Session
               sessionHandler={this.resetSession}
