@@ -3,6 +3,7 @@ import classNames from "classnames";
 import "./session.css";
 import speakers from '../SpeakerList/speakers.json';
 import schedules from './schedules.json';
+import categories from './categories.json';
 import { getLocale, getString } from "javascripts/locale";
 import avatarURL from "javascripts/helpers/avatar";
 import styles from "./styles.css";
@@ -15,8 +16,8 @@ export default React.createClass({
   displayName: "Session",
 
   render() {
-    var {sessionHandler, data, categories, time} = this.props;
-    var category = categories.find(cat => cat.id === data.category);
+    var {sessionHandler, data, time} = this.props;
+    var category = categories[getLocale()].find(cat => cat.id === data.category);
     var venue = (data.venue) ? <div className="Session-venue">{data.venue}</div> : "";
     var language = (data.EN) ? <div className="Session-en">EN</div> : "";
     const [locale] = getLocale().split('-');
