@@ -1,16 +1,8 @@
 import React, { Component } from "react";
 import { getLocale, getString } from "javascripts/locale";
+import avatarURL from "javascripts/helpers/avatar";
 import styles from "./styles.css";
 import speakers from "./speakers.json";
-
-export function avatarURL(speaker) {
-  return speaker.avatar ?
-    speaker.avatar.match(/^\./) ? require(speaker.avatar) : speaker.avatar
-                                : (speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') :
-                                   speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook :
-                                  require('./default.png'));
-}
-
 
 class SpeakerList extends Component {
   speaker = (speaker) => {
