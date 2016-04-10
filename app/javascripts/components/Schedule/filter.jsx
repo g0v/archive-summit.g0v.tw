@@ -1,20 +1,26 @@
-import React from "react";
+import React, {PropTypes} from "react";
 import styles from "./filter.css";
 
 export default React.createClass({
   displayName: "Filter",
 
+  propTypes: {
+    title: PropTypes.string.isRequired,
+    data: PropTypes.arrayOf(PropTypes.shape({
+      active: PropTypes.bool,
+      color: PropTypes.string,
+      title: PropTypes.string,
+    })).isRequired,
+    filterOn: PropTypes.bool,
+    toggleCategoryHandler: PropTypes.func.isRequired,
+    clearCategoryHandler: PropTypes.func.isRequired,
+    togglePanelHandler: PropTypes.func,
+  },
+
   render() {
 
-    // var array = Array.apply(null, {length: 10}).map(Number.call, Number)
-    // var fakeItems = array.map((value,i)=>{
-    //   return (
-    //     <li className="Filter-category" key={i}>CATEGORY</li>
-    //   )
-    // });
-
-    var {data, filterOn, toggleCategoryHandler, clearCategoryHandler, togglePanelHander} = this.props;
-    var items = data.map((value,i)=>{
+    var {filterOn} = this.props;
+    var items = this.props.data.map((value,i)=>{
 
       if(!filterOn || value.active){
         var style = {
@@ -27,7 +33,7 @@ export default React.createClass({
       }
 
       return (
-        <div className={styles.filterCategory} key={i} onClick={toggleCategoryHandler.bind(null,i)}>
+        <div className={styles.filterCategory} key={i} onClick={this.props.toggleCategoryHandler.bind(null,i)}>
           <div className={`${styles.filterCategoryIcon}`} style={style}></div>
           <div className={`${styles.filterCategoryText}`}>{value.title}</div>
         </div>
@@ -36,11 +42,11 @@ export default React.createClass({
 
     return (
       <div className={styles.filter}>
-        <div className={styles.filterTitle}>Venues</div>
+        <div className={styles.filterTitle}>{this.props.title}</div>
           <div className={styles.filterCategories}>{items}</div>
           <div className={styles.filterActions}>
-            <div className={styles.filterClose} onClick={togglePanelHander}>Close</div>
-            <div className={`${styles.filterClearAll} ${filterOn ? styles.isActive : ''}`} onClick={clearCategoryHandler}>All Topics</div>
+            <div className={styles.filterClose} onClick={this.props.togglePanelHandler}>Close</div>
+            <div className={`${styles.filterClearAll} ${filterOn ? styles.isActive : ''}`} onClick={this.props.clearCategoryHandler}>All {this.props.title.toLowerCase()}</div>
           </div>
       </div>
     );

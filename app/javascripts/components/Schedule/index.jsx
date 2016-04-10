@@ -163,6 +163,7 @@ export default class Schedule extends Component {
             "is-fixed": false,
           })}>
             <Filter
+              title='venues'
               data={this.state.venues}
               filterOn={this.state.venueOn}
               toggleCategoryHandler={this.toggleVenue}
@@ -206,11 +207,12 @@ export default class Schedule extends Component {
                 'is-show': this.state.mobileFilterOn,
               })}>
                 <Filter ref="filter"
+                        title='venues'
                         data={this.state.venues}
                         filterOn={this.state.venueOn}
                         toggleCategoryHandler={this.toggleVenue}
                         clearCategoryHandler={this.clearVenue}
-                        togglePanelHander={this.toggleMobileFilter}/>
+                        togglePanelHandler={this.toggleMobileFilter}/>
               </div>
               <div
                 className={cx({

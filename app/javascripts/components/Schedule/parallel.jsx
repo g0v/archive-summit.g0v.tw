@@ -204,7 +204,8 @@ export default class ScheduleParallel extends Component {
             "Home-filter": true,
             "is-fixed": false,
           })} style={filterStyle}>
-            <Filter data={categories}
+            <Filter title="categories"
+                    data={categories}
                     filterOn={filterOn}
                     toggleCategoryHandler={this.toggleCategory}
                     clearCategoryHandler={this.clearCategory}/>
@@ -247,11 +248,12 @@ export default class ScheduleParallel extends Component {
                 'is-show': showPanel,
               })}>
                 <Filter ref="filter"
+                        title="categories"
                         data={categories}
                         filterOn={filterOn}
                         toggleCategoryHandler={this.toggleCategory}
                         clearCategoryHandler={this.clearCategory}
-                        togglePanelHander={this.togglePanel}/>
+                        togglePanelHandler={this.togglePanel}/>
               </div>
               <div ref="day1" id="day1">
                 <div className="Schedule-day">5/14 (Sat.)</div>
