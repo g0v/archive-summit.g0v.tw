@@ -84,6 +84,16 @@ function mapTimeSlotToItems(day, value, i) {
                 <div className="Schedule-main">
                   {value.event.title}
                   <div className="Schedule-presenter">{value.event.speaker}</div>
+                  {
+                    venue ? (
+                      <div className="Schedule-categoryIcon" style={{
+                             "background" : venueObj[venue].color
+                           }}
+                           title={`Toggle venue "${venue}"`}
+                           onClick={this.toggleVenue.bind(this, venueObj[venue].index)}
+                           ></div>
+                    ) : null
+                  }
                 </div>
               </a>
             }
