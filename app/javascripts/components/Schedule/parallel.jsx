@@ -138,19 +138,19 @@ export default class ScheduleParallel extends Component {
       }else{ //multile events
         let filteredEvents = value.events.filter(v => shouldPassFilter(v.category));
         if(filteredEvents.length === 0) return null;
- 
+
         content = (
           <div className="Schedule-events">
             {
               filteredEvents.map((v,k)=>{
                 var language = (v.EN) ? <div className="Schedule-en">EN</div> : "";
- 
+
                 var venue = (v.venue) ? (
                         <div className="Schedule-meta">
                           <div className="Schedule-venue">{v.venue}</div>
                         </div>) : "";
                 var id = `day${day}-${v.venue.toLowerCase()}-${i}`;
- 
+
                 return(
                   <a className={classNames({
                        "Schedule-event" : true
@@ -179,7 +179,7 @@ export default class ScheduleParallel extends Component {
           </div>
         );
       }
- 
+
 
       let [timeStart, timeEnd] = value.time.split('-')
       return (
@@ -198,6 +198,7 @@ export default class ScheduleParallel extends Component {
 
     return (
       <div className={styles.root}>
+        <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}</div>
         <div className={styles.container}>
           <div className={classNames({
             "Home-filter": true,

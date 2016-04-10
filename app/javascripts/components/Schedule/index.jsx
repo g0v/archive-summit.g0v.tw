@@ -264,4 +264,4 @@ export default class Schedule extends Component {
   }
 }
 
-export {default as ScheduleParallel} from './time'
+export {default as ScheduleParallel} from './parallel'
