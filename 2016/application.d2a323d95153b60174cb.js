@@ -29405,12 +29405,12 @@
 
 	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
-	var _time = __webpack_require__(391);
+	var _parallel = __webpack_require__(391);
 
 	Object.defineProperty(exports, 'ScheduleParallel', {
 	  enumerable: true,
 	  get: function get() {
-	    return _interopRequireDefault(_time).default;
+	    return _interopRequireDefault(_parallel).default;
 	  }
 	});
 
@@ -29444,7 +29444,25 @@
 
 	var cx = _bind2.default.bind(_styles2.default);
 
-	var noop = function noop() {};
+	var venues = [{
+	  "id": "r1",
+	  "title": "R1",
+	  "color": "#F4AF3D"
+	}, {
+	  "id": "r0",
+	  "title": "R0",
+	  "color": "#CE0D41"
+	}, {
+	  "id": "r2",
+	  "title": "R2",
+	  "color": "#1BADBE"
+	}];
+
+	var venueObj = venues.reduce(function (aggObj, venue, idx) {
+	  aggObj[venue.title] = venue;
+	  aggObj.index = idx;
+	  return aggObj;
+	}, {});
 
 	function mapTimeSlotToItems(day, value, i) {
 	  var id = 'day' + day + '-all-' + i;
@@ -29455,11 +29473,11 @@
 	  var event = function event() {
 	    return _schedules_by_track2.default[(0, _locale.getLocale)()]['day' + day][i].event;
 	  };
-	  if (venue && this.state.categoryOn) {
-	    var category = this.state.categories.filter(function (cat) {
+	  if (venue && this.state.venueOn) {
+	    var venueState = this.state.venues.filter(function (cat) {
 	      return cat.title === venue;
 	    })[0];
-	    if (!category.active) return false;
+	    if (!venueState.active) return false;
 	  }
 
 	  var content = void 0;
@@ -29469,7 +29487,7 @@
 	      {
 	        className: cx({ "Schedule-item": true }),
 	        key: i,
-	        style: { color: '#FFF', backgroundColor: value.color }
+	        style: { color: '#FFF', backgroundColor: venueObj[value.venue].color }
 	      },
 	      _react2.default.createElement(
 	        'div',
@@ -29539,26 +29557,18 @@
 	            'div',
 	            { className: 'Schedule-presenter' },
 	            value.event.speaker
-	          )
+	          ),
+	          venue ? _react2.default.createElement('div', { className: 'Schedule-categoryIcon', style: {
+	              "background": venueObj[venue].color
+	            },
+	            title: 'Toggle venue "' + venue + '"',
+	            onClick: this.toggleVenue.bind(this, venueObj[venue].index)
+	          }) : null
 	        )
 	      )
 	    );
 	  }
 	}
-
-	var categories = [{
-	  "id": "r0",
-	  "title": "R0",
-	  "color": "#CE0D41"
-	}, {
-	  "id": "r1",
-	  "title": "R1",
-	  "color": "#FCDE86"
-	}, {
-	  "id": "r2",
-	  "title": "R2",
-	  "color": "#1BADBE"
-	}];
 
 	var Schedule = function (_Component) {
 	  (0, _inherits3.default)(Schedule, _Component);
@@ -29579,18 +29589,18 @@
 	      document.body.classList.remove(_styles2.default.mobileScrollLock);
 	    };
 
-	    _this.toggleCategory = function (id) {
-	      var categories = _this.state.categories.slice(0);
-	      categories[id] = (0, _extends3.default)({}, categories[id], { active: !categories[id].active });
-	      _this.setState({ categories: categories, categoryOn: true });
+	    _this.toggleVenue = function (id) {
+	      var venues = _this.state.venues.slice(0);
+	      venues[id] = (0, _extends3.default)({}, venues[id], { active: !venues[id].active });
+	      _this.setState({ venues: venues, venueOn: true });
 	    };
 
-	    _this.clearCategory = function () {
+	    _this.clearVenue = function () {
 	      _this.setState({
-	        categories: categories.map(function (category) {
-	          return (0, _extends3.default)({}, category, { active: false });
+	        venues: venues.map(function (venue) {
+	          return (0, _extends3.default)({}, venue, { active: false });
 	        }),
-	        categoryOn: false
+	        venueOn: false
 	      });
 	    };
 
@@ -29600,10 +29610,10 @@
 
 	    _this.state = {
 	      showSession: false,
-	      categoryOn: false,
+	      venueOn: false,
 	      mobileFilterOn: false,
-	      categories: categories.map(function (category) {
-	        return (0, _extends3.default)({}, category, { active: false });
+	      venues: venues.map(function (venue) {
+	        return (0, _extends3.default)({}, venue, { active: false });
 	      }),
 	      currentSection: '',
 	      currentSession: function currentSession() {
@@ -29678,10 +29688,11 @@
 	                "is-fixed": false
 	              }) },
 	            _react2.default.createElement(_filter2.default, {
-	              data: this.state.categories,
-	              filterOn: this.state.categoryOn,
-	              toggleCategoryHandler: this.toggleCategory,
-	              clearCategoryHandler: this.clearCategory
+	              title: 'venues',
+	              data: this.state.venues,
+	              filterOn: this.state.venueOn,
+	              toggleCategoryHandler: this.toggleVenue,
+	              clearCategoryHandler: this.clearVenue
 	            })
 	          ),
 	          _react2.default.createElement(
@@ -29746,11 +29757,12 @@
 	                    'is-show': this.state.mobileFilterOn
 	                  }) },
 	                _react2.default.createElement(_filter2.default, { ref: 'filter',
-	                  data: this.state.categories,
-	                  filterOn: this.state.categoryOn,
-	                  toggleCategoryHandler: this.toggleCategory,
-	                  clearCategoryHandler: this.clearCategory,
-	                  togglePanelHander: this.toggleMobileFilter })
+	                  title: 'venues',
+	                  data: this.state.venues,
+	                  filterOn: this.state.venueOn,
+	                  toggleCategoryHandler: this.toggleVenue,
+	                  clearCategoryHandler: this.clearVenue,
+	                  togglePanelHandler: this.toggleMobileFilter })
 	              ),
 	              _react2.default.createElement(
 	                'div',
@@ -29811,7 +29823,7 @@
 	              sessionHandler: this.resetSession,
 	              data: this.state.currentSession(),
 	              time: this.state.currentSessionTime,
-	              categories: categories
+	              categories: venues
 	            })
 	          )
 	        ),
@@ -30286,6 +30298,11 @@
 	        { className: _styles2.default.root },
 	        _react2.default.createElement(
 	          "div",
+	          { style: { color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center' } },
+	          _schedules2.default[(0, _locale.getLocale)()].interpretation
+	        ),
+	        _react2.default.createElement(
+	          "div",
 	          { className: _styles2.default.container },
 	          _react2.default.createElement(
 	            "div",
@@ -30293,7 +30310,8 @@
 	                "Home-filter": true,
 	                "is-fixed": false
 	              }), style: filterStyle },
-	            _react2.default.createElement(_filter2.default, { data: categories,
+	            _react2.default.createElement(_filter2.default, { title: "categories",
+	              data: categories,
 	              filterOn: filterOn,
 	              toggleCategoryHandler: this.toggleCategory,
 	              clearCategoryHandler: this.clearCategory })
@@ -30361,11 +30379,12 @@
 	                    'is-show': showPanel
 	                  }) },
 	                _react2.default.createElement(_filter2.default, { ref: "filter",
+	                  title: "categories",
 	                  data: categories,
 	                  filterOn: filterOn,
 	                  toggleCategoryHandler: this.toggleCategory,
 	                  clearCategoryHandler: this.clearCategory,
-	                  togglePanelHander: this.togglePanel })
+	                  togglePanelHandler: this.togglePanel })
 	              ),
 	              _react2.default.createElement(
 	                "div",
@@ -31822,23 +31841,25 @@
 	exports.default = _react2.default.createClass({
 	  displayName: "Filter",
 
+	  propTypes: {
+	    title: _react.PropTypes.string.isRequired,
+	    data: _react.PropTypes.arrayOf(_react.PropTypes.shape({
+	      active: _react.PropTypes.bool,
+	      color: _react.PropTypes.string,
+	      title: _react.PropTypes.string
+	    })).isRequired,
+	    filterOn: _react.PropTypes.bool,
+	    toggleCategoryHandler: _react.PropTypes.func.isRequired,
+	    clearCategoryHandler: _react.PropTypes.func.isRequired,
+	    togglePanelHandler: _react.PropTypes.func
+	  },
+
 	  render: function render() {
+	    var _this = this;
 
-	    // var array = Array.apply(null, {length: 10}).map(Number.call, Number)
-	    // var fakeItems = array.map((value,i)=>{
-	    //   return (
-	    //     <li className="Filter-category" key={i}>CATEGORY</li>
-	    //   )
-	    // });
+	    var filterOn = this.props.filterOn;
 
-	    var _props = this.props;
-	    var data = _props.data;
-	    var filterOn = _props.filterOn;
-	    var toggleCategoryHandler = _props.toggleCategoryHandler;
-	    var clearCategoryHandler = _props.clearCategoryHandler;
-	    var togglePanelHander = _props.togglePanelHander;
-
-	    var items = data.map(function (value, i) {
+	    var items = this.props.data.map(function (value, i) {
 
 	      if (!filterOn || value.active) {
 	        var style = {
@@ -31852,7 +31873,7 @@
 
 	      return _react2.default.createElement(
 	        "div",
-	        { className: _filter2.default.filterCategory, key: i, onClick: toggleCategoryHandler.bind(null, i) },
+	        { className: _filter2.default.filterCategory, key: i, onClick: _this.props.toggleCategoryHandler.bind(null, i) },
 	        _react2.default.createElement("div", { className: "" + _filter2.default.filterCategoryIcon, style: style }),
 	        _react2.default.createElement(
 	          "div",
@@ -31868,7 +31889,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { className: _filter2.default.filterTitle },
-	        "Venues"
+	        this.props.title
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -31880,13 +31901,14 @@
 	        { className: _filter2.default.filterActions },
 	        _react2.default.createElement(
 	          "div",
-	          { className: _filter2.default.filterClose, onClick: togglePanelHander },
+	          { className: _filter2.default.filterClose, onClick: this.props.togglePanelHandler },
 	          "Close"
 	        ),
 	        _react2.default.createElement(
 	          "div",
-	          { className: _filter2.default.filterClearAll + " " + (filterOn ? _filter2.default.isActive : ''), onClick: clearCategoryHandler },
-	          "All Topics"
+	          { className: _filter2.default.filterClearAll + " " + (filterOn ? _filter2.default.isActive : ''), onClick: this.props.clearCategoryHandler },
+	          "All ",
+	          this.props.title.toLowerCase()
 	        )
 	      )
 	    );
@@ -31933,6 +31955,10 @@
 
 	var _schedules2 = _interopRequireDefault(_schedules);
 
+	var _categories = __webpack_require__(393);
+
+	var _categories2 = _interopRequireDefault(_categories);
+
 	var _locale = __webpack_require__(228);
 
 	var _avatar = __webpack_require__(374);
@@ -31958,10 +31984,9 @@
 	    var _props = this.props;
 	    var sessionHandler = _props.sessionHandler;
 	    var data = _props.data;
-	    var categories = _props.categories;
 	    var time = _props.time;
 
-	    var category = categories.find(function (cat) {
+	    var category = _categories2.default[(0, _locale.getLocale)()].find(function (cat) {
 	      return cat.id === data.category;
 	    });
 	    var venue = data.venue ? _react2.default.createElement(
