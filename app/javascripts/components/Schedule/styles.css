@@ -303,6 +303,12 @@ $mobile-item-leftstop: 96px;
 .Schedule-keynote {
   background: #eff;
 }
+
+.Schedule-item:not(.Schedule-keynote) + .Schedule-keynote {
+  /* topic-view only: end of parallel session, make border more distinct */
+  margin-top: 2px;
+  border-top: 1px solid rgb(220,220,220);
+}
 .Schedule-item {
   display: flex;
   font-size: 16px;
