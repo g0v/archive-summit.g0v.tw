@@ -1,0 +1,18 @@
+.root {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  padding: 1em;
+  background: #fff;
+  color: #7F7F7F;
+  width: 40%;
+  min-height: 200px;
+  border-radius: 5px;
+  border: solid 1px #aaa;
+  font-size: 0.8em;
+}
+
+.close {
+  display: block;
+  float: right;
+}
