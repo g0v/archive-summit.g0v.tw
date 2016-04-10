@@ -5,6 +5,7 @@ import Filter from "./filter";
 import Session from './session';
 import styles from "./styles.css";
 import classnames from "classnames/bind";
+import { StickyContainer, Sticky } from 'react-sticky';
 const cx = classnames.bind(styles);
 
 const venues = [
@@ -171,103 +172,108 @@ export default class Schedule extends Component {
     return (
       <div className={styles.root}>
         <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}</div>
-        <div className={styles.container}>
-          <div className={cx({
-            "Home-filter": true,
-          })}>
-            <Filter
-              title='venues'
-              data={this.state.venues}
-              filterOn={this.state.venueOn}
-              toggleCategoryHandler={this.toggleVenue}
-              clearCategoryHandler={this.clearVenue}
-            />
-          </div>
-          <div className={cx({
-            "Home-schedule": true,
-            "with-session" : this.state.showSession,
-          })}>
-            <div className={`Schedule`}>
-              <div className={cx({
-                  "Schedule-title" : true,
-                  "with-session" : this.state.showSession,
-                  "without-session" : !this.state.showSession
-                })}>
-                <div className="Schedule-dayButtonLeftstop">
+        <StickyContainer>
+          <div className={styles.container}>
+            <div className={cx({
+              "Home-filter": true,
+            })}>
+              <Sticky topOffset={-60} stickyStyle={{marginTop: 60}}>
+                <Filter
+                  title='venues'
+                  data={this.state.venues}
+                  filterOn={this.state.venueOn}
+                  toggleCategoryHandler={this.toggleVenue}
+                  clearCategoryHandler={this.clearVenue}
+                />
+              </Sticky>
+            </div>
+            <div className={cx({
+              "Home-schedule": true,
+              "with-session" : this.state.showSession,
+            })}>
+              <div className={`Schedule`}>
+                <Sticky topOffset={-60} stickyStyle={{marginTop: 60}}>
                   <div className={cx({
-                         "Schedule-dayButton" : true,
-                         "is-active" : this.state.currentSection === "day1"
-                       })}
-                       onClick={this.setSection.bind(this, 'day1')}>Day 1</div>
+                      "Schedule-title" : true,
+                      "with-session" : this.state.showSession,
+                      "without-session" : !this.state.showSession
+                    })}>
+                    <div className="Schedule-dayButtonLeftstop">
+                      <div className={cx({
+                             "Schedule-dayButton" : true,
+                             "is-active" : this.state.currentSection === "day1"
+                           })}
+                           onClick={this.setSection.bind(this, 'day1')}>Day 1</div>
+                    </div>
+                    <div className={cx({
+                           "Schedule-dayButton" : true,
+                           "is-active" : this.state.currentSection === "day2"
+                         })}
+                         onClick={this.setSection.bind(this, 'day2')}>Day 2</div>
+                    <div className="Schedule-switchBtn" onClick={this.props.onSwitch}>View Parallel</div>
+                    <div className={cx({
+                           'Schedule-filterBtn': true,
+                           'is-show': this.state.mobileFilterOn,
+                         })}
+                         onClick={this.toggleMobileFilter}>Filter
+                      <div className={cx({'Schedule-bar1': true, 'is-active': this.state.mobileFilterOn})}></div>
+                      <div className={cx({'Schedule-bar2': true, 'is-active': this.state.mobileFilterOn})}></div>
+                    </div>
+                  </div>
+                  <div className={cx({
+                    'Schedule-filterPanel': true,
+                    'is-show': this.state.mobileFilterOn,
+                  })}>
+                    <Filter ref="filter"
+                            title='venues'
+                            data={this.state.venues}
+                            filterOn={this.state.venueOn}
+                            toggleCategoryHandler={this.toggleVenue}
+                            clearCategoryHandler={this.clearVenue}
+                            togglePanelHandler={this.toggleMobileFilter}/>
+                  </div>
+                </Sticky>
+                <div
+                  className={cx({
+                    "Home-section": true,
+                    "is-hidden": this.state.currentSection !== ''&& this.state.currentSection !== 'day1'
+                  })}
+                  ref={(c) => this.day1 = c}
+                  id="day1"
+                >
+                  <div className="Schedule-day">5/14 (Sat.)</div>
+                  <section>
+                    {schedules[getLocale()]["day1"].map(mapTimeSlotToItems.bind(this, 1))}
+                  </section>
                 </div>
-                <div className={cx({
-                       "Schedule-dayButton" : true,
-                       "is-active" : this.state.currentSection === "day2"
-                     })}
-                     onClick={this.setSection.bind(this, 'day2')}>Day 2</div>
-                <div className="Schedule-switchBtn" onClick={this.props.onSwitch}>View Parallel</div>
-                <div className={cx({
-                       'Schedule-filterBtn': true,
-                       'is-show': this.state.mobileFilterOn,
-                     })}
-                     onClick={this.toggleMobileFilter}>Filter
-                  <div className={cx({'Schedule-bar1': true, 'is-active': this.state.mobileFilterOn})}></div>
-                  <div className={cx({'Schedule-bar2': true, 'is-active': this.state.mobileFilterOn})}></div>
+                <div
+                  className={cx({
+                    "Home-section": true,
+                    "is-hidden": this.state.currentSection !== '' && this.state.currentSection !== 'day2'
+                  })}
+                  ref={(c) => this.day2 = c}
+                  id="day2"
+                >
+                  <div className="Schedule-day">5/15 (Sun.)</div>
+                  <section>
+                    {schedules[getLocale()]["day2"].map(mapTimeSlotToItems.bind(this, 2))}
+                  </section>
                 </div>
-              </div>
-              <div className={cx({
-                'Schedule-filterPanel': true,
-                'is-show': this.state.mobileFilterOn,
-              })}>
-                <Filter ref="filter"
-                        title='venues'
-                        data={this.state.venues}
-                        filterOn={this.state.venueOn}
-                        toggleCategoryHandler={this.toggleVenue}
-                        clearCategoryHandler={this.clearVenue}
-                        togglePanelHandler={this.toggleMobileFilter}/>
-              </div>
-              <div
-                className={cx({
-                  "Home-section": true,
-                  "is-hidden": this.state.currentSection !== ''&& this.state.currentSection !== 'day1'
-                })}
-                ref={(c) => this.day1 = c}
-                id="day1"
-              >
-                <div className="Schedule-day">5/14 (Sat.)</div>
-                <section>
-                  {schedules[getLocale()]["day1"].map(mapTimeSlotToItems.bind(this, 1))}
-                </section>
-              </div>
-              <div
-                className={cx({
-                  "Home-section": true,
-                  "is-hidden": this.state.currentSection !== '' && this.state.currentSection !== 'day2'
-                })}
-                ref={(c) => this.day2 = c}
-                id="day2"
-              >
-                <div className="Schedule-day">5/15 (Sun.)</div>
-                <section>
-                  {schedules[getLocale()]["day2"].map(mapTimeSlotToItems.bind(this, 2))}
-                </section>
               </div>
             </div>
+            <div className={cx({
+                "Home-session" : true,
+                "is-show": this.state.showSession,
+              })}>
+              <Session
+                sessionHandler={this.resetSession}
+                data={this.state.currentSession()}
+                time={this.state.currentSessionTime}
+                categories={venues}
+              />
+            </div>
           </div>
-          <div className={cx({
-              "Home-session" : true,
-              "is-show": this.state.showSession,
-            })}>
-            <Session
-              sessionHandler={this.resetSession}
-              data={this.state.currentSession()}
-              time={this.state.currentSessionTime}
-              categories={venues}
-            />
-          </div>
-
-        </div>
+        </StickyContainer>
         <div className={cx({
           backdrop: true,
           isShown: this.state.showSession,
