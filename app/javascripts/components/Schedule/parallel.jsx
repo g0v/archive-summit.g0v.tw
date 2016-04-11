@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router";
+import { StickyContainer, Sticky } from 'react-sticky';
 import { getLocale } from "javascripts/locale";
 import schedules from './schedules.json';
 import categoriesData from './categories.json';
@@ -199,88 +200,91 @@ export default class ScheduleParallel extends Component {
     return (
       <div className={styles.root}>
         <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}</div>
-        <div className={styles.container}>
-          <div className={classNames({
-            "Home-filter": true,
-            "is-fixed": false,
-          })} style={filterStyle}>
-            <Filter title="categories"
-                    data={categories}
-                    filterOn={filterOn}
-                    toggleCategoryHandler={this.toggleCategory}
-                    clearCategoryHandler={this.clearCategory}/>
-          </div>
-          <div className={classNames({
-            "Home-schedule": true,
-            "with-session" : showSession,
-          })}>
-            <div className={`Schedule`}>{/* todo: is-fixed */}
-              <div className={classNames({
-                  "Schedule-title" : true,
-                  "with-session" : showSession,
-                  "without-session" : !showSession
-                  /*"is-fixed" : inScheduleArea==="within" || (inScheduleArea==="passed" && showPanel),*/
-                })}>
-                <div className="Schedule-dayButtonLeftstop">
-                  <div className={classNames({
-                         "Schedule-dayButton" : true,
-                         /* "is-active" : currentSection === "day1" */
-                       })}
-                       onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
-                </div>
-                <div className={classNames({
-                       "Schedule-dayButton" : true,
-                       /* "is-active" : currentSection === "day2" */
-                     })}
-                     onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
-                <div className="Schedule-switchBtn" onClick={this.props.onSwitch}>View Topics</div>
-                <div className={classNames({
-                       'Schedule-filterBtn': true,
-                       'is-show': showPanel,
-                     })}
-                     onClick={this.togglePanel}>Filter
-                  <div className={classNames({'Schedule-bar1': true, 'is-active': showPanel})}></div>
-                  <div className={classNames({'Schedule-bar2': true, 'is-active': showPanel})}></div>
-                </div>
-              </div>
-              <div className={classNames({
-                'Schedule-filterPanel': true,
-                'is-show': showPanel,
-              })}>
-                <Filter ref="filter"
-                        title="categories"
+        <StickyContainer>
+          <div className={styles.container}>
+            <div className={classNames({
+              "Home-filter": true,
+            })} style={filterStyle}>
+              <Sticky topOffset={-60} stickyStyle={{marginTop: 60}}>
+                <Filter title="categories"
                         data={categories}
                         filterOn={filterOn}
                         toggleCategoryHandler={this.toggleCategory}
-                        clearCategoryHandler={this.clearCategory}
-                        togglePanelHandler={this.togglePanel}/>
-              </div>
-              <div ref="day1" id="day1">
-                <div className="Schedule-day">5/14 (Sat.)</div>
-                <section>
-                  {schedules[getLocale()]["day1"].map(mapTimeSlotToItems.bind(this, 1))}
-                </section>
-              </div>
-              <div ref="day2" id="day2">
-                <div className="Schedule-day">5/15 (Sun.)</div>
-                <section>
-                  {schedules[getLocale()]["day2"].map(mapTimeSlotToItems.bind(this, 2))}
-                </section>
+                        clearCategoryHandler={this.clearCategory}/>
+              </Sticky>
+            </div>
+            <div className={classNames({
+              "Home-schedule": true,
+              "with-session" : showSession,
+            })}>
+              <div className={`Schedule`}>
+                <Sticky topOffset={-60} stickyStyle={{marginTop: 60}}>
+                  <div className={classNames({
+                      "Schedule-title" : true,
+                      "with-session" : showSession,
+                      "without-session" : !showSession
+                    })}>
+                    <div className="Schedule-dayButtonLeftstop">
+                      <div className={classNames({
+                             "Schedule-dayButton" : true,
+                             /* "is-active" : currentSection === "day1" */
+                           })}
+                           onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
+                    </div>
+                    <div className={classNames({
+                           "Schedule-dayButton" : true,
+                           /* "is-active" : currentSection === "day2" */
+                         })}
+                         onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
+                    <div className="Schedule-switchBtn" onClick={this.props.onSwitch}>View Topics</div>
+                    <div className={classNames({
+                           'Schedule-filterBtn': true,
+                           'is-show': showPanel,
+                         })}
+                         onClick={this.togglePanel}>Filter
+                      <div className={classNames({'Schedule-bar1': true, 'is-active': showPanel})}></div>
+                      <div className={classNames({'Schedule-bar2': true, 'is-active': showPanel})}></div>
+                    </div>
+                  </div>
+                  <div className={classNames({
+                    'Schedule-filterPanel': true,
+                    'is-show': showPanel,
+                  })}>
+                    <Filter ref="filter"
+                            title="categories"
+                            data={categories}
+                            filterOn={filterOn}
+                            toggleCategoryHandler={this.toggleCategory}
+                            clearCategoryHandler={this.clearCategory}
+                            togglePanelHandler={this.togglePanel}/>
+                  </div>
+                </Sticky>
+                <div ref="day1" id="day1">
+                  <div className="Schedule-day">5/14 (Sat.)</div>
+                  <section>
+                    {schedules[getLocale()]["day1"].map(mapTimeSlotToItems.bind(this, 1))}
+                  </section>
+                </div>
+                <div ref="day2" id="day2">
+                  <div className="Schedule-day">5/15 (Sun.)</div>
+                  <section>
+                    {schedules[getLocale()]["day2"].map(mapTimeSlotToItems.bind(this, 2))}
+                  </section>
+                </div>
               </div>
             </div>
-          </div>
-          <div className={classNames({
-              "Home-session" : true,
-              "is-show": showSession,
-              "is-fixed": true,
-            })}
-            style={sessionStyle}>
-            <Session sessionHandler={this.resetSession}
-                     data={currentSession()} time={this.state.currentSessionTime}
-                     categories={this.state.categories}/>
-          </div>
+            <div className={classNames({
+                "Home-session" : true,
+                "is-show": showSession,
+              })}
+              style={sessionStyle}>
+              <Session sessionHandler={this.resetSession}
+                       data={currentSession()} time={this.state.currentSessionTime}
+                       categories={this.state.categories}/>
+            </div>
 
-        </div>
+          </div>
+        </StickyContainer>
         <div className={cx({
           backdrop: true,
           isShown: showSession,
