@@ -68,7 +68,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _reactGa = __webpack_require__(424);
+	var _reactGa = __webpack_require__(427);
 
 	var _reactGa2 = _interopRequireDefault(_reactGa);
 
@@ -24959,7 +24959,7 @@
 
 	var _components = __webpack_require__(230);
 
-	var _pages = __webpack_require__(411);
+	var _pages = __webpack_require__(414);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25033,7 +25033,7 @@
 
 	var _Schedule3 = _interopRequireDefault(_Schedule2);
 
-	var _SponsorsSummary2 = __webpack_require__(407);
+	var _SponsorsSummary2 = __webpack_require__(410);
 
 	var _SponsorsSummary3 = _interopRequireDefault(_SponsorsSummary2);
 
@@ -29529,27 +29529,29 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _schedules_by_track = __webpack_require__(406);
+	var _schedules_by_track = __webpack_require__(409);
 
 	var _schedules_by_track2 = _interopRequireDefault(_schedules_by_track);
 
 	var _locale = __webpack_require__(228);
 
-	var _filter = __webpack_require__(399);
+	var _filter = __webpack_require__(402);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
-	var _session = __webpack_require__(402);
+	var _session = __webpack_require__(405);
 
 	var _session2 = _interopRequireDefault(_session);
 
-	var _styles = __webpack_require__(397);
+	var _styles = __webpack_require__(400);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _bind = __webpack_require__(405);
+	var _bind = __webpack_require__(408);
 
 	var _bind2 = _interopRequireDefault(_bind);
+
+	var _reactSticky = __webpack_require__(395);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29790,152 +29792,162 @@
 	          _schedules_by_track2.default[(0, _locale.getLocale)()].interpretation
 	        ),
 	        _react2.default.createElement(
-	          'div',
-	          { className: _styles2.default.container },
+	          _reactSticky.StickyContainer,
+	          null,
 	          _react2.default.createElement(
 	            'div',
-	            { className: cx({
-	                "Home-filter": true,
-	                "is-fixed": false
-	              }) },
-	            _react2.default.createElement(_filter2.default, {
-	              title: 'venues',
-	              data: this.state.venues,
-	              filterOn: this.state.venueOn,
-	              toggleCategoryHandler: this.toggleVenue,
-	              clearCategoryHandler: this.clearVenue
-	            })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: cx({
-	                "Home-schedule": true,
-	                "with-session": this.state.showSession
-	              }) },
+	            { className: _styles2.default.container },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'Schedule' },
+	              { className: cx({
+	                  "Home-filter": true
+	                }) },
 	              _react2.default.createElement(
-	                'div',
-	                { className: cx({
-	                    "Schedule-title": true,
-	                    "with-session": this.state.showSession,
-	                    "without-session": !this.state.showSession
-	                  }) },
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'Schedule-dayButtonLeftstop' },
-	                  _react2.default.createElement(
-	                    'div',
-	                    { className: cx({
-	                        "Schedule-dayButton": true,
-	                        "is-active": this.state.currentSection === "day1"
-	                      }),
-	                      onClick: this.setSection.bind(this, 'day1') },
-	                    'Day 1'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: cx({
-	                      "Schedule-dayButton": true,
-	                      "is-active": this.state.currentSection === "day2"
-	                    }),
-	                    onClick: this.setSection.bind(this, 'day2') },
-	                  'Day 2'
-	                ),
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'Schedule-switchBtn', onClick: this.props.onSwitch },
-	                  'View Parallel'
-	                ),
-	                _react2.default.createElement(
-	                  'div',
-	                  { className: cx({
-	                      'Schedule-filterBtn': true,
-	                      'is-show': this.state.mobileFilterOn
-	                    }),
-	                    onClick: this.toggleMobileFilter },
-	                  'Filter',
-	                  _react2.default.createElement('div', { className: cx({ 'Schedule-bar1': true, 'is-active': this.state.mobileFilterOn }) }),
-	                  _react2.default.createElement('div', { className: cx({ 'Schedule-bar2': true, 'is-active': this.state.mobileFilterOn }) })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: cx({
-	                    'Schedule-filterPanel': true,
-	                    'is-show': this.state.mobileFilterOn
-	                  }) },
-	                _react2.default.createElement(_filter2.default, { ref: 'filter',
+	                _reactSticky.Sticky,
+	                { topOffset: -60, stickyStyle: { marginTop: 60 } },
+	                _react2.default.createElement(_filter2.default, {
 	                  title: 'venues',
 	                  data: this.state.venues,
 	                  filterOn: this.state.venueOn,
 	                  toggleCategoryHandler: this.toggleVenue,
-	                  clearCategoryHandler: this.clearVenue,
-	                  togglePanelHandler: this.toggleMobileFilter })
-	              ),
+	                  clearCategoryHandler: this.clearVenue
+	                })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: cx({
+	                  "Home-schedule": true,
+	                  "with-session": this.state.showSession
+	                }) },
 	              _react2.default.createElement(
 	                'div',
-	                {
-	                  className: cx({
-	                    "Home-section": true,
-	                    "is-hidden": this.state.currentSection !== '' && this.state.currentSection !== 'day1'
-	                  }),
-	                  ref: function ref(c) {
-	                    return _this3.day1 = c;
-	                  },
-	                  id: 'day1'
-	                },
+	                { className: 'Schedule' },
 	                _react2.default.createElement(
-	                  'div',
-	                  { className: 'Schedule-day' },
-	                  '5/14 (Sat.)'
+	                  _reactSticky.Sticky,
+	                  { topOffset: -60, stickyStyle: { marginTop: 60 } },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: cx({
+	                        "Schedule-title": true,
+	                        "with-session": this.state.showSession,
+	                        "without-session": !this.state.showSession
+	                      }) },
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'Schedule-dayButtonLeftstop' },
+	                      _react2.default.createElement(
+	                        'div',
+	                        { className: cx({
+	                            "Schedule-dayButton": true,
+	                            "is-active": this.state.currentSection === "day1"
+	                          }),
+	                          onClick: this.setSection.bind(this, 'day1') },
+	                        'Day 1'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: cx({
+	                          "Schedule-dayButton": true,
+	                          "is-active": this.state.currentSection === "day2"
+	                        }),
+	                        onClick: this.setSection.bind(this, 'day2') },
+	                      'Day 2'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'Schedule-switchBtn', onClick: this.props.onSwitch },
+	                      'View Parallel'
+	                    ),
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: cx({
+	                          'Schedule-filterBtn': true,
+	                          'is-show': this.state.mobileFilterOn
+	                        }),
+	                        onClick: this.toggleMobileFilter },
+	                      'Filter',
+	                      _react2.default.createElement('div', { className: cx({ 'Schedule-bar1': true, 'is-active': this.state.mobileFilterOn }) }),
+	                      _react2.default.createElement('div', { className: cx({ 'Schedule-bar2': true, 'is-active': this.state.mobileFilterOn }) })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: cx({
+	                        'Schedule-filterPanel': true,
+	                        'is-show': this.state.mobileFilterOn
+	                      }) },
+	                    _react2.default.createElement(_filter2.default, { ref: 'filter',
+	                      title: 'venues',
+	                      data: this.state.venues,
+	                      filterOn: this.state.venueOn,
+	                      toggleCategoryHandler: this.toggleVenue,
+	                      clearCategoryHandler: this.clearVenue,
+	                      togglePanelHandler: this.toggleMobileFilter })
+	                  )
 	                ),
 	                _react2.default.createElement(
-	                  'section',
-	                  null,
-	                  _schedules_by_track2.default[(0, _locale.getLocale)()]["day1"].map(mapTimeSlotToItems.bind(this, 1))
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                {
-	                  className: cx({
-	                    "Home-section": true,
-	                    "is-hidden": this.state.currentSection !== '' && this.state.currentSection !== 'day2'
-	                  }),
-	                  ref: function ref(c) {
-	                    return _this3.day2 = c;
-	                  },
-	                  id: 'day2'
-	                },
-	                _react2.default.createElement(
 	                  'div',
-	                  { className: 'Schedule-day' },
-	                  '5/15 (Sun.)'
+	                  {
+	                    className: cx({
+	                      "Home-section": true,
+	                      "is-hidden": this.state.currentSection !== '' && this.state.currentSection !== 'day1'
+	                    }),
+	                    ref: function ref(c) {
+	                      return _this3.day1 = c;
+	                    },
+	                    id: 'day1'
+	                  },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'Schedule-day' },
+	                    '5/14 (Sat.)'
+	                  ),
+	                  _react2.default.createElement(
+	                    'section',
+	                    null,
+	                    _schedules_by_track2.default[(0, _locale.getLocale)()]["day1"].map(mapTimeSlotToItems.bind(this, 1))
+	                  )
 	                ),
 	                _react2.default.createElement(
-	                  'section',
-	                  null,
-	                  _schedules_by_track2.default[(0, _locale.getLocale)()]["day2"].map(mapTimeSlotToItems.bind(this, 2))
+	                  'div',
+	                  {
+	                    className: cx({
+	                      "Home-section": true,
+	                      "is-hidden": this.state.currentSection !== '' && this.state.currentSection !== 'day2'
+	                    }),
+	                    ref: function ref(c) {
+	                      return _this3.day2 = c;
+	                    },
+	                    id: 'day2'
+	                  },
+	                  _react2.default.createElement(
+	                    'div',
+	                    { className: 'Schedule-day' },
+	                    '5/15 (Sun.)'
+	                  ),
+	                  _react2.default.createElement(
+	                    'section',
+	                    null,
+	                    _schedules_by_track2.default[(0, _locale.getLocale)()]["day2"].map(mapTimeSlotToItems.bind(this, 2))
+	                  )
 	                )
 	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: cx({
+	                  "Home-session": true,
+	                  "is-show": this.state.showSession
+	                }) },
+	              _react2.default.createElement(_session2.default, {
+	                sessionHandler: this.resetSession,
+	                data: this.state.currentSession(),
+	                time: this.state.currentSessionTime,
+	                categories: venues
+	              })
 	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: cx({
-	                "Home-session": true,
-	                "is-show": this.state.showSession,
-	                "is-fixed": true
-	              }) },
-	            _react2.default.createElement(_session2.default, {
-	              sessionHandler: this.resetSession,
-	              data: this.state.currentSession(),
-	              time: this.state.currentSessionTime,
-	              categories: venues
-	            })
 	          )
 	        ),
 	        _react2.default.createElement('div', { className: cx({
@@ -30090,25 +30102,27 @@
 
 	var _reactRouter = __webpack_require__(169);
 
+	var _reactSticky = __webpack_require__(395);
+
 	var _locale = __webpack_require__(228);
 
-	var _schedules = __webpack_require__(395);
+	var _schedules = __webpack_require__(398);
 
 	var _schedules2 = _interopRequireDefault(_schedules);
 
-	var _categories = __webpack_require__(396);
+	var _categories = __webpack_require__(399);
 
 	var _categories2 = _interopRequireDefault(_categories);
 
-	var _styles = __webpack_require__(397);
+	var _styles = __webpack_require__(400);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _filter = __webpack_require__(399);
+	var _filter = __webpack_require__(402);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
-	var _session = __webpack_require__(402);
+	var _session = __webpack_require__(405);
 
 	var _session2 = _interopRequireDefault(_session);
 
@@ -30116,7 +30130,7 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _bind = __webpack_require__(405);
+	var _bind = __webpack_require__(408);
 
 	var _bind2 = _interopRequireDefault(_bind);
 
@@ -30413,131 +30427,140 @@
 	          _schedules2.default[(0, _locale.getLocale)()].interpretation
 	        ),
 	        _react2.default.createElement(
-	          "div",
-	          { className: _styles2.default.container },
+	          _reactSticky.StickyContainer,
+	          null,
 	          _react2.default.createElement(
 	            "div",
-	            { className: (0, _classnames2.default)({
-	                "Home-filter": true,
-	                "is-fixed": false
-	              }), style: filterStyle },
-	            _react2.default.createElement(_filter2.default, { title: "categories",
-	              data: categories,
-	              filterOn: filterOn,
-	              toggleCategoryHandler: this.toggleCategory,
-	              clearCategoryHandler: this.clearCategory })
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: (0, _classnames2.default)({
-	                "Home-schedule": true,
-	                "with-session": showSession
-	              }) },
+	            { className: _styles2.default.container },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "Schedule" },
+	              { className: (0, _classnames2.default)({
+	                  "Home-filter": true
+	                }), style: filterStyle },
+	              _react2.default.createElement(
+	                _reactSticky.Sticky,
+	                { topOffset: -60, stickyStyle: { marginTop: 60 } },
+	                _react2.default.createElement(_filter2.default, { title: "categories",
+	                  data: categories,
+	                  filterOn: filterOn,
+	                  toggleCategoryHandler: this.toggleCategory,
+	                  clearCategoryHandler: this.clearCategory })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: (0, _classnames2.default)({
+	                  "Home-schedule": true,
+	                  "with-session": showSession
+	                }) },
 	              _react2.default.createElement(
 	                "div",
-	                { className: (0, _classnames2.default)({
-	                    "Schedule-title": true,
-	                    "with-session": showSession,
-	                    "without-session": !showSession
-	                    /*"is-fixed" : inScheduleArea==="within" || (inScheduleArea==="passed" && showPanel),*/
-	                  }) },
+	                { className: "Schedule" },
 	                _react2.default.createElement(
-	                  "div",
-	                  { className: "Schedule-dayButtonLeftstop" },
+	                  _reactSticky.Sticky,
+	                  { topOffset: -60, stickyStyle: { marginTop: 60 } },
 	                  _react2.default.createElement(
 	                    "div",
 	                    { className: (0, _classnames2.default)({
-	                        "Schedule-dayButton": true
-	                      }),
-	                      /* "is-active" : currentSection === "day1" */
-	                      onClick: this.goToElement.bind(this, "day1") },
-	                    "Day 1"
+	                        "Schedule-title": true,
+	                        "with-session": showSession,
+	                        "without-session": !showSession
+	                      }) },
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "Schedule-dayButtonLeftstop" },
+	                      _react2.default.createElement(
+	                        "div",
+	                        { className: (0, _classnames2.default)({
+	                            "Schedule-dayButton": true
+	                          }),
+	                          /* "is-active" : currentSection === "day1" */
+	                          onClick: this.goToElement.bind(this, "day1") },
+	                        "Day 1"
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: (0, _classnames2.default)({
+	                          "Schedule-dayButton": true
+	                        }),
+	                        /* "is-active" : currentSection === "day2" */
+	                        onClick: this.goToElement.bind(this, "day2") },
+	                      "Day 2"
+	                    ),
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "Schedule-switchBtn", onClick: this.props.onSwitch },
+	                      "View Topics"
+	                    ),
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: (0, _classnames2.default)({
+	                          'Schedule-filterBtn': true,
+	                          'is-show': showPanel
+	                        }),
+	                        onClick: this.togglePanel },
+	                      "Filter",
+	                      _react2.default.createElement("div", { className: (0, _classnames2.default)({ 'Schedule-bar1': true, 'is-active': showPanel }) }),
+	                      _react2.default.createElement("div", { className: (0, _classnames2.default)({ 'Schedule-bar2': true, 'is-active': showPanel }) })
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: (0, _classnames2.default)({
+	                        'Schedule-filterPanel': true,
+	                        'is-show': showPanel
+	                      }) },
+	                    _react2.default.createElement(_filter2.default, { ref: "filter",
+	                      title: "categories",
+	                      data: categories,
+	                      filterOn: filterOn,
+	                      toggleCategoryHandler: this.toggleCategory,
+	                      clearCategoryHandler: this.clearCategory,
+	                      togglePanelHandler: this.togglePanel })
 	                  )
 	                ),
 	                _react2.default.createElement(
 	                  "div",
-	                  { className: (0, _classnames2.default)({
-	                      "Schedule-dayButton": true
-	                    }),
-	                    /* "is-active" : currentSection === "day2" */
-	                    onClick: this.goToElement.bind(this, "day2") },
-	                  "Day 2"
+	                  { ref: "day1", id: "day1" },
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "Schedule-day" },
+	                    "5/14 (Sat.)"
+	                  ),
+	                  _react2.default.createElement(
+	                    "section",
+	                    null,
+	                    _schedules2.default[(0, _locale.getLocale)()]["day1"].map(mapTimeSlotToItems.bind(this, 1))
+	                  )
 	                ),
 	                _react2.default.createElement(
 	                  "div",
-	                  { className: "Schedule-switchBtn", onClick: this.props.onSwitch },
-	                  "View Topics"
-	                ),
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: (0, _classnames2.default)({
-	                      'Schedule-filterBtn': true,
-	                      'is-show': showPanel
-	                    }),
-	                    onClick: this.togglePanel },
-	                  "Filter",
-	                  _react2.default.createElement("div", { className: (0, _classnames2.default)({ 'Schedule-bar1': true, 'is-active': showPanel }) }),
-	                  _react2.default.createElement("div", { className: (0, _classnames2.default)({ 'Schedule-bar2': true, 'is-active': showPanel }) })
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: (0, _classnames2.default)({
-	                    'Schedule-filterPanel': true,
-	                    'is-show': showPanel
-	                  }) },
-	                _react2.default.createElement(_filter2.default, { ref: "filter",
-	                  title: "categories",
-	                  data: categories,
-	                  filterOn: filterOn,
-	                  toggleCategoryHandler: this.toggleCategory,
-	                  clearCategoryHandler: this.clearCategory,
-	                  togglePanelHandler: this.togglePanel })
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { ref: "day1", id: "day1" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "Schedule-day" },
-	                  "5/14 (Sat.)"
-	                ),
-	                _react2.default.createElement(
-	                  "section",
-	                  null,
-	                  _schedules2.default[(0, _locale.getLocale)()]["day1"].map(mapTimeSlotToItems.bind(this, 1))
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { ref: "day2", id: "day2" },
-	                _react2.default.createElement(
-	                  "div",
-	                  { className: "Schedule-day" },
-	                  "5/15 (Sun.)"
-	                ),
-	                _react2.default.createElement(
-	                  "section",
-	                  null,
-	                  _schedules2.default[(0, _locale.getLocale)()]["day2"].map(mapTimeSlotToItems.bind(this, 2))
+	                  { ref: "day2", id: "day2" },
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "Schedule-day" },
+	                    "5/15 (Sun.)"
+	                  ),
+	                  _react2.default.createElement(
+	                    "section",
+	                    null,
+	                    _schedules2.default[(0, _locale.getLocale)()]["day2"].map(mapTimeSlotToItems.bind(this, 2))
+	                  )
 	                )
 	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: (0, _classnames2.default)({
+	                  "Home-session": true,
+	                  "is-show": showSession
+	                }),
+	                style: sessionStyle },
+	              _react2.default.createElement(_session2.default, { sessionHandler: this.resetSession,
+	                data: currentSession(), time: this.state.currentSessionTime,
+	                categories: this.state.categories })
 	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: (0, _classnames2.default)({
-	                "Home-session": true,
-	                "is-show": showSession,
-	                "is-fixed": true
-	              }),
-	              style: sessionStyle },
-	            _react2.default.createElement(_session2.default, { sessionHandler: this.resetSession,
-	              data: currentSession(), time: this.state.currentSessionTime,
-	              categories: this.state.categories })
 	          )
 	        ),
 	        _react2.default.createElement("div", { className: cx({
@@ -30601,6 +30624,298 @@
 
 /***/ },
 /* 395 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.StickyContainer = exports.Sticky = undefined;
+
+	var _sticky = __webpack_require__(396);
+
+	var _sticky2 = _interopRequireDefault(_sticky);
+
+	var _container = __webpack_require__(397);
+
+	var _container2 = _interopRequireDefault(_container);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.Sticky = _sticky2.default;
+	exports.StickyContainer = _container2.default;
+	exports.default = _sticky2.default;
+
+/***/ },
+/* 396 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(11);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(168);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Sticky = function (_React$Component) {
+	  _inherits(Sticky, _React$Component);
+
+	  function Sticky(props) {
+	    _classCallCheck(this, Sticky);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Sticky).call(this, props));
+
+	    _this.onScroll = function () {
+	      var pageY = window.pageYOffset;
+	      var origin = _this.getOrigin(pageY);
+	      var isSticky = _this.isSticky(pageY, _this.state.origin);
+	      var hasChanged = _this.state.isSticky !== isSticky;
+
+	      _this.setState({ isSticky: isSticky, origin: origin });
+	      _this.context.container.updateOffset(isSticky ? _this.state.height : 0);
+
+	      if (hasChanged) _this.props.onStickyStateChange(isSticky);
+	    };
+
+	    _this.onResize = function () {
+	      var height = _reactDom2.default.findDOMNode(_this).getBoundingClientRect().height;
+	      var origin = _this.getOrigin(window.pageYOffset);
+	      _this.setState({ height: height, origin: origin });
+	    };
+
+	    _this.state = {
+	      isSticky: false
+	    };
+	    return _this;
+	  }
+
+	  _createClass(Sticky, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.update();
+	      this.on(['scroll', 'touchstart', 'touchmove', 'touchend', 'pageshow', 'load'], this.onScroll);
+	      this.on(['resize', 'pageshow', 'load'], this.onResize);
+	    }
+	  }, {
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps() {
+	      this.update();
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      this.off(['scroll', 'touchstart', 'touchmove', 'touchend', 'pageshow', 'load'], this.onScroll);
+	      this.off(['resize', 'pageshow', 'load'], this.onResize);
+	    }
+	  }, {
+	    key: 'getOrigin',
+	    value: function getOrigin(pageY) {
+	      return this.refs.placeholder.getBoundingClientRect().top + pageY;
+	    }
+	  }, {
+	    key: 'update',
+	    value: function update() {
+	      var height = _reactDom2.default.findDOMNode(this).getBoundingClientRect().height;
+	      var pageY = window.pageYOffset;
+	      var origin = this.getOrigin(pageY);
+	      var isSticky = this.isSticky(pageY, origin);
+	      this.setState({ height: height, origin: origin, isSticky: isSticky });
+	    }
+	  }, {
+	    key: 'isSticky',
+	    value: function isSticky(pageY, origin) {
+	      return pageY + this.context.offset - this.props.topOffset >= origin && this.context.offset <= (this.context.rect.bottom || 0) - this.props.bottomOffset;
+	    }
+	  }, {
+	    key: 'on',
+	    value: function on(events, callback) {
+	      events.forEach(function (evt) {
+	        window.addEventListener(evt, callback);
+	      });
+	    }
+	  }, {
+	    key: 'off',
+	    value: function off(events, callback) {
+	      events.forEach(function (evt) {
+	        window.removeEventListener(evt, callback);
+	      });
+	    }
+
+	    /*
+	     * The special sauce.
+	     */
+
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var isSticky = this.state.isSticky;
+
+	      var className = this.props.className;
+	      if (isSticky) className += ' ' + this.props.stickyClassName;
+
+	      var style = this.props.style;
+	      if (isSticky) {
+	        var placeholderRect = this.refs.placeholder.getBoundingClientRect();
+	        var stickyStyle = {
+	          position: 'fixed',
+	          top: this.context.offset,
+	          left: placeholderRect.left,
+	          width: placeholderRect.width
+	        };
+
+	        var bottomLimit = (this.context.rect.bottom || 0) - this.state.height - this.props.bottomOffset;
+	        if (this.context.offset > bottomLimit) {
+	          stickyStyle.top = bottomLimit;
+	        }
+
+	        style = _extends({}, this.props.style, stickyStyle, this.props.stickyStyle);
+	      }
+
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement('div', { ref: 'placeholder', style: { paddingBottom: isSticky ? this.state.height : 0 } }),
+	        _react2.default.createElement(
+	          'div',
+	          _extends({}, this.props, { className: className, style: style }),
+	          this.props.children
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Sticky;
+	}(_react2.default.Component);
+
+	Sticky.contextTypes = {
+	  container: _react2.default.PropTypes.any,
+	  offset: _react2.default.PropTypes.number,
+	  rect: _react2.default.PropTypes.object
+	};
+	Sticky.defaultProps = {
+	  className: '',
+	  style: {},
+	  stickyClassName: 'sticky',
+	  stickyStyle: {},
+	  topOffset: 0,
+	  bottomOffset: 0,
+	  onStickyStateChange: function onStickyStateChange() {}
+	};
+	exports.default = Sticky;
+	module.exports = exports['default'];
+
+/***/ },
+/* 397 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(11);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(168);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Container = function (_React$Component) {
+	  _inherits(Container, _React$Component);
+
+	  function Container(props) {
+	    _classCallCheck(this, Container);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Container).call(this, props));
+
+	    _this.state = {
+	      offset: 0,
+	      rect: {}
+	    };
+	    return _this;
+	  }
+
+	  _createClass(Container, [{
+	    key: 'getChildContext',
+	    value: function getChildContext() {
+	      var container = this;
+	      var totalOffset = (this.context.totalOffset || 0) + this.state.offset;
+	      var offset = totalOffset - this.state.offset;
+	      var rect = this.state.node ? this.state.node.getBoundingClientRect() : {};
+	      return { container: container, totalOffset: totalOffset, offset: offset, rect: rect };
+	    }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var node = _reactDom2.default.findDOMNode(this);
+	      this.setState({ node: node });
+	    }
+	  }, {
+	    key: 'updateOffset',
+	    value: function updateOffset(offset) {
+	      this.setState({ offset: offset });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        this.props,
+	        this.props.children
+	      );
+	    }
+	  }]);
+
+	  return Container;
+	}(_react2.default.Component);
+
+	Container.contextTypes = {
+	  container: _react2.default.PropTypes.any,
+	  totalOffset: _react2.default.PropTypes.number
+	};
+	Container.childContextTypes = {
+	  container: _react2.default.PropTypes.any,
+	  totalOffset: _react2.default.PropTypes.number,
+	  offset: _react2.default.PropTypes.number,
+	  rect: _react2.default.PropTypes.any
+	};
+	exports.default = Container;
+	module.exports = exports['default'];
+
+/***/ },
+/* 398 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -31803,7 +32118,7 @@
 	};
 
 /***/ },
-/* 396 */
+/* 399 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -31922,15 +32237,15 @@
 	};
 
 /***/ },
-/* 397 */
+/* 400 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__2PG_F","backdrop":"styles-backdrop__222h8","avatar":"styles-avatar__1jkQH","isShown":"styles-isShown__2X0WE","container":"styles-container__3fYMv","mobileScrollLock":"styles-mobileScrollLock__mMH7S"};
 
 /***/ },
-/* 398 */,
-/* 399 */
+/* 401 */,
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31943,7 +32258,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _filter = __webpack_require__(400);
+	var _filter = __webpack_require__(403);
 
 	var _filter2 = _interopRequireDefault(_filter);
 
@@ -32027,15 +32342,15 @@
 	});
 
 /***/ },
-/* 400 */
+/* 403 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"filter":"filter-filter__2Aq-6","filterTitle":"filter-filterTitle__34mGj","filterCategories":"filter-filterCategories__rz7LE","filterCategory":"filter-filterCategory__3S81z","filterCategoryIcon":"filter-filterCategoryIcon__2dYxM","filterActions":"filter-filterActions__1o6da","filterClose":"filter-filterClose__15PBf","filterComplete":"filter-filterComplete__2LotJ","filterClearAll":"filter-filterClearAll__3xsaW","isActive":"filter-isActive__2kS1y"};
 
 /***/ },
-/* 401 */,
-/* 402 */
+/* 404 */,
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32056,17 +32371,17 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	__webpack_require__(403);
+	__webpack_require__(406);
 
 	var _speakers = __webpack_require__(382);
 
 	var _speakers2 = _interopRequireDefault(_speakers);
 
-	var _schedules = __webpack_require__(395);
+	var _schedules = __webpack_require__(398);
 
 	var _schedules2 = _interopRequireDefault(_schedules);
 
-	var _categories = __webpack_require__(396);
+	var _categories = __webpack_require__(399);
 
 	var _categories2 = _interopRequireDefault(_categories);
 
@@ -32076,7 +32391,7 @@
 
 	var _avatar2 = _interopRequireDefault(_avatar);
 
-	var _styles = __webpack_require__(397);
+	var _styles = __webpack_require__(400);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -32222,14 +32537,14 @@
 	});
 
 /***/ },
-/* 403 */
+/* 406 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 404 */,
-/* 405 */
+/* 407 */,
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -32283,7 +32598,7 @@
 
 
 /***/ },
-/* 406 */
+/* 409 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -33663,7 +33978,7 @@
 	};
 
 /***/ },
-/* 407 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33702,11 +34017,11 @@
 
 	var _sponsors2 = _interopRequireDefault(_sponsors);
 
-	var _sponsors_summary = __webpack_require__(408);
+	var _sponsors_summary = __webpack_require__(411);
 
 	var _sponsors_summary2 = _interopRequireDefault(_sponsors_summary);
 
-	var _styles = __webpack_require__(409);
+	var _styles = __webpack_require__(412);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -33795,7 +34110,7 @@
 	exports.default = SponsorsSummary;
 
 /***/ },
-/* 408 */
+/* 411 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -33818,15 +34133,15 @@
 	};
 
 /***/ },
-/* 409 */
+/* 412 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__3VPfm","header":"styles-header__9f_mX","section":"styles-section__3EW5z","sponsor":"styles-sponsor__3-_FS","logo":"styles-logo__3ZWdC","name":"styles-name__3p5Sj"};
 
 /***/ },
-/* 410 */,
-/* 411 */
+/* 413 */,
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33836,27 +34151,27 @@
 	});
 	exports.Transport = exports.Live = exports.Sponsors = exports.Schedules = exports.Speakers = exports.Home = undefined;
 
-	var _Home2 = __webpack_require__(412);
+	var _Home2 = __webpack_require__(415);
 
 	var _Home3 = _interopRequireDefault(_Home2);
 
-	var _Speakers2 = __webpack_require__(413);
+	var _Speakers2 = __webpack_require__(416);
 
 	var _Speakers3 = _interopRequireDefault(_Speakers2);
 
-	var _Schedules2 = __webpack_require__(414);
+	var _Schedules2 = __webpack_require__(417);
 
 	var _Schedules3 = _interopRequireDefault(_Schedules2);
 
-	var _Sponsors2 = __webpack_require__(415);
+	var _Sponsors2 = __webpack_require__(418);
 
 	var _Sponsors3 = _interopRequireDefault(_Sponsors2);
 
-	var _Live2 = __webpack_require__(416);
+	var _Live2 = __webpack_require__(419);
 
 	var _Live3 = _interopRequireDefault(_Live2);
 
-	var _Transport2 = __webpack_require__(419);
+	var _Transport2 = __webpack_require__(422);
 
 	var _Transport3 = _interopRequireDefault(_Transport2);
 
@@ -33870,7 +34185,7 @@
 	exports.Transport = _Transport3.default;
 
 /***/ },
-/* 412 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33934,7 +34249,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 413 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33993,7 +34308,7 @@
 	exports.default = Speakers;
 
 /***/ },
-/* 414 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34080,7 +34395,7 @@
 	exports.default = Schedules;
 
 /***/ },
-/* 415 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34139,7 +34454,7 @@
 	exports.default = Sponsors;
 
 /***/ },
-/* 416 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34174,7 +34489,7 @@
 
 	var _components = __webpack_require__(230);
 
-	var _styles = __webpack_require__(417);
+	var _styles = __webpack_require__(420);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -34220,15 +34535,15 @@
 	exports.default = Live;
 
 /***/ },
-/* 417 */
+/* 420 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"main":"styles-main__qmbws","monitor":"styles-monitor__3a4Ss","channel":"styles-channel__3Bot0"};
 
 /***/ },
-/* 418 */,
-/* 419 */
+/* 421 */,
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34263,15 +34578,15 @@
 
 	var _locale = __webpack_require__(228);
 
-	var _transport = __webpack_require__(420);
+	var _transport = __webpack_require__(423);
 
 	var _transport2 = _interopRequireDefault(_transport);
 
-	var _hotels = __webpack_require__(421);
+	var _hotels = __webpack_require__(424);
 
 	var _hotels2 = _interopRequireDefault(_hotels);
 
-	var _styles = __webpack_require__(422);
+	var _styles = __webpack_require__(425);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -34359,7 +34674,7 @@
 	exports.default = Transport;
 
 /***/ },
-/* 420 */
+/* 423 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -34426,7 +34741,7 @@
 	};
 
 /***/ },
-/* 421 */
+/* 424 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -34489,15 +34804,15 @@
 	};
 
 /***/ },
-/* 422 */
+/* 425 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"styles-root__1gK3V","section":"styles-section__LrTFv","header":"styles-header__2-OSD","sponsor":"styles-sponsor__KVF2j","logo":"styles-logo__1STPn","name":"styles-name__1b107","desc":"styles-desc__2KfBd","map":"styles-map__209T3"};
 
 /***/ },
-/* 423 */,
-/* 424 */
+/* 426 */,
+/* 427 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -34918,7 +35233,7 @@
 	  }
 	};
 
-	var OutboundLink = __webpack_require__(425);
+	var OutboundLink = __webpack_require__(428);
 	OutboundLink.trackLink = reactGA.outboundLink;
 	reactGA.OutboundLink = OutboundLink;
 
@@ -34926,7 +35241,7 @@
 
 
 /***/ },
-/* 425 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var React = __webpack_require__(11);

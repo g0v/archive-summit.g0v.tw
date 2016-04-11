@@ -1157,7 +1157,7 @@ body.styles-mobileScrollLock__mMH7S {
   -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
 }
-.Home-session.is-show, .Home-session.is-show.is-fixed {
+.Home-session.is-show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
@@ -1170,11 +1170,11 @@ body.styles-mobileScrollLock__mMH7S {
   background: white;
   z-index: 10;
 }
-.Schedule.is-fixed {
-  padding-top: 56px;
+.Schedule .sticky {
+  z-index: 20;
 }
 .Schedule-title {
-  background: white;
+  background: rgba(255, 255, 255, .9);
   border-bottom: 1px solid gray;
   width: 100%;
   z-index: 20;
@@ -1183,12 +1183,6 @@ body.styles-mobileScrollLock__mMH7S {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-}
-.Schedule-title.is-fixed {
-  position: fixed;
-  top: 0;
-  -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
-  transition: all .2s cubic-bezier(.4,0,.2,1);
 }
 .Schedule-switchBtn {
   line-height: 56px;
@@ -1250,19 +1244,13 @@ body.styles-mobileScrollLock__mMH7S {
   max-height: 0px;
   overflow: hidden;
   will-change: max-height;
+  background: rgba(255, 255, 255, .9);
   -webkit-transition: all .2s cubic-bezier(0, 1, 0.5, 1);
   transition: all .2s cubic-bezier(0, 1, 0.5, 1);
 }
 .Schedule-filterPanel.is-show {
   max-height: calc(100vh - 80px);
-}
-.Schedule-filterPanel.is-show.is-fixed {
-  position: fixed;
-  top: 57px;
-  z-index: 200;
-  width: 100%;
-  background: white;
-  box-shadow: 0px 2px 2px 0 rgba(0,0,0,.22);
+  border-bottom: 1px solid gray;
 }
 /* ===================== */
 .Schedule-dayButtonLeftstop {
@@ -1401,73 +1389,53 @@ body.styles-mobileScrollLock__mMH7S {
     display: block;
   }
 
-  .Home-filter.is-fixed {
-    position: fixed;
-  }
-
-  .Home-filter.is-passed {
-    position: absolute; /* top dynamically decided*/
-  }
-
   .Home-schedule {
     margin-left: 240px;
     border-left: 1px solid gray;
-    position: relative; /* make z-index work */
+    position: relative; /* make z-index work & moves when session is showed up */
     z-index: 10;
+    -webkit-transition: left .2s cubic-bezier(.4,0,.2,1);
+    transition: left .2s cubic-bezier(.4,0,.2,1); /* Cannot use transform because we've got a sticky schedule title */
+    left: 0;
+  }
+
+  .Home-schedule.with-session {
+    left: calc(36px - 240px);
+  }
+
+  .Home-schedule .sticky { /* Overriding react-sticky to make sticky items move with Home-Schedule */
+    left: calc((100% - 1000px) / 2 + 240px + 1px) !important;
+    -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
     -webkit-transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1);
     transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1);
     transition: transform .2s cubic-bezier(.4,0,.2,1);
     transition: transform .2s cubic-bezier(.4,0,.2,1), -webkit-transform .2s cubic-bezier(.4,0,.2,1);
-    -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
   }
 
-  .Home-schedule.with-session {
+  .Home-schedule.with-session .sticky {
     -webkit-transform: translate3d(calc(36px - 240px),0,0);
             transform: translate3d(calc(36px - 240px),0,0);
   }
 
   .Home-session {
-    position: absolute;
+    position: fixed;
     opacity: 0;
     left: 50%;
     width: 50%;
-    height: 100vh;
+    height: calc(100vh - 60px);
     overflow-y: auto;
     -webkit-transition-property: opacity, -webkit-transform;
     transition-property: opacity, -webkit-transform;
     transition-property: opacity, transform;
     transition-property: opacity, transform, -webkit-transform;
+    margin-top: 60px;
+    box-shadow: -3px 4px 4px rgba(0,0,0,.2);
   }
 
   .Home-session.is-show {
     opacity: 1;
   }
-
-  .Home-session.is-fixed {
-    position: fixed;
-    height: calc(100vh - 60px);
-    margin-top: 60px;
-    box-shadow: -3px 4px 4px rgba(0,0,0,.2);
-  }
-}
-@media screen and (min-width: 776px) and (max-width: 1236px){
-
-  .Schedule-title {
-    background: white;
-    border-bottom: 1px solid gray;
-    width: 100%;
-    z-index: 20;
-  }
-
-  .Schedule-title.is-fixed {
-    position: fixed;
-    top: 0;
-    max-width: calc(50% - 2px);
-    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
-    transition: all .2s cubic-bezier(.4,0,.2,1);
-  }
-
 }
 @media screen and (min-width: 1000px){
 
@@ -1475,27 +1443,6 @@ body.styles-mobileScrollLock__mMH7S {
     background: white;
     border-bottom: 1px solid gray;
     width: 100%;
-    z-index: 20;
-  }
-
-  .Schedule-title.is-fixed.without-session {
-    left: 361px;
-    position: fixed;
-    top: 0;
-    max-width: 548px;
-    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
-    transition: all .2s cubic-bezier(.4,0,.2,1);
-    will-change: left;
-  }
-
-  .Schedule-title.is-fixed.with-session {
-    left: 161px;
-    position: fixed;
-    top: 0;
-    max-width: 548px;
-    -webkit-transition: all .2s cubic-bezier(.4,0,.2,1);
-    transition: all .2s cubic-bezier(.4,0,.2,1);
-    will-change: left;
   }
 }
 @media screen and (min-width: 1000px){ /* No filterButton and filterPanel on desktop */
@@ -1504,7 +1451,7 @@ body.styles-mobileScrollLock__mMH7S {
     display: none;
   }
 
-  .Schedule-filterPanel.is-show.is-show { /* specificity override .is-show.is-fixed */
+  .Schedule-filterPanel.is-show.is-show {
     display: none;
   }
 }
