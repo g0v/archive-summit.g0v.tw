@@ -1156,7 +1156,15 @@
       },
       {
         "time" : "11:30-12:00",
-        "event" : "主題演講 (敬請期待)"
+        "event" : {
+          "venue" : "R0",
+          "category" : "supervision",
+          "language": "",
+          "speaker": "Clay Shirky",
+          "title": "Keynote 2",
+          "bio": "《鄉民都來了：無組織的組織力量》作者",
+          "abstract": "(TBC)"
+        }
       },
       {
         "time" : "12:00-13:00",
