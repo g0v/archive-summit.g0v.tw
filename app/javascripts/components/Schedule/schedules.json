@@ -399,7 +399,12 @@
       },
       {
         "time" : "11:30-12:00",
-        "event" : "Keynote (TBA)"
+        "event": {
+          "title": "Keynote",
+          "language": "English",
+          "speaker_id": "cshirky",
+          "speaker": "Clay Shirky"
+        }        
       },
       {
         "time" : "12:00-13:00",
@@ -983,7 +988,12 @@
       },
       {
         "time" : "11:30-12:00",
-        "event" : "主題演講 (敬請期待)"
+        "event": {
+          "title": "鄉民又來了（暫定）",
+          "language": "英語",
+          "speaker_id": "cshirky",
+          "speaker": "Clay Shirky"
+        }
       },
       {
         "time" : "12:00-13:00",
