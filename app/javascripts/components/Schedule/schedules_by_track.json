@@ -1227,7 +1227,7 @@
           "speaker": "Nicholas Doiron",
           "title": "在奈比多用 NodeJS：緬甸選舉資料開放",
           "bio": "<p>Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.</p>",
-          "abstract": "<p>In November 2015, millions of Myanmar's citizens went to the polls for the first openly-contested national elections in 25 years. Tens of thousands of people used mobile apps to research political parties, find out their candidates ahead of time, and see candidates' profiles. Those apps' data came from the MaePaySoh API, a partnership between the Myanmar Union Election Commission in Naypyitaw and the Asia Foundation's. Behind the scenes there were weeks of paperwork, scanning, digitizing, Unicode issues, deal-making, data cleanup, and development leading up to a two-week-long Hackathon. Take a look inside a fledgling open source community in Yangon and a drive for civic tech apps.</p>"
+          "abstract": "<p>2015 年 11 月，幾百萬緬甸公民參與了 25 年來首次的全國公開選舉。成千上萬的民眾透過移動裝置上的應用軟體來認識各個政黨、事先了解候選人的相關訊息。這些應用軟體的資訊，都來自 MaePaySoh 這套應用程式界面，它的合作夥伴有位於內比都的緬甸聯邦選舉委員會，以及亞洲基金會。</p><p>其幕後則是長達好幾週的文書、掃描、數位化、萬國碼問題、交議決策、數據清理的事務，以及長達兩週的馬拉松式開發工作。</p><p>請各位來認識一下仰光的開源社群，以及公民科技應用軟體的驅動力量。</p>"
         }
       },
       {
