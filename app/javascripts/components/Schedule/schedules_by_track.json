@@ -462,8 +462,6 @@
       {
         "time" : "11:30-12:00",
         "event" : {
-          "venue" : "R0",
-          "category" : "supervision",
           "language": "",
           "speaker": "Clay Shirky",
           "title": "Keynote 2",
@@ -804,12 +802,10 @@
       {
         "time": "11:30-12:00",
         "event" : {
-          "venue" : "R0",
-          "category" : "supervision",
           "language": "",
           "speaker": "Clay Shirky",
           "title": "Keynote 2",
-          "bio": "Author of Cognitive Surplus",
+          "bio": "Author of «Cognitive Surplus»",
           "abstract": "(TBC)"
         },
         "event": {
@@ -1159,13 +1155,11 @@
       {
         "time" : "11:30-12:00",
         "event" : {
-          "venue" : "R0",
-          "category" : "supervision",
           "language": "",
           "speaker": "Clay Shirky",
           "title": "Keynote 2",
           "bio": "《鄉民都來了：無組織的組織力量》作者",
-          "abstract": "(TBC)"
+          "abstract": "（敬請期待）"
         }
       },
       {
