@@ -56,7 +56,7 @@ function mapTimeSlotToItems(day, value, i) {
         </div>
         <div className="Schedule-tagline">
           <div>{value.tagline}</div>
-          <div className="Schedule-anchor">{value.anchor}</div>
+          { value.anchor && <div className="Schedule-anchor">{schedules[getLocale()].moderator}: {value.anchor}</div> }
         </div>
       </div>
     );
