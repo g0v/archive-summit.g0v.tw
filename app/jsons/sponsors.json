@@ -53,6 +53,12 @@
           "desc": "Established in 1987, we are the leader in Taiwan’ s IT industry and the regional IT software and SaaS cloud service provider. The basis of our innovation and development are: providing long term commitment towards customers’ use case study, sophisticated software engineering, advanced collaboration, use of advanced mobile, IT and cloud technologies. Our innovative applications and tailored solutions has won the heart of over 2000 financial service firms, government organizations, hospitals, telecommunication providers and customers from other industries as well as over 10,000 individual cloud application users.\nLocations<br>Taipei, Kaohsiung, Shanghai\nAwards<br>2015 GSS awarded the 3nd TAIWAN MITTELSTAND AWARD<br>2015 2015 Taiwan Excellence Award( Vitals ESP-Enterprise Social Platform)\nMain products<br>Vitals ESP – Enterprise Social Platform<br>teamKube – Task and Meeting Management<br>Vital – GSS Cloud Services Family"
         },
         {
+          "name": "Teradata",
+          "logo": "teradata.png",
+          "url": "http://www.teradata.com/",
+          "desc": "Teradata helps companies get more value from data than any other company. Our big data analytic solutions, integrated marketing applications, and team of experts can help your company gain a sustainable competitive advantage with data. Teradata helps organizations leverage all of their data so they can know more about their customers and business and do more of what’s really important. With more than 10,000 professionals in 43 countries, Teradata serves top companies across consumer goods, financial services, healthcare, automotive, communications, travel, hospitality, and more. A future-focused company, Teradata is recognized by media and industry analysts for technological excellence, sustainability, ethics, and business value. Visit teradata.com."
+        },
+        {
           "name": "Archilife Research Foundation",
           "logo": "archilife.png",
           "url": "http://www.archilife.org/",
@@ -191,6 +197,12 @@
           "logo": "gss.png",
           "url": "http://www.gss.com.tw/",
           "desc": "成立於1987年，是台灣資訊軟體業的領導廠商，也是區域級資訊軟體與雲端SaaS 服務供應商。長期關心客戶的經營需求，經由成熟的軟體工程、先進的協同、行動通訊、雲端等資訊科技，開發出流程e化與創新應用系統，贏得金融業、政府、醫院、電信與製造業等2,000餘客戶及上萬個雲端用戶的肯定。\n營業據點：<br>台北、高雄、上海\n營業範圍：<br>兩岸三地及日本\n榮耀：<br>2015 年 榮獲經濟部第三屆卓越中堅企業<br>2015 年 「Vitals ESP 知識管理企業雲」榮獲「2015台灣精品獎」"
+        },
+        {
+          "name": "Teradata",
+          "logo": "teradata.png",
+          "url": "http://www.teradata.com/",
+          "desc": "與其它企業相比，Teradata天睿公司（Teradata Corporation，紐交所：TDC）協助企業從資料中獲得更多價值。Teradata旗下領先的大數據分析解決方案、整合行銷應用系統及專家團隊協助企業利用資料獲得長期競爭優勢。 Teradata協助企業及各種組織利用資料獲得對客戶和業務的洞察，進而訂定更有效的策略與方案以獲得成功。 在全球43個國家，擁有超過10,000名員工，Teradata為消費品、金融服務、醫療保健、汽車、電信、旅遊、交通、零售等各行業的領先企業提供服務。 做為一個聚焦未來的公司，Teradata的卓越技術、永續經營、企業道德、商業價值廣為媒體和產業分析師所認可，欲瞭解更多詳情，請造訪 www.teradata.com。"
         },
         {
           "name": "祐生研究基金會",
