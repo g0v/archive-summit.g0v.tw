@@ -80,7 +80,7 @@
           "name": "WeatherRisk",
           "logo": "weather-risk.png",
           "url": "https://www.weatherrisk.com/",
-          "desc": ""
+          "desc": "WeatherRisk Explore Inc. is the only Taiwanese venture providing with meteorology data analysis and value-added application service. With profession and experiences on weather forecasting, our team has approved by Central Weather Bureau (CWB) to issue weather and marine weather forecasts with several individual and institutional certificate. WeatherRisk has developed more than 300 organizational clients of various walks of life and government authorities. Our products can be categorized as 7 sectors: meteorology data service, meteorology media service, weather forecast and climate assessment, disaster response integration, climate insurance, management maintenance, and popularization education of climate science. By analyzing meteorology data, applying open source software, and value-adding visual designation, WeatherRisk proposes solutions to meteorology related issues. To tackle with more and more frequent extreme weather events under climate change, WeatherRisk contributes to reduce the caused social risk by climate data service."
         },
         {
           "name": "NETivism",
@@ -141,6 +141,12 @@
           "logo": "kktix.png",
           "url": "http://kktix.com",
           "desc": "Smooth Event Management Experience\nWant to get things done efficiently when organizing events? KKTIX keeps everything in just few clicks from creating page, event management, marketing, to selling tickets, all in one place."
+        },
+        {
+          "name": "DingTaxi",
+          "logo": "dingtaxi.png",
+          "url": "http://slk.dingtaxi.com/i3uK",
+          "desc": "Dingtaxi is created to offer customers the easiest way to find quality charter cars and airport pickup service over 23 countries across the world. DingTaxi save you time by providing the most comprehensive search, showing different fleets and popular travel routes for each attractive destination at a competitive price. Founded in 2014, DIngTaxi is based in Taipei, Taiwan. Our team is composed of global talents from France, Thailand, Canada, China and Taiwan. If you want to participate in a travel startup, we welcome you to contact us!"
         }
       ]
     }
@@ -288,6 +294,12 @@
           "logo": "kktix.png",
           "url": "http://kktix.com",
           "desc": "輕鬆流暢的活動管理體驗\n每次舉辦活動的時候，都在煩惱怎麼製作網頁、處理報名事宜嗎?\nKKTIX滿足您舉辦活動的各項需求，從建立、管理、行銷到售票，一切都在彈指之間完成。"
+        },
+        {
+          "name": "DingTaxi",
+          "logo": "dingtaxi.png",
+          "url": "http://slk.dingtaxi.com/i3uK",
+          "desc": "DingTaxi—全球線路覆蓋最全的線上訂車平台。 目前已提供23個國家的目的地服務。持續拓展開發中。 國內外機場接送,包車等大小事將由DingTaxi幫您搞定！近期內將推出智慧機場接駁車服務! 創立於2014, DingTaxi公司總部位於台北，台灣。團隊由來自法國，加拿大，中國，泰國, 台灣等國際人才組成。對於熱愛旅遊的技術夥伴，歡迎加入我們的開發行列!"
         }
       ]
     }
