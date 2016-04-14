@@ -105,19 +105,25 @@
           "logo": "skywatch.png",
           "url": "https://skywatch24.com/",
           "desc": "Skywatch Innovation was founded in November 2011 by industry veterans and experts in video processing, with financial backing from Vivotek Inc., a leading provider of network cameras and related products. Our video surveillance solution, including hardware and software, has been in operation since 2012, and has been deployed to over 10 countries in the world. We are also expanding toward Home Automation with our IoT service infrastructure, and Smart Retailing with our video analytics technology."
-        },
-        {
-          "name": "Voxe.org",
-          "logo": "voxe.png",
-          "url": "http://voxe.org/welcome",
-          "desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
-        },
-        {
-          "name": "Open Knowledge International",
-          "logo": "okfn.png",
-          "url" : "http://okfn.org/",
-          "desc": "Open Knowledge is a worldwide non-profit network of people passionate about openness, using advocacy, technology and training to unlock information and enable people to work with it to create and share knowledge."
         }
+      ]
+    },
+    {
+      "category": "supporters",
+      "title": "Supporters",
+      "sponsors": [
+      {
+        "name": "Voxe.org",
+        "logo": "voxe.png",
+        "url": "http://voxe.org/welcome",
+        "desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
+      },
+      {
+        "name": "Open Knowledge International",
+        "logo": "okfn.png",
+        "url" : "http://okfn.org/",
+        "desc": "Open Knowledge is a worldwide non-profit network of people passionate about openness, using advocacy, technology and training to unlock information and enable people to work with it to create and share knowledge."
+      }
       ]
     },
     {
@@ -258,7 +264,13 @@
           "logo": "skywatch.png",
           "url": "https://skywatch24.com/",
           "desc": "行品股份有限公司（Skywatch Innovation）創立於 2011年 11月，為業界資深專案開發、影像技術人員、與台灣安控上市公司所共同組成。我們的核心能力在於設計、開發、與提供物聯網（IoT）之平台與服務。Skywatch 解決方案完整涵蓋由攝影機、感應器等前端硬體、雲端服務器，到近端 Mobile Apps 與瀏覽器等。主力雲端影像服務，自 2012 年推出以來，已經應用在十幾個國家，並業已成為台灣政府部門的正式認證供應商之一。"
-        },
+        }
+      ]
+    },
+    {
+      "category": "supporters",
+      "title": "議程協力",
+      "sponsors": [
         {
           "name": "Voxe.org",
           "logo": "voxe.png",
