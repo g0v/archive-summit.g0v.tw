@@ -105,6 +105,12 @@
           "logo": "skywatch.png",
           "url": "https://skywatch24.com/",
           "desc": "Skywatch Innovation was founded in November 2011 by industry veterans and experts in video processing, with financial backing from Vivotek Inc., a leading provider of network cameras and related products. Our video surveillance solution, including hardware and software, has been in operation since 2012, and has been deployed to over 10 countries in the world. We are also expanding toward Home Automation with our IoT service infrastructure, and Smart Retailing with our video analytics technology."
+        },
+        {
+          "name": "Taiwan Association of Disaster Prevention Industry",
+          "logo": "tadpi.png",
+          "url": "http://www.tadpi.org.tw/html/",
+          "desc": "The purpose of the Taiwan Association of Disaster Prevention Industry (TADPI) is to engage and integrate the domestic and International disaster prevention related industry chain actively. TADPI attempted to expand the demand and create the new markets worldwide, and promote the disaster prevention technologies that belong to our members. Officially founded on 31 March 2013, the TADPI coordinated organizations and experts in different field and technology related to disaster prevention, such as hazard modeling and simulation, engineering practices, risk management and insurance, geospatial information, monitoring and communications, security and safety, and firefighting. Through the promotion of the relevant businesses, public awareness and adaptability can be strengthened when facing a catastrophe. Furthermore, advocating the strategy of climate change adaptation, formulation of a Business Continuity Plan (BCP) for the cooperation, and to facilitate and building resilient and sustainable societies worldwide. That should be the ultimate goal of TADPI."
         }
       ]
     },
@@ -264,6 +270,12 @@
           "logo": "skywatch.png",
           "url": "https://skywatch24.com/",
           "desc": "行品股份有限公司（Skywatch Innovation）創立於 2011年 11月，為業界資深專案開發、影像技術人員、與台灣安控上市公司所共同組成。我們的核心能力在於設計、開發、與提供物聯網（IoT）之平台與服務。Skywatch 解決方案完整涵蓋由攝影機、感應器等前端硬體、雲端服務器，到近端 Mobile Apps 與瀏覽器等。主力雲端影像服務，自 2012 年推出以來，已經應用在十幾個國家，並業已成為台灣政府部門的正式認證供應商之一。"
+        },
+        {
+          "name": "臺灣防災產業協會",
+          "logo": "tadpi.png",
+          "url": "http://www.tadpi.org.tw/html/",
+          "desc": "臺灣防災產業協會以整合國內防災產業鏈，共同推動並擴展國內外防災產業市場、落實實務防災技術及提昇我國防災水準為宗旨，期望整合國內產官學於災害防救技術之能量。本協會提供協調整合各方資源之平台，促成災害防救科技發展體系的垂直與水平整合與創意激發，強化國內防災科技與產業實力，促進國內產業升級與輸出，創造就業機會等實質效益。藉由本協會強化全民面對巨災之防災意識與緊急應變能力之外，同時亦可協助企業研擬制訂企業營運持續方案(BCP)，協助政府推動防災與國家永續發展目標。 "
         }
       ]
     },
