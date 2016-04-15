@@ -53,6 +53,12 @@
           "desc": "Established in 1987, we are the leader in Taiwan’ s IT industry and the regional IT software and SaaS cloud service provider. The basis of our innovation and development are: providing long term commitment towards customers’ use case study, sophisticated software engineering, advanced collaboration, use of advanced mobile, IT and cloud technologies. Our innovative applications and tailored solutions has won the heart of over 2000 financial service firms, government organizations, hospitals, telecommunication providers and customers from other industries as well as over 10,000 individual cloud application users.\nLocations<br>Taipei, Kaohsiung, Shanghai\nAwards<br>2015 GSS awarded the 3nd TAIWAN MITTELSTAND AWARD<br>2015 2015 Taiwan Excellence Award( Vitals ESP-Enterprise Social Platform)\nMain products<br>Vitals ESP – Enterprise Social Platform<br>teamKube – Task and Meeting Management<br>Vital – GSS Cloud Services Family"
         },
         {
+          "name": "Teradata",
+          "logo": "teradata.png",
+          "url": "http://www.teradata.com/",
+          "desc": "Teradata helps companies get more value from data than any other company. Our big data analytic solutions, integrated marketing applications, and team of experts can help your company gain a sustainable competitive advantage with data. Teradata helps organizations leverage all of their data so they can know more about their customers and business and do more of what’s really important. With more than 10,000 professionals in 43 countries, Teradata serves top companies across consumer goods, financial services, healthcare, automotive, communications, travel, hospitality, and more. A future-focused company, Teradata is recognized by media and industry analysts for technological excellence, sustainability, ethics, and business value. Visit teradata.com."
+        },
+        {
           "name": "Archilife Research Foundation",
           "logo": "archilife.png",
           "url": "http://www.archilife.org/",
@@ -74,7 +80,7 @@
           "name": "WeatherRisk",
           "logo": "weather-risk.png",
           "url": "https://www.weatherrisk.com/",
-          "desc": ""
+          "desc": "WeatherRisk Explore Inc. is the only Taiwanese venture providing with meteorology data analysis and value-added application service. With profession and experiences on weather forecasting, our team has approved by Central Weather Bureau (CWB) to issue weather and marine weather forecasts with several individual and institutional certificate. WeatherRisk has developed more than 300 organizational clients of various walks of life and government authorities. Our products can be categorized as 7 sectors: meteorology data service, meteorology media service, weather forecast and climate assessment, disaster response integration, climate insurance, management maintenance, and popularization education of climate science. By analyzing meteorology data, applying open source software, and value-adding visual designation, WeatherRisk proposes solutions to meteorology related issues. To tackle with more and more frequent extreme weather events under climate change, WeatherRisk contributes to reduce the caused social risk by climate data service."
         },
         {
           "name": "NETivism",
@@ -99,24 +105,30 @@
           "logo": "skywatch.png",
           "url": "https://skywatch24.com/",
           "desc": "Skywatch Innovation was founded in November 2011 by industry veterans and experts in video processing, with financial backing from Vivotek Inc., a leading provider of network cameras and related products. Our video surveillance solution, including hardware and software, has been in operation since 2012, and has been deployed to over 10 countries in the world. We are also expanding toward Home Automation with our IoT service infrastructure, and Smart Retailing with our video analytics technology."
-        },
-        {
-          "name": "Voxe.org",
-          "logo": "voxe.png",
-          "url": "http://voxe.org/welcome",
-          "desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
-        },
-        {
-          "name": "Open Knowledge International",
-          "logo": "okfn.png",
-          "url" : "http://okfn.org/",
-          "desc": "Open Knowledge is a worldwide non-profit network of people passionate about openness, using advocacy, technology and training to unlock information and enable people to work with it to create and share knowledge."
         }
       ]
     },
     {
-      "category": "partner",
-      "title": "Partner",
+      "category": "supporters",
+      "title": "Supporters",
+      "sponsors": [
+      {
+        "name": "Voxe.org",
+        "logo": "voxe.png",
+        "url": "http://voxe.org/welcome",
+        "desc": "At Voxe.org, we believe in the power of technology to improve civic engagement and take the power back on politics. We believe in the power of social innovation to help forge an informed electorate. Back to 2012, we build a comparison tool for candidates’ platforms for elections. Simple, neutral and crowdsourced. Voxe.org is now settled in 16 countries and has reached out more than 3,5 million users. As one of the France Google Impact Challenge winner, we’re now working on a mobile app to improve civic engagement and increase our impact on policy : the Newswatch. A civic engagement mobile app based on political news with 3 steps : Information. Position. Action.\nVoxe.org’s team recently launched happydemocracy.com. The civic tech media, to bring civic tech events and news to the public."
+      },
+      {
+        "name": "Open Knowledge International",
+        "logo": "okfn.png",
+        "url" : "http://okfn.org/",
+        "desc": "Open Knowledge is a worldwide non-profit network of people passionate about openness, using advocacy, technology and training to unlock information and enable people to work with it to create and share knowledge."
+      }
+      ]
+    },
+    {
+      "category": "partners",
+      "title": "Partners",
       "sponsors": [
         {
           "name": "Wolf Tea",
@@ -135,6 +147,12 @@
           "logo": "kktix.png",
           "url": "http://kktix.com",
           "desc": "Smooth Event Management Experience\nWant to get things done efficiently when organizing events? KKTIX keeps everything in just few clicks from creating page, event management, marketing, to selling tickets, all in one place."
+        },
+        {
+          "name": "DingTaxi",
+          "logo": "dingtaxi.png",
+          "url": "http://slk.dingtaxi.com/i3uK",
+          "desc": "Dingtaxi is created to offer customers the easiest way to find quality charter cars and airport pickup service over 23 countries across the world. DingTaxi save you time by providing the most comprehensive search, showing different fleets and popular travel routes for each attractive destination at a competitive price. Founded in 2014, DIngTaxi is based in Taipei, Taiwan. Our team is composed of global talents from France, Thailand, Canada, China and Taiwan. If you want to participate in a travel startup, we welcome you to contact us!"
         }
       ]
     }
@@ -193,6 +211,12 @@
           "desc": "成立於1987年，是台灣資訊軟體業的領導廠商，也是區域級資訊軟體與雲端SaaS 服務供應商。長期關心客戶的經營需求，經由成熟的軟體工程、先進的協同、行動通訊、雲端等資訊科技，開發出流程e化與創新應用系統，贏得金融業、政府、醫院、電信與製造業等2,000餘客戶及上萬個雲端用戶的肯定。\n營業據點：<br>台北、高雄、上海\n營業範圍：<br>兩岸三地及日本\n榮耀：<br>2015 年 榮獲經濟部第三屆卓越中堅企業<br>2015 年 「Vitals ESP 知識管理企業雲」榮獲「2015台灣精品獎」"
         },
         {
+          "name": "Teradata",
+          "logo": "teradata.png",
+          "url": "http://www.teradata.com/",
+          "desc": "與其它企業相比，Teradata天睿公司（Teradata Corporation，紐交所：TDC）協助企業從資料中獲得更多價值。Teradata旗下領先的大數據分析解決方案、整合行銷應用系統及專家團隊協助企業利用資料獲得長期競爭優勢。 Teradata協助企業及各種組織利用資料獲得對客戶和業務的洞察，進而訂定更有效的策略與方案以獲得成功。 在全球43個國家，擁有超過10,000名員工，Teradata為消費品、金融服務、醫療保健、汽車、電信、旅遊、交通、零售等各行業的領先企業提供服務。 做為一個聚焦未來的公司，Teradata的卓越技術、永續經營、企業道德、商業價值廣為媒體和產業分析師所認可，欲瞭解更多詳情，請造訪 www.teradata.com。"
+        },
+        {
           "name": "祐生研究基金會",
           "logo": "archilife.png",
           "url": "http://www.archilife.org/",
@@ -240,7 +264,13 @@
           "logo": "skywatch.png",
           "url": "https://skywatch24.com/",
           "desc": "行品股份有限公司（Skywatch Innovation）創立於 2011年 11月，為業界資深專案開發、影像技術人員、與台灣安控上市公司所共同組成。我們的核心能力在於設計、開發、與提供物聯網（IoT）之平台與服務。Skywatch 解決方案完整涵蓋由攝影機、感應器等前端硬體、雲端服務器，到近端 Mobile Apps 與瀏覽器等。主力雲端影像服務，自 2012 年推出以來，已經應用在十幾個國家，並業已成為台灣政府部門的正式認證供應商之一。"
-        },
+        }
+      ]
+    },
+    {
+      "category": "supporters",
+      "title": "議程協力",
+      "sponsors": [
         {
           "name": "Voxe.org",
           "logo": "voxe.png",
@@ -256,7 +286,7 @@
       ]
     },
     {
-      "category": "partner",
+      "category": "partners",
       "title": "合作夥伴",
       "sponsors": [
         {
@@ -276,6 +306,12 @@
           "logo": "kktix.png",
           "url": "http://kktix.com",
           "desc": "輕鬆流暢的活動管理體驗\n每次舉辦活動的時候，都在煩惱怎麼製作網頁、處理報名事宜嗎?\nKKTIX滿足您舉辦活動的各項需求，從建立、管理、行銷到售票，一切都在彈指之間完成。"
+        },
+        {
+          "name": "DingTaxi",
+          "logo": "dingtaxi.png",
+          "url": "http://slk.dingtaxi.com/i3uK",
+          "desc": "DingTaxi—全球線路覆蓋最全的線上訂車平台。 目前已提供23個國家的目的地服務。持續拓展開發中。 國內外機場接送,包車等大小事將由DingTaxi幫您搞定！近期內將推出智慧機場接駁車服務! 創立於2014, DingTaxi公司總部位於台北，台灣。團隊由來自法國，加拿大，中國，泰國, 台灣等國際人才組成。對於熱愛旅遊的技術夥伴，歡迎加入我們的開發行列!"
         }
       ]
     }
