@@ -55,6 +55,16 @@
       "twitter": ""
     },
     {
+      "id": "",
+      "avatar": "",
+      "name": "Uk-Jin Yang",
+      "organization": "WAGL",
+      "title": "",
+      "bio": "Hi! I’m Uk-Jin, Yang.I’m full-stack programmer at WAGL, a political start-up based in South Korea. I’m developing several services with our members for this 2016 election.My vision is to “make positive social impact through my programming skills”. Lastly, my favorite framework is Django. I welcome all your questions!",
+      "nation": "Korea",
+      "twitter": ""
+    },    
+    {
       "id": "eybuyw",
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg",
       "name": "Felipe Heusser",
