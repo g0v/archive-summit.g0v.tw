@@ -8,6 +8,7 @@
       "organization": "Code for Japan, Code for Ibaraki",
       "title": "",
       "bio": "<p>Currently working as a self-employed network engineer.</p><p>Co-captain of Code for Japan. A member of Code for Ibaraki.</p><p>Joined Code for Japan as a member of research team when it was established in 2013. And also, organize a weekly civic hack meetup event named “Idobata Kaigi”, water cooler talking in Japanese, over 100 times last 2 years. Now a project leader for Civic tech cafe of Code for Ibaraki, monthly talking meeting over open data and civic tech.</p><p>Live in Tokyo, Have two kids (4 years boy and 3 years girl) and one wife.</p><p>Specialties: Networking, Information security, Cloud  computing, Voice over IP, Project management, Community organizing</p>",
+      "bio_zh": "目前為自由接案的網路工程師。Code for Japan社群的共同領導人。Code for Ibaraki成員。在2013年Code for Japan成立時加入了研究組。過去兩年間，發起並舉辦了超過100次，稱為「井戸端会議」的每週公民駭客小聚。目前是Code for Ibaraki推動公民科技咖啡館的專案領頭羊，每個月舉辦與開放資料、公民科技相關的講座。與太太居住在東京，有兩個小孩（四歲的男孩與三歲的女孩）。專長：網路、資訊安全、雲端運算、VoIP、專案管理、社群經營",
       "nation": "Japan",
       "twitter": "@shigeomix"
     },
@@ -30,6 +31,7 @@
       "organization": "Open Knowledge Foundation Germany /Code for All",
       "title": "",
       "bio": "Julia is an activist who’s passionate about growing open communities. Since 2013, she has put her background in design and media studies to use as a project lead for the Open Knowledge Foundation Germany and as a consultant for The Engine Room.  Julia has been running multiple community projects that foster the reuse of open data, such as Germany’s first Civic Tech Incubator and a series of hackathons. Code for Germany, her latest project, is a civic tech community with 25 labs and more than 350 members.  Julia leads open data projects in close collaboration with companies and governments alike. In 2015 she co-organized the international Code for All Summit in New York, a two-day conference that brought together leading experts and practitioners in civic tech. In 2016 she will be kicking off a prototype fund for civic tech projects in collaboration with the Federal Ministry of Education and Research of Germany.",
+      "bio_zh": "作為一個社會運動者，茱莉雅對發展中的開放社群投注了許多熱情。從2013年起，她將自己在設計與媒體研究的訓練用在擔任Open Knowledge Foundation Germany的專案經理以及The Engine Room的顧問角色。茱莉雅組織了許多促進開放資料運用的社群計畫，包括德國的第一個公民科技孵化器以及一系列的黑客松。他最新的計劃是Code for Germany，這個公民技術社群包含二十五個實驗室以及超過三百五十名成員。茱莉雅所帶領的開放資料計畫與民間公司以及政府部門都有密切的協作關係。2015年她共同組織了在紐約舉辦的International Code for All Summit，許多公民科技專家與從業人員都參加了這兩天的會議。2016年她將與德國聯邦教育與研究部合作，啟動一個針對公民科技計畫的原型基金。",
       "nation": "Germany",
       "twitter": "@j_kloiber"
     },
@@ -41,6 +43,7 @@
       "organization": "pol.is",
       "title": "",
       "bio": "Colin is founder of Seattle based startup http://pol.is, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.  He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.  Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.",
+      "bio_zh": "Colin是西雅圖新創公司Polis Technology Inc.的創辦人。Pol.is是一個網路應用程式，專門利用網路的即時特性、互動資訊視覺化以及機器學習，讓蒐集情緒變得更有機而自然。Colin的主要工作是使用者商品設計、資訊架構以及互動式資訊視覺化。他同時也替一些世界知名品牌設計、規劃、打造客戶端的應用程式。他經常在美國及世界各地的聚會與會議中演講，包括在斯洛伐克的Reactive 2015、韓國的By the Crowd以及紐約的CSSConf。Colin與其配偶Christie和兩個可愛的兒子住在靠近西雅圖的Whidbey Island。",
       "nation": "US",
       "twitter": "@colinmegill"
     },
@@ -51,16 +54,18 @@
       "organization": "WAGL",
       "title": "",
       "bio": "I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.",
+      "bio_zh": "我是一個數據記者也是一個公民駭客，參與韓國公民科技孵化器WAGL（We All Govern Lab）。我的熱衷於用數據檢驗政治權力。我最近的專案包括監督議會的公民參與網站以及為韓國大選所做的選民諮詢應用平台（Voter Advice Application）。",
       "nation": "Korea",
       "twitter": ""
     },
     {
-      "id": "",
+      "id": "vypsuz",
       "avatar": "",
       "name": "Uk-Jin Yang",
       "organization": "WAGL",
       "title": "",
       "bio": "Hi! I’m Uk-Jin, Yang.I’m full-stack programmer at WAGL, a political start-up based in South Korea. I’m developing several services with our members for this 2016 election.My vision is to “make positive social impact through my programming skills”. Lastly, my favorite framework is Django. I welcome all your questions!",
+      "bio_zh": "嗨！我是 Uk-Jin Yang，韓國政治新創團隊WAGL的全端工程師，我與團隊成員為了今年韓國大選開發了數個服務。我想運用我的程式設計技術對社會造成正面的影響。最後，我最喜歡的開發架構是Django，歡迎大家來聊聊！",
       "nation": "Korea",
       "twitter": ""
     },    
@@ -72,6 +77,7 @@
       "organization": "Harvard Berkman Center",
       "title": "Fellow",
       "bio": "founder and former Director of Ciudadano Inteligente, co-founded Rhinobird.tv\nFelipe is a long time Civic Tech activist and Entrepreneur. He is the founder of the Latin American NGO Ciudadanointeligente.org, and the crowd source video platform Rhinobird.tv , among other projects in which he has explored the role of civic participation and new media in the public space. Felipe is also an Ashoka Fellow, advisor for several NGO’s in Chile and the USA, and a member of the ‘Democratic Revolution’ civic movement in Chile.  Felipe studied Law in the P. Universidad Catolica of Chile, and Public Policy at the London School of Economics. He is currently a Fellow at the Berkman Center for Internet and Society at Harvard University in the United States.",
+      "bio_zh": "身為Ciudadano Inteligente的創辦人和前總監，以及Rhinobird.tv的共同創辦人，菲力培是資深的公民科技推動者和企業家。他創辦了Ciudadanointeligente.org：一個位於拉丁美洲的NGO以及Rhinobird.tv：一個群眾外包的影音平台，也活躍於其他專案，談討公民參與與新媒體在公共空間中的角色。同時，菲力培也是Ashoka研究員，並擔任數個智利及美國NGO的顧問。在智利，菲力培也是該國公民運動「Democratic Revolution」的成員。菲力培曾於智利天主教大學研讀法律，並於倫敦政治經濟學院研讀公共政策。他目前在美國哈佛大學的貝克曼網路及社會中心擔任研究員。",
       "nation": "Chile",
       "twitter": "@fheusser"
     },
@@ -94,6 +100,7 @@
       "organization": "Madrid City Council",
       "title": "Director of the Madrid city council participation project",
       "bio": "Miguel Arana is the Director of the Madrid city council participation project. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence http://decide.madrid.es Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A CoruÃ±a among others. He has been actively involved in the 15M movement in Spain since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries. Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil.",
+      "bio_zh": "米貴爾･阿拉納是馬德里市議會公民參與計畫的主持人，他目前正在為馬德里市規劃開放政府的策略，包括促進開放民主及群眾智慧的開放平台http://decide.madrid.es。此外，他也著力於和巴賽隆納，薩拉戈薩，拉科魯尼亞等其他西班牙城市合作構築國家級的智慧城市策略。米貴爾一直以來積極參與西班牙的15M運動，在運動中強調使用數位工具加強與其他國家同類運動的橫向聯繫。米貴爾目前正參與多個專案，包括名為D-DENT的網絡，以及其他在冰島、芬蘭及巴西等地的專案。",
       "nation": "Spain",
       "interview": "https://www.youtube.com/watch?v=tTXbvg44Bdo",
       "twitter": ""
@@ -167,6 +174,7 @@
       "organization": "Voxe.org",
       "title": "co-founder",
       "bio": "Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).",
+      "bio_zh": "Charlotte是一位公民科技愛好者。她在2012年法國總統大選時與夥伴共同創立了 Voxe.org。Voxe.org是一群以打造線上工具革新公民參與的創新者，相信社會創新的力量能幫助選民握有獨立思考所需的充分資訊，藉由讓選民認知每個候選人的政見內容重塑公眾辯論。Voxe.org同時也發行公民科技週報happydemocracy，並正打造新的參與型app：newswatch。Charlotte在Voxe.org負責與合作夥伴的溝通與關係建立，包含十六個國家，三百五十萬用戶以及超過二十家媒體夥伴。",
       "nation": "France",
       "twitter": "@charlottrichard "
     },
@@ -209,6 +217,7 @@
       "organization": "Humanitarian OpenStreetMap Team",
       "title": "Project Manager",
       "bio": "Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.",
+      "bio_zh": "楊迪薩･阿哈迪在印尼的人道開放街圖團隊（HOT）擔任專案經理。他帶領著九名出色夥伴，推廣OpenStreetMap、QGIS和InaSAFE在人道主義與經濟發展方面的應用。在過去幾年，印尼HOT首創將開放地理數據應用在印尼的防災工作。",
       "nation": "Indonesia",
       "twitter": "@iyan31"
     },

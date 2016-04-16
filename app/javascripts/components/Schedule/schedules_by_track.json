@@ -572,9 +572,10 @@
           "venue" : "R0",
           "category" : "square",
           "language": "",
-          "speaker": "JK Suh",
+          "speaker": "JK Suh & Uk-Jin Yang",
+          "speaker_id": ["vypsuv", "vypsuz"],
+          "speaker_key": ["JK Suh", "Uk-Jin Yang"],
           "title": "The Korean General Election and VAAs: the case of \"Ping\"",
-          "bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
           "abstract": "<p>Modern elections are becoming ever more sophisticated in terms of campaigners' ability to mine voter data and micro-tailor their messages to key demographics (see the Obama campaign's 'cave' of data scientists, e.g.: <a href='http://www.technologyreview.com/featuredstory/509026/how-obamas-team-used-big-data-to-rally-voters/'>How Obama’s Team Used Big Data to Rally Voters</a> ). </p><p>Voter Advice Applications, or VAAs, leverage similar techniques, but reverse the direction of the telescope: voters get a better understanding of candidates, not the other way around (see <a href='https://en.wikipedia.org/wiki/Voting_advice_application'>this</a>). </p><p>VAAs have gained popularity in Canada, Germany, Britain, the Benelux countries and Switzerland, where around 10% of the population use a VAA (see <a href='http://www.euvox2014.eu/'>euvox2014</a>, <a href='http://www.democraticaudit.com/?p=12419'>A review of the top Voter Advice Applications for the 2015 General Election</a>, <a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>Voting Advice Applications in Europe: The State of the Art</a> for more examples from Europe). </p><p>A basic VAA asks a series of questions that probe a user's political preference, then uses a distance measurement algorithm to visualize her position relative to parties and candidates that are standing in election. Ping, the first service of this kind to launch in East Asia, adds on to successes elsewhere in two ways: first, Ping provides local candidate information, beyond national party positions. Second, Ping crowd-sources its questions, so that users can ask district-specific questions to each candidate.</p><p>The session will begin by reviewing the then-recent Korean General Election (held April 16) and place Ping in the broader context of the Korean Civic Hacking / Open Data community.</p>"
         }
       },
@@ -1267,9 +1268,10 @@
           "venue" : "R0",
           "category" : "square",
           "language": "",
-          "speaker": "JK Suh",
+          "speaker": "JK Suh & Uk-Jin Yang",
+          "speaker_id": ["vypsuv", "vypsuz"],
+          "speaker_key": ["JK Suh", "Uk-Jin Yang"],
           "title": "韓國大選與投票建議指南: \"Ping\"",
-          "bio": "<p>I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.</p>",
           "abstract": "<p>在現代的選舉裡，參選陣營在選民資料探勘上的能力，及針對主要選民群體來量身訂做競選訊息的能力，都變得較以往細緻許多。例如歐巴馬陣營的資料科學團隊，就利用大數據來拉攏選民。</p><p>「選民諮詢應用平台（<a href='https://en.wikipedia.org/wiki/Voting_advice_application'>Voter Advice Applications</a>」利用類似的技術，但是將關注視野反轉過來：也就是讓選民更清楚瞭解候選人，而不像以往是被候選人用來分析選民。</p><p>「選民諮詢應用平台」在加拿大、德國、英國、比荷盧經濟聯盟及瑞士等國都受到歡迎，獲得 10% 的人口採用。（可參考 <a href='http://www.euvox2014.eu/'>euvox2014</a>、<a href='http://www.democraticaudit.com/?p=12419'>2015 年最佳選民諮詢應用平台導覽</a>、<a href='http://www.academia.edu/281395/Voting_Advice_Applications_in_Europe_The_State_of_the_Art'>歐洲內部選民諮詢應用平台：當前發展</a>。）</p><p>基本的「選民諮詢應用平台」，會透過一系列的問題，來取得使用者的政治偏好，然後使用測距演算法，將其與其它政黨與候選人的相對位置視覺化。</p><p>「Ping」是東亞第一個類似的服務，也在許多地方獲得成功，其成功原因主要有二：首先，「Ping」提供了當地候選人資訊，而不只是全國政黨的統一政見。再者，「Ping」集合了許多群眾的問題，讓使用者可以針對每個候選人詢問某一特定地區的問題。</p><p>這個部分將以回顧最近的韓國大選（已在四月 16 日舉行）為起點，把「Ping」放在韓國公民黑客行動、開放資料社群這個更大的脈絡下進行討論。</p>"
         }
       },
