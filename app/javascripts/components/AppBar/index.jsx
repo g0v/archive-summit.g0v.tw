@@ -166,6 +166,14 @@ const Menu = () => {
           {info[getLocale()].staff}
         </Link>
       </li>
+      <li
+        className={styles.item}
+        activeClassName={styles.active}>
+        <a href="https://www.facebook.com/hashtag/g0vsummit16"
+        >
+          {info[getLocale()].news}
+        </a>
+      </li>
     </ul>
   );
 }
