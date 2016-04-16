@@ -7,6 +7,7 @@
     "live": "Live",
     "transport": "Transport",
     "staff": "Staff",
+    "news": "News",
     "date": "14-15 May, 2016",
     "location": "Taipei"
   },
@@ -17,6 +18,7 @@
     "sponsors": "贊助",
     "live": "直播",
     "transport": "交通",
+    "news": "最新消息",
     "staff": "工作人員",
     "date": "五月十四至十五，二零一六",
     "location": "中央研究院"
