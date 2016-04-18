@@ -664,6 +664,16 @@
       "bio": "",
       "nation": "US",
       "twitter": "@cshirky"
+    },
+    {
+      "id": "cdoten",
+      "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAXyAAAAJGU5YTZjNWNlLWRjYzAtNDJiNy05MzY2LTgxNzJjZWZkNWJjMg.jpg",
+      "name": "Chris Doten",
+      "organization": "National Democratic Institute",
+      "title": "",
+      "bio": "Chris Doten is the Senior Manager for Technology and Innovation at NDI. Chris has designed and implemented programs in dozens of countries which apply integrated, context-appropriate technology to reach more citizens, track political processes, improve organizing capabilities, and open data. Chris specializes in the challenges of internet freedom and cybersecurity in closed societies and has worked with at-risk digital activists from Azerbaijan to Zimbabwe. Having previously worked for the campaigns of Barack Obama and Hillary Clinton, Chris is skilled at the pragmatic application of cutting-edge digital communications, data management and organizing tools in political campaigns. Chris earned a BA in Computer Science and History from Carleton College and a Masters in Law and Diplomacy from the Fletcher School at Tufts University.",
+      "nation": "US",
+      "twitter": "@cdoten"
     }
   ]
 }

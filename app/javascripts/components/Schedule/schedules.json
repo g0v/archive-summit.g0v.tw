@@ -321,12 +321,13 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "",
+            "category" : "blueprint",
             "language": "",
-            "speaker": "",
-            "title": "TBA",
+            "speaker": "Chris Doten",
+            "speaker_id": "cdoten",
+            "title": "DemTools - Can we solve sustainable civic tech through scale?",
             "bio": "",
-            "abstract": ""
+            "abstract": "Civic and governmental groups around the world today are too often hamstrung by a lack of access to powerful webapps for organizing and communication with citizens. Commercial software, if available, is often too expensive; open source apps are too hard to host. Chris will share NDI's DemTools initiative, an effort to solve these critical problems: open source webapps designed for citizen engagement globally, on a scalable software-as-a-service platform. Chris will share stories of initial successes, describe the technical underpinnings of a such a cloud hosting project, and encourage groups to join in."
           },
           {
             "venue" : "R0",
@@ -914,12 +915,13 @@
         "events" : [
           {
             "venue" : "R1",
-            "category" : "",
+            "category" : "blueprint",
             "language": "",
-            "speaker": "",
-            "title": "敬請期待",
-            "bio":"",
-            "abstract": ""
+            "speaker": "Chris Doten",
+            "speaker_id": "cdoten",
+            "title": "DemTools - Can we solve sustainable civic tech through scale?",
+            "bio": "",
+            "abstract": "Civic and governmental groups around the world today are too often hamstrung by a lack of access to powerful webapps for organizing and communication with citizens. Commercial software, if available, is often too expensive; open source apps are too hard to host. Chris will share NDI's DemTools initiative, an effort to solve these critical problems: open source webapps designed for citizen engagement globally, on a scalable software-as-a-service platform. Chris will share stories of initial successes, describe the technical underpinnings of a such a cloud hosting project, and encourage groups to join in."
           },
           {
             "venue" : "R0",
