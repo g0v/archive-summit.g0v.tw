@@ -51,42 +51,108 @@ export default React.createClass({
         { avatar && <img className={styles.avatar} src={avatar} /> }
       </div>;
     });
-    return (
-        <div className="Session">
-          <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
-          </div>
-            <div className="Session-close"
-                 onClick={sessionHandler}></div>
-            <div className="Session-content">
-                <div className="Session-meta">
-                  {venue}
-                  <div className="Session-time">{time}</div>
-                  {language}
-                </div>
-                <div className="Session-title">
-                  {data.title}
-                </div>
-                { speakers_profile.map( profile => profile ) }
 
-                {
-                  category ? (
-                    <div className="Session-category">
-                      <div className="Session-categoryIcon" style={{
-                             "background" : category.color
-                           }}></div>
-                      {category.title} - {category.tagline}
-                    </div>
-                  ) : null
-                }
-
-                { data.abstract && <div className="Session-abstract">
-                    <div className="Session-subTitle">Abstract</div>
-                    <div dangerouslySetInnerHTML={{__html: data.abstract}}></div>
-                  </div>
-                }
-                { speakers_bio.map( bio => bio) }
-            </div>
+    // Use the same flows of speakers, speakers_bio and speakers_profile variables
+    const moderator = data.moderator ? data.moderator : [];
+    const moderator_bio = [];
+    const moderator_profile = moderator.map( moderator => by_name[moderator] ).map( moderator  => {
+      const bio_text = ((moderator && getString(moderator, 'bio', locale)) || data.bio || '').replace(/\n/g, '<br/>');
+      const moderator_title = moderator && getString(moderator, 'title', locale);
+      const moderator_organization = moderator && getString(moderator, 'organization', locale);
+      const moderator_name = moderator && getString(moderator, 'name', locale);
+      const avatar = moderator ? avatarURL(moderator) : '';
+      var bio = bio_text ? (
+        <div className="Session-biography" key={`moderator_bio_${moderator_name}`}>
+            <div className="Session-subTitle">Biography</div>
+            <div dangerouslySetInnerHTML={{__html: bio_text}}></div>
         </div>
-    );
+      ): "";
+      moderator_bio.push(bio);
+
+      return <div key={`moderator_${moderator_name}`}>
+        <div className="Session-presenter">
+            {moderator_name}
+        </div>
+        <div className="Session-presenter-title">
+            {moderator_title}
+        </div>
+        <div className="Session-presenter-organization">
+            {moderator_organization}
+        </div>
+        { avatar && <img className={styles.avatar} src={avatar} /> }
+      </div>;
+    });
+    
+    if (time) { // Speaker , not moderator
+      return (
+          <div className="Session">
+            <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
+            </div>
+              <div className="Session-close"
+                   onClick={sessionHandler}></div>
+              <div className="Session-content">
+                  <div className="Session-meta">
+                    {venue}
+                    <div className="Session-time">{time}</div>
+                    {language}
+                  </div>
+                  <div className="Session-title">
+                    {data.title}
+                  </div>
+                  { speakers_profile.map( profile => profile ) }
+
+                  {
+                    category ? (
+                      <div className="Session-category">
+                        <div className="Session-categoryIcon" style={{
+                               "background" : category.color
+                             }}></div>
+                        {category.title} - {category.tagline}
+                      </div>
+                    ) : null
+                  }
+
+                  { data.abstract && <div className="Session-abstract">
+                      <div className="Session-subTitle">Abstract</div>
+                      <div dangerouslySetInnerHTML={{__html: data.abstract}}></div>
+                    </div>
+                  }
+                  { speakers_bio.map( bio => bio) }
+              </div>
+          </div>
+      );
+    } else { //moderator , not speaker
+      return (
+          <div className="Session">
+            <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
+            </div>
+              <div className="Session-close"
+                   onClick={sessionHandler}></div>
+              <div className="Session-content">
+                  
+                  { moderator_profile.map( profile => profile ) }
+
+                  {
+                    category ? (
+                      <div className="Session-category">
+                        <div className="Session-categoryIcon" style={{
+                               "background" : category.color
+                             }}></div>
+                        {category.title} - {category.tagline}
+                      </div>
+                    ) : null
+                  }
+
+                  { data.abstract && <div className="Session-abstract">
+                      <div className="Session-subTitle">Abstract</div>
+                      <div dangerouslySetInnerHTML={{__html: data.abstract}}></div>
+                    </div>
+                  }
+                  { moderator_bio.map( bio => bio) }
+              </div>
+          </div>
+      );
+    }
+
   }
 });

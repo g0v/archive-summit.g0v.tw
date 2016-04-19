@@ -25,7 +25,10 @@
         "title": "Power",
         "tagline": "Upgrading the organizing capacity of activism with civic tech",
         "venue" : "R1",
-        "color": "#CE0D41"
+        "color": "#CE0D41",
+        "event": {
+          "moderator": ["蔡淑芳"]
+        }
       },
       {
         "time": "10:00-10:30",
@@ -84,7 +87,10 @@
         "title": "Foundation",
         "venue" : "R0",
         "tagline": "Global reimplementions of media, elections, governments and public decisions",
-        "color": "#FCDE86"
+        "color": "#FCDE86",
+        "event": {
+          "moderator": ["clkao"]
+        }
       },{
         "time": "10:00-10:30",
         "event": {
@@ -142,7 +148,10 @@
         "title": "Construction",
         "tagline": "Open-culture experiments with data and technology",
         "venue" : "R2",
-        "color": "#1BADBE"
+        "color": "#1BADBE",
+        "event": {
+          "moderator": ["李怡志"]
+        }
       },
       {
         "time": "10:00-10:30",
@@ -206,7 +215,10 @@
         "title": "Blueprint",
         "tagline": "Towards digital representation: A jigsaw of open government data endeavours",
         "venue" : "R1",
-        "color": "#F4AF3D"
+        "color": "#F4AF3D",
+        "event": {
+          "moderator": ["唐鳳"]
+        }
       },
       {
         "time" : "13:30-14:00",
@@ -278,7 +290,10 @@
         "title": "Wiring",
         "tagline": "Intersectoral networks: Synchronizations, collaborations and demonstrations",
         "venue" : "R0",
-        "color": "#449FFC"
+        "color": "#449FFC",
+        "event": {
+          "moderator": ["林祖儀"]
+        }
       },
       {
         "time" : "13:30-14:00",
@@ -350,7 +365,10 @@
         "title": "Scaffold",
         "tagline": "Analyzing disasters: Data-based contingency planning",
         "venue" : "R2",
-        "color": "#CE59E4"
+        "color": "#CE59E4",
+        "event": {
+          "moderator": ["衷嵐焜"]
+        }
       },
       {
         "time" : "13:30-14:00",
@@ -478,7 +496,10 @@
         "title": "Supervision",
         "tagline": "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns",
         "venue" : "R1",
-        "color": "#C1EB96"
+        "color": "#C1EB96",
+        "event": {
+        "moderator": ["劉致昕"]
+        }
       },
       {
         "time" : "13:00-13:30",
@@ -537,7 +558,10 @@
         "title": "Square",
         "tagline": "Overcoming black boxes: Wiki-manuals for open governance",
         "venue" : "R0",
-        "color": "#FB69B3"
+        "color": "#FB69B3",
+        "event": {
+          "moderator": ["吳銘軒"]
+        }
       },
       {
         "time" : "13:00-13:30",
@@ -596,7 +620,10 @@
         "title": "Ventilation",
         "tagline": "Demystifying pollution: Transparency in the air",
         "venue" : "R2",
-        "color": "#D8D9D8"
+        "color": "#D8D9D8",
+        "event": {
+          "moderator": ["黃雋"]
+        }
       },
       {
         "time" : "13:00-13:30",
@@ -710,7 +737,10 @@
         "tagline": "公民科技時代，運動組織的馬力再升級",
         "anchor": "蔡淑芳",
         "venue" : "R1",
-        "color": "#CE0D41"
+        "color": "#CE0D41",
+        "event": {
+          "moderator": ["蔡淑芳"]
+        }
       },
       {
         "time": "10:00-10:30",
@@ -770,7 +800,10 @@
         "tagline": "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐",
         "anchor": "高嘉良",
         "venue" : "R0",
-        "color": "#FCDE86"
+        "color": "#FCDE86",
+        "event": {
+          "moderator": ["clkao"]
+        }
       },
       {
         "time": "10:00-10:30",
@@ -837,7 +870,10 @@
         "tagline": "從資料科技與文化領域出發的開放實驗",
         "anchor": "李怡志",
         "venue" : "R2",
-        "color": "#1BADBE"
+        "color": "#1BADBE",
+        "event": {
+          "moderator": ["李怡志"]
+        }
       },
       {
         "time": "10:00-10:30",
@@ -901,7 +937,10 @@
         "tagline": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來",
         "anchor": "唐鳳",
         "venue" : "R1",
-        "color": "#F4AF3D"
+        "color": "#F4AF3D",
+        "event": {
+          "moderator": ["唐鳳"]
+        }
       },
       {
         "time" : "13:30-14:00",
@@ -974,7 +1013,10 @@
         "tagline": "同步、協作與進擊，打造跨界群眾串連的神經網絡",
         "anchor": "林祖儀",
         "venue" : "R0",
-        "color": "#449FFC"
+        "color": "#449FFC",
+        "event": {
+          "moderator": ["林祖儀"]
+        }
       },
       {
         "time" : "13:30-14:00",
@@ -1047,7 +1089,10 @@
         "tagline": "剖析災變，以數據力支援的智慧應變方案",
         "anchor": "衷嵐焜",
         "venue" : "R2",
-        "color": "#CE59E4"
+        "color": "#CE59E4",
+        "event": {
+          "moderator": ["衷嵐焜"]
+        }
       },
       {
         "time" : "13:30-14:00",
@@ -1174,7 +1219,10 @@
         "tagline": "當監督政府成為全民義務，亞洲網路草根民主的進化論",
         "anchor": "劉致昕",
         "venue" : "R1",
-        "color": "#C1EB96"
+        "color": "#C1EB96",
+        "event": {
+        "moderator": ["劉致昕"]
+        }
       },
       {
         "time" : "13:00-13:30",
@@ -1234,7 +1282,10 @@
         "tagline": "走出黑箱，開放政府的全民共筆指南",
         "anchor": "吳銘軒",
         "venue" : "R0",
-        "color": "#FB69B3"
+        "color": "#FB69B3",
+        "event": {
+          "moderator": ["吳銘軒"]
+        }
       },
       {
         "time" : "13:00-13:30",
@@ -1294,7 +1345,10 @@
         "tagline": "破解環境污染密碼，開源釋出好空氣",
         "anchor": "黃雋",
         "venue" : "R2",
-        "color": "#D8D9D8"
+        "color": "#D8D9D8",
+        "event": {
+          "moderator": ["黃雋"]
+        }
       },
       {
         "time" : "13:00-13:30",
