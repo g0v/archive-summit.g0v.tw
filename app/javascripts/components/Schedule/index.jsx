@@ -54,10 +54,18 @@ function mapTimeSlotToItems(day, value, i) {
         <div className="Schedule-time">
           {value.title}／{venue}
         </div>
-        <div className="Schedule-tagline">
-          <div>{value.tagline}</div>
-          { value.anchor && <div className="Schedule-anchor">{schedules[getLocale()].moderator}: {value.anchor}</div> }
-        </div>
+        
+        <a id={`slot-${id}`} href={`#${id}`}
+          className={cx({
+            "Schedule-tagline" : true
+          })}
+          onClick={this.setSession.bind(this, event, value.time)}>
+          
+          <div className="Schedule-main">
+            <div>{value.tagline}</div>
+            { value.anchor && <div className="Schedule-anchor">{schedules[getLocale()].moderator}: {value.anchor}</div> }
+          </div>
+        </a>
       </div>
     );
   } else {
