@@ -125,6 +125,12 @@ $breakpoint: 1000px;
   border-radius: 2px;
 }
 
+.Session-interview {
+}
+.Session-interview iframe {
+  margin-top: 20px;
+}
+
 .Session-abstract {
   margin: 20px 0;
   color: rgb(53,55,54);

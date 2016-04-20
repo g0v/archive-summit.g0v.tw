@@ -24,6 +24,12 @@ export default React.createClass({
 
     const speakers = data.speaker_key ? data.speaker_key : data.speaker ? [data.speaker] : [];
     const speakers_bio = [];
+    const speakers_interview = speakers.map( speaker => by_name[speaker] )
+      .filter( speaker => speaker && speaker.interview !== undefined )
+      .map( speaker => {
+        return <div className="Session-interview" key={`speaker_bio_${speaker.id}`} dangerouslySetInnerHTML={{__html: `<iframe width="560" height="315" src="https://www.youtube.com/embed/${speaker.interview}" frameborder="0" allowfullscreen></iframe>`}}>
+          </div>
+      });
     const speakers_profile = speakers.map( speaker => by_name[speaker] ).map( speaker => {
       const bio_text = ((speaker && getString(speaker, 'bio', locale)) || data.bio || '').replace(/\n/g, '<br/>');
       const speaker_title = speaker && getString(speaker, 'title', locale);
@@ -111,7 +117,7 @@ export default React.createClass({
                       </div>
                     ) : null
                   }
-
+                  { speakers_interview }
                   { data.abstract && <div className="Session-abstract">
                       <div className="Session-subTitle">Abstract</div>
                       <div dangerouslySetInnerHTML={{__html: data.abstract}}></div>
