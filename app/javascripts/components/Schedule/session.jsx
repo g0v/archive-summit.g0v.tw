@@ -27,7 +27,7 @@ export default React.createClass({
     const speakers_interview = speakers.map( speaker => by_name[speaker] )
       .filter( speaker => speaker && speaker.interview !== undefined )
       .map( speaker => {
-        return <div className="Session-interview" key={`speaker_bio_${speaker.id}`} dangerouslySetInnerHTML={{__html: `<iframe width="560" height="315" src="https://www.youtube.com/embed/${speaker.interview}" frameborder="0" allowfullscreen></iframe>`}}>
+        return <div className="Session-interview" key={`speaker_bio_${speaker.id}`} dangerouslySetInnerHTML={{__html: `<iframe src="https://www.youtube.com/embed/${speaker.interview}" frameborder="0" allowfullscreen></iframe>`}}>
           </div>
       });
     const speakers_profile = speakers.map( speaker => by_name[speaker] ).map( speaker => {
