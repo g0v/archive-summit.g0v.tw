@@ -68,7 +68,7 @@
       "bio_zh": "嗨！我是 Uk-Jin Yang，韓國政治新創團隊 WAGL 的全端工程師，我與團隊成員為了今年韓國大選開發了數個服務。我想運用我的程式設計技術對社會造成正面的影響。最後，我最喜歡的開發架構是 Django，歡迎大家來聊聊！",
       "nation": "Korea",
       "twitter": ""
-    },    
+    },
     {
       "id": "eybuyw",
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg",
@@ -145,6 +145,7 @@
       "title": "Sr Applications Developer",
       "bio": "Nick was a 2012 Code for America fellow, and now works with The Asia Foundation on open government and humanitarian technology. In the past he has taught with One Laptop per Child, made responsive websites for the Museum of Modern Art in New York, and made a Node script that encrypts your email with profanity.",
       "nation": "US",
+      "interview": "https://www.youtube.com/watch?v=x1KFI6ia92A",
       "twitter": "@mapmeld"
     },
     {
@@ -176,6 +177,7 @@
       "bio": "Charlotte is a civic tech enthustiast. She co-founded Voxe.org in 2012 for the French presidential election. Voxe.org is a team of innovators that build online tools that revolutionize civic engagement. We believe in the power of social innovation to help forge an informed electorate. We seek to re-shape public debate by bringing to the fore what matters most: the content of each candidate’s proposals. Voxe.org also runs happydemocracy, the civic tech weekly newsletter and is building it's new engagement app : the newswatch. Charlotte runs partnerships and communication @Voxe.org (16 countries, 3.5 million users and more than 20 media partners).",
       "bio_zh": "Charlotte 是一位公民科技愛好者。她在 2012 年法國總統大選時與夥伴共同創立了 Voxe.org。Voxe.org 是一群以打造線上工具革新公民參與的創新者，相信社會創新的力量能幫助選民握有獨立思考所需的充分資訊，藉由讓選民認知每個候選人的政見內容重塑公眾辯論。Voxe.org 同時也發行公民科技週報 happydemocracy，並正打造新的參與型 app：newswatch。Charlotte 在 Voxe.org 負責與合作夥伴的溝通與關係建立，包含十六個國家，三百五十萬用戶以及超過二十家媒體夥伴。",
       "nation": "France",
+      "interview": "https://www.youtube.com/watch?v=oWP0jO2gcUI",
       "twitter": "@charlottrichard "
     },
     {
@@ -219,6 +221,7 @@
       "bio": "Yantisa Akhadi is the Project Manager of Humanitarian OpenStreetMap Team (HOT) in Indonesia. He is currently leading 9 talented individuals to promote the use of OpenStreetMap, QGIS and InaSAFE in humanitarian response and economic development. In the past years, HOT Indonesia have been pioneering the use of open geospatial data in Disaster Risk Reduction effort throughout Indonesia.",
       "bio_zh": "楊迪薩･阿哈迪在印尼的人道開放街圖團隊（HOT）擔任專案經理。他帶領著九名出色夥伴，推廣 OpenStreetMap、QGIS 和 InaSAFE 在人道主義與經濟發展方面的應用。在過去幾年，印尼HOT首創將開放地理數據應用在印尼的防災工作。",
       "nation": "Indonesia",
+      "interview": "https://www.youtube.com/watch?v=Arg7wtGFq5E",
       "twitter": "@iyan31"
     },
     {
