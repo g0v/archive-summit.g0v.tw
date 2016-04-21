@@ -402,10 +402,11 @@
       {
         "time" : "11:30-12:00",
         "event": {
-          "title": "Keynote",
           "language": "English",
           "speaker_id": "cshirky",
-          "speaker": "Clay Shirky"
+          "speaker": "Clay Shirky",
+          "title": "Forking and Legitimacy",
+          "abstract": "Both politics and software development have the idea of separation and encapsulation, the drawing of borders around some area. In software the area is virtual -- what do different components or tools do -- and in politics the areas define groups of people -- especially parties and countries. Software, though, has characteristics of easy replicability and recombination. What might politics look like if those virtues were ported from the digital to political realm?"
         }        
       },
       {
@@ -994,7 +995,8 @@
       {
         "time" : "11:30-12:00",
         "event": {
-          "title": "鄉民又來了（暫定）",
+          "title": "政治能向軟體開發學什麼：分支及正當性",
+          "abstract": "政治和軟體開發都有分類及封裝的概念，部分領域還存有邊界。對軟體而言，領域是虛擬的，用來區分不同物件和工具用途；至於在政治上，有邊界的領域能定義群體，特別是政黨和國家。然而，軟體開發的特色是能輕易複製和重組物件。如果把這樣的特色從數位世界移植到政治場域，政治會變成什麼樣子？",
           "language": "英語",
           "speaker_id": "cshirky",
           "speaker": "Clay Shirky"
