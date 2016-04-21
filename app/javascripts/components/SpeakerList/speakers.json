@@ -107,14 +107,13 @@
     },
     {
       "id": "vkrywc",
-      "avatar": "https://pbs.twimg.com/profile_images/609112331440812034/UEkPbmP3.jpg",
+      "twitter": "@iacocoba",
       "name": "Yago Bermejo Abati",
       "organization": "LaboDemo",
       "title": "",
       "bio": "Yago Bermejo Abati I have a degree in Physics. I have worked as a teacher, as a musician and as a maker entrepreneur. Since I was a student I have been involved in Madrid in different activist movements: Self-organised protest against Irak War, cultural autonomism squatting, Critical-mass bike movement, assembly movements, alternative political parties… After 15-M movement I founded Labodemo.net an organization focused on Internet democracy. We have been researching for some years how Internet could help society to make policies in a collaborative way with direct and deliberative processes. We have created in Podemos a entire strategy involving different tools with hundreds of thousands of people participating. Actually I’m creating a new Lab connected with Madrid Council called DemIC Lab. Our goal is to improve collective intelligence in democratic Internet processes.",
       "nation": "Spain",
-      "interview": "JX3XNjq93K4",
-      "twitter": ""
+      "interview": "JX3XNjq93K4"
     },
     {
       "id": "vgidvy",
@@ -289,16 +288,18 @@
       "title": "資深工程師",
       "bio": "王景弘 經歷：普奇科技資深工程師, 威聯通科技資深產品工程師, JavaScript.tw 技術社團發起人, JSDC 前端技術人年會共同發起人",
       "nation": "Taiwan",
+      "facebook": "tonylovejava",
       "twitter": "@tonyq_tw"
     },
     {
       "id": "ygljow",
-      "avatar": "https://scontent-sjc2-1.xx.fbcdn.net/hprofile-xaf1/v/t1.0-1/p320x320/11796293_10153255844110668_2797238177900281661_n.jpg?oh=ac1e9f2912f78c309558c2e23833da28&oe=57628456",
       "name": "clkao",
+      "name_zh": "高嘉良",
       "organization": "g0v",
       "title": "",
       "bio": "clkao (高嘉良) - 喜歡寫程式、泡 ♨。參加 1997 年國際資訊奧林匹亞後，進入台大資訊系就讀，即活躍於國內外開放源碼社群，隨後旅居英國倫敦從事軟體開發及顧問工作。2012 年發起 g0v 計畫。",
       "nation": "Taiwan",
+      "facebook": "clkao",
       "twitter": "@clkao"
     },
     {
