@@ -375,10 +375,12 @@
       {
         "time": "17:15-17:30",
         "event": {
-          "title": "Premier of Taiwan",
+          "title": "“Release that data!” — a Premier’s journey into Open Data cultivation",
+          "bio": "Premier of Taiwan",
           "language": "Mandarin",
           "speaker_id": "njwjup",
-          "speaker": "Simon Chang"
+          "speaker": "Simon Chang",
+          "abstract": "<p>In four years, Simon Chang went from Minister without portfolio, to the Minister of Science and Technology, to the Vice Premier, and ultimately the Premier.<br/>Open Data, the basis for dialogue between the government and civil society, also evolved from a barren place — through intersectoral collaboration — into #1 in the world on the OKFN index.<br/>Throughout each step in the open government data process, we see Simon’s tending and care.</p><p>Looking back to the key milestones, which bittersweet stories are there for us to learn from?<br/>Looking to the future, what are the hopes and TODOs for the new administration?</p><p>— This dialogue between Premier Simon Chang and the g0v community is dedicated to all contributors to the open data efforts.</p>"
         }
       }
     ],
@@ -963,13 +965,15 @@
           "speaker_id": "eyioov",
           "speaker": "羅佩琪",
           "bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
-          "abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
+          "abstract": "<p>gov觀點：還原台灣第一個政府機關處理網路連署案的始末。</p><p>2015年9月，行政院仿效美國、英國的機制，成立《公共政策網路參與平台（join.gov.tw）》，只要網友號召5000人連署提案，被點名的部會必須在兩個月內給予正式回應。</p><p>非常幸運地，衛福部成為這個新機制下第一個爐主，在沒有前例下，踏上一段艱辛惶恐（？）的摸索期——究竟網路連署該如何處理？公務員怎麼看網路上動輒要政府「踹共」的鄉民？以及這第一個連署案「被怎麼處理」了呢？</p><p>這段充滿汗水與淚水的gov旅程，將在g0v summit與大家真、情、相、對......</p>"
         }
       },
       {
         "time": "17:15-17:30",
         "event": {
-          "title": "行政院院長",
+          "title": "「放開那個資料！」張院長的OD墾荒之旅",
+          "abstract": "<p>四年間，張善政從科技政委、科技部長、行政院副院長、當到行政院長。<br/>「開放資料」作為政府與民間對話的基礎，也從當年的荒蕪一地，經由各界協作，進化成OKFN的世界南波萬。<br/>政府開放資料的每一步躍進，都可以看見張善政的悉心灌溉與陪伴。</p><p>回首過去，那些重要的OD里程碑，背後有什麼辛酸血淚的故事？<br/>展望未來，有哪些開放資料上的未竟之志，希望新政府繼續努力？</p><p>── 這場張善政院長與g0v的對話，獻給為開放資料貢獻心力的所有沒有人。</p>",
+          "bio": "行政院院長",
           "language": "華語",
           "speaker_id": "njwjup",
           "speaker": "張善政"
