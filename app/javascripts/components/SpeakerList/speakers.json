@@ -191,7 +191,7 @@
     },
     {
       "id": "yysuyv",
-      "avatar": "",
+      "avatar": "./VenusLui.jpg",
       "name": "Venus Lui",
       "organization": "Wikimedia Hong Kong",
       "title": "Project Manager",
@@ -590,8 +590,9 @@
       "twitter": ""
     },
     {
-      "avatar": "",
+      "avatar": "./Chih-hsinLiu.jpg",
       "name": "劉致昕",
+      "name_en": "Jason Chih Hsin Lui",
       "organization": "",
       "title": "",
       "bio": "自由記者跟開咖啡店的人。曾做過海盜黨、ParliamentWatch、歐洲各國網路公民參與等系列報導，也曾被入坑鄉民有約線上直播。",
