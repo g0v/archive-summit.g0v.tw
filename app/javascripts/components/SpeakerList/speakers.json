@@ -489,15 +489,6 @@
       "twitter": "@lucien_cc"
     },
     {
-      "avatar": "./tseng.jpg",
-      "name": "曾虹文",
-      "organization": "綠色公民行動聯盟",
-      "title": "",
-      "bio": "對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。",
-      "nation": "Taiwan",
-      "twitter": ""
-    },
-    {
       "id": "yzgric",
       "avatar": "",
       "name": "蔡淑芳",
@@ -623,18 +614,17 @@
       "organization": "綠色公民行動聯盟",
       "title": "副秘書長",
       "bio": "目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。",
-      "nation": "Taiwan",
-      "twitter": ""
+      "nation": "Taiwan"
     },
     {
       "id": "ensizd",
+      "avatar": "./tseng.jpg",
       "name": "曾虹文",
       "name_en": "H.W Tseng",
       "organization": "",
       "title": "",
       "bio": "綠盟專員。愛台灣，對於台灣環境議題感到焦慮，憑藉一絲改變的希望投入環境運動。",
-      "nation": "Taiwan",
-      "twitter": ""
+      "nation": "Taiwan"
     },
     {
       "id": "vyrhlc",
