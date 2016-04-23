@@ -489,15 +489,6 @@
       "twitter": "@lucien_cc"
     },
     {
-      "avatar": "./hung.jpg",
-      "name": "洪申翰",
-      "organization": "綠色公民行動聯盟",
-      "title": "",
-      "bio": "目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。",
-      "nation": "Taiwan",
-      "twitter": ""
-    },
-    {
       "avatar": "./tseng.jpg",
       "name": "曾虹文",
       "organization": "綠色公民行動聯盟",
@@ -628,8 +619,9 @@
       "id": "jmsucb",
       "name": "洪申翰",
       "name_en": "S.H. Hung",
-      "organization": "",
-      "title": "",
+      "avatar": "./hung.jpg",
+      "organization": "綠色公民行動聯盟",
+      "title": "副秘書長",
       "bio": "目前工作於綠色公民行動聯盟，大學讀理學院，但對於科學與社會的交界有高度興趣，曾參與樂生保留運動。現多投入於能源轉型與環境運動，希望能在多重的社群與邊界中找到更多價值創造的可能。",
       "nation": "Taiwan",
       "twitter": ""
