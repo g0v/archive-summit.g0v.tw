@@ -8,9 +8,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #5D5D5D;
-}
-
-@font-face {
+}@font-face {
     font-family: 'icomoon';
     src:    url('fonts/icomoon.eot?2udnot');
     src:    url('fonts/icomoon.eot?2udnot#iefix') format('embedded-opentype'),
@@ -30,6 +28,7 @@ body {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    margin-right: 6px;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
