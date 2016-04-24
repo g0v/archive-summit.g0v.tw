@@ -4,55 +4,64 @@
       "id": "power",
       "title": "Power",
       "tagline": "Upgrading the organizing capacity of activism with civic tech",
-      "color": "#CE0D41"
+      "color": "#CE0D41",
+      "icomoon": "icon-power"
     },
     {
       "id": "foundation",
       "title": "Foundation",
       "tagline": "Global reimplementions of media, elections, governments and public decisions",
-      "color": "#FCDE86"
+      "color": "#FCDE86",
+      "icomoon": "icon-foundation"
     },
     {
       "id": "construction",
       "title": "Construction",
       "tagline": "Open-culture experiments with data and technology",
-      "color": "#1BADBE"
+      "color": "#1BADBE",
+      "icomoon": "icon-construction"
     },
     {
       "id": "blueprint",
       "title": "Blueprint",
       "tagline": "Towards digital representation: A jigsaw of open government data endeavours",
-      "color": "#F4AF3D"
+      "color": "#F4AF3D",
+      "icomoon": "icon-blueprint"
     },
     {
       "id": "wiring",
       "title": "Wiring",
       "tagline": "Intersectoral networks: Synchronizations, collaborations and demonstrations",
-      "color": "#449FFC"
+      "color": "#449FFC",
+      "icomoon": "icon-wiring"
     },
     {
       "id": "scaffold",
       "title": "Scaffold",
       "tagline": "Analyzing disasters: Data-based contingency planning",
-      "color": "#CE59E4"
+      "color": "#CE59E4",
+      "icomoon": "icon-scaffold"
     },
     {
       "id": "supervision",
       "title": "Supervision",
       "tagline": "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns",
-      "color": "#C1EB96"
+      "color": "#C1EB96",
+      "icomoon": "icon-supervision"
     },
     {
       "id": "square",
       "title": "Square",
       "tagline": "Overcoming black boxes: Wiki-manuals for open governance",
-      "color": "#FB69B3"
+      "color": "#FB69B3",
+      "icomoon": "icon-square"
     },
     {
       "id": "Ventilation",
       "title": "Ventilation",
       "tagline": "Demystifying pollution: Transparency in the air",
-      "color": "#D8D9D8"
+      "color": "#D8D9D8",
+      "icomoon": "icon-Ventilation"
     }
   ],
   "zh-TW": [
@@ -60,55 +69,64 @@
       "id": "power",
       "title": "動力",
       "tagline": "公民科技時代，運動組織的馬力再升級",
-      "color": "#CE0D41"
+      "color": "#CE0D41",
+      "icomoon": "icon-power"
     },
     {
       "id": "foundation",
       "title": "地基",
       "tagline": "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐",
-      "color": "#FCDE86"
+      "color": "#FCDE86",
+      "icomoon": "icon-foundation"
     },
     {
       "id": "construction",
       "title": "骨架",
       "tagline": "從資料科技與文化領域出發的開放實驗",
-      "color": "#1BADBE"
+      "color": "#1BADBE",
+      "icomoon": "icon-construction"
     },
     {
       "id": "blueprint",
       "title": "藍圖",
       "tagline": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來",
-      "color": "#F4AF3D"
+      "color": "#F4AF3D",
+      "icomoon": "icon-blueprint"
     },
     {
       "id": "wiring",
       "title": "配線",
       "tagline": "同步、協作與進擊，打造跨界群眾串連的神經網絡",
-      "color": "#449FFC"
+      "color": "#449FFC",
+      "icomoon": "icon-wiring"
     },
     {
       "id": "scaffold",
       "title": "鷹架",
       "tagline": "剖析災變，以數據力支援的智慧應變方案",
-      "color": "#CE59E4"
+      "color": "#CE59E4",
+      "icomoon": "icon-scaffold"
     },
     {
       "id": "supervision",
       "title": "監工",
       "tagline": "當監督政府成為全民義務，亞洲網路草根民主的進化論",
-      "color": "#C1EB96"
+      "color": "#C1EB96",
+      "icomoon": "icon-supervision"
     },
     {
       "id": "square",
       "title": "廣場",
       "tagline": "走出黑箱，開放政府的全民共筆指南",
-      "color": "#FB69B3"
+      "color": "#FB69B3",
+      "icomoon": "icon-square"
     },
     {
       "id": "Ventilation",
       "title": "空調",
       "tagline": "破解環境污染密碼，開源釋出好空氣",
-      "color": "#D8D9D8"
+      "color": "#D8D9D8",
+      "icomoon": "icon-Ventilation"
     }
   ]
 }
