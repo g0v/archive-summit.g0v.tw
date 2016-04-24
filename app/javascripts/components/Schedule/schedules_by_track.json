@@ -23,7 +23,8 @@
         "title": "Power",
         "tagline": "Upgrading the organizing capacity of activism with civic tech",
         "venue" : "R1",
-        "color": "#CE0D41"
+        "color": "#CE0D41",
+        "icomoon": "icon-power"
       },
       {
         "time" : "10:30-11:00",
@@ -70,7 +71,8 @@
         "title": "Foundation",
         "venue" : "R0",
         "tagline": "Global reimplementions of media, elections, governments and public decisions",
-        "color": "#FCDE86"
+        "color": "#FCDE86",
+        "icomoon": "icon-foundation"
       },
       {
         "time" : "10:30-11:00",
@@ -117,7 +119,8 @@
         "title": "Construction",
         "tagline": "Open-culture experiments with data and technology",
         "venue" : "R2",
-        "color": "#1BADBE"
+        "color": "#1BADBE",
+        "icomoon": "icon-construction"
       },
       {
         "time" : "10:30-11:00",
@@ -169,7 +172,8 @@
         "title": "Blueprint",
         "tagline": "Towards digital representation: A jigsaw of open government data endeavours",
         "venue" : "R1",
-        "color": "#F4AF3D"
+        "color": "#F4AF3D",
+        "icomoon": "icon-blueprint"
       },
       {
         "time" : "13:30-14:00",
@@ -240,7 +244,8 @@
         "title": "Wiring",
         "tagline": "Intersectoral networks: Synchronizations, collaborations and demonstrations",
         "venue" : "R0",
-        "color": "#449FFC"
+        "color": "#449FFC",
+        "icomoon": "icon-wiring"
       },
       {
         "time" : "13:30-14:00",
@@ -311,7 +316,8 @@
         "title": "Scaffold",
         "tagline": "Analyzing disasters: Data-based contingency planning",
         "venue" : "R2",
-        "color": "#CE59E4"
+        "color": "#CE59E4",
+        "icomoon": "icon-scaffold"
       },
       {
         "time" : "13:30-14:00",
@@ -429,7 +435,8 @@
         "title": "Supervision",
         "tagline": "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns",
         "venue" : "R1",
-        "color": "#C1EB96"
+        "color": "#C1EB96",
+        "icomoon": "icon-supervision"
       },
       {
         "time" : "13:00-13:30",
@@ -488,7 +495,8 @@
         "title": "Square",
         "tagline": "Overcoming black boxes: Wiki-manuals for open governance",
         "venue" : "R0",
-        "color": "#FB69B3"
+        "color": "#FB69B3",
+        "icomoon": "icon-square"
       },
       {
         "time" : "13:00-13:30",
@@ -546,7 +554,8 @@
         "title": "Ventilation",
         "tagline": "Demystifying pollution: Transparency in the air",
         "venue" : "R2",
-        "color": "#D8D9D8"
+        "color": "#D8D9D8",
+        "icomoon": "icon-Ventilation"
       },
       {
         "time" : "13:00-13:30",
@@ -657,7 +666,8 @@
         "title": "動力",
         "tagline": "公民科技時代，運動組織的馬力再升級",
         "venue" : "R1",
-        "color": "#CE0D41"
+        "color": "#CE0D41",
+        "icomoon": "icon-power"
       },
       {
         "time": "10:00-10:30",
@@ -716,7 +726,8 @@
         "title": "地基",
         "tagline": "媒體、政黨、政府與公眾決策，一窺全球開放精神的基礎建設實踐",
         "venue" : "R0",
-        "color": "#FCDE86"
+        "color": "#FCDE86",
+        "icomoon": "icon-foundation"
       },
       {
         "time": "10:00-10:30",
@@ -775,7 +786,8 @@
         "title": "骨架",
         "tagline": "從資料科技與文化領域出發的開放實驗",
         "venue" : "R2",
-        "color": "#1BADBE"
+        "color": "#1BADBE",
+        "icomoon": "icon-construction"
       },
       {
         "time": "10:00-10:30",
@@ -838,7 +850,8 @@
         "title": "藍圖",
         "tagline": "拼湊政府公開資料的圖像，數位代議民主的轉型與未來",
         "venue" : "R1",
-        "color": "#F4AF3D"
+        "color": "#F4AF3D",
+        "icomoon": "icon-blueprint"
       },
       {
         "time" : "13:30-14:00",
@@ -909,7 +922,8 @@
         "title": "配線",
         "tagline": "同步、協作與進擊，打造跨界群眾串連的神經網絡",
         "venue" : "R0",
-        "color": "#449FFC"
+        "color": "#449FFC",
+        "icomoon": "icon-wiring"
       },
       {
         "time" : "13:30-14:00",
@@ -980,7 +994,8 @@
         "title": "鷹架",
         "tagline": "剖析災變，以數據力支援的智慧應變方案",
         "venue" : "R2",
-        "color": "#CE59E4"
+        "color": "#CE59E4",
+        "icomoon": "icon-scaffold"
       },
       {
         "time" : "13:30-14:00",
@@ -1097,7 +1112,8 @@
         "title": "監工",
         "tagline": "當監督政府成為全民義務，亞洲網路草根民主的進化論",
         "venue" : "R1",
-        "color": "#C1EB96"
+        "color": "#C1EB96",
+        "icomoon": "icon-supervision"
       },
       {
         "time" : "13:00-13:30",
@@ -1156,7 +1172,8 @@
         "title": "廣場",
         "tagline": "走出黑箱，開放政府的全民共筆指南",
         "venue" : "R0",
-        "color": "#FB69B3"
+        "color": "#FB69B3",
+        "icomoon": "icon-square"
       },
       {
         "time" : "13:00-13:30",
@@ -1214,7 +1231,8 @@
         "title": "空調",
         "tagline": "破解環境污染密碼，開源釋出好空氣",
         "venue" : "R2",
-        "color": "#D8D9D8"
+        "color": "#D8D9D8",
+        "icomoon": "icon-Ventilation"
       },
       {
         "time" : "13:00-13:30",

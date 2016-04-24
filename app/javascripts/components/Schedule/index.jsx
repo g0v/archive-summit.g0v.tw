@@ -27,6 +27,7 @@ function mapTimeSlotToItems(day, value, i) {
         style={{ color: '#FFF', backgroundColor: value.color}}
       >
         <div className="Schedule-time">
+          <span className={value.icomoon}></span>
           {value.title}／{venue}
         </div>
         <div className="Schedule-tagline">

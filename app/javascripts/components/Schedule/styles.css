@@ -33,6 +33,11 @@ body.mobileScrollLock {
   overflow: hidden;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+  margin-right: 6px;
+}
+
+
 @media screen and (min-width: $breakpoint) {
   body.mobileScrollLock {
     overflow: auto;
