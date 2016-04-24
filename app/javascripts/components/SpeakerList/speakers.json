@@ -662,7 +662,9 @@
     {
       "id": "hoho",
       "name": "何建明",
+      "name_en": "Jan-Ming Ho",
       "organization": "中央研究院資訊科學所研究員、新境界文教基金會智慧組召集人",
+      "organization_en": "Institue of Information Science, Academia Sinica / New Frontier Foundation",
       "title": "",
       "bio": "何建明教授為台灣自由軟體運動的早期參與者，協助舉辦台灣第一個開源會議 (OSW 1999)，曾擔任過國科會企劃處處長，推動 SBIR、偏鄉數位應用推動計畫，以及主持自由軟體鑄造場計劃。現為中研院資訊所研究員、吳三連台灣史料基金會、開拓文教基金會董事。",
       "nation": "TW"
