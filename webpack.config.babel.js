@@ -6,6 +6,23 @@ import autoprefixer from "autoprefixer";
 
 import {basic} from "./jld.js";
 
+var plugins = [
+  new ExtractTextPlugin("[name].[hash].css", {disable: process.env.NODE_ENV !== 'production'}), // Disable extract-text-plugin during development for hot-reloading CSS.
+  new HtmlWebpackPlugin({
+    title: "啥米零時政府 g0v 2016 summit",
+    jld: basic,
+    description: "2014 之後又跳過了一整年，g0v summit 2016 再次邀請全球公民技術社群來分享公務員，技術人員，和非政府組織工作人員之間的協作經驗。我們很高興邀請到 Filipe Heusser 擔任今年的專題演講者，他也是 the Chilean NGO Ciudadano Inteligente 的創辦人和前股東，以及 Berkman Center 的成員。",
+    filename: "index.html",
+    template: "app/templates/index.html"
+  }),
+];
+
+if (/production/.test(process.env.NODE_ENV)) {
+    plugins = plugins.concat([
+      new webpack.optimize.UglifyJsPlugin()
+    ]);
+}
+
 export default {
 
   entry: {
@@ -70,14 +87,5 @@ export default {
     historyApiFallback: {index: '/2016/'},
   },
 
-  plugins: [
-    new ExtractTextPlugin("[name].[hash].css", {disable: process.env.NODE_ENV !== 'production'}), // Disable extract-text-plugin during development for hot-reloading CSS.
-    new HtmlWebpackPlugin({
-      title: "啥米零時政府 g0v 2016 summit",
-      jld: basic,
-      description: "2014 之後又跳過了一整年，g0v summit 2016 再次邀請全球公民技術社群來分享公務員，技術人員，和非政府組織工作人員之間的協作經驗。我們很高興邀請到 Filipe Heusser 擔任今年的專題演講者，他也是 the Chilean NGO Ciudadano Inteligente 的創辦人和前股東，以及 Berkman Center 的成員。",
-      filename: "index.html",
-      template: "app/templates/index.html"
-    }),
-  ],
+  plugins,
 };

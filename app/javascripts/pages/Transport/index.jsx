@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { getLocale } from "javascripts/locale";
 import transports from "jsons/transport.json";
+import hotels from "jsons/hotels.json";
 import styles from "./styles.css";
 
 class Transport extends Component {
@@ -15,6 +16,21 @@ class Transport extends Component {
                         <section className={styles.section}>
                           <h3 className={styles.header}>{cat.title}</h3>
                           <div>{ cat.detail }</div>
+                        </section>
+                      )
+                    })
+                  }
+                  <h2>{hotels[getLocale()].title}</h2>
+                  {
+                    hotels[getLocale()].entries.map( hotel => {
+                      return (
+                        <section className={styles.section}>
+                          <h3 className={styles.header}>{hotel.name}</h3>
+                          <div>
+                            {hotels[getLocale()].site}{hotels[getLocale()].sep}<a href="{hotel.site}" target="_blank">{hotel.site}</a><br/>
+                            {hotels[getLocale()].price}{hotels[getLocale()].sep}{hotel.price} <br/>
+                            {hotels[getLocale()].distance}{hotels[getLocale()].sep}{hotel.distance}
+                          </div>
                         </section>
                       )
                     })

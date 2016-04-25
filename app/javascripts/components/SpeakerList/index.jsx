@@ -1,16 +1,9 @@
 import React, { Component } from "react";
 import { getLocale, getString } from "javascripts/locale";
+import avatarURL from "javascripts/helpers/avatar";
+import Lightbox from "javascripts/components/Lightbox";
 import styles from "./styles.css";
 import speakers from "./speakers.json";
-
-export function avatarURL(speaker) {
-  return speaker.avatar ?
-    speaker.avatar.match(/^\./) ? require(speaker.avatar) : speaker.avatar
-                                : (speaker.twitter ? 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') :
-                                   speaker.facebook ? 'https://avatars.io/facebook/' + speaker.facebook :
-                                  require('./default.png'));
-}
-
 
 class SpeakerList extends Component {
   speaker = (speaker) => {
@@ -19,22 +12,23 @@ class SpeakerList extends Component {
     const [locale] = getLocale().split('-');
     return (
       <div className={styles.speaker} key={speaker.name} >
-        <img className={styles.avatar} src={avatar} />
-          <div className={styles.name}>{getString(speaker, 'name', locale)}</div>
-            { speaker.title &&
-              <div className={styles.title}>{getString(speaker, 'title', locale)}</div>
-            }
-            { speaker.organization &&
-              <div className={styles.organization}>{getString(speaker, 'organization', locale)}</div>
-            }
+        <a href="#" onClick={this.showBio.bind(this, speaker)}>
+          <img className={styles.avatar} src={avatar} />
+        </a>
+        <div className={styles.name}>{getString(speaker, 'name', locale)}</div>
+        { speaker.title && <div className={styles.title}>{getString(speaker, 'title', locale)}</div> }
+        { speaker.organization && <div className={styles.organization}>{getString(speaker, 'organization', locale)}</div> }
       </div>
     );
-    // Make this into lightbox
-    // <p className={styles.bio} dangerouslySetInnerHTML={{__html: bio}}></p>
   }
 
   sortFunc = (a,b) => {
     return a.name.localeCompare(b.name);
+  }
+
+  showBio = (speaker, e) => {
+    e.preventDefault();
+    this.refs.lightbox.setState({ show: true, speaker: speaker });
   }
 
   render() {
@@ -43,6 +37,7 @@ class SpeakerList extends Component {
         <h2 className={styles.header}>講者</h2>
         <div>{ speakers['en-US'].filter((s) => s.featured).sort(this.sortFunc).map(this.speaker) }</div>
         <div>{ speakers['en-US'].filter((s) => !s.featured).sort(this.sortFunc).map(this.speaker) }</div>
+        <Lightbox ref="lightbox" />
       </div>
     );
   }

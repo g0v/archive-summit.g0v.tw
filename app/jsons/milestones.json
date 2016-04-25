@@ -6,6 +6,11 @@
         "range": ["2016/4/1 01:00UTC", "2016/4/15"],
         "title": "Register Now: Regular Tickets (US$36)",
         "url": "http://g0v-summit2016.kktix.cc/events/conference"
+      },
+      {
+        "range": ["2016/4/27 04:00UTC", "2016/5/4"],
+        "title": "Register Now: Late Bird Tickets (US$36)",
+        "url": "http://g0v-summit2016.kktix.cc/events/conference"
       }
     ],
     "media": "Media contact: ",
@@ -17,9 +22,14 @@
   "zh-TW": {
     "header": "時間表",
     "milestones": [
-    {
+      {
         "range": ["2016/4/1 09:00CST", "2016/4/15"],
         "title": "我要參加！一般票 (TW$1200)",
+        "url": "http://g0v-summit2016.kktix.cc/events/conference"
+      },
+      {
+        "range": ["2016/4/27 12:00CST", "2016/5/04"],
+        "title": "我要參加！野生票 (TW$1200)",
         "url": "http://g0v-summit2016.kktix.cc/events/conference"
       }
     ],

@@ -37,11 +37,6 @@
 .title {
 }
 
-.bio {
-  margin-top: 0;
-  font-size: 12px;
-}
-
 @media screen and (max-width: 430px) {
   .speaker {
     lost-column: 1/3;
