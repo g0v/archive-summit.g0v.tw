@@ -4,10 +4,7 @@ import { StaffList } from "javascripts/components"
 
 class Staff extends Component {
   render() {
-    return (
-        <div>
-        </div>
-    );
+    return (<StaffList />);
   }
 };
 
