@@ -6,7 +6,7 @@ $breakpoint: 1000px;
   width: 100%;
   height: 100%;
   position: relative;
-
+  text-align: left;
 }
 .Session a, .Session a:visited{
   color: rgb(153,155,154);
