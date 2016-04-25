@@ -7,7 +7,6 @@ import speakers from "./speakers.json";
 
 class SpeakerList extends Component {
   speaker = (speaker) => {
-    const bio = speaker.bio.replace(/\n/g, '<br/>');
     const avatar = avatarURL(speaker);
     const [locale] = getLocale().split('-');
     return (
@@ -23,7 +22,8 @@ class SpeakerList extends Component {
   }
 
   sortFunc = (a,b) => {
-    return a.name.localeCompare(b.name);
+    const [locale] = getLocale().split('-');
+    return getString(a, 'name', locale).localeCompare(getString(b, 'name', locale));
   }
 
   showBio = (speaker, e) => {
