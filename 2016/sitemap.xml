@@ -4,4 +4,7 @@
 <url> <loc>http://summit.g0v.org/2016/schedules</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://summit.g0v.org/2016/speakers</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://summit.g0v.org/2016/sponsors</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://summit.g0v.org/2016/transport</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://summit.g0v.org/2016/live</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://summit.g0v.org/2016/staff</loc> <changefreq>weekly</changefreq> <priority>0.7</priority> </url>
 </urlset>
