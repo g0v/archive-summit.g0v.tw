@@ -17,7 +17,7 @@ class Header extends Component {
     this.setState({
       offsetWidth: this.refs.header.offsetWidth
     });
-    if (this.refs.header.offsetWidth <= 830) {
+    if (this.refs.header.offsetWidth <= 1025) {
       this.setState({ hiddenMenu: true, });
     }
     window.addEventListener('resize', this.handleResize.bind(this));
@@ -29,9 +29,9 @@ class Header extends Component {
     this.setState({
       offsetWidth: this.refs.header.offsetWidth
     });
-    if (this.state.hiddenMenu && this.refs.header.offsetWidth > 830) {
+    if (this.state.hiddenMenu && this.refs.header.offsetWidth > 1025) {
       this.setState({ hiddenMenu: false });
-    } else if (!this.state.hiddenMenu && this.refs.header.offsetWidth <= 830) {
+    } else if (!this.state.hiddenMenu && this.refs.header.offsetWidth <= 1025) {
       this.setState({ hiddenMenu: true });
     }
   }
@@ -79,7 +79,7 @@ class Header extends Component {
           </div>
           {
             do {
-              if (this.state.offsetWidth >= 930) {
+              if (this.state.offsetWidth >= 1025) {
                 <Menu />
               }
             }
@@ -87,7 +87,7 @@ class Header extends Component {
         </div>
         {
           do {
-            if (!this.state.hiddenMenu && this.state.offsetWidth < 930) {
+            if (!this.state.hiddenMenu && this.state.offsetWidth < 1025) {
               <Menu />
             }
           }
