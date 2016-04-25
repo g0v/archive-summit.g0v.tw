@@ -30,10 +30,10 @@ Muka 雁子 子龍 DennyHuang
 # 場務組
 
 MouseMS 阿貓 麵包 Jeff 阿吉
-Anna 阿強 運川 James RubyLin
-Kevin-WY 竣翔 Vagabond 下午 AllenChou
-Ming Gent 吳佳玲 Jeremy 皮皮
-Juanna 魚丸 阿奇 負負 Zorro
+Anna 阿強 運川 James Kevin-WY
+竣翔 Vagabond 下午 AllenChou Ming
+Gent 吳佳玲 Jeremy 皮皮 Juanna
+魚丸 阿奇 負負 Zorro
 
 # 口譯組
 
@@ -52,7 +52,7 @@ YuTin Steven SHINE Henry Stella
 
 # 記錄組
 
-CJOKER 丞相 othree 三子 大助
+Orange CJOKER 丞相 othree 三子 大助
 
 # 宣傳公關組
 
