@@ -34,6 +34,18 @@ const PAGES = [{
   path: 'sponsors',
   title: '贊助商',
   ld: sponsors
+}, {
+  path: 'transport',
+  title: '交通',
+  ld: basic
+}, {
+  path: 'live',
+  title: '直播',
+  ld: basic
+}, {
+  path: 'staff',
+  title: '工作人員',
+  ld: basic
 }]
 
 
