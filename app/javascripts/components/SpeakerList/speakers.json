@@ -45,7 +45,8 @@
       "bio": "Colin is founder of Seattle based startup http://pol.is, a web app that leverages the real time web, interactive data visualization and machine learning to gather sentiment in an organic, emergent way. Colin's primary focus is user product design, information architecture and interactive data visualization. He has also designed, architected and built client side applications for some of the largest brands in the world.  He speaks regularly in the United States and abroad at meetups and conferences, including appearances at Reactive2015 in Slovakia, By the Crowd in Korea, and CSSConf in NYC.  Colin lives on Whidbey Island, near Seattle, with his wife Christie and two wonderful little boys.",
       "bio_zh": "Colin 是西雅圖新創公司 Polis Technology Inc.的創辦人。Pol.is 是一個網路應用程式，專門利用網路的即時特性、互動資訊視覺化以及機器學習，讓蒐集情緒變得更有機而自然。Colin的主要工作是使用者商品設計、資訊架構以及互動式資訊視覺化。他同時也替一些世界知名品牌設計、規劃、打造客戶端的應用程式。他經常在美國及世界各地的聚會與會議中演講，包括在斯洛伐克的 Reactive 2015、韓國的 By the Crowd 以及紐約的 CSSConf。Colin 與其配 偶Christie 和兩個可愛的兒子住在靠近西雅圖的 Whidbey Island。",
       "nation": "US",
-      "twitter": "@colinmegill"
+      "twitter": "@colinmegill",
+      "interview": "fZCHL7_xY48",
     },
     {
       "id": "vypsuv",
@@ -56,7 +57,8 @@
       "bio": "I'm a data journalist/civic hacker at WAGL, a civic tech incubator in Korea. I have a passion for data-driven checks on political power. My recent projects include a parliamentary monitoring/civic involvement site and a Voter Advice Application (VAA) for the Korean general elections.",
       "bio_zh": "我是一個數據記者也是一個公民駭客，參與韓國公民科技孵化器 WAGL（We All Govern Lab）。我的熱衷於用數據檢驗政治權力。我最近的專案包括監督議會的公民參與網站以及為韓國大選所做的選民諮詢應用平台（Voter Advice Application）。",
       "nation": "Korea",
-      "twitter": ""
+      "twitter": "",
+      "interview": "fpE9LsRXVTs"
     },
     {
       "id": "vypsuz",
@@ -198,7 +200,8 @@
       "title": "Project Manager",
       "bio": "Venus Lui is the Project Manager of Wikimedia Hong Kong. She works on the Wikipedia Education Program which is related to literature and linguistics and also the GLAM (Galleries, Libraries, Archives and Museums) Project in Hong Kong. In 2015, she served as the Program Committee of GLAM-Wiki 2015, a conference about projects by GLAMs in collaboration with Wikimedia and/or that have another open knowledge component.",
       "nation": "Hong Kong",
-      "twitter": ""
+      "twitter": "",
+      "interview": "FSZncidymhc"
     },
     {
       "id": "qsdwpr",
