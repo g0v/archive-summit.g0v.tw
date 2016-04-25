@@ -26,6 +26,7 @@
         "tagline": "Upgrading the organizing capacity of activism with civic tech",
         "venue" : "R1",
         "color": "#CE0D41",
+        "icomoon": "icon-power",
         "event": {
           "moderator": ["蔡淑芳"]
         }
@@ -88,6 +89,7 @@
         "venue" : "R0",
         "tagline": "Global reimplementions of media, elections, governments and public decisions",
         "color": "#FCDE86",
+        "icomoon": "icon-foundation",
         "event": {
           "moderator": ["clkao"]
         }
@@ -149,6 +151,7 @@
         "tagline": "Open-culture experiments with data and technology",
         "venue" : "R2",
         "color": "#1BADBE",
+        "icomoon": "icon-construction",
         "event": {
           "moderator": ["李怡志"]
         }
@@ -216,6 +219,7 @@
         "tagline": "Towards digital representation: A jigsaw of open government data endeavours",
         "venue" : "R1",
         "color": "#F4AF3D",
+        "icomoon": "icon-blueprint",
         "event": {
           "moderator": ["唐鳳"]
         }
@@ -291,6 +295,7 @@
         "tagline": "Intersectoral networks: Synchronizations, collaborations and demonstrations",
         "venue" : "R0",
         "color": "#449FFC",
+        "icomoon": "icon-wiring",
         "event": {
           "moderator": ["林祖儀"]
         }
@@ -366,6 +371,7 @@
         "tagline": "Analyzing disasters: Data-based contingency planning",
         "venue" : "R2",
         "color": "#CE59E4",
+        "icomoon": "icon-scaffold",
         "event": {
           "moderator": ["衷嵐焜"]
         }
@@ -497,6 +503,7 @@
         "tagline": "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns",
         "venue" : "R1",
         "color": "#C1EB96",
+        "icomoon": "icon-supervision",
         "event": {
         "moderator": ["劉致昕"]
         }
@@ -559,6 +566,7 @@
         "tagline": "Overcoming black boxes: Wiki-manuals for open governance",
         "venue" : "R0",
         "color": "#FB69B3",
+        "icomoon": "icon-square",
         "event": {
           "moderator": ["吳銘軒"]
         }
@@ -621,6 +629,7 @@
         "tagline": "Demystifying pollution: Transparency in the air",
         "venue" : "R2",
         "color": "#D8D9D8",
+        "icomoon": "icon-Ventilation",
         "event": {
           "moderator": ["黃雋"]
         }
@@ -745,6 +754,7 @@
         "anchor": "蔡淑芳",
         "venue" : "R1",
         "color": "#CE0D41",
+        "icomoon": "icon-power",
         "event": {
           "moderator": ["蔡淑芳"]
         }
@@ -810,7 +820,8 @@
         "color": "#FCDE86",
         "event": {
           "moderator": ["clkao"]
-        }
+        },
+        "icomoon": "icon-foundation"
       },
       {
         "time": "10:00-10:30",
@@ -871,6 +882,7 @@
         "anchor": "李怡志",
         "venue" : "R2",
         "color": "#1BADBE",
+        "icomoon": "icon-construction",
         "event": {
           "moderator": ["李怡志"]
         }
@@ -938,6 +950,7 @@
         "anchor": "唐鳳",
         "venue" : "R1",
         "color": "#F4AF3D",
+        "icomoon": "icon-blueprint",
         "event": {
           "moderator": ["唐鳳"]
         }
@@ -1014,6 +1027,7 @@
         "anchor": "林祖儀",
         "venue" : "R0",
         "color": "#449FFC",
+        "icomoon": "icon-wiring",
         "event": {
           "moderator": ["林祖儀"]
         }
@@ -1090,6 +1104,7 @@
         "anchor": "衷嵐焜",
         "venue" : "R2",
         "color": "#CE59E4",
+        "icomoon": "icon-scaffold",
         "event": {
           "moderator": ["衷嵐焜"]
         }
@@ -1221,6 +1236,7 @@
         "anchor": "劉致昕",
         "venue" : "R1",
         "color": "#C1EB96",
+        "icomoon": "icon-supervision",
         "event": {
         "moderator": ["劉致昕"]
         }
@@ -1284,6 +1300,7 @@
         "anchor": "吳銘軒",
         "venue" : "R0",
         "color": "#FB69B3",
+        "icomoon": "icon-square",
         "event": {
           "moderator": ["吳銘軒"]
         }
@@ -1347,6 +1364,7 @@
         "anchor": "黃雋",
         "venue" : "R2",
         "color": "#D8D9D8",
+        "icomoon": "icon-Ventilation",
         "event": {
           "moderator": ["黃雋"]
         }
