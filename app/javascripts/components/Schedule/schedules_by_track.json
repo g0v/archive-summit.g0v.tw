@@ -26,6 +26,7 @@
         "tagline": "Upgrading the organizing capacity of activism with civic tech",
         "venue" : "R1",
         "color": "#CE0D41",
+        "icomoon": "icon-power",
         "event": {
           "moderator": ["蔡淑芳"]
         }
@@ -88,6 +89,7 @@
         "venue" : "R0",
         "tagline": "Global reimplementions of media, elections, governments and public decisions",
         "color": "#FCDE86",
+        "icomoon": "icon-foundation",
         "event": {
           "moderator": ["clkao"]
         }
@@ -149,6 +151,7 @@
         "tagline": "Open-culture experiments with data and technology",
         "venue" : "R2",
         "color": "#1BADBE",
+        "icomoon": "icon-construction",
         "event": {
           "moderator": ["李怡志"]
         }
@@ -216,6 +219,7 @@
         "tagline": "Towards digital representation: A jigsaw of open government data endeavours",
         "venue" : "R1",
         "color": "#F4AF3D",
+        "icomoon": "icon-blueprint",
         "event": {
           "moderator": ["唐鳳"]
         }
@@ -291,6 +295,7 @@
         "tagline": "Intersectoral networks: Synchronizations, collaborations and demonstrations",
         "venue" : "R0",
         "color": "#449FFC",
+        "icomoon": "icon-wiring",
         "event": {
           "moderator": ["林祖儀"]
         }
@@ -366,6 +371,7 @@
         "tagline": "Analyzing disasters: Data-based contingency planning",
         "venue" : "R2",
         "color": "#CE59E4",
+        "icomoon": "icon-scaffold",
         "event": {
           "moderator": ["衷嵐焜"]
         }
@@ -439,7 +445,7 @@
         "time": "16:45-17:00",
         "event": {
           "title": "Code for All – Civic Tech around the World",
-          "speaker": " Julia Kloiber",
+          "speaker": "Julia Kloiber",
           "abstract": "<p>Coding for the public good is a global movement, from the US to Japan, from Mexico, to Pakistan developers are using their skills to hold government to account and to make life easier for all of us. Having built up the Code for Germany network, and had the opportunity to be a key part of the Code for All network, I want to take a look at what we've learned as a community so far.</p><p>I want to take the audience on a journey through some of the best practices of the international Code for All community. On the basis of those examples I want to discuss what makes a good civic tech project. Why are some approaches better than others? What role does the user play in civic tech and how can we successful replicate projects?</p>"
         }
       },
@@ -455,9 +461,10 @@
       {
         "time": "17:15-17:30",
         "event": {
-          "title": "Premier of Taiwan",
+          "title": "“Release that data!” — a Premier’s journey into Open Data cultivation",
           "speaker": "Simon Chang",
-          "speaker_key": ["張善政"]
+          "speaker_key": ["張善政"],
+          "abstract": "<p>In four years, Simon Chang went from Minister without portfolio, to the Minister of Science and Technology, to the Vice Premier, and ultimately the Premier.<br/>Open Data, the basis for dialogue between the government and civil society, also evolved from a barren place — through intersectoral collaboration — into #1 in the world on the OKFN index.<br/>Throughout each step in the open government data process, we see Simon’s tending and care.</p><p>Looking back to the key milestones, which bittersweet stories are there for us to learn from?<br/>Looking to the future, what are the hopes and TODOs for the new administration?</p><p>— This dialogue between Premier Simon Chang and the g0v community is dedicated to all contributors to the open data efforts.</p>"
         }
       }
     ],
@@ -496,6 +503,7 @@
         "tagline": "Crowd-nightwatch: Evolution of Asia's grassroot oversight campaigns",
         "venue" : "R1",
         "color": "#C1EB96",
+        "icomoon": "icon-supervision",
         "event": {
         "moderator": ["劉致昕"]
         }
@@ -558,6 +566,7 @@
         "tagline": "Overcoming black boxes: Wiki-manuals for open governance",
         "venue" : "R0",
         "color": "#FB69B3",
+        "icomoon": "icon-square",
         "event": {
           "moderator": ["吳銘軒"]
         }
@@ -620,6 +629,7 @@
         "tagline": "Demystifying pollution: Transparency in the air",
         "venue" : "R2",
         "color": "#D8D9D8",
+        "icomoon": "icon-Ventilation",
         "event": {
           "moderator": ["黃雋"]
         }
@@ -697,7 +707,14 @@
       },
       {
         "time": "16:15-16:30",
-        "event": "TBA"
+        "event": {
+          "title": "To take root, to innovate and to participate: Towards sustainable ecosystems",
+          "language": "Mandarin",
+          "speaker_id": "hoho",
+          "speaker_key": ["何建明"],
+          "speaker": "Jan-Ming Ho",
+          "abstract": "<p>In recent years, there has been a rapid development of Internet-related technologies, including the rise of cloud computing, big data analytics and IoT. In addition, huge volumes of source code, data and content from various fields have opened up and continued to accumulate on the Internet. As thresholds for the use of information and technology become massively reduced, online services have also blossomed.</p><p>The g0v community promotes and implements open government and open data technologies, ensuring the transparency of government decision-making and administration. These actions were met with positive responses from the Executive Yuan and its various ministries, including the community’s participation in the development of relevant open government data policies and technical assistance. Government ministries are progressively releasing open data. They have started introducing machine-readable forms and organising activities — such as bounty programs — in order to encourage all sectors to compile and perform value-added analyses.</p><p>We will explore how the new government will receive and tabulate existing results, challenges previously encountered, and the difficulties associated with regional promotion; we will seek to create a regulatory environment that allows each level of government to be able to invite the community to take part in collaborative analyses and problem-solving; we will also examine and plan sustainable business models.</p><p>Furthermore, we anticipate that the central and local authorities, communities, universities, and industries will continue to collaboratively move forward, working together to promote smart government — through sustainable development of innovative service ecosystems.</p>"
+        }
       },
       {
         "time" : "16:30-17:30",
@@ -737,6 +754,7 @@
         "anchor": "蔡淑芳",
         "venue" : "R1",
         "color": "#CE0D41",
+        "icomoon": "icon-power",
         "event": {
           "moderator": ["蔡淑芳"]
         }
@@ -802,7 +820,8 @@
         "color": "#FCDE86",
         "event": {
           "moderator": ["clkao"]
-        }
+        },
+        "icomoon": "icon-foundation"
       },
       {
         "time": "10:00-10:30",
@@ -863,6 +882,7 @@
         "anchor": "李怡志",
         "venue" : "R2",
         "color": "#1BADBE",
+        "icomoon": "icon-construction",
         "event": {
           "moderator": ["李怡志"]
         }
@@ -930,6 +950,7 @@
         "anchor": "唐鳳",
         "venue" : "R1",
         "color": "#F4AF3D",
+        "icomoon": "icon-blueprint",
         "event": {
           "moderator": ["唐鳳"]
         }
@@ -1006,6 +1027,7 @@
         "anchor": "林祖儀",
         "venue" : "R0",
         "color": "#449FFC",
+        "icomoon": "icon-wiring",
         "event": {
           "moderator": ["林祖儀"]
         }
@@ -1057,7 +1079,7 @@
           "venue" : "R0",
           "category" : "wiring",
           "language": "",
-          "speaker": "ipa & ETBlue",
+          "speaker": "瞿筱葳 ipa & 藍一婷 ETBlue",
           "speaker_key": ["瞿筱葳", "藍一婷"],
           "title": "謎之 g0v 開放跨界？Blupa 跨界量表與案例",
           "bio": "<p>ipa 瞿筱葳<ul><li>g0v 沒有人</li><li>文字/影像工作者</li><li>反黑箱服貿行動參與者</li><li>憲餅廚房共同發起人</li></ul>關鍵字：社運、媒體、紀錄片</p><br/><p>藍一婷 ETBlue<ul><li>g0v 動民主專案參與者</li><li>反黑箱服貿行動參與者</li><li>公民憲政動推動聯盟工具人</li><li>開放文化基金會工具人</li></ul>關鍵字：插畫、UI、前端</p>",
@@ -1082,6 +1104,7 @@
         "anchor": "衷嵐焜",
         "venue" : "R2",
         "color": "#CE59E4",
+        "icomoon": "icon-scaffold",
         "event": {
           "moderator": ["衷嵐焜"]
         }
@@ -1164,13 +1187,15 @@
           "title": "從 g0v 到 gov -- 潛入衛福部 400 天",
           "speaker": "羅佩琪",
           "bio": "<p>病後人生一站式服務網站長，2015年3月起在衛福部Gap Year。</p>",
-          "abstract": "<p>叩叩叩，你知道 gov 怎麼看 g0v 嗎？<br/><br/>當公務員第一次使用 hackfoldr，他們說的第一句話竟然是......？<br/><br/>　參加完 g0v 大松，我的公務員同事這樣跟我說：(消音)......？<br/><br/>潛入衛福部 400 天的第一手辛辣觀察，邀請大家一起了解 gov 撞上 g0v 爆發的小宇宙~~~</p>"
+          "abstract": "<p>gov觀點：還原台灣第一個政府機關處理網路連署案的始末。</p><p>2015年9月，行政院仿效美國、英國的機制，成立《公共政策網路參與平台（join.gov.tw）》，只要網友號召5000人連署提案，被點名的部會必須在兩個月內給予正式回應。</p><p>非常幸運地，衛福部成為這個新機制下第一個爐主，在沒有前例下，踏上一段艱辛惶恐（？）的摸索期——究竟網路連署該如何處理？公務員怎麼看網路上動輒要政府「踹共」的鄉民？以及這第一個連署案「被怎麼處理」了呢？</p><p>這段充滿汗水與淚水的gov旅程，將在g0v summit與大家真、情、相、對......</p>"
         }
       },
       {
         "time": "17:15-17:30",
         "event": {
-          "title": "行政院院長",
+          "title": "「放開那個資料！」張院長的開放資料墾荒之旅",
+          "abstract": "<p>四年間，張善政從科技政委、科技部長、行政院副院長、當到行政院長。<br/>「開放資料」作為政府與民間對話的基礎，也從當年的荒蕪一地，經由各界協作，進化成OKFN的世界南波萬。<br/>政府開放資料的每一步躍進，都可以看見張善政的悉心灌溉與陪伴。</p><p>回首過去那些重要的里程碑，背後有什麼辛酸血淚的故事？<br/>展望未來，有哪些開放資料上的未竟之志，希望新政府繼續努力？</p><p>── 這場張善政院長與 g0v 的對話，獻給為開放資料貢獻心力的所有沒有人。</p>",
+          "bio": "行政院院長",
           "speaker": "張善政"
         }
       }
@@ -1211,6 +1236,7 @@
         "anchor": "劉致昕",
         "venue" : "R1",
         "color": "#C1EB96",
+        "icomoon": "icon-supervision",
         "event": {
         "moderator": ["劉致昕"]
         }
@@ -1274,6 +1300,7 @@
         "anchor": "吳銘軒",
         "venue" : "R0",
         "color": "#FB69B3",
+        "icomoon": "icon-square",
         "event": {
           "moderator": ["吳銘軒"]
         }
@@ -1337,6 +1364,7 @@
         "anchor": "黃雋",
         "venue" : "R2",
         "color": "#D8D9D8",
+        "icomoon": "icon-Ventilation",
         "event": {
           "moderator": ["黃雋"]
         }
@@ -1414,7 +1442,13 @@
       },
       {
         "time": "16:15-16:30",
-        "event": "敬請期待"
+        "event": {
+          "title": "扎根、創新、參與：邁向永續生態系",
+          "language": "Mandarin",
+          "speaker_id": "hoho",
+          "speaker": "何建明",
+          "abstract": "<p>近年來資訊科技快速發展，包括雲端、大數據分析、物聯網等各種技術興起，還有，技術的源碼，各領域的資料和內容等等資源，也都大量開放並在網 路上持續累積。伴隨資訊和技術的使用門檻大幅降低，各種線上服務也隨之迅速興起。</p><p>G0V社群倡導和實踐開放政府和開放資料，促使政府決策和行政透明化。這些行動得到行政院和各部會的正面回應，包括接納社群參與協助制訂政府 開放資料相關政策，和技術協助。政府部門陸續推出開放資料，並且已經開始以機讀形式，也透過舉辦比賽等活動，鼓勵各界彙整和進一步加值分析。</p><p>我們將探討，新政府如何承接和盤點既有的成果、過去遭遇的問題、地方推動的困難和問題；營造有利於各級政府邀請社群參與，攜手協同分析和解決 問題的法規行政環境；並探討和規劃永續營運模式。也期待未來中央和地方政府、社群、大學、和產業，持續攜手邁步向前，共同推動發展永續的智慧 政府創新服務生態系。</p>"
+        }
       },
       {
         "time" : "16:30-17:30",

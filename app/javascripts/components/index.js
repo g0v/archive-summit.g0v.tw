@@ -9,3 +9,4 @@ export Root from "./Root";
 export SpeakerList from "./SpeakerList";
 export Schedule from "./Schedule";
 export SponsorsSummary from "./SponsorsSummary";
+export StaffList from "./StaffList";

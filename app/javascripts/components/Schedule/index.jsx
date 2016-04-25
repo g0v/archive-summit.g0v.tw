@@ -12,17 +12,17 @@ const venues = [
   {
     "id": "r1",
     "title": "R1",
-    "color": "#F4AF3D"
+    "color": "#8B4AA8"
   },
   {
     "id": "r0",
     "title": "R0",
-    "color": "#CE0D41"
+    "color": "#36AAA8"
   },
   {
     "id": "r2",
     "title": "R2",
-    "color": "#1BADBE"
+    "color": "#4EA23B"
   }
 ];
 
@@ -52,15 +52,16 @@ function mapTimeSlotToItems(day, value, i) {
         style={{ color: '#FFF', backgroundColor: venueObj[value.venue].color}}
       >
         <div className="Schedule-time">
+          <span className={value.icomoon}></span>
           {value.title}／{venue}
         </div>
-        
+
         <a id={`slot-${id}`} href={`#${id}`}
           className={cx({
             "Schedule-tagline" : true
           })}
           onClick={this.setSession.bind(this, event, value.time)}>
-          
+
           <div className="Schedule-main">
             <div>{value.tagline}</div>
             { value.anchor && <div className="Schedule-anchor">{schedules[getLocale()].moderator}: {value.anchor}</div> }

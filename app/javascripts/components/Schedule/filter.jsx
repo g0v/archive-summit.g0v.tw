@@ -32,9 +32,12 @@ export default React.createClass({
         }
       }
 
+      var icomoon = value.icomoon
+
       return (
         <div className={styles.filterCategory} key={i} onClick={this.props.toggleCategoryHandler.bind(null,i)}>
           <div className={`${styles.filterCategoryIcon}`} style={style}></div>
+          <div className={icomoon}></div>
           <div className={`${styles.filterCategoryText}`}>{value.title}</div>
         </div>
       )
