@@ -17,4 +17,8 @@
   float: right;
 }
 
+.name {
+  margin-right: 0.3em;
+}
+
 .bio {}

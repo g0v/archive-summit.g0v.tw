@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getLocale } from "javascripts/locale";
+import { getLocale, getString } from "javascripts/locale";
 import styles from "./styles.css";
 
 var multiParagraph = (text, className) => {
@@ -30,12 +30,15 @@ class Lightbox extends Component {
   }
 
   render() {
+    const [locale] = getLocale().split('-');
+
     return <div className={styles.root} style={{ display: (this.state.show ? "inherit" : "none") }}>
       <div>
-        <b>{this.state.speaker.name}</b>
+        <b className={styles.name}>{getString(this.state.speaker, 'name', locale)}</b>
+        {getString(this.state.speaker, 'title', locale)}
         <a href="#" className={styles.close} onClick={this.close}>X</a>
       </div>
-      {multiParagraph(this.state.speaker.bio, styles.bio)}
+      {multiParagraph(getString(this.state.speaker, 'bio', locale), styles.bio)}
     </div>;
   }
 };
