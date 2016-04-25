@@ -11,7 +11,7 @@ class Home extends Component {
     return (
       <div>
         <Milestone />
-        <About />
+        <About properties={this.props} />
       </div>
     );
   }
