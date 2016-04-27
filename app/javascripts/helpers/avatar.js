@@ -6,7 +6,7 @@ export function avatar(speaker) {
   } else if (speaker.facebook) {
     return 'https://avatars.io/facebook/' + speaker.facebook + '/large';
   } else if (speaker.twitter) {
-    return 'https://avatars.io/twitter/' + speaker.twitter.replace(/^@/, '') + '/large';
+    return 'https://twitter.com/' + speaker.twitter.replace(/^@/, '') + '/profile_image?size=original';
   } else {
     return require('javascripts/components/SpeakerList/default.png');
   }
