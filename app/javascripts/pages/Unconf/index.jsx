@@ -4,7 +4,7 @@ import transports from "jsons/transport.json";
 import hotels from "jsons/hotels.json";
 import styles from "./styles.css";
 
-var content = require(`./${getLocale()}.md`);
+var content = require(`./${getLocale() === null ? 'en-US' : getLocale() }.md`);
 
 class Unconf extends Component {
     render() {
