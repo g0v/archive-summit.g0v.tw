@@ -7,6 +7,7 @@ import {
   Schedules,
   Sponsors,
   Transport,
+  Unconf,
   Live,
   Staff,
 } from 'javascripts/pages';
@@ -23,6 +24,7 @@ export default () => {
          <Route path="schedules" component={Schedules} />
          <Route path="sponsors" component={Sponsors} />
          <Route path="transport" component={Transport} />
+         <Route path="unconf" component={Unconf} />
          <Route path="staff" component={Staff} />
          {/*<Route path="*" component={NotFound} status={404} />*/}
        </Route>

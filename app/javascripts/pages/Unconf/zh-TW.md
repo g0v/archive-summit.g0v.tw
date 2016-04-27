@@ -1,0 +1,16 @@
+# 什麼是 Unconference ?
+
+這項活動源自於開源社群的開放精神，讓每個人都有機會站上台、發表想法，為我們關心的社會帶來改變。
+
+Unconference 是由會眾主導；會眾（你）把想分享的主題寫下來，議程委員將會協助媒合類似主題；大會將會協助所有的 Unconference 參與者創造一個舒服的討論環境，希望激發創新和豐富的討論。
+
+## 如何報名投稿 Unconference ?
+
+大會前投稿：請填寫[線上投稿單](http://bit.ly/g0v-unconf2016)
+
+大會期間投稿：
+向大會取得一張 Unconference 投稿用的便條紙/紙張，寫下你的名字，題目，和大綱（150字以內），貼到投稿牆上即完成投稿。
+
+文案線上檔案：https://docs.google.com/document/d/1S9wCmNIbdD4-P5aIbuol2s34cEiYHFdSYd1PX4LpGto/edit#
+
+附上簡易說明圖片原始檔請自由取用。

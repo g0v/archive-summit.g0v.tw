@@ -136,6 +136,15 @@ const Menu = () => {
         className={styles.item}
         activeClassName={styles.active}>
         <Link
+          to="/2016/unconf"
+        >
+          {info[getLocale()].unconf}
+        </Link>
+      </li>
+      <li
+        className={styles.item}
+        activeClassName={styles.active}>
+        <Link
           to="/2016/sponsors"
         >
           {info[getLocale()].sponsors}
