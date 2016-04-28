@@ -4,7 +4,7 @@ import { SpeakerList } from "javascripts/components";
 class Speakers extends Component {
   render() {
     return (
-      <SpeakerList />
+      <SpeakerList properties={this.props} />
     );
   }
 };

@@ -14,11 +14,31 @@
   padding-top: 20px;
 }
 
+.header-shrink {
+  position: relative;
+  left: -25%;
+}
+
 .speaker {
-  lost-column: 1/4;
-  text-align: center;
+  float: left;
+  width: 25%;
+  height: 210px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 50%;
+  text-align: center;
+}
+
+.speaker-shrink {
+  float: left;
+  width: 33.3%;
+  height: 210px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.speaker-parent {
+  width: 50%;
 }
 
 .avatar {
@@ -39,6 +59,13 @@
 
 @media screen and (max-width: 430px) {
   .speaker {
-    lost-column: 1/3;
+    width: 33.3%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px !important;
   }
 }
