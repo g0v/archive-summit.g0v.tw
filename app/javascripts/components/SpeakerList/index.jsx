@@ -20,6 +20,20 @@ class SpeakerList extends Component {
     }
   }
 
+  componentDidMount() {
+    const { hash } = this.props.properties.location;
+    if (hash) {
+      setTimeout(() => document.getElementById(hash.replace('#', 'slot-')).scrollIntoView(false), 300);
+      const dataArray = hash.replace('#', '').split('-');
+      const value = schedulesByTrack[getLocale()][dataArray[0]][dataArray[2]];
+      this.setState({
+        showSession: true,
+        currentSession: () => schedulesByTrack[getLocale()][dataArray[0]][dataArray[2]].event,
+        currentSessionTime: value.time
+      });
+    }
+  }
+
   enableSession(value,time) {
     this.setState({
       showSession: true,
@@ -45,10 +59,11 @@ class SpeakerList extends Component {
       <div className={cx({
                           "speaker": !this.state.showSession,
                           "speaker-shrink": this.state.showSession
-        })} key={speaker.name} 
+        })} key={speaker.name}
       >
-        <a 
-          href= {`#${data.id}`} 
+        <a
+          id = {`slot-${data.id}`}
+          href= {`#${data.id}`}
           onClick={this.enableSession.bind(this, data.event, data.time)}
         >
           <img className={styles.avatar} src={avatar} />
@@ -61,7 +76,7 @@ class SpeakerList extends Component {
   }
   /*
     @Purpose: Use name in speaker.json to search the data in schedules_by_track.json
-    @return: event => () => 
+    @return: event => () =>
             time,
             id(day_venue_index)
   */
@@ -95,7 +110,7 @@ class SpeakerList extends Component {
         }
       });
     }
-    
+
     // data found in day1 or day2
     if(id !== "") {
       let day_venue_index = id.split("-");
@@ -159,7 +174,7 @@ class SpeakerList extends Component {
           "is-show": this.state.showSession
         }
         )}>
-          <Session 
+          <Session
             sessionHandler={this.disableSession}
             data={this.state.currentSession()}
             time={this.state.currentSessionTime}
