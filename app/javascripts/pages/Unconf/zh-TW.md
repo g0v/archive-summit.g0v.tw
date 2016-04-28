@@ -10,7 +10,3 @@ Unconference 是由會眾主導；會眾（你）把想分享的主題寫下來�
 
 大會期間投稿：
 向大會取得一張 Unconference 投稿用的便條紙/紙張，寫下你的名字，題目，和大綱（150字以內），貼到投稿牆上即完成投稿。
-
-文案線上檔案：https://docs.google.com/document/d/1S9wCmNIbdD4-P5aIbuol2s34cEiYHFdSYd1PX4LpGto/edit#
-
-附上簡易說明圖片原始檔請自由取用。
