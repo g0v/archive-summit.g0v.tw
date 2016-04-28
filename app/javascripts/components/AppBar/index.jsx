@@ -104,9 +104,7 @@ class Header extends Component {
 const Menu = () => {
   return (
     <ul className={styles.menu}>
-      <li
-        className={styles.item}
-        activeClassName={styles.active}>
+      <li className={styles.item}>
         <IndexLink
           to="/2016"
           activeClassName={styles.active}
@@ -114,54 +112,50 @@ const Menu = () => {
           {info[getLocale()].home}
         </IndexLink>
       </li>
-      <li
-        className={styles.item}
-        activeClassName={styles.active}>
+      <li className={styles.item}>
         <Link
           to="/2016/schedules"
+          activeClassName={styles.active}
         >
           {info[getLocale()].schedule}
         </Link>
       </li>
-      <li
-        className={styles.item}
-        activeClassName={styles.active}>
+      <li className={styles.item}>
         <Link
           to="/2016/speakers"
+          activeClassName={styles.active}
         >
           {info[getLocale()].speakers}
         </Link>
       </li>
-      <li
-        className={styles.item}
-        activeClassName={styles.active}>
+      <li className={styles.item}>
         <Link
           to="/2016/sponsors"
+          activeClassName={styles.active}
         >
           {info[getLocale()].sponsors}
         </Link>
       </li>
-      <li className={styles.item}
-        activeClassName={styles.active}>
+      <li className={styles.item}>
         <Link
           to="/2016/transport"
+          activeClassName={styles.active}
         >
           {info[getLocale()].transport}
         </Link>
       </li>
-      <li className={styles.item}
-        activeClassName={styles.active}>
+      <li className={styles.item}>
         <Link
           to="/2016/live"
+          activeClassName={styles.active}
         >
           {info[getLocale()].live}
         </Link>
       </li>
-      <li
-        className={styles.item}
-        activeClassName={styles.active}>
+      <li className={styles.item}>
         <Link
           to="/2016/staff"
+          activeClassName={styles.active}
         >
           {info[getLocale()].staff}
         </Link>
