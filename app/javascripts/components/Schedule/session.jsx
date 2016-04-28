@@ -88,8 +88,8 @@ export default React.createClass({
         { avatar && <img className={styles.avatar} src={avatar} /> }
       </div>;
     });
-    
-    if (time) { // Speaker , not moderator
+
+    if (time && speakers_profile.length) {
       return (
           <div className="Session">
             <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
@@ -105,6 +105,7 @@ export default React.createClass({
                   <div className="Session-title">
                     {data.title}
                   </div>
+
                   { speakers_profile.map( profile => profile ) }
 
                   {
@@ -127,7 +128,7 @@ export default React.createClass({
               </div>
           </div>
       );
-    } else { //moderator , not speaker
+    } else if(moderator_profile.length) {
       return (
           <div className="Session">
             <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
@@ -135,7 +136,7 @@ export default React.createClass({
               <div className="Session-close"
                    onClick={sessionHandler}></div>
               <div className="Session-content">
-                  
+
                   { moderator_profile.map( profile => profile ) }
 
                   {
@@ -158,6 +159,35 @@ export default React.createClass({
               </div>
           </div>
       );
+    // nothing found in schedules_by_track.json,so display speaker.json's data instead
+    }else if(data.value !== undefined) {
+      return (
+        <div className="Session">
+          <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
+          </div>
+            <div className="Session-close"
+                 onClick={sessionHandler}></div>
+            <div className="Session-content">
+                <div key={`speaker_${getString(data.value, 'name', locale)}`}>
+                  <div className="Session-presenter">
+                      {getString(data.value, 'name', locale)}
+                  </div>
+                  <div className="Session-presenter-title">
+                      {getString(data.value, 'title', locale)}
+                  </div>
+                  <div className="Session-presenter-organization">
+                      {getString(data.value, 'organization', locale)}
+                  </div>
+                </div>
+                <div className="Session-biography" key={`bio_${data.value.bio}`}>
+                    <div className="Session-subTitle">Biography</div>
+                    <div dangerouslySetInnerHTML={{__html: getString(data.value, 'bio', locale)}}></div>
+                </div>
+            </div>
+        </div>
+      );
+    }else {
+      return <br />;
     }
 
   }
