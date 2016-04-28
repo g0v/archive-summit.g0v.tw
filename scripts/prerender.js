@@ -31,6 +31,10 @@ const PAGES = [{
   title: '講者',
   ld: basic
 }, {
+  path: 'unconf',
+  title: '開放議程',
+  ld: basic
+}, {
   path: 'sponsors',
   title: '贊助商',
   ld: sponsors
