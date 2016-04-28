@@ -6,3 +6,4 @@ export Live from "./Live";
 export Transport from "./Transport";
 export Unconf from "./Unconf";
 export Staff from "./Staff";
+export Travel from "./Travel";

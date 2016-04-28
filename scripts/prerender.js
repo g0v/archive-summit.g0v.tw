@@ -50,6 +50,10 @@ const PAGES = [{
   path: 'staff',
   title: '工作人員',
   ld: basic
+}, {
+  path: 'travel',
+  title: '旅遊資訊',
+  ld: basic
 }]
 
 

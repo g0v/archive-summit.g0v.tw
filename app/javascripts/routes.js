@@ -10,6 +10,7 @@ import {
   Unconf,
   Live,
   Staff,
+  Travel,
 } from 'javascripts/pages';
 
 export default () => {
@@ -26,6 +27,7 @@ export default () => {
          <Route path="transport" component={Transport} />
          <Route path="unconf" component={Unconf} />
          <Route path="staff" component={Staff} />
+         <Route path="travel" component={Travel}/>
          {/*<Route path="*" component={NotFound} status={404} />*/}
        </Route>
      </Route>

@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { getLocale } from "javascripts/locale";
 import transports from "jsons/transport.json";
 import hotels from "jsons/hotels.json";
+import travel from "jsons/travel.json";
 import styles from "./styles.css";
+import { Link } from "react-router";
 
 class Transport extends Component {
     render() {
@@ -35,6 +37,7 @@ class Transport extends Component {
                       )
                     })
                   }
+                  <h2><Link to="2016/travel">{travel[getLocale()].title}</Link></h2>
                 </div>
               </div>
           );
