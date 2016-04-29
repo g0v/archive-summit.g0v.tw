@@ -22,7 +22,7 @@ class SpeakerList extends Component {
 
   componentDidMount() {
     const { hash } = this.props.properties.location;
-    if (hash) {
+    if (hash.includes("all")) {
       setTimeout(() => document.getElementById(hash.replace('#', 'slot-')).scrollIntoView(false), 300);
       const dataArray = hash.replace('#', '').split('-');
       const value = schedulesByTrack[getLocale()][dataArray[0]][dataArray[2]];
@@ -31,9 +31,27 @@ class SpeakerList extends Component {
         currentSession: () => schedulesByTrack[getLocale()][dataArray[0]][dataArray[2]].event,
         currentSessionTime: value.time
       });
-    }
+    } else if(hash.includes("none")) {
+      let id = hash.replace('#', '').split('-');
+      let data  = speakers["en-US"][id[1]];
+      this.setState({
+        showSession: true,
+        currentSession: () => ({
+          venue: "",
+          category: "",
+          language: "",
+          speaker:  data.name,
+          title: data.title,
+          bio: data.bio,
+          abstract: "",
+          avatar: data.avatar,
+          value: data 
+        }),
+        currentSessionTime: ""
+      })
+    } else{}
   }
-
+  
   enableSession(value,time) {
     this.setState({
       showSession: true,
@@ -53,7 +71,7 @@ class SpeakerList extends Component {
   speaker = (speaker) => {
     const avatar = avatarURL(speaker);
     const [locale] = getLocale().split('-');
-    let data = this.mapToDescription(speaker, locale)
+    let data = this.mapToDescription(speaker, locale);
 
     return (
       <div className={cx({
@@ -78,7 +96,7 @@ class SpeakerList extends Component {
     @Purpose: Use name in speaker.json to search the data in schedules_by_track.json
     @return: event => () =>
             time,
-            id(day_venue_index)
+            id(day-all-index) or id(none-index)  if nothing found in schedules_by_track.json
   */
   mapToDescription(speaker, locale) {
     let data = [];
@@ -126,6 +144,12 @@ class SpeakerList extends Component {
     if((data == null) ||
        (event == null) ||
        (id == "")){
+
+      let speakerElement = [];
+      speakers['en-US'].map((element, i) => {
+          speakerElement[i] = getString(element, 'name', locale);
+      });
+
       return {
         event: () => ({
           venue: "",
@@ -138,7 +162,7 @@ class SpeakerList extends Component {
           avatar: speaker.avatar,
           value: speaker }),
         time: "",
-        id: speaker.name
+        id: "none-" + speakerElement.indexOf(getString(speaker, 'name', locale))
       };
     }
   }
