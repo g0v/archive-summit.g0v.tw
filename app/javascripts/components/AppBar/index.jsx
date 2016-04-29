@@ -59,7 +59,7 @@ class Header extends Component {
         </svg>
         <div className={styles.brand}>
           <h2 className={styles.title}>
-            g0v Summit
+            <IndexLink to="/2016">g0v Summit</IndexLink>
           </h2>
           <div className={styles.live}>
             <svg width="48px" height="33px" viewBox="0 0 48 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">

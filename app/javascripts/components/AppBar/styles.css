@@ -29,6 +29,11 @@
   padding: 13px 18px 0 26px;
 }
 
+.title a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 .live {
   float: left;
   display: inline-block;
