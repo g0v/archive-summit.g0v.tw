@@ -4,7 +4,9 @@
 
 ### local setup
 
-Install packages via `$ npm install` and run `$ npm start` to see `localhost:8080/2016/`
+Install packages via `$ npm install`  
+Clone submodules via `$ git submodule init && git submodule update`  
+Then run `$ npm start` to see `localhost:8080/2016/`
 
 ### git flow
 
