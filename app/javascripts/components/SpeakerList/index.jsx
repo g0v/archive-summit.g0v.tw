@@ -105,7 +105,7 @@ class SpeakerList extends Component {
 
     // search day1 first
     data = schedulesByTrack[getLocale()]["day1"].filter((day, index) => {
-      if((day.event.speaker === getString(speaker, 'name', locale))||
+      if(day.event.speaker && day.event.speaker.includes(getString(speaker, 'name', locale))||
          (day.event.moderator && day.event.moderator[0] === getString(speaker, 'name', locale)) //||
         ) {
         id = "day1-all-" + index.toString();
@@ -118,7 +118,7 @@ class SpeakerList extends Component {
     // nothing found in day1, then try search day2
     if(id == "") {
       data = schedulesByTrack[getLocale()]["day2"].filter((day, index) => {
-        if((day.event.speaker === getString(speaker, 'name', locale))||
+        if(day.event.speaker && day.event.speaker.includes(getString(speaker, 'name', locale))||
            ((day.event.moderator && day.event.moderator[0]) === getString(speaker, 'name', locale))
           ) {
           id = "day2-all-" + index.toString();
