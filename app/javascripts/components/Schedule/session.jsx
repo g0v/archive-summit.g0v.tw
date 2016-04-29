@@ -11,7 +11,12 @@ import helptext from "./helptext.json";
 
 var by_name = {};
 
-speakers['en-US'].forEach((speaker) => by_name[speaker.name] = speaker);
+speakers["en-US"].forEach((speaker) => {
+  if (speaker.name_zh) {
+    by_name[speaker.name_zh] = speaker;
+  }
+  by_name[speaker.name] = speaker;
+});
 
 export default React.createClass({
   displayName: "Session",
@@ -37,6 +42,7 @@ export default React.createClass({
           />
         );
       });
+
     const speakers_profile = speakers.map( speaker => by_name[speaker] ).map( speaker => {
       const bio_text = ((speaker && getString(speaker, 'bio', locale)) || data.bio || '').replace(/\n/g, '<br/>');
       const speaker_title = speaker && getString(speaker, 'title', locale);
@@ -168,6 +174,7 @@ export default React.createClass({
       );
     // nothing found in schedules_by_track.json,so display speaker.json's data instead
     }else if(data.value !== undefined) {
+      const avatar = data ? avatarURL(data) : '';
       return (
         <div className="Session">
           <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
@@ -185,6 +192,7 @@ export default React.createClass({
                   <div className="Session-presenter-organization">
                       {getString(data.value, 'organization', locale)}
                   </div>
+                  {avatar && <img className={styles.avatar} src={avatar}/>}
                 </div>
                 <div className="Session-biography" key={`bio_${data.value.bio}`}>
                     <div className="Session-subTitle">Biography</div>
