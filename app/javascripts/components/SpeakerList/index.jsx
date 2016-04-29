@@ -31,7 +31,7 @@ class SpeakerList extends Component {
         currentSession: () => schedulesByTrack[getLocale()][dataArray[0]][dataArray[2]].event,
         currentSessionTime: value.time
       });
-    } else if(hash.includes("none")) {
+    } else if (hash.includes("none")) {
       let id = hash.replace('#', '').split('-');
       let data  = speakers["en-US"][id[1]];
       this.setState({
@@ -45,13 +45,13 @@ class SpeakerList extends Component {
           bio: data.bio,
           abstract: "",
           avatar: data.avatar,
-          value: data 
+          value: data
         }),
         currentSessionTime: ""
       })
-    } else{}
+    }
   }
-  
+
   enableSession(value,time) {
     this.setState({
       showSession: true,
