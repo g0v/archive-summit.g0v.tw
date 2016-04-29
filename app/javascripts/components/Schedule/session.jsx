@@ -7,6 +7,7 @@ import categories from './categories.json';
 import { getLocale, getString } from "javascripts/locale";
 import avatarURL from "javascripts/helpers/avatar";
 import styles from "./styles.css";
+import helptext from "./helptext.json";
 
 var by_name = {};
 
@@ -32,7 +33,7 @@ export default React.createClass({
             className="Session-interview"
             key={`speaker_bio_${speaker.id}`}
             dangerouslySetInnerHTML={{__html:
-              `<h4>歡迎共同編輯中英字幕！(<a target="_blank" href="http://www.youtube.com/timedtext_video?ref=share&v=${speaker.interview}">我要幫忙</a>)</h4><iframe src="https://www.youtube.com/embed/${speaker.interview}" frameborder="0" allowfullscreen></iframe>`}}
+              `<h4>${helptext[getLocale()].text}(<a target="_blank" href="http://www.youtube.com/timedtext_video?ref=share&v=${speaker.interview}">${helptext[getLocale()].help}</a>)</h4><iframe src="https://www.youtube.com/embed/${speaker.interview}" frameborder="0" allowfullscreen></iframe>`}}
           />
         );
       });
