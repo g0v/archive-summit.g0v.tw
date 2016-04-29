@@ -27,8 +27,14 @@ export default React.createClass({
     const speakers_interview = speakers.map( speaker => by_name[speaker] )
       .filter( speaker => speaker && speaker.interview !== undefined )
       .map( speaker => {
-        return <div className="Session-interview" key={`speaker_bio_${speaker.id}`} dangerouslySetInnerHTML={{__html: `<iframe src="https://www.youtube.com/embed/${speaker.interview}" frameborder="0" allowfullscreen></iframe>`}}>
-          </div>
+        return (
+          <div
+            className="Session-interview"
+            key={`speaker_bio_${speaker.id}`}
+            dangerouslySetInnerHTML={{__html:
+              `<h4>歡迎共同編輯中英字幕！(<a target="_blank" href="http://www.youtube.com/timedtext_video?ref=share&v=${speaker.interview}">我要幫忙</a>)</h4><iframe src="https://www.youtube.com/embed/${speaker.interview}" frameborder="0" allowfullscreen></iframe>`}}
+          />
+        );
       });
     const speakers_profile = speakers.map( speaker => by_name[speaker] ).map( speaker => {
       const bio_text = ((speaker && getString(speaker, 'bio', locale)) || data.bio || '').replace(/\n/g, '<br/>');
