@@ -101,6 +101,12 @@
           "desc": ""
         },
         {
+          "name": "The National Museum of Prehistory",
+          "logo": "nmp.png",
+          "url": "http://www.nmp.gov.tw/",
+          "desc": "The National Museum of Prehistory (NMP) is the first world-class museum of archaeology in Taiwan. Together with the Peinan Archaeology Park, the facilities and exhibition unveil the story of Taiwan’s prehistoric as well as contemporary indigenous cultures.\nIt is hoped that our efforts in research, collection, exhibition, and education serves as a venue for visitors to gain better understanding of the great diversity of Taiwan’s prehistoric and indigenous cultures, so that we may all come to cherish and respect the land and protect the cultures and environment.\nWe have been devoted to promote the “All Smart Museum Program” since 2016. By introducing online ticket system, digital interactive system, the APP mobile guiding system, digital reconstitution to archeology relic, and the cultural and creative design system, we try to implement cloud based application to this museum. Open data and creative commons will be the next step we embrace. We aim to enhance the quality of services and bring a more friendly and interesting museum to the visitors."
+        },
+        {
           "name": "skymizer",
           "logo": "skymizer.png",
           "url": "http://skymizer.com/",
@@ -276,6 +282,12 @@
           "logo": "edu318.png",
           "url": "https://www.facebook.com/%E7%B6%93%E6%BF%9F%E6%B0%91%E4%B8%BB%E9%80%A3%E5%90%88-593374924100942/timeline",
           "desc": "經濟民主連合，原名「反黑箱服貿民主陣線」，是由數十個台灣公民團體組成的社團聯盟。\n在 2016 年 318 運動兩周年論壇，我們確立中期運動目標為：<br>一、 拒絕服貿、貨貿、亞投行；<br>二、 莫讓ＴＰＰ傷害台灣；<br>三、 拒絕「同屬一中」，捍衛台灣人民自決權；<br>四、 深化民主，推動七項立法：通過民間版監督條例，經貿條約締結應有專法或專章，因應貿易自由化支援調整條例要大修，立法規範中資，反媒體壟斷法應考量中國因素，制定基本工資專法與外國人在台工作專法：<br>五、繼續對抗兩岸權貴資本及國共政商集團。\n完整簡介：<a href=\"http://edutw2016.blogspot.tw/p/blog-page_7.html\">http://edutw2016.blogspot.tw/p/blog-page_7.html</a>"
+        },
+        {
+          "name": "國立臺灣史前文化博物館",
+          "logo": "nmp.png",
+          "url": "http://www.nmp.gov.tw/",
+          "desc": "國立臺灣史前文化博物館(簡稱史前館)是台灣首座國家級考古學博物館，結合康樂本館的建築與展示，以及卑南文化公園的遺址現場，共同為大眾開啟通往臺灣史前和當代原住民與南島文化的世界，期望經由博物館的研究、收藏、展示及教育功能，促進大眾對臺灣史前文化的豐富多樣性，產生更為深刻的認識與感受，讓人們更珍惜、尊重這片土地上綿延不斷的自然與文化生命。\n史前館於105年開始推動「智慧型博物館」，導入電子票券系統、數位互動展示系統、智慧APP導覽系統、智慧文物修復系統、智慧文創系統及雲端應用資源整合系統，並開展open data、creative commons 的機制， 提昇以觀眾為主體的服務品質，強化全方位的「文化學習」與「文化旅遊」服務，營造一個友善及有趣的智慧型博物館園區。"
         },
         {
           "name": "skymizer",
