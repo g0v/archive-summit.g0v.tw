@@ -265,6 +265,7 @@
       "id": "ekoiod",
       "avatar": "./saulpeng.jpg",
       "name": "Saul Peng",
+      "name_zh": "彭盛韶",
       "featured": true,
       "organization": "Department of IT, Taipei City Government",
       "organization_zh": "台北市政府資訊局",
@@ -279,7 +280,8 @@
     {
       "id": "kjodwj",
       "avatar": "",
-      "name": "王景弘",
+      "name": "TonyQ",
+      "name_zh": "王景弘",
       "organization": "普奇科技",
       "title": "資深工程師",
       "bio": "相信寫程式能改變世界，致力於用程式技術參與跨界事務。",
@@ -464,7 +466,7 @@
     {
       "id": "nkwiwp",
       "avatar": "./ipa.jpg",
-      "name": "Ipa Chiu",
+      "name": "ipa",
       "name_zh": "瞿筱葳",
       "featured": true,
       "organization": "g0v",
