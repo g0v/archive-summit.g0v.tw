@@ -45,6 +45,8 @@ class SpeakerList extends Component {
           bio: data.bio,
           abstract: "",
           avatar: data.avatar,
+          facebook: data.facebook,
+          twitter: data.twitter,
           value: data
         }),
         currentSessionTime: ""
