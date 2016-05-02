@@ -105,6 +105,25 @@ $breakpoint: 1000px;
 .Session-presenter {
   color: rgb(55,54,53);
   font-size: larger;
+  position: relative;
+}
+
+.Session-presenter a {
+  display: inline-block;
+  width: 24px;
+}
+
+.Session-social {
+  width: 24px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.74);
+}
+
+.Session-twitter, .Session-facebook {
+  margin-left: 10px;
 }
 
 .Session-category {
