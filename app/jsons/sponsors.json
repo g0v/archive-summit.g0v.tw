@@ -89,12 +89,6 @@
           "desc": "NETivism (Internet for Activism) is a social enterprise focus on solving digital divide for Non-Profit Organization, via Open Source solution(Drupal & CiviCRM) and Love."
         },
         {
-          "name": "Microsoft",
-          "logo": "ms.png",
-          "url": "http://microsoft.com/",
-          "desc": "Microsoft Taiwan Corporation has established in Taiwan since 1989. At our core, Microsoft is the productivity and platform company for the mobile-first and cloud-first world. We reinvent productivity to empower every person and every organization on the planet to do more and achieve more.\nAs a company, and as individuals, we value integrity, honesty, openness, personal excellence, constructive self-criticism, continual self-improvement, and mutual respect. We are committed to our customers and partners and have a passion for technology. We take on big challenges, and pride ourselves on seeing them through. We hold ourselves accountable to our customers, shareholders, partners, and employees by honoring our commitments, providing results, and striving for the highest quality.\nEvery successful corporation has a responsibility to use its resources and influence to make a positive impact on the world and its people. Microsoft’s Global Citizenship Initiative is focused on mobilizing our resources across the company and around the world, to create opportunities in the communities where we do business, and to fulfill our commitment to serving the public good through innovative technologies and partnerships."
-        },
-        {
           "name": "Economic Democracy Union - 318 Movement Fund",
           "logo": "edu318.png",
           "url": "https://www.facebook.com/%E7%B6%93%E6%BF%9F%E6%B0%91%E4%B8%BB%E9%80%A3%E5%90%88-593374924100942/timeline",
@@ -276,12 +270,6 @@
           "logo": "netivism.png",
           "url": "http://netivism.com.tw/",
           "desc": "網絡行動科技（NETivism）自許為從數位公益出發的社會企業，七年來專注為非營利組織提供以自由軟體為基礎的資訊科技應用解決方案。 我們認為網路資訊科技能夠促成社會變革，影響文化、政治、環境等公共議題，帶來娛樂與商業行為之外的改變。目前提供 netiCRM.tw 支持者關係管理雲端服務，協助非營利組織滿足定期定額線上捐款自動化、電子報行銷、活動報名等需求。"
-        },
-        {
-          "name": "微軟",
-          "logo": "ms.png",
-          "url": "http://microsoft.com/",
-          "desc": "台灣微軟公司設立於 1989 年。我們的使命是——致力讓地球上的每一個人、每一個組織都能貢獻更多、成就更大。\n在「行動優先，雲端至上」的世界裡，微軟全力打造業界頂尖的平臺和生產力服務，盼更好地融合終端使用者、開發者以及 IT 專家等各方利益。為了實踐使命，我們將聚焦於重塑生產力和業務流程、構建智慧雲平臺、以及創造更個人化的運算。\n微軟相信，良好的公共政策是創新的基石，能夠創造工作機會，並且帶來永續的成長。台灣微軟將持續以開放透明的方式，結合產、官、學、研及民間團體，攜手提倡公民政策，促進社會進步。"
         },
         {
           "name": "經濟民主連合 318 結餘款",
