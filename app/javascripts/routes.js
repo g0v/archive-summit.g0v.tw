@@ -13,19 +13,22 @@ import {
   Travel,
 } from 'javascripts/pages';
 
+function scrollToTop() {
+  window.scrollTo(0,0);
+}
 export default () => {
   return (
     <Route path="/2016" component={Root}>
       <IndexRoute component={Home}/>
       <Route path="live" component={Live} />
       <Redirect from="/2016/:page.html" to=":page" /> {/* Only works after prerendering */}
-      <Route path="schedules" component={Schedules} />
-      <Route path="speakers" component={Speakers} />
-      <Route path="sponsors" component={Sponsors} />
-      <Route path="staff" component={Staff} />
-      <Route path="transport" component={Transport} />
-      <Route path="travel" component={Travel}/>
-      <Route path="unconf" component={Unconf} />
+      <Route path="schedules" component={Schedules} onEnter={scrollToTop}/>
+      <Route path="speakers" component={Speakers} onEnter={scrollToTop} />
+      <Route path="sponsors" component={Sponsors} onEnter={scrollToTop} />
+      <Route path="staff" component={Staff} onEnter={scrollToTop} />
+      <Route path="transport" component={Transport} onEnter={scrollToTop} />
+      <Route path="travel" component={Travel} onEnter={scrollToTop} />
+      <Route path="unconf" component={Unconf} onEnter={scrollToTop} />
     </Route>
   );
 }
