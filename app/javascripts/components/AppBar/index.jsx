@@ -5,10 +5,14 @@ import info from "jsons/header.json";
 import styles from "./styles";
 
 class Header extends Component {
-  state = {
-    hiddenMenu: false,
-    offsetWidth: 0,
-  };
+  constructor(props) {
+    super(props);
+    this.handleResize = this.handleResize.bind(this);
+    this.state = {
+      hiddenMenu: false,
+      offsetWidth: 0,
+    };
+  }
   static contextTypes = {
     router: React.PropTypes.object,
     changeLocale: React.PropTypes.func,
@@ -20,10 +24,10 @@ class Header extends Component {
     if (this.refs.header.offsetWidth <= 1025) {
       this.setState({ hiddenMenu: true, });
     }
-    window.addEventListener('resize', this.handleResize.bind(this));
+    window.addEventListener('resize', this.handleResize);
   }
   componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize.bind(this));
+    window.removeEventListener('resize', this.handleResize);
   }
   handleResize(e) {
     this.setState({
