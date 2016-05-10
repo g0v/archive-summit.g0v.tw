@@ -134,7 +134,7 @@ export default class Schedule extends Component {
     const { hash } = this.props.location;
 
     this.setState({currentSection: (new Date().toDateString() === DAY_2) ? "day2" : ""});
-    
+
     if (hash) {
       setTimeout(() => document.getElementById(hash.replace('#', 'slot-')).scrollIntoView(false), 300);
       const dataArray = hash.replace('#', '').split('-');
@@ -165,7 +165,8 @@ export default class Schedule extends Component {
     document.body.classList.remove(styles.mobileScrollLock);
   };
   setSection(currentSection) {
-    console.log(currentSection)
+    console.log(currentSection);
+    window.scrollTo(this._root.offsetLeft, this._root.offsetTop);
     this.setState({ currentSection });
   }
   toggleVenue = id => {
@@ -184,7 +185,7 @@ export default class Schedule extends Component {
   }
   render () {
     return (
-      <div className={styles.root}>
+      <div className={styles.root} ref={c => this._root = c}>
         <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}</div>
         <StickyContainer>
           <div className={styles.container}>
