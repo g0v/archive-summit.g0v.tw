@@ -12,6 +12,8 @@ import classNamesBind from "classnames/bind";
 
 const cx = classNamesBind.bind(styles)
 
+const DAY_2 = "Sun May 15 2016";
+
 export default class ScheduleParallel extends Component {
   state = {
     showPanel: false,
@@ -20,6 +22,7 @@ export default class ScheduleParallel extends Component {
     categories: categoriesData[getLocale()].map((cat, index) => ({...cat, index})),
     currentSession: () => ({}),
     currentSessionTime: null,
+    currentSection: (new Date().toDateString() === DAY_2) ? "day2" : ""
   };
   defaultTitle = document.title;
 
@@ -91,9 +94,7 @@ export default class ScheduleParallel extends Component {
   }
 
   goToElement(refName){
-    var node = this.refs[refName].getDOMNode();
-    // this.props.goToElementHandler(node.offsetTop);
-    console.log(`TODO: animate to ${refName}`)
+    this.setState({ currentSection: refName });
   }
 
   render() {
@@ -227,13 +228,13 @@ export default class ScheduleParallel extends Component {
                     <div className="Schedule-dayButtonLeftstop">
                       <div className={classNames({
                              "Schedule-dayButton" : true,
-                             /* "is-active" : currentSection === "day1" */
+                              "is-active" : this.state.currentSection === "day1" 
                            })}
                            onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
                     </div>
                     <div className={classNames({
                            "Schedule-dayButton" : true,
-                           /* "is-active" : currentSection === "day2" */
+                            "is-active" : this.state.currentSection === "day2" 
                          })}
                          onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
                     <div className="Schedule-switchBtn" onClick={this.props.onSwitch}>View Topics</div>
@@ -259,13 +260,27 @@ export default class ScheduleParallel extends Component {
                             togglePanelHandler={this.togglePanel}/>
                   </div>
                 </Sticky>
-                <div ref="day1" id="day1">
+                <div
+                  className={cx({
+                    "Home-section": true,
+                    "is-hidden": this.state.currentSection !== ''&& this.state.currentSection !== 'day1'
+                  })}
+                  ref="day1"
+                  id="day1"
+                >
                   <div className="Schedule-day">5/14 (Sat.)</div>
                   <section>
                     {schedules[getLocale()]["day1"].map(mapTimeSlotToItems.bind(this, 1))}
                   </section>
                 </div>
-                <div ref="day2" id="day2">
+                <div
+                  className={cx({
+                    "Home-section": true,
+                    "is-hidden": this.state.currentSection !== '' && this.state.currentSection !== 'day2'
+                  })}
+                  ref="day2"
+                  id="day2"
+                >
                   <div className="Schedule-day">5/15 (Sun.)</div>
                   <section>
                     {schedules[getLocale()]["day2"].map(mapTimeSlotToItems.bind(this, 2))}
