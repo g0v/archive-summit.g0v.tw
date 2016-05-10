@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import {
   AppBar,
   MainSection,
-  MainInfo,
   Milestone,
   About,
   SponsorsSummary,
@@ -32,7 +31,6 @@ class Root extends Component {
       <div>
         <AppBar />
         <MainSection>
-          <MainInfo />
           {this.props.children}
           {this.props.location.pathname !== '/2016/sponsors' ?  <SponsorsSummary /> : null}
           <Footer />

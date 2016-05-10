@@ -10,8 +10,11 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Milestone />
-        <About properties={this.props} />
+        <MainInfo />
+        <div>
+          <Milestone />
+          <About properties={this.props} />
+        </div>
       </div>
     );
   }
