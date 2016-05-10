@@ -59,6 +59,12 @@
           "desc": "Teradata helps companies get more value from data than any other company. Our big data analytic solutions, integrated marketing applications, and team of experts can help your company gain a sustainable competitive advantage with data. Teradata helps organizations leverage all of their data so they can know more about their customers and business and do more of what’s really important. With more than 10,000 professionals in 43 countries, Teradata serves top companies across consumer goods, financial services, healthcare, automotive, communications, travel, hospitality, and more. A future-focused company, Teradata is recognized by media and industry analysts for technological excellence, sustainability, ethics, and business value. Visit teradata.com."
         },
         {
+          "name": "Industrial Development Bureau, Ministry of Economic Affairs",
+          "logo": "idb.png",
+          "url": "http://www.moeaidb.gov.tw",
+          "desc": ""
+        },
+        {
           "name": "Archilife Research Foundation",
           "logo": "archilife.png",
           "url": "http://www.archilife.org/",
@@ -239,6 +245,12 @@
           "logo": "teradata.png",
           "url": "http://www.teradata.com/",
           "desc": "與其它企業相比，Teradata天睿公司（Teradata Corporation，紐交所：TDC）協助企業從資料中獲得更多價值。Teradata旗下領先的大數據分析解決方案、整合行銷應用系統及專家團隊協助企業利用資料獲得長期競爭優勢。 Teradata協助企業及各種組織利用資料獲得對客戶和業務的洞察，進而訂定更有效的策略與方案以獲得成功。 在全球43個國家，擁有超過10,000名員工，Teradata為消費品、金融服務、醫療保健、汽車、電信、旅遊、交通、零售等各行業的領先企業提供服務。 做為一個聚焦未來的公司，Teradata的卓越技術、永續經營、企業道德、商業價值廣為媒體和產業分析師所認可，欲瞭解更多詳情，請造訪 www.teradata.com。"
+        },
+        {
+          "name": "經濟部工業局",
+          "logo": "idb.png",
+          "url": "http://www.moeaidb.gov.tw",
+          "desc": "經濟部工業局於2013年11月起，啟動「開放資料產業應用推動計畫」，致力於推動產業應用政府開放資料，期望業者運用政府與企業開放資料開發新產品與服務，創新商業或服務模式，並協助民間連結政府機構，爭取政府資料集開放；本計畫委託台北市電腦公會執行(<a target=\"_blank\" href=\"http://opendata.tca.org.tw\">http://opendata.tca.org.tw</a>)，計畫提供創新競賽、產業補助、行銷推廣與國際合作各項資源，歡迎國內業者與有志之士合作，共同建全國內資料應用環境。"
         },
         {
           "name": "祐生研究基金會",
