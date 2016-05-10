@@ -94,6 +94,7 @@ export default class ScheduleParallel extends Component {
   }
 
   goToElement(refName){
+    window.scrollTo(this.refs[refName].offsetLeft, this.refs[refName].offsetTop);
     this.setState({ currentSection: refName });
   }
 
@@ -228,13 +229,13 @@ export default class ScheduleParallel extends Component {
                     <div className="Schedule-dayButtonLeftstop">
                       <div className={classNames({
                              "Schedule-dayButton" : true,
-                              "is-active" : this.state.currentSection === "day1" 
+                              "is-active" : this.state.currentSection === "day1"
                            })}
                            onClick={this.goToElement.bind(this,"day1")}>Day 1</div>
                     </div>
                     <div className={classNames({
                            "Schedule-dayButton" : true,
-                            "is-active" : this.state.currentSection === "day2" 
+                            "is-active" : this.state.currentSection === "day2"
                          })}
                          onClick={this.goToElement.bind(this,"day2")}>Day 2</div>
                     <div className="Schedule-switchBtn" onClick={this.props.onSwitch}>View Topics</div>
