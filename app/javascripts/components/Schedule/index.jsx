@@ -173,12 +173,14 @@ export default class Schedule extends Component {
     let venues = this.state.venues.slice(0);
     venues[id] = {...venues[id], active: !venues[id].active}
     this.setState({venues, venueOn: true})
+    window.scrollTo(this._root.offsetLeft, this._root.offsetTop);
   }
   clearVenue = () => {
     this.setState({
       venues: venues.map(venue => ({...venue, active: false})),
       venueOn: false
     })
+    window.scrollTo(this._root.offsetLeft, this._root.offsetTop);
   }
   toggleMobileFilter = () => {
     this.setState({mobileFilterOn: !this.state.mobileFilterOn})

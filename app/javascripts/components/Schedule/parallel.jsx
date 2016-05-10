@@ -57,6 +57,7 @@ export default class ScheduleParallel extends Component {
         categories: current,
         categoryOn: categoryOn
     })
+    window.scrollTo(this._root.offsetLeft, this._root.offsetTop);
   }
 
   setSession(value, time) {
@@ -91,6 +92,7 @@ export default class ScheduleParallel extends Component {
       categoryOn: false
     })
 
+    window.scrollTo(this._root.offsetLeft, this._root.offsetTop);
   }
 
   goToElement(refName){
@@ -200,7 +202,7 @@ export default class ScheduleParallel extends Component {
     const sessionStyle = {}
 
     return (
-      <div className={styles.root}>
+      <div className={styles.root} ref={c => this._root = c}>
         <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}</div>
         <StickyContainer>
           <div className={styles.container}>
