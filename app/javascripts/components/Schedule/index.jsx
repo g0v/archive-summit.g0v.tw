@@ -32,6 +32,8 @@ const venueObj = venues.reduce((aggObj, venue, idx) => {
   return aggObj
 }, {})
 
+const DAY_2 = "Sun May 15 2016";
+
 function mapTimeSlotToItems(day, value, i) {
   let id = `day${day}-all-${i}`;
   let venue = value.venue || (value.event && value.event.venue);
@@ -122,7 +124,7 @@ export default class Schedule extends Component {
     venueOn: false,
     mobileFilterOn: false,
     venues: venues.map(venue => ({...venue, active: false})),
-    currentSection: '',
+    currentSection: (new Date().toDateString() === DAY_2) ? "day2" : "",
     currentSession: () => ({}),
     currentSessionTime: null,
     };
@@ -130,6 +132,9 @@ export default class Schedule extends Component {
 
   componentDidMount() {
     const { hash } = this.props.location;
+
+    this.setState({currentSection: (new Date().toDateString() === DAY_2) ? "day2" : ""});
+    
     if (hash) {
       setTimeout(() => document.getElementById(hash.replace('#', 'slot-')).scrollIntoView(false), 300);
       const dataArray = hash.replace('#', '').split('-');

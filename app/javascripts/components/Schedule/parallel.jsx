@@ -12,6 +12,8 @@ import classNamesBind from "classnames/bind";
 
 const cx = classNamesBind.bind(styles)
 
+const DAY_2 = "Sun May 15 2016";
+
 export default class ScheduleParallel extends Component {
   state = {
     showPanel: false,
@@ -20,7 +22,7 @@ export default class ScheduleParallel extends Component {
     categories: categoriesData[getLocale()].map((cat, index) => ({...cat, index})),
     currentSession: () => ({}),
     currentSessionTime: null,
-    currentSection: ''
+    currentSection: (new Date().toDateString() === DAY_2) ? "day2" : ""
   };
   defaultTitle = document.title;
 
