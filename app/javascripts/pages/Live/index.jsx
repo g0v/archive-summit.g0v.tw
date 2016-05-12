@@ -13,10 +13,10 @@ import cover from './summit.jpg';
 
 const locale = {
   "en-US": {
-  	"switch": "Chn/Eng Switch",
+    "switch": "Language Switch",
   },
   "zh-TW": {
-  	"switch": "中/英文切換"
+    "switch": "聲道語言切換"
   }
 }
 
