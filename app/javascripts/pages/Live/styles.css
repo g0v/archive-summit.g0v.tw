@@ -3,7 +3,7 @@
 }
 
 .monitor {
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -21,6 +21,27 @@
   background: #FFFFFF;
   display: block;
   box-sizing: border-box;
+  position: relative;
+}
+
+.url {
+  position: absolute;
+  box-sizing: border-box;
+  height: 24;
+  bottom: -24px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  left: -1px;
+  right: 0;
+  font-size: 16px;
+  background: #C90435;
+  border: 1px solid #C90435;
+}
+
+.url a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .info {

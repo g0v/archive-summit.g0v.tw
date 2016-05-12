@@ -13,28 +13,33 @@ class Live extends Component {
 
   state = {
     venue: '',
+    url: '',
   }
 
-  onChangeVenue = (venue) => this.setState({ venue });
+  onChangeVenue = (venue, embed, url) => {
+    this.setState({ venue, embed, url });
+  }
 
   render() {
-    const { venue } = this.state;
+    const { venue, embed, url } = this.state;
 
     return (
       <div className={styles.root}>
         <div className={styles.monitor}>
           <div className={styles.monitorWrap}>
             <div className={styles.control}>
-              <a className={styles.channel} onClick={() => this.onChangeVenue('')}>雙聲道選擇教學</a>
-              <a className={styles.channel} onClick={() => this.onChangeVenue('R0')}>YouTube R0</a>
-              <a className={styles.channel} onClick={() => this.onChangeVenue('R1')}>YouTube R1</a>
-              <a className={styles.channel} onClick={() => this.onChangeVenue('R2')}>YouTube R2</a>
-              <a className={styles.channel} onClick={() => this.onChangeVenue('R0')}>LIVEhouse.in R0</a>
-              <a className={styles.channel} onClick={() => this.onChangeVenue('R1')}>LIVEhouse.in R1</a>
-              <a className={styles.channel} onClick={() => this.onChangeVenue('R2')}>LIVEhouse.in R2</a>
+              <a className={styles.channel} href="https://g0v.hackpad.com/g0v-summit--3TyxgUCaVIV" target="_blank">中/英文切換</a>
+              <a className={styles.channel} onClick={() => this.onChangeVenue('R0', 'https://www.youtube.com/embed/MRic6Qt8GKQ', 'https://www.youtube.com/user/g0vTW/live')}>YouTube R0</a>
+              <a className={styles.channel} onClick={() => this.onChangeVenue('R1', 'https://www.youtube.com/embed/4MQX-SAQlZc', 'https://www.youtube.com/watch?v=4MQX-SAQlZc')}>YouTube R1</a>
+              <a className={styles.channel} onClick={() => this.onChangeVenue('R2', 'https://www.youtube.com/embed/FhlMyeEhV6o', 'https://www.youtube.com/watch?v=FhlMyeEhV6o')}>YouTube R2</a>
+              <a className={styles.channel} onClick={() => this.onChangeVenue('R0', 'https://livehouse.in/embed/channel/g0v/video', 'https://livehouse.in/channel/g0v.tw')}>LIVEhouse.in R0</a>
+              <a className={styles.channel} onClick={() => this.onChangeVenue('R1', 'https://livehouse.in/embed/channel/g0v1/video', 'https://livehouse.in/channel/g0v1')}>LIVEhouse.in R1</a>
+              <a className={styles.channel} onClick={() => this.onChangeVenue('R2', 'https://livehouse.in/embed/channel/g0v2/video', 'https://livehouse.in/channel/g0v2')}>LIVEhouse.in R2</a>
             </div>
             <div className={styles.video}>
-              <img src="http://placehold.it/640x360" />
+              { embed && <iframe src={embed} width="640" height="360" frameborder="0" allowfullscreen style={{border: 0}} /> }
+              { !embed && <img src="http://placehold.it/640x360" /> }
+              { url && <div className={styles.url}><a href={url} target="_blank">{url}</a></div> }
             </div>
           </div>
         </div>
