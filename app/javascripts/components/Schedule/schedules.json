@@ -95,7 +95,7 @@
       },
       {
         "time" : "11:00-11:30",
-        "event": "Tea time"
+        "event": "Break"
       },
       {
         "time" : "11:30-12:00",
@@ -408,7 +408,7 @@
           "speaker": "Clay Shirky",
           "title": "Forking and Legitimacy",
           "abstract": "Both politics and software development have the idea of separation and encapsulation, the drawing of borders around some area. In software the area is virtual -- what do different components or tools do -- and in politics the areas define groups of people -- especially parties and countries. Software, though, has characteristics of easy replicability and recombination. What might politics look like if those virtues were ported from the digital to political realm?"
-        }        
+        }
       },
       {
         "time" : "12:00-13:00",
@@ -698,7 +698,7 @@
       },
       {
         "time" : "11:00-11:30",
-        "event": "茶點"
+        "event": "休息"
       },
       {
         "time" : "11:30-12:00",
