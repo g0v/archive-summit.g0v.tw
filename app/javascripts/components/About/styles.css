@@ -72,28 +72,29 @@
   border: 2px solid #000000;
   border-radius: 4px;
   line-height: 22px;
+  text-decoration: none;
+  color: #000;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #CB0031;
+  color: #FFF;
 }
 
 .button:not(:last-child) {
     margin-right: 42px;
 }
 
-.active {
-  composes: button;
-  background-color: #CB0031;
-  color: #FFF;
-}
-
 @media screen and (max-width: 830px) {
   .button {
     padding: 12px 24px;
   }
-  
+
   .button:not(:last-child) {
     margin-right: 21px;
   }
-    
+
   .title {
     display: block;
     margin-left: auto;

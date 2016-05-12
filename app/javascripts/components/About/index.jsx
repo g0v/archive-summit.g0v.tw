@@ -11,15 +11,15 @@ const cx = classnames.bind(styles);
 function mapToDescription( section, index) {
     let day_venue_id = {};
     let data = {};
-    
+
     if(section.location !== undefined){// Link to keynote speaker session
       day_venue_id = section.location.split("-");
       data = schedules[getLocale()][day_venue_id[0]][day_venue_id[2]]
       let event = () => schedules[getLocale()][day_venue_id[0]][day_venue_id[2]].event;
-    
+
       return (
-        <a 
-          href={`#${section.location}`} 
+        <a
+          href={`#${section.location}`}
           onClick={this.setSession.bind(this, event, data.time)}
           className="Schedule-event"
         >
@@ -94,7 +94,7 @@ class About extends Component {
   render() {
     return (
       <div className={styles.root}>
-        { 
+        {
           about[getLocale()].sections.map( (section, i_s) => {
             return (
               <section key={`section_${i_s}`}>
@@ -109,7 +109,7 @@ class About extends Component {
                 { section.sub.map(mapToDescription.bind(this)) }
               </section>
             )
-          }) 
+          })
         }
 
         <div className={cx({
@@ -126,8 +126,8 @@ class About extends Component {
 
         <div className={styles.links}>
           <h2 className={styles.title}>當日大會共筆</h2>
-          <a className={styles.button}>Hackpad</a>
-          <a className={styles.active}>Hackpad</a>
+          <a className={styles.button} href="http://beta.hackfoldr.org/g0v-summit-2016" target="_blank">Day 1</a>
+          <a className={styles.button}>Day 2</a>
         </div>
       </div>
     );
