@@ -164,6 +164,9 @@ const Menu = () => {
           {info[getLocale()].staff}
         </Link>
       </li>
+      <li className={styles.item}>
+        <a href="http://beta.hackfoldr.org/g0v-summit-2016" target="_blank">{info[getLocale()].wiki}</a>
+      </li>
     </ul>
   );
 }
