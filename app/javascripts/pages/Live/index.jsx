@@ -12,11 +12,13 @@ import styles from "./styles.css";
 import cover from './summit.jpg';
 
 const locale = {
-  "en-US": {
-    "switch": "Language Switch",
+  'en-US': {
+    switch: "Language Switch",
+    icecast: 'Interpretation',
   },
-  "zh-TW": {
-    "switch": "聲道語言切換"
+  'zh-TW': {
+    switch: "聲道語言切換",
+    icecast: '即時口譯',
   }
 }
 
@@ -46,10 +48,67 @@ class Live extends Component {
               <a className={styles.channel} onClick={() => this.onChangeVenue('R0', 'https://livehouse.in/embed/channel/g0v/video', 'https://livehouse.in/channel/g0v.tw')}>LIVEhouse.in R0</a>
               <a className={styles.channel} onClick={() => this.onChangeVenue('R1', 'https://livehouse.in/embed/channel/g0v1/video', 'https://livehouse.in/channel/g0v1')}>LIVEhouse.in R1</a>
               <a className={styles.channel} onClick={() => this.onChangeVenue('R2', 'https://livehouse.in/embed/channel/g0v2/video', 'https://livehouse.in/channel/g0v2')}>LIVEhouse.in R2</a>
+              <a className={styles.channel} onClick={() => this.onChangeVenue('icecast')}>{locale[getLocale()].icecast}</a>
             </div>
             <div className={styles.video}>
+              { venue === 'icecast' && <div style={{
+                width: '640px',
+                height: '360px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+                <div style={{
+                    border: '3px solid #36AAA8',
+                    display: 'flex',
+                    flexDirection: 'row',
+                  }}>
+                  <div style={{
+                      background: '#36AAA8',
+                      color: '#FFF',
+                      padding: 5,
+                    }}>R0</div>
+                  <a href="http://i.summit.g0v.tw:8000/r0" target="_blank" style={{
+                      padding: 5,
+                      color: '#0F0F0F',
+                    }}>http://i.summit.g0v.tw:8000/r0</a>
+                </div>
+                <div style={{
+                    border: '3px solid #8B4AA8',
+                    marginTop: 10,
+                    display: 'flex',
+                    flexDirection: 'row',
+                  }}>
+                  <div style={{
+                      background: '#8B4AA8',
+                      color: '#FFF',
+                      padding: 5,
+                    }}>R1</div>
+                  <a href="http://i.summit.g0v.tw:8000/r1" target="_blank" style={{
+                      padding: 5,
+                      color: '#0F0F0F',
+                    }}>http://i.summit.g0v.tw:8000/r1</a>
+                </div>
+                <div style={{
+                    border: '3px solid #4EA23B',
+                    marginTop: 10,
+                    display: 'flex',
+                    flexDirection: 'row',
+                  }}>
+                  <div style={{
+                      background: '#4EA23B',
+                      color: '#FFF',
+                      padding: 5,
+                    }}>R2</div>
+                  <a href="http://i.summit.g0v.tw:8000/r2" target="_blank" style={{
+                      padding: 5,
+                      color: '#0F0F0F',
+                    }}>http://i.summit.g0v.tw:8000/r2</a>
+                </div>
+              </div>}
               { embed && <iframe src={embed} width="640" height="360" frameborder="0" allowfullscreen style={{border: 0}} /> }
-              { !embed && <img src={cover} width="640" height="360" /> }
+              { !embed && venue !== 'icecast' && <img src={cover} width="640" height="360" /> }
               { url && <div className={styles.url}><a href={url} target="_blank">{url}</a></div> }
             </div>
           </div>
