@@ -125,9 +125,8 @@ class About extends Component {
         </div>
 
         <div className={styles.links}>
-          <h2 className={styles.title}>當日大會共筆</h2>
-          <a className={styles.button} href="http://beta.hackfoldr.org/g0v-summit-2016" target="_blank">Day 1</a>
-          <a className={styles.button}>Day 2</a>
+          <h2 className={styles.title}>{about[getLocale()].wiki}</h2>
+          <a className={styles.button} href="http://beta.hackfoldr.org/g0v-summit-2016" target="_blank">Hackpad</a>
         </div>
       </div>
     );

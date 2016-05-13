@@ -22,14 +22,15 @@
           "location": "day2-all-4",
           "description": ["<img class=\"avatar\" src=\"/2016/0005c9c5241726e3800610f45322e728.jpg\">NYU Professor, and author of 'Cognitive Surplus' and 'Here Comes Everybody'"]},
           { "header": "Keynote Speaker - Miguel Arana Catania",
-          "location": "day2-all-24", 
+          "location": "day2-all-24",
           "description": ["<img class=\"avatar\" src=\"/2016/ce0ac37eec641e7139fd046d5802bdf2.png\">Miguel Arana is the Director of the Madrid city council participation project. He is designing the new open government strategy for the city of Madrid, and its new free software platform for direct democracy and collective intelligence http://decide.madrid.es Defining also the national strategy for smart cities together with other major Spanish cities as Barcelona, Zaragoza, A CoruÃ±a among others. He has been actively involved in the 15M movement in Spain since its beginning, with an emphasis in the digital tools and the connection of the movement with other countries. Currently working with different participation projects worldwide, and networks as D-CENT, including countries as Iceland, Finland or Brazil."]},
           { "header": "Keynote Speaker - Premier of Taiwan: Simon Chang",
           "location": "day1-all-45",
           "description": ["<img class=\"avatar\" src=\"/2016/ac803dc448f8b92f923b161952bb20e0.png\">Premier Chang has been advocating open data in Taiwan through his incumbency in the Executive Yuan, his efforts made Taiwan topped out the OKFN Open Data Index in 2015. Right before the new government assumes office, he will be at the g0v Summit sharing his experience on the collaboration between the public sector and open communities toward an open government."]}
         ]
       }
-  	]
+  	],
+    "wiki": "Wiki"
   },
   "zh-TW": {
   	"sections": [
@@ -84,6 +85,7 @@
           }
         ]
       }
-  	]
+  	],
+    "wiki": "大會共筆"
   }
 }
