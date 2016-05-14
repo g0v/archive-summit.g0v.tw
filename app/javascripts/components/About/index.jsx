@@ -123,11 +123,6 @@ class About extends Component {
             time={this.state.currentSessionTime}
           />
         </div>
-
-        <div className={styles.links}>
-          <h2 className={styles.title}>{about[getLocale()].wiki}</h2>
-          <a className={styles.button} href="http://beta.hackfoldr.org/g0v-summit-2016" target="_blank">Hackpad</a>
-        </div>
       </div>
     );
   }
