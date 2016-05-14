@@ -3,19 +3,24 @@
     "header": "Important Dates",
     "milestones": [
       {
-        "range": ["2016/4/1 01:00UTC", "2016/4/15"],
-        "title": "Register Now: Regular Tickets (US$36)",
-        "url": "http://g0v-summit2016.kktix.cc/events/conference"
+        "title": "Shared Notes",
+        "url": "http://beta.hackfoldr.org/g0v-summit-2016"
       },
       {
-        "range": ["2016/4/27 04:00UTC", "2016/5/4"],
-        "title": "Register Now: Late Bird Tickets (US$36)",
-        "url": "http://g0v-summit2016.kktix.cc/events/conference"
+        "title": "R0 Simultaneous Interpreting",
+        "url": "http://i.summit.g0v.tw:8000/r0"
       },
       {
-        "range": ["2016/4/15", "2016/5/12 23:59CST"],
-        "title": "Unconference",
-        "url": "/2016/unconf"
+        "title": "R1 Simultaneous Interpreting",
+        "url": "http://i.summit.g0v.tw:8000/r1"
+      },
+      {
+        "title": "R2 Simultaneous Interpreting",
+        "url": "http://i.summit.g0v.tw:8000/r2"
+      },
+      {
+        "title": "Live Streaming",
+        "url": "http://summit.g0v.tw/2016/live"
       }
     ],
     "media": "Media contact: ",
