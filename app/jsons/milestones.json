@@ -3,6 +3,10 @@
     "header": "Important Dates",
     "milestones": [
       {
+        "title": "Unconference",
+        "url": "http://summit.g0v.tw/2016/unconf"
+      },
+      {
         "title": "Shared Notes",
         "url": "http://beta.hackfoldr.org/g0v-summit-2016"
       },
@@ -32,6 +36,10 @@
   "zh-TW": {
     "header": "時間表",
     "milestones": [
+      {
+        "title": "開放工作坊",
+        "url": "http://summit.g0v.tw/2016/unconf"
+      },
       {
         "title": "大會共筆",
         "url": "http://beta.hackfoldr.org/g0v-summit-2016"
