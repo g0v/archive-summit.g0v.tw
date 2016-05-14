@@ -9,7 +9,8 @@
     "unconf": "Unconf",
     "staff": "Staff",
     "date": "14-15 May, 2016",
-    "location": "Taipei"
+    "location": "Taipei",
+    "wiki": "Wiki"
   },
   "zh-TW": {
     "home": "首頁",
@@ -21,6 +22,7 @@
     "unconf": "開放工作坊",
     "staff": "工作人員",
     "date": "五月十四至十五，二零一六",
-    "location": "中央研究院"
+    "location": "中央研究院",
+    "wiki": "大會共筆"
   }
 }
