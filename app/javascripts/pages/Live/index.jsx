@@ -43,8 +43,8 @@ class Live extends Component {
             <div className={styles.control}>
               <a className={styles.channel} href="https://g0v.hackpad.com/g0v-summit--3TyxgUCaVIV" target="_blank">{locale[getLocale()].switch}</a>
               <a className={styles.channel} onClick={() => this.onChangeVenue('R0', 'https://www.youtube.com/embed/MRic6Qt8GKQ', 'https://www.youtube.com/user/g0vTW/live')}>YouTube R0</a>
-              <a className={styles.channel} onClick={() => this.onChangeVenue('R1', 'https://www.youtube.com/embed/_Rq-mHszu-g', 'https://www.youtube.com/watch?v=_Rq-mHszu-g')}>YouTube R1</a>
-              <a className={styles.channel} onClick={() => this.onChangeVenue('R2', 'https://www.youtube.com/embed/4vJb_5K4hYk', 'https://www.youtube.com/watch?v=4vJb_5K4hYk')}>YouTube R2</a>
+              <a className={styles.channel} onClick={() => this.onChangeVenue('R1', 'https://www.youtube.com/embed/hkVWJMVgU7M', 'https://www.youtube.com/watch?v=hkVWJMVgU7M')}>YouTube R1</a>
+              <a className={styles.channel} onClick={() => this.onChangeVenue('R2', 'https://www.youtube.com/embed/VipXiK14cOw', 'https://www.youtube.com/watch?v=VipXiK14cOw')}>YouTube R2</a>
               <a className={styles.channel} onClick={() => this.onChangeVenue('R0', 'https://livehouse.in/embed/channel/g0v/video', 'https://livehouse.in/channel/g0v.tw')}>LIVEhouse.in R0</a>
               <a className={styles.channel} onClick={() => this.onChangeVenue('R1', 'https://livehouse.in/embed/channel/g0v1/video', 'https://livehouse.in/channel/g0v1')}>LIVEhouse.in R1</a>
               <a className={styles.channel} onClick={() => this.onChangeVenue('R2', 'https://livehouse.in/embed/channel/g0v2/video', 'https://livehouse.in/channel/g0v2')}>LIVEhouse.in R2</a>
@@ -116,7 +116,7 @@ class Live extends Component {
         <div className={styles.info}>
           <div className={styles.infoWrap}>
             {
-              venue && _.filter(schedules[getLocale()]['day1'], o => !!o.title && o.venue === venue).map( item => (
+              venue && _.filter(schedules[getLocale()]['day2'], o => !!o.title && o.venue === venue).map( item => (
                 <div style={{ background: item.color }} className={styles.schedules}>
                   <div>{item.title}/{item.venue} - {item.tagline}</div>
                   <div>{schedules[getLocale()].moderator}: {item.anchor}</div>
