@@ -25,6 +25,10 @@
       {
         "title": "Live Streaming",
         "url": "http://summit.g0v.tw/2016/live"
+      },
+      {
+      	"title": "Social Feeds",
+      	"url": "https://www.juicer.io/g0vsummit"
       }
     ],
     "media": "Media contact: ",
@@ -59,6 +63,10 @@
       {
         "title": "現場直播資訊",
         "url": "http://summit.g0v.tw/2016/live"
+      },
+      {
+      	"title": "社群網站動態",
+      	"url": "https://www.juicer.io/g0vsummit"
       }
     ],
     "media": "媒體聯絡人：",
