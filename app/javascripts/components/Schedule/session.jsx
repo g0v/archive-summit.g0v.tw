@@ -48,6 +48,7 @@ export default React.createClass({
       const speaker_title = speaker && getString(speaker, 'title', locale);
       const speaker_organization = speaker && getString(speaker, 'organization', locale);
       const speaker_name = speaker && getString(speaker, 'name', locale);
+      const speaker_live = speaker && getString(speaker, 'live', locale);
       const twitterID = speaker && getString(speaker, 'twitter', locale);
       const facebookID = speaker && getString(speaker, 'facebook', locale);
       const avatar = speaker ? avatarURL(speaker) : '';
@@ -60,22 +61,25 @@ export default React.createClass({
       speakers_bio.push(bio);
 
       return <div key={`speaker_${speaker_name}`}>
+        <div>
+          { speaker_live && <a href={speaker_live} target="_break" style={{color: '#CB0031'}}>[Video]</a>}
+        </div>
         <div className="Session-presenter">
             {speaker_name}
             { twitterID &&
-              <a 
+              <a
                 className="Session-twitter"
                 href={`https://twitter.com/${twitterID}`}
                 target="_blank"
               >
-                <img 
+                <img
                   className="Session-social"
                   src={require('./twitter.png')}
                 />
               </a>
             }
-            { facebookID && 
-              <a 
+            { facebookID &&
+              <a
                 className="Session-facebook"
                 href={`https://facebook.com/${facebookID}`}
                 target="_blank"

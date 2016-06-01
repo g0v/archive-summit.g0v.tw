@@ -2,6 +2,7 @@
   "en-US": [
     {
       "id": "ekmodd",
+      "live": "https://www.youtube.com/watch?v=wirWW9aQn3A",
       "avatar": "./shigeomi.jpg",
       "name": "Shigeomi Shibata",
       "name_zh": "柴田 重臣",
@@ -15,6 +16,7 @@
     },
     {
       "id": "nyhbqi",
+      "live": "https://www.youtube.com/watch?v=-3AjCOJCDi4",
       "avatar": "./JenBramley.jpg",
       "name": "Jen Bramley",
       "organization": "mySociety",
@@ -26,6 +28,7 @@
     },
     {
       "id": "vsipkd",
+      "live": "https://www.youtube.com/watch?v=tPVqF9dEdIE",
       "avatar": "http://juliakloiber.com/blog/wp-content/uploads/julia_klein1.jpg",
       "name": "Julia Kloiber",
       "featured": true,
@@ -38,6 +41,7 @@
     },
     {
       "id": "eyjscl",
+      "live": "https://www.youtube.com/watch?v=e_InmN6vVOw",
       "avatar": "",
       "name": "Colin Megill",
       "featured": true,
@@ -51,6 +55,7 @@
     },
     {
       "id": "vypsuv",
+      "live": "https://www.youtube.com/watch?v=h8bCecVeqQg",
       "avatar": "./jksuh.jpg",
       "name": "JK Suh",
       "organization": "WAGL",
@@ -63,6 +68,7 @@
     },
     {
       "id": "vypsuz",
+      "live": "https://www.youtube.com/watch?v=h8bCecVeqQg",
       "avatar": "./ukjinyang.jpg",
       "name": "Uk-Jin Yang",
       "organization": "WAGL",
@@ -74,6 +80,7 @@
     },
     {
       "id": "eybuyw",
+      "live": "https://www.youtube.com/watch?v=WWYNmtIVWW8",
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAObAAAAJGUxM2ZmOTdlLTU0OWQtNGJjMi04NDQ2LWUzZTdkY2MwOTc1Mw.jpg",
       "name": "Felipe Heusser",
       "featured": true,
@@ -87,6 +94,7 @@
     },
     {
       "id": "jjlhcu",
+      "live": "https://www.youtube.com/watch?v=R7l4eslO0NU",
       "avatar": "http://1.gravatar.com/avatar/60f641dfbb4215f1f6d6c059eebf1848?size=400",
       "name": "James Mckinney",
       "featured": true,
@@ -98,6 +106,7 @@
     },
     {
       "id": "jyeidw",
+      "live": "https://www.youtube.com/watch?v=Hd_3dcuLHP8",
       "avatar": "./miguel.png",
       "name": "Miguel Arana Catania",
       "featured": true,
@@ -111,6 +120,7 @@
     },
     {
       "id": "vkrywc",
+      "live": "https://www.youtube.com/watch?v=znT4NLhD06I",
       "twitter": "@iacocoba",
       "name": "Yago Bermejo Abati",
       "organization": "Medialab-Prado",
@@ -174,6 +184,7 @@
     },
     {
       "id": "kzsupx",
+      "live": "https://www.youtube.com/watch?v=DiiRVD9RYCE",
       "avatar": "https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12049543_10155972979335577_7465819731254710195_n.jpg?oh=cd16d49425eaa194e2d95693ace92f7d&oe=578E39EF",
       "name": "Charlotte Richard",
       "featured": true,
@@ -187,6 +198,7 @@
     },
     {
       "id": "vkebqj",
+      "live": "https://www.youtube.com/watch?v=mEC4MjhZjXU",
       "avatar": "",
       "name": "Hoony Jang",
       "organization": "Creative Commons Korea",
@@ -242,6 +254,7 @@
     },
     {
       "id": "nkwgbq",
+      "live": "https://www.youtube.com/watch?v=4mPKqhLphnU",
       "avatar": "https://www.gravatar.com/avatar/c767419261bf0c4ce5587ca20307928e?s=200",
       "name": "Henare Degan",
       "organization": "OpenAustralia Foundation",
@@ -252,6 +265,7 @@
     },
     {
       "id": "eyioov",
+      "live": "https://www.youtube.com/watch?v=aIuHcEmKZ2I",
       "avatar": "./peggy.jpg",
       "name": "Peggy Lo",
       "name_zh": "羅佩琪",
@@ -294,6 +308,7 @@
     },
     {
       "id": "ygljow",
+      "live": "https://www.youtube.com/watch?v=I3iLa2FpocE",
       "name": "clkao",
       "name_zh": "高嘉良",
       "organization": "g0v",
@@ -328,6 +343,7 @@
     },
     {
       "id": "jmgbci",
+      "live": "https://www.youtube.com/watch?v=emydPIbiTUg",
       "avatar": "https://avatars0.githubusercontent.com/u/4172809",
       "name": "Jim Horng",
       "organization": "open source",
@@ -338,6 +354,7 @@
     },
     {
       "id": "vxqlvr",
+      "live": "https://www.youtube.com/watch?v=bmB6bBAZhds",
       "avatar": "https://dsp.im/wp-content/uploads/2014/10/johnson11.jpg",
       "name": "Hsieh, Tsung Chen",
       "name_zh": "謝宗震",
@@ -359,6 +376,7 @@
     },
     {
       "id": "njtsud",
+      "live": "https://www.youtube.com/watch?v=HbrKihguN9o",
       "avatar": "http://zbryikt.github.io/img/avatar-260.jpg",
       "name": "Kirby Wu",
       "featured": true,
@@ -370,6 +388,7 @@
     },
     {
       "id": "kzxcxp",
+      "live": "https://www.youtube.com/watch?v=YRmiZdSSd7c",
       "avatar": "./weisiang.jpg",
       "name": "詹為翔",
       "organization": "Openstreetmap Taiwan",
@@ -391,6 +410,7 @@
     },
     {
       "id": "ejnopj",
+      "live": "https://www.youtube.com/watch?v=deQJOkazvUQ",
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/19c/045/3c47699.jpg",
       "name": "Dongpo Deng",
       "organization": "OSM TW",
@@ -412,6 +432,7 @@
     },
     {
       "id": "nkbexc",
+      "live": "https://www.youtube.com/watch?v=g6InbegJ3Oo",
       "avatar": "http://vps.pointing.tw/kao/kao-teia.png",
       "name": "Y.H. Kao",
       "name_zh": "高英勛",
@@ -457,6 +478,7 @@
     },
     {
       "id": "ygjopy",
+      "live": "https://www.youtube.com/watch?v=zQaB8cuL_28",
       "avatar": "https://lh5.googleusercontent.com/-dHv-XXHP-pc/AAAAAAAAAAI/AAAAAAAAIjU/FjaQQfyWEaA/s64/photo.jpg",
       "name": "ETBlue",
       "name_zh": "藍一婷",
@@ -468,6 +490,7 @@
     },
     {
       "id": "nkwiwp",
+      "live": "https://www.youtube.com/watch?v=zQaB8cuL_28",
       "avatar": "./ipa.jpg",
       "name": "ipa",
       "name_zh": "瞿筱葳",
@@ -584,6 +607,7 @@
     },
     {
       "id": "njwjup",
+      "live": "https://www.youtube.com/watch?v=YjDYszu9K8U",
       "avatar": "./simon.png",
       "featured": true,
       "name": "Simon Chang",
@@ -599,6 +623,7 @@
     },
     {
       "id": "nzsicb",
+      "live": "https://www.youtube.com/watch?v=RJsvuh5-Djw",
       "avatar": "./chiahua.jpg",
       "name": "Chia-hua Lu",
       "name_zh": "呂家華",
@@ -641,6 +666,7 @@
     },
     {
       "id": "cshirky",
+      "live": "https://www.youtube.com/watch?v=7QB2hwApmdM",
       "avatar": "./cshirky.jpg",
       "featured": true,
       "name": "Clay Shirky",
@@ -653,6 +679,7 @@
     },
     {
       "id": "cdoten",
+      "live": "https://www.youtube.com/watch?v=LJ_4-G6oK1M",
       "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAXyAAAAJGU5YTZjNWNlLWRjYzAtNDJiNy05MzY2LTgxNzJjZWZkNWJjMg.jpg",
       "name": "Chris Doten",
       "organization": "National Democratic Institute",
@@ -663,6 +690,7 @@
     },
     {
       "id": "hoho",
+      "live": "https://www.youtube.com/watch?v=vwIG9D8ZTXo",
       "featured": true,
       "name": "Jan-Ming Ho",
       "name_zh": "何建明",
