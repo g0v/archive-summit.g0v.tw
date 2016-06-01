@@ -48,7 +48,6 @@ export default React.createClass({
       const speaker_title = speaker && getString(speaker, 'title', locale);
       const speaker_organization = speaker && getString(speaker, 'organization', locale);
       const speaker_name = speaker && getString(speaker, 'name', locale);
-      const speaker_live = speaker && getString(speaker, 'live', locale);
       const twitterID = speaker && getString(speaker, 'twitter', locale);
       const facebookID = speaker && getString(speaker, 'facebook', locale);
       const avatar = speaker ? avatarURL(speaker) : '';
@@ -61,9 +60,6 @@ export default React.createClass({
       speakers_bio.push(bio);
 
       return <div key={`speaker_${speaker_name}`}>
-        <div>
-          { speaker_live && <a href={speaker_live} target="_break" style={{color: '#CB0031'}}>[Video]</a>}
-        </div>
         <div className="Session-presenter">
             {speaker_name}
             { twitterID &&
@@ -132,10 +128,18 @@ export default React.createClass({
       </div>;
     });
 
+    const moderator_live = speakers[0] && getString(by_name[speakers[0]], 'live', locale);
+
     if (time && speakers_profile.length) {
       return (
           <div className="Session">
-            <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>{schedules[getLocale()].interpretation}
+            <div style={{ color: '#FFF', backgroundColor: '#000', padding: '20px', textAlign: 'center'}}>
+              { moderator_live && <span>{helptext[getLocale()].text}(</span> }
+              { moderator_live && <a target="_blank" href={`http://www.youtube.com/timedtext_video?ref=share&v=${moderator_live}`}>{helptext[getLocale()].help}</a> }
+              { moderator_live && <span>)</span>}
+            </div>
+            <div className="Session-video">
+              { moderator_live && <iframe src={`https://www.youtube.com/embed/${moderator_live}`} frameborder="0" allowfullscreen></iframe>}
             </div>
               <div className="Session-close"
                    onClick={sessionHandler}></div>
